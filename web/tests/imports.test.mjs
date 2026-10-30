@@ -107,7 +107,7 @@ test("SQL failure near end of replacement preserves live rows, evidence and publ
     const before = h.snapshot(), evidence = h.publishedEvidence();
     const p = payload(h, 0, a.id); p.item.competition.title = "Corrected title";
     const b = await submit(h, p);
-    const count = p.item.participants.length + p.item.entries.length + p.item.results.length + 10;
+    const count = p.item.participants.length + p.item.entries.length + p.item.results.length + 13;
     h.state.failAt = h.state.executed + count;
     assert.equal((await publish(h, b.id)).status, 503);
     assert.deepEqual(h.snapshot(), before);

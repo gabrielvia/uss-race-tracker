@@ -10,13 +10,26 @@ const nodeRequire = createRequire(import.meta.url);
 const sample = JSON.parse(readFileSync(path.join(root, "lib/sample-data.json"), "utf8"));
 const dummyToken = "test-only-seed-token";
 
-export function harness(fixture = structuredClone(sample)) {
+export function multiFixture() { return structuredClone(sample); }
+export function singleFixture() {
+  const fixture = structuredClone(sample);
+  for (const item of fixture.competitions) {
+    if (!item.evidence.events) continue;
+    const first = item.evidence.events[0];
+    item.evidence = { roster: item.evidence.roster, race: first };
+    item.results = item.results.filter(r => r.eventLabel === first.event_label_raw);
+  }
+  fixture.schemaVersion = 2;
+  return fixture;
+}
+
+export function harness(fixture = singleFixture()) {
   const sqlite = new DatabaseSync(":memory:");
   for (const name of readdirSync(path.join(root, "drizzle")).filter(n => n.endsWith(".sql")).sort()) {
     sqlite.exec(readFileSync(path.join(root, "drizzle", name), "utf8"));
   }
   const objects = new Map();
-  const state = { batchCalls: 0, executed: 0, failAt: null, writes: 0, failWriteAt: null, beforeReadBatch: null, afterFirst: null };
+  const state = { batchCalls: 0, executed: 0, failAt: null, writes: 0, failWriteAt: null, beforeReadBatch: null, beforeWriteBatch: null, afterFirst: null };
   function prepare(sql, bindings = []) {
     return {
       sql, bindings,
@@ -35,6 +48,9 @@ export function harness(fixture = structuredClone(sample)) {
       state.batchCalls++;
       if (state.beforeReadBatch && statements.every(s => /^SELECT\b/i.test(s.sql))) {
         const hook = state.beforeReadBatch; state.beforeReadBatch = null; await hook();
+      }
+      if (state.beforeWriteBatch && statements.some(s => !/^SELECT\b/i.test(s.sql))) {
+        const hook = state.beforeWriteBatch; state.beforeWriteBatch = null; await hook();
       }
       sqlite.exec("BEGIN");
       try {
@@ -95,7 +111,7 @@ export function harness(fixture = structuredClone(sample)) {
     } finally { console.error = original; }
   }
   function snapshot() {
-    const tables = ["sources", "competitions", "participants", "entries", "results"];
+    const tables = ["sources", "competitions", "participants", "entries", "results", "competition_events"];
     return Object.fromEntries(tables.map(table => [table, sqlite.prepare(`SELECT * FROM ${table} ORDER BY id`).all()]));
   }
   function publishedEvidence() {

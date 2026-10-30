@@ -1,7 +1,7 @@
 export type Competition = {
   id: string; title: string; discipline: string; season: string;
   starts_on: string; ends_on: string; location: string;
-  source_id: string; source_url: string; participant_count: number; result_count: number;
+  source_id: string; source_url: string; participant_count: number; result_count: number; event_count: number;
 };
 export type Participant = { id: string; bib: string; name: string; affiliation: string };
 export type Entry = { id: string; participant_id: string; division: string; age_status: string | null; raw_name: string; source_page: number };
@@ -11,6 +11,10 @@ export type RaceResult = {
   event_key: string | null; event_label: string | null; race_label: string | null;
   heat_number: number | null; heat_total: number | null;
 };
+export type CompetitionEvent = {
+  id: string; source_event_number: string | null; label: string; group_label: string;
+  distance: number; round: string; result_count: number; heat_count: number;
+};
 export type CompetitionDetail = {
-  competition: Competition; participants: Participant[]; entries: Entry[]; results: RaceResult[];
+  competition: Competition; events: CompetitionEvent[]; coverage: { kind: "selected-events"; eventCount: number; completeCompetition: false }; participants: Participant[]; entries: Entry[]; results: RaceResult[];
 };

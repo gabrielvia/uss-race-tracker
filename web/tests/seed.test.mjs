@@ -8,7 +8,7 @@ test("SQL failure leaves no partial competition and readiness stays false", asyn
     h.state.failAt = 45;
     assert.equal((await h.seed()).status, 503);
     assert.equal(h.state.batchCalls, 1);
-    assert.deepEqual(Object.fromEntries(Object.entries(h.snapshot()).map(([key, rows]) => [key, rows.length])), { sources: 0, competitions: 0, participants: 0, entries: 0, results: 0 });
+    assert.deepEqual(Object.fromEntries(Object.entries(h.snapshot()).map(([key, rows]) => [key, rows.length])), { sources: 0, competitions: 0, participants: 0, entries: 0, results: 0, competition_events: 0 });
     assert.equal((await (await h.health()).json()).ready, false);
     h.state.failAt = null;
     assert.equal((await h.seed()).status, 200);
@@ -56,7 +56,7 @@ test("unauthorized seed requests never write", async () => {
 test("failure in the last competition rolls back the entire sample", async () => {
   const h = harness();
   try {
-    h.state.failAt = 606;
+    h.state.failAt = 608;
     assert.equal((await h.seed()).status, 503);
     assert.equal(h.state.batchCalls, 1);
     assert.ok(Object.values(h.snapshot()).every(rows => rows.length === 0));

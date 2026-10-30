@@ -1,3 +1,4 @@
+import { eventDefinitions } from "@/lib/imports/events";
 import { env } from "cloudflare:workers";
 import { createHash, timingSafeEqual } from "node:crypto";
 import { bucket, database, unavailable } from "@/lib/database";
@@ -28,6 +29,7 @@ export async function POST(request: Request) {
       statements.push(
         db.prepare("INSERT INTO sources (id, url, sha256, object_key) VALUES (?, ?, ?, ?) ON CONFLICT(id) DO UPDATE SET object_key = excluded.object_key").bind(source.id, source.url, source.sha256, objectKey),
         db.prepare("INSERT INTO competitions (id, title, discipline, season, starts_on, ends_on, location, source_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(id) DO NOTHING").bind(c.id, c.title, c.discipline, c.season, c.startsOn, c.endsOn, c.location, source.id),
+        ...eventDefinitions(item).map(e => db.prepare("INSERT INTO competition_events (id, competition_id, source_event_number, label, group_label, distance, round) VALUES (?, ?, ?, ?, ?, ?, ?) ON CONFLICT(id) DO NOTHING").bind(e.id, c.id, e.sourceEventNumber, e.label, e.groupLabel, e.distance, e.round)),
         ...item.participants.map(p => db.prepare("INSERT INTO participants (id, competition_id, bib, name, affiliation) VALUES (?, ?, ?, ?, ?) ON CONFLICT(id) DO NOTHING").bind(p.id, c.id, p.bib, p.name, p.affiliation)),
         ...item.entries.map(e => db.prepare("INSERT INTO entries (id, participant_id, division, age_status, raw_name, source_page) VALUES (?, ?, ?, ?, ?, ?) ON CONFLICT(id) DO NOTHING").bind(e.id, e.participantId, e.division, e.ageStatus, e.rawName, e.sourcePage)),
         ...item.results.map(r => db.prepare("INSERT INTO results (id, competition_id, participant_id, race_id, distance, round, rank, time_raw, time_microseconds, qualification, source_page, event_key, event_label, race_label, heat_number, heat_total, result_status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(id) DO UPDATE SET event_key = excluded.event_key, event_label = excluded.event_label, race_label = excluded.race_label, heat_number = excluded.heat_number, heat_total = excluded.heat_total, result_status = excluded.result_status").bind(r.id, c.id, r.participantId, r.raceId, r.distance, r.round, r.rank, r.timeRaw, r.timeMicroseconds, r.qualification, r.sourcePage, r.eventKey, r.eventLabel, r.raceLabel, r.heatNumber, r.heatTotal, r.status)),

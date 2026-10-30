@@ -1,5 +1,7 @@
 # Reliable selected-event imports
 
+The current multi-event extension is documented in [multi-event-imports.md](multi-event-imports.md). Schema version 3 publishes several complete events together; schema version 2 remains a compatible single-event input. Both now require retaining all previously published events. The sections below describe the original foundation and its verification history.
+
 This milestone adds ingestion to the main viewer's backend. It does not create an Admin website, login page, scheduler or email service. The visitor interface remains the existing sample viewer.
 
 ## Coverage and review

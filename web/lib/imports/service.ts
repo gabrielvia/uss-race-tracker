@@ -1,3 +1,4 @@
+import { eventDefinitions } from "@/lib/imports/events";
 import { bucket, database } from "@/lib/database";
 import { candidateId, canonical, hash, validate, VALIDATION_VERSION, type ImportPayload, type ValidationReport } from "@/lib/imports/validation";
 
@@ -30,11 +31,13 @@ function writeStatements(payload: ImportPayload, sourceId: string, objectKey: st
   const { competition: c, source, participants, entries, results } = payload.item;
   return [
     db.prepare("DELETE FROM results WHERE competition_id = ?").bind(c.id),
+    db.prepare("DELETE FROM competition_events WHERE competition_id = ?").bind(c.id),
     db.prepare("DELETE FROM entries WHERE participant_id IN (SELECT id FROM participants WHERE competition_id = ?)").bind(c.id),
     db.prepare("DELETE FROM participants WHERE competition_id = ?").bind(c.id),
     db.prepare("DELETE FROM competitions WHERE id = ?").bind(c.id),
     db.prepare("INSERT INTO sources (id, url, sha256, object_key) VALUES (?, ?, ?, ?) ON CONFLICT(id) DO NOTHING").bind(sourceId, source.url, source.sha256, objectKey),
     db.prepare("INSERT INTO competitions (id, title, discipline, season, starts_on, ends_on, location, source_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)").bind(c.id, c.title, c.discipline, c.season, c.startsOn, c.endsOn, c.location, sourceId),
+    ...eventDefinitions(payload.item).map(e => db.prepare("INSERT INTO competition_events (id, competition_id, source_event_number, label, group_label, distance, round) VALUES (?, ?, ?, ?, ?, ?, ?)").bind(e.id, c.id, e.sourceEventNumber, e.label, e.groupLabel, e.distance, e.round)),
     ...participants.map(p => db.prepare("INSERT INTO participants (id, competition_id, bib, name, affiliation) VALUES (?, ?, ?, ?, ?)").bind(p.id, c.id, p.bib, p.name, p.affiliation)),
     ...entries.map(e => db.prepare("INSERT INTO entries (id, participant_id, division, age_status, raw_name, source_page) VALUES (?, ?, ?, ?, ?, ?)").bind(e.id, e.participantId, e.division, e.ageStatus, e.rawName, e.sourcePage)),
     ...results.map(r => db.prepare("INSERT INTO results (id, competition_id, participant_id, race_id, distance, round, rank, time_raw, time_microseconds, qualification, source_page, event_key, event_label, race_label, heat_number, heat_total, result_status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)").bind(r.id, c.id, r.participantId, r.raceId, r.distance, r.round, r.rank, r.timeRaw, r.timeMicroseconds, r.qualification, r.sourcePage, r.eventKey, r.eventLabel, r.raceLabel, r.heatNumber, r.heatTotal, r.status)),
@@ -54,6 +57,10 @@ export async function publish(batch: Batch) {
   const current = (await head(competitionId))?.batch_id ?? null;
   if (current === batch.id) return { id: batch.id, status: "published", competitionId, active: true };
   if (batch.status !== "validated" || current !== payload.baseBatchId) throw new ImportConflict("The published competition has changed. Review it and submit a new batch with its current baseBatchId.");
+  const keys = eventDefinitions(payload.item).map(e => e.id);
+  const coverageQuery = "SELECT DISTINCT event_key FROM results WHERE competition_id = ? AND (event_key IS NULL OR event_key NOT IN (" + keys.map(() => "?").join(",") + "))";
+  const missing = await database().prepare(coverageQuery).bind(competitionId, ...keys).all();
+  if (missing.results.length) throw new ImportConflict("This candidate omits previously published events. Include every current event before publishing an expanded competition.");
   const evidence = canonical(payload.item.evidence);
   const evidenceHash = hash(evidence);
   const sourceId = hash(`${payload.item.source.id}|${payload.item.source.sha256}|${evidenceHash}`).slice(0, 16);
@@ -66,6 +73,7 @@ export async function publish(batch: Batch) {
     // the transaction, so two concurrent revisions cannot silently overwrite.
     db.prepare("INSERT INTO import_assertions (value) SELECT CASE WHEN (SELECT status FROM import_batches WHERE id = ?) = 'validated' AND (SELECT batch_id FROM import_publications WHERE competition_id = ?) IS ? AND NOT EXISTS (SELECT 1 FROM sources WHERE id = ? AND (url != ? OR sha256 != ? OR object_key != ?)) THEN 1 ELSE 0 END")
       .bind(batch.id, competitionId, payload.baseBatchId, sourceId, payload.item.source.url, payload.item.source.sha256, objectKey),
+    db.prepare("INSERT INTO import_assertions (value) SELECT CASE WHEN NOT EXISTS (" + coverageQuery + ") THEN 1 ELSE 0 END").bind(competitionId, ...keys),
     ...writeStatements(payload, sourceId, objectKey),
     db.prepare("INSERT INTO import_publications (competition_id, batch_id) VALUES (?, ?) ON CONFLICT(competition_id) DO UPDATE SET batch_id = excluded.batch_id").bind(competitionId, batch.id),
     db.prepare("UPDATE import_batches SET status = 'published', published_at = ? WHERE id = ?").bind(new Date().toISOString(), batch.id),
@@ -76,6 +84,8 @@ export async function publish(batch: Batch) {
     const after = (await head(competitionId))?.batch_id ?? null;
     if (after === batch.id) return { id: batch.id, status: "published", competitionId, active: true };
     if (after !== payload.baseBatchId) throw new ImportConflict("Another revision was published first. Review the current competition before retrying.");
+    const omitted = await db.prepare(coverageQuery).bind(competitionId, ...keys).all();
+    if (omitted.results.length) throw new ImportConflict("The published event coverage changed. Include every current event before retrying.");
     throw error;
   }
   return { id: batch.id, status: "published", competitionId, active: true };
