@@ -1,0 +1,29 @@
+{
+  "source": "2026 USS AGN ST final, physical page 76; 2026 LT AGN Protocol, physical pages 106-107",
+  "rows": [
+    {
+      "line": "195 Evan Li Direct PEN",
+      "bib": "195",
+      "name": "Evan Li",
+      "rank": null,
+      "status": "PEN",
+      "affiliation": "Direct"
+    },
+    {
+      "line": "7 311 Alice Chamberlain Midway Speedskating DNS",
+      "bib": "311",
+      "name": "Alice Chamberlain",
+      "rank": 7,
+      "status": "DNS",
+      "affiliation": "Midway Speedskating"
+    },
+    {
+      "line": "10 307 Rafferty Richardson Midway Speedskating PEN",
+      "bib": "307",
+      "name": "Rafferty Richardson",
+      "rank": 10,
+      "status": "PEN",
+      "affiliation": "Midway Speedskating"
+    }
+  ]
+}

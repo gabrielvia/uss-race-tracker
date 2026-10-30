@@ -13,7 +13,9 @@ export async function POST(request: Request) {
   }
   try {
     const db = database();
-    const statements: D1PreparedStatement[] = [];
+    const hasPublication = await db.prepare("SELECT batch_id FROM import_publications LIMIT 1").first();
+    if (hasPublication) return Response.json({ error: "Bootstrap is disabled after validated publication." }, { status: 409 });
+    const statements: D1PreparedStatement[] = [db.prepare("INSERT INTO import_assertions (value) SELECT CASE WHEN NOT EXISTS (SELECT 1 FROM import_publications) THEN 1 ELSE 0 END")];
     for (const item of sample.competitions) {
       const { source, competition: c } = item;
       const existing = await db.prepare("SELECT sha256 FROM sources WHERE id = ?").bind(source.id).first<{ sha256: string }>();
@@ -28,10 +30,11 @@ export async function POST(request: Request) {
         db.prepare("INSERT INTO competitions (id, title, discipline, season, starts_on, ends_on, location, source_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(id) DO NOTHING").bind(c.id, c.title, c.discipline, c.season, c.startsOn, c.endsOn, c.location, source.id),
         ...item.participants.map(p => db.prepare("INSERT INTO participants (id, competition_id, bib, name, affiliation) VALUES (?, ?, ?, ?, ?) ON CONFLICT(id) DO NOTHING").bind(p.id, c.id, p.bib, p.name, p.affiliation)),
         ...item.entries.map(e => db.prepare("INSERT INTO entries (id, participant_id, division, age_status, raw_name, source_page) VALUES (?, ?, ?, ?, ?, ?) ON CONFLICT(id) DO NOTHING").bind(e.id, e.participantId, e.division, e.ageStatus, e.rawName, e.sourcePage)),
-        ...item.results.map(r => db.prepare("INSERT INTO results (id, competition_id, participant_id, race_id, distance, round, rank, time_raw, time_microseconds, qualification, source_page, event_key, event_label, race_label, heat_number, heat_total) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(id) DO UPDATE SET event_key = excluded.event_key, event_label = excluded.event_label, race_label = excluded.race_label, heat_number = excluded.heat_number, heat_total = excluded.heat_total").bind(r.id, c.id, r.participantId, r.raceId, r.distance, r.round, r.rank, r.timeRaw, r.timeMicroseconds, r.qualification, r.sourcePage, r.eventKey, r.eventLabel, r.raceLabel, r.heatNumber, r.heatTotal)),
+        ...item.results.map(r => db.prepare("INSERT INTO results (id, competition_id, participant_id, race_id, distance, round, rank, time_raw, time_microseconds, qualification, source_page, event_key, event_label, race_label, heat_number, heat_total, result_status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(id) DO UPDATE SET event_key = excluded.event_key, event_label = excluded.event_label, race_label = excluded.race_label, heat_number = excluded.heat_number, heat_total = excluded.heat_total, result_status = excluded.result_status").bind(r.id, c.id, r.participantId, r.raceId, r.distance, r.round, r.rank, r.timeRaw, r.timeMicroseconds, r.qualification, r.sourcePage, r.eventKey, r.eventLabel, r.raceLabel, r.heatNumber, r.heatTotal, r.status)),
       );
     }
     // D1 executes a single batch as one transaction: any SQL failure rolls it back.
+    statements.push(db.prepare("DELETE FROM import_assertions"));
     await db.batch(statements);
     return Response.json({ seeded: true, competitionCount: sample.competitions.length });
   } catch (error) { return unavailable(error); }

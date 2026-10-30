@@ -7,7 +7,7 @@ export type Participant = { id: string; bib: string; name: string; affiliation: 
 export type Entry = { id: string; participant_id: string; division: string; age_status: string | null; raw_name: string; source_page: number };
 export type RaceResult = {
   id: string; participant_id: string; race_id: string; distance: number; round: string;
-  rank: number; time_raw: string; qualification: string | null; source_page: number;
+  rank: number | null; result_status: "PEN" | "DNS" | "DNF" | "DQ" | null; time_raw: string | null; time_microseconds: number | null; qualification: string | null; source_page: number;
   event_key: string | null; event_label: string | null; race_label: string | null;
   heat_number: number | null; heat_total: number | null;
 };

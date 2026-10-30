@@ -8,7 +8,7 @@ import re
 from scripts.inspect_race import parse_race
 
 EVENT = re.compile(r"^(.+?)\s+(\d+)\s+(Quarter-Finals|Semi-Finals|Finals) Event #(\d+)$")
-RESULT_ROW = re.compile(r"^(?:\d+|PEN|DNS|DNF|DQ)\s+\d+\s+\S")
+RESULT_ROW = re.compile(r"^(?:(?:\d+|PEN|DNS|DNF|DQ)\s+\d+\s+\S|\d+\s+.+\s+(?:PEN|DNS|DNF|DQ)(?:\s|$))")
 
 
 def parse_event_pages(pages, roster, event_number):
@@ -89,7 +89,7 @@ def main():
         if any(p < 1 or p > len(pdf.pages) for p in args.pages):
             cli.error("A selected page is outside the PDF")
         event = parse_event_pages([(p, pdf.pages[p - 1].extract_text() or "") for p in args.pages], roster["observations"], args.event_number)
-    result = {"parser_version": "tempus-complete-event/0.1", "status": "complete_selected_event",
+    result = {"parser_version": "tempus-complete-event/0.2", "status": "complete_selected_event",
               "source_id": roster["source_id"], "source_url": roster["source_url"], "sha256": digest,
               "pages": args.pages, **event}
     args.output.parent.mkdir(parents=True, exist_ok=True)

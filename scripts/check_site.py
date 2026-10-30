@@ -57,7 +57,7 @@ def credentials():
             termios.tcsetattr(sys.stdin, termios.TCSANOW, previous)
 
 
-def check(origin, secret):
+def check(origin, secret, read_only=False):
     origin = validate_origin(origin)
     opener = build_opener(SameOriginRedirectHandler())
     def request(path, method="GET", seed_token=None):
@@ -78,9 +78,17 @@ def check(origin, secret):
     assert status == 200, f"The page returned HTTP {status}"
     status, _ = request("/api/admin/seed", "POST")
     assert status == 401, f"Unauthenticated import returned HTTP {status}"
-    for _ in range(2):
-        status, data = request("/api/admin/seed", "POST", secret["seed_token"])
-        assert status == 200 and data.get("seeded"), f"Sample import failed: HTTP {status}"
+    if not read_only:
+        for _ in range(2):
+            status, data = request("/api/admin/seed", "POST", secret["seed_token"])
+            assert status == 200 and data.get("seeded"), f"Sample import failed: HTTP {status}; use --read-only after validated publication"
+    for path, method in [("/api/imports", "GET"), ("/api/imports", "POST"),
+                         ("/api/imports/" + "0" * 64, "GET"),
+                         ("/api/imports/" + "0" * 64 + "/publish", "POST")]:
+        assert request(path, method)[0] == 401, "Ingestion must reject visitors without the machine token"
+    if secret.get("seed_token"):
+        status, head = request("/api/imports?competition=st-agn-2026", seed_token=secret["seed_token"])
+        assert status == 200 and "baseBatchId" in head
     status, health = request("/api/health")
     assert status == 200 and health["ready"] and health["competitionCount"] == 2
     status, listing = request("/api/competitions")
@@ -105,12 +113,13 @@ def check(origin, secret):
         counts[competition_id] = {"participants": expected_people, "entries": expected_entries, "results": expected_results}
     assert request("/api/competitions/not-a-competition")[0] == 404
     assert request("/api/sources/0000000000000000")[0] == 404
-    print(json.dumps({"passed": True, "checks": ["page", "import_auth", "repeat_import", "d1_queries", "r2_evidence", "missing_records"], "counts": counts}, indent=2))
+    print(json.dumps({"passed": True, "checks": ["page", "import_auth", "candidate_auth", "publication_head", "d1_queries", "r2_evidence", "missing_records"] + ([] if read_only else ["repeat_import"]), "counts": counts}, indent=2))
 
 
 if __name__ == "__main__":
     cli = argparse.ArgumentParser(description=__doc__)
     cli.add_argument("--url", required=True)
+    cli.add_argument("--read-only", action="store_true", help="Verify existing samples without re-running bootstrap.")
     cli.add_argument("--local-credentials", help="Read the ignored local .dev.vars file instead of stdin.")
     args = cli.parse_args()
     try:
@@ -123,7 +132,7 @@ if __name__ == "__main__":
             secret = {"seed_token": values["SEED_TOKEN"].strip()}
         else:
             secret = credentials()
-        check(args.url, secret)
+        check(args.url, secret, args.read_only)
     except Exception as error:
         print(f"Site verification failed: {type(error).__name__}: {error}", file=sys.stderr)
         sys.exit(1)

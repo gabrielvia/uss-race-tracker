@@ -60,3 +60,20 @@ class EventTests(unittest.TestCase):
         second = "RESULTS\nHeat 2 of 2 Race #102\n2 3 Skater 3 Club Three 1:21.000"
         with self.assertRaisesRegex(ValueError, "continuation"):
             parse_event_pages([(75, TEXT), (76, second)], ROSTER, "1")
+
+    def test_status_rows_are_included_in_complete_event_counts(self):
+        for status in ["PEN", "DNS", "DNF", "DQ"]:
+            for line in [f"{status} 3 Skater 3 Club Three", f"3 Skater 3 Club Three {status}", f"2 3 Skater 3 Club Three {status}"]:
+                with self.subTest(line=line):
+                    text = TEXT.replace("Heat 2 of 2", line + "\nHeat 2 of 2", 1)
+                    event = parse_event_pages([(75, text)], ROSTER, "1")
+                    self.assertEqual(event["heat_count"], 2)
+                    self.assertEqual(event["result_count"], 3)
+                    self.assertEqual(event["heats"][0]["result_count"], 2)
+                    self.assertEqual(event["results"][1]["status_raw"], status)
+                    self.assertEqual(event["results"][1]["bib"], "3")
+
+    def test_blank_place_status_on_an_unheaded_continuation_requires_review(self):
+        for text in ["3 Skater 3 Club Three PEN", "RESULTS\n3 Skater 3 Club Three DNS"]:
+            with self.subTest(text=text), self.assertRaisesRegex(ValueError, "continuation"):
+                parse_event_pages([(75, TEXT), (76, text)], ROSTER, "1")

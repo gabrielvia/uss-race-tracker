@@ -1,5 +1,5 @@
 {
-  "parser_version": "tempus-complete-event/0.1",
+  "parser_version": "tempus-complete-event/0.2",
   "status": "complete_selected_event",
   "source_id": "381947c967290f89",
   "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltdbe3948c37369bd8/69c21eeecf706153ff29d935/2026_USS_AGN_ST_final.pdf",
@@ -37,6 +37,8 @@
   "results": [
     {
       "rank": 1,
+      "status_raw": null,
+      "row_raw": "1 185 Lindsay Lin Garden State 1:20.448 Q",
       "bib": "185",
       "name_raw": "Lindsay Lin",
       "affiliation_raw": "Garden State",
@@ -57,6 +59,8 @@
     },
     {
       "rank": 2,
+      "status_raw": null,
+      "row_raw": "2 227 Yinyi Li Bay State 1:23.627 Q",
       "bib": "227",
       "name_raw": "Yinyi Li",
       "affiliation_raw": "Bay State",
@@ -77,6 +81,8 @@
     },
     {
       "rank": 3,
+      "status_raw": null,
+      "row_raw": "3 107 Jooha Park Northern California 1:28.326 Q",
       "bib": "107",
       "name_raw": "Jooha Park",
       "affiliation_raw": "Northern California",
@@ -97,6 +103,8 @@
     },
     {
       "rank": 4,
+      "status_raw": null,
+      "row_raw": "4 27 Frida Montes Direct 1:35.766",
       "bib": "27",
       "name_raw": "Frida Montes",
       "affiliation_raw": "Direct",
@@ -117,6 +125,8 @@
     },
     {
       "rank": 5,
+      "status_raw": null,
+      "row_raw": "5 178 Iris Ding Direct 1:37.690",
       "bib": "178",
       "name_raw": "Iris Ding",
       "affiliation_raw": "Direct",
@@ -137,6 +147,8 @@
     },
     {
       "rank": 1,
+      "status_raw": null,
+      "row_raw": "1 84 Jasmine Oler Oval 1:23.423 Q",
       "bib": "84",
       "name_raw": "Jasmine Oler",
       "affiliation_raw": "Oval",
@@ -157,6 +169,8 @@
     },
     {
       "rank": 2,
+      "status_raw": null,
+      "row_raw": "2 30 Iris Lian Direct 1:24.255 Q",
       "bib": "30",
       "name_raw": "Iris Lian",
       "affiliation_raw": "Direct",
@@ -177,6 +191,8 @@
     },
     {
       "rank": 3,
+      "status_raw": null,
+      "row_raw": "3 189 Gaoya Gu Northern California 1:24.463 Q",
       "bib": "189",
       "name_raw": "Gaoya Gu",
       "affiliation_raw": "Northern California",
@@ -197,6 +213,8 @@
     },
     {
       "rank": 4,
+      "status_raw": null,
+      "row_raw": "4 177 Celine Fu Potomac 1:33.217",
       "bib": "177",
       "name_raw": "Celine Fu",
       "affiliation_raw": "Potomac",
@@ -217,6 +235,8 @@
     },
     {
       "rank": 5,
+      "status_raw": null,
+      "row_raw": "5 115 Meinuo Li Santa Clarita 1:49.835",
       "bib": "115",
       "name_raw": "Meinuo Li",
       "affiliation_raw": "Santa Clarita",
@@ -237,6 +257,8 @@
     },
     {
       "rank": 1,
+      "status_raw": null,
+      "row_raw": "1 57 Aurora Ye Potomac 1:22.207 Q",
       "bib": "57",
       "name_raw": "Aurora Ye",
       "affiliation_raw": "Potomac",
@@ -257,6 +279,8 @@
     },
     {
       "rank": 2,
+      "status_raw": null,
+      "row_raw": "2 198 Erene Wang Garden State 1:26.354 Q",
       "bib": "198",
       "name_raw": "Erene Wang",
       "affiliation_raw": "Garden State",
@@ -277,6 +301,8 @@
     },
     {
       "rank": 3,
+      "status_raw": null,
+      "row_raw": "3 113 Zixuan Zhang Santa Clarita 1:32.052 Q",
       "bib": "113",
       "name_raw": "Zixuan Zhang",
       "affiliation_raw": "Santa Clarita",
@@ -297,6 +323,8 @@
     },
     {
       "rank": 4,
+      "status_raw": null,
+      "row_raw": "4 259 Candice Gao Direct 1:32.481 Q",
       "bib": "259",
       "name_raw": "Candice Gao",
       "affiliation_raw": "Direct",
