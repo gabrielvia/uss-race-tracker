@@ -17,7 +17,7 @@ Data source: [US Speedskating results](https://www.usspeedskating.org/results).
 
 ## Project status
 
-Source-data validation is underway. The repository includes a 498-entry directory snapshot, bounded PDF roster and race extractors, structured samples, and regression tests. Application UI, database setup, bulk imports, and deployment are not implemented yet.
+The source-validation milestone and the minimal local/Sites application foundation are implemented. The repository includes a 498-entry directory snapshot, PDF sampling tools, a React/TypeScript app in `web/`, D1/R2 integration, and a private deployment using two real competition samples. Selected-event results combine all heats within the same group, gender, distance, and round, with original heat places retained. Bulk imports, cross-competition profiles, skating-age inference, and charts remain planned.
 
 All product UI, code, comments, help text, and operational documentation will be in English. Planning documents may contain Chinese.
 
@@ -26,5 +26,11 @@ All product UI, code, comments, help text, and operational documentation will be
 Run `python3 -m unittest discover -s tests -v` for the offline tests. PDF extraction additionally requires the packages in `requirements-data.txt`.
 
 See [source validation](docs/source-validation.md) for findings, coverage limits, and reproducible download and extraction commands.
+
+## Run the application
+
+See [local setup and Sites publication](docs/local-sites-foundation.md) for startup, migrations, authenticated sample import, API verification, and deployment instructions.
+
+Private Site: [USS Race Tracker](https://uss-race-tracker.basicsnail67.chatgpt.site).
 
 See the [implementation plan](docs/implementation-plan.md) for milestones, data-import requirements, and the agreed skating-age rules.
