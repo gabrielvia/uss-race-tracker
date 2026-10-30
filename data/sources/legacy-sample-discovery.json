@@ -1,0 +1,12 @@
+{
+  "source_id": "040712371ac28564",
+  "entry_url": "https://www.usspeedskating.org/events/results/2014/march/21/2014-st-national-age-group",
+  "checked_on": "2026-10-29",
+  "http_status": 200,
+  "page_sha256": "e50bb2ca4140d74305c9a4aa8e40187c72a0ef9d32031153ad2218248d1cfaf9",
+  "discovered_file_url": "https://teamusa-org-migration.s3.amazonaws.com/US%20Speedskating/Migration/Documents/2014%20ST%20Age%20Group_compiled.pdf",
+  "status": "file_discovered_not_downloaded",
+  "issues": [
+    "legacy_pdf_layout_not_validated"
+  ]
+}
