@@ -1,5 +1,12 @@
 # Repository instructions
 
+## Product language
+
+- All shipped UI text, help, tooltips, errors, code, identifiers, comments, tests, and operational documentation must be in English. English abbreviations are allowed.
+- Planning documents and conversations may contain Chinese; they are not product copy.
+- Preserve original source names and proper nouns. Do not translate or alter skater names, club names, or original evidence.
+- The Chinese explanatory text in the implementation plan is for planning only; ship only the English Skating age explanation.
+
 ## Pull request merge policy
 
 - Use **squash and merge** for all pull requests by default.

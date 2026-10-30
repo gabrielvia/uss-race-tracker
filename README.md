@@ -17,6 +17,14 @@ Data source: [US Speedskating results](https://www.usspeedskating.org/results).
 
 ## Project status
 
-Planning and source-data investigation. Application code, database setup, and deployment are not implemented yet.
+Source-data validation is underway. The repository includes a 498-entry directory snapshot, bounded PDF roster and race extractors, structured samples, and regression tests. Application UI, database setup, bulk imports, and deployment are not implemented yet.
+
+All product UI, code, comments, help text, and operational documentation will be in English. Planning documents may contain Chinese.
+
+## Data tooling
+
+Run `python3 -m unittest discover -s tests -v` for the offline tests. PDF extraction additionally requires the packages in `requirements-data.txt`.
+
+See [source validation](docs/source-validation.md) for findings, coverage limits, and reproducible download and extraction commands.
 
 See the [implementation plan](docs/implementation-plan.md) for milestones, data-import requirements, and the agreed skating-age rules.
