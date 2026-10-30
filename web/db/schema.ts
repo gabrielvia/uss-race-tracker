@@ -1,4 +1,5 @@
-import { integer, sqliteTable, text, index, uniqueIndex } from "drizzle-orm/sqlite-core";
+import { sql } from "drizzle-orm";
+import { integer, sqliteTable, text, index, uniqueIndex, check } from "drizzle-orm/sqlite-core";
 
 export const sources = sqliteTable("sources", {
   id: text("id").primaryKey(), url: text("url").notNull(),
@@ -24,8 +25,23 @@ export const results = sqliteTable("results", {
   id: text("id").primaryKey(), competitionId: text("competition_id").notNull().references(() => competitions.id),
   participantId: text("participant_id").notNull().references(() => participants.id),
   raceId: text("race_id").notNull(), distance: integer("distance").notNull(), round: text("round").notNull(),
-  rank: integer("rank").notNull(), timeRaw: text("time_raw").notNull(), timeMicroseconds: integer("time_microseconds").notNull(),
+  rank: integer("rank"), timeRaw: text("time_raw"), timeMicroseconds: integer("time_microseconds"),
+  resultStatus: text("result_status"),
   qualification: text("qualification"), sourcePage: integer("source_page").notNull(),
   eventKey: text("event_key"), eventLabel: text("event_label"), raceLabel: text("race_label"),
   heatNumber: integer("heat_number"), heatTotal: integer("heat_total"),
 }, (t) => [index("result_competition_distance").on(t.competitionId, t.distance)]);
+
+export const importBatches = sqliteTable("import_batches", {
+  id: text("id").primaryKey(), candidateKey: text("candidate_key").notNull(),
+  status: text("status").notNull(), reportJson: text("report_json").notNull(),
+  createdAt: text("created_at").notNull(), publishedAt: text("published_at"),
+});
+export const importPublications = sqliteTable("import_publications", {
+  competitionId: text("competition_id").primaryKey(),
+  batchId: text("batch_id").notNull().references(() => importBatches.id),
+});
+// Inserting zero aborts the whole D1 batch, including concurrent stale publishes.
+export const importAssertions = sqliteTable("import_assertions", {
+  value: integer("value").notNull(),
+}, () => [check("import_assertion_passes", sql`value = 1`)]);

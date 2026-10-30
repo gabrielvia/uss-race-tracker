@@ -17,7 +17,7 @@ The [architecture](admin-architecture.md) defines the product boundaries. This p
 | A6 | Admin-managed recurring imports | A5 | A real unattended run uses the same validation pipeline; pause and retry behavior are verified |
 | A7 | Completion email reports and notification history | A6 + configured email integration | A real delivery is verified; retries do not duplicate messages or imports |
 
-**First usable Admin milestone: A1-A4.** Administrators can log in, receive local parser batches, inspect validation, and publish results before cloud parsing and scheduling are introduced. A0 and A2 begin during the current main phase 3. A1 can start after A0 resolves the access and storage contracts. Do not defer all Admin work until after viewer charts.
+**First usable Admin milestone: A1-A4.** Administrators can log in, receive local parser batches, inspect validation, and publish results before cloud parsing and scheduling are introduced. Admin implementation is deferred by the user while work focuses on the main website. Main phase 3 first implements its own protected ingestion contract; future A2 can integrate with it. Do not create an Admin project, domain, UI, login or scheduler during the current viewer milestone. All Admin milestones remain pending.
 
 ## A0. Resolve platform and integration contracts
 

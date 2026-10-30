@@ -34,7 +34,7 @@ def prepare():
                 raise ValueError("A race result references an unknown participant")
             results.append({"id": f"{competition_id}:{result['race_id']}:{result['bib']}",
                             "participantId": f"{competition_id}:{result['bib']}", "raceId": result["race_id"],
-                            "distance": result["distance_metres"], "round": result["round_raw"], "rank": result["rank"],
+                            "distance": result["distance_metres"], "round": result["round_raw"], "rank": result["rank"], "status": result["status_raw"],
                             "timeRaw": result["time_raw"], "timeMicroseconds": result["time_microseconds"],
                             "qualification": result["qualification_raw"], "sourcePage": result["source_page"],
                             "eventKey": sha256(f"{competition_id}|{result['event_label_raw']}".encode()).hexdigest()[:20],
@@ -46,7 +46,7 @@ def prepare():
                                    "objectKey": f"samples/{roster['sha256']}.json"},
                         "participants": list(participants.values()), "entries": entries, "results": results,
                         "evidence": {"roster": roster, "race": race}})
-    return {"schemaVersion": 1, "competitions": records}
+    return {"schemaVersion": 2, "competitions": records}
 
 
 if __name__ == "__main__":

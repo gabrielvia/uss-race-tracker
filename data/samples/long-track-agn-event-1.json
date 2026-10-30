@@ -1,5 +1,5 @@
 {
-  "parser_version": "tempus-complete-event/0.1",
+  "parser_version": "tempus-complete-event/0.2",
   "status": "complete_selected_event",
   "source_id": "9567603f2ef7d57a",
   "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt705a59087737d2c2/69939b7d8b33e4000870a8e7/2026_LT_AGN_Protocol.pdf",
@@ -23,6 +23,8 @@
   "results": [
     {
       "rank": 1,
+      "status_raw": null,
+      "row_raw": "1 368 Luciana Molinares Rodriguez Midway Speedskating 0:51.630",
       "bib": "368",
       "name_raw": "Luciana Molinares Rodriguez",
       "affiliation_raw": "Midway Speedskating",
@@ -43,6 +45,8 @@
     },
     {
       "rank": 2,
+      "status_raw": null,
+      "row_raw": "2 346 Caroline Saehee Lippert Midway Speedskating 1:03.830",
       "bib": "346",
       "name_raw": "Caroline Saehee Lippert",
       "affiliation_raw": "Midway Speedskating",
@@ -63,6 +67,8 @@
     },
     {
       "rank": 3,
+      "status_raw": null,
+      "row_raw": "3 373 Isabella Ramos Young Midway Speedskating 1:06.760",
       "bib": "373",
       "name_raw": "Isabella Ramos Young",
       "affiliation_raw": "Midway Speedskating",
@@ -83,6 +89,8 @@
     },
     {
       "rank": 4,
+      "status_raw": null,
+      "row_raw": "4 315 Ada Cao Bay State Speedskating 1:06.870",
       "bib": "315",
       "name_raw": "Ada Cao",
       "affiliation_raw": "Bay State Speedskating",
@@ -103,6 +111,8 @@
     },
     {
       "rank": 5,
+      "status_raw": null,
+      "row_raw": "5 309 Zoe Barron-Eshleman Midway Speedskating 1:10.370",
       "bib": "309",
       "name_raw": "Zoe Barron-Eshleman",
       "affiliation_raw": "Midway Speedskating",
@@ -123,6 +133,8 @@
     },
     {
       "rank": 6,
+      "status_raw": null,
+      "row_raw": "6 330 Julia Dallmeyer Midway Speedskating 1:10.540",
       "bib": "330",
       "name_raw": "Julia Dallmeyer",
       "affiliation_raw": "Midway Speedskating",
@@ -143,6 +155,8 @@
     },
     {
       "rank": 7,
+      "status_raw": null,
+      "row_raw": "7 354 Evangeline Milles Midway Speedskating 1:21.420",
       "bib": "354",
       "name_raw": "Evangeline Milles",
       "affiliation_raw": "Midway Speedskating",

@@ -27,29 +27,60 @@ def parse_race(text, roster, race_id):
             continue
         if race != race_id:
             continue
-        row = re.match(r"^(\d+)\s+(\d+)\s+(.+)$", line)
-        if not row:
-            continue
-        rank, bib, remainder = row.groups()
+        row = re.match(r"^(\d+|PEN|DNS|DNF|DQ)\s+(\d+)\s+(.+)$", line)
+        prefix_status = None
+        if row:
+            place, bib, remainder = row.groups()
+            rank = int(place) if place.isdigit() else None
+            prefix_status = None if place.isdigit() else place
+        else:
+            # Tempus short-track protocols leave place blank for status rows.
+            row = re.match(r"^(\d+)\s+(.+)$", line)
+            if not row:
+                continue
+            bib, remainder = row.groups()
+            if bib not in names:
+                if re.search(r"\b(PEN|DNS|DNF|DQ)\b", remainder):
+                    raise ValueError(f"Cannot match bib {bib} to this competition's roster")
+                continue
+            rank = None
         candidates = sorted((name for name in names.get(bib, ()) if remainder.startswith(name + " ")), key=len, reverse=True)
         if not candidates:
             raise ValueError(f"Cannot match bib {bib} to this competition's roster")
         name = candidates[0]
-        finish = re.search(r"\s(\d+:\d{2}\.\d{1,6})(?:\s+(.*))?$", remainder)
-        if not finish:
+        tail = remainder[len(name):].strip()
+        finish = re.search(r"(?<!\S)((?:\d+:)?\d{1,2}\.\d{1,6})(?!\S)", tail)
+        statuses = list(re.finditer(r"(?<!\S)(PEN|DNS|DNF|DQ)(?!\S)", tail))
+        codes = {m[1] for m in statuses}
+        if prefix_status:
+            codes.add(prefix_status)
+        if len(codes) > 1:
+            raise ValueError(f"Conflicting result statuses for bib {bib}")
+        status = next(iter(codes), None)
+        if not finish and not status or rank is None and not status:
             raise ValueError(f"Unsupported finish for bib {bib}; review the original page")
-        minutes, seconds = finish[1].split(":")
-        if Decimal(seconds) >= 60:
-            raise ValueError(f"Invalid seconds for bib {bib}")
+        raw_time, microseconds, decimal_places = None, None, None
+        if finish:
+            raw_time = finish[1]
+            minutes, seconds = raw_time.split(":") if ":" in raw_time else ("0", raw_time)
+            if Decimal(seconds) >= 60:
+                raise ValueError(f"Invalid seconds for bib {bib}")
+            microseconds = int((int(minutes) * 60 + Decimal(seconds)) * 1_000_000)
+            decimal_places = len(seconds.split(".")[1])
+        markers = ([finish] if finish else []) + statuses
+        boundary = min(m.start() for m in markers) if markers else len(tail)
+        affiliation = tail[:boundary].strip()
+        suffix = tail[boundary:]
+        suffix = re.sub(r"(?<!\S)(?:PEN|DNS|DNF|DQ|(?:\d+:)?\d{1,2}\.\d{1,6})(?!\S)", "", suffix).strip()
         event_match = re.search(r"\s(\d+)\s+(Quarter-Finals|Semi-Finals|Finals) Event #(\d+)$", event or "")
         if not event_match:
             raise ValueError("Unsupported event label; cannot safely determine distance and round")
         rows.append({
-            "rank": int(rank), "bib": bib, "name_raw": name,
-            "affiliation_raw": remainder[len(name):finish.start()].strip(),
-            "time_raw": finish[1], "time_microseconds": int((int(minutes) * 60 + Decimal(seconds)) * 1_000_000),
-            "timing_decimal_places": len(seconds.split(".")[1]),
-            "qualification_raw": finish[2] or None, "event_label_raw": event,
+            "rank": rank, "status_raw": status, "row_raw": line, "bib": bib, "name_raw": name,
+            "affiliation_raw": affiliation,
+            "time_raw": raw_time, "time_microseconds": microseconds,
+            "timing_decimal_places": decimal_places,
+            "qualification_raw": suffix or None, "event_label_raw": event,
             "event_number": event_match[3], "distance_metres": int(event_match[1]),
             "round_raw": event_match[2], "race_id": race, "race_label_raw": race_label,
         })
@@ -76,7 +107,7 @@ def main():
             cli.error("--page is outside the PDF")
         rows = parse_race(pdf.pages[args.page - 1].extract_text() or "", roster["observations"], args.race_id)
     result = {
-        "parser_version": "tempus-selected-race/0.1", "status": "sample_requires_review",
+        "parser_version": "tempus-selected-race/0.2", "status": "sample_requires_review",
         "source_id": roster["source_id"], "source_url": roster["source_url"], "sha256": digest,
         "page": args.page, "race_id": args.race_id, "result_count": len(rows), "results": rows,
     }

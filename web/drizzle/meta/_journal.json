@@ -15,6 +15,20 @@
       "when": 1793331448062,
       "tag": "0001_regular_amazoness",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793336667503,
+      "tag": "0002_fine_juggernaut",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1793381012754,
+      "tag": "0003_early_jigsaw",
+      "breakpoints": true
     }
   ]
 }
