@@ -57,7 +57,7 @@ def credentials():
             termios.tcsetattr(sys.stdin, termios.TCSANOW, previous)
 
 
-def check(origin, secret, read_only=False):
+def check(origin, secret, read_only=False, legacy_sample=False):
     origin = validate_origin(origin)
     opener = build_opener(SameOriginRedirectHandler())
     def request(path, method="GET", seed_token=None):
@@ -93,32 +93,56 @@ def check(origin, secret, read_only=False):
     assert status == 200 and health["ready"] and health["competitionCount"] == 2
     status, listing = request("/api/competitions")
     assert status == 200 and len(listing["competitions"]) == 2
+    if __package__:
+        from .prepare_web_sample import prepare
+    else:
+        from prepare_web_sample import prepare
     counts = {}
-    for competition_id, expected_people, expected_entries, expected_results in [("st-agn-2026", 213, 213, 14), ("lt-agn-2026", 76, 77, 7)]:
+    for item in prepare()["competitions"]:
+        competition_id = item["competition"]["id"]
+        expected_events = item["evidence"]["events"][:1] if legacy_sample else item["evidence"]["events"]
+        expected_labels = {e["event_label_raw"] for e in expected_events}
+        expected_rows = {r["id"]: r for r in item["results"] if r["eventLabel"] in expected_labels}
         status, detail = request("/api/competitions/" + competition_id)
         assert status == 200
-        assert len(detail["participants"]) == expected_people, "Participant count changed after repeat import"
-        assert len(detail["entries"]) == expected_entries, "Participation observations were lost or duplicated"
-        assert len(detail["results"]) == expected_results
-        assert len({r["event_key"] for r in detail["results"]}) == 1
-        assert all(r["event_label"] for r in detail["results"])
-        if competition_id == "st-agn-2026":
-            assert {r["heat_number"] for r in detail["results"]} == {1, 2, 3}
-            assert all("Women's" in r["event_label"] and r["round"] == "Quarter-Finals" for r in detail["results"])
-            assert [r["time_microseconds"] for r in detail["results"]] == sorted(r["time_microseconds"] for r in detail["results"])
-        source_id = detail["competition"]["source_id"]
-        status, evidence = request("/api/sources/" + source_id)
-        assert status == 200 and evidence["roster"]["sha256"] == evidence["race"]["sha256"]
-        assert evidence["race"]["result_count"] == expected_results
-        counts[competition_id] = {"participants": expected_people, "entries": expected_entries, "results": expected_results}
+        assert len(detail["participants"]) == len(item["participants"]), "Participant count changed"
+        assert len(detail["entries"]) == len(item["entries"]), "Participation observations were lost or duplicated"
+        assert len(detail["results"]) == len(expected_rows)
+        assert detail["coverage"] == {"kind": "selected-events", "eventCount": len(expected_events), "completeCompetition": False}
+        assert len(detail["events"]) == len(expected_events)
+        for row in detail["results"]:
+            expected = expected_rows[row["id"]]
+            for actual_key, expected_key in [("event_label", "eventLabel"), ("time_raw", "timeRaw"), ("time_microseconds", "timeMicroseconds"),
+                                             ("result_status", "status"), ("rank", "rank"), ("source_page", "sourcePage")]:
+                assert row[actual_key] == expected[expected_key], f"A source result changed: {actual_key}"
+        for event in detail["events"]:
+            expected = next(e for e in expected_events if e["event_number"] == event["source_event_number"])
+            rows = [r for r in detail["results"] if r["event_key"] == event["id"]]
+            assert event["label"] == expected["event_label_raw"]
+            assert event["result_count"] == len(rows) == expected["result_count"]
+            assert event["heat_count"] == len({r["race_id"] for r in rows}) == expected["heat_count"]
+            assert all(r["event_label"] == event["label"] and r["distance"] == event["distance"] and r["round"] == event["round"] for r in rows)
+            timed = [r for r in rows if r["result_status"] is None and r["time_microseconds"] is not None]
+            assert rows[:len(timed)] == timed, "Status records preceded timed finishers"
+            assert [r["time_microseconds"] for r in timed] == sorted(r["time_microseconds"] for r in timed)
+        listed = next(c for c in listing["competitions"] if c["id"] == competition_id)
+        assert listed["event_count"] == len(expected_events) and listed["result_count"] == len(expected_rows)
+        status, evidence = request("/api/sources/" + detail["competition"]["source_id"])
+        assert status == 200
+        source_events = evidence.get("events") or [evidence["race"]]
+        assert len(source_events) == len(expected_events)
+        assert all(e["sha256"] == evidence["roster"]["sha256"] for e in source_events)
+        assert sum(e["result_count"] for e in source_events) == len(expected_rows)
+        counts[competition_id] = {"participants": len(item["participants"]), "entries": len(item["entries"]), "results": len(expected_rows), "events": len(expected_events)}
     assert request("/api/competitions/not-a-competition")[0] == 404
     assert request("/api/sources/0000000000000000")[0] == 404
-    print(json.dumps({"passed": True, "checks": ["page", "import_auth", "candidate_auth", "publication_head", "d1_queries", "r2_evidence", "missing_records"] + ([] if read_only else ["repeat_import"]), "counts": counts}, indent=2))
+    print(json.dumps({"passed": True, "checks": ["page", "import_auth", "candidate_auth", "d1_queries", "event_isolation", "coverage", "r2_evidence", "missing_records"] + (["publication_head"] if secret.get("seed_token") else []) + ([] if read_only else ["repeat_import"]), "counts": counts}, indent=2))
 
 
 if __name__ == "__main__":
     cli = argparse.ArgumentParser(description=__doc__)
     cli.add_argument("--url", required=True)
+    cli.add_argument("--legacy-sample", action="store_true", help="Verify the original one-event samples before expansion.")
     cli.add_argument("--read-only", action="store_true", help="Verify existing samples without re-running bootstrap.")
     cli.add_argument("--local-credentials", help="Read the ignored local .dev.vars file instead of stdin.")
     args = cli.parse_args()
@@ -132,7 +156,7 @@ if __name__ == "__main__":
             secret = {"seed_token": values["SEED_TOKEN"].strip()}
         else:
             secret = credentials()
-        check(args.url, secret, args.read_only)
+        check(args.url, secret, args.read_only, args.legacy_sample)
     except Exception as error:
         print(f"Site verification failed: {type(error).__name__}: {error}", file=sys.stderr)
         sys.exit(1)

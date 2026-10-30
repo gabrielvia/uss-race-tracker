@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { z } from "zod";
 import { COMPETITION_ID } from "@/lib/competition-id";
 
-export const VALIDATION_VERSION = "selected-event/2";
+export const VALIDATION_VERSION = "competition-events/3";
 const label = z.string().min(1).max(300).refine(value => value.trim().length > 0, "A nonblank value is required.");
 const id = z.string().regex(/^[a-zA-Z0-9:_-]{1,180}$/);
 const positive = z.number().int().positive().max(1_000_000_000);
@@ -29,7 +29,7 @@ const result = z.object({
   sourcePage: page, eventKey: id, eventLabel: label, raceLabel: label,
   heatNumber: positive.nullable(), heatTotal: positive.nullable(),
 }).strict();
-const contract = z.object({
+const singleContract = z.object({
   schemaVersion: z.literal(2), coverage: z.literal("selected-event"),
   baseBatchId: digest.nullable(),
   review: z.object({ reviewer: label, seasonSourceLabel: label, notes: label, confirmed: z.literal(true) }).strict(),
@@ -58,12 +58,23 @@ const contract = z.object({
     }).strict(),
   }).strict(),
 }).strict();
-export type ImportPayload = z.infer<typeof contract>;
+const multiContract = singleContract.extend({
+  schemaVersion: z.literal(3), coverage: z.literal("selected-events"),
+  item: singleContract.shape.item.extend({
+    evidence: z.object({
+      roster: singleContract.shape.item.shape.evidence.shape.roster,
+      events: z.array(singleContract.shape.item.shape.evidence.shape.race).min(1).max(20),
+    }).strict(),
+  }),
+});
+export type SingleEventPayload = z.infer<typeof singleContract>;
+export type ImportPayload = SingleEventPayload | z.infer<typeof multiContract>;
 export type Issue = { code: string; path: string; message: string };
 export type ValidationReport = {
   validationVersion: string; valid: boolean; errors: Issue[]; warnings: Issue[];
-  counts?: { participants: number; entries: number; results: number; heats: number };
-  coverage: "selected-event";
+  counts?: { participants: number; entries: number; results: number; heats: number; events?: number };
+  coverage: "selected-event" | "selected-events";
+  events?: { eventKey: string; sourceEventNumber: string; label: string; valid: boolean; resultCount: number; heatCount: number; errors: Issue[] }[];
 };
 export function canonical(value: unknown): string {
   if (Array.isArray(value)) return `[${value.map(canonical).join(",")}]`;
@@ -81,9 +92,9 @@ function validDate(value: string): boolean {
   const date = new Date(`${value}T00:00:00Z`);
   return Number.isFinite(date.valueOf()) && date.toISOString().slice(0, 10) === value;
 }
-export function validate(value: unknown): { payload?: ImportPayload; report: ValidationReport } {
+function validateSingle(value: unknown): { payload?: SingleEventPayload; report: ValidationReport } {
   const report: ValidationReport = { validationVersion: VALIDATION_VERSION, valid: false, errors: [], warnings: [], coverage: "selected-event" };
-  const parsed = contract.safeParse(value);
+  const parsed = singleContract.safeParse(value);
   if (!parsed.success) {
     report.errors = parsed.error.issues.slice(0, 100).map(i => ({ code: "SCHEMA", path: i.path.join("."), message: i.message }));
     return { report };
@@ -143,6 +154,54 @@ export function validate(value: unknown): { payload?: ImportPayload; report: Val
     { code: "COMPETITION_LOCAL_IDENTITY", path: "item.participants", message: "Bibs identify people only within this competition. Cross-competition identity and skating age are not inferred." },
     { code: "OPERATOR_REVIEW", path: "review", message: "Metadata, season assignment and PDF extraction require the recorded operator review. Validation does not independently verify the original PDF." },
   ];
+  report.valid = report.errors.length === 0;
+  return { payload, report };
+}
+
+
+export function validate(value: unknown): { payload?: ImportPayload; report: ValidationReport } {
+  if (!value || typeof value !== "object" || (value as { schemaVersion?: unknown }).schemaVersion !== 3) {
+    const checked = validateSingle(value);
+    if (checked.payload) {
+      const event = checked.payload.item.evidence.race;
+      checked.report.events = [{ eventKey: hash(`${checked.payload.item.competition.id}|${event.event_label_raw}`).slice(0, 20), sourceEventNumber: event.event_number, label: event.event_label_raw, valid: checked.report.valid, resultCount: event.results.length, heatCount: event.heats.length, errors: checked.report.errors }];
+      if (checked.report.counts) checked.report.counts.events = 1;
+    }
+    return checked;
+  }
+  const report: ValidationReport = { validationVersion: VALIDATION_VERSION, valid: false, errors: [], warnings: [], coverage: "selected-events", events: [] };
+  const parsed = multiContract.safeParse(value);
+  if (!parsed.success) {
+    report.errors = parsed.error.issues.slice(0, 100).map(i => ({ code: "SCHEMA", path: i.path.join("."), message: i.message }));
+    return { report };
+  }
+  const payload = parsed.data;
+  const { item } = payload;
+  const expectedResults: typeof item.results = [];
+  const eventKeys = new Set<string>(), eventNumbers = new Set<string>(), raceIds = new Set<string>();
+  let heats = 0;
+  const add = (code: string, path: string, message: string) => { if (report.errors.length < 100) report.errors.push({ code, path, message }); };
+  for (const [index, event] of item.evidence.events.entries()) {
+    const eventKey = hash(`${item.competition.id}|${event.event_label_raw}`).slice(0, 20);
+    if (eventKeys.has(eventKey) || eventNumbers.has(event.event_number)) add("DUPLICATE_EVENT", `item.evidence.events.${index}`, "Each source event number and event label must occur exactly once.");
+    eventKeys.add(eventKey); eventNumbers.add(event.event_number);
+    for (const heat of event.heats) {
+      if (raceIds.has(heat.race_id)) add("DUPLICATE_RACE", `item.evidence.events.${index}.heats`, "A source race ID cannot be reused across selected events in this parser contract.");
+      raceIds.add(heat.race_id);
+    }
+    const rows = item.results.filter(r => r.eventKey === eventKey);
+    const checked = validateSingle({ ...payload, schemaVersion: 2, coverage: "selected-event", item: { ...item, results: rows, evidence: { roster: item.evidence.roster, race: event } } });
+    const errors = checked.report.errors.map(i => ({ ...i, path: i.path.replace("item.evidence.race", `item.evidence.events.${index}`) }));
+    for (const issue of errors) add(issue.code, issue.path, issue.message);
+    report.events!.push({ eventKey, sourceEventNumber: event.event_number, label: event.event_label_raw, valid: checked.report.valid, resultCount: event.results.length, heatCount: event.heats.length, errors });
+    expectedResults.push(...rows);
+    heats += event.heats.length;
+    if (!report.warnings.length) report.warnings = checked.report.warnings.filter(i => i.code !== "SELECTED_EVENT_ONLY");
+  }
+  if (canonical(expectedResults) !== canonical(item.results)) add("EVENT_RESULT_MAPPING", "item.results", "Every result must belong to exactly one declared event, in declared event order.");
+  if (new Set(item.results.map(r => r.id)).size !== item.results.length) add("DUPLICATE_RESULT", "item.results", "Result IDs must be unique across the competition.");
+  report.warnings.unshift({ code: "SELECTED_EVENTS_ONLY", path: "coverage", message: "All declared events are checked, but the rest of the competition protocol has not been imported." });
+  report.counts = { participants: item.participants.length, entries: item.entries.length, results: item.results.length, heats, events: item.evidence.events.length };
   report.valid = report.errors.length === 0;
   return { payload, report };
 }

@@ -15,7 +15,7 @@ class ImportBatchTests(unittest.TestCase):
             pdf.write_bytes(b"%PDF-test")
             item = {"source": {"sha256": sha256(pdf.read_bytes()).hexdigest(), "objectKey": "ignored"}}
             result = prepare_candidate(item, pdf, "Operator", "2025-2026", "Reviewed PDF")
-            self.assertEqual(result["coverage"], "selected-event")
+            self.assertEqual(result["coverage"], "selected-events")
             self.assertIsNone(result["baseBatchId"])
             self.assertNotIn("objectKey", result["item"]["source"])
             self.assertIn("objectKey", item["source"])

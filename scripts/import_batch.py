@@ -1,4 +1,4 @@
-"""Prepare, submit, inspect or explicitly publish a selected-event import batch."""
+"""Prepare, submit, inspect or explicitly publish a selected-events import batch."""
 import argparse
 from hashlib import sha256
 import json
@@ -23,6 +23,8 @@ MAX_BYTES = 2 * 1024 * 1024
 def prepare_candidate(item, pdf, reviewer, season_label, notes, base_batch_id=None):
     item = json.loads(json.dumps(item))
     item["source"].pop("objectKey", None)
+    if "evidence" in item and "race" in item["evidence"] and "events" not in item["evidence"]:
+        item["evidence"]["events"] = [item["evidence"].pop("race")]
     with Path(pdf).open("rb") as source:
         digest = sha256()
         for chunk in iter(lambda: source.read(1024 * 1024), b""):
@@ -33,7 +35,7 @@ def prepare_candidate(item, pdf, reviewer, season_label, notes, base_batch_id=No
         raise ValueError("Reviewer, original season label and review notes are required.")
     if base_batch_id is not None and not re.fullmatch(r"[a-f0-9]{64}", base_batch_id):
         raise ValueError("baseBatchId must be the current published batch ID.")
-    return {"schemaVersion": 2, "coverage": "selected-event", "baseBatchId": base_batch_id,
+    return {"schemaVersion": 3, "coverage": "selected-events", "baseBatchId": base_batch_id,
             "review": {"reviewer": reviewer, "seasonSourceLabel": season_label, "notes": notes, "confirmed": True},
             "item": item}
 
@@ -86,7 +88,7 @@ def main():
     make = actions.add_parser("prepare", help="Prepare an explicitly reviewed candidate; never publish it.")
     source = make.add_mutually_exclusive_group(required=True)
     source.add_argument("--competition", choices=["st-agn-2026", "lt-agn-2026"], help="Use a checked sample extraction.")
-    source.add_argument("--item", type=Path, help="A normalized competition item with roster and one complete event's evidence.")
+    source.add_argument("--item", type=Path, help="A normalized competition item with roster and complete selected events' evidence.")
     for name in ["pdf", "output"]:
         make.add_argument("--" + name, type=Path, required=True)
     for name in ["reviewer", "season-label", "notes"]:
@@ -112,7 +114,7 @@ def main():
                 raise ValueError("Candidate exceeds the 2 MiB limit.")
             args.output.parent.mkdir(parents=True, exist_ok=True)
             args.output.write_text(encoded, encoding="utf-8")
-            print(json.dumps({"prepared": True, "path": str(args.output), "coverage": "selected-event", "published": False}))
+            print(json.dumps({"prepared": True, "path": str(args.output), "coverage": "selected-events", "published": False}))
             return 0
         origin = validate_origin(args.url)
         candidate = read_candidate(args.candidate) if args.action == "submit" else None

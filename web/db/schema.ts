@@ -11,6 +11,11 @@ export const competitions = sqliteTable("competitions", {
   startsOn: text("starts_on").notNull(), endsOn: text("ends_on").notNull(),
   location: text("location").notNull(), sourceId: text("source_id").notNull().references(() => sources.id),
 });
+export const competitionEvents = sqliteTable("competition_events", {
+  id: text("id").primaryKey(), competitionId: text("competition_id").notNull().references(() => competitions.id),
+  sourceEventNumber: text("source_event_number").notNull(), label: text("label").notNull(),
+  groupLabel: text("group_label").notNull(), distance: integer("distance").notNull(), round: text("round").notNull(),
+}, (t) => [index("event_competition").on(t.competitionId)]);
 // These IDs are competition-local; cross-competition identity is a later milestone.
 export const participants = sqliteTable("participants", {
   id: text("id").primaryKey(), competitionId: text("competition_id").notNull().references(() => competitions.id),
