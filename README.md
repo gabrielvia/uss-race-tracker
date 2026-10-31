@@ -27,6 +27,8 @@ Run `python3 -m unittest discover -s tests -v` for the offline tests. PDF extrac
 
 See [source validation](docs/source-validation.md) for findings, coverage limits, and reproducible download and extraction commands.
 
+See [protocol inventory and coverage](docs/protocol-coverage.md) for full-PDF discovery, per-event review findings, export eligibility and comparison with saved publication evidence.
+
 ## Run the application
 
 See [local setup and Sites publication](docs/local-sites-foundation.md) for startup, migrations, authenticated sample import, API verification, and deployment instructions.
