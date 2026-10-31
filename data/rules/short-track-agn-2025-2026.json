@@ -1,0 +1,84 @@
+{
+  "label": "2025-2026 USS AGN short-track age categories",
+  "version": "USS-ST-2025-2026-v2",
+  "discipline": "short-track",
+  "season": "2025-2026",
+  "baselineDate": "2025-07-01",
+  "basis": "before-july-1",
+  "source": {
+    "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt697d1a1f3f553781/68b76ccb79acbb7c6c65bb2d/2025-26_ST_Regs_V2.pdf",
+    "sha256": null,
+    "pages": [
+      36,
+      37,
+      41
+    ]
+  },
+  "categories": {
+    "JR A": {
+      "min": 17,
+      "max": 18
+    },
+    "JR B": {
+      "min": 15,
+      "max": 16
+    },
+    "JR C": {
+      "min": 13,
+      "max": 14
+    },
+    "JR D": {
+      "min": 11,
+      "max": 12
+    },
+    "JR E": {
+      "min": 7,
+      "max": 10
+    },
+    "SR": {
+      "min": 19,
+      "max": 29
+    },
+    "30+": {
+      "min": 30,
+      "max": 34
+    },
+    "35+": {
+      "min": 35,
+      "max": 39
+    },
+    "40+": {
+      "min": 40,
+      "max": 44
+    },
+    "45+": {
+      "min": 45,
+      "max": 49
+    },
+    "50+": {
+      "min": 50,
+      "max": 54
+    },
+    "55+": {
+      "min": 55,
+      "max": 59
+    },
+    "60+": {
+      "min": 60,
+      "max": 64
+    },
+    "65+": {
+      "min": 65,
+      "max": 69
+    },
+    "70+": {
+      "min": 70,
+      "max": 74
+    },
+    "75+": {
+      "min": 75,
+      "max": 79
+    }
+  },
+  "rangeAnnotations": false
+}

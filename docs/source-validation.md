@@ -1,5 +1,7 @@
 # Source inventory and extraction validation
 
+Current milestone: [Phase 3 completion](phase-3-completion.md). The source findings and runtime notes below retain their original milestone scope; use the phase 3 guide for current limits, complete-protocol imports, identity/age review and deployment verification.
+
 Checked on October 29, 2026. This is a bounded source-validation milestone, not a completed historical importer or deployed app.
 
 ## Directory coverage

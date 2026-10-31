@@ -1,14 +1,18 @@
 # Multi-event competition imports
 
+Current milestone: [Phase 3 completion](phase-3-completion.md). The source findings and runtime notes below retain their original milestone scope; use the phase 3 guide for current limits, complete-protocol imports, identity/age review and deployment verification.
+
 This main-website milestone extends the reliable import foundation to multiple complete selected events from one source PDF. It does not create an Admin website or claim to import an entire competition protocol.
+
+The current follow-up is [group-aware imports](group-aware-imports.md), which adds same-number group events and exact age-annotated names. The live selection is now seven events and 85 results; the four-event runtime notes below document the preceding milestone.
 
 ## Contract and limits
 
-Schema version 3 uses `coverage: "selected-events"`. The item contains the same reviewed competition metadata, source, competition-local participants, roster entries and normalized results. Its evidence is `{ roster, events: [...] }`; each event is a complete `tempus-complete-event/0.2` extraction, including every announced heat. All events must reference the roster's exact source ID, URL and PDF hash.
+Schema version 3 uses `coverage: "selected-events"`. The item contains the same reviewed competition metadata, source, competition-local participants, roster entries and normalized results. Its evidence is `{ roster, events: [...] }`; each event is a complete `tempus-complete-event/0.2` or `0.3` extraction, including every announced heat. All events must reference the roster's exact source ID, URL and PDF hash.
 
 Validation checks every event independently, then checks the combined projection. A single invalid event rejects the whole candidate. Reports include an event key, original source event number and label, result/heat counts and errors for each event. Duplicate source events, source race IDs reused across events, undeclared results, cross-group/round rows and source revision mismatches are rejected. This Tempus contract requires source race IDs to be unique across the selected events. Other naming schemes require a future parser contract.
 
-Limits remain 2 MiB, 1,000 participants, 2,000 roster entries and 1,000 results in total, with at most 20 selected events and 100 heats per event. Validation version `competition-events/3` identifies the current rules. Existing schema-version-2 inputs remain accepted under the same validation and publication protections; old candidate records must be resubmitted to receive the current report version. The preparation CLI upgrades a legacy one-event item to a one-element `events` array.
+Limits remain 2 MiB, 1,000 participants, 2,000 roster entries and 1,000 results in total, with at most 20 selected events and 100 heats per event. Validation version `competition-events/4` identifies the current rules. Existing schema-version-2 inputs remain accepted under the same validation and publication protections; old candidate records must be resubmitted to receive the current report version. The preparation CLI upgrades a legacy one-event item to a one-element `events` array.
 
 Published identities remain competition-local. Skating-age inference, cross-competition profiles, automatic protocol discovery, classifications and multi-document imports are deferred. Original PDFs remain local/official-source files; R2 stores candidate and extraction evidence JSON.
 

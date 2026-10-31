@@ -57,7 +57,9 @@ def credentials():
             termios.tcsetattr(sys.stdin, termios.TCSANOW, previous)
 
 
-def check(origin, secret, read_only=False, legacy_sample=False):
+def check(origin, secret, read_only=False, legacy_sample=False, group_samples=False):
+    if group_samples and (not read_only or legacy_sample):
+        raise ValueError("Expanded group samples require read-only verification without --legacy-sample.")
     origin = validate_origin(origin)
     opener = build_opener(SameOriginRedirectHandler())
     def request(path, method="GET", seed_token=None):
@@ -98,7 +100,7 @@ def check(origin, secret, read_only=False, legacy_sample=False):
     else:
         from prepare_web_sample import prepare
     counts = {}
-    for item in prepare()["competitions"]:
+    for item in prepare(group_samples)["competitions"]:
         competition_id = item["competition"]["id"]
         expected_events = item["evidence"]["events"][:1] if legacy_sample else item["evidence"]["events"]
         expected_labels = {e["event_label_raw"] for e in expected_events}
@@ -116,7 +118,7 @@ def check(origin, secret, read_only=False, legacy_sample=False):
                                              ("result_status", "status"), ("rank", "rank"), ("source_page", "sourcePage")]:
                 assert row[actual_key] == expected[expected_key], f"A source result changed: {actual_key}"
         for event in detail["events"]:
-            expected = next(e for e in expected_events if e["event_number"] == event["source_event_number"])
+            expected = next(e for e in expected_events if e["event_number"] == event["source_event_number"] and e["event_label_raw"] == event["label"])
             rows = [r for r in detail["results"] if r["event_key"] == event["id"]]
             assert event["label"] == expected["event_label_raw"]
             assert event["result_count"] == len(rows) == expected["result_count"]
@@ -132,6 +134,9 @@ def check(origin, secret, read_only=False, legacy_sample=False):
         source_events = evidence.get("events") or [evidence["race"]]
         assert len(source_events) == len(expected_events)
         assert all(e["sha256"] == evidence["roster"]["sha256"] for e in source_events)
+        assert {e["event_label_raw"] for e in source_events} == expected_labels
+        for expected in expected_events:
+            assert next(e for e in source_events if e["event_label_raw"] == expected["event_label_raw"]) == expected
         assert sum(e["result_count"] for e in source_events) == len(expected_rows)
         counts[competition_id] = {"participants": len(item["participants"]), "entries": len(item["entries"]), "results": len(expected_rows), "events": len(expected_events)}
     assert request("/api/competitions/not-a-competition")[0] == 404
@@ -143,6 +148,7 @@ if __name__ == "__main__":
     cli = argparse.ArgumentParser(description=__doc__)
     cli.add_argument("--url", required=True)
     cli.add_argument("--legacy-sample", action="store_true", help="Verify the original one-event samples before expansion.")
+    cli.add_argument("--group-samples", action="store_true", help="Verify the seven reviewed selected events, including repeated source numbers and raw age annotations; requires --read-only.")
     cli.add_argument("--read-only", action="store_true", help="Verify existing samples without re-running bootstrap.")
     cli.add_argument("--local-credentials", help="Read the ignored local .dev.vars file instead of stdin.")
     args = cli.parse_args()
@@ -156,7 +162,7 @@ if __name__ == "__main__":
             secret = {"seed_token": values["SEED_TOKEN"].strip()}
         else:
             secret = credentials()
-        check(args.url, secret, args.read_only, args.legacy_sample)
+        check(args.url, secret, args.read_only, args.legacy_sample, args.group_samples)
     except Exception as error:
         print(f"Site verification failed: {type(error).__name__}: {error}", file=sys.stderr)
         sys.exit(1)

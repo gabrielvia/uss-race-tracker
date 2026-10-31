@@ -7,11 +7,15 @@ from pathlib import Path
 import re
 
 if __package__:
-    from .inspect_event import EVENT, parse_event_pages
+    from .inspect_event import EVENT, PARSER_VERSION, parse_event_pages
+    from .tempus_identity import result_name_matches, roster_name_is_consistent
+    from .tempus_text import join_event_headings
 else:
-    from inspect_event import EVENT, parse_event_pages
+    from inspect_event import EVENT, PARSER_VERSION, parse_event_pages
+    from tempus_identity import result_name_matches, roster_name_is_consistent
+    from tempus_text import join_event_headings
 
-VERSION = "tempus-protocol-inventory/0.1"
+VERSION = "tempus-protocol-inventory/0.3"
 HEADER = re.compile(r"^(.+?)\s+Event #(\d+)$")
 RACE = re.compile(r"\bRace #(\d+)\b")
 RANKED = re.compile(r"^(?:\d+|[A-Z]{2,5})\s+(\d+)\s+(.+)$")
@@ -24,6 +28,9 @@ def canonical(value):
 
 def result_like(line, names, inside_results=True):
     if RANKED.match(line):
+        return inside_results or bool(TIME_OR_STATUS.search(line))
+    prefixed = re.match(r"^\S+\s+(\d+)\s+(.+)$", line)
+    if prefixed and any(prefixed[2].startswith(name + " ") for name in names.get(prefixed[1], ())):
         return inside_results or bool(TIME_OR_STATUS.search(line))
     match = re.match(r"^(\d+)\s+(.+)$", line)
     if not match:
@@ -46,7 +53,9 @@ def inventory_protocol(pages, roster, published=None):
         if row["bib"] in people and people[row["bib"]] != person:
             conflicting_bibs.add(row["bib"])
         people[row["bib"]] = person
-    source_issues, records, number_labels, race_owners = [], {}, defaultdict(set), defaultdict(set)
+    source_issues, records, race_owners = [], {}, defaultdict(set)
+    if any(not roster_name_is_consistent(row) for row in roster["observations"]):
+        source_issues.append({"code": "ROSTER_NAME_REVIEW", "page": None, "message": "Normalized names must match original roster names or supported, evidenced age annotations."})
     if conflicting_bibs:
         source_issues.append({"code": "ROSTER_BIB_CONFLICT", "page": None, "message": "One roster bib has conflicting normalized identities or affiliations."})
     if roster.get("issues"):
@@ -55,6 +64,7 @@ def inventory_protocol(pages, roster, published=None):
     if set(numbers) != set(range(1, roster["page_count"] + 1)):
         source_issues.append({"code": "PARTIAL_PAGE_SCAN", "page": None, "message": "Every physical page is required for a protocol inventory."})
     for number, text in pages:
+        text, heading_evidence = join_event_headings(text)
         upper = text.upper()
         lines = text.splitlines()
         if "CLASSIFICATION" in upper:
@@ -88,8 +98,9 @@ def inventory_protocol(pages, roster, published=None):
                     if not match:
                         records[key]["issues"].append({"code": "UNSUPPORTED_EVENT_LABEL", "page": number, "message": "The event heading is outside the current group/distance/round parser contract."})
                 records[key]["pages"].add(number)
+                if label in heading_evidence:
+                    records[key]["source_heading_lines"] = heading_evidence[label]
                 records[key]["blocks"][number].append(line)
-                number_labels[event_number].add(label)
                 continue
             if "Event #" in line:
                 current, race_id = None, None
@@ -116,14 +127,14 @@ def inventory_protocol(pages, roster, published=None):
     events, extracted = [], {}
     for key, record in sorted(records.items(), key=lambda pair: (int(pair[0][0]), pair[0][1])):
         record["pages"] = sorted(record["pages"])
-        if len(number_labels[record["event_number"]]) != 1:
-            record["issues"].append({"code": "AMBIGUOUS_EVENT_NUMBER", "page": None, "message": "The same source event number has different labels."})
         if any(len(race_owners[r["race_id"]]) > 1 for r in record["source_races"]):
             record["issues"].append({"code": "REUSED_RACE_ID", "page": None, "message": "Source race IDs are reused across different events."})
         parsed = None
         if not record["issues"]:
             try:
-                parsed = parse_event_pages([(n, "RESULTS\n" + "\n".join(record["blocks"][n])) for n in record["pages"]], roster["observations"], record["event_number"])
+                parsed = parse_event_pages([(n, "RESULTS\n" + "\n".join(record["blocks"][n])) for n in record["pages"]], roster["observations"], record["event_number"], record["event_label_raw"])
+                if "source_heading_lines" in record:
+                    parsed["source_heading_lines"] = record["source_heading_lines"]
                 actual = Counter((r["source_page"], r["race_id"], r["row_raw"]) for r in parsed["results"])
                 if actual != Counter(record["observed_rows"]):
                     record["issues"].append({"code": "UNACCOUNTED_RESULT_ROWS", "page": None, "message": "Discovered result-like rows do not exactly match extracted rows; review unsupported statuses or continuations."})
@@ -131,7 +142,7 @@ def inventory_protocol(pages, roster, published=None):
                 record["issues"].append({"code": "EVENT_EXTRACTION", "page": None, "message": str(error)})
         identity_rows = []
         if parsed is not None:
-            identity_rows = [r for r in parsed["results"] if r["name_raw"] != people[r["bib"]][0] or people[r["bib"]][1] is not None and r["affiliation_raw"] != people[r["bib"]][1]]
+            identity_rows = [r for r in parsed["results"] if not any(result_name_matches(r["name_raw"], o) for o in roster["observations"] if o["bib"] == r["bib"]) or people[r["bib"]][1] is not None and r["affiliation_raw"] != people[r["bib"]][1]]
             if identity_rows:
                 record["issues"].append({"code": "IMPORT_IDENTITY_REVIEW", "page": identity_rows[0]["source_page"], "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."})
         complete = parsed is not None and not record["issues"]
@@ -145,7 +156,7 @@ def inventory_protocol(pages, roster, published=None):
                     "export_eligible": complete and not source_blocked, "publication": "not_checked"})
         events.append(row)
         if row["export_eligible"]:
-            extracted[key] = {"parser_version": "tempus-complete-event/0.2", "status": "complete_selected_event",
+            extracted[key] = {"parser_version": PARSER_VERSION, "status": "complete_selected_event",
                               "source_id": roster["source_id"], "source_url": roster["source_url"], "sha256": roster["sha256"],
                               "pages": record["pages"], **parsed}
     coverage = {"basis": "not_checked", "published_events": None, "not_published_events": None, "unknown_published_events": []}
@@ -226,7 +237,8 @@ def main():
         folder = args.events_output / sha256(canonical(report).encode()).hexdigest()[:20]
         folder.mkdir(parents=True, exist_ok=True)
         for event in extracted.values():
-            (folder / f"event-{event['event_number']}.json").write_text(json.dumps(event, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            identity = sha256(event["event_label_raw"].encode()).hexdigest()[:20]
+            (folder / f"event-{event['event_number']}-{identity}.json").write_text(json.dumps(event, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         result["event_directory"] = str(folder)
     print(json.dumps(result, indent=2))
 

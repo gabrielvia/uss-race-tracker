@@ -1,5 +1,5 @@
 {
-  "inventory_version": "tempus-protocol-inventory/0.1",
+  "inventory_version": "tempus-protocol-inventory/0.3",
   "source_id": "381947c967290f89",
   "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltdbe3948c37369bd8/69c21eeecf706153ff29d935/2026_USS_AGN_ST_final.pdf",
   "sha256": "96baa4cc09283058cc4a458f6ced92316f2b029fa5b7d3cf75d6f371f848744f",
@@ -196,14 +196,14 @@
   },
   "summary": {
     "discovered_events": 112,
-    "complete_selected_events": 29,
-    "needs_review_events": 83,
-    "export_eligible_events": 29
+    "complete_selected_events": 112,
+    "needs_review_events": 0,
+    "export_eligible_events": 112
   },
   "coverage": {
     "basis": "supplied_evidence_snapshot",
-    "published_events": 2,
-    "not_published_events": 110,
+    "published_events": 112,
+    "not_published_events": 0,
     "unknown_published_events": []
   },
   "events": [
@@ -346,7 +346,7 @@
       "result_count": 23,
       "heat_count": 5,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "4",
@@ -387,7 +387,7 @@
       "result_count": 17,
       "heat_count": 4,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "5",
@@ -421,21 +421,15 @@
           "label": "Heat 4 of 4 Race #504"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Unsupported finish for bib 175; review the original page"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 29,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 29,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 29,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "6",
@@ -482,7 +476,7 @@
       "result_count": 30,
       "heat_count": 5,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "7",
@@ -529,7 +523,7 @@
       "result_count": 21,
       "heat_count": 5,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "8",
@@ -565,7 +559,7 @@
       "result_count": 15,
       "heat_count": 3,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "9",
@@ -588,21 +582,15 @@
           "label": "Heat 2 of 2 Race #903"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "9",
@@ -620,21 +608,15 @@
           "label": "Heat 1 of 1 Race #901"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 4,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 4,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 4,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "10",
@@ -662,21 +644,15 @@
           "label": "Heat 3 of 3 Race #1007"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 15,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 15,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 15,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "10",
@@ -710,21 +686,15 @@
           "label": "Heat 4 of 4 Race #1004"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 24,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 24,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 24,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "11",
@@ -747,21 +717,15 @@
           "label": "Heat 2 of 2 Race #1105"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "11",
@@ -789,21 +753,15 @@
           "label": "Heat 3 of 3 Race #1103"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 13,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 13,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 13,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "12",
@@ -827,21 +785,15 @@
           "label": "Heat 2 of 2 Race #1204"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "12",
@@ -864,21 +816,15 @@
           "label": "Heat 2 of 2 Race #1202"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 7,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 7,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 7,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "13",
@@ -902,21 +848,15 @@
           "label": "Heat 2 of 2 Race #1304"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "13",
@@ -939,21 +879,15 @@
           "label": "Heat 2 of 2 Race #1302"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 11,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 11,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "14",
@@ -976,21 +910,15 @@
           "label": "Heat 2 of 2 Race #1403"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "14",
@@ -1008,21 +936,15 @@
           "label": "Heat 1 of 1 Race #1401"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 5,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 5,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 5,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "15",
@@ -1053,7 +975,7 @@
       "result_count": 14,
       "heat_count": 2,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "16",
@@ -1077,21 +999,15 @@
           "label": "Heat 2 of 2 Race #1604"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 14,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 14,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 14,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "16",
@@ -1114,21 +1030,15 @@
           "label": "Heat 2 of 2 Race #1602"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 14,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 14,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 14,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "17",
@@ -1159,7 +1069,7 @@
       "result_count": 11,
       "heat_count": 2,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "18",
@@ -1188,21 +1098,15 @@
           "label": "Heat 3 of 3 Race #1805"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 21,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 21,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 21,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "18",
@@ -1226,21 +1130,15 @@
           "label": "Heat 2 of 2 Race #1802"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 9,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 9,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "19",
@@ -1268,21 +1166,15 @@
           "label": "A Final Race #1903"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 14,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 14,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 14,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "20",
@@ -1336,21 +1228,15 @@
           "label": "A Final Race #2008"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 39,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 39,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 39,
+      "heat_count": 8,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "21",
@@ -1383,21 +1269,15 @@
           "label": "A Final Race #2104"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 21,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 21,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 21,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "22",
@@ -1425,21 +1305,15 @@
           "label": "A Final Race #2203"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 15,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 15,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 15,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "23",
@@ -1478,21 +1352,15 @@
           "label": "A Final Race #2305"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 23,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 23,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 23,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "24",
@@ -1525,21 +1393,15 @@
           "label": "A Final Race #2404"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 17,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 17,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 17,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "25",
@@ -1562,21 +1424,15 @@
           "label": "A Final Race #2502"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 14,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 14,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 14,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "26",
@@ -1610,21 +1466,15 @@
           "label": "A Final Race #2604"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 28,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 28,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 28,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "27",
@@ -1647,21 +1497,15 @@
           "label": "A Final Race #2702"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 11,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 11,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "28",
@@ -1695,21 +1539,15 @@
           "label": "A Final Race #2804"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 28,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 28,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 28,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "29",
@@ -1745,7 +1583,7 @@
       "result_count": 14,
       "heat_count": 3,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "30",
@@ -1803,7 +1641,7 @@
       "result_count": 39,
       "heat_count": 7,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "31",
@@ -1850,7 +1688,7 @@
       "result_count": 23,
       "heat_count": 5,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "32",
@@ -1891,7 +1729,7 @@
       "result_count": 17,
       "heat_count": 4,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "33",
@@ -1927,7 +1765,7 @@
       "result_count": 13,
       "heat_count": 3,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "34",
@@ -1975,7 +1813,7 @@
       "result_count": 29,
       "heat_count": 5,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "35",
@@ -2022,7 +1860,7 @@
       "result_count": 29,
       "heat_count": 5,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "36",
@@ -2069,7 +1907,7 @@
       "result_count": 21,
       "heat_count": 5,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "37",
@@ -2105,7 +1943,7 @@
       "result_count": 15,
       "heat_count": 3,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "38",
@@ -2128,21 +1966,15 @@
           "label": "Heat 2 of 2 Race #3803"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "38",
@@ -2160,21 +1992,15 @@
           "label": "Heat 1 of 1 Race #3801"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 4,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 4,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 4,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "39",
@@ -2202,21 +2028,15 @@
           "label": "Heat 3 of 3 Race #3907"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 15,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 15,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 15,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "39",
@@ -2250,21 +2070,15 @@
           "label": "Heat 4 of 4 Race #3904"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 24,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 24,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 24,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "40",
@@ -2287,21 +2101,15 @@
           "label": "Heat 2 of 2 Race #4005"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "40",
@@ -2329,21 +2137,15 @@
           "label": "Heat 3 of 3 Race #4003"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 13,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 13,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 13,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "41",
@@ -2367,21 +2169,15 @@
           "label": "Heat 2 of 2 Race #4104"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "41",
@@ -2404,21 +2200,15 @@
           "label": "Heat 2 of 2 Race #4102"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 7,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 7,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 7,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "42",
@@ -2442,21 +2232,15 @@
           "label": "Heat 2 of 2 Race #4204"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "42",
@@ -2479,21 +2263,15 @@
           "label": "Heat 2 of 2 Race #4202"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 11,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 11,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "43",
@@ -2516,21 +2294,15 @@
           "label": "Heat 2 of 2 Race #4303"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "43",
@@ -2548,21 +2320,15 @@
           "label": "Heat 1 of 1 Race #4301"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 5,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 5,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 5,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "44",
@@ -2585,21 +2351,15 @@
           "label": "Heat 2 of 2 Race #4403"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "44",
@@ -2617,21 +2377,15 @@
           "label": "Heat 1 of 1 Race #4401"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 3,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 3,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 3,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "45",
@@ -2655,21 +2409,15 @@
           "label": "Heat 2 of 2 Race #4505"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "45",
@@ -2698,21 +2446,15 @@
           "label": "Heat 3 of 3 Race #4503"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 18,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 18,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 18,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "46",
@@ -2743,7 +2485,7 @@
       "result_count": 11,
       "heat_count": 2,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "47",
@@ -2766,21 +2508,15 @@
           "label": "Heat 2 of 2 Race #4706"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "47",
@@ -2814,21 +2550,15 @@
           "label": "Heat 4 of 4 Race #4704"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 19,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 19,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 19,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "48",
@@ -2857,21 +2587,15 @@
           "label": "A Final Race #4803"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 14,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 14,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 14,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "49",
@@ -2926,21 +2650,15 @@
           "label": "A Final Race #4908"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 38,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 38,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 38,
+      "heat_count": 8,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "50",
@@ -2974,21 +2692,15 @@
           "label": "A Final Race #5004"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 21,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 21,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 21,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "51",
@@ -3017,21 +2729,15 @@
           "label": "A Final Race #5103"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 15,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 15,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 15,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "52",
@@ -3070,21 +2776,15 @@
           "label": "A Final Race #5205"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 23,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 23,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 23,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "53",
@@ -3118,21 +2818,15 @@
           "label": "A Final Race #5304"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 17,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 17,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 17,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "54",
@@ -3161,21 +2855,15 @@
           "label": "A Final Race #5403"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 13,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 13,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 13,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "55",
@@ -3219,21 +2907,15 @@
           "label": "A Final Race #5506"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 28,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 28,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 28,
+      "heat_count": 6,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "56",
@@ -3256,21 +2938,15 @@
           "label": "A Final Race #5602"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 11,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 11,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "57",
@@ -3314,21 +2990,15 @@
           "label": "A Final Race #5706"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 28,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 28,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 28,
+      "heat_count": 6,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "61",
@@ -3364,7 +3034,7 @@
       "result_count": 14,
       "heat_count": 3,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "62",
@@ -3422,7 +3092,7 @@
       "result_count": 39,
       "heat_count": 7,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "63",
@@ -3469,7 +3139,7 @@
       "result_count": 23,
       "heat_count": 5,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "64",
@@ -3510,7 +3180,7 @@
       "result_count": 17,
       "heat_count": 4,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "65",
@@ -3546,7 +3216,7 @@
       "result_count": 13,
       "heat_count": 3,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "66",
@@ -3594,7 +3264,7 @@
       "result_count": 29,
       "heat_count": 5,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "67",
@@ -3641,7 +3311,7 @@
       "result_count": 28,
       "heat_count": 5,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "68",
@@ -3688,7 +3358,7 @@
       "result_count": 21,
       "heat_count": 5,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "69",
@@ -3724,7 +3394,7 @@
       "result_count": 15,
       "heat_count": 3,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "70",
@@ -3747,21 +3417,15 @@
           "label": "Heat 2 of 2 Race #7003"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "70",
@@ -3779,21 +3443,15 @@
           "label": "Heat 1 of 1 Race #7001"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 4,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 4,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 4,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "71",
@@ -3821,21 +3479,15 @@
           "label": "Heat 3 of 3 Race #7107"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 15,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 15,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 15,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "71",
@@ -3869,21 +3521,15 @@
           "label": "Heat 4 of 4 Race #7104"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 24,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 24,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 24,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "72",
@@ -3906,21 +3552,15 @@
           "label": "Heat 2 of 2 Race #7205"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "72",
@@ -3948,21 +3588,15 @@
           "label": "Heat 3 of 3 Race #7203"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 13,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 13,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 13,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "73",
@@ -3986,21 +3620,15 @@
           "label": "Heat 2 of 2 Race #7304"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "73",
@@ -4023,21 +3651,15 @@
           "label": "Heat 2 of 2 Race #7302"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 7,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 7,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 7,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "74",
@@ -4061,21 +3683,15 @@
           "label": "Heat 2 of 2 Race #7404"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "74",
@@ -4098,21 +3714,15 @@
           "label": "Heat 2 of 2 Race #7402"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 11,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 11,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "75",
@@ -4135,21 +3745,15 @@
           "label": "Heat 2 of 2 Race #7503"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "75",
@@ -4167,21 +3771,15 @@
           "label": "Heat 1 of 1 Race #7501"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 5,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 5,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 5,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "76",
@@ -4204,21 +3802,15 @@
           "label": "Heat 2 of 2 Race #7603"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "76",
@@ -4236,21 +3828,15 @@
           "label": "Heat 1 of 1 Race #7601"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 3,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 3,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 3,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "77",
@@ -4274,21 +3860,15 @@
           "label": "Heat 2 of 2 Race #7706"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "77",
@@ -4322,21 +3902,15 @@
           "label": "Heat 4 of 4 Race #7704"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 19,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 19,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 19,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "78",
@@ -4367,7 +3941,7 @@
       "result_count": 11,
       "heat_count": 2,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "79",
@@ -4390,21 +3964,15 @@
           "label": "Heat 2 of 2 Race #7905"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "79",
@@ -4433,21 +4001,15 @@
           "label": "Heat 3 of 3 Race #7903"
         }
       ],
-      "issues": [
-        {
-          "code": "AMBIGUOUS_EVENT_NUMBER",
-          "page": null,
-          "message": "The same source event number has different labels."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 18,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 18,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 18,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "80",
@@ -4476,21 +4038,15 @@
           "label": "A Final Race #8003"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 14,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 14,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 14,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "81",
@@ -4545,21 +4101,15 @@
           "label": "A Final Race #8108"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 39,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 39,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 39,
+      "heat_count": 8,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "82",
@@ -4593,21 +4143,15 @@
           "label": "A Final Race #8204"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Unsupported finish for bib 214; review the original page"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 21,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 21,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 21,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "83",
@@ -4636,21 +4180,15 @@
           "label": "A Final Race #8303"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 15,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 15,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 15,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "84",
@@ -4689,21 +4227,15 @@
           "label": "A Final Race #8405"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 23,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 23,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 23,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "85",
@@ -4737,21 +4269,15 @@
           "label": "A Final Race #8504"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 17,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 17,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 17,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "86",
@@ -4780,21 +4306,15 @@
           "label": "A Final Race #8603"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 13,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 13,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 13,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "87",
@@ -4838,21 +4358,15 @@
           "label": "A Final Race #8706"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 29,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 29,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 29,
+      "heat_count": 6,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "88",
@@ -4875,21 +4389,15 @@
           "label": "A Final Race #8802"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 11,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 11,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "89",
@@ -4933,21 +4441,15 @@
           "label": "A Final Race #8906"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 28,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 28,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 28,
+      "heat_count": 6,
+      "export_eligible": true,
+      "publication": "published_verified"
     }
   ]
 }

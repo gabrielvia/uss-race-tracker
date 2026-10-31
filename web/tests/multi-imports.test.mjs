@@ -142,12 +142,12 @@ test("SQL failure inside a later event preserves all live rows, event metadata a
     assert.equal((await publish(h, a.id)).status, 200);
     const before = h.snapshot(), evidence = h.publishedEvidence();
     const p = payload(0, a.id), b = (await submit(h, p)).body;
-    h.state.failAt = h.state.executed + p.item.participants.length + p.item.entries.length + 30;
+    h.state.failSql = statement => statement.sql.startsWith("INSERT INTO results") && JSON.parse(statement.bindings[0]).some(r => r.event_label === p.item.evidence.events[1].event_label_raw);
     assert.equal((await publish(h, b.id)).status, 503);
     assert.deepEqual(h.snapshot(), before);
     assert.deepEqual(h.publishedEvidence(), evidence);
     assert.equal(h.sqlite.prepare("SELECT batch_id FROM import_publications").get().batch_id, a.id);
-    h.state.failAt = null;
+    h.state.failSql = null;
     assert.equal((await publish(h, b.id)).status, 200);
     assert.equal((await detail(h, p.item.competition.id)).results.length, 53);
   } finally { h.close(); }

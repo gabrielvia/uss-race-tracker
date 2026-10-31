@@ -1,0 +1,17 @@
+[
+  {"name":"Skater One","raw_name":"Skater One","age_status_raw":null,"result":"Skater One","valid":true},
+  {"name":"Skater One","raw_name":"Skater One (Jr A)","age_status_raw":"Jr A","result":"Skater One (Jr A)","valid":true},
+  {"name":"Skater One","raw_name":"Skater One (Jr E)","age_status_raw":"JR E","result":"Skater One","valid":true},
+  {"name":"Skater One","raw_name":"Skater One (Sr)","age_status_raw":"Sr","result":"Skater One (Sr)","valid":true},
+  {"name":"Skater One","raw_name":"Skater One (W 40-44)","age_status_raw":"W 40-44","result":"Skater One (W 40-44)","valid":true},
+  {"name":"Skater One","raw_name":"Skater One (Master M 50-54)","age_status_raw":"Master M 50-54","result":"Skater One (Master M 50-54)","valid":true},
+  {"name":"Skater One","raw_name":"Skater One (Jr A)","age_status_raw":null,"result":"Skater One (Jr A)","valid":false},
+  {"name":"Skater One","raw_name":"Skater One (Jr A)","age_status_raw":"Jr B","result":"Skater One (Jr A)","valid":false},
+  {"name":"Skater One","raw_name":"Skater Two (Jr A)","age_status_raw":"Jr A","result":"Skater Two (Jr A)","valid":false},
+  {"name":"Skater One","raw_name":"Skater One (Unknown)","age_status_raw":"Unknown","result":"Skater One (Unknown)","valid":false},
+  {"name":"Skater One","raw_name":"Skater One (Jr A)","age_status_raw":"Jr A","result":"Skater One (Jr B)","valid":false},
+  {"name":"Skater One","raw_name":"Skater One","age_status_raw":null,"result":"Skater One (Jr A)","valid":false},
+  {"name":"Skater One","raw_name":"Skater One","age_status_raw":null,"result":"SKATER ONE","valid":false},
+  {"name":"Skater One","raw_name":"Different Alias","age_status_raw":null,"result":"Skater One","valid":false},
+  {"name":"Skater One","raw_name":"Skater One (Jr A) Extra","age_status_raw":"Jr A","result":"Skater One (Jr A) Extra","valid":false}
+]

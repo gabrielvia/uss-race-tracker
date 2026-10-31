@@ -1,6 +1,6 @@
 # USS Race Tracker
 
-A planned web app for exploring US Speedskating competition results, skater profiles, and performance trends.
+A web app for exploring US Speedskating competition results, skater profiles, and performance trends.
 
 ## Planned features
 
@@ -17,7 +17,9 @@ Data source: [US Speedskating results](https://www.usspeedskating.org/results).
 
 ## Project status
 
-The source-validation milestone and the minimal local/Sites application foundation are implemented. The repository includes a 498-entry directory snapshot, PDF sampling tools, a React/TypeScript app in `web/`, D1/R2 integration, and a private deployment using two real competition samples. Selected-event results combine all heats within the same group, gender, distance, and round, with original heat places retained. A protected import workflow separates candidates, per-event validation reports and atomic publication, with multi-event coverage protection. The expanded checked dataset contains four complete selected events across the two competitions. Bulk imports, cross-competition profiles, skating-age inference, and charts remain planned.
+Phases 1-3 are implemented for the verified Tempus format: source inventory, local/Sites hosting, a protected import lifecycle, complete RESULTS protocol preparation, original PDF archival, atomic bulk publication, revision history, reviewed identity mappings, skating-age evidence and scoped server queries. The private Site contains two competition rosters, 171 source group/round events, 2,309 race results and 141 separate classification pages. Existing source rows and event URLs are retained. General directory/profile browsing, charts and broader historical format coverage remain the next milestones.
+
+See [phase 3 completion](docs/phase-3-completion.md), the [acceptance checklist](docs/phase-3-acceptance.md) and [data dictionary](docs/data-dictionary.md) for supported scope, validation and reproducible operations.
 
 All product UI, code, comments, help text, and operational documentation will be in English. Planning documents may contain Chinese.
 
@@ -34,6 +36,8 @@ See [protocol inventory and coverage](docs/protocol-coverage.md) for full-PDF di
 See [local setup and Sites publication](docs/local-sites-foundation.md) for startup, migrations, authenticated sample import, API verification, and deployment instructions.
 
 See [multi-event imports](docs/multi-event-imports.md) and [reliable imports](docs/reliable-imports.md) for local preparation, validation reports, explicit publication and current coverage limits.
+
+See [group-aware imports](docs/group-aware-imports.md) for the latest seven-event expansion, exact annotated-name matching and backward-compatible validation rules.
 
 Run `node --test web/tests/*.test.mjs` with Node 22.13+ for the backend integration tests.
 

@@ -10,6 +10,11 @@ import json
 from pathlib import Path
 import re
 
+if __package__:
+    from .tempus_identity import split_age_annotation
+else:
+    from tempus_identity import split_age_annotation
+
 PARSER_VERSION = "tempus-roster-sample/0.1"
 
 
@@ -49,9 +54,8 @@ def parse_roster_words(words, page_number):
             issues.append({"page": page_number, "reason": "unparsed_roster_row", "raw": " ".join(word["text"] for word in line)})
             continue
         # Parenthesized age labels occur inside the name column in the long-track sample.
-        suffix = re.search(r"\s+\(((?:Jr\s+[A-E]|Sr|(?:Master\s+)?[MW]\s+\d+-\d+))\)$", row["raw_name"], re.IGNORECASE)
-        row["name"] = row["raw_name"][:suffix.start()] if suffix else row["raw_name"]
-        row["age_status_raw"] = row.get("age_status_raw") or (suffix[1] if suffix else None)
+        row["name"], annotation = split_age_annotation(row["raw_name"])
+        row["age_status_raw"] = row.get("age_status_raw") or annotation
         row["club_name"] = None if row["affiliation_raw"].casefold() == "direct" else row["affiliation_raw"]
         row["age_evidence_type"] = "explicit_category" if row["age_status_raw"] else "unresolved_division"
         row["page"] = page_number

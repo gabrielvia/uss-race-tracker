@@ -7,8 +7,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def prepare_item(competition, roster, events):
-    if not events or len(events) > 20 or roster["issues"]:
-        raise ValueError("Provide one to twenty complete events and resolve roster issues first")
+    if not events or len(events) > 250 or roster["issues"]:
+        raise ValueError("Provide one to 250 complete events and resolve roster issues first")
     participants, entries = {}, []
     competition_id = competition["id"]
     for position, observation in enumerate(roster["observations"]):
@@ -21,15 +21,14 @@ def prepare_item(competition, roster, events):
         entries.append({"id": f"{participant_id}:{position}", "participantId": participant_id,
                         "division": observation["division_raw"], "ageStatus": observation["age_status_raw"],
                         "rawName": observation["raw_name"], "sourcePage": observation["page"]})
-    results, event_numbers, event_labels, race_ids, result_ids = [], set(), set(), set(), set()
+    results, event_labels, race_ids, result_ids = [], set(), set(), set()
     for event in events:
         if any(event[key] != roster[key] for key in ["sha256", "source_id", "source_url"]):
             raise ValueError("Every selected event must refer to the roster's exact source revision")
-        if event["parser_version"] != "tempus-complete-event/0.2" or event["status"] != "complete_selected_event":
+        if event["parser_version"] not in {"tempus-complete-event/0.2", "tempus-complete-event/0.3", "tempus-complete-event/0.4"} or event["status"] != "complete_selected_event":
             raise ValueError("Regenerate complete selected events with the status-aware parser")
-        if event["event_number"] in event_numbers or event["event_label_raw"] in event_labels:
+        if event["event_label_raw"] in event_labels:
             raise ValueError("A source event cannot be selected twice")
-        event_numbers.add(event["event_number"])
         event_labels.add(event["event_label_raw"])
         for heat in event["heats"]:
             if heat["race_id"] in race_ids:
@@ -50,6 +49,8 @@ def prepare_item(competition, roster, events):
                             "eventKey": sha256(f"{competition_id}|{result['event_label_raw']}".encode()).hexdigest()[:20],
                             "eventLabel": result["event_label_raw"], "raceLabel": result["race_label_raw"],
                             "heatNumber": result["heat_number"], "heatTotal": result["heat_total"]})
+            if "finish_note" in result:
+                results[-1]["finishNote"] = result["finish_note"]
     return {"competition": dict(competition),
             "source": {"id": roster["source_id"], "url": roster["source_url"], "sha256": roster["sha256"],
                        "objectKey": f"samples/{roster['sha256']}.json"},
@@ -57,7 +58,7 @@ def prepare_item(competition, roster, events):
             "evidence": {"roster": roster, "events": events}}
 
 
-def prepare():
+def prepare(include_group_samples=False):
     selected = [
         ("short-track", "st-agn-2026", "Short Track Age Group Nationals", "2026-03-20", "2026-03-22", "Norwood, MA"),
         ("long-track", "lt-agn-2026", "Long Track Age Group Nationals", "2026-02-14", "2026-02-15", "Roseville, MN"),
@@ -65,7 +66,10 @@ def prepare():
     records = []
     for discipline, competition_id, title, starts_on, ends_on, location in selected:
         roster = json.loads((ROOT / f"data/samples/{discipline}-agn-roster.json").read_text())
-        events = [json.loads((ROOT / f"data/samples/{discipline}-agn-event-{number}.json").read_text()) for number in ([1, 2] if discipline == "short-track" else [1, 6])]
+        numbers = [1, 2] if discipline == "short-track" else [1, 6]
+        if include_group_samples:
+            numbers += ["9-group-a", "9-group-b"] if discipline == "short-track" else [5]
+        events = [json.loads((ROOT / f"data/samples/{discipline}-agn-event-{number}.json").read_text()) for number in numbers]
         records.append(prepare_item({"id": competition_id, "title": title, "discipline": discipline,
                                      "season": "2025-2026", "startsOn": starts_on, "endsOn": ends_on, "location": location}, roster, events))
     return {"schemaVersion": 3, "competitions": records}
