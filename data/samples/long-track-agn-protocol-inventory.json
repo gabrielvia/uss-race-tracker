@@ -1,5 +1,5 @@
 {
-  "inventory_version": "tempus-protocol-inventory/0.1",
+  "inventory_version": "tempus-protocol-inventory/0.3",
   "source_id": "9567603f2ef7d57a",
   "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt705a59087737d2c2/69939b7d8b33e4000870a8e7/2026_LT_AGN_Protocol.pdf",
   "sha256": "7a22b0b5b4713fae920d83e4ee500d40cee3aca58e23d3b895c774e1a88db45f",
@@ -137,14 +137,14 @@
   },
   "summary": {
     "discovered_events": 59,
-    "complete_selected_events": 30,
-    "needs_review_events": 29,
-    "export_eligible_events": 30
+    "complete_selected_events": 59,
+    "needs_review_events": 0,
+    "export_eligible_events": 59
   },
   "coverage": {
     "basis": "supplied_evidence_snapshot",
-    "published_events": 2,
-    "not_published_events": 57,
+    "published_events": 59,
+    "not_published_events": 0,
     "unknown_published_events": []
   },
   "events": [
@@ -198,7 +198,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "3",
@@ -224,7 +224,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "4",
@@ -242,21 +242,15 @@
           "label": "A Final Race #401"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 85,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 5,
       "parsed_result_rows": 5,
-      "identity_review_rows": 5,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 5,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "5",
@@ -274,21 +268,15 @@
           "label": "A Final Race #501"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 85,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 4,
       "parsed_result_rows": 4,
-      "identity_review_rows": 4,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 4,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "6",
@@ -340,7 +328,7 @@
       "result_count": 11,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "8",
@@ -366,7 +354,7 @@
       "result_count": 9,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "9",
@@ -384,21 +372,15 @@
           "label": "A Final Race #901"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 87,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 8,
       "parsed_result_rows": 8,
-      "identity_review_rows": 8,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 8,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "10",
@@ -416,21 +398,15 @@
           "label": "A Final Race #1001"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 87,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
       "parsed_result_rows": 10,
-      "identity_review_rows": 10,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 10,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "11",
@@ -462,7 +438,7 @@
       "result_count": 11,
       "heat_count": 2,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "12",
@@ -493,14 +469,14 @@
       "result_count": 9,
       "heat_count": 2,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "13",
-      "event_label_raw": "Group A Junior A-B-Senior Men's 1400 Semi- Event #13",
-      "group_label": null,
-      "distance_metres": null,
-      "round_raw": null,
+      "event_label_raw": "Group A Junior A-B-Senior Men's 1400 Semi-Finals Event #13",
+      "group_label": "Group A Junior A-B-Senior Men's",
+      "distance_metres": 1400,
+      "round_raw": "Semi-Finals",
       "pages": [
         89
       ],
@@ -516,21 +492,19 @@
           "label": "Heat 2 of 2 Race #1302"
         }
       ],
-      "issues": [
-        {
-          "code": "UNSUPPORTED_EVENT_LABEL",
-          "page": 89,
-          "message": "The event heading is outside the current group/distance/round parser contract."
-        }
+      "issues": [],
+      "source_heading_lines": [
+        "Group A Junior A-B-Senior Men's 1400 Semi- Event #13",
+        "Finals"
       ],
-      "status": "needs_review",
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "14",
@@ -556,7 +530,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "15",
@@ -582,7 +556,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "16",
@@ -608,7 +582,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "17",
@@ -632,21 +606,15 @@
           "label": "A Final Race #1702"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 11,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 11,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "18",
@@ -672,7 +640,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "19",
@@ -696,21 +664,15 @@
           "label": "A Final Race #1902"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 9,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 9,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "20",
@@ -728,21 +690,15 @@
           "label": "A Final Race #2001"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 92,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 5,
       "parsed_result_rows": 5,
-      "identity_review_rows": 5,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 5,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "21",
@@ -760,21 +716,15 @@
           "label": "A Final Race #2101"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 92,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 8,
       "parsed_result_rows": 8,
-      "identity_review_rows": 8,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 8,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "22",
@@ -792,21 +742,15 @@
           "label": "A Final Race #2201"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 93,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 4,
       "parsed_result_rows": 4,
-      "identity_review_rows": 4,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 4,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "23",
@@ -829,21 +773,15 @@
           "label": "A Final Race #2302"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "24",
@@ -874,7 +812,7 @@
       "result_count": 11,
       "heat_count": 2,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "25",
@@ -905,14 +843,14 @@
       "result_count": 9,
       "heat_count": 2,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "26",
-      "event_label_raw": "Group A Junior A-B-Senior Men's 1000 Semi- Event #26",
-      "group_label": null,
-      "distance_metres": null,
-      "round_raw": null,
+      "event_label_raw": "Group A Junior A-B-Senior Men's 1000 Semi-Finals Event #26",
+      "group_label": "Group A Junior A-B-Senior Men's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
       "pages": [
         95
       ],
@@ -928,21 +866,19 @@
           "label": "Heat 2 of 2 Race #2602"
         }
       ],
-      "issues": [
-        {
-          "code": "UNSUPPORTED_EVENT_LABEL",
-          "page": 95,
-          "message": "The event heading is outside the current group/distance/round parser contract."
-        }
+      "issues": [],
+      "source_heading_lines": [
+        "Group A Junior A-B-Senior Men's 1000 Semi- Event #26",
+        "Finals"
       ],
-      "status": "needs_review",
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "27",
@@ -968,7 +904,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "28",
@@ -994,7 +930,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "29",
@@ -1020,7 +956,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "30",
@@ -1044,21 +980,15 @@
           "label": "A Final Race #3002"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 11,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 11,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "31",
@@ -1084,7 +1014,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "32",
@@ -1108,21 +1038,15 @@
           "label": "A Final Race #3202"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 9,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 9,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "33",
@@ -1140,21 +1064,15 @@
           "label": "A Final Race #3301"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 98,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 5,
       "parsed_result_rows": 5,
-      "identity_review_rows": 5,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 5,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "34",
@@ -1172,21 +1090,15 @@
           "label": "A Final Race #3401"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 98,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 8,
       "parsed_result_rows": 8,
-      "identity_review_rows": 8,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 8,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "35",
@@ -1204,21 +1116,15 @@
           "label": "A Final Race #3501"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 99,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 4,
       "parsed_result_rows": 4,
-      "identity_review_rows": 4,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 4,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "36",
@@ -1241,21 +1147,15 @@
           "label": "A Final Race #3602"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "37",
@@ -1286,7 +1186,7 @@
       "result_count": 10,
       "heat_count": 2,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "38",
@@ -1317,7 +1217,7 @@
       "result_count": 9,
       "heat_count": 2,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "39",
@@ -1340,21 +1240,15 @@
           "label": "Heat 2 of 2 Race #3902"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 101,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
       "parsed_result_rows": 10,
-      "identity_review_rows": 10,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "40",
@@ -1380,7 +1274,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "41",
@@ -1406,7 +1300,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "42",
@@ -1432,7 +1326,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "43",
@@ -1456,21 +1350,15 @@
           "label": "A Final Race #4302"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "44",
@@ -1496,7 +1384,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "45",
@@ -1520,21 +1408,15 @@
           "label": "A Final Race #4502"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 9,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 9,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "46",
@@ -1552,21 +1434,15 @@
           "label": "A Final Race #4601"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 104,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 5,
       "parsed_result_rows": 5,
-      "identity_review_rows": 5,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 5,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "47",
@@ -1584,21 +1460,15 @@
           "label": "A Final Race #4701"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 104,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 8,
       "parsed_result_rows": 8,
-      "identity_review_rows": 8,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 8,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "48",
@@ -1616,21 +1486,15 @@
           "label": "A Final Race #4801"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 105,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 4,
       "parsed_result_rows": 4,
-      "identity_review_rows": 4,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 4,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "49",
@@ -1653,21 +1517,15 @@
           "label": "A Final Race #4902"
         }
       ],
-      "issues": [
-        {
-          "code": "EVENT_EXTRACTION",
-          "page": null,
-          "message": "Multiple finals require explicit classification review"
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
-      "parsed_result_rows": null,
+      "parsed_result_rows": 10,
       "identity_review_rows": 0,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "50",
@@ -1693,7 +1551,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "51",
@@ -1719,7 +1577,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "52",
@@ -1745,7 +1603,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "53",
@@ -1771,7 +1629,7 @@
       "result_count": 10,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "54",
@@ -1797,7 +1655,7 @@
       "result_count": 7,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "55",
@@ -1823,7 +1681,7 @@
       "result_count": 9,
       "heat_count": 1,
       "export_eligible": true,
-      "publication": "not_published"
+      "publication": "published_verified"
     },
     {
       "event_number": "56",
@@ -1841,21 +1699,15 @@
           "label": "A Final Race #5601"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 108,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 4,
       "parsed_result_rows": 4,
-      "identity_review_rows": 4,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 4,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "57",
@@ -1873,21 +1725,15 @@
           "label": "A Final Race #5701"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 108,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 8,
       "parsed_result_rows": 8,
-      "identity_review_rows": 8,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 8,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "58",
@@ -1905,21 +1751,15 @@
           "label": "A Final Race #5801"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 109,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 5,
       "parsed_result_rows": 5,
-      "identity_review_rows": 5,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 5,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     },
     {
       "event_number": "59",
@@ -1937,21 +1777,15 @@
           "label": "A Final Race #5901"
         }
       ],
-      "issues": [
-        {
-          "code": "IMPORT_IDENTITY_REVIEW",
-          "page": 109,
-          "message": "Raw result names or affiliations differ from the normalized roster. Resolve source annotations before server import validation."
-        }
-      ],
-      "status": "needs_review",
+      "issues": [],
+      "status": "complete_selected_event",
       "observed_result_rows": 10,
       "parsed_result_rows": 10,
-      "identity_review_rows": 10,
-      "result_count": null,
-      "heat_count": null,
-      "export_eligible": false,
-      "publication": "not_published"
+      "identity_review_rows": 0,
+      "result_count": 10,
+      "heat_count": 1,
+      "export_eligible": true,
+      "publication": "published_verified"
     }
   ]
 }

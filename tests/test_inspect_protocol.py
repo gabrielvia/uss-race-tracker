@@ -31,7 +31,7 @@ class ProtocolInventoryTests(unittest.TestCase):
         self.assertEqual(report["events"][0]["pages"], [1, 2])
         self.assertEqual(report["events"][0]["observed_result_rows"], 2)
         self.assertEqual(report["events"][0]["heat_count"], 2)
-        self.assertEqual(extracted[("1", "Group A Junior E Women's 700 Quarter-Finals Event #1")]["parser_version"], "tempus-complete-event/0.2")
+        self.assertEqual(extracted[("1", "Group A Junior E Women's 700 Quarter-Finals Event #1")]["parser_version"], "tempus-complete-event/0.4")
         self.assertIsNone(report["coverage"]["published_events"])
         self.assertTrue(all(e["publication"] == "not_checked" for e in report["events"]))
 
@@ -59,11 +59,13 @@ class ProtocolInventoryTests(unittest.TestCase):
                 self.assertTrue(all(not e["export_eligible"] for e in report["events"]))
 
     def test_unknown_status_row_is_detected_before_a_complete_claim(self):
-        text = FIRST + "WD 4 Skater 4 Club Four\n"
-        report, extracted = inventory_protocol([(1, text), (2, SECOND)], ROSTER)
-        self.assertEqual(report["events"][0]["status"], "needs_review")
-        self.assertIn("UNACCOUNTED_RESULT_ROWS", [i["code"] for i in report["events"][0]["issues"]])
-        self.assertEqual(len(extracted), 1)
+        for status in ["WD", "WITHDRAWN", "withdrawn", "UNK."]:
+            with self.subTest(status=status):
+                text = FIRST + f"{status} 4 Skater 4 Club Four\n"
+                report, extracted = inventory_protocol([(1, text), (2, SECOND)], ROSTER)
+                self.assertEqual(report["events"][0]["status"], "needs_review")
+                self.assertIn("UNACCOUNTED_RESULT_ROWS", [i["code"] for i in report["events"][0]["issues"]])
+                self.assertEqual(len(extracted), 1)
 
     def test_supported_statuses_stay_in_source_and_extracted_counts(self):
         for status in ["PEN", "DNS", "DNF", "DQ"]:
@@ -76,10 +78,11 @@ class ProtocolInventoryTests(unittest.TestCase):
                 self.assertIsNone(event["results"][1]["time_microseconds"])
                 self.assertEqual(report["events"][0]["observed_result_rows"], 3)
 
-    def test_ambiguous_event_numbers_require_review(self):
+    def test_reused_numbers_keep_different_groups_separate(self):
         report, extracted = inventory_protocol([(1, FIRST), (2, SECOND.replace("Event #2", "Event #1"))], ROSTER)
-        self.assertEqual(extracted, {})
-        self.assertTrue(all("AMBIGUOUS_EVENT_NUMBER" in [i["code"] for i in e["issues"]] for e in report["events"]))
+        self.assertEqual(len(extracted), 2)
+        self.assertEqual([e["result_count"] for e in report["events"]], [1, 2])
+        self.assertEqual(len({e["event_label_raw"] for e in report["events"]}), 2)
 
     def test_reused_race_ids_require_review(self):
         report, extracted = inventory_protocol([(1, FIRST), (2, SECOND.replace("Race #201", "Race #101"))], ROSTER)
@@ -114,7 +117,11 @@ class ProtocolInventoryTests(unittest.TestCase):
         self.assertEqual(event["parsed_result_rows"], 2)
         self.assertEqual(event["identity_review_rows"], 1)
         self.assertIn("IMPORT_IDENTITY_REVIEW", [i["code"] for i in event["issues"]])
-        self.assertEqual(len(extracted), 1)
+        self.assertEqual(len(extracted), 0)
+        roster["observations"][0]["age_status_raw"] = "Jr A"
+        report, extracted = inventory_protocol([(1, first), (2, SECOND)], roster)
+        self.assertEqual(len(extracted), 2)
+        self.assertTrue(all(e["identity_review_rows"] == 0 for e in report["events"]))
 
     def test_roster_issues_block_automatic_export(self):
         report, extracted = inventory_protocol(PAGES, {**ROSTER, "issues": ["Unparsed roster row"]})

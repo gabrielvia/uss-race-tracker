@@ -33,6 +33,17 @@ class EventTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "different groups"):
             parse_event_pages([(75, TEXT.replace("Event #2", "Event #1"))], ROSTER, "1")
 
+    def test_exact_heading_selects_one_group_when_numbers_are_reused(self):
+        text = TEXT.replace("Event #2", "Event #1")
+        for label, expected in [("Group A Junior E Women's 700 Quarter-Finals Event #1", ["1", "2"]),
+                                ("Group A Junior E Men's 700 Quarter-Finals Event #1", ["3"])]:
+            with self.subTest(label=label):
+                selected = parse_event_pages([(75, text)], ROSTER, "1", label)
+                self.assertEqual([r["bib"] for r in selected["results"]], expected)
+                self.assertEqual(selected["event_label_raw"], label)
+        with self.assertRaisesRegex(ValueError, "match the requested"):
+            parse_event_pages([(75, text)], ROSTER, "2", "Group A Junior E Women's 700 Quarter-Finals Event #1")
+
     def test_accepts_heats_on_separate_pages_with_repeated_event_heading(self):
         heading = "RESULTS\nGroup A Junior E Women's 700 Quarter-Finals Event #1\n"
         event = parse_event_pages([(75, heading + "Heat 1 of 2 Race #101\n1 1 Skater 1 Club One 1:20.000"),

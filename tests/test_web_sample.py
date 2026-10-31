@@ -45,6 +45,21 @@ class WebSampleTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "source revision"):
             prepare_item(item["competition"], item["evidence"]["roster"], events)
 
+    def test_group_samples_preserve_old_events_and_original_annotated_names(self):
+        original = prepare()["competitions"]
+        expanded = prepare(include_group_samples=True)["competitions"]
+        self.assertEqual([len(i["results"]) for i in expanded], [67, 18])
+        self.assertEqual([len(i["evidence"]["events"]) for i in expanded], [4, 3])
+        for old, new in zip(original, expanded):
+            self.assertEqual(new["results"][:len(old["results"])], old["results"])
+            self.assertEqual(new["participants"], old["participants"])
+        groups = [e for e in expanded[0]["evidence"]["events"] if e["event_number"] == "9"]
+        self.assertEqual(len(groups), 2)
+        self.assertEqual([e["result_count"] for e in groups], [10, 4])
+        raw = expanded[1]["evidence"]["events"][-1]["results"][0]
+        self.assertEqual(raw["name_raw"], "Keeley Whitcomb (Jr A)")
+        self.assertIn(raw["name_raw"], raw["row_raw"])
+
 
 if __name__ == "__main__":
     unittest.main()

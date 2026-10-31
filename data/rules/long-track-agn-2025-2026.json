@@ -1,0 +1,68 @@
+{
+  "label": "2025-2026 USS AGN long-track age categories",
+  "version": "USS-LT-AGN-2025-2026-v1.1",
+  "discipline": "long-track",
+  "season": "2025-2026",
+  "baselineDate": "2025-07-01",
+  "basis": "before-july-1",
+  "source": {
+    "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltcbf87fec45156db5/69694b9130864400086439ed/AGN_Rules_v1.1_Final.pdf",
+    "sha256": "bc9450d7331e46e3e9942a17331d2db348255c20ab04297e196d5b183f492652",
+    "pages": [
+      2
+    ]
+  },
+  "categories": {
+    "JR A": {
+      "min": 17,
+      "max": 18
+    },
+    "JR B": {
+      "min": 15,
+      "max": 16
+    },
+    "JR C": {
+      "min": 13,
+      "max": 14
+    },
+    "JR D": {
+      "min": 11,
+      "max": 12
+    },
+    "JR E": {
+      "min": 7,
+      "max": 10
+    },
+    "SR": {
+      "min": 19,
+      "max": null
+    }
+  },
+  "rangeAnnotations": true,
+  "divisionCategories": {
+    "Junior E Men": {
+      "min": 7,
+      "max": 10
+    },
+    "Junior E Women": {
+      "min": 7,
+      "max": 10
+    },
+    "Junior D Men": {
+      "min": 11,
+      "max": 12
+    },
+    "Junior D Women": {
+      "min": 11,
+      "max": 12
+    },
+    "Junior C Men": {
+      "min": 13,
+      "max": 14
+    },
+    "Junior C Women": {
+      "min": 13,
+      "max": 14
+    }
+  }
+}

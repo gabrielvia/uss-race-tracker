@@ -36,6 +36,20 @@
       "when": 1793382853932,
       "tag": "0004_parched_shard",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1793413269188,
+      "tag": "0005_brown_hiroim",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1793413594884,
+      "tag": "0006_ancient_roulette",
+      "breakpoints": true
     }
   ]
 }

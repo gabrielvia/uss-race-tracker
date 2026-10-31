@@ -5,15 +5,27 @@ import json
 from pathlib import Path
 import re
 
-from scripts.inspect_race import parse_race
+if __package__:
+    from .inspect_race import parse_race
+    from .tempus_text import join_event_headings
+else:
+    from inspect_race import parse_race
+    from tempus_text import join_event_headings
 
 EVENT = re.compile(r"^(.+?)\s+(\d+)\s+(Quarter-Finals|Semi-Finals|Finals) Event #(\d+)$")
-RESULT_ROW = re.compile(r"^(?:(?:\d+|PEN|DNS|DNF|DQ)\s+\d+\s+\S|\d+\s+.+\s+(?:PEN|DNS|DNF|DQ)(?:\s|$))")
+PARSER_VERSION = "tempus-complete-event/0.4"
+RESULT_ROW = re.compile(r"^(?:(?:\d+|PEN|DNS|DNF|DQ|FNT|YC)\s+\d+\s+\S|\d+\s+.+\s+(?:PEN|DNS|DNF|DQ|FNT|YC)(?:\s|$))")
 
 
-def parse_event_pages(pages, roster, event_number):
-    rows, labels, races, expected_totals = [], set(), {}, set()
+def parse_event_pages(pages, roster, event_number, event_label=None):
+    if event_label is not None:
+        selected = EVENT.fullmatch(event_label)
+        if selected is None or selected[4] != str(event_number):
+            raise ValueError("The selected source heading must match the requested event number")
+    rows, labels, races, expected_totals, heading_evidence = [], set(), {}, set(), {}
     for page_number, text in pages:
+        text, evidence = join_event_headings(text)
+        heading_evidence.update(evidence)
         if "CLASSIFICATION" in text:
             continue
         if "RESULTS" not in text:
@@ -28,6 +40,9 @@ def parse_event_pages(pages, roster, event_number):
                 current_event = event_match
                 current_race = None
                 continue
+            if "Event #" in line:
+                current_event = current_race = None
+                continue
             race_match = re.search(r"Race #(\d+)\b", line)
             if race_match:
                 if current_event is None:
@@ -36,6 +51,8 @@ def parse_event_pages(pages, roster, event_number):
             elif RESULT_ROW.match(line) and (current_event is None or current_race is None):
                 raise ValueError(f"Unsupported result continuation on page {page_number}: no event or race heading")
             if not race_match or not current_event or current_event[4] != str(event_number):
+                continue
+            if event_label is not None and current_event[0] != event_label:
                 continue
             labels.add(current_event[0])
             race_id = race_match[1]
@@ -63,13 +80,19 @@ def parse_event_pages(pages, roster, event_number):
         numbers = [r["heat_number"] for r in races.values()]
         if len(numbers) != total or set(numbers) != set(range(1, total + 1)):
             raise ValueError("The selected pages do not contain every announced heat")
-    elif len(races) != 1:
-        raise ValueError("Multiple finals require explicit classification review")
+    elif len(races) != 1 or all("Final" in r["label"] for r in races.values()):
+        tiers = [re.fullmatch(r"([A-Z]) Final Race #\d+", r["label"]) for r in races.values()]
+        if any(t is None for t in tiers) or sorted(t[1] for t in tiers) != [chr(65 + n) for n in range(len(tiers))] or not all(row["round_raw"] == "Finals" for row in rows):
+            raise ValueError("Final races must have unique contiguous tiers starting with A; missing or ambiguous finals require review")
     keys = [(r["race_id"], r["bib"]) for r in rows]
     if len(set(keys)) != len(keys):
         raise ValueError("Duplicate result within a heat")
-    return {"event_number": str(event_number), "event_label_raw": next(iter(labels)),
-            "heat_count": len(races), "heats": list(races.values()), "result_count": len(rows), "results": rows}
+    label = next(iter(labels))
+    result = {"event_number": str(event_number), "event_label_raw": label,
+              "heat_count": len(races), "heats": list(races.values()), "result_count": len(rows), "results": rows}
+    if label in heading_evidence:
+        result["source_heading_lines"] = heading_evidence[label]
+    return result
 
 
 def main():
@@ -78,6 +101,7 @@ def main():
     cli.add_argument("--roster", type=Path, required=True)
     cli.add_argument("--pages", type=int, nargs="+", required=True)
     cli.add_argument("--event-number", required=True)
+    cli.add_argument("--event-label", help="Exact full source heading; required when an event number is reused across groups.")
     cli.add_argument("--output", type=Path, required=True)
     args = cli.parse_args()
     roster = json.loads(args.roster.read_text())
@@ -88,8 +112,8 @@ def main():
     with pdfplumber.open(args.file) as pdf:
         if any(p < 1 or p > len(pdf.pages) for p in args.pages):
             cli.error("A selected page is outside the PDF")
-        event = parse_event_pages([(p, pdf.pages[p - 1].extract_text() or "") for p in args.pages], roster["observations"], args.event_number)
-    result = {"parser_version": "tempus-complete-event/0.2", "status": "complete_selected_event",
+        event = parse_event_pages([(p, pdf.pages[p - 1].extract_text() or "") for p in args.pages], roster["observations"], args.event_number, args.event_label)
+    result = {"parser_version": PARSER_VERSION, "status": "complete_selected_event",
               "source_id": roster["source_id"], "source_url": roster["source_url"], "sha256": digest,
               "pages": args.pages, **event}
     args.output.parent.mkdir(parents=True, exist_ok=True)

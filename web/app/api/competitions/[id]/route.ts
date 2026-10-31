@@ -8,12 +8,13 @@ export async function GET(_request: Request, context: { params: Promise<{ id: st
   try {
     const db = database();
     // All detail records share one D1 read transaction, including source metadata.
-    const [metadata, participants, entries, results, storedEvents] = await db.batch([
+    const [metadata, participants, entries, results, storedEvents, publication] = await db.batch<Record<string, unknown>>([
       db.prepare("SELECT c.*, s.url AS source_url FROM competitions c JOIN sources s ON s.id = c.source_id WHERE c.id = ?").bind(id),
       db.prepare("SELECT id, bib, name, affiliation FROM participants WHERE competition_id = ? ORDER BY name COLLATE NOCASE").bind(id),
       db.prepare("SELECT e.* FROM entries e JOIN participants p ON p.id = e.participant_id WHERE p.competition_id = ? ORDER BY e.id").bind(id),
       db.prepare("SELECT * FROM results WHERE competition_id = ? ORDER BY event_key, (result_status IS NOT NULL OR time_microseconds IS NULL), time_microseconds, race_id, rank").bind(id),
       db.prepare("SELECT * FROM competition_events WHERE competition_id = ?").bind(id),
+      db.prepare("SELECT r.metadata_json,r.source_hash,d.object_key FROM publication_revisions r JOIN import_publications p ON p.batch_id=r.batch_id LEFT JOIN source_documents d ON d.sha256=r.source_hash WHERE p.competition_id=?").bind(id),
     ]);
     const competition = metadata.results[0];
     if (!competition) return Response.json({ error: "Competition not found." }, { status: 404 });
@@ -33,6 +34,7 @@ export async function GET(_request: Request, context: { params: Promise<{ id: st
         label: (event?.label as string | undefined) ?? label, group_label: (event?.group_label as string | undefined) ?? label.replace(/ \d+ (?:Quarter-Finals|Semi-Finals|Finals) Event #\d+$/, ""),
         distance: first.distance, round: first.round, result_count: group.length, heat_count: new Set(group.map(r => r.race_id)).size };
     }).sort((a, b) => Number(a.source_event_number ?? Infinity) - Number(b.source_event_number ?? Infinity) || a.label.localeCompare(b.label));
-    return Response.json({ competition: { ...competition, event_count: events.length, participant_count: participants.results.length, result_count: rows.length }, events, coverage: { kind: "selected-events", eventCount: events.length, completeCompetition: false }, participants: participants.results, entries: entries.results, results: results.results }, { headers: { "Cache-Control": "no-store" } });
+    const publicationMetadata = publication.results[0]?.metadata_json ? JSON.parse(String(publication.results[0].metadata_json)) : {};
+    return Response.json({ competition: { ...competition, event_count: events.length, participant_count: participants.results.length, result_count: rows.length }, events, coverage: { kind: publicationMetadata.resultsCoverage ?? "selected-events", eventCount: events.length, completeCompetition: false }, archivedPdf: publication.results[0]?.object_key ? `/api/documents/${publication.results[0].source_hash}` : null, classificationsUrl: `/api/competitions/${id}/classifications`, participants: participants.results, entries: entries.results, results: results.results }, { headers: { "Cache-Control": "no-store" } });
   } catch (error) { return unavailable(error); }
 }

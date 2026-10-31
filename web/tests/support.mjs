@@ -29,7 +29,7 @@ export function harness(fixture = singleFixture()) {
     sqlite.exec(readFileSync(path.join(root, "drizzle", name), "utf8"));
   }
   const objects = new Map();
-  const state = { batchCalls: 0, executed: 0, failAt: null, writes: 0, failWriteAt: null, beforeReadBatch: null, beforeWriteBatch: null, afterFirst: null };
+  const state = { batchCalls: 0, executed: 0, failAt: null, failSql: null, writes: 0, failWriteAt: null, beforeReadBatch: null, beforeWriteBatch: null, afterFirst: null };
   function prepare(sql, bindings = []) {
     return {
       sql, bindings,
@@ -57,7 +57,7 @@ export function harness(fixture = singleFixture()) {
         const responses = [];
         for (const statement of statements) {
           state.executed++;
-          if (state.executed === state.failAt) throw new Error("Injected SQL failure");
+          if (state.executed === state.failAt || state.failSql?.(statement)) throw new Error("Injected SQL failure");
           const prepared = sqlite.prepare(statement.sql);
           const results = prepared.columns().length ? prepared.all(...statement.bindings) : (prepared.run(...statement.bindings), []);
           responses.push({ success: true, results });
@@ -105,7 +105,7 @@ export function harness(fixture = singleFixture()) {
     const original = console.error;
     console.error = () => {};
     try {
-      return await load(path.join(root, `app/api/${route}/route.ts`))[method](
+      return await load(path.join(root, `app/api/${route.split("?")[0]}/route.ts`))[method](
         new Request("https://example.test/api/" + route, { method, headers, ...(body === undefined ? {} : { body: JSON.stringify(body) }) }),
         { params: Promise.resolve({ id }) });
     } finally { console.error = original; }

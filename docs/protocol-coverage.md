@@ -1,37 +1,40 @@
 # Protocol inventory and coverage
 
-This local tool scans every physical page of a Tempus PDF before expanding the main website's selected-event coverage. It inventories numbered RESULTS records, audits extraction completeness and optionally compares them with a supplied publication-evidence snapshot. It does not submit candidates, publish results or create an Admin website.
+The local inventory scans every physical page of a supported Tempus protocol, discovers exact numbered RESULTS headings, audits all source race rows and optionally compares them with a supplied publication-evidence snapshot. It never submits or publishes a candidate. The complete import workflow is described in [phase 3 completion](phase-3-completion.md).
 
 ## Checked source snapshots
 
-| Source | Physical pages | Discovered event records | Export eligible | Needs review | Verified published events |
+| Source | Physical pages | Event records | Extractable events | Needs review | Published events |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Short Track AGN 2026 | 177 | 112 | 29 | 83 | 2 |
-| Long Track AGN 2026 | 118 | 59 | 30 | 29 | 2 |
+| Short Track AGN 2026 | 177 | 112 | 112 | 0 | 112 |
+| Long Track AGN 2026 | 118 | 59 | 59 | 0 | 59 |
 
-The checked reports are [short-track inventory](../data/samples/short-track-agn-protocol-inventory.json) and [long-track inventory](../data/samples/long-track-agn-protocol-inventory.json). Each records the official source URL, PDF hash, scanned pages, original event headings, observed races, result-row counts, issues and evidence comparison. Original PDFs and exported extraction files remain outside version control.
+The reports are [short track](../data/samples/short-track-agn-protocol-inventory.json) and [long track](../data/samples/long-track-agn-protocol-inventory.json). Counts describe exact source group/distance/round headings, not distinct printed event numbers or official competition totals. The two revisions contain 1,847 and 462 race results respectively. All 171 per-event checks and both complete candidate validations pass.
 
-These are counts of `(source event number, exact source heading)` records, not official competition event totals. The same short-track number can appear under different groups. Classifications are listed separately; unsupported layouts require review. `complete_competition` is always false.
+Raw classification pages remain separate: 62 short-track and 79 long-track pages. Original PDFs, full extraction files and generated candidate items are outside Git. The private Site contains all 2,309 source race results; all previous selected-event results and URLs are retained.
 
-The 29 short-track exports contain 605 result rows; the 30 long-track exports contain 238. All 59 exported events passed the existing server validator in separate offline schema-version-3 candidates. This confirms compatibility of those checked files, not approval to publish them together. No new results were published during this inventory. The website still contains four selected events and 67 results.
+The original inventory's 43 outstanding event records are now resolved: multiple final tiers, FNT/YC codes, one absent finish and two two-line semi-final headings. The current pipeline does not invent a status, missing title text, birthday, time or official overall rank. Other historical source formats remain outside this checked coverage.
 
-## Audit rules
+## Audit and export rules
 
-- Read all physical pages and verify the PDF hash and page count against the roster. Partial scans, unresolved roster issues, conflicting bib identities, mixed classification/results pages and unassigned race data prevent automatic exports for the source.
-- Discover source headings independently of the narrower supported event parser. Preserve unsupported headings in the report rather than silently ignoring them.
-- Collect each event's blocks across pages and require every announced heat. Compare the exact multiset of physical page, race ID and original result row with the extracted rows. Unknown status prefixes such as `WD` must appear as review issues if the parser cannot account for them.
-- Preserve supported `PEN`, `DNS`, `DNF` and `DQ` results, including null place/time values. These statuses do not make results disappear.
-- Flag event numbers with different headings and race IDs reused across events. Current assembly and publication contracts do not resolve these ambiguities automatically.
-- Compare result names and affiliations with normalized roster identities. Age annotations in raw names remain source evidence; they require an explicit identity-mapping solution before server import, rather than weakening the server identity checks.
-- Distinguish event extraction status from export eligibility. An otherwise complete event can remain ineligible because the source has unresolved issues. Other events' local extraction failures do not by themselves suppress a valid, independent event.
+- Verify the PDF hash and page count against the source roster, then scan every physical page.
+- Keep classifications separate from RESULTS and retain their original text. Mixed/unassigned tables and incomplete scans are review issues.
+- Identify one event by its exact heading, preserving all announced heats across pages. Reused numbers under different groups do not merge those groups.
+- Compare the multiset of physical page, source race and exact result row with the extracted rows. Known statuses remain results; an unknown status prefix, including a long or mixed-case code, must be accounted for or flagged.
+- Require contiguous numbered heats, or lettered final tiers starting at A without gaps/duplicates. Preserve each race's own place; time order is only a comparison.
+- Match roster/result identities using exact competition-local bib, affiliation and names or explicitly evidenced source age annotations. Spelling aliases and arbitrary parentheses are not normalized into identity matches.
+- Rejoin a wrapped `Semi-` heading only when the literal following line is `Finals`, retaining both source lines.
+- Retain a missing finish only when the original placed row ends at its exact roster name/affiliation. Keep null time/status and an explicit application note.
 
-In these snapshots, short-track review cases include 52 records with reused event numbers across headings and 31 extraction failures. Long-track review cases include 18 identity-annotation cases, nine extraction failures and two unsupported headings. These issue counts describe these files only. Some printed long-track headings end at `Semi-`; the tool does not invent the missing text.
+Full-protocol preparation adds an independent audit of every SKATER LIST page and complete original roster row, including entrants without results. It separately accounts for every classification-page number. A partial roster or omitted classification table cannot silently pass as a full-source candidate.
 
-Publication coverage has a separate evidence basis. Without `--published-evidence`, publication is `not_checked`, not assumed absent. With a saved evidence snapshot, the tool verifies source ID, URL and hash, rejects duplicate supplied events, compares exact results/heats/counts, and retains unknown supplied event keys for review. `published_verified` means agreement with that supplied snapshot, not a live database query. Both checked samples matched their two supplied published events.
+## Publication evidence
+
+Without `--published-evidence`, publication status is `not_checked`; absence is not assumed. With a saved evidence snapshot, source ID, URL and PDF hash must match. Duplicate supplied events are rejected; exact results, heats and counts are compared, and unknown supplied keys remain in the report.
+
+`published_verified` means agreement with that supplied evidence snapshot, not a live database query. The checked reports were regenerated against the hosted full-source snapshots: 112 short-track and 59 long-track events. `complete_competition` remains false because official classification semantics and arbitrary historical formats are not reconstructed from race times.
 
 ## Run locally
-
-Install `requirements-data.txt` for PDF extraction. From the repository root:
 
 ```sh
 python3 -m scripts.inspect_protocol \
@@ -41,14 +44,8 @@ python3 -m scripts.inspect_protocol \
   --events-output outputs/st-protocol-events
 ```
 
-For long track, use `uss-lt-agn.pdf`, `long-track-agn-roster.json` and separate output paths. Add `--published-evidence outputs/current-evidence.json` when a saved extraction-evidence snapshot is available. Accepted shapes are `{roster, events}`, legacy `{roster, race}`, or a competition item containing either under `evidence`. Do not include authorization tokens in this file.
+Add `--published-evidence outputs/current-evidence.json` to compare a saved extraction-evidence snapshot. Accepted evidence shapes are `{roster, events}`, legacy `{roster, race}`, or an item containing either under `evidence`. Do not put tokens in evidence files.
 
-Exports use the existing `tempus-complete-event/0.2` format. They are written under a subdirectory named from the canonical report's SHA-256 prefix. Use the `event_directory` printed by this run; scanning all historical export directories would mix stale files with current results. Repeating the same deterministic report reuses the same directory.
+Inventory version 0.3 exports event parser 0.4 files. A canonical-report hash selects the run directory; each filename also includes a heading hash so different groups sharing a number cannot overwrite one another. Use the printed `event_directory` rather than globbing all historical runs.
 
-After reviewing issues and selecting compatible exports, follow [multi-event imports](multi-event-imports.md): assemble, prepare a candidate against the exact local PDF, submit, inspect the server report, and explicitly publish. Existing limits still apply: at most 20 selected events and 1,000 total results per candidate. Include all already-published events and the current `baseBatchId`; splitting an import must not erase earlier coverage.
-
-## Verification and next step
-
-The offline Python suite passes 54 tests, including 15 inventory tests covering page/heat completeness, unknown statuses, supported status retention, ambiguous identifiers, unsupported headings, source/evidence mismatch and raw-name annotations. Real scans cover all 295 physical pages, and the 59 eligible exports pass the existing server validator without network or publication calls.
-
-The next parser milestone should resolve group-aware event identity and annotated roster/result name matching while preserving original evidence, then regenerate these reports before proposing wider publication. Complete competition coverage, cross-competition identity and skating-age inference remain separate milestones.
+For full sources use `prepare_protocol`, then the reviewed archive/prepare/submit/report/publish workflow. Existing source formats and older parser 0.2/0.3 selected-event inputs remain compatible under the current validator. Bounded full-source limits and explicit correction review are documented in the phase 3 guide.

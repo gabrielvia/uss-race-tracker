@@ -1,5 +1,7 @@
 # Local and ChatGPT Sites foundation
 
+Current milestone: [Phase 3 completion](phase-3-completion.md). The source findings and runtime notes below retain their original milestone scope; use the phase 3 guide for current limits, complete-protocol imports, identity/age review and deployment verification.
+
 ## Delivered scope
 
 The application lives in `web/` and uses the supported Sites Vinext starter with React, TypeScript, a Cloudflare Worker, D1, and R2. It is a single-page competition explorer with discipline selection, name/club/bib search, roster and selected-race views, source links, and a competition-local skater record.
@@ -32,8 +34,10 @@ cd web
 npm run install:ci
 node -e 'require("node:fs").writeFileSync(".dev.vars", "SEED_TOKEN=" + require("node:crypto").randomBytes(32).toString("hex") + "\n", {flag:"wx", mode:0o600})'
 npm run build
-node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_wandering_mephisto.sql
-node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0001_regular_amazoness.sql
+# Fresh local databases only: apply every generated schema migration in order.
+for migration in drizzle/*.sql; do
+  node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file "$migration"
+done
 npm run dev -- --hostname 127.0.0.1
 ```
 

@@ -107,14 +107,13 @@ test("SQL failure near end of replacement preserves live rows, evidence and publ
     const before = h.snapshot(), evidence = h.publishedEvidence();
     const p = payload(h, 0, a.id); p.item.competition.title = "Corrected title";
     const b = await submit(h, p);
-    const count = p.item.participants.length + p.item.entries.length + p.item.results.length + 13;
-    h.state.failAt = h.state.executed + count;
+    h.state.failSql = statement => statement.sql.startsWith("INSERT INTO publication_revisions");
     assert.equal((await publish(h, b.id)).status, 503);
     assert.deepEqual(h.snapshot(), before);
     assert.deepEqual(h.publishedEvidence(), evidence);
     assert.equal(h.sqlite.prepare("SELECT batch_id FROM import_publications").get().batch_id, a.id);
     assert.equal((await (await report(h, b.id)).json()).status, "validated");
-    h.state.failAt = null;
+    h.state.failSql = null;
     assert.equal((await publish(h, b.id)).status, 200);
   } finally { h.close(); }
 });
@@ -153,7 +152,7 @@ test("chunked body limit and malformed JSON do not write storage", async () => {
     const { POST } = h.load(new URL("../app/api/imports/route.ts", import.meta.url).pathname);
     const headers = { Authorization: "Bearer test-only-seed-token", "Content-Type": "application/json" };
     assert.equal((await POST(new Request("https://example.test", { method: "POST", headers, body: "[" }))).status, 400);
-    assert.equal((await POST(new Request("https://example.test", { method: "POST", headers, body: " ".repeat(2 * 1024 * 1024 + 1) }))).status, 413);
+    assert.equal((await POST(new Request("https://example.test", { method: "POST", headers, body: " ".repeat(8 * 1024 * 1024 + 1) }))).status, 413);
     assert.equal(h.state.writes, 0);
   } finally { h.close(); }
 });
