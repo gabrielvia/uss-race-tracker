@@ -1,0 +1,4953 @@
+{
+  "inventory_version": "tempus-protocol-inventory/0.1",
+  "source_id": "381947c967290f89",
+  "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltdbe3948c37369bd8/69c21eeecf706153ff29d935/2026_USS_AGN_ST_final.pdf",
+  "sha256": "96baa4cc09283058cc4a458f6ced92316f2b029fa5b7d3cf75d6f371f848744f",
+  "pdf_page_count": 177,
+  "scanned_page_count": 177,
+  "scope": "Numbered Tempus RESULTS events; classifications and unsupported layouts require separate review.",
+  "complete_competition": false,
+  "source_issues": [],
+  "page_kinds": {
+    "results": [
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177
+    ],
+    "classification": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      24,
+      26,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "other": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      23,
+      25,
+      27
+    ],
+    "needs_review": []
+  },
+  "summary": {
+    "discovered_events": 112,
+    "complete_selected_events": 29,
+    "needs_review_events": 83,
+    "export_eligible_events": 29
+  },
+  "coverage": {
+    "basis": "supplied_evidence_snapshot",
+    "published_events": 2,
+    "not_published_events": 110,
+    "unknown_published_events": []
+  },
+  "events": [
+    {
+      "event_number": "1",
+      "event_label_raw": "Group A Junior E Women's 700 Quarter-Finals Event #1",
+      "group_label": "Group A Junior E Women's",
+      "distance_metres": 700,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        75
+      ],
+      "source_races": [
+        {
+          "race_id": "101",
+          "page": 75,
+          "label": "Heat 1 of 3 Race #101"
+        },
+        {
+          "race_id": "102",
+          "page": 75,
+          "label": "Heat 2 of 3 Race #102"
+        },
+        {
+          "race_id": "103",
+          "page": 75,
+          "label": "Heat 3 of 3 Race #103"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 14,
+      "parsed_result_rows": 14,
+      "identity_review_rows": 0,
+      "result_count": 14,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "published_verified"
+    },
+    {
+      "event_number": "2",
+      "event_label_raw": "Group A Junior E Men's 700 Quarter-Finals Event #2",
+      "group_label": "Group A Junior E Men's",
+      "distance_metres": 700,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        75,
+        76,
+        77
+      ],
+      "source_races": [
+        {
+          "race_id": "201",
+          "page": 75,
+          "label": "Heat 1 of 7 Race #201"
+        },
+        {
+          "race_id": "202",
+          "page": 76,
+          "label": "Heat 2 of 7 Race #202"
+        },
+        {
+          "race_id": "203",
+          "page": 76,
+          "label": "Heat 3 of 7 Race #203"
+        },
+        {
+          "race_id": "204",
+          "page": 76,
+          "label": "Heat 4 of 7 Race #204"
+        },
+        {
+          "race_id": "205",
+          "page": 76,
+          "label": "Heat 5 of 7 Race #205"
+        },
+        {
+          "race_id": "206",
+          "page": 77,
+          "label": "Heat 6 of 7 Race #206"
+        },
+        {
+          "race_id": "207",
+          "page": 77,
+          "label": "Heat 7 of 7 Race #207"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 39,
+      "parsed_result_rows": 39,
+      "identity_review_rows": 0,
+      "result_count": 39,
+      "heat_count": 7,
+      "export_eligible": true,
+      "publication": "published_verified"
+    },
+    {
+      "event_number": "3",
+      "event_label_raw": "Group A Junior D Women's 1000 Quarter-Finals Event #3",
+      "group_label": "Group A Junior D Women's",
+      "distance_metres": 1000,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        77,
+        78
+      ],
+      "source_races": [
+        {
+          "race_id": "301",
+          "page": 77,
+          "label": "Heat 1 of 5 Race #301"
+        },
+        {
+          "race_id": "302",
+          "page": 78,
+          "label": "Heat 2 of 5 Race #302"
+        },
+        {
+          "race_id": "303",
+          "page": 78,
+          "label": "Heat 3 of 5 Race #303"
+        },
+        {
+          "race_id": "304",
+          "page": 78,
+          "label": "Heat 4 of 5 Race #304"
+        },
+        {
+          "race_id": "305",
+          "page": 78,
+          "label": "Heat 5 of 5 Race #305"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 23,
+      "parsed_result_rows": 23,
+      "identity_review_rows": 0,
+      "result_count": 23,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "4",
+      "event_label_raw": "Group A Junior D Men's 1000 Quarter-Finals Event #4",
+      "group_label": "Group A Junior D Men's",
+      "distance_metres": 1000,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        79
+      ],
+      "source_races": [
+        {
+          "race_id": "401",
+          "page": 79,
+          "label": "Heat 1 of 4 Race #401"
+        },
+        {
+          "race_id": "402",
+          "page": 79,
+          "label": "Heat 2 of 4 Race #402"
+        },
+        {
+          "race_id": "403",
+          "page": 79,
+          "label": "Heat 3 of 4 Race #403"
+        },
+        {
+          "race_id": "404",
+          "page": 79,
+          "label": "Heat 4 of 4 Race #404"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 17,
+      "parsed_result_rows": 17,
+      "identity_review_rows": 0,
+      "result_count": 17,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "5",
+      "event_label_raw": "Group A Junior C Men's 1500 Quarter-Finals Event #5",
+      "group_label": "Group A Junior C Men's",
+      "distance_metres": 1500,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        80,
+        81
+      ],
+      "source_races": [
+        {
+          "race_id": "501",
+          "page": 80,
+          "label": "Heat 1 of 4 Race #501"
+        },
+        {
+          "race_id": "502",
+          "page": 80,
+          "label": "Heat 2 of 4 Race #502"
+        },
+        {
+          "race_id": "503",
+          "page": 80,
+          "label": "Heat 3 of 4 Race #503"
+        },
+        {
+          "race_id": "504",
+          "page": 81,
+          "label": "Heat 4 of 4 Race #504"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Unsupported finish for bib 175; review the original page"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 29,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "6",
+      "event_label_raw": "Group A Combined Men's 1500 Quarter-Finals Event #6",
+      "group_label": "Group A Combined Men's",
+      "distance_metres": 1500,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        81,
+        82
+      ],
+      "source_races": [
+        {
+          "race_id": "601",
+          "page": 81,
+          "label": "Heat 1 of 5 Race #601"
+        },
+        {
+          "race_id": "602",
+          "page": 81,
+          "label": "Heat 2 of 5 Race #602"
+        },
+        {
+          "race_id": "603",
+          "page": 82,
+          "label": "Heat 3 of 5 Race #603"
+        },
+        {
+          "race_id": "604",
+          "page": 82,
+          "label": "Heat 4 of 5 Race #604"
+        },
+        {
+          "race_id": "605",
+          "page": 82,
+          "label": "Heat 5 of 5 Race #605"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 30,
+      "parsed_result_rows": 30,
+      "identity_review_rows": 0,
+      "result_count": 30,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "7",
+      "event_label_raw": "Group A Group 1 Master's 1500 Quarter-Finals Event #7",
+      "group_label": "Group A Group 1 Master's",
+      "distance_metres": 1500,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        83,
+        84
+      ],
+      "source_races": [
+        {
+          "race_id": "701",
+          "page": 83,
+          "label": "Heat 1 of 5 Race #701"
+        },
+        {
+          "race_id": "702",
+          "page": 83,
+          "label": "Heat 2 of 5 Race #702"
+        },
+        {
+          "race_id": "703",
+          "page": 83,
+          "label": "Heat 3 of 5 Race #703"
+        },
+        {
+          "race_id": "704",
+          "page": 83,
+          "label": "Heat 4 of 5 Race #704"
+        },
+        {
+          "race_id": "705",
+          "page": 84,
+          "label": "Heat 5 of 5 Race #705"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 21,
+      "parsed_result_rows": 21,
+      "identity_review_rows": 0,
+      "result_count": 21,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "8",
+      "event_label_raw": "Group A Group 2 Master's 1500 Quarter-Finals Event #8",
+      "group_label": "Group A Group 2 Master's",
+      "distance_metres": 1500,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        84
+      ],
+      "source_races": [
+        {
+          "race_id": "801",
+          "page": 84,
+          "label": "Heat 1 of 3 Race #801"
+        },
+        {
+          "race_id": "802",
+          "page": 84,
+          "label": "Heat 2 of 3 Race #802"
+        },
+        {
+          "race_id": "803",
+          "page": 84,
+          "label": "Heat 3 of 3 Race #803"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 15,
+      "parsed_result_rows": 15,
+      "identity_review_rows": 0,
+      "result_count": 15,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "9",
+      "event_label_raw": "Group A Junior E Women's 700 Semi-Finals Event #9",
+      "group_label": "Group A Junior E Women's",
+      "distance_metres": 700,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        85
+      ],
+      "source_races": [
+        {
+          "race_id": "902",
+          "page": 85,
+          "label": "Heat 1 of 2 Race #902"
+        },
+        {
+          "race_id": "903",
+          "page": 85,
+          "label": "Heat 2 of 2 Race #903"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "9",
+      "event_label_raw": "Group B Junior E Women's 700 Semi-Finals Event #9",
+      "group_label": "Group B Junior E Women's",
+      "distance_metres": 700,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        85
+      ],
+      "source_races": [
+        {
+          "race_id": "901",
+          "page": 85,
+          "label": "Heat 1 of 1 Race #901"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 4,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "10",
+      "event_label_raw": "Group A Junior E Men's 700 Semi-Finals Event #10",
+      "group_label": "Group A Junior E Men's",
+      "distance_metres": 700,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        86
+      ],
+      "source_races": [
+        {
+          "race_id": "1005",
+          "page": 86,
+          "label": "Heat 1 of 3 Race #1005"
+        },
+        {
+          "race_id": "1006",
+          "page": 86,
+          "label": "Heat 2 of 3 Race #1006"
+        },
+        {
+          "race_id": "1007",
+          "page": 86,
+          "label": "Heat 3 of 3 Race #1007"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 15,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "10",
+      "event_label_raw": "Group B Junior E Men's 700 Semi-Finals Event #10",
+      "group_label": "Group B Junior E Men's",
+      "distance_metres": 700,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        87,
+        88
+      ],
+      "source_races": [
+        {
+          "race_id": "1001",
+          "page": 87,
+          "label": "Heat 1 of 4 Race #1001"
+        },
+        {
+          "race_id": "1002",
+          "page": 87,
+          "label": "Heat 2 of 4 Race #1002"
+        },
+        {
+          "race_id": "1003",
+          "page": 87,
+          "label": "Heat 3 of 4 Race #1003"
+        },
+        {
+          "race_id": "1004",
+          "page": 88,
+          "label": "Heat 4 of 4 Race #1004"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 24,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "11",
+      "event_label_raw": "Group A Junior D Women's 1000 Semi-Finals Event #11",
+      "group_label": "Group A Junior D Women's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        88
+      ],
+      "source_races": [
+        {
+          "race_id": "1104",
+          "page": 88,
+          "label": "Heat 1 of 2 Race #1104"
+        },
+        {
+          "race_id": "1105",
+          "page": 88,
+          "label": "Heat 2 of 2 Race #1105"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "11",
+      "event_label_raw": "Group B Junior D Women's 1000 Semi-Finals Event #11",
+      "group_label": "Group B Junior D Women's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        89
+      ],
+      "source_races": [
+        {
+          "race_id": "1101",
+          "page": 89,
+          "label": "Heat 1 of 3 Race #1101"
+        },
+        {
+          "race_id": "1102",
+          "page": 89,
+          "label": "Heat 2 of 3 Race #1102"
+        },
+        {
+          "race_id": "1103",
+          "page": 89,
+          "label": "Heat 3 of 3 Race #1103"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 13,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "12",
+      "event_label_raw": "Group A Junior D Men's 1000 Semi-Finals Event #12",
+      "group_label": "Group A Junior D Men's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        89,
+        90
+      ],
+      "source_races": [
+        {
+          "race_id": "1203",
+          "page": 89,
+          "label": "Heat 1 of 2 Race #1203"
+        },
+        {
+          "race_id": "1204",
+          "page": 90,
+          "label": "Heat 2 of 2 Race #1204"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "12",
+      "event_label_raw": "Group B Junior D Men's 1000 Semi-Finals Event #12",
+      "group_label": "Group B Junior D Men's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        90
+      ],
+      "source_races": [
+        {
+          "race_id": "1201",
+          "page": 90,
+          "label": "Heat 1 of 2 Race #1201"
+        },
+        {
+          "race_id": "1202",
+          "page": 90,
+          "label": "Heat 2 of 2 Race #1202"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 7,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "13",
+      "event_label_raw": "Group A Group 1 Master's 1500 Semi-Finals Event #13",
+      "group_label": "Group A Group 1 Master's",
+      "distance_metres": 1500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        90,
+        91
+      ],
+      "source_races": [
+        {
+          "race_id": "1303",
+          "page": 90,
+          "label": "Heat 1 of 2 Race #1303"
+        },
+        {
+          "race_id": "1304",
+          "page": 91,
+          "label": "Heat 2 of 2 Race #1304"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "13",
+      "event_label_raw": "Group B Group 1 Master's 1500 Semi-Finals Event #13",
+      "group_label": "Group B Group 1 Master's",
+      "distance_metres": 1500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        91
+      ],
+      "source_races": [
+        {
+          "race_id": "1301",
+          "page": 91,
+          "label": "Heat 1 of 2 Race #1301"
+        },
+        {
+          "race_id": "1302",
+          "page": 91,
+          "label": "Heat 2 of 2 Race #1302"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 11,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "14",
+      "event_label_raw": "Group A Group 2 Master's 1500 Semi-Finals Event #14",
+      "group_label": "Group A Group 2 Master's",
+      "distance_metres": 1500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        92
+      ],
+      "source_races": [
+        {
+          "race_id": "1402",
+          "page": 92,
+          "label": "Heat 1 of 2 Race #1402"
+        },
+        {
+          "race_id": "1403",
+          "page": 92,
+          "label": "Heat 2 of 2 Race #1403"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "14",
+      "event_label_raw": "Group B Group 2 Master's 1500 Semi-Finals Event #14",
+      "group_label": "Group B Group 2 Master's",
+      "distance_metres": 1500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        92
+      ],
+      "source_races": [
+        {
+          "race_id": "1401",
+          "page": 92,
+          "label": "Heat 1 of 1 Race #1401"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 5,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "15",
+      "event_label_raw": "Group A Junior C Women's 1500 Semi-Finals Event #15",
+      "group_label": "Group A Junior C Women's",
+      "distance_metres": 1500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        93
+      ],
+      "source_races": [
+        {
+          "race_id": "1501",
+          "page": 93,
+          "label": "Heat 1 of 2 Race #1501"
+        },
+        {
+          "race_id": "1502",
+          "page": 93,
+          "label": "Heat 2 of 2 Race #1502"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 14,
+      "parsed_result_rows": 14,
+      "identity_review_rows": 0,
+      "result_count": 14,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "16",
+      "event_label_raw": "Group A Junior C Men's 1500 Semi-Finals Event #16",
+      "group_label": "Group A Junior C Men's",
+      "distance_metres": 1500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        93,
+        94
+      ],
+      "source_races": [
+        {
+          "race_id": "1603",
+          "page": 93,
+          "label": "Heat 1 of 2 Race #1603"
+        },
+        {
+          "race_id": "1604",
+          "page": 94,
+          "label": "Heat 2 of 2 Race #1604"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 14,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "16",
+      "event_label_raw": "Group B Junior C Men's 1500 Semi-Finals Event #16",
+      "group_label": "Group B Junior C Men's",
+      "distance_metres": 1500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        94
+      ],
+      "source_races": [
+        {
+          "race_id": "1601",
+          "page": 94,
+          "label": "Heat 1 of 2 Race #1601"
+        },
+        {
+          "race_id": "1602",
+          "page": 94,
+          "label": "Heat 2 of 2 Race #1602"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 14,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "17",
+      "event_label_raw": "Group A Combined Women's 1500 Semi-Finals Event #17",
+      "group_label": "Group A Combined Women's",
+      "distance_metres": 1500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        95
+      ],
+      "source_races": [
+        {
+          "race_id": "1701",
+          "page": 95,
+          "label": "Heat 1 of 2 Race #1701"
+        },
+        {
+          "race_id": "1702",
+          "page": 95,
+          "label": "Heat 2 of 2 Race #1702"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "18",
+      "event_label_raw": "Group A Combined Men's 1500 Semi-Finals Event #18",
+      "group_label": "Group A Combined Men's",
+      "distance_metres": 1500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        95,
+        96
+      ],
+      "source_races": [
+        {
+          "race_id": "1803",
+          "page": 95,
+          "label": "Heat 1 of 3 Race #1803"
+        },
+        {
+          "race_id": "1804",
+          "page": 96,
+          "label": "Heat 2 of 3 Race #1804"
+        },
+        {
+          "race_id": "1805",
+          "page": 96,
+          "label": "Heat 3 of 3 Race #1805"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 21,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "18",
+      "event_label_raw": "Group B Combined Men's 1500 Semi-Finals Event #18",
+      "group_label": "Group B Combined Men's",
+      "distance_metres": 1500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        96,
+        97
+      ],
+      "source_races": [
+        {
+          "race_id": "1801",
+          "page": 96,
+          "label": "Heat 1 of 2 Race #1801"
+        },
+        {
+          "race_id": "1802",
+          "page": 97,
+          "label": "Heat 2 of 2 Race #1802"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 9,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "19",
+      "event_label_raw": "Junior E Women's 700 Finals Event #19",
+      "group_label": "Junior E Women's",
+      "distance_metres": 700,
+      "round_raw": "Finals",
+      "pages": [
+        97
+      ],
+      "source_races": [
+        {
+          "race_id": "1901",
+          "page": 97,
+          "label": "C Final Race #1901"
+        },
+        {
+          "race_id": "1902",
+          "page": 97,
+          "label": "B Final Race #1902"
+        },
+        {
+          "race_id": "1903",
+          "page": 97,
+          "label": "A Final Race #1903"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 14,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "20",
+      "event_label_raw": "Junior E Men's 700 Finals Event #20",
+      "group_label": "Junior E Men's",
+      "distance_metres": 700,
+      "round_raw": "Finals",
+      "pages": [
+        98,
+        99
+      ],
+      "source_races": [
+        {
+          "race_id": "2001",
+          "page": 98,
+          "label": "H Final Race #2001"
+        },
+        {
+          "race_id": "2002",
+          "page": 98,
+          "label": "G Final Race #2002"
+        },
+        {
+          "race_id": "2003",
+          "page": 98,
+          "label": "F Final Race #2003"
+        },
+        {
+          "race_id": "2004",
+          "page": 98,
+          "label": "E Final Race #2004"
+        },
+        {
+          "race_id": "2005",
+          "page": 99,
+          "label": "D Final Race #2005"
+        },
+        {
+          "race_id": "2006",
+          "page": 99,
+          "label": "C Final Race #2006"
+        },
+        {
+          "race_id": "2007",
+          "page": 99,
+          "label": "B Final Race #2007"
+        },
+        {
+          "race_id": "2008",
+          "page": 99,
+          "label": "A Final Race #2008"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 39,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "21",
+      "event_label_raw": "Group 1 Master's 1500 Finals Event #21",
+      "group_label": "Group 1 Master's",
+      "distance_metres": 1500,
+      "round_raw": "Finals",
+      "pages": [
+        100
+      ],
+      "source_races": [
+        {
+          "race_id": "2101",
+          "page": 100,
+          "label": "D Final Race #2101"
+        },
+        {
+          "race_id": "2102",
+          "page": 100,
+          "label": "C Final Race #2102"
+        },
+        {
+          "race_id": "2103",
+          "page": 100,
+          "label": "B Final Race #2103"
+        },
+        {
+          "race_id": "2104",
+          "page": 100,
+          "label": "A Final Race #2104"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 21,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "22",
+      "event_label_raw": "Group 2 Master's 1500 Finals Event #22",
+      "group_label": "Group 2 Master's",
+      "distance_metres": 1500,
+      "round_raw": "Finals",
+      "pages": [
+        101
+      ],
+      "source_races": [
+        {
+          "race_id": "2201",
+          "page": 101,
+          "label": "C Final Race #2201"
+        },
+        {
+          "race_id": "2202",
+          "page": 101,
+          "label": "B Final Race #2202"
+        },
+        {
+          "race_id": "2203",
+          "page": 101,
+          "label": "A Final Race #2203"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 15,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "23",
+      "event_label_raw": "Junior D Women's 1000 Finals Event #23",
+      "group_label": "Junior D Women's",
+      "distance_metres": 1000,
+      "round_raw": "Finals",
+      "pages": [
+        101,
+        102
+      ],
+      "source_races": [
+        {
+          "race_id": "2301",
+          "page": 101,
+          "label": "E Final Race #2301"
+        },
+        {
+          "race_id": "2302",
+          "page": 102,
+          "label": "D Final Race #2302"
+        },
+        {
+          "race_id": "2303",
+          "page": 102,
+          "label": "C Final Race #2303"
+        },
+        {
+          "race_id": "2304",
+          "page": 102,
+          "label": "B Final Race #2304"
+        },
+        {
+          "race_id": "2305",
+          "page": 102,
+          "label": "A Final Race #2305"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 23,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "24",
+      "event_label_raw": "Junior D Men's 1000 Finals Event #24",
+      "group_label": "Junior D Men's",
+      "distance_metres": 1000,
+      "round_raw": "Finals",
+      "pages": [
+        103
+      ],
+      "source_races": [
+        {
+          "race_id": "2401",
+          "page": 103,
+          "label": "D Final Race #2401"
+        },
+        {
+          "race_id": "2402",
+          "page": 103,
+          "label": "C Final Race #2402"
+        },
+        {
+          "race_id": "2403",
+          "page": 103,
+          "label": "B Final Race #2403"
+        },
+        {
+          "race_id": "2404",
+          "page": 103,
+          "label": "A Final Race #2404"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 17,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "25",
+      "event_label_raw": "Junior C Women's 1500 Finals Event #25",
+      "group_label": "Junior C Women's",
+      "distance_metres": 1500,
+      "round_raw": "Finals",
+      "pages": [
+        104
+      ],
+      "source_races": [
+        {
+          "race_id": "2501",
+          "page": 104,
+          "label": "B Final Race #2501"
+        },
+        {
+          "race_id": "2502",
+          "page": 104,
+          "label": "A Final Race #2502"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 14,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "26",
+      "event_label_raw": "Junior C Men's 1500 Finals Event #26",
+      "group_label": "Junior C Men's",
+      "distance_metres": 1500,
+      "round_raw": "Finals",
+      "pages": [
+        104,
+        105
+      ],
+      "source_races": [
+        {
+          "race_id": "2601",
+          "page": 104,
+          "label": "D Final Race #2601"
+        },
+        {
+          "race_id": "2602",
+          "page": 105,
+          "label": "C Final Race #2602"
+        },
+        {
+          "race_id": "2603",
+          "page": 105,
+          "label": "B Final Race #2603"
+        },
+        {
+          "race_id": "2604",
+          "page": 105,
+          "label": "A Final Race #2604"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 28,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "27",
+      "event_label_raw": "Combined Women's 1500 Finals Event #27",
+      "group_label": "Combined Women's",
+      "distance_metres": 1500,
+      "round_raw": "Finals",
+      "pages": [
+        106
+      ],
+      "source_races": [
+        {
+          "race_id": "2701",
+          "page": 106,
+          "label": "B Final Race #2701"
+        },
+        {
+          "race_id": "2702",
+          "page": 106,
+          "label": "A Final Race #2702"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 11,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "28",
+      "event_label_raw": "Combined Men's 1500 Finals Event #28",
+      "group_label": "Combined Men's",
+      "distance_metres": 1500,
+      "round_raw": "Finals",
+      "pages": [
+        106,
+        107
+      ],
+      "source_races": [
+        {
+          "race_id": "2801",
+          "page": 106,
+          "label": "D Final Race #2801"
+        },
+        {
+          "race_id": "2802",
+          "page": 107,
+          "label": "C Final Race #2802"
+        },
+        {
+          "race_id": "2803",
+          "page": 107,
+          "label": "B Final Race #2803"
+        },
+        {
+          "race_id": "2804",
+          "page": 107,
+          "label": "A Final Race #2804"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 28,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "29",
+      "event_label_raw": "Group A Junior E Women's 500 Quarter-Finals Event #29",
+      "group_label": "Group A Junior E Women's",
+      "distance_metres": 500,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        108
+      ],
+      "source_races": [
+        {
+          "race_id": "2901",
+          "page": 108,
+          "label": "Heat 1 of 3 Race #2901"
+        },
+        {
+          "race_id": "2902",
+          "page": 108,
+          "label": "Heat 2 of 3 Race #2902"
+        },
+        {
+          "race_id": "2903",
+          "page": 108,
+          "label": "Heat 3 of 3 Race #2903"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 14,
+      "parsed_result_rows": 14,
+      "identity_review_rows": 0,
+      "result_count": 14,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "30",
+      "event_label_raw": "Group A Junior E Men's 500 Quarter-Finals Event #30",
+      "group_label": "Group A Junior E Men's",
+      "distance_metres": 500,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        108,
+        109,
+        110
+      ],
+      "source_races": [
+        {
+          "race_id": "3001",
+          "page": 108,
+          "label": "Heat 1 of 7 Race #3001"
+        },
+        {
+          "race_id": "3002",
+          "page": 109,
+          "label": "Heat 2 of 7 Race #3002"
+        },
+        {
+          "race_id": "3003",
+          "page": 109,
+          "label": "Heat 3 of 7 Race #3003"
+        },
+        {
+          "race_id": "3004",
+          "page": 109,
+          "label": "Heat 4 of 7 Race #3004"
+        },
+        {
+          "race_id": "3005",
+          "page": 109,
+          "label": "Heat 5 of 7 Race #3005"
+        },
+        {
+          "race_id": "3006",
+          "page": 110,
+          "label": "Heat 6 of 7 Race #3006"
+        },
+        {
+          "race_id": "3007",
+          "page": 110,
+          "label": "Heat 7 of 7 Race #3007"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 39,
+      "parsed_result_rows": 39,
+      "identity_review_rows": 0,
+      "result_count": 39,
+      "heat_count": 7,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "31",
+      "event_label_raw": "Group A Junior D Women's 500 Quarter-Finals Event #31",
+      "group_label": "Group A Junior D Women's",
+      "distance_metres": 500,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        110,
+        111
+      ],
+      "source_races": [
+        {
+          "race_id": "3101",
+          "page": 110,
+          "label": "Heat 1 of 5 Race #3101"
+        },
+        {
+          "race_id": "3102",
+          "page": 111,
+          "label": "Heat 2 of 5 Race #3102"
+        },
+        {
+          "race_id": "3103",
+          "page": 111,
+          "label": "Heat 3 of 5 Race #3103"
+        },
+        {
+          "race_id": "3104",
+          "page": 111,
+          "label": "Heat 4 of 5 Race #3104"
+        },
+        {
+          "race_id": "3105",
+          "page": 111,
+          "label": "Heat 5 of 5 Race #3105"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 23,
+      "parsed_result_rows": 23,
+      "identity_review_rows": 0,
+      "result_count": 23,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "32",
+      "event_label_raw": "Group A Junior D Men's 500 Quarter-Finals Event #32",
+      "group_label": "Group A Junior D Men's",
+      "distance_metres": 500,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        112
+      ],
+      "source_races": [
+        {
+          "race_id": "3201",
+          "page": 112,
+          "label": "Heat 1 of 4 Race #3201"
+        },
+        {
+          "race_id": "3202",
+          "page": 112,
+          "label": "Heat 2 of 4 Race #3202"
+        },
+        {
+          "race_id": "3203",
+          "page": 112,
+          "label": "Heat 3 of 4 Race #3203"
+        },
+        {
+          "race_id": "3204",
+          "page": 112,
+          "label": "Heat 4 of 4 Race #3204"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 17,
+      "parsed_result_rows": 17,
+      "identity_review_rows": 0,
+      "result_count": 17,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "33",
+      "event_label_raw": "Group A Junior C Women's 500 Quarter-Finals Event #33",
+      "group_label": "Group A Junior C Women's",
+      "distance_metres": 500,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        113
+      ],
+      "source_races": [
+        {
+          "race_id": "3301",
+          "page": 113,
+          "label": "Heat 1 of 3 Race #3301"
+        },
+        {
+          "race_id": "3302",
+          "page": 113,
+          "label": "Heat 2 of 3 Race #3302"
+        },
+        {
+          "race_id": "3303",
+          "page": 113,
+          "label": "Heat 3 of 3 Race #3303"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 13,
+      "parsed_result_rows": 13,
+      "identity_review_rows": 0,
+      "result_count": 13,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "34",
+      "event_label_raw": "Group A Junior C Men's 500 Quarter-Finals Event #34",
+      "group_label": "Group A Junior C Men's",
+      "distance_metres": 500,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        113,
+        114,
+        115
+      ],
+      "source_races": [
+        {
+          "race_id": "3401",
+          "page": 113,
+          "label": "Heat 1 of 5 Race #3401"
+        },
+        {
+          "race_id": "3402",
+          "page": 114,
+          "label": "Heat 2 of 5 Race #3402"
+        },
+        {
+          "race_id": "3403",
+          "page": 114,
+          "label": "Heat 3 of 5 Race #3403"
+        },
+        {
+          "race_id": "3404",
+          "page": 114,
+          "label": "Heat 4 of 5 Race #3404"
+        },
+        {
+          "race_id": "3405",
+          "page": 115,
+          "label": "Heat 5 of 5 Race #3405"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 29,
+      "parsed_result_rows": 29,
+      "identity_review_rows": 0,
+      "result_count": 29,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "35",
+      "event_label_raw": "Group A Combined Men's 500 Quarter-Finals Event #35",
+      "group_label": "Group A Combined Men's",
+      "distance_metres": 500,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        115,
+        116
+      ],
+      "source_races": [
+        {
+          "race_id": "3501",
+          "page": 115,
+          "label": "Heat 1 of 5 Race #3501"
+        },
+        {
+          "race_id": "3502",
+          "page": 115,
+          "label": "Heat 2 of 5 Race #3502"
+        },
+        {
+          "race_id": "3503",
+          "page": 116,
+          "label": "Heat 3 of 5 Race #3503"
+        },
+        {
+          "race_id": "3504",
+          "page": 116,
+          "label": "Heat 4 of 5 Race #3504"
+        },
+        {
+          "race_id": "3505",
+          "page": 116,
+          "label": "Heat 5 of 5 Race #3505"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 29,
+      "parsed_result_rows": 29,
+      "identity_review_rows": 0,
+      "result_count": 29,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "36",
+      "event_label_raw": "Group A Group 1 Master's 500 Quarter-Finals Event #36",
+      "group_label": "Group A Group 1 Master's",
+      "distance_metres": 500,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        117,
+        118
+      ],
+      "source_races": [
+        {
+          "race_id": "3601",
+          "page": 117,
+          "label": "Heat 1 of 5 Race #3601"
+        },
+        {
+          "race_id": "3602",
+          "page": 117,
+          "label": "Heat 2 of 5 Race #3602"
+        },
+        {
+          "race_id": "3603",
+          "page": 117,
+          "label": "Heat 3 of 5 Race #3603"
+        },
+        {
+          "race_id": "3604",
+          "page": 117,
+          "label": "Heat 4 of 5 Race #3604"
+        },
+        {
+          "race_id": "3605",
+          "page": 118,
+          "label": "Heat 5 of 5 Race #3605"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 21,
+      "parsed_result_rows": 21,
+      "identity_review_rows": 0,
+      "result_count": 21,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "37",
+      "event_label_raw": "Group A Group 2 Master's 500 Quarter-Finals Event #37",
+      "group_label": "Group A Group 2 Master's",
+      "distance_metres": 500,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        118
+      ],
+      "source_races": [
+        {
+          "race_id": "3701",
+          "page": 118,
+          "label": "Heat 1 of 3 Race #3701"
+        },
+        {
+          "race_id": "3702",
+          "page": 118,
+          "label": "Heat 2 of 3 Race #3702"
+        },
+        {
+          "race_id": "3703",
+          "page": 118,
+          "label": "Heat 3 of 3 Race #3703"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 15,
+      "parsed_result_rows": 15,
+      "identity_review_rows": 0,
+      "result_count": 15,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "38",
+      "event_label_raw": "Group A Junior E Women's 500 Semi-Finals Event #38",
+      "group_label": "Group A Junior E Women's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        119
+      ],
+      "source_races": [
+        {
+          "race_id": "3802",
+          "page": 119,
+          "label": "Heat 1 of 2 Race #3802"
+        },
+        {
+          "race_id": "3803",
+          "page": 119,
+          "label": "Heat 2 of 2 Race #3803"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "38",
+      "event_label_raw": "Group B Junior E Women's 500 Semi-Finals Event #38",
+      "group_label": "Group B Junior E Women's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        119
+      ],
+      "source_races": [
+        {
+          "race_id": "3801",
+          "page": 119,
+          "label": "Heat 1 of 1 Race #3801"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 4,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "39",
+      "event_label_raw": "Group A Junior E Men's 500 Semi-Finals Event #39",
+      "group_label": "Group A Junior E Men's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        120
+      ],
+      "source_races": [
+        {
+          "race_id": "3905",
+          "page": 120,
+          "label": "Heat 1 of 3 Race #3905"
+        },
+        {
+          "race_id": "3906",
+          "page": 120,
+          "label": "Heat 2 of 3 Race #3906"
+        },
+        {
+          "race_id": "3907",
+          "page": 120,
+          "label": "Heat 3 of 3 Race #3907"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 15,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "39",
+      "event_label_raw": "Group B Junior E Men's 500 Semi-Finals Event #39",
+      "group_label": "Group B Junior E Men's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        121,
+        122
+      ],
+      "source_races": [
+        {
+          "race_id": "3901",
+          "page": 121,
+          "label": "Heat 1 of 4 Race #3901"
+        },
+        {
+          "race_id": "3902",
+          "page": 121,
+          "label": "Heat 2 of 4 Race #3902"
+        },
+        {
+          "race_id": "3903",
+          "page": 121,
+          "label": "Heat 3 of 4 Race #3903"
+        },
+        {
+          "race_id": "3904",
+          "page": 122,
+          "label": "Heat 4 of 4 Race #3904"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 24,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "40",
+      "event_label_raw": "Group A Junior D Women's 500 Semi-Finals Event #40",
+      "group_label": "Group A Junior D Women's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        122
+      ],
+      "source_races": [
+        {
+          "race_id": "4004",
+          "page": 122,
+          "label": "Heat 1 of 2 Race #4004"
+        },
+        {
+          "race_id": "4005",
+          "page": 122,
+          "label": "Heat 2 of 2 Race #4005"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "40",
+      "event_label_raw": "Group B Junior D Women's 500 Semi-Finals Event #40",
+      "group_label": "Group B Junior D Women's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        123
+      ],
+      "source_races": [
+        {
+          "race_id": "4001",
+          "page": 123,
+          "label": "Heat 1 of 3 Race #4001"
+        },
+        {
+          "race_id": "4002",
+          "page": 123,
+          "label": "Heat 2 of 3 Race #4002"
+        },
+        {
+          "race_id": "4003",
+          "page": 123,
+          "label": "Heat 3 of 3 Race #4003"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 13,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "41",
+      "event_label_raw": "Group A Junior D Men's 500 Semi-Finals Event #41",
+      "group_label": "Group A Junior D Men's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        123,
+        124
+      ],
+      "source_races": [
+        {
+          "race_id": "4103",
+          "page": 123,
+          "label": "Heat 1 of 2 Race #4103"
+        },
+        {
+          "race_id": "4104",
+          "page": 124,
+          "label": "Heat 2 of 2 Race #4104"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "41",
+      "event_label_raw": "Group B Junior D Men's 500 Semi-Finals Event #41",
+      "group_label": "Group B Junior D Men's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        124
+      ],
+      "source_races": [
+        {
+          "race_id": "4101",
+          "page": 124,
+          "label": "Heat 1 of 2 Race #4101"
+        },
+        {
+          "race_id": "4102",
+          "page": 124,
+          "label": "Heat 2 of 2 Race #4102"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 7,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "42",
+      "event_label_raw": "Group A Group 1 Master's 500 Semi-Finals Event #42",
+      "group_label": "Group A Group 1 Master's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        124,
+        125
+      ],
+      "source_races": [
+        {
+          "race_id": "4203",
+          "page": 124,
+          "label": "Heat 1 of 2 Race #4203"
+        },
+        {
+          "race_id": "4204",
+          "page": 125,
+          "label": "Heat 2 of 2 Race #4204"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "42",
+      "event_label_raw": "Group B Group 1 Master's 500 Semi-Finals Event #42",
+      "group_label": "Group B Group 1 Master's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        125
+      ],
+      "source_races": [
+        {
+          "race_id": "4201",
+          "page": 125,
+          "label": "Heat 1 of 2 Race #4201"
+        },
+        {
+          "race_id": "4202",
+          "page": 125,
+          "label": "Heat 2 of 2 Race #4202"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 11,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "43",
+      "event_label_raw": "Group A Group 2 Master's 500 Semi-Finals Event #43",
+      "group_label": "Group A Group 2 Master's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        126
+      ],
+      "source_races": [
+        {
+          "race_id": "4302",
+          "page": 126,
+          "label": "Heat 1 of 2 Race #4302"
+        },
+        {
+          "race_id": "4303",
+          "page": 126,
+          "label": "Heat 2 of 2 Race #4303"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "43",
+      "event_label_raw": "Group B Group 2 Master's 500 Semi-Finals Event #43",
+      "group_label": "Group B Group 2 Master's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        126
+      ],
+      "source_races": [
+        {
+          "race_id": "4301",
+          "page": 126,
+          "label": "Heat 1 of 1 Race #4301"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 5,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "44",
+      "event_label_raw": "Group A Junior C Women's 500 Semi-Finals Event #44",
+      "group_label": "Group A Junior C Women's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        127
+      ],
+      "source_races": [
+        {
+          "race_id": "4402",
+          "page": 127,
+          "label": "Heat 1 of 2 Race #4402"
+        },
+        {
+          "race_id": "4403",
+          "page": 127,
+          "label": "Heat 2 of 2 Race #4403"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "44",
+      "event_label_raw": "Group B Junior C Women's 500 Semi-Finals Event #44",
+      "group_label": "Group B Junior C Women's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        127
+      ],
+      "source_races": [
+        {
+          "race_id": "4401",
+          "page": 127,
+          "label": "Heat 1 of 1 Race #4401"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 3,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "45",
+      "event_label_raw": "Group A Junior C Men's 500 Semi-Finals Event #45",
+      "group_label": "Group A Junior C Men's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        127,
+        128
+      ],
+      "source_races": [
+        {
+          "race_id": "4504",
+          "page": 127,
+          "label": "Heat 1 of 2 Race #4504"
+        },
+        {
+          "race_id": "4505",
+          "page": 128,
+          "label": "Heat 2 of 2 Race #4505"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "45",
+      "event_label_raw": "Group B Junior C Men's 500 Semi-Finals Event #45",
+      "group_label": "Group B Junior C Men's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        128,
+        129
+      ],
+      "source_races": [
+        {
+          "race_id": "4501",
+          "page": 128,
+          "label": "Heat 1 of 3 Race #4501"
+        },
+        {
+          "race_id": "4502",
+          "page": 128,
+          "label": "Heat 2 of 3 Race #4502"
+        },
+        {
+          "race_id": "4503",
+          "page": 129,
+          "label": "Heat 3 of 3 Race #4503"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 18,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "46",
+      "event_label_raw": "Group A Combined Women's 500 Semi-Finals Event #46",
+      "group_label": "Group A Combined Women's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        129
+      ],
+      "source_races": [
+        {
+          "race_id": "4601",
+          "page": 129,
+          "label": "Heat 1 of 2 Race #4601"
+        },
+        {
+          "race_id": "4602",
+          "page": 129,
+          "label": "Heat 2 of 2 Race #4602"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "47",
+      "event_label_raw": "Group A Combined Men's 500 Semi-Finals Event #47",
+      "group_label": "Group A Combined Men's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        130
+      ],
+      "source_races": [
+        {
+          "race_id": "4705",
+          "page": 130,
+          "label": "Heat 1 of 2 Race #4705"
+        },
+        {
+          "race_id": "4706",
+          "page": 130,
+          "label": "Heat 2 of 2 Race #4706"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "47",
+      "event_label_raw": "Group B Combined Men's 500 Semi-Finals Event #47",
+      "group_label": "Group B Combined Men's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        130,
+        131
+      ],
+      "source_races": [
+        {
+          "race_id": "4701",
+          "page": 130,
+          "label": "Heat 1 of 4 Race #4701"
+        },
+        {
+          "race_id": "4702",
+          "page": 130,
+          "label": "Heat 2 of 4 Race #4702"
+        },
+        {
+          "race_id": "4703",
+          "page": 131,
+          "label": "Heat 3 of 4 Race #4703"
+        },
+        {
+          "race_id": "4704",
+          "page": 131,
+          "label": "Heat 4 of 4 Race #4704"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 19,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "48",
+      "event_label_raw": "Junior E Women's 500 Finals Event #48",
+      "group_label": "Junior E Women's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        131,
+        132
+      ],
+      "source_races": [
+        {
+          "race_id": "4801",
+          "page": 131,
+          "label": "C Final Race #4801"
+        },
+        {
+          "race_id": "4802",
+          "page": 131,
+          "label": "B Final Race #4802"
+        },
+        {
+          "race_id": "4803",
+          "page": 132,
+          "label": "A Final Race #4803"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 14,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "49",
+      "event_label_raw": "Junior E Men's 500 Finals Event #49",
+      "group_label": "Junior E Men's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        132,
+        133,
+        134
+      ],
+      "source_races": [
+        {
+          "race_id": "4901",
+          "page": 132,
+          "label": "H Final Race #4901"
+        },
+        {
+          "race_id": "4902",
+          "page": 132,
+          "label": "G Final Race #4902"
+        },
+        {
+          "race_id": "4903",
+          "page": 132,
+          "label": "F Final Race #4903"
+        },
+        {
+          "race_id": "4904",
+          "page": 133,
+          "label": "E Final Race #4904"
+        },
+        {
+          "race_id": "4905",
+          "page": 133,
+          "label": "D Final Race #4905"
+        },
+        {
+          "race_id": "4906",
+          "page": 133,
+          "label": "C Final Race #4906"
+        },
+        {
+          "race_id": "4907",
+          "page": 133,
+          "label": "B Final Race #4907"
+        },
+        {
+          "race_id": "4908",
+          "page": 134,
+          "label": "A Final Race #4908"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 38,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "50",
+      "event_label_raw": "Group 1 Master's 500 Finals Event #50",
+      "group_label": "Group 1 Master's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        134,
+        135
+      ],
+      "source_races": [
+        {
+          "race_id": "5001",
+          "page": 134,
+          "label": "D Final Race #5001"
+        },
+        {
+          "race_id": "5002",
+          "page": 134,
+          "label": "C Final Race #5002"
+        },
+        {
+          "race_id": "5003",
+          "page": 135,
+          "label": "B Final Race #5003"
+        },
+        {
+          "race_id": "5004",
+          "page": 135,
+          "label": "A Final Race #5004"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 21,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "51",
+      "event_label_raw": "Group 2 Master's 500 Finals Event #51",
+      "group_label": "Group 2 Master's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        135,
+        136
+      ],
+      "source_races": [
+        {
+          "race_id": "5101",
+          "page": 135,
+          "label": "C Final Race #5101"
+        },
+        {
+          "race_id": "5102",
+          "page": 135,
+          "label": "B Final Race #5102"
+        },
+        {
+          "race_id": "5103",
+          "page": 136,
+          "label": "A Final Race #5103"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 15,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "52",
+      "event_label_raw": "Junior D Women's 500 Finals Event #52",
+      "group_label": "Junior D Women's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        136,
+        137
+      ],
+      "source_races": [
+        {
+          "race_id": "5201",
+          "page": 136,
+          "label": "E Final Race #5201"
+        },
+        {
+          "race_id": "5202",
+          "page": 136,
+          "label": "D Final Race #5202"
+        },
+        {
+          "race_id": "5203",
+          "page": 136,
+          "label": "C Final Race #5203"
+        },
+        {
+          "race_id": "5204",
+          "page": 137,
+          "label": "B Final Race #5204"
+        },
+        {
+          "race_id": "5205",
+          "page": 137,
+          "label": "A Final Race #5205"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 23,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "53",
+      "event_label_raw": "Junior D Men's 500 Finals Event #53",
+      "group_label": "Junior D Men's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        137,
+        138
+      ],
+      "source_races": [
+        {
+          "race_id": "5301",
+          "page": 137,
+          "label": "D Final Race #5301"
+        },
+        {
+          "race_id": "5302",
+          "page": 137,
+          "label": "C Final Race #5302"
+        },
+        {
+          "race_id": "5303",
+          "page": 138,
+          "label": "B Final Race #5303"
+        },
+        {
+          "race_id": "5304",
+          "page": 138,
+          "label": "A Final Race #5304"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 17,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "54",
+      "event_label_raw": "Junior C Women's 500 Finals Event #54",
+      "group_label": "Junior C Women's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        138,
+        139
+      ],
+      "source_races": [
+        {
+          "race_id": "5401",
+          "page": 138,
+          "label": "C Final Race #5401"
+        },
+        {
+          "race_id": "5402",
+          "page": 138,
+          "label": "B Final Race #5402"
+        },
+        {
+          "race_id": "5403",
+          "page": 139,
+          "label": "A Final Race #5403"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 13,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "55",
+      "event_label_raw": "Junior C Men's 500 Finals Event #55",
+      "group_label": "Junior C Men's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        139,
+        140
+      ],
+      "source_races": [
+        {
+          "race_id": "5501",
+          "page": 139,
+          "label": "F Final Race #5501"
+        },
+        {
+          "race_id": "5502",
+          "page": 139,
+          "label": "E Final Race #5502"
+        },
+        {
+          "race_id": "5503",
+          "page": 139,
+          "label": "D Final Race #5503"
+        },
+        {
+          "race_id": "5504",
+          "page": 140,
+          "label": "C Final Race #5504"
+        },
+        {
+          "race_id": "5505",
+          "page": 140,
+          "label": "B Final Race #5505"
+        },
+        {
+          "race_id": "5506",
+          "page": 140,
+          "label": "A Final Race #5506"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 28,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "56",
+      "event_label_raw": "Combined Women's 500 Finals Event #56",
+      "group_label": "Combined Women's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        141
+      ],
+      "source_races": [
+        {
+          "race_id": "5601",
+          "page": 141,
+          "label": "B Final Race #5601"
+        },
+        {
+          "race_id": "5602",
+          "page": 141,
+          "label": "A Final Race #5602"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 11,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "57",
+      "event_label_raw": "Combined Men's 500 Finals Event #57",
+      "group_label": "Combined Men's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        141,
+        142
+      ],
+      "source_races": [
+        {
+          "race_id": "5701",
+          "page": 141,
+          "label": "F Final Race #5701"
+        },
+        {
+          "race_id": "5702",
+          "page": 141,
+          "label": "E Final Race #5702"
+        },
+        {
+          "race_id": "5703",
+          "page": 142,
+          "label": "D Final Race #5703"
+        },
+        {
+          "race_id": "5704",
+          "page": 142,
+          "label": "C Final Race #5704"
+        },
+        {
+          "race_id": "5705",
+          "page": 142,
+          "label": "B Final Race #5705"
+        },
+        {
+          "race_id": "5706",
+          "page": 142,
+          "label": "A Final Race #5706"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 28,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "61",
+      "event_label_raw": "Group A Junior E Women's 333 Quarter-Finals Event #61",
+      "group_label": "Group A Junior E Women's",
+      "distance_metres": 333,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        143
+      ],
+      "source_races": [
+        {
+          "race_id": "6101",
+          "page": 143,
+          "label": "Heat 1 of 3 Race #6101"
+        },
+        {
+          "race_id": "6102",
+          "page": 143,
+          "label": "Heat 2 of 3 Race #6102"
+        },
+        {
+          "race_id": "6103",
+          "page": 143,
+          "label": "Heat 3 of 3 Race #6103"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 14,
+      "parsed_result_rows": 14,
+      "identity_review_rows": 0,
+      "result_count": 14,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "62",
+      "event_label_raw": "Group A Junior E Men's 333 Quarter-Finals Event #62",
+      "group_label": "Group A Junior E Men's",
+      "distance_metres": 333,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        143,
+        144,
+        145
+      ],
+      "source_races": [
+        {
+          "race_id": "6201",
+          "page": 143,
+          "label": "Heat 1 of 7 Race #6201"
+        },
+        {
+          "race_id": "6202",
+          "page": 144,
+          "label": "Heat 2 of 7 Race #6202"
+        },
+        {
+          "race_id": "6203",
+          "page": 144,
+          "label": "Heat 3 of 7 Race #6203"
+        },
+        {
+          "race_id": "6204",
+          "page": 144,
+          "label": "Heat 4 of 7 Race #6204"
+        },
+        {
+          "race_id": "6205",
+          "page": 144,
+          "label": "Heat 5 of 7 Race #6205"
+        },
+        {
+          "race_id": "6206",
+          "page": 145,
+          "label": "Heat 6 of 7 Race #6206"
+        },
+        {
+          "race_id": "6207",
+          "page": 145,
+          "label": "Heat 7 of 7 Race #6207"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 39,
+      "parsed_result_rows": 39,
+      "identity_review_rows": 0,
+      "result_count": 39,
+      "heat_count": 7,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "63",
+      "event_label_raw": "Group A Junior D Women's 777 Quarter-Finals Event #63",
+      "group_label": "Group A Junior D Women's",
+      "distance_metres": 777,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        145,
+        146
+      ],
+      "source_races": [
+        {
+          "race_id": "6301",
+          "page": 145,
+          "label": "Heat 1 of 5 Race #6301"
+        },
+        {
+          "race_id": "6302",
+          "page": 146,
+          "label": "Heat 2 of 5 Race #6302"
+        },
+        {
+          "race_id": "6303",
+          "page": 146,
+          "label": "Heat 3 of 5 Race #6303"
+        },
+        {
+          "race_id": "6304",
+          "page": 146,
+          "label": "Heat 4 of 5 Race #6304"
+        },
+        {
+          "race_id": "6305",
+          "page": 146,
+          "label": "Heat 5 of 5 Race #6305"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 23,
+      "parsed_result_rows": 23,
+      "identity_review_rows": 0,
+      "result_count": 23,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "64",
+      "event_label_raw": "Group A Junior D Men's 777 Quarter-Finals Event #64",
+      "group_label": "Group A Junior D Men's",
+      "distance_metres": 777,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        147
+      ],
+      "source_races": [
+        {
+          "race_id": "6401",
+          "page": 147,
+          "label": "Heat 1 of 4 Race #6401"
+        },
+        {
+          "race_id": "6402",
+          "page": 147,
+          "label": "Heat 2 of 4 Race #6402"
+        },
+        {
+          "race_id": "6403",
+          "page": 147,
+          "label": "Heat 3 of 4 Race #6403"
+        },
+        {
+          "race_id": "6404",
+          "page": 147,
+          "label": "Heat 4 of 4 Race #6404"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 17,
+      "parsed_result_rows": 17,
+      "identity_review_rows": 0,
+      "result_count": 17,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "65",
+      "event_label_raw": "Group A Junior C Women's 1000 Quarter-Finals Event #65",
+      "group_label": "Group A Junior C Women's",
+      "distance_metres": 1000,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        148
+      ],
+      "source_races": [
+        {
+          "race_id": "6501",
+          "page": 148,
+          "label": "Heat 1 of 3 Race #6501"
+        },
+        {
+          "race_id": "6502",
+          "page": 148,
+          "label": "Heat 2 of 3 Race #6502"
+        },
+        {
+          "race_id": "6503",
+          "page": 148,
+          "label": "Heat 3 of 3 Race #6503"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 13,
+      "parsed_result_rows": 13,
+      "identity_review_rows": 0,
+      "result_count": 13,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "66",
+      "event_label_raw": "Group A Junior C Men's 1000 Quarter-Finals Event #66",
+      "group_label": "Group A Junior C Men's",
+      "distance_metres": 1000,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        148,
+        149,
+        150
+      ],
+      "source_races": [
+        {
+          "race_id": "6601",
+          "page": 148,
+          "label": "Heat 1 of 5 Race #6601"
+        },
+        {
+          "race_id": "6602",
+          "page": 149,
+          "label": "Heat 2 of 5 Race #6602"
+        },
+        {
+          "race_id": "6603",
+          "page": 149,
+          "label": "Heat 3 of 5 Race #6603"
+        },
+        {
+          "race_id": "6604",
+          "page": 149,
+          "label": "Heat 4 of 5 Race #6604"
+        },
+        {
+          "race_id": "6605",
+          "page": 150,
+          "label": "Heat 5 of 5 Race #6605"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 29,
+      "parsed_result_rows": 29,
+      "identity_review_rows": 0,
+      "result_count": 29,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "67",
+      "event_label_raw": "Group A Combined Men's 1000 Quarter-Finals Event #67",
+      "group_label": "Group A Combined Men's",
+      "distance_metres": 1000,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        150,
+        151
+      ],
+      "source_races": [
+        {
+          "race_id": "6701",
+          "page": 150,
+          "label": "Heat 1 of 5 Race #6701"
+        },
+        {
+          "race_id": "6702",
+          "page": 150,
+          "label": "Heat 2 of 5 Race #6702"
+        },
+        {
+          "race_id": "6703",
+          "page": 151,
+          "label": "Heat 3 of 5 Race #6703"
+        },
+        {
+          "race_id": "6704",
+          "page": 151,
+          "label": "Heat 4 of 5 Race #6704"
+        },
+        {
+          "race_id": "6705",
+          "page": 151,
+          "label": "Heat 5 of 5 Race #6705"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 28,
+      "parsed_result_rows": 28,
+      "identity_review_rows": 0,
+      "result_count": 28,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "68",
+      "event_label_raw": "Group A Group 1 Master's 1000 Quarter-Finals Event #68",
+      "group_label": "Group A Group 1 Master's",
+      "distance_metres": 1000,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        152,
+        153
+      ],
+      "source_races": [
+        {
+          "race_id": "6801",
+          "page": 152,
+          "label": "Heat 1 of 5 Race #6801"
+        },
+        {
+          "race_id": "6802",
+          "page": 152,
+          "label": "Heat 2 of 5 Race #6802"
+        },
+        {
+          "race_id": "6803",
+          "page": 152,
+          "label": "Heat 3 of 5 Race #6803"
+        },
+        {
+          "race_id": "6804",
+          "page": 152,
+          "label": "Heat 4 of 5 Race #6804"
+        },
+        {
+          "race_id": "6805",
+          "page": 153,
+          "label": "Heat 5 of 5 Race #6805"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 21,
+      "parsed_result_rows": 21,
+      "identity_review_rows": 0,
+      "result_count": 21,
+      "heat_count": 5,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "69",
+      "event_label_raw": "Group A Group 2 Master's 1000 Quarter-Finals Event #69",
+      "group_label": "Group A Group 2 Master's",
+      "distance_metres": 1000,
+      "round_raw": "Quarter-Finals",
+      "pages": [
+        153
+      ],
+      "source_races": [
+        {
+          "race_id": "6901",
+          "page": 153,
+          "label": "Heat 1 of 3 Race #6901"
+        },
+        {
+          "race_id": "6902",
+          "page": 153,
+          "label": "Heat 2 of 3 Race #6902"
+        },
+        {
+          "race_id": "6903",
+          "page": 153,
+          "label": "Heat 3 of 3 Race #6903"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 15,
+      "parsed_result_rows": 15,
+      "identity_review_rows": 0,
+      "result_count": 15,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "70",
+      "event_label_raw": "Group A Junior E Women's 333 Semi-Finals Event #70",
+      "group_label": "Group A Junior E Women's",
+      "distance_metres": 333,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        154
+      ],
+      "source_races": [
+        {
+          "race_id": "7002",
+          "page": 154,
+          "label": "Heat 1 of 2 Race #7002"
+        },
+        {
+          "race_id": "7003",
+          "page": 154,
+          "label": "Heat 2 of 2 Race #7003"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "70",
+      "event_label_raw": "Group B Junior E Women's 333 Semi-Finals Event #70",
+      "group_label": "Group B Junior E Women's",
+      "distance_metres": 333,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        154
+      ],
+      "source_races": [
+        {
+          "race_id": "7001",
+          "page": 154,
+          "label": "Heat 1 of 1 Race #7001"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 4,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "71",
+      "event_label_raw": "Group A Junior E Men's 333 Semi-Finals Event #71",
+      "group_label": "Group A Junior E Men's",
+      "distance_metres": 333,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        155
+      ],
+      "source_races": [
+        {
+          "race_id": "7105",
+          "page": 155,
+          "label": "Heat 1 of 3 Race #7105"
+        },
+        {
+          "race_id": "7106",
+          "page": 155,
+          "label": "Heat 2 of 3 Race #7106"
+        },
+        {
+          "race_id": "7107",
+          "page": 155,
+          "label": "Heat 3 of 3 Race #7107"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 15,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "71",
+      "event_label_raw": "Group B Junior E Men's 333 Semi-Finals Event #71",
+      "group_label": "Group B Junior E Men's",
+      "distance_metres": 333,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        156,
+        157
+      ],
+      "source_races": [
+        {
+          "race_id": "7101",
+          "page": 156,
+          "label": "Heat 1 of 4 Race #7101"
+        },
+        {
+          "race_id": "7102",
+          "page": 156,
+          "label": "Heat 2 of 4 Race #7102"
+        },
+        {
+          "race_id": "7103",
+          "page": 156,
+          "label": "Heat 3 of 4 Race #7103"
+        },
+        {
+          "race_id": "7104",
+          "page": 157,
+          "label": "Heat 4 of 4 Race #7104"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 24,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "72",
+      "event_label_raw": "Group A Junior D Women's 777 Semi-Finals Event #72",
+      "group_label": "Group A Junior D Women's",
+      "distance_metres": 777,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        157
+      ],
+      "source_races": [
+        {
+          "race_id": "7204",
+          "page": 157,
+          "label": "Heat 1 of 2 Race #7204"
+        },
+        {
+          "race_id": "7205",
+          "page": 157,
+          "label": "Heat 2 of 2 Race #7205"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "72",
+      "event_label_raw": "Group B Junior D Women's 777 Semi-Finals Event #72",
+      "group_label": "Group B Junior D Women's",
+      "distance_metres": 777,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        158
+      ],
+      "source_races": [
+        {
+          "race_id": "7201",
+          "page": 158,
+          "label": "Heat 1 of 3 Race #7201"
+        },
+        {
+          "race_id": "7202",
+          "page": 158,
+          "label": "Heat 2 of 3 Race #7202"
+        },
+        {
+          "race_id": "7203",
+          "page": 158,
+          "label": "Heat 3 of 3 Race #7203"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 13,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "73",
+      "event_label_raw": "Group A Junior D Men's 777 Semi-Finals Event #73",
+      "group_label": "Group A Junior D Men's",
+      "distance_metres": 777,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        158,
+        159
+      ],
+      "source_races": [
+        {
+          "race_id": "7303",
+          "page": 158,
+          "label": "Heat 1 of 2 Race #7303"
+        },
+        {
+          "race_id": "7304",
+          "page": 159,
+          "label": "Heat 2 of 2 Race #7304"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "73",
+      "event_label_raw": "Group B Junior D Men's 777 Semi-Finals Event #73",
+      "group_label": "Group B Junior D Men's",
+      "distance_metres": 777,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        159
+      ],
+      "source_races": [
+        {
+          "race_id": "7301",
+          "page": 159,
+          "label": "Heat 1 of 2 Race #7301"
+        },
+        {
+          "race_id": "7302",
+          "page": 159,
+          "label": "Heat 2 of 2 Race #7302"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 7,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "74",
+      "event_label_raw": "Group A Group 1 Master's 1000 Semi-Finals Event #74",
+      "group_label": "Group A Group 1 Master's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        159,
+        160
+      ],
+      "source_races": [
+        {
+          "race_id": "7403",
+          "page": 159,
+          "label": "Heat 1 of 2 Race #7403"
+        },
+        {
+          "race_id": "7404",
+          "page": 160,
+          "label": "Heat 2 of 2 Race #7404"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "74",
+      "event_label_raw": "Group B Group 1 Master's 1000 Semi-Finals Event #74",
+      "group_label": "Group B Group 1 Master's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        160
+      ],
+      "source_races": [
+        {
+          "race_id": "7401",
+          "page": 160,
+          "label": "Heat 1 of 2 Race #7401"
+        },
+        {
+          "race_id": "7402",
+          "page": 160,
+          "label": "Heat 2 of 2 Race #7402"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 11,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "75",
+      "event_label_raw": "Group A Group 2 Master's 1000 Semi-Finals Event #75",
+      "group_label": "Group A Group 2 Master's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        161
+      ],
+      "source_races": [
+        {
+          "race_id": "7502",
+          "page": 161,
+          "label": "Heat 1 of 2 Race #7502"
+        },
+        {
+          "race_id": "7503",
+          "page": 161,
+          "label": "Heat 2 of 2 Race #7503"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "75",
+      "event_label_raw": "Group B Group 2 Master's 1000 Semi-Finals Event #75",
+      "group_label": "Group B Group 2 Master's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        161
+      ],
+      "source_races": [
+        {
+          "race_id": "7501",
+          "page": 161,
+          "label": "Heat 1 of 1 Race #7501"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 5,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "76",
+      "event_label_raw": "Group A Junior C Women's 1000 Semi-Finals Event #76",
+      "group_label": "Group A Junior C Women's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        162
+      ],
+      "source_races": [
+        {
+          "race_id": "7602",
+          "page": 162,
+          "label": "Heat 1 of 2 Race #7602"
+        },
+        {
+          "race_id": "7603",
+          "page": 162,
+          "label": "Heat 2 of 2 Race #7603"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "76",
+      "event_label_raw": "Group B Junior C Women's 1000 Semi-Finals Event #76",
+      "group_label": "Group B Junior C Women's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        162
+      ],
+      "source_races": [
+        {
+          "race_id": "7601",
+          "page": 162,
+          "label": "Heat 1 of 1 Race #7601"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 3,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "77",
+      "event_label_raw": "Group A Junior C Men's 1000 Semi-Finals Event #77",
+      "group_label": "Group A Junior C Men's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        162,
+        163
+      ],
+      "source_races": [
+        {
+          "race_id": "7705",
+          "page": 162,
+          "label": "Heat 1 of 2 Race #7705"
+        },
+        {
+          "race_id": "7706",
+          "page": 163,
+          "label": "Heat 2 of 2 Race #7706"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "77",
+      "event_label_raw": "Group B Junior C Men's 1000 Semi-Finals Event #77",
+      "group_label": "Group B Junior C Men's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        163,
+        164
+      ],
+      "source_races": [
+        {
+          "race_id": "7701",
+          "page": 163,
+          "label": "Heat 1 of 4 Race #7701"
+        },
+        {
+          "race_id": "7702",
+          "page": 163,
+          "label": "Heat 2 of 4 Race #7702"
+        },
+        {
+          "race_id": "7703",
+          "page": 163,
+          "label": "Heat 3 of 4 Race #7703"
+        },
+        {
+          "race_id": "7704",
+          "page": 164,
+          "label": "Heat 4 of 4 Race #7704"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 19,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "78",
+      "event_label_raw": "Group A Combined Women's 1000 Semi-Finals Event #78",
+      "group_label": "Group A Combined Women's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        164
+      ],
+      "source_races": [
+        {
+          "race_id": "7801",
+          "page": 164,
+          "label": "Heat 1 of 2 Race #7801"
+        },
+        {
+          "race_id": "7802",
+          "page": 164,
+          "label": "Heat 2 of 2 Race #7802"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "79",
+      "event_label_raw": "Group A Combined Men's 1000 Semi-Finals Event #79",
+      "group_label": "Group A Combined Men's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        165
+      ],
+      "source_races": [
+        {
+          "race_id": "7904",
+          "page": 165,
+          "label": "Heat 1 of 2 Race #7904"
+        },
+        {
+          "race_id": "7905",
+          "page": 165,
+          "label": "Heat 2 of 2 Race #7905"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 10,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "79",
+      "event_label_raw": "Group B Combined Men's 1000 Semi-Finals Event #79",
+      "group_label": "Group B Combined Men's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        165,
+        166
+      ],
+      "source_races": [
+        {
+          "race_id": "7901",
+          "page": 165,
+          "label": "Heat 1 of 3 Race #7901"
+        },
+        {
+          "race_id": "7902",
+          "page": 166,
+          "label": "Heat 2 of 3 Race #7902"
+        },
+        {
+          "race_id": "7903",
+          "page": 166,
+          "label": "Heat 3 of 3 Race #7903"
+        }
+      ],
+      "issues": [
+        {
+          "code": "AMBIGUOUS_EVENT_NUMBER",
+          "page": null,
+          "message": "The same source event number has different labels."
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 18,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "80",
+      "event_label_raw": "Junior E Women's 333 Finals Event #80",
+      "group_label": "Junior E Women's",
+      "distance_metres": 333,
+      "round_raw": "Finals",
+      "pages": [
+        166,
+        167
+      ],
+      "source_races": [
+        {
+          "race_id": "8001",
+          "page": 166,
+          "label": "C Final Race #8001"
+        },
+        {
+          "race_id": "8002",
+          "page": 167,
+          "label": "B Final Race #8002"
+        },
+        {
+          "race_id": "8003",
+          "page": 167,
+          "label": "A Final Race #8003"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 14,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "81",
+      "event_label_raw": "Junior E Men's 333 Finals Event #81",
+      "group_label": "Junior E Men's",
+      "distance_metres": 333,
+      "round_raw": "Finals",
+      "pages": [
+        167,
+        168,
+        169
+      ],
+      "source_races": [
+        {
+          "race_id": "8101",
+          "page": 167,
+          "label": "H Final Race #8101"
+        },
+        {
+          "race_id": "8102",
+          "page": 167,
+          "label": "G Final Race #8102"
+        },
+        {
+          "race_id": "8103",
+          "page": 168,
+          "label": "F Final Race #8103"
+        },
+        {
+          "race_id": "8104",
+          "page": 168,
+          "label": "E Final Race #8104"
+        },
+        {
+          "race_id": "8105",
+          "page": 168,
+          "label": "D Final Race #8105"
+        },
+        {
+          "race_id": "8106",
+          "page": 168,
+          "label": "C Final Race #8106"
+        },
+        {
+          "race_id": "8107",
+          "page": 169,
+          "label": "B Final Race #8107"
+        },
+        {
+          "race_id": "8108",
+          "page": 169,
+          "label": "A Final Race #8108"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 39,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "82",
+      "event_label_raw": "Group 1 Master's 1000 Finals Event #82",
+      "group_label": "Group 1 Master's",
+      "distance_metres": 1000,
+      "round_raw": "Finals",
+      "pages": [
+        169,
+        170
+      ],
+      "source_races": [
+        {
+          "race_id": "8201",
+          "page": 169,
+          "label": "D Final Race #8201"
+        },
+        {
+          "race_id": "8202",
+          "page": 170,
+          "label": "C Final Race #8202"
+        },
+        {
+          "race_id": "8203",
+          "page": 170,
+          "label": "B Final Race #8203"
+        },
+        {
+          "race_id": "8204",
+          "page": 170,
+          "label": "A Final Race #8204"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Unsupported finish for bib 214; review the original page"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 21,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "83",
+      "event_label_raw": "Group 2 Master's 1000 Finals Event #83",
+      "group_label": "Group 2 Master's",
+      "distance_metres": 1000,
+      "round_raw": "Finals",
+      "pages": [
+        170,
+        171
+      ],
+      "source_races": [
+        {
+          "race_id": "8301",
+          "page": 170,
+          "label": "C Final Race #8301"
+        },
+        {
+          "race_id": "8302",
+          "page": 171,
+          "label": "B Final Race #8302"
+        },
+        {
+          "race_id": "8303",
+          "page": 171,
+          "label": "A Final Race #8303"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 15,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "84",
+      "event_label_raw": "Junior D Women's 777 Finals Event #84",
+      "group_label": "Junior D Women's",
+      "distance_metres": 777,
+      "round_raw": "Finals",
+      "pages": [
+        171,
+        172
+      ],
+      "source_races": [
+        {
+          "race_id": "8401",
+          "page": 171,
+          "label": "E Final Race #8401"
+        },
+        {
+          "race_id": "8402",
+          "page": 171,
+          "label": "D Final Race #8402"
+        },
+        {
+          "race_id": "8403",
+          "page": 172,
+          "label": "C Final Race #8403"
+        },
+        {
+          "race_id": "8404",
+          "page": 172,
+          "label": "B Final Race #8404"
+        },
+        {
+          "race_id": "8405",
+          "page": 172,
+          "label": "A Final Race #8405"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 23,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "85",
+      "event_label_raw": "Junior D Men's 777 Finals Event #85",
+      "group_label": "Junior D Men's",
+      "distance_metres": 777,
+      "round_raw": "Finals",
+      "pages": [
+        172,
+        173
+      ],
+      "source_races": [
+        {
+          "race_id": "8501",
+          "page": 172,
+          "label": "D Final Race #8501"
+        },
+        {
+          "race_id": "8502",
+          "page": 173,
+          "label": "C Final Race #8502"
+        },
+        {
+          "race_id": "8503",
+          "page": 173,
+          "label": "B Final Race #8503"
+        },
+        {
+          "race_id": "8504",
+          "page": 173,
+          "label": "A Final Race #8504"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 17,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "86",
+      "event_label_raw": "Junior C Women's 1000 Finals Event #86",
+      "group_label": "Junior C Women's",
+      "distance_metres": 1000,
+      "round_raw": "Finals",
+      "pages": [
+        173,
+        174
+      ],
+      "source_races": [
+        {
+          "race_id": "8601",
+          "page": 173,
+          "label": "C Final Race #8601"
+        },
+        {
+          "race_id": "8602",
+          "page": 174,
+          "label": "B Final Race #8602"
+        },
+        {
+          "race_id": "8603",
+          "page": 174,
+          "label": "A Final Race #8603"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 13,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "87",
+      "event_label_raw": "Junior C Men's 1000 Finals Event #87",
+      "group_label": "Junior C Men's",
+      "distance_metres": 1000,
+      "round_raw": "Finals",
+      "pages": [
+        174,
+        175
+      ],
+      "source_races": [
+        {
+          "race_id": "8701",
+          "page": 174,
+          "label": "F Final Race #8701"
+        },
+        {
+          "race_id": "8702",
+          "page": 174,
+          "label": "E Final Race #8702"
+        },
+        {
+          "race_id": "8703",
+          "page": 175,
+          "label": "D Final Race #8703"
+        },
+        {
+          "race_id": "8704",
+          "page": 175,
+          "label": "C Final Race #8704"
+        },
+        {
+          "race_id": "8705",
+          "page": 175,
+          "label": "B Final Race #8705"
+        },
+        {
+          "race_id": "8706",
+          "page": 175,
+          "label": "A Final Race #8706"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 29,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "88",
+      "event_label_raw": "Combined Women's 1000 Finals Event #88",
+      "group_label": "Combined Women's",
+      "distance_metres": 1000,
+      "round_raw": "Finals",
+      "pages": [
+        176
+      ],
+      "source_races": [
+        {
+          "race_id": "8801",
+          "page": 176,
+          "label": "B Final Race #8801"
+        },
+        {
+          "race_id": "8802",
+          "page": 176,
+          "label": "A Final Race #8802"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 11,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    },
+    {
+      "event_number": "89",
+      "event_label_raw": "Combined Men's 1000 Finals Event #89",
+      "group_label": "Combined Men's",
+      "distance_metres": 1000,
+      "round_raw": "Finals",
+      "pages": [
+        176,
+        177
+      ],
+      "source_races": [
+        {
+          "race_id": "8901",
+          "page": 176,
+          "label": "F Final Race #8901"
+        },
+        {
+          "race_id": "8902",
+          "page": 176,
+          "label": "E Final Race #8902"
+        },
+        {
+          "race_id": "8903",
+          "page": 177,
+          "label": "D Final Race #8903"
+        },
+        {
+          "race_id": "8904",
+          "page": 177,
+          "label": "C Final Race #8904"
+        },
+        {
+          "race_id": "8905",
+          "page": 177,
+          "label": "B Final Race #8905"
+        },
+        {
+          "race_id": "8906",
+          "page": 177,
+          "label": "A Final Race #8906"
+        }
+      ],
+      "issues": [
+        {
+          "code": "EVENT_EXTRACTION",
+          "page": null,
+          "message": "Multiple finals require explicit classification review"
+        }
+      ],
+      "status": "needs_review",
+      "observed_result_rows": 28,
+      "parsed_result_rows": null,
+      "identity_review_rows": 0,
+      "result_count": null,
+      "heat_count": null,
+      "export_eligible": false,
+      "publication": "not_published"
+    }
+  ]
+}
