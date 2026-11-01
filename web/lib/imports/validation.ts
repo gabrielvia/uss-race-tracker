@@ -1,9 +1,10 @@
 import { createHash } from "node:crypto";
 import { z } from "zod";
+import { dimensions, DIMENSION_VERSION } from "@/lib/imports/dimensions";
 import { COMPETITION_ID } from "@/lib/competition-id";
 import { resultNameMatches, rosterNameIsConsistent } from "@/lib/imports/identity";
 
-export const VALIDATION_VERSION = "competition-events/6";
+export const VALIDATION_VERSION = "competition-events/7";
 const label = z.string().min(1).max(300).refine(value => value.trim().length > 0, "A nonblank value is required.");
 const id = z.string().regex(/^[a-zA-Z0-9:_-]{1,180}$/);
 const positive = z.number().int().positive().max(1_000_000_000);
@@ -79,6 +80,7 @@ const multiContract = singleContract.extend({
   schemaVersion: z.literal(3), coverage: z.literal("selected-events"),
   item: singleContract.shape.item.extend({
     protocol: protocolContract.optional(),
+    dimensions: z.object({version:z.literal(DIMENSION_VERSION),entries:z.array(z.object({id,gender:label,division:label,page}).strict()).max(2000),events:z.array(z.object({id,gender:label,division:label,competitionGroup:nullableLabel,rawDivision:nullableLabel,pages:z.array(page),status:label}).strict()).max(250),results:z.array(z.object({id,entryId:id.nullable(),gender:label,division:label,status:label}).strict()).max(5000)}).strict().optional(),
     evidence: z.object({
       roster: singleContract.shape.item.shape.evidence.shape.roster,
       events: z.array(singleContract.shape.item.shape.evidence.shape.race).min(1).max(250),
@@ -230,7 +232,7 @@ export function validate(value: unknown): { payload?: ImportPayload; report: Val
       raceIds.add(heat.race_id);
     }
     const rows = item.results.filter(r => r.eventKey === eventKey);
-    const { protocol: _protocol, ...singleItem } = item;
+    const { protocol: _protocol, dimensions: _dimensions, ...singleItem } = item;
     const checked = validateSingle({ ...payload, schemaVersion: 2, coverage: "selected-event", item: { ...singleItem, results: rows, evidence: { roster: item.evidence.roster, race: event } } });
     const errors = checked.report.errors.map(i => ({ ...i, path: i.path.replace("item.evidence.race", `item.evidence.events.${index}`) }));
     for (const issue of errors) add(issue.code, issue.path, issue.message);
@@ -246,6 +248,10 @@ export function validate(value: unknown): { payload?: ImportPayload; report: Val
     report.warnings.unshift({code:"PROTOCOL_RESULTS_COVERAGE",path:"item.protocol",message:"Every numbered RESULTS event is covered. Classification pages are retained separately as source evidence; no official classification is recomputed."});
   }else report.warnings.unshift({ code: "SELECTED_EVENTS_ONLY", path: "coverage", message: "All declared events are checked, but the rest of the competition protocol has not been imported." });
   report.counts = { participants: item.participants.length, entries: item.entries.length, results: item.results.length, heats, events: item.evidence.events.length };
+  const mapped = dimensions(item);
+  if (item.dimensions && canonical(item.dimensions) !== canonical(mapped)) add("DIMENSION_EVIDENCE", "item.dimensions", "Structured dimensions must exactly match the reviewed source headings and applicable roster entries.");
+  const unresolved = mapped.results.filter(r => r.status === "needs-review").length;
+  if (unresolved) report.warnings.push({code:"DIMENSION_REVIEW",path:"item.dimensions",message:`${unresolved} results have unresolved entry scope and remain explicitly Unknown.`});
   report.valid = report.errors.length === 0;
   return { payload, report };
 }
