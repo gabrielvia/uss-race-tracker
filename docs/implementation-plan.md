@@ -1,6 +1,6 @@
 # USS Race Tracker 实施计划
 
-状态：第 1 阶段近期样本验证、第 2 阶段本地／Sites 部署、第 3 阶段主站数据模型与可靠导入已完成（支持已验证的 Tempus 格式）。已实现完整来源 RESULTS 批量导入、原始 PDF 归档、发布版本历史、显式身份映射／纠正、年龄证据与 7 月 1 日派生、discipline／season 查询与分页。两份 AGN 协议共 171 个组别／轮次项目、2,309 条成绩、141 个独立分类页；不把编号数量当作官方项目总数，也不把分类页重复计入成绩。其他历史格式、完整浏览体验和图表仍按第 4–6 阶段推进。验收与范围见 [phase-3-completion.md](phase-3-completion.md)、[phase-3-acceptance.md](phase-3-acceptance.md) 和 [data-dictionary.md](data-dictionary.md)。
+状态：第 4 阶段比赛和运动员浏览已完成实施、独立验收审查和用户验收，部署至原有私有 Site；用户已授权 GitHub 提交／推送／合并并在新对话开始第 5 阶段；第 1 阶段近期样本验证、第 2 阶段本地／Sites 部署、第 3 阶段主站数据模型与可靠导入已完成（支持已验证的 Tempus 格式）。已实现完整来源 RESULTS 批量导入、原始 PDF 归档、发布版本历史、显式身份映射／纠正、年龄证据与 7 月 1 日派生、discipline／season 查询与分页。两份 AGN 协议共 171 个组别／轮次项目、2,309 条成绩、141 个独立分类页；不把编号数量当作官方项目总数，也不把分类页重复计入成绩。比赛和运动员浏览已完成；图表按第 5 阶段、更多历史格式和数据覆盖按第 6 阶段推进。验收与范围见 [phase-3-completion.md](phase-3-completion.md)、[phase-3-acceptance.md](phase-3-acceptance.md) 和 [data-dictionary.md](data-dictionary.md)。
 
 ## 目标与范围
 
@@ -98,9 +98,13 @@
 
 ### 4. 比赛和运动员浏览
 
+最新页面决策（2026-11-01）：Competition 筛选仅保留 Division、Distance、Round，移除 Gender 控件及旧 URL 中不可见的 Gender 限制。后台 Gender 字段、来源标签、混合项目语义和 API 查询能力继续保留；Season 下拉菜单本轮不改。以下历史四维筛选要求中的 Gender 数据和 API 约束保留，页面控件以本条新决定为准。
+
+实施状态（2026-10-31）：已完成本地实现、来源审计、schema-only 迁移和全量证据回填；84 项后端测试、62 项 Python 测试、TypeScript、生产构建及桌面／手机检查通过。现有 owner-private Site v16 已部署，线上全量回读及权限检查通过，实施结果已通过独立审查及用户验收，见 [phase-4-acceptance.md](phase-4-acceptance.md)。详细行为和操作见 [phase-4-completion.md](phase-4-completion.md)，来源关系见 [phase-4-source-audit.md](phase-4-source-audit.md)。下列既有决策保留为本阶段验收依据，不再表示 sample UI 现状。
+
 #### 比赛目录扩展方案（2026-10-30 已确认，更多数据导入时实施）
 
-本节记录已确认的正式目录交互，暂不替换当前两场比赛的 sample tile 布局。扩展比赛／赛季数据时按以下方案调整；不把当前样本布局推广成历史目录。
+本节记录已确认并在第四阶段实施的正式目录交互；历史数据覆盖范围仍仅为已核验协议，后续赛季导入属于第六阶段。
 
 - 比赛入口使用独立的 **Short Track / Long Track** 切换，取消比赛目录的 `All disciplines`；各入口只展示、搜索和查询对应 discipline 的比赛。
 - 默认选择当前 discipline 中最近一个有数据的赛季，并明确显示所选赛季；支持切换历史赛季。赛季筛选与搜索共同生效，搜索范围明确为当前 discipline／赛季。
@@ -109,14 +113,14 @@
 - 默认每页约 25 场比赛，服务器执行筛选和分页，避免浏览器一次加载全部历史目录。
 - 点击一场比赛进入 SPA 内的比赛详情，提供独立的 `Gender`、`Division`、`Distance`、`Round` 筛选控件，查看同一竞争项目的全部 heats；不能只依赖包含全部信息的项目名称下拉框。详细数据及交互约束见下节。
 - discipline、赛季、搜索词、页码与选中的比赛写入 URL。刷新、分享和浏览器前进／后退均恢复对应状态；从详情返回目录时保留筛选、页码与列表位置。
-- 个人 profile 的跨赛季／跨 discipline 展示留待后续单独讨论；比赛目录的单赛季范围不直接套用到个人历史记录，也不在本轮扩展个人视图。
+- 个人 profile 不套用比赛目录的单赛季限制。用户已澄清：skater 资料页直接显示跨全部已发布赛季的 Personal Best（PB），按 discipline＋distance 分别计算一项，不按 season 分组，也不要求先选择 season／discipline。完整逐场记录放在可展开区域，直接可看；个人视图独立于比赛目录状态，未审核身份不合并。
 - 正式界面文字全部为英文，例如 `Competitions`、`Season`、`Search competitions…`、`Date`、`Competition`、`Location`、`Previous`、`Next`。
 
-验收补充：短道／长道目录相互独立；每个入口的默认赛季确实有数据；搜索不跨出当前筛选范围；分页由服务端执行；URL 和返回导航保留状态；桌面与手机均能高效浏览大量比赛。本次仅记录决策，不立即修改或部署页面。
+验收补充：短道／长道目录相互独立；每个入口的默认赛季确实有数据；搜索不跨出当前筛选范围；分页由服务端执行；URL 和返回导航保留状态；桌面与手机均能高效浏览大量比赛。
 
 #### 大赛内的组合筛选与 Division 数据要求（2026-10-31 用户确认）
 
-本节属于第 4 阶段的明确实施与验收要求，包含所需的数据模型、导入和 API 扩展；本次记录要求，不代表当前 sample 页面已实现这些独立筛选控件。
+本节属于第 4 阶段的明确实施与验收要求，包含已实施的数据模型、导入、API 扩展和四个独立筛选控件。
 
 - 入口顺序：选择 `Short Track / Long Track` 与 `Season` → 在可搜索、分页的大赛列表中找到并打开一场 `Competition`（例如 AGN）→ 在该大赛内组合使用 `Gender`、`Division`、`Distance`、`Round`。轮次字段统一称为 `Round`，例如 `Quarter-final`、`Semi-final`、`Final`。
 - 四个筛选维度相互独立，已选择条件按 AND 生效。例如 `Women + Junior E + 500 m + Quarter-final` 只返回这场大赛中该 Division 的女子 500 米四分之一决赛；只选择 Division 时，可以浏览该 Division 的成绩，并按性别、距离、轮次和来源项目分别呈现。
@@ -153,7 +157,7 @@
 
 ## 最近的下一步
 
-第三阶段的代码与数据验收已收口，详细操作和受支持边界见 [phase-3-completion.md](phase-3-completion.md)。下一阶段进入第 4 阶段比赛和运动员浏览：落实已确认的 Short Track／Long Track 独立入口、明确赛季、服务端分页目录、URL 状态恢复，以及基于已审核身份的资料／历史记录。个人跨赛季展示规则仍按此前约定讨论，不直接套用比赛目录规则。图表属于第 5 阶段；更多历史格式／赛季覆盖属于第 6 阶段。Admin A0–A7 继续暂缓。
+第四阶段比赛和运动员浏览已完成本地／线上验证、独立代码与完整性审查及用户验收，见 [phase-4-acceptance.md](phase-4-acceptance.md)。运动员资料按用户最新澄清，直接显示按 discipline＋distance 分组、跨赛季的 PB，完整历史可展开；不因此合并身份。用户已授权在完成第四阶段 GitHub squash merge 后，由新对话开始第 5 阶段图表与多人对比实施。更多历史格式／赛季覆盖仍属于第 6 阶段，不扩张本次图表范围。Admin A0–A7 继续暂缓。
 
 ## Profile 与参赛年龄设计补充
 

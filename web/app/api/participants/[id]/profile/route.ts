@@ -13,9 +13,9 @@ export async function GET(_request:Request,context:{params:Promise<{id:string}>}
         JOIN import_publications pub ON pub.batch_id=o.batch_id AND pub.competition_id=o.competition_id
         JOIN competitions c ON c.id=o.competition_id JOIN sources s ON s.id=c.source_id
         LEFT JOIN competition_age_rules a ON a.competition_id=c.id LEFT JOIN age_rules r ON r.id=a.rule_id
-        WHERE l.skater_id=(SELECT skater_id FROM skater_links WHERE participant_key=?) AND l.status!='needs_review'
+        WHERE l.skater_id=(SELECT skater_id FROM skater_links WHERE participant_key=? AND status!='needs_review') AND l.status!='needs_review'
         ORDER BY o.competed_on,o.competition_id,o.source_page,o.id`).bind(id),
-      db.prepare("SELECT DISTINCT a.raw_name,a.name,a.source_page,a.batch_id FROM skater_aliases a JOIN skater_links l ON l.participant_key=a.participant_key JOIN import_publications pub ON pub.batch_id=a.batch_id WHERE l.skater_id=(SELECT skater_id FROM skater_links WHERE participant_key=?) AND l.status!='needs_review'").bind(id),
+      db.prepare("SELECT DISTINCT a.raw_name,a.name,a.source_page,a.batch_id FROM skater_aliases a JOIN skater_links l ON l.participant_key=a.participant_key JOIN import_publications pub ON pub.batch_id=a.batch_id WHERE l.skater_id=(SELECT skater_id FROM skater_links WHERE participant_key=? AND status!='needs_review') AND l.status!='needs_review'").bind(id),
     ]);
     const participant=person.results[0];if(!participant)return Response.json({error:"Participant not found."},{status:404});
     const evidence:AgeInterval[]=[],unresolved:unknown[]=[],observations:unknown[]=[];

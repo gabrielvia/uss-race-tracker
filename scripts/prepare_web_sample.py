@@ -3,6 +3,11 @@ import json
 from hashlib import sha256
 from pathlib import Path
 
+if __package__:
+    from .competition_dimensions import dimensions
+else:
+    from competition_dimensions import dimensions
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -51,11 +56,13 @@ def prepare_item(competition, roster, events):
                             "heatNumber": result["heat_number"], "heatTotal": result["heat_total"]})
             if "finish_note" in result:
                 results[-1]["finishNote"] = result["finish_note"]
-    return {"competition": dict(competition),
+    item = {"competition": dict(competition),
             "source": {"id": roster["source_id"], "url": roster["source_url"], "sha256": roster["sha256"],
                        "objectKey": f"samples/{roster['sha256']}.json"},
             "participants": list(participants.values()), "entries": entries, "results": results,
             "evidence": {"roster": roster, "events": events}}
+    item["dimensions"] = dimensions(item)
+    return item
 
 
 def prepare(include_group_samples=False):

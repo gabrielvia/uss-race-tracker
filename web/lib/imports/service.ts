@@ -1,3 +1,4 @@
+import { dimensions } from "@/lib/imports/dimensions";
 import { previewAgeConstraints } from "@/lib/imports/age-preview";
 import { bulkInsert } from "@/lib/imports/bulk";
 import { COMPETITION_ID } from "@/lib/competition-id";
@@ -58,6 +59,10 @@ function writeStatements(payload: ImportPayload, sourceId: string, objectKey: st
   const { competition: c, source, participants, entries, results } = payload.item;
   const now = new Date().toISOString();
   const events = eventDefinitions(payload.item);
+  const mapped = dimensions(payload.item);
+  const eventScope = new Map(mapped.events.map(e => [e.id,e]));
+  const entryScope = new Map(mapped.entries.map(e => [e.id,e]));
+  const resultScope = new Map(mapped.results.map(e => [e.id,e]));
   const evidenceEvents = "events" in payload.item.evidence ? payload.item.evidence.events : [payload.item.evidence.race];
   const participantMap = new Map(participants.map(p => [p.id, p]));
   const raceRows = evidenceEvents.flatMap(event => event.heats.map(heat => ({
@@ -74,11 +79,11 @@ function writeStatements(payload: ImportPayload, sourceId: string, objectKey: st
     db.prepare("DELETE FROM competitions WHERE id = ?").bind(c.id),
     db.prepare("INSERT INTO sources (id, url, sha256, object_key) VALUES (?, ?, ?, ?) ON CONFLICT(id) DO NOTHING").bind(sourceId, source.url, source.sha256, objectKey),
     db.prepare("INSERT INTO competitions (id, title, discipline, season, starts_on, ends_on, location, source_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)").bind(c.id, c.title, c.discipline, c.season, c.startsOn, c.endsOn, c.location, sourceId),
-    ...bulkInsert(db, "competition_events", events.map(e => ({id: e.id, competition_id: c.id, source_event_number: e.sourceEventNumber, label: e.label, group_label: e.groupLabel, distance: e.distance, round: e.round}))),
+    ...bulkInsert(db, "competition_events", events.map(e => ({id: e.id, competition_id: c.id, source_event_number: e.sourceEventNumber, label: e.label, group_label: e.groupLabel, gender: eventScope.get(e.id)!.gender, division_key: eventScope.get(e.id)!.division, competition_group: eventScope.get(e.id)!.competitionGroup, scope_status: eventScope.get(e.id)!.status, distance: e.distance, round: e.round}))),
     ...bulkInsert(db, "participants", participants.map(p => ({id: p.id, competition_id: c.id, bib: p.bib, name: p.name, affiliation: p.affiliation}))),
-    ...bulkInsert(db, "entries", entries.map(e => ({id: e.id, participant_id: e.participantId, division: e.division, age_status: e.ageStatus, raw_name: e.rawName, source_page: e.sourcePage}))),
+    ...bulkInsert(db, "entries", entries.map(e => ({id: e.id, participant_id: e.participantId, division: e.division, gender: entryScope.get(e.id)!.gender, division_key: entryScope.get(e.id)!.division, age_status: e.ageStatus, raw_name: e.rawName, source_page: e.sourcePage}))),
     ...bulkInsert(db, "races", raceRows),
-    ...bulkInsert(db, "results", results.map(r => ({id: r.id, competition_id: c.id, participant_id: r.participantId, race_id: r.raceId, distance: r.distance, round: r.round, rank: r.rank, time_raw: r.timeRaw, time_microseconds: r.timeMicroseconds, qualification: r.qualification, source_page: r.sourcePage, event_key: r.eventKey, event_label: r.eventLabel, race_label: r.raceLabel, heat_number: r.heatNumber, heat_total: r.heatTotal, result_status: r.status, finish_note: r.finishNote ?? null}))),
+    ...bulkInsert(db, "results", results.map(r => ({id: r.id, competition_id: c.id, participant_id: r.participantId, entry_id: resultScope.get(r.id)!.entryId, gender: resultScope.get(r.id)!.gender, division_key: resultScope.get(r.id)!.division, scope_status: resultScope.get(r.id)!.status, race_id: r.raceId, distance: r.distance, round: r.round, rank: r.rank, time_raw: r.timeRaw, time_microseconds: r.timeMicroseconds, qualification: r.qualification, source_page: r.sourcePage, event_key: r.eventKey, event_label: r.eventLabel, race_label: r.raceLabel, heat_number: r.heatNumber, heat_total: r.heatTotal, result_status: r.status, finish_note: r.finishNote ?? null}))),
     ...bulkInsert(db, "skaters", participants.map(p => ({id: hash(`competition-skater|${p.id}`).slice(0,20), display_name: p.name, created_at: now})), "ON CONFLICT(id) DO NOTHING"),
     ...bulkInsert(db, "skater_links", participants.map(p => ({participant_key: p.id, competition_id: c.id, bib: p.bib, skater_id: hash(`competition-skater|${p.id}`).slice(0,20), name: p.name, affiliation: p.affiliation, status: "competition-local", revision: batchId})), "ON CONFLICT(participant_key) DO UPDATE SET status = CASE WHEN skater_links.name = excluded.name AND skater_links.affiliation = excluded.affiliation THEN skater_links.status ELSE 'needs_review' END"),
     ...bulkInsert(db, "skater_aliases", entries.map(e => ({id: `${batchId}:${e.id}`, participant_key: e.participantId, batch_id: batchId, raw_name: e.rawName, name: participantMap.get(e.participantId)!.name, source_page: e.sourcePage}))),
@@ -117,7 +122,7 @@ export async function publish(batch: Batch) {
   }
   const missing = await database().prepare(coverageQuery).bind(competitionId, JSON.stringify(allowedKeys)).all();
   if (missing.results.length) throw new ImportConflict("This candidate omits previously published events. Include every current event before publishing an expanded competition.");
-  const evidence = canonical({ ...payload.item.evidence, ...("protocol" in payload.item && payload.item.protocol ? { protocol: payload.item.protocol } : {}) });
+  const evidence = canonical({ ...payload.item.evidence, dimensions: dimensions(payload.item), ...("protocol" in payload.item && payload.item.protocol ? { protocol: payload.item.protocol } : {}) });
   const evidenceHash = hash(evidence);
   const sourceId = hash(`${payload.item.source.id}|${payload.item.source.sha256}|${evidenceHash}`).slice(0, 16);
   const objectKey = `imports/evidence/${evidenceHash}.json`;
