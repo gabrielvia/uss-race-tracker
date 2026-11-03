@@ -1,6 +1,9 @@
 // Current projection only. A pending identity remains local to the selected
 // participant even if its prior skater link still points to reviewed records.
-export const participantRecordScope = `(r.participant_id=? OR l.status!='needs_review' AND l.skater_id=(SELECT skater_id FROM skater_links WHERE participant_key=? AND status!='needs_review'))`;
+export function recordScope(selected: string, linked = selected): string {
+  return `(r.participant_id=${selected} OR l.status!='needs_review' AND l.skater_id=(SELECT skater_id FROM skater_links WHERE participant_key=${linked} AND status!='needs_review'))`;
+}
+export const participantRecordScope = recordScope("?", "?");
 export const recordJoin = ` FROM results r
  JOIN participants p ON p.id=r.participant_id
  JOIN competitions c ON c.id=r.competition_id

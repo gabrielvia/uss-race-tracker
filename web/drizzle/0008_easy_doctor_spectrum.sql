@@ -1,0 +1,1 @@
+CREATE INDEX `result_participant_distance` ON `results` (`participant_id`,`distance`);

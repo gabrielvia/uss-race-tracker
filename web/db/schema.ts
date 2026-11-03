@@ -39,7 +39,7 @@ export const results = sqliteTable("results", {
   qualification: text("qualification"), sourcePage: integer("source_page").notNull(),
   eventKey: text("event_key"), eventLabel: text("event_label"), raceLabel: text("race_label"),
   heatNumber: integer("heat_number"), heatTotal: integer("heat_total"),
-}, (t) => [index("result_competition_distance").on(t.competitionId, t.distance)]);
+}, (t) => [index("result_competition_distance").on(t.competitionId, t.distance), index("result_participant_distance").on(t.participantId, t.distance)]);
 
 export const importBatches = sqliteTable("import_batches", {
   id: text("id").primaryKey(), candidateKey: text("candidate_key").notNull(),
