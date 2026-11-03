@@ -82,7 +82,7 @@ export function harness(fixture = singleFixture()) {
     const module = { exports: {} };
     cache.set(file, module);
     const compiled = ts.transpileModule(readFileSync(file, "utf8"), {
-      compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022, esModuleInterop: true },
+      compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022, esModuleInterop: true, jsx: ts.JsxEmit.ReactJSX },
     }).outputText;
     function require(specifier) {
       if (specifier === "cloudflare:workers") return { env: { DB: db, BUCKET: bucket, SEED_TOKEN: dummyToken } };
