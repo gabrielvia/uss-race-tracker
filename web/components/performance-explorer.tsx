@@ -59,7 +59,10 @@ export function PerformanceExplorer({person, params, revision, navigate, onRace}
   const coincident = selected ? points.filter(r => r.starts_on === selected.starts_on && r.time_microseconds === selected.time_microseconds) : [];
   const ticks = [...new Set(points.flatMap(r => [Date.parse(r.starts_on!), Date.parse(r.ends_on!)]))].sort((a, b) => a - b);
   const bounds: [number, number] | undefined = ticks.length ? [ticks[0] - 86400000, ticks[ticks.length - 1] + 86400000] : undefined;
-  const pageRows = (summaries || []).slice((listPage - 1) * 25, listPage * 25);
+  const pageCount = Math.max(1, Math.ceil((summaries?.length || 0) / 25));
+  const visiblePage = Math.min(listPage, pageCount);
+  const pageRows = (summaries || []).slice((visiblePage - 1) * 25, visiblePage * 25);
+  useEffect(() => { if (data) setListPage(p => Math.min(p, pageCount)); }, [data, pageCount]);
   useEffect(() => {
     if (owned && (params.has("chartRound") || params.has("chartView"))) navigate({chartRound: null, chartView: null}, true);
   }, [owned, params, navigate]);
@@ -105,7 +108,7 @@ export function PerformanceExplorer({person, params, revision, navigate, onRace}
       <p className="scope-note">Competition bests plotted: {points.length} · Competition bests in scope: {summaries?.length || 0}. Exact integer microseconds determine each best time. Full records, including every round and status, remain in Browse race history below. This comparison does not establish an official combined ranking.</p>
       <div className="table-scroll"><table className="performance-table"><caption className="sr-only">One best time per skater, competition and distance across all rounds. Equal-best source performances share one summary row and one chart point.</caption><thead><tr><th>SKATER / COMPETITION</th><th>TIME / PLOT</th><th>EVENT / ROUND / RACE</th><th>PLACE / STATUS / QUAL.</th><th>SOURCE</th></tr></thead><tbody><PerformanceRows rows={pageRows} pointIds={pointIds} selectedId={selectedId} inspect={inspect} onRace={onRace}/></tbody></table></div>
       {!summaries?.length && <p role="status" className="message">No valid competition bests match these filters. Full race history retains all source records.</p>}
-      <div className="pagination"><span>Competition bests: {summaries?.length || 0} · Page {listPage} of {Math.max(1, Math.ceil((summaries?.length || 0) / 25))}</span><div><button disabled={listPage <= 1} onClick={() => setListPage(p => p - 1)}>Previous</button><button disabled={listPage * 25 >= (summaries?.length || 0)} onClick={() => setListPage(p => p + 1)}>Next</button></div></div>
+      <div className="pagination"><span>Competition bests: {summaries?.length || 0} · Page {visiblePage} of {pageCount}</span><div><button disabled={visiblePage <= 1} onClick={() => setListPage(visiblePage - 1)}>Previous</button><button disabled={visiblePage >= pageCount} onClick={() => setListPage(visiblePage + 1)}>Next</button></div></div>
     </>}
   </section>;
 }

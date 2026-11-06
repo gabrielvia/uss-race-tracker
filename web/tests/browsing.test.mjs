@@ -45,11 +45,11 @@ test('multiple entries resolve by source scope and duplicate applicable entries 
  p.item.entries.push({...entries.find(e=>e.division==='Master Women'),id:'duplicate-entry'});d=dimensions(p.item);assert.equal(d.results.find(r=>r.id===row.id).entryId,null);assert.equal(d.results.find(r=>r.id===row.id).status,'needs-review');
  }finally{h.close();}});
 
-test('skater search and history paginate without auto-merging same names or duplicating multi-entry results',async()=>{const h=harness();try{
+test('skater search and history paginate across linked disciplines without duplicating multi-entry results',async()=>{const h=harness();try{
  await publish(h,payload(0));await publish(h,payload(1));
- const list=await(await h.request('skaters?q=&page=1','GET',undefined,false)).json();assert.equal(list.total,289);assert.equal(list.skaters.length,25);const next=await(await h.request('skaters?page=2','GET',undefined,false)).json();assert.equal(new Set([...list.skaters,...next.skaters].map(r=>r.id)).size,50);
+ const list=await(await h.request('skaters?q=&page=1','GET',undefined,false)).json();assert.equal(list.total,288);assert.equal(list.skaters.length,25);const next=await(await h.request('skaters?page=2','GET',undefined,false)).json();assert.equal(new Set([...list.skaters,...next.skaters].map(r=>r.id)).size,50);
  const search=await(await h.request('skaters?q=Andrea+Sudjapun','GET',undefined,false)).json();assert.equal(search.total,1);
- const sameName=await(await h.request('skaters?q=Sara+Cushman','GET',undefined,false)).json();assert.equal(sameName.total,2);
+ const sameName=await(await h.request('skaters?q=Sara+Cushman','GET',undefined,false)).json();assert.equal(sameName.total,1);assert.equal(sameName.skaters[0].competition_count,2);
  const rec=await(await h.request('participants/[id]/records?discipline=short-track&season=2025-2026','GET',undefined,false,'st-agn-2026:185')).json();assert.equal(rec.total,2);assert.equal(new Set(rec.results.map(r=>r.id)).size,2);assert.ok(rec.results.every(r=>r.entry_division==='Junior E Women'));
  const none=await(await h.request('participants/[id]/records?discipline=short-track&season=2024-2025','GET',undefined,false,'st-agn-2026:185')).json();assert.equal(none.total,0);
  const literal=await(await h.request('skaters?q=%25','GET',undefined,false)).json();assert.equal(literal.total,0);
@@ -94,7 +94,7 @@ test('status records and missing or zero times never establish personal bests',a
 test('personal bests span all seasons without using directory or history query filters',async()=>{const h=harness();try{
  await publish(h,payload(0));const source=h.sqlite.prepare('SELECT source_id FROM competitions LIMIT 1').get().source_id;
  h.sqlite.prepare('INSERT INTO competitions VALUES (?,?,?,?,?,?,?,?)').run('older-race','Earlier competition','short-track','2024-2025','2025-02-01','2025-02-02','Earlier rink',source);
- h.sqlite.prepare('INSERT INTO participants VALUES (?,?,?,?,?)').run('older-race:1','older-race','1','Reviewed skater','Earlier club');const link=h.sqlite.prepare('SELECT * FROM skater_links WHERE participant_key=?').get('st-agn-2026:185');h.sqlite.prepare('INSERT INTO skater_links VALUES (?,?,?,?,?,?,?,?)').run('older-race:1','older-race','1',link.skater_id,'Reviewed skater','Earlier club','reviewed','test');
+ h.sqlite.prepare('INSERT INTO participants (id,competition_id,bib,name,affiliation) VALUES (?,?,?,?,?)').run('older-race:1','older-race','1','Reviewed skater','Earlier club');const link=h.sqlite.prepare('SELECT * FROM skater_links WHERE participant_key=?').get('st-agn-2026:185');h.sqlite.prepare('INSERT INTO skater_links VALUES (?,?,?,?,?,?,?,?)').run('older-race:1','older-race','1',link.skater_id,'Reviewed skater','Earlier club','reviewed','test');
  addResult(h,{id:'pb-earlier',competition_id:'older-race',participant_id:'st-agn-2026:185',distance:700,time_microseconds:70000000,time_raw:'1:10.000',result_status:null});h.sqlite.prepare('UPDATE results SET participant_id=? WHERE id=?').run('older-race:1','pb-earlier');
  const data=await pb(h,'st-agn-2026:185','?discipline=long-track&season=2025-2026');assert.equal(data.seasonScope,'all-published-seasons');assert.equal(data.coverage.season_count,2);assert.equal(data.personalBests[0].performances[0].id,'pb-earlier');assert.equal(data.personalBests[0].performances[0].season,'2024-2025');
  }finally{h.close();}});

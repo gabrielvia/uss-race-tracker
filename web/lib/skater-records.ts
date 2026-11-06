@@ -1,3 +1,4 @@
+import { sourceNameSql } from "@/lib/source-name";
 // Current projection only. A pending identity remains local to the selected
 // participant even if its prior skater link still points to reviewed records.
 export function recordScope(selected: string, linked = selected): string {
@@ -12,5 +13,5 @@ export const recordJoin = ` FROM results r
  LEFT JOIN competition_events e ON e.id=r.event_key
  LEFT JOIN entries en ON en.id=r.entry_id`;
 export const recordSelect = `r.*,c.title competition_title,c.starts_on,c.ends_on,c.discipline,c.season,c.id competition_id,
- s.url source_url,p.name,p.affiliation,p.bib,en.division entry_division,en.source_page entry_page,
+ s.url source_url,p.name source_name,${sourceNameSql()} name,p.affiliation,p.bib,en.division entry_division,en.source_page entry_page,
  e.gender event_gender,e.group_label,e.competition_group`;

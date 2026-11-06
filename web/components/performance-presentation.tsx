@@ -1,3 +1,4 @@
+import { officialTime, officialStatus } from "@/lib/official-result";
 import { competitionDates, dated, timeLabel, validPerformance, type CompetitionBest, type PerformanceRecord } from "@/lib/performance";
 
 export function PerformanceTooltip({record: r}: {record: CompetitionBest}) {
@@ -11,9 +12,9 @@ export function PerformanceSymbol({record: r, cx, cy, color, number, selected, i
 export function PerformanceRows({rows, pointIds, selectedId, inspect, onRace}: {rows: CompetitionBest[]; pointIds: Set<string>; selectedId: string | null; inspect: (r: PerformanceRecord) => void; onRace: (r: PerformanceRecord) => void}) {
   return <>{rows.map(r => <tr key={r.id} data-result-id={r.id} className={selectedId === r.id ? "selected-row" : ""}>
     <td>{r.name}<span className="bib-label">{r.competition_title} · {r.season}</span><span className="bib-label">{competitionDates(r)}</span></td>
-    <td className="time">{r.time_raw ?? "—"}<span className="bib-label">{pointIds.has(r.id) ? <button className="skater-link" aria-pressed={selectedId === r.id} onClick={() => inspect(r)}>Select point</button> : !validPerformance(r) ? "Not a valid timed finish" : !dated(r) ? "Dates unknown" : "Outside best-time view"}</span>{validPerformance(r) && <span className="sr-only">{timeLabel(r.time_microseconds!)}</span>}</td>
+    <td className="time">{officialTime(r)}<span className="bib-label">{pointIds.has(r.id) ? <button className="skater-link" aria-pressed={selectedId === r.id} onClick={() => inspect(r)}>Select point</button> : !validPerformance(r) ? "Not a valid timed finish" : !dated(r) ? "Dates unknown" : "Outside best-time view"}</span>{validPerformance(r) && <span className="sr-only">{timeLabel(r.time_microseconds!)}</span>}</td>
     <td>{r.event_label}<span className="bib-label">{r.entry_division ?? "Unknown entry"} · {r.event_gender} · {r.competition_group ?? "No labelled group"}</span><span className="bib-label">{r.round} · {r.race_label} · Race {r.race_id} · Heat {r.heat_number ?? "—"}</span><button className="skater-link" onClick={() => onRace(r)}>View event ↗</button></td>
-    <td>{r.rank ?? "—"} / {r.result_status ?? (r.finish_note ? "Not recorded" : "—")} / {r.qualification ?? "—"}</td>
+    <td>{r.rank ?? "—"} / {officialStatus(r)} / {r.qualification ?? "—"}</td>
     <td><a href={`${r.source_url}#page=${r.source_page}`} target="_blank" rel="noreferrer">p. {r.source_page} ↗</a>{r.performances.length > 1 && <details><summary>{r.performances.length} equal-best performances</summary>{r.performances.map(source => <p key={source.id}>{source.round} · {source.race_label} · Race {source.race_id}<br/><a href={`${source.source_url}#page=${source.source_page}`} target="_blank" rel="noreferrer">p. {source.source_page} ↗</a><br/><button className="skater-link" onClick={() => onRace(source)}>View event ↗</button></p>)}</details>}</td>
   </tr>)}</>;
 }

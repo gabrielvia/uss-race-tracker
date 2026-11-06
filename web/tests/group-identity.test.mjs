@@ -41,7 +41,7 @@ test("same-number Group A and B events publish independently and retain coverage
     const p = payload(0, [groupA, groupB]);
     const submitted = await h.request("imports", "POST", p), batch = await submitted.json();
     assert.equal(submitted.status, 200, JSON.stringify(batch.report));
-    assert.equal(batch.report.validationVersion, "competition-events/7");
+    assert.equal(batch.report.validationVersion, "competition-events/19");
     assert.equal(batch.report.events.filter(e => e.sourceEventNumber === "9").length, 2);
     assert.equal((await h.request("imports/[id]/publish", "POST", undefined, true, batch.id)).status, 200);
     const detail = await (await h.request("competitions/[id]", "GET", undefined, false, p.item.competition.id)).json();

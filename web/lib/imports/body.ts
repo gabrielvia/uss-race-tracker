@@ -1,17 +1,32 @@
 export class InputError extends Error { constructor(message: string, public status = 400) { super(message); } }
-export async function readBytes(request: Request, limit: number): Promise<Uint8Array> {
-  if (Number(request.headers.get("Content-Length")) > limit) throw new InputError("The request exceeds the size limit.", 413);
+export async function readBytes(request: Request, limit: number, unknownLengthLimit = limit): Promise<Uint8Array> {
+  const declared = request.headers.get("Content-Length");
+  const length = declared === null ? null : Number(declared);
+  if (length !== null && (!/^\d+$/.test(declared!) || !Number.isSafeInteger(length))) throw new InputError("Invalid Content-Length.");
+  if (length !== null && length > limit) throw new InputError("The request exceeds the size limit.", 413);
   const reader = request.body?.getReader();
   if (!reader) throw new InputError("A request body is required.");
+  // A declared length allows large uploads to be read into one allocation.
+  const buffer = length === null ? null : new Uint8Array(length);
   const chunks: Uint8Array[] = []; let size = 0;
   try {
     while (true) {
       const {done, value} = await reader.read(); if (done) break;
-      size += value.length;
-      if (size > limit) { await reader.cancel(); throw new InputError("The request exceeds the size limit.", 413); }
-      chunks.push(value);
+      const end = size + value.length;
+      if (end > (length ?? unknownLengthLimit)) {
+        await reader.cancel();
+        if (buffer) throw new InputError("The request body does not match Content-Length.");
+        throw new InputError("The request exceeds the size limit.", 413);
+      }
+      if (buffer) buffer.set(value, size);
+      else chunks.push(value);
+      size = end;
     }
   } finally { reader.releaseLock(); }
+  if (buffer) {
+    if (size !== length) throw new InputError("The request body does not match Content-Length.");
+    return buffer;
+  }
   const output = new Uint8Array(size); let offset = 0;
   for (const chunk of chunks) { output.set(chunk, offset); offset += chunk.length; }
   return output;

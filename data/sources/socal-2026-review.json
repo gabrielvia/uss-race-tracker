@@ -1,0 +1,656 @@
+{
+  "version": "socal-source-review/1",
+  "reviewedAt": "2026-11-05T22:08:29.174871+00:00",
+  "sourceId": "34e941c35e9329ac",
+  "sourceUrl": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt02900be4f4fa95d7/69b34994892ebc391a1d9409/2026_SoCal_Championships_Results_-_3-7-2026.pdf",
+  "directorySeason": "2025-2026",
+  "directoryEntryId": "15a4205359e1b799",
+  "directoryTitle": "2026-03-07 - 2026 Southern California Limited Regional Championships",
+  "sha256": "f4c52f033f75eb04e9c242f982210481fb9cf02a5252c2b7d4244636f9ab04b0",
+  "physicalPages": 2,
+  "sourceConfirmedStart": "2026-03-07",
+  "sourceConfirmedEnd": "2026-03-07",
+  "sourceConfirmedLocation": "The Cube, Santa Clarita, CA",
+  "inspectionBoundary": "Both pages audited. Atomic publication and full hosted readback passed.",
+  "groups": [
+    {
+      "page": 1,
+      "group": 1,
+      "trackMetres": "111.12",
+      "distancesRaw": [
+        "500 m",
+        "1000 m",
+        "500 m"
+      ],
+      "columns": [
+        "Place",
+        "Skater",
+        "State",
+        "500 m",
+        null,
+        "1000 m",
+        null,
+        "500 m",
+        null,
+        "Point",
+        "AG"
+      ],
+      "subcolumns": [
+        "",
+        "",
+        "",
+        "time",
+        "pts",
+        "time",
+        "pts",
+        "time",
+        "pts",
+        "Total",
+        ""
+      ],
+      "rows": [
+        [
+          "1st",
+          "Alvin Sun",
+          "NorCal",
+          "0:52.10",
+          "34",
+          "1:58.31",
+          "34",
+          "0:52.39",
+          "34",
+          "102",
+          "Jr E"
+        ],
+        [
+          "2nd",
+          "Xiaofan Feng",
+          "SoCal",
+          "0:53.40",
+          "21",
+          "1:59.97",
+          "21",
+          "0:52.80",
+          "21",
+          "63",
+          "Jr C"
+        ],
+        [
+          "3rd",
+          "Joanna Chen",
+          "SoCal",
+          "0:55.58",
+          "13",
+          "2:02.77",
+          "8",
+          "0:57.28",
+          "13",
+          "34",
+          "Jr D"
+        ],
+        [
+          "4th",
+          "Elias Hurley",
+          "SoCal",
+          "0:56.12",
+          "8",
+          "2:02.44",
+          "13",
+          "0:57.85",
+          "8",
+          "29",
+          "Jr D"
+        ]
+      ]
+    },
+    {
+      "page": 1,
+      "group": 2,
+      "trackMetres": "111.12",
+      "distancesRaw": [
+        "500 m",
+        "500 m",
+        "500 m"
+      ],
+      "columns": [
+        "Place",
+        "Skater",
+        "State",
+        "500 m",
+        null,
+        "500 m",
+        null,
+        "500 m",
+        null,
+        "Point",
+        "AG"
+      ],
+      "subcolumns": [
+        "",
+        "",
+        "",
+        "time",
+        "pts",
+        "time",
+        "pts",
+        "time",
+        "pts",
+        "Total",
+        ""
+      ],
+      "rows": [
+        [
+          "1st",
+          "Meinuo (Sara) Li",
+          "SoCal",
+          "0:57.87",
+          "21",
+          "0:57.35",
+          "34",
+          "0:58.10",
+          "21",
+          "76",
+          "Jr E"
+        ],
+        [
+          "2nd",
+          "Candice Gao",
+          "SoCal",
+          "0:58.65",
+          "13",
+          "1:00.27",
+          "5",
+          "0:57.82",
+          "34",
+          "52",
+          "Jr E"
+        ],
+        [
+          "3rd",
+          "David Wong",
+          "SoCal",
+          "0:57.58",
+          "34",
+          "1:00.00",
+          "8",
+          "0:59.70",
+          "5",
+          "47",
+          "Jr C"
+        ],
+        [
+          "4th",
+          "Candy Gao",
+          "SoCal",
+          "0:59.23",
+          "8",
+          "0:59.03",
+          "21",
+          "1:00.13",
+          "3",
+          "32",
+          "Jr D"
+        ],
+        [
+          "5th",
+          "Zixuan Zhang",
+          "SoCal",
+          "0:59.35",
+          "5",
+          "0:59.53",
+          "13",
+          "0:58.43",
+          "13",
+          "31",
+          "Jr E"
+        ],
+        [
+          "6th",
+          "Iris Ding",
+          "NorCal",
+          "1:00.73",
+          "3",
+          "1:05.23",
+          "1",
+          "0:59.56",
+          "8",
+          "12",
+          "Jr E"
+        ],
+        [
+          "7th",
+          "Yucheng (David) Zhang",
+          "NorCal",
+          "1:01.93",
+          "2",
+          "1:02.40",
+          "3",
+          "1:01.91",
+          "2",
+          "7",
+          "Jr E"
+        ],
+        [
+          "8th",
+          "Amy Blitzer",
+          "NorCal",
+          "1:02.37",
+          "1",
+          "1:03.48",
+          "2",
+          "DNF",
+          "0",
+          "3",
+          "Jr E"
+        ],
+        [
+          "9th",
+          "Kevin Fan",
+          "NorCal",
+          "1:05.39",
+          "0",
+          "1:06.14",
+          "0",
+          "1:07.18",
+          "1",
+          "1",
+          "Jr E"
+        ]
+      ]
+    },
+    {
+      "page": 1,
+      "group": 3,
+      "trackMetres": "111.12",
+      "distancesRaw": [
+        "500 m",
+        "333 m",
+        "500 m"
+      ],
+      "columns": [
+        "Place",
+        "Skater",
+        "State",
+        "500 m",
+        null,
+        "333 m",
+        null,
+        "500 m",
+        null,
+        "Point\nTotal",
+        "AG"
+      ],
+      "subcolumns": [
+        "",
+        "",
+        "",
+        "time",
+        "pts",
+        "time",
+        "pts",
+        "time",
+        "pts",
+        null,
+        ""
+      ],
+      "rows": [
+        [
+          "1st",
+          "Haozhe (Kimi) Chen",
+          "SoCal",
+          "1:09.87",
+          "34",
+          "0:46.15",
+          "34",
+          "1:08.34",
+          "21",
+          "89",
+          "Jr D"
+        ],
+        [
+          "2nd",
+          "Farrah Lee",
+          "SoCal",
+          "1:36.43",
+          "3",
+          "0:47.35",
+          "13",
+          "1:08.28",
+          "34",
+          "50",
+          "Jr E"
+        ],
+        [
+          "3rd",
+          "Stella Hurley",
+          "SoCal",
+          "1:10.48",
+          "21",
+          "0:47.31",
+          "21",
+          "1:23.51",
+          "5",
+          "47",
+          "Jr E"
+        ],
+        [
+          "4th",
+          "Youyang Qu",
+          "SoCal",
+          "1:30.82",
+          "5",
+          "0:48.60",
+          "8",
+          "1:13.47",
+          "13",
+          "26",
+          "Jr E"
+        ],
+        [
+          "5th",
+          "Xuanmo (Aaron) Zhang",
+          "SoCal",
+          "1:25.19",
+          "13",
+          "0:48.92",
+          "5",
+          "1:19.42",
+          "8",
+          "26",
+          "Jr E"
+        ],
+        [
+          "6th",
+          "Shirley Du",
+          "SoCal",
+          "1:27.00",
+          "8",
+          "0:59.34",
+          "3",
+          "1:29.74",
+          "3",
+          "14",
+          "Jr E"
+        ]
+      ]
+    },
+    {
+      "page": 2,
+      "group": 4,
+      "trackMetres": "85",
+      "distancesRaw": [
+        "212.5 m",
+        "255 m",
+        "212.5 m"
+      ],
+      "columns": [
+        "Place",
+        "Skater",
+        "State",
+        "212.5 m",
+        null,
+        "255 m",
+        null,
+        "212.5 m",
+        null,
+        "Point",
+        "AG"
+      ],
+      "subcolumns": [
+        "",
+        "",
+        "",
+        "time",
+        "pts",
+        "time",
+        "pts",
+        "time",
+        "pts",
+        "Total",
+        ""
+      ],
+      "rows": [
+        [
+          "1st",
+          "Remi Jia",
+          "SoCal",
+          "0:51.27",
+          "21",
+          "0:56.35",
+          "34",
+          "0:43.58",
+          "34",
+          "89",
+          "Jr E"
+        ],
+        [
+          "2nd",
+          "Aiden Wang",
+          "SoCal",
+          "0:50.20",
+          "34",
+          "1:04.12",
+          "13",
+          "0:51.29",
+          "13",
+          "60",
+          "Jr E"
+        ],
+        [
+          "3rd",
+          "Tyler Wang",
+          "SoCal",
+          "0:52.55",
+          "13",
+          "0:59.67",
+          "21",
+          "0:43.90",
+          "21",
+          "55",
+          "Jr E"
+        ],
+        [
+          "4th",
+          "Pete Yan",
+          "SoCal",
+          "1:08.08",
+          "8",
+          "1:18.11",
+          "8",
+          "1:02.18",
+          "13",
+          "29",
+          "Jr E"
+        ]
+      ]
+    },
+    {
+      "page": 2,
+      "group": 5,
+      "trackMetres": "111.12",
+      "distancesRaw": [
+        "500m",
+        "500 m"
+      ],
+      "columns": [
+        "Place",
+        "Skater",
+        "State",
+        "500m",
+        null,
+        "500 m",
+        null,
+        "",
+        null,
+        "Point",
+        "AG"
+      ],
+      "subcolumns": [
+        "",
+        "",
+        "",
+        "time",
+        "pts",
+        "time",
+        "pts",
+        "",
+        "",
+        "Total",
+        ""
+      ],
+      "rows": [
+        [
+          "1st",
+          "Alex Katz",
+          "SoCal",
+          "0:56.75",
+          "34",
+          "0:53.93",
+          "34",
+          "",
+          "",
+          "68",
+          "Jr A"
+        ],
+        [
+          "2nd",
+          "Alexandra Koplan",
+          "SoCal",
+          "1:19.67",
+          "21",
+          "1:20.72",
+          "8",
+          "",
+          "",
+          "29",
+          "Jr A"
+        ],
+        [
+          "3rd",
+          "Elias Hurley",
+          "SoCal",
+          "DNS",
+          "0",
+          "0:56.13",
+          "21",
+          "",
+          "",
+          "21",
+          "Jr D"
+        ],
+        [
+          "4th",
+          "Robert Allison",
+          "SoCal",
+          "PEN",
+          "0",
+          "1:10.31",
+          "13",
+          "",
+          "",
+          "13",
+          "M75"
+        ]
+      ]
+    }
+  ],
+  "officialStandingRows": 27,
+  "observedResultCells": 77,
+  "published": true,
+  "newRows": 77,
+  "reviewStatus": "reviewed",
+  "confirmedSamePerson": "Elias Hurley",
+  "resolvedQuestions": [
+    {
+      "kind": "same-name-multiple-racing-groups-without-bib",
+      "name": "Elias Hurley",
+      "appearances": [
+        {
+          "group": 1,
+          "page": 1,
+          "row": [
+            "4th",
+            "Elias Hurley",
+            "SoCal",
+            "0:56.12",
+            "8",
+            "2:02.44",
+            "13",
+            "0:57.85",
+            "8",
+            "29",
+            "Jr D"
+          ]
+        },
+        {
+          "group": 5,
+          "page": 2,
+          "row": [
+            "3rd",
+            "Elias Hurley",
+            "SoCal",
+            "DNS",
+            "0",
+            "0:56.13",
+            "21",
+            "",
+            "",
+            "21",
+            "Jr D"
+          ]
+        }
+      ],
+      "proposedHandling": "Use one skater profile with separate Group 1 and Group 5 entries if the user confirms the identity. Preserve both literal rows and both overall places.",
+      "answer": "The user confirmed Elias Hurley is the same skater in Groups 1 and 5."
+    },
+    {
+      "kind": "manual-timing-personal-best-eligibility",
+      "physicalPages": [
+        1,
+        2
+      ],
+      "printedTiming": "Manual Timing to the nearest hundredth of a second",
+      "proposedHandling": "Store every official result cell and label it as hand-timed. Ask whether eligible hand-timed results should be used in personal bests and ordinary-distance charts. Keep the exact 212.5 m distance and 85 m track for Group 4.",
+      "answer": "The user approved eligible hand-timed results for the ordinary personal bests and charts, with no extra display marker."
+    }
+  ],
+  "originalPages": [
+    {
+      "page": 1,
+      "kind": "competition-standings",
+      "label": "Official group standings · page 1",
+      "text_raw": "2026 SoCal Limited Regional Championships\nThe Cube - Santa Clarita - March 7, 2026\nSanctioned by USS\n111.12 meter Track\nMEET RESULTS BY GROUP\n(Distances in meters - Manual Timing to the nearest hundredth of a second)\nRacing Group 1 (Mixed Gender) - Distances and Times\nPlace Skater State 500 m 1000 m 500 m Point AG\ntime pts time pts time pts Total\n1st Alvin Sun NorCal 0:52.10 34 1:58.31 34 0:52.39 34 102 Jr E\n2nd Xiaofan Feng SoCal 0:53.40 21 1:59.97 21 0:52.80 21 63 Jr C\n3rd Joanna Chen SoCal 0:55.58 13 2:02.77 8 0:57.28 13 34 Jr D\n4th Elias Hurley SoCal 0:56.12 8 2:02.44 13 0:57.85 8 29 Jr D\nRacing Group 2 (Mixed Gender) - Distances and Times\nPlace Skater State 500 m 500 m 500 m Point AG\ntime pts time pts time pts Total\n1st Meinuo (Sara) Li SoCal 0:57.87 21 0:57.35 34 0:58.10 21 76 Jr E\n2nd Candice Gao SoCal 0:58.65 13 1:00.27 5 0:57.82 34 52 Jr E\n3rd David Wong SoCal 0:57.58 34 1:00.00 8 0:59.70 5 47 Jr C\n4th Candy Gao SoCal 0:59.23 8 0:59.03 21 1:00.13 3 32 Jr D\n5th Zixuan Zhang SoCal 0:59.35 5 0:59.53 13 0:58.43 13 31 Jr E\n6th Iris Ding NorCal 1:00.73 3 1:05.23 1 0:59.56 8 12 Jr E\n7th Yucheng (David) Zhang NorCal 1:01.93 2 1:02.40 3 1:01.91 2 7 Jr E\n8th Amy Blitzer NorCal 1:02.37 1 1:03.48 2 DNF 0 3 Jr E\n9th Kevin Fan NorCal 1:05.39 0 1:06.14 0 1:07.18 1 1 Jr E\nRacing Group 3 (Mixed Gender) - Distances and Times\nPlace Skater State 500 m 333 m 500 m Point AG\ntime pts time pts time pts Total\n1st Haozhe (Kimi) Chen SoCal 1:09.87 34 0:46.15 34 1:08.34 21 89 Jr D\n2nd Farrah Lee SoCal 1:36.43 3 0:47.35 13 1:08.28 34 50 Jr E\n3rd Stella Hurley SoCal 1:10.48 21 0:47.31 21 1:23.51 5 47 Jr E\n4th Youyang Qu SoCal 1:30.82 5 0:48.60 8 1:13.47 13 26 Jr E\n5th Xuanmo (Aaron) Zhang SoCal 1:25.19 13 0:48.92 5 1:19.42 8 26 Jr E\n6th Shirley Du SoCal 1:27.00 8 0:59.34 3 1:29.74 3 14 Jr E\nAbbreviations: DNS - Did Not Start DNF - Did Not Finish PEN - Penalized NT - No Time Recorded"
+    },
+    {
+      "page": 2,
+      "kind": "competition-standings",
+      "label": "Official group standings · page 2",
+      "text_raw": "2026 SoCal Limited Regional Championships\nThe Cube - Santa Clarita - March 7, 2026\nSanctioned by USS\n111.12 meter Track\nMEET RESULTS BY GROUP\n(Distances in meters - Manual Timing to the nearest hundredth of a second)\nRacing Group 4 (Mixed Gender) - Distances (on an 85m track) and Times\nPlace Skater State 212.5 m 255 m 212.5 m Point AG\ntime pts time pts time pts Total\n1st Remi Jia SoCal 0:51.27 21 0:56.35 34 0:43.58 34 89 Jr E\n2nd Aiden Wang SoCal 0:50.20 34 1:04.12 13 0:51.29 13 60 Jr E\n3rd Tyler Wang SoCal 0:52.55 13 0:59.67 21 0:43.90 21 55 Jr E\n4th Pete Yan SoCal 1:08.08 8 1:18.11 8 1:02.18 13 29 Jr E\nRacing Group 5 (Mixed Gender) - Distances and Times\nPlace Skater State 500m 500 m Point AG\ntime pts time pts Total\n1st Alex Katz SoCal 0:56.75 34 0:53.93 34 68 Jr A\n2nd Alexandra Koplan SoCal 1:19.67 21 1:20.72 8 29 Jr A\n3rd Elias Hurley SoCal DNS 0 0:56.13 21 21 Jr D\n4th Robert Allison SoCal PEN 0 1:10.31 13 13 M75\nAbbreviations: DNS - Did Not Start DNF - Did Not Finish P - Participated NT - No Time Recorded\nMeet Officials\nMeet Director & Head Referee: Ron Halcrow\nAssistant Referee: Mark Jeffries\nStarters: David Jepson and Ron Halcrow\nHead Timer: David Jepson\nCompetitor Stewards: David Jepson and Ron Halcrow\nLap Counter: Jim Wilkins\nHeat Box Steward: Renee Blitzer\nTrack Steward: Eric Lee\nCompetiton Website: www.scssc.net"
+    }
+  ],
+  "competition": {
+    "id": "st-socal-2026",
+    "title": "2026 SoCal Limited Regional Championships",
+    "discipline": "short-track",
+    "season": "2025-2026",
+    "startsOn": "2026-03-07",
+    "endsOn": "2026-03-07",
+    "location": "The Cube, Santa Clarita, CA"
+  },
+  "source_id": "34e941c35e9329ac",
+  "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt02900be4f4fa95d7/69b34994892ebc391a1d9409/2026_SoCal_Championships_Results_-_3-7-2026.pdf",
+  "pdf_page_count": 2,
+  "scanned_page_count": 2,
+  "summary": {
+    "discovered_events": 14,
+    "complete_selected_events": 14,
+    "needs_review_events": 0,
+    "export_eligible_events": 14
+  },
+  "source_issues": [],
+  "complete_competition": false,
+  "publishedAt": "2026-11-05T22:23:07.263708+00:00",
+  "publicationBatchId": "f09c630816fe724fca5647b9a380bd30846abab97cbb5cdaa5cd3bc0258b09c4",
+  "siteVersion": 32,
+  "verificationReport": "outputs/socal-hosted-verification.json"
+}

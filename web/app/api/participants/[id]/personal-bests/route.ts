@@ -13,11 +13,11 @@ export async function GET(_request:Request,context:{params:Promise<{id:string}>}
     const [person,coverage,bests]=await db.batch<Record<string,unknown>>([
       db.prepare("SELECT p.id,COALESCE(l.status,'unlinked') identity_status FROM participants p LEFT JOIN skater_links l ON l.participant_key=p.id WHERE p.id=?").bind(id),
       db.prepare(`SELECT COUNT(*) recorded_result_count,
-        COALESCE(SUM(CASE WHEN r.result_status IS NULL AND r.time_microseconds>0 THEN 1 ELSE 0 END),0) comparable_result_count,
+        COALESCE(SUM(CASE WHEN r.distance_unit='metres' AND r.event_kind='individual' AND r.result_status IS NULL AND r.time_microseconds>0 THEN 1 ELSE 0 END),0) comparable_result_count,
         COUNT(DISTINCT c.season) season_count${recordJoin} WHERE ${participantRecordScope}`).bind(id,id),
       db.prepare(`WITH eligible AS (SELECT ${recordSelect},
         DENSE_RANK() OVER (PARTITION BY c.discipline,r.distance ORDER BY r.time_microseconds) best_order
-        ${recordJoin} WHERE ${participantRecordScope} AND r.result_status IS NULL AND r.time_microseconds>0)
+        ${recordJoin} WHERE ${participantRecordScope} AND r.distance_unit='metres' AND r.event_kind='individual' AND r.result_status IS NULL AND r.time_microseconds>0)
         SELECT * FROM eligible WHERE best_order=1 ORDER BY discipline DESC,distance,starts_on DESC,competition_id,id`).bind(id,id),
     ]);
     if(!person.results.length)return Response.json({error:"Participant not found."},{status:404});

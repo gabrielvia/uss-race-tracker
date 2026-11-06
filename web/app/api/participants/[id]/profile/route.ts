@@ -1,13 +1,14 @@
 import { database,unavailable } from "@/lib/database";
 import { deriveSkatingAge,type AgeInterval } from "@/lib/skating-age";
-import { categoryInterval,type AgeRule } from "@/lib/age-rules";
+import { observedAgeBounds,type AgeRule } from "@/lib/age-rules";
+import { sourceNameSql } from "@/lib/source-name";
 export const dynamic="force-dynamic";
 export async function GET(_request:Request,context:{params:Promise<{id:string}>}){
   const {id}=await context.params;if(!/^[a-z0-9-]{1,80}:[^:]{1,80}$/.test(id))return Response.json({error:"Participant not found."},{status:404});
   try{
     const db=database();
     const [person,records,aliases]=await db.batch<Record<string, unknown>>([
-      db.prepare("SELECT p.*,l.skater_id,l.status identity_status FROM participants p LEFT JOIN skater_links l ON l.participant_key=p.id WHERE p.id=?").bind(id),
+      db.prepare(`SELECT p.id,p.competition_id,p.bib,p.affiliation,p.country,p.name source_name,${sourceNameSql()} name,l.skater_id,l.status identity_status FROM participants p JOIN competitions c ON c.id=p.competition_id JOIN sources s ON s.id=c.source_id LEFT JOIN skater_links l ON l.participant_key=p.id WHERE p.id=?`).bind(id),
       db.prepare(`SELECT o.*,c.discipline,s.url source_url,r.definition_json FROM skater_observations o
         JOIN skater_links l ON l.participant_key=o.participant_key
         JOIN import_publications pub ON pub.batch_id=o.batch_id AND pub.competition_id=o.competition_id
@@ -22,7 +23,7 @@ export async function GET(_request:Request,context:{params:Promise<{id:string}>}
     for(const row of records.results){
       const {definition_json,...observation}=row;observations.push(observation);
       const rule=definition_json?JSON.parse(String(definition_json)) as AgeRule:null;
-      const bounds=rule&&rule.season===row.season&&rule.discipline===row.discipline?(categoryInterval(row.age_category as string|null,rule) ?? (row.age_category===null?rule.divisionCategories?.[String(row.division)]??null:null)):null;
+      const bounds=observedAgeBounds(rule,String(row.season),String(row.discipline),row.age_category as string|null,String(row.division));
       if(bounds&&rule)evidence.push({season:String(row.season),basis:rule.basis,...bounds,source:{competitionId:row.competition_id,category:row.age_category??row.division,evidenceType:row.age_category?"explicit-category":"reviewed-age-division",sourceUrl:row.source_url,sourceHash:row.source_hash,page:row.source_page,baselineDate:rule.baselineDate,ruleVersion:rule.version,ruleSource:rule.source}});
       else if(row.age_category)unresolved.push({competitionId:row.competition_id,category:row.age_category,page:row.source_page,reason:"No reviewed matching rule/category."});
     }

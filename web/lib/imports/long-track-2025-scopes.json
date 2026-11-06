@@ -1,0 +1,231 @@
+{
+  "sha256": "ac7793ee804fff69c79130ee819486cf2cac542bd41d42653061cb7f5bce33bd",
+  "version": "tempus-lt-agn-2025-dimensions/1",
+  "entries": [
+    {
+      "raw": "Future of Speed",
+      "division": "Future of Speed",
+      "gender": "Mixed"
+    },
+    {
+      "raw": "Junior A/Senior Mixed",
+      "division": "Junior A/Senior Mixed",
+      "gender": "Mixed"
+    },
+    {
+      "raw": "Masters Men (65+)",
+      "division": "Masters (65+)",
+      "gender": "Men"
+    },
+    {
+      "raw": "Junior B Men",
+      "division": "Junior B",
+      "gender": "Men"
+    },
+    {
+      "raw": "Junior B Women",
+      "division": "Junior B",
+      "gender": "Women"
+    },
+    {
+      "raw": "Junior C Men",
+      "division": "Junior C",
+      "gender": "Men"
+    },
+    {
+      "raw": "Junior C Women",
+      "division": "Junior C",
+      "gender": "Women"
+    },
+    {
+      "raw": "Junior D Men",
+      "division": "Junior D",
+      "gender": "Men"
+    },
+    {
+      "raw": "Junior D Women",
+      "division": "Junior D",
+      "gender": "Women"
+    },
+    {
+      "raw": "Masters Men",
+      "division": "Masters",
+      "gender": "Men"
+    },
+    {
+      "raw": "Masters Women",
+      "division": "Masters",
+      "gender": "Women"
+    }
+  ],
+  "events": [
+    {
+      "group": "Future of Speed's",
+      "rawDivision": "Future of Speed",
+      "division": "Future of Speed",
+      "gender": "Mixed"
+    },
+    {
+      "group": "Junior A/Senior Mixed's",
+      "rawDivision": "Junior A/Senior Mixed",
+      "division": "Junior A/Senior Mixed",
+      "gender": "Mixed"
+    },
+    {
+      "group": "Masters Men (65+)'s",
+      "rawDivision": "Masters Men (65+)",
+      "division": "Masters (65+)",
+      "gender": "Men"
+    },
+    {
+      "group": "Junior B Men's",
+      "rawDivision": "Junior B Men",
+      "division": "Junior B",
+      "gender": "Men"
+    },
+    {
+      "group": "Junior B Women's",
+      "rawDivision": "Junior B Women",
+      "division": "Junior B",
+      "gender": "Women"
+    },
+    {
+      "group": "Junior C Men's",
+      "rawDivision": "Junior C Men",
+      "division": "Junior C",
+      "gender": "Men"
+    },
+    {
+      "group": "Junior C Women's",
+      "rawDivision": "Junior C Women",
+      "division": "Junior C",
+      "gender": "Women"
+    },
+    {
+      "group": "Junior D Men's",
+      "rawDivision": "Junior D Men",
+      "division": "Junior D",
+      "gender": "Men"
+    },
+    {
+      "group": "Junior D Women's",
+      "rawDivision": "Junior D Women",
+      "division": "Junior D",
+      "gender": "Women"
+    },
+    {
+      "group": "Masters Men's",
+      "rawDivision": "Masters Men",
+      "division": "Masters",
+      "gender": "Men"
+    },
+    {
+      "group": "Masters Women's",
+      "rawDivision": "Masters Women",
+      "division": "Masters",
+      "gender": "Women"
+    }
+  ],
+  "wrappedHeadings": [
+    {
+      "label": "Junior D Women's 500 Super Final Finals Event #1",
+      "lines": [
+        "Junior D Women's 500 Super Final Event #1",
+        "Finals"
+      ],
+      "pages": [
+        94
+      ]
+    },
+    {
+      "label": "Junior B Women's 500 Super Final Finals Event #3",
+      "lines": [
+        "Junior B Women's 500 Super Final Event #3",
+        "Finals"
+      ],
+      "pages": [
+        94
+      ]
+    },
+    {
+      "label": "Masters Women's 500 Super Final Finals Event #4",
+      "lines": [
+        "Masters Women's 500 Super Final Event #4",
+        "Finals"
+      ],
+      "pages": [
+        95
+      ]
+    },
+    {
+      "label": "Junior A/Senior Mixed's 3000 Super Final Finals Event #56",
+      "lines": [
+        "Junior A/Senior Mixed's 3000 Super Event #56",
+        "Final Finals"
+      ],
+      "pages": [
+        119
+      ]
+    },
+    {
+      "label": "Masters Women's 3000 Super Final Finals Event #57",
+      "lines": [
+        "Masters Women's 3000 Super Final Event #57",
+        "Finals"
+      ],
+      "pages": [
+        119
+      ]
+    },
+    {
+      "label": "Junior B Women's 3000 Super Final Finals Event #59",
+      "lines": [
+        "Junior B Women's 3000 Super Final Event #59",
+        "Finals"
+      ],
+      "pages": [
+        119
+      ]
+    },
+    {
+      "label": "Masters Women's 1600 Super Final Finals Event #61",
+      "lines": [
+        "Masters Women's 1600 Super Final Event #61",
+        "Finals"
+      ],
+      "pages": [
+        120
+      ]
+    },
+    {
+      "label": "Masters Men (65+)'s 1600 Super Final Finals Event #63",
+      "lines": [
+        "Masters Men (65+)'s 1600 Super Final Event #63",
+        "Finals"
+      ],
+      "pages": [
+        121
+      ]
+    },
+    {
+      "label": "Junior C Women's 1400 Super Final Finals Event #64",
+      "lines": [
+        "Junior C Women's 1400 Super Final Event #64",
+        "Finals"
+      ],
+      "pages": [
+        121
+      ]
+    },
+    {
+      "label": "Junior D Women's 1200 Super Final Finals Event #66",
+      "lines": [
+        "Junior D Women's 1200 Super Final Event #66",
+        "Finals"
+      ],
+      "pages": [
+        122
+      ]
+    }
+  ]
+}

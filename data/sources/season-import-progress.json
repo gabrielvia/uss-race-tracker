@@ -1,0 +1,1093 @@
+{
+  "version": "season-import-progress/1",
+  "updatedAt": "2026-11-06T22:05:50.476435+00:00",
+  "phase6Status": "in-progress",
+  "ordering": "Official directory seasons, newest to oldest; complete the active season before advancing.",
+  "activeSeason": "2025-2026",
+  "activeSource": "8dd5cce0b388fea7",
+  "seasonOrder": [
+    "2026-2027",
+    "2025-2026",
+    "2024-2025",
+    "2023-2024",
+    "2022-2023",
+    "2021-2022",
+    "2020-2021",
+    "2019-2020",
+    "2018-2019",
+    "2018",
+    "2017",
+    "2016",
+    "2015",
+    "2014"
+  ],
+  "seasonSources": [
+    {
+      "sourceId": "1cea2058ec1a6944",
+      "directoryEntryId": "a62823d90a89f537",
+      "title": "2026-04-02 - 2026 Washington State ST Championships",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt868d6a400d05b4cb/6a558d54d673fe214dddf024/2026_Washington_State_Short_Track_Championship_&_Open_Results.pdf",
+      "status": "published-verified",
+      "newRows": 357,
+      "sha256": "716413b7d201011fadfe2af999c87172ea1dfe36b4985083fca155061d58ce24",
+      "physicalPages": 88,
+      "reviewPath": "data/sources/washington-2026-review.json",
+      "published": true,
+      "extractionStatus": "All 88 pages independently checked, including 357 race results, 52 roster entries, 435 classification rows and 90 official standings rows. Hosted readback verified all 8,371 results, 1,052 identities, 3,307 personal-best groups, 149 new chart queries, confirmed dates and the unchanged PDF.",
+      "resolvedQuestions": [
+        {
+          "kind": "official-source-conflicting-competition-dates",
+          "physicalPages": [
+            1,
+            3,
+            5
+          ],
+          "frontOfficialResultsDatesRaw": "04/05/2026 - 04/06/2026",
+          "raceReportHeadingRaw": "2026 WA State Short track Championship April 4-5",
+          "officialEventPage": "https://www.usspeedskating.org/2026-washington-state-short-track-championships-open",
+          "officialEventPageDates": "2026-04-04 through 2026-04-05",
+          "proposedHandling": "Use April 4–5, 2026 for the competition record, based on the race report and the official event page. Archive the exact PDF and preserve both date strings in the source evidence.",
+          "answer": "The user confirmed April 4–5, 2026 for the database. Use the dates printed on the detailed report and corroborated by the official event page. Preserve the front standings’ original dates."
+        }
+      ],
+      "sourceConfirmedStart": "2026-04-04",
+      "sourceConfirmedEnd": "2026-04-05",
+      "sourceConfirmedLocation": "Tacoma, WA",
+      "competitionId": "st-washington-2026",
+      "publicationBatchId": "cd5383309cc6a475d74e4bc0f2cb5d76340aa3059e9bd96c74d991fe12c5b1d1",
+      "siteVersion": 29,
+      "verificationReport": "outputs/washington-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-washington-2026"
+    },
+    {
+      "sourceId": "381947c967290f89",
+      "directoryEntryId": "af6ce3e61eada4c7",
+      "title": "2026-03-22 - 2026 US Age Group Nationals Short Track",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltdbe3948c37369bd8/69c21eeecf706153ff29d935/2026_USS_AGN_ST_final.pdf",
+      "status": "published-verified-no-new-rows",
+      "newRows": 0,
+      "published": true,
+      "competitionId": "st-agn-2026",
+      "sha256": "96baa4cc09283058cc4a458f6ced92316f2b029fa5b7d3cf75d6f371f848744f",
+      "existingRows": 1847,
+      "publicationBatchId": "79a1df3afd76283ce6f8f9ef6c1c92765876f23adb10279fff627e9eb7e1b298",
+      "verificationReport": "outputs/washington-hosted-verification.json",
+      "extractionStatus": "Exact official directory PDF SHA-256 matches the published revision. Existing 1,847 source rows and active head verified; no new batch needed."
+    },
+    {
+      "sourceId": "e0d4bb8b53717d7f",
+      "directoryEntryId": "5a5fd05be4c8150c",
+      "title": "2026-03-08 - 2026 Land Of Lincoln & Heartland #6",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt1843faee29a30f0c/69b3383350b07053be3c5ede/2026_LOL_Protocol_Report.pdf",
+      "status": "published-verified",
+      "newRows": 810,
+      "published": true,
+      "sha256": "1a2ac72f45d9a9ab0a1e465e627f4e2953802dad66f6b2486a0990d3fc006cc4",
+      "physicalPages": 177,
+      "reviewPath": "data/sources/land-of-lincoln-2026-review.json",
+      "extractionStatus": "All 177 pages independently checked, including 810 race results, 131 roster observations and 1,150 classification rows. Hosted readback verified all 9,181 results, 1,168 identities, 3,749 personal-best groups, 458 new chart queries, confirmed dates, three separate extra races and the unchanged PDF.",
+      "resolvedQuestions": [
+        {
+          "kind": "official-source-conflicting-competition-year",
+          "physicalPages": [
+            1,
+            3,
+            117
+          ],
+          "officialTitleRaw": "2026 Land of Lincoln Speedskating Championships / Heartland #6",
+          "officialDateLineRaw": "7-8 MARCH 2025 - U of I Ice Arena, Champaign, Illinois",
+          "raceHeadingRaw": "2026 Land of Lincoln Short Track Championships, Heartland Series #6",
+          "officialEventPage": "https://www.usspeedskating.org/2026-land-of-lincoln",
+          "officialEventPageDates": "2026-03-07 through 2026-03-08",
+          "officialRecap": "https://www.usspeedskating.org/news/2026/march/10/champaign-celebrates-50-years-of-international-short-track-speedskating-at-2026-land-of-lincoln-meet",
+          "proposedHandling": "Use March 7–8, 2026 in the competition database based on the official directory, event page and post-meet recap. Keep the original 2025 date line in the unchanged PDF.",
+          "answer": "The user approved March 7–8, 2026 for database metadata. Keep the original officials page and its printed 2025 date unchanged."
+        }
+      ],
+      "sourceConfirmedStart": "2026-03-07",
+      "sourceConfirmedEnd": "2026-03-08",
+      "sourceConfirmedLocation": "Champaign, IL",
+      "competitionId": "st-land-of-lincoln-2026",
+      "publicationBatchId": "73ce1f60d8d28f7e0645605cee0ee79ee8bd21d32b9dec77ad79af0f19a7321f",
+      "siteVersion": 30,
+      "verificationReport": "outputs/land-of-lincoln-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-land-of-lincoln-2026"
+    },
+    {
+      "sourceId": "33788a663bb35127",
+      "directoryEntryId": "e8a0e51154d65a28",
+      "title": "2026-03-08 - 2026 US AmCup Final & US Open Masters & Colombian Championships",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt79fe043b7ab51b67/69af65aaf6ace70008c3b6b2/2026_US_AmCup_Final_US_Open_Masters.pdf",
+      "status": "published-verified",
+      "newRows": 344,
+      "published": true,
+      "sha256": "368e7058bbc8cce41ee77d6ed36cacb1459827b5572b8b41d618a9a4ed046d80",
+      "physicalPages": 45,
+      "reviewPath": "data/sources/amcup-final-2026-review.json",
+      "sourceConfirmedStart": "2026-03-06",
+      "sourceConfirmedEnd": "2026-03-08",
+      "sourceConfirmedLocation": "Kearns, UT",
+      "extractionStatus": "All 45 physical pages audited, including 286 timed and 58 mass-start rows. Hosted readback verified all 9,525 results, 1,255 identities, 4,025 personal-best groups, 286 new chart queries, original PDF, four reviewed profile matches and both sets of source spellings.",
+      "resolvedQuestions": [
+        {
+          "kind": "same-skater-number-different-printed-name",
+          "rows": [
+            {
+              "skaterNumber": "114",
+              "timedNameRaw": "LINDENSKOV Natascha",
+              "timedPages": [
+                6
+              ],
+              "massStartNameRaw": "Lindenskov Natasha",
+              "massStartPages": [
+                42,
+                44
+              ]
+            },
+            {
+              "skaterNumber": "202",
+              "timedNameRaw": "HERMAN Auggie",
+              "timedPages": [
+                9
+              ],
+              "massStartNameRaw": "Herman Auggi",
+              "massStartPages": [
+                43,
+                45
+              ]
+            },
+            {
+              "skaterNumber": "252",
+              "timedNameRaw": "ZAPATA Daniel",
+              "timedPages": [
+                14
+              ],
+              "massStartNameRaw": "Zapata Marinez Daniel",
+              "massStartPages": [
+                43
+              ]
+            },
+            {
+              "skaterNumber": "257",
+              "timedNameRaw": "SIEBERT Finn",
+              "timedPages": [
+                39
+              ],
+              "massStartNameRaw": "Sibert Finn",
+              "massStartPages": [
+                43,
+                45
+              ]
+            }
+          ],
+          "proposedHandling": "Treat each matched skater number as one competition-local profile. Use the timed result spelling for the profile and preserve both exact original spellings and both mass-start number columns in the source evidence.",
+          "answer": "The user approved one competition-local profile per matched pair, with spelling from the timed results. Display the given name before the family name in title case. Preserve both source spellings and the original PDF verbatim."
+        }
+      ],
+      "competitionId": "lt-amcup-final-2026",
+      "publicationBatchId": "b672b6df6ad148fa59f4a6c8dc67baf6cf3b30ebd0db942163c49c4145388a6c",
+      "siteVersion": 31,
+      "verificationReport": "outputs/amcup-final-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=long-track&season=2025-2026&competition=lt-amcup-final-2026"
+    },
+    {
+      "sourceId": "34e941c35e9329ac",
+      "directoryEntryId": "15a4205359e1b799",
+      "title": "2026-03-07 - 2026 Southern California Limited Regional Championships",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt02900be4f4fa95d7/69b34994892ebc391a1d9409/2026_SoCal_Championships_Results_-_3-7-2026.pdf",
+      "status": "published-verified",
+      "newRows": 77,
+      "published": true,
+      "sha256": "f4c52f033f75eb04e9c242f982210481fb9cf02a5252c2b7d4244636f9ab04b0",
+      "physicalPages": 2,
+      "reviewPath": "data/sources/socal-2026-review.json",
+      "sourceConfirmedStart": "2026-03-07",
+      "sourceConfirmedEnd": "2026-03-07",
+      "sourceConfirmedLocation": "The Cube, Santa Clarita, CA",
+      "extractionStatus": "Both pages audited, including 77 result cells and 27 group standings rows. Hosted readback verified all 9,602 results, 1,281 identities, 4,065 personal-best groups, 40 new chart queries, original PDF, Elias Hurley’s shared profile and fractional distances.",
+      "competitionId": "st-socal-2026",
+      "resolvedQuestions": [
+        {
+          "kind": "same-name-multiple-racing-groups-without-bib",
+          "name": "Elias Hurley",
+          "appearances": [
+            {
+              "group": 1,
+              "page": 1,
+              "row": [
+                "4th",
+                "Elias Hurley",
+                "SoCal",
+                "0:56.12",
+                "8",
+                "2:02.44",
+                "13",
+                "0:57.85",
+                "8",
+                "29",
+                "Jr D"
+              ]
+            },
+            {
+              "group": 5,
+              "page": 2,
+              "row": [
+                "3rd",
+                "Elias Hurley",
+                "SoCal",
+                "DNS",
+                "0",
+                "0:56.13",
+                "21",
+                "",
+                "",
+                "21",
+                "Jr D"
+              ]
+            }
+          ],
+          "proposedHandling": "Use one skater profile with separate Group 1 and Group 5 entries if the user confirms the identity. Preserve both literal rows and both overall places.",
+          "answer": "The user confirmed Elias Hurley is the same skater in Groups 1 and 5."
+        },
+        {
+          "kind": "manual-timing-personal-best-eligibility",
+          "physicalPages": [
+            1,
+            2
+          ],
+          "printedTiming": "Manual Timing to the nearest hundredth of a second",
+          "proposedHandling": "Store every official result cell and label it as hand-timed. Ask whether eligible hand-timed results should be used in personal bests and ordinary-distance charts. Keep the exact 212.5 m distance and 85 m track for Group 4.",
+          "answer": "The user approved eligible hand-timed results for the ordinary personal bests and charts, with no extra display marker."
+        }
+      ],
+      "publicationBatchId": "f09c630816fe724fca5647b9a380bd30846abab97cbb5cdaa5cd3bc0258b09c4",
+      "siteVersion": 32,
+      "verificationReport": "outputs/socal-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-socal-2026"
+    },
+    {
+      "sourceId": "a3e0ccc938d4730c",
+      "directoryEntryId": "c73fe5786220a1e4",
+      "title": "2026-03-07 - 2026 MASA Short Track Championships",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt2ed31176561c3e74/69af59ae21e8760008bd1325/2026_MASA_Championships.pdf",
+      "status": "published-verified-no-new-rows",
+      "newRows": 0,
+      "published": true,
+      "competitionId": "st-masa-2026",
+      "sha256": "2671f997837bdc170dfc1fc995fbe9431ea30df968678e51e62d350a72440ae2",
+      "existingRows": 420,
+      "publicationBatchId": "e72d54392491c6423c9f51240cffceab9dec583339071d40437e45de362aa4e7",
+      "verificationReport": "outputs/socal-hosted-verification.json",
+      "extractionStatus": "Exact official directory PDF SHA-256 matches the published revision. Existing 420 source rows and active head verified; no new batch needed."
+    },
+    {
+      "sourceId": "d0e28283d976611c",
+      "directoryEntryId": "313779032846ab98",
+      "title": "2026-02-22 - 101 Annual St. Louis Silver Skate",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt031273d7efe7d1ed/69a1da1e1a8156663af8b09f/101_Annual_St_Louis_Silver_Skate.pdf",
+      "status": "published-verified",
+      "newRows": 310,
+      "competitionId": "st-louis-2026",
+      "sha256": "5dfc2f820dcf8e7f434a4fc2e097e7808f0b6d995e1257f9a25cf04f7f5e3e71",
+      "published": true,
+      "reviewReport": "data/sources/st-louis-2026-review.json",
+      "extractionStatus": "All 92 pages audited. Hosted readback verified all 9,912 results, 1,326 identities, 4,229 personal-best groups and 175 new chart queries. The original PDF and 65 classification pages were preserved.",
+      "publicationBatchId": "bf1af903a2b0b2108965e2bc91492c4eddf147bbd7532ee6b03278a7b503d6c8",
+      "siteVersion": 33,
+      "verificationReport": "outputs/st-louis-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-louis-2026"
+    },
+    {
+      "sourceId": "bccdf77465fc7395",
+      "directoryEntryId": "7e90a7c408f2ef6e",
+      "title": "2026-02-21 - 2026 Ohio State Meet Open",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltfeea8c8fce2ff156/699c93d02b6dd50008a8a3df/2026_Ohio_State_Open_Meet.pdf",
+      "status": "published-verified",
+      "newRows": 201,
+      "sha256": "7064a19fde1e357d553cbd1cae5ed3fd4112553ee9aa10b5e91940244e3906dc",
+      "published": true,
+      "reviewReport": "data/sources/ohio-2026-review.json",
+      "extractionStatus": "All 54 pages audited. Hosted readback verified all 10,113 results, 1,355 identities, 4,343 personal-best groups and 115 new chart queries. The original PDF and 20 classification pages were preserved.",
+      "competitionId": "st-ohio-2026",
+      "newTeamResults": 9,
+      "publicationBatchId": "11999b9ce745bf8d4b6da50852df2c3d966b264e2e8dd51edb38bc6ff80c2cec",
+      "siteVersion": 34,
+      "verificationReport": "outputs/ohio-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-ohio-2026"
+    },
+    {
+      "sourceId": "9567603f2ef7d57a",
+      "directoryEntryId": "92b50b5d12311c6e",
+      "title": "2026-02-15 - 2026 Age Group Nationals Long Track",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt705a59087737d2c2/69939b7d8b33e4000870a8e7/2026_LT_AGN_Protocol.pdf",
+      "status": "published-verified-no-new-rows",
+      "newRows": 0,
+      "published": true,
+      "competitionId": "lt-agn-2026",
+      "sha256": "7a22b0b5b4713fae920d83e4ee500d40cee3aca58e23d3b895c774e1a88db45f",
+      "existingRows": 462,
+      "publicationBatchId": "fad14d57be58bb21eed2dbc297bb79e1f17e4bdbf635512b6114a2f9540f67ac",
+      "verificationReport": "outputs/ohio-hosted-verification.json",
+      "extractionStatus": "Exact official directory PDF SHA-256 matches the published revision. Existing 462 source rows and active head verified; no new batch needed."
+    },
+    {
+      "sourceId": "8f16c03272ea66e0",
+      "directoryEntryId": "34c24295469c19eb",
+      "title": "2026-02-14 - 2026 NorthBurke Open",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt0f43c5d319d9b716/699374d97dd2cc0008d22fe6/2026_NorthBurke_Open_Protocol.pdf",
+      "status": "published-verified",
+      "newRows": 463,
+      "competitionId": "st-northburke-2026",
+      "sha256": "568a3e9a8d0a7bf23cca39a115e6e0c3d3cf78e4ba97368a99f9b8ee46d84737",
+      "published": true,
+      "reviewReport": "data/sources/northburke-2026-review.json",
+      "extractionStatus": "All 91 pages audited. Hosted readback verified all 10,576 results, 1,440 identities, 4,575 personal-best groups and 245 new chart queries. The original PDF and 49 classification pages were preserved.",
+      "publicationBatchId": "c315be125180012e61e9a364b9d086fd32935a6ed90641fce9e865cd272689fc",
+      "siteVersion": 35,
+      "verificationReport": "outputs/northburke-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-northburke-2026"
+    },
+    {
+      "sourceId": "8ba35f16d8b30586",
+      "directoryEntryId": "71c841d1d14f0546",
+      "title": "2026-02-14 - 2026 Presidential Cup",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltcd5cc38416b86749/699368c7ca1be7000834c320/2026_Protocol_ST_Presidential_Cup.pdf",
+      "status": "published-verified",
+      "newRows": 860,
+      "sha256": "be4ae183f2b061e0b93b4b477183c16ed7388cf4322945a687f3d030bdaa00e4",
+      "published": true,
+      "reviewReport": "data/sources/presidential-2026-review.json",
+      "extractionStatus": "All 128 pages audited. Hosted readback verified all 11,436 results, 1,562 identities, 5,002 personal-best groups and 437 new chart queries. The original PDF and 73 classification pages were preserved.",
+      "competitionId": "st-presidential-2026",
+      "publicationBatchId": "7b0fadeee241934a47941ec90bdce41275685f090672fe4c415c5796b6d4d83d",
+      "siteVersion": 36,
+      "verificationReport": "outputs/presidential-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-presidential-2026"
+    },
+    {
+      "sourceId": "4da906ab3c8f841f",
+      "directoryEntryId": "220b190d5e03ed18",
+      "title": "2026-02-08 - 2026 Empire State Short Track & Heartland",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltbe1fe42ddc41533e/698b82770228b5810dcd4421/2026_Empire_State_Short_Track_Heartland_Protocol.pdf",
+      "status": "published-verified",
+      "newRows": 503,
+      "sha256": "79708f9a2a31753a3932722e6681dc5bb8f9d1a4c8f46940982f130cb53c1258",
+      "published": true,
+      "reviewReport": "data/sources/empire-2026-review.json",
+      "extractionStatus": "All 31 pages audited. Hosted readback verified all 11,939 results, 1,641 identities, 5,216 personal-best groups and 216 new chart queries. The original PDF and 17 classification pages were preserved.",
+      "competitionId": "st-empire-2026",
+      "publicationBatchId": "16d545722a59a6c22419f4956611f506d288d6063b598e6af506a6a8476ffc27",
+      "siteVersion": 38,
+      "verificationReport": "outputs/empire-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-empire-2026"
+    },
+    {
+      "sourceId": "8d8b714f3481e270",
+      "directoryEntryId": "ec1c2c1f89f62560",
+      "title": "2026-02-01 - 2026 WSA Gold Cup",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt5ee1d5b296635161/6983fe8d76798cabcba51863/2026_GoldCup_Protocol_Report.pdf",
+      "status": "published-verified",
+      "newRows": 233,
+      "competitionId": "lt-wsa-gold-2026",
+      "sha256": "9901b4b98a7cb5e9a5f523821eeb48b1848d2668037c12545e5c243468c01120",
+      "published": true,
+      "reviewReport": "data/sources/wsa-gold-2026-review.json",
+      "extractionStatus": "All 54 pages audited. Hosted readback verified all 12,172 results, 1,675 identities, 5,340 personal-best groups and 126 new chart queries. The original PDF and 35 classification pages were preserved.",
+      "publicationBatchId": "3b93b0998755804748dc8a8c922ff3332f59da6a8662c7ccd903e183b129125e",
+      "siteVersion": 39,
+      "verificationReport": "outputs/wsa-gold-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=long-track&season=2025-2026&competition=lt-wsa-gold-2026"
+    },
+    {
+      "sourceId": "576fd9e9b308c42a",
+      "directoryEntryId": "3118af1f0c4f3050",
+      "title": "2026-01-19 - 2026 January Thaw",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt3fb5d33a20fff9a4/69713409c956ad63fb535481/2026_JanThaw_Protocol.pdf",
+      "status": "published-verified",
+      "newRows": 655,
+      "competitionId": "st-january-thaw-2026",
+      "sha256": "45c8361aeabeea5e23fd48392a8f4b3e06b411c9a214a036fa54d8f275ac20c8",
+      "published": true,
+      "reviewReport": "data/sources/january-thaw-2026-review.json",
+      "extractionStatus": "All 96 pages audited. Hosted readback verified all 12,827 results, the 95 new identities and their personal bests, and 285 new chart queries. Prior personal-best verification carries forward for unchanged identities. The original PDF and 53 classification pages were preserved.",
+      "publicationBatchId": "5fc941eae0bf7bd1d6cf50516470a1ac01973f1666a043244e4b4f6a55c96dd1",
+      "siteVersion": 40,
+      "verificationReport": "outputs/january-thaw-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-january-thaw-2026"
+    },
+    {
+      "sourceId": "9b32b75fe87d30e7",
+      "directoryEntryId": "d683ad56915f3067",
+      "title": "2026-01-17 - 2026 Park Ridge Open",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt6ec637d1a3f1d337/696fc3c853a9ea91a3a01732/2026_Park_Ridge_Open_Protocol_Report.pdf",
+      "status": "published-verified",
+      "newRows": 455,
+      "competitionId": "st-park-ridge-2026",
+      "sha256": "4b59490115b908771b71be67799f71aed976aaabe0fbc844dc62ad551ad2d12f",
+      "published": true,
+      "reviewReport": "data/sources/park-ridge-2026-review.json",
+      "extractionStatus": "All 104 source pages audited. Hosted result, evidence, original PDF, and new skater PB and chart readback passed.",
+      "publicationBatchId": "485bdf9d4088988aa3ef3600d0001e4d29e68a022806cccbf2ac2df1fd0bc2e6",
+      "siteVersion": 41,
+      "verificationReport": "outputs/park-ridge-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-park-ridge-2026"
+    },
+    {
+      "sourceId": "ee5a7fc29570da40",
+      "directoryEntryId": "c1cb3c606589249c",
+      "title": "2026-01-18 - US Junior Long Track Championships & AmCup 2",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltd88cece1a86e3961/696e4956dc54238c821f68bd/2026_US_LT_Junior_Championships.pdf",
+      "status": "published-verified",
+      "newRows": 345,
+      "sha256": "8c5e01da66dbf8b34e1136ef2895b5017ca65bf17845b735a0720b3723328780",
+      "published": true,
+      "reviewReport": "data/sources/us-junior-amcup2-2026-review.json",
+      "extractionStatus": "All 39 pages accounted for. All 345 published results, original evidence, and new skater PB and chart readback passed.",
+      "competitionId": "lt-us-junior-amcup2-2026",
+      "siteVersion": 43,
+      "publicationBatchId": "5c73384547b21ae6cf98d041041986d3622a89e7dc8ec3267b74661179ec3089",
+      "verificationReport": "outputs/us-junior-amcup2-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=long-track&season=2025-2026&competition=lt-us-junior-amcup2-2026"
+    },
+    {
+      "sourceId": "5fe8d828c390dcd4",
+      "directoryEntryId": "6bcbf0e3117dc190",
+      "title": "2026-01-11 - 2026 Gateway Championships",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltab123e2945c552e4/696e689178c535a1febe83fb/2026_Gateway_CH.pdf",
+      "status": "published-verified",
+      "newRows": 411,
+      "competitionId": "st-gateway-2026",
+      "sha256": "68185817e31d04487b2e446b4cf47b9dcf5985e611eda20ed4d2edcbf8955b27",
+      "published": true,
+      "reviewReport": "data/sources/gateway-2026-review.json",
+      "extractionStatus": "All 106 pages accounted for. All 411 published results, original evidence, and new skater PB and chart readback passed.",
+      "siteVersion": 44,
+      "resumeCandidate": "outputs/st-gateway-2026-candidate.json",
+      "publicationBatchId": "6e5c94520ca6cb5cdfac15349603e2d90953690c0d92b38109c9115fa737df67",
+      "verificationReport": "outputs/gateway-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-gateway-2026"
+    },
+    {
+      "sourceId": "58c38cafd66a90d1",
+      "directoryEntryId": "628686bf83d96d25",
+      "title": "2026-01-05 2026 U.S. Olymic Team Trials Long Track",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt8e76b945f9f0aee6/6978f840e514c79e9869b9dc/2026_Olympic_Trials_LT_Protocol.pdf",
+      "status": "published-verified",
+      "newRows": 252,
+      "competitionId": "lt-olympic-trials-2026",
+      "sha256": "90d543df31d677c3c602ccdd1c4b643fdfa61002a8cf46e0c9e55835c56c1232",
+      "reviewReport": "data/sources/olympic-trials-2026-review.json",
+      "published": true,
+      "extractionStatus": "All 150 pages accounted for. All 252 published results, original evidence, and new skater PB and chart readback passed.",
+      "siteVersion": 45,
+      "publicationBatchId": "3ade98624d5f7413651be46bddc6ac2ed91aeb9f4cc059e48eacc9eb0ad6bb6e",
+      "verificationReport": "outputs/olympic-trials-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=long-track&season=2025-2026&competition=lt-olympic-trials-2026"
+    },
+    {
+      "sourceId": "54c6ed4ed5f30521",
+      "directoryEntryId": "13b3ce58bbf29c86",
+      "title": "2025-12-28 - 2025 Robby Kaufman Short Track Challenge",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt2624f864921aef1f/698a1d93ac3a9bdb4aafe77d/2025_Puget_Sound_Robby_Kaufman_Short_Track_Challenge_12-28-2025_Results_R2.1_With_Protocol.pdf",
+      "status": "published-verified",
+      "newRows": 195,
+      "competitionId": "st-robby-kaufman-2025",
+      "sha256": "99a73b2f09cb86e17be0919ca1b2a7ae693eb456f13e5e4dd5dee76386ab4a4d",
+      "published": true,
+      "reviewReport": "data/sources/robby-kaufman-2025-review.json",
+      "extractionStatus": "All 49 pages accounted for. All 195 published results, original evidence, and new skater PB and chart readback passed.",
+      "siteVersion": 46,
+      "publicationBatchId": "70ce48be11067bd758ab1614c26e9f8492ed62dbb3ba5521ecd4a2dcccd2b831",
+      "verificationReport": "outputs/robby-kaufman-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-robby-kaufman-2025"
+    },
+    {
+      "sourceId": "7da9d7c9573b762f",
+      "directoryEntryId": "8a8ebb4019af8fd1",
+      "title": "2025-12-27 - 2025 Winter SPEEDtacular",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt8156b916856b395f/6951e5d7cf745954d7bc1aa9/2025_Winter_SPEEDtacular.pdf",
+      "status": "published-verified",
+      "newRows": 102,
+      "competitionId": "st-winter-speedtacular-2025",
+      "sha256": "38e236c261e961d12319ddd02254a85413a9267957d5c237cb862f242e15a0f4",
+      "published": true,
+      "reviewReport": "data/sources/winter-speedtacular-2025-review.json",
+      "extractionStatus": "All 45 pages accounted for. All 102 published results, original evidence, and new skater PB and chart readback passed.",
+      "siteVersion": 47,
+      "publicationBatchId": "8cab6a31e56fae1b0994d595b6648c8634726f8c161a2977b53d67615896788c",
+      "verificationReport": "outputs/winter-speedtacular-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-winter-speedtacular-2025"
+    },
+    {
+      "sourceId": "1965513d55dda827",
+      "directoryEntryId": "f2d29a3cc6c2859a",
+      "title": "2025-12-21 - 2025 UOO Winter Challenge",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt96eec9c35afc5b89/694b4442cf74594721bc13d3/2025_UOO_Winter_Challenge_Protocol.pdf",
+      "status": "published-verified",
+      "newRows": 505,
+      "sha256": "eabd88330ac93105d53ff7f6bcb9640e6fe711b253a9ef10161e3fe155d87c9c",
+      "published": true,
+      "reviewReport": "data/sources/uoo-winter-challenge-2025-review.json",
+      "extractionStatus": "All 64 pages accounted for. All 505 published results, original evidence, and new skater PB and chart readback passed.",
+      "competitionId": "st-uoo-winter-challenge-2025",
+      "siteVersion": 48,
+      "publicationBatchId": "1794bff9c9dbf5b95f77d1b5f45a8ea2bff92ca7ddaddf125495a4ba466334a9",
+      "verificationReport": "outputs/uoo-winter-challenge-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-uoo-winter-challenge-2025"
+    },
+    {
+      "sourceId": "c118cb13643dbce7",
+      "directoryEntryId": "554ff0df326136dc",
+      "title": "2025-12-21 - 2026 US Junior Short Track Championships",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blta3ad85c112485db7/6948af1d80046102aec9b8f4/2026_US_Jun_CH_ST_Protocol.pdf",
+      "status": "published-verified",
+      "newRows": 718,
+      "sha256": "2531049f874a6f334b204d652398a897a18ad8c7316450af7985b086861bf12c",
+      "competitionId": "st-us-junior-short-track-championships-2025",
+      "reviewReport": "data/sources/us-junior-short-track-championships-2025-review.json",
+      "published": true,
+      "extractionStatus": "All 64 pages accounted for. All 718 published results, original evidence, and new skater PB and chart readback passed.",
+      "siteVersion": 49,
+      "publicationBatchId": "cdbb2d4c9a5a8677c694e390ba48a047cd88c389b2a13b3165e90ae53dc92a6d",
+      "verificationReport": "outputs/us-junior-short-track-championships-hosted-verification.json",
+      "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2025-2026&competition=st-us-junior-short-track-championships-2025"
+    },
+    {
+      "sourceId": "8dd5cce0b388fea7",
+      "directoryEntryId": "c400b8b5cf10cc63",
+      "title": "2025-12-14- 2025 Badger International & Heartland #4",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt1e6f6cdec897b961/694484efdb9906be40eb5944/2026_Badger_Heartland_4_Protocol_Report_CORRECTED.pdf",
+      "status": "transcribed-pending-publication-validation",
+      "newRows": 0,
+      "sha256": "7b347f509e7b318e63b42980ea339691a5fbea356f6e9b1a8786a10361b6d1e7",
+      "published": false,
+      "reviewReport": "outputs/badger-international-2025-initial-review.json",
+      "extractionStatus": "Official calendar confirmed December 14, 2025. Independent comparison passed for 309 race rows and 436 classification rows. Structured dimension mapping and protected candidate validation are pending."
+    },
+    {
+      "sourceId": "0d39134872fe510b",
+      "directoryEntryId": "3679df545d47e37c",
+      "title": "2025-12-07 - 2025 Bay State Championships & NorthEast Racing Series #2",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt07d46106be47fb32/693b40bb7c60c9b0f79d02c5/BayState_CH_protocol.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "35368cf55d07bf3c",
+      "directoryEntryId": "810f1dbcc4e128c7",
+      "title": "2025-12-07 - 2025 Ohio Invitational & Heartland #3",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltaa6fcd367d7fd9f9/6942c55ac726004f1df4b826/2025_Ohio_Invitational_and_Heartland_3update.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "f609326107af9735",
+      "directoryEntryId": "e97d2e90335c4855",
+      "title": "2025-12-06 - 29th Capital City Championships (2026)",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt18eed18eb5469db3/69987c2a0e0ada0008af9c8d/29th_Capital_City_championships_(2026).pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "c3c145b0a9cc3c6e",
+      "directoryEntryId": "24644b9c00fc4be6",
+      "title": "2025-11-16 - 2025 Great Lakes Championships Short Track",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt753f741383ac0e29/691e2031e6d4288177169917/2025_GLST_Protocol_Report.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "9fcaf20526ee8399",
+      "directoryEntryId": "68037e966055441e",
+      "title": "2025-11-15 - 2025 Saratoga Cup & NEST",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltfcbbee63e9ee9808/69247cd82074665a066d57fe/2025_Saratoga_Cup_update.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "8cc34c3277392c35",
+      "directoryEntryId": "1144bef33968074c",
+      "title": "2025-11-08 - 2025 Franklin Park Barrell Buster",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt8f69c836121cedf9/691a01d9645809256529a561/2025_Franklin_Park_Barrel_Buster_-_combined_protocol_report.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "d53bf3821bb55db3",
+      "directoryEntryId": "92bf4f88a5267d0f",
+      "title": "2025-11-07 - 2026 Beehive Burn",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltbd467f8c164f77f1/690fadfa358d8e96394c992b/2026_Beehive_Burn_Protocol.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "0c50640627b629f4",
+      "directoryEntryId": "a352eeca6dcdc84c",
+      "title": "2025-11-01 - 2025 Great Lakes Championships Long Track",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt4798a7bd7799b7a6/691e207dbdc97c73aaf59c28/2025_GLLT_FinalReport.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "ee3b73246df4b426",
+      "directoryEntryId": "f960791d93339c1b",
+      "title": "2025-10-26 - 2026 US Long Track Championships & World Cup Qualifier",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltf5f16ca1bb76e255/69013734062b4cc5b511a031/2026_US_Champ_Protocol.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "015fa66337ea9732",
+      "directoryEntryId": "f9788ec6f89df79c",
+      "title": "2025-10-26 - 2025 Buffalo ST Championships & Heartland #1",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blte948c8eef0dcca02/68fffa77fdbeef3fa29b3401/2025_Buffalo_CH_Heartland_1.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "beb16d1b45c17345",
+      "directoryEntryId": "0a595412ca1b2cd3",
+      "title": "2025-10-25 - 2025 Chicago Silver Skates",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt4111355b08df5d35/68fff8d946d5c8bf03f71f04/2025_Chicago_Silver_Skates_Protocol_Report.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "9ac1315a9d037ed5",
+      "directoryEntryId": "d7560018fcb04027",
+      "title": "2025-08-31 - 2025 Desert Classic Long Track",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltbd8d34b9a0b21009/68eed3ebda1612322c84b2e3/2025_Desert_Classic_Long_Track_Aug_30-31_2025_Update.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "85f339203526a6ea",
+      "directoryEntryId": "3ce3772b12fcc22b",
+      "title": "2025-09-21 - 2025 Full Throttle Sprint Cup",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt616c0e448a1fd27b/68d7600f561fd90dcb0033d6/2025_Full_Throttle_Sprint_Cup.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "f2ad8ad61caa905a",
+      "directoryEntryId": "c420919c8890172c",
+      "title": "2025-09-14- 2025 UOO Fall Challenge",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt5def0f7ac537fd19/68c8379f70c36f5c268b296a/2025_OFC_Protocol.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "51a0d4047f41b8a6",
+      "directoryEntryId": "d8f0fe0443e5f21d",
+      "title": "2025-09-12 - 2026 US Short Track Championships & World Tour Qualifier",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt083ccda924408f18/68c74703cf846b1d963a4ba9/2026_US_ST_Championships.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "9507c8a7ede9070d",
+      "directoryEntryId": "e96e88171dde7b69",
+      "title": "2025-08-10 - 2025 Desert Classic Short Track",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt5642bb91b5be861d/68eed406cbd9d0453b7c1d3a/2025_STDC_updated_1014.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "7866a45ee015f7dc",
+      "directoryEntryId": "a27df2ecaa8fe227",
+      "title": "2025-06-28 - Western States Championships",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt63ffbf004f14541e/68a37746de3cf4acc12b5894/Western_States_Championships_Protocol.pdf",
+      "status": "queued",
+      "newRows": 0
+    },
+    {
+      "sourceId": "bc9298c991809df4",
+      "directoryEntryId": "bc794c4d0771978b",
+      "title": "2025-07-03 - InterScholastic Speed Skating Challenge",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltaeed87234bbf3608/686bdf0dc3d87b7a83b6efb4/2025_InterScholastic.pdf",
+      "status": "queued",
+      "newRows": 0
+    }
+  ],
+  "activeSeasonStatus": "in-progress",
+  "nextSeason": "2024-2025",
+  "completedSeasons": {
+    "2026-2027": {
+      "status": "published-verified",
+      "completedAt": "2026-11-05T16:05:05.705185+00:00",
+      "sourceCount": 6,
+      "resultCount": 4776,
+      "sources": [
+        {
+          "sourceId": "3e95d0ded49e2d06",
+          "directoryEntryId": "8d5ffffd69997033",
+          "title": "2027 AmCup 1 & Long Track Fall World Cup Qualifier",
+          "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltc12a6d42aed8c552/6ae92444332c2f3c0ea5fac0/2027_AmCup_1_FWCQ.pdf",
+          "status": "published-verified",
+          "newRows": 370,
+          "sha256": "33d17599ed3cc66b082be4f0590227444ed85bdea41c79c82ece32eb90bad1bd",
+          "physicalPages": 50,
+          "format": "Scanned single-distance timing protocol; no embedded text layer.",
+          "published": true,
+          "sourceConfirmedStart": "2026-10-30",
+          "sourceConfirmedEnd": "2026-11-01",
+          "sourceConfirmedLocation": "Milwaukee, WI",
+          "extractionStatus": "Complete: all370 result rows and70 roster observations visually verified; all3608 hosted source rows and evidence compared;490 active identities/1746 PB groups and228 new chart queries verified. Browser confirms official places/time and53 separate lap-count rows.",
+          "resolvedQuestions": [
+            {
+              "kind": "lap-count-mass-start",
+              "sourcePages": [
+                49,
+                50
+              ],
+              "literalEvent": "Mass Start (16 Laps) Men / Elimination Race #2",
+              "proposedHandling": "Retain individual mass-start placements, points, statuses and literal source times as a separate 16-lap event. Do not infer a metre distance or include it in ordinary distance PBs/trends. Preserve original finish/split evidence independently.",
+              "answer": "Approved by user: retain separate lap-count mass-start results, no inferred metres or ordinary-distance PB/trend."
+            },
+            {
+              "kind": "official-place-time-inconsistency",
+              "sourcePages": [
+                6
+              ],
+              "event": "RESULT 500m Women #1 / Friday, 30 October 2026",
+              "rows": [
+                {
+                  "rank": 15,
+                  "bib": "101",
+                  "name": "Allison LA",
+                  "time_raw": "45.59",
+                  "behind_raw": "+6.20"
+                },
+                {
+                  "rank": 16,
+                  "bib": "112",
+                  "name": "Evie FORRER",
+                  "time_raw": "45.57",
+                  "behind_raw": "+6.21"
+                }
+              ],
+              "proposedHandling": "Preserve original place/time/source rows, flag these two as pending source verification, and exclude only these disputed performances from ordinary PB/chart computation until resolved. Do not change the official place or time.",
+              "answer": "User directs complete fidelity to official results: preserve official places and times without corrections or additional PB/chart exclusions for ordering discrepancies."
+            }
+          ],
+          "competitionId": "lt-amcup1-2027",
+          "publicationBatchId": "b93f0b734689ec139607e516d372bfb8534b7a33b4a47742629b597006037a2f",
+          "siteVersion": 22,
+          "verificationReport": "outputs/amcup-hosted-verification.json",
+          "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=long-track&season=2026-2027&competition=lt-amcup1-2027"
+        },
+        {
+          "sourceId": "90033259203f2837",
+          "directoryEntryId": "739e691ea856d678",
+          "title": "2027-10-25 - Buffalo ST Championships & Heartland #1",
+          "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt292a7c38b3ee8d77/6ae649087f5263f6048413ea/2026_Buffalo_Short_Track_Championships_-Complete_Protocol_updated.pdf",
+          "status": "published-verified",
+          "newRows": 1319,
+          "published": true,
+          "sha256": "42d59ae2334f8467e9b9a099d1fd25c3bd2ab1358e49e3c3b4e9fc66b7b1d2fa",
+          "physicalPages": 52,
+          "sourceConfirmedStart": "2026-10-24",
+          "sourceConfirmedEnd": "2026-10-25",
+          "sourceConfirmedLocation": "The Northtown Center at Amherst",
+          "format": "Speedskating Pro; embedded text; two-column race results; no standalone Tempus SKATER LIST.",
+          "extractionStatus": "Complete: all1319 rows/191 identities independently checked; all4927 hosted rows/evidence,681 identities/2309 PB groups and580 new chart queries verified. All84 source occurrences in exact physical page/column order; six distinct reused-bib skaters confirmed in browser.",
+          "reviewPath": "data/sources/buffalo-2027-review.json",
+          "resolvedQuestions": [
+            {
+              "kind": "same-source-bib-reused-for-different-identities",
+              "cases": [
+                {
+                  "bibRaw": "43",
+                  "observations": [
+                    {
+                      "nameRaw": "CHEN Daniel",
+                      "memberRaw": "USA-PNIC",
+                      "divisionRaw": "DIVISION 3 HL Men A",
+                      "genderRaw": "MEN",
+                      "sourcePage": 6,
+                      "rowRaw": "6. ( 6. ) 43 CHEN Daniel USA-PNIC 4. 8. 5. 4. 207.1 21 1:33.946",
+                      "matchingPhysicalPages": [
+                        6,
+                        19,
+                        20,
+                        40,
+                        41
+                      ]
+                    },
+                    {
+                      "nameRaw": "SUN Sean",
+                      "memberRaw": "USA-GSSC",
+                      "divisionRaw": "DIVISION 4 HL Men B",
+                      "genderRaw": "MEN",
+                      "sourcePage": 7,
+                      "rowRaw": "4. ( 4. ) 43 SUN Sean USA-GSSC 4. 3. 18. 1. 240 26 1:42.330",
+                      "matchingPhysicalPages": [
+                        7,
+                        21,
+                        22,
+                        42,
+                        43
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "bibRaw": "44",
+                  "observations": [
+                    {
+                      "nameRaw": "CHEN Ellie",
+                      "memberRaw": "CAN-MRSSC",
+                      "divisionRaw": "DIVISION 10 Purple Eagles",
+                      "genderRaw": "WOMEN",
+                      "sourcePage": 4,
+                      "rowRaw": "4. ( 9. ) 44 CHEN Ellie CAN-MRSSC 9. 6. 10. 9. 122.0 34 0:40.256",
+                      "matchingPhysicalPages": [
+                        4,
+                        12,
+                        13,
+                        34,
+                        35
+                      ]
+                    },
+                    {
+                      "nameRaw": "POMETUN Max",
+                      "memberRaw": "USA-EPSSC",
+                      "divisionRaw": "DIVISION 5 Niagara",
+                      "genderRaw": "MEN",
+                      "sourcePage": 7,
+                      "rowRaw": "9. ( 13. ) 44 POMETUN Max USA-EPSSC 14. 10. 14. 12. 64.07 50 2:05.049",
+                      "matchingPhysicalPages": [
+                        7,
+                        23,
+                        24,
+                        44,
+                        45
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "bibRaw": "65",
+                  "observations": [
+                    {
+                      "nameRaw": "DAVIDOFF Hannah",
+                      "memberRaw": "USA-BSS",
+                      "divisionRaw": "DIVISION 5 Niagara",
+                      "genderRaw": "WOMEN",
+                      "sourcePage": 7,
+                      "rowRaw": "3. ( 10. ) 65 DAVIDOFF Hannah USA-BSS 12. 11. 9. 9. 90.92 41 2:04.591",
+                      "matchingPhysicalPages": [
+                        7,
+                        23,
+                        24,
+                        44,
+                        45
+                      ]
+                    },
+                    {
+                      "nameRaw": "MONTES Frida",
+                      "memberRaw": "USA-PSSP",
+                      "divisionRaw": "DIVISION 8 Northtown",
+                      "genderRaw": "WOMEN",
+                      "sourcePage": 9,
+                      "rowRaw": "4. ( 12. ) 65 MONTES Frida USA-PSSP 13. 10. 9. 11. 84.32 43 1:31.510",
+                      "matchingPhysicalPages": [
+                        9,
+                        29,
+                        30,
+                        49,
+                        50
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "proposedHandling": "Keep all six literal official names, members, divisions and bibs. Treat the different name/member/division observations as separate participants; never merge solely on bib. Preserve literal bib values rather than correcting the source. Use the confirmed competition-local scope for result/entry bindings. No cross-competition identity inference.",
+              "answer": "Approved by user: count as six separate skaters; retain literal official bibs, names, members and divisions."
+            }
+          ],
+          "competitionId": "st-buffalo-2027",
+          "publicationBatchId": "1d181160a762ad680b72bfbb1fdb5f62d118b6f320348081fb7a9946ced05559",
+          "siteVersion": 24,
+          "verificationReport": "outputs/buffalo-hosted-verification.json",
+          "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2026-2027&competition=st-buffalo-2027"
+        },
+        {
+          "sourceId": "c4f357b7de76560d",
+          "directoryEntryId": "8945cd0d7578ead1",
+          "title": "2027-09-27 - Nutricost U.S. Short Track Championships",
+          "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltd4d3532dcf693789/6abb26b9bb4ba6b5c1ed29e0/2027_Nutricost_US_ST_Championships_new.pdf",
+          "status": "published-verified",
+          "newRows": 856,
+          "sha256": "cd21db3b749d52da838fee0ab42fe87e182a003ae1644a6aafd80c6312e0ba43",
+          "physicalPages": 72,
+          "competitionId": "st-nutricost-2027",
+          "sourceConfirmedStart": "2026-09-25",
+          "sourceConfirmedEnd": "2026-09-27",
+          "sourceConfirmedLocation": "Kearns, UT",
+          "extractionStatus": "Complete: all856 rows/57 roster records independently checked; all5783 hosted source rows/evidence,738 identities/2479 PB groups and170 new chart queries verified. Browser confirms complete8-heat pagination, original PEN rows and separate (#2) events.",
+          "published": true,
+          "publicationBatchId": "69b2999453553ed0c9562e3e55c2301d79e2bd765fad4829ec26279986893cc1",
+          "siteVersion": 25,
+          "verificationReport": "outputs/nutricost-hosted-verification.json",
+          "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2026-2027&competition=st-nutricost-2027"
+        },
+        {
+          "sourceId": "65267b01ac249d07",
+          "directoryEntryId": "85b391bbc82a1ee8",
+          "title": "2026-09-27 - Utah Olympic Oval Fall Challenge",
+          "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt20044b2534e4d15c/6abbaa14512a6d9ec3e32b00/2026_OFC_Protocol.pdf",
+          "status": "published-verified",
+          "newRows": 298,
+          "competitionId": "st-oval-fall-2026",
+          "sha256": "64c769c1dee6adbc9db37c6cd1a5c0dbf89729dfe0971c21a92f37dee4c449d2",
+          "physicalPages": 40,
+          "sourceConfirmedStart": "2026-09-26",
+          "sourceConfirmedEnd": "2026-09-27",
+          "sourceConfirmedLocation": "Kearns, UT",
+          "extractionStatus": "Complete: all298 rows/43 roster records independently checked; all6081 hosted source rows/evidence,781 identities/2593 PB groups and115 new chart queries verified. Browser confirms mixed source divisions retain individual genders and original missing/status fields.",
+          "published": true,
+          "publicationBatchId": "dea0c8ddcfd08d8a6f2e32a823c6d2f287c08d8f5f63c1a2992a44d471b91493",
+          "siteVersion": 26,
+          "verificationReport": "outputs/oval-fall-hosted-verification.json",
+          "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2026-2027&competition=st-oval-fall-2026"
+        },
+        {
+          "sourceId": "4ff49cc405d061eb",
+          "directoryEntryId": "c054a87bfd014f44",
+          "title": "2026-08-09 - Desert Classic Short Track",
+          "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltd8a76dd038e645d4/6a7cebeb0f118a63632d8d83/2026_Desert_Classic_Official_Protocol.pdf",
+          "status": "published-verified",
+          "newRows": 1644,
+          "sha256": "e10567180db525162ba16a14fdf026d08a6c076d104d66955db0f601080b8f14",
+          "physicalPages": 148,
+          "published": true,
+          "reviewPath": "data/sources/desert-2026-review.json",
+          "extractionStatus": "All 148 pages independently checked, including 1,644 race results, 161 roster entries, and 1,166 classification rows. Hosted readback verified all 8,014 results, 1,000 identities, 3,161 personal-best groups, 441 new chart queries, cover metadata and the unmodified PDF.",
+          "resolvedQuestions": [
+            {
+              "kind": "official-source-conflicting-competition-year",
+              "physicalPages": [
+                1,
+                2
+              ],
+              "cover": {
+                "titleRaw": "2026 Desert Classic Short Track",
+                "dateRaw": "August 7-9, 2026",
+                "locationRaw": "Kearns, UT"
+              },
+              "officialsPage": {
+                "titleRaw": "20256 Desert Classic Short Track",
+                "dateRaw": "August 7-9, 2025"
+              },
+              "resultPageHeadingsRaw": "2026 DC Short Track Race",
+              "proposedHandling": "Use the explicit cover competition dates2026-08-07 through2026-08-09 in season2026-2027, consistent with the official directory listing and race-page titles. Preserve the original officials page2025 date and20256 title unchanged in archived/source evidence; do not silently correct the source document.",
+              "answer": "The user confirmed use of the cover dates in the database when the PDF is listed in the official 2026-2027 directory. The exact PDF URL is listed there. Preserve the official PDF and every source field unchanged."
+            }
+          ],
+          "sourceConfirmedStart": "2026-08-07",
+          "sourceConfirmedEnd": "2026-08-09",
+          "sourceConfirmedLocation": "Kearns, UT",
+          "competitionId": "st-desert-2026",
+          "publicationBatchId": "015eb62ea68e9f2ac92a21dfac9ac891b1d074ce494b0eaccd49f4634fdb5695",
+          "siteVersion": 28,
+          "verificationReport": "outputs/desert-hosted-verification.json",
+          "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2026-2027&competition=st-desert-2026"
+        },
+        {
+          "sourceId": "33b05eae4adb1a88",
+          "directoryEntryId": "7cf220c03ea852f8",
+          "title": "2026-07-03 - Carl Cepuran Interscholastic Speedskating Competition",
+          "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt6336d7aa5a3278be/6a556443dd6dd93cd735fad4/2026_Carl_Cepuran_Interscholastic_Speedskating_Challenge_Protocol_Report.pdf",
+          "status": "published-verified",
+          "newRows": 289,
+          "published": true,
+          "sha256": "418feb25acf63195d2890e045900ced667059ed0d67a430e426848db759ea895",
+          "physicalPages": 54,
+          "sourceConfirmedStart": "2026-07-03",
+          "sourceConfirmedEnd": "2026-07-03",
+          "sourceConfirmedLocation": "Milwaukee, Wisconsin",
+          "reviewPath": "data/sources/carl-2026-review.json",
+          "extractionStatus": "All 289 source results and 58 roster entries independently compared. Hosted readback verified all 6,370 source results, 839 identities, 2,724 personal-best groups, and 131 new chart queries. Both Aiden Yu profiles, their five results each, and the original school standings verified.",
+          "competitionId": "st-carl-2026",
+          "resolvedQuestions": [
+            {
+              "kind": "same-name-different-bibs",
+              "nameRaw": "Aiden Yu",
+              "physicalPages": [
+                5,
+                40
+              ],
+              "entries": [
+                {
+                  "bib": "26",
+                  "nameRaw": "Aiden Yu",
+                  "divisionRaw": "Vision",
+                  "affiliationRaw": "Pettit",
+                  "sourcePage": 5,
+                  "resultRows": [
+                    {
+                      "page": 37,
+                      "rowRaw": "4 26 Aiden Yu Pettit 1:24.360"
+                    },
+                    {
+                      "page": 40,
+                      "rowRaw": "1 26 Aiden Yu Pettit 0:49.040"
+                    },
+                    {
+                      "page": 44,
+                      "rowRaw": "2 26 Aiden Yu Pettit 0:47.620 Q"
+                    },
+                    {
+                      "page": 48,
+                      "rowRaw": "3 26 Aiden Yu Pettit 0:48.570"
+                    },
+                    {
+                      "page": 51,
+                      "rowRaw": "3 26 Aiden Yu Pettit 1:41.200"
+                    }
+                  ]
+                },
+                {
+                  "bib": "54",
+                  "nameRaw": "Aiden Yu",
+                  "divisionRaw": "Legacy",
+                  "affiliationRaw": "Legendary",
+                  "sourcePage": 5,
+                  "resultRows": [
+                    {
+                      "page": 40,
+                      "rowRaw": "1 54 Aiden Yu Legendary 1:05.280 Q"
+                    },
+                    {
+                      "page": 43,
+                      "rowRaw": "1 54 Aiden Yu Legendary 1:04.140"
+                    },
+                    {
+                      "page": 47,
+                      "rowRaw": "1 54 Aiden Yu Legendary 0:29.910 Q"
+                    },
+                    {
+                      "page": 50,
+                      "rowRaw": "1 54 Aiden Yu Legendary 0:29.540"
+                    },
+                    {
+                      "page": 54,
+                      "rowRaw": "3 54 Aiden Yu Legendary 0:47.980"
+                    }
+                  ]
+                }
+              ],
+              "decisionNeeded": "Confirm whether these two official entries represent the same skater profile or two different skaters. Preserve both official entries and their separate results in either case.",
+              "answer": "The user confirmed that bibs 26 and 54 are different skaters in different divisions."
+            }
+          ],
+          "publicationBatchId": "3730c8b68c252aa452398a9f27acc27ee06e8a58f40bae905b330675f250d838",
+          "siteVersion": 27,
+          "verificationReport": "outputs/carl-hosted-verification.json",
+          "viewerUrl": "https://uss-race-tracker.zhang-michael-gabrie.chatgpt.site/?discipline=short-track&season=2026-2027&competition=st-carl-2026"
+        }
+      ]
+    }
+  }
+}

@@ -7,11 +7,11 @@ const hash=s=>createHash("sha256").update(s).digest("hex");
 const pdf=new TextEncoder().encode("%PDF-1.7\nPhase 3 archive fixture\n%%EOF");
 const digest=hash(pdf),sourceUrl="https://assets.contentstack.io/phase3-fixture.pdf";
 const review={reviewer:"Test operator",seasonSourceLabel:"2025-2026",notes:"Checked the complete synthetic test protocol.",confirmed:true};
-function candidate({id="phase3-test",season="2025-2026",people=2,events=1,category="JR C",club="Test Club",name="Test Skater",protocol=true}={}){
+function candidate({id="phase3-test",season="2025-2026",people=2,events=1,category="JR C",club="Test Club",name="Test Skater",sharedName=false,protocol=true}={}){
  const roster={parser_version:"tempus-roster-sample/0.1",source_id:"a".repeat(16),source_url:sourceUrl,sha256:digest,page_count:3,observation_count:people,distinct_bib_count:people,issues:[],observations:[]};
  const participants=[],entries=[],results=[],selected=[];
  for(let n=1;n<=people;n++){
-  const personName=`${name} ${n}`;
+  const personName=sharedName?name:`${name} ${n}`;
   roster.observations.push({bib:String(n),name:personName,raw_name:personName,affiliation_raw:club,division_raw:"Junior C Women",age_status_raw:category,page:1});
   participants.push({id:`${id}:${n}`,bib:String(n),name:personName,affiliation:club});
   entries.push({id:`${id}:${n}:${n-1}`,participantId:`${id}:${n}`,division:"Junior C Women",ageStatus:category,rawName:personName,sourcePage:1});
@@ -19,18 +19,19 @@ function candidate({id="phase3-test",season="2025-2026",people=2,events=1,catego
  for(let e=1;e<=events;e++){
   const label=`Junior C Women's 500 Finals Event #${e}`,race=String(e*100+1),raw=[];
   for(let n=1;n<=people;n++){
-   const r={rank:n,status_raw:null,row_raw:`${n} ${n} ${name} ${n} ${club} 0:55.000`,bib:String(n),name_raw:`${name} ${n}`,affiliation_raw:club,time_raw:"0:55.000",time_microseconds:55_000_000,qualification_raw:null,event_label_raw:label,event_number:String(e),distance_metres:500,round_raw:"Finals",race_id:race,race_label_raw:`A Final Race #${race}`,source_page:2,group_label:"Junior C Women's",heat_number:null,heat_total:null};raw.push(r);
+   const personName=participants[n-1].name;
+   const r={rank:n,status_raw:null,row_raw:`${n} ${n} ${personName} ${club} 0:55.000`,bib:String(n),name_raw:personName,affiliation_raw:club,time_raw:"0:55.000",time_microseconds:55_000_000,qualification_raw:null,event_label_raw:label,event_number:String(e),distance_metres:500,round_raw:"Finals",race_id:race,race_label_raw:`A Final Race #${race}`,source_page:2,group_label:"Junior C Women's",heat_number:null,heat_total:null};raw.push(r);
    results.push({id:`${id}:${race}:${n}`,participantId:`${id}:${n}`,raceId:race,distance:500,round:"Finals",rank:n,status:null,timeRaw:r.time_raw,timeMicroseconds:r.time_microseconds,qualification:null,sourcePage:2,eventKey:hash(`${id}|${label}`).slice(0,20),eventLabel:label,raceLabel:r.race_label_raw,heatNumber:null,heatTotal:null});
   }
   selected.push({parser_version:"tempus-complete-event/0.4",status:"complete_selected_event",source_id:roster.source_id,source_url:sourceUrl,sha256:digest,pages:[2],event_number:String(e),event_label_raw:label,heat_count:1,result_count:raw.length,heats:[{race_id:race,label:`A Final Race #${race}`,heat_number:null,heat_total:null,result_count:raw.length}],results:raw});
  }
  const item={competition:{id,title:"Phase 3 Test Competition",discipline:"short-track",season,startsOn:`${season.slice(5)}-02-01`,endsOn:`${season.slice(5)}-02-02`,location:"Test Rink"},source:{id:roster.source_id,url:sourceUrl,sha256:digest},participants,entries,results,evidence:{roster,events:selected}};
- if(protocol){const text=`Junior C Women\nOVERALL CLASSIFICATION\n0 1 ${name} 1 ${club} 0`;item.protocol={parser_version:"tempus-protocol-batch/0.1",sha256:digest,scanned_pages:[1,2,3],event_labels:selected.map(e=>e.event_label_raw),roster_verification:{pages:[1],observation_count:people,exact_rows:true},classification_pages:[3],complete_results:true,result_count:results.length,classifications:[{page:3,kind:"overall",label:"Junior C Women / OVERALL CLASSIFICATION",text_raw:text,rows:[{rank:0,bib:"1",row_raw:text.split("\n").at(-1)}]}],issues:[]};}
+ if(protocol){const text=`Junior C Women\nOVERALL CLASSIFICATION\n0 1 ${participants[0].name} ${club} 0`;item.protocol={parser_version:"tempus-protocol-batch/0.1",sha256:digest,scanned_pages:[1,2,3],event_labels:selected.map(e=>e.event_label_raw),roster_verification:{pages:[1],observation_count:people,exact_rows:true},classification_pages:[3],complete_results:true,result_count:results.length,classifications:[{page:3,kind:"overall",label:"Junior C Women / OVERALL CLASSIFICATION",text_raw:text,rows:[{rank:0,bib:"1",row_raw:text.split("\n").at(-1)}]}],issues:[]};}
  return {schemaVersion:3,coverage:"selected-events",baseBatchId:null,review:{...review,seasonSourceLabel:season},item};
 }
-async function archive(h,{authorized=true,bytes=pdf,id=digest}={}){
+async function archive(h,{authorized=true,bytes=pdf,id=digest,length}={}){
  const fn=h.load(new URL("../app/api/imports/documents/[id]/route.ts",import.meta.url).pathname).POST;
- return fn(new Request("https://example.test/api/imports/documents/"+id,{method:"POST",headers:{"Content-Type":"application/pdf","X-Source-URL":sourceUrl,...(authorized?{Authorization:"Bearer test-only-seed-token"}:{})},body:bytes}),{params:Promise.resolve({id})});
+ return fn(new Request("https://example.test/api/imports/documents/"+id,{method:"POST",headers:{"Content-Type":"application/pdf","X-Source-URL":sourceUrl,...(length===undefined?{}:{"Content-Length":String(length)}),...(authorized?{Authorization:"Bearer test-only-seed-token"}:{})},body:bytes}),{params:Promise.resolve({id})});
 }
 async function submit(h,p){const response=await h.request("imports","POST",p);return {response,batch:await response.json()};}
 const publish=(h,id)=>h.request("imports/[id]/publish","POST",undefined,true,id);
@@ -52,6 +53,100 @@ test("original PDF archival is authenticated, hash-checked and idempotent",async
   const response=await h.request("documents/[id]","GET",undefined,false,digest);
   assert.equal(response.status,200);assert.equal(hash(new Uint8Array(await response.arrayBuffer())),digest);
  }finally{h.close();}
+});
+
+test("large original PDFs require a matching declared length and retain their bytes", async () => {
+ const h=harness();
+ try {
+  const bytes=new Uint8Array(33*1024*1024);
+  bytes.set(pdf);
+  const id=hash(bytes);
+  assert.equal((await archive(h,{bytes,id})).status,413);
+  assert.equal((await archive(h,{bytes:pdf,length:pdf.length+1})).status,400);
+  assert.equal((await archive(h,{bytes,id,length:bytes.length})).status,200);
+  assert.equal(h.sqlite.prepare("SELECT byte_length FROM source_documents WHERE sha256=?").get(id).byte_length,bytes.length);
+  assert.equal(hash(h.objects.get(`documents/${id}.pdf`)),id);
+ } finally { h.close(); }
+});
+
+test("a full-name and club match links records across seasons without an age rule", async () => {
+ const h=harness();
+ try {
+  await archive(h);
+  const first=candidate({id:"alpha-meet",season:"2024-2025",people:1,club:"Garden State Speedskating"});
+  const second=candidate({id:"beta-meet",people:1,club:"Garden State"});
+  const third=candidate({id:"third-meet",people:1,club:"Garden State"});
+  const distinct=candidate({id:"club-mismatch",people:1,club:"Other Club"});
+  const nameMismatch=candidate({id:"name-mismatch",people:1,club:"Garden State",name:"Other Skater"});
+  const direct=[candidate({id:"direct-one",people:1,club:"Direct"}),candidate({id:"direct-two",people:1,club:"Direct"})];
+  const firstBatch=await active(h,first);
+  assert.equal((await assignRule(h,first,firstBatch,{min:12,max:12})).status,200);
+  const secondBatch=await active(h,second);
+  assert.equal((await assignRule(h,second,secondBatch,{min:14,max:14})).status,200);
+  for(const p of [third,distinct,nameMismatch,...direct]) await active(h,p);
+  const profiles=await Promise.all([first,second,third,distinct,nameMismatch,...direct].map(p=>profile(h,p.item.participants[0].id)));
+  const [a,b,c,d,e,f,g]=profiles;
+  assert.equal(a.participant.skater_id,b.participant.skater_id);
+  assert.equal(a.participant.skater_id,c.participant.skater_id);
+  assert.equal(a.identityStatus,"reviewed");
+  assert.equal(c.observations.length,3);
+  assert.equal(c.age.status,"conflict");
+  assert.notEqual(a.participant.skater_id,d.participant.skater_id);
+  assert.notEqual(a.participant.skater_id,e.participant.skater_id);
+  assert.notEqual(f.participant.skater_id,g.participant.skater_id);
+  const decisions=h.sqlite.prepare("SELECT reason,evidence_json FROM identity_decisions WHERE reviewer='Automatic identity rule v2'").all();
+  assert.equal(decisions.length,3);
+  assert.ok(decisions.every(d=>d.reason.includes("garden state")&&JSON.parse(d.evidence_json)[0].endsWith("#page=1")));
+ } finally { h.close(); }
+});
+
+test("identity reconciliation preserves duplicate entries and a reviewed split", async () => {
+ const h=harness();
+ try {
+  await archive(h);
+  const duplicate=candidate({id:"duplicate-meet",people:2,sharedName:true,name:"Shared Name"});
+  const other=candidate({id:"other-meet",people:1,sharedName:true,name:"Shared Name"});
+  const first=candidate({id:"split-first",people:1});
+  const second=candidate({id:"split-second",people:1});
+  for(const p of [duplicate,other,first,second]) await active(h,p);
+  const ids=await Promise.all([...duplicate.item.participants,...other.item.participants].map(p=>profile(h,p.id).then(x=>x.participant.skater_id)));
+  assert.equal(new Set(ids).size,3);
+  const key=second.item.participants[0].id;
+  const route="identity/reconcile?competition=split-second";
+  const linkResponse=await h.request("identity?participant="+key,"GET");
+  const {link}=await linkResponse.json();
+  const split=await h.request("identity","POST",{participantKey:key,expectedRevision:link.revision,expectedBatchId:link.batch_id,skaterId:null,reviewer:"Test operator",reason:"These entries belong to different skaters.",evidence:[sourceUrl]});
+  assert.equal(split.status,200);
+  assert.equal((await h.request(route,"POST",undefined,false)).status,401);
+  const repeat=await h.request(route,"POST");
+  assert.equal(repeat.status,200);
+  assert.equal((await repeat.json()).decisions,0);
+  assert.notEqual((await profile(h,key)).participant.skater_id,(await profile(h,first.item.participants[0].id)).participant.skater_id);
+ } finally { h.close(); }
+});
+
+test("protected reconciliation backfills a published competition idempotently", async () => {
+ const h=harness();
+ try {
+  await archive(h);
+  const first=candidate({id:"older-identity",people:1});
+  const second=candidate({id:"published-identity",people:1});
+  for(const p of [first,second]) await active(h,p);
+  // Recreate the separate links left by an earlier version of the matcher.
+  h.sqlite.exec("DELETE FROM identity_decisions");
+  for(const p of [first,second]) {
+   const key=p.item.participants[0].id;
+   h.sqlite.prepare("UPDATE skater_links SET skater_id=?,status='competition-local',revision=(SELECT batch_id FROM import_publications WHERE competition_id=?) WHERE participant_key=?")
+    .run(hash(`competition-skater|${key}`).slice(0,20),p.item.competition.id,key);
+  }
+  const route="identity/reconcile?competition=published-identity";
+  const before=h.snapshot();
+  const applied=await h.request(route,"POST");
+  assert.equal(applied.status,200);
+  assert.equal((await applied.json()).decisions,2);
+  assert.equal((await (await h.request(route,"POST")).json()).decisions,0);
+  assert.deepEqual(h.snapshot(),before);
+ } finally { h.close(); }
 });
 
 test("full protocols require the archived source and publish over 1000 rows atomically with bounded SQL",async()=>{
@@ -122,14 +217,14 @@ test("identical names in different competitions stay separate until an audited i
 
 test("contradictory age evidence becomes a conflict and unknown ability groups do not establish age",async()=>{
  const h=harness();try{
-  const a=candidate({id:"age-a",protocol:false}),b=candidate({id:"age-b",protocol:false});const ba=await active(h,a),bb=await active(h,b);
+  const a=candidate({id:"age-a",protocol:false}),b=candidate({id:"age-b",protocol:false,club:"Second Club"});const ba=await active(h,a),bb=await active(h,b);
   await assignRule(h,a,ba,{min:13,max:14});await assignRule(h,b,bb,{min:25,max:26});
   const pa=await profile(h,"age-a:1"),link=await(await h.request("identity?participant=age-b:1","GET")).json();
   assert.equal((await h.request("identity","POST",{participantKey:"age-b:1",expectedRevision:link.link.revision,expectedBatchId:bb.id,skaterId:pa.participant.skater_id,reviewer:"Test operator",reason:"Source identity review",evidence:[sourceUrl]})).status,200);
   const corrected=structuredClone(b);corrected.baseBatchId=bb.id;
   const preview=await submit(h,corrected);assert.equal(preview.response.status,200);assert.ok(preview.batch.report.warnings.some(w=>w.code==="AGE_EVIDENCE_CONFLICT"));assert.equal(preview.batch.report.ageChecks.conflicts.length,1);
   const age=(await profile(h,"age-b:1")).age;assert.equal(age.status,"conflict");assert.equal(age.min,null);assert.equal(age.max,null);
-  const unknown=candidate({id:"unknown-age",category:"Group A",protocol:false});const bu=await active(h,unknown);await assignRule(h,unknown,bu);
+  const unknown=candidate({id:"unknown-age",category:"Group A",protocol:false,club:"Other Club"});const bu=await active(h,unknown);await assignRule(h,unknown,bu);
   const u=await profile(h,"unknown-age:1");assert.equal(u.age.status,"not_available");assert.equal(u.unresolvedAgeEvidence.length,1);
  }finally{h.close();}
 });
@@ -212,7 +307,7 @@ test("source event removal requires explicit reviewed keys and retains correctio
 
 test("concurrent identity review admits one decision and returns a stale-revision conflict",async()=>{
  const h=harness();try{
-  const a=candidate({id:"race-a",protocol:false}),b=candidate({id:"race-b",protocol:false});await active(h,a);const bb=await active(h,b);
+  const a=candidate({id:"race-a",protocol:false}),b=candidate({id:"race-b",protocol:false,club:"Second Club"});await active(h,a);const bb=await active(h,b);
   const target=(await profile(h,"race-a:1")).participant.skater_id,current=await(await h.request("identity?participant=race-b:1","GET")).json();
   const d={participantKey:"race-b:1",expectedRevision:current.link.revision,expectedBatchId:bb.id,skaterId:target,reviewer:"Test operator",reason:"First reviewed mapping",evidence:[sourceUrl]};
   h.state.beforeWriteBatch=async()=>{assert.equal((await h.request("identity","POST",{...d,skaterId:null,reason:"Concurrent separate-person decision"})).status,200);};

@@ -31,7 +31,7 @@ class ProtocolInventoryTests(unittest.TestCase):
         self.assertEqual(report["events"][0]["pages"], [1, 2])
         self.assertEqual(report["events"][0]["observed_result_rows"], 2)
         self.assertEqual(report["events"][0]["heat_count"], 2)
-        self.assertEqual(extracted[("1", "Group A Junior E Women's 700 Quarter-Finals Event #1")]["parser_version"], "tempus-complete-event/0.4")
+        self.assertEqual(extracted[("1", "Group A Junior E Women's 700 Quarter-Finals Event #1")]["parser_version"], "tempus-complete-event/0.7")
         self.assertIsNone(report["coverage"]["published_events"])
         self.assertTrue(all(e["publication"] == "not_checked" for e in report["events"]))
 

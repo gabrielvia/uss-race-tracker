@@ -1,0 +1,25 @@
+{
+  "version": "reviewed-scanned-sources/1",
+  "sources": [
+    {
+      "sha256": "33d17599ed3cc66b082be4f0590227444ed85bdea41c79c82ece32eb90bad1bd",
+      "itemSha256": "3011f7e628e0c60714ba400d04d43287be8b2b791a2a57c74f2a433d47592bc3"
+    },
+    {
+      "sha256": "368e7058bbc8cce41ee77d6ed36cacb1459827b5572b8b41d618a9a4ed046d80",
+      "itemSha256": "6819df01c4d85d455b4f8d90598206e4eb981f9be904338fae65764f562a584f"
+    },
+    {
+      "sha256": "f4c52f033f75eb04e9c242f982210481fb9cf02a5252c2b7d4244636f9ab04b0",
+      "itemSha256": "2b7e791909da7e83e5ad4dc19544d2ead5ab09f440e812a12698d6217b486c66"
+    },
+    {
+      "sha256": "8c5e01da66dbf8b34e1136ef2895b5017ca65bf17845b735a0720b3723328780",
+      "itemSha256": "10c81d03f88f7f4dbbc73771dbbb919f08b0ee4e97c22462c1dac7a17a690d68"
+    },
+    {
+      "sha256": "90d543df31d677c3c602ccdd1c4b643fdfa61002a8cf46e0c9e55835c56c1232",
+      "itemSha256": "5a136b1e89d0516fbd5c8f68ec73956f9e3720a74b64b654a6c3bf1370807a2d"
+    }
+  ]
+}

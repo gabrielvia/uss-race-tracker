@@ -11,17 +11,20 @@ export const competitions = sqliteTable("competitions", {
   startsOn: text("starts_on").notNull(), endsOn: text("ends_on").notNull(),
   location: text("location").notNull(), sourceId: text("source_id").notNull().references(() => sources.id),
 }, (t) => [index("competition_scope_date").on(t.discipline, t.season, t.startsOn)]);
+// SQLite integer affinity stores fractional metre values as REAL without rounding.
 export const competitionEvents = sqliteTable("competition_events", {
   id: text("id").primaryKey(), competitionId: text("competition_id").notNull().references(() => competitions.id),
   sourceEventNumber: text("source_event_number").notNull(), label: text("label").notNull(),
   gender: text("gender").notNull().default("Unknown"), divisionKey: text("division_key").notNull().default("Unknown"), competitionGroup: text("competition_group"), scopeStatus: text("scope_status").notNull().default("needs-review"),
   groupLabel: text("group_label").notNull(), distance: integer("distance").notNull(), round: text("round").notNull(),
+  distanceUnit: text("distance_unit").notNull().default("metres"), eventKind: text("event_kind").notNull().default("individual"),
 }, (t) => [index("event_competition").on(t.competitionId)]);
 // These IDs are competition-local; cross-competition identity is a later milestone.
 export const participants = sqliteTable("participants", {
   id: text("id").primaryKey(), competitionId: text("competition_id").notNull().references(() => competitions.id),
   bib: text("bib").notNull(), name: text("name").notNull(), affiliation: text("affiliation").notNull(),
-}, (t) => [uniqueIndex("participant_competition_bib").on(t.competitionId, t.bib)]);
+  country: text("country"),
+}, (t) => [index("participant_competition_bib").on(t.competitionId, t.bib)]);
 export const entries = sqliteTable("entries", {
   id: text("id").primaryKey(), participantId: text("participant_id").notNull().references(() => participants.id),
   gender: text("gender").notNull().default("Unknown"), divisionKey: text("division_key").notNull().default("Unknown"),
@@ -32,6 +35,9 @@ export const results = sqliteTable("results", {
   id: text("id").primaryKey(), competitionId: text("competition_id").notNull().references(() => competitions.id),
   participantId: text("participant_id").notNull().references(() => participants.id),
   raceId: text("race_id").notNull(), distance: integer("distance").notNull(), round: text("round").notNull(),
+  distanceUnit: text("distance_unit").notNull().default("metres"), eventKind: text("event_kind").notNull().default("individual"),
+  lane: text("lane"), pointsRaw: text("points_raw"), behindRaw: text("behind_raw"),
+  sourceNameRaw: text("source_name_raw"), country: text("country"), sourceFieldsJson: text("source_fields_json"),
   entryId: text("entry_id"), gender: text("gender").notNull().default("Unknown"), divisionKey: text("division_key").notNull().default("Unknown"), scopeStatus: text("scope_status").notNull().default("needs-review"),
   rank: integer("rank"), timeRaw: text("time_raw"), timeMicroseconds: integer("time_microseconds"),
   resultStatus: text("result_status"),

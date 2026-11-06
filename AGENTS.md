@@ -7,6 +7,12 @@
 - Preserve original source names and proper nouns. Do not translate or alter skater names, club names, or original evidence.
 - The Chinese explanatory text in the implementation plan is for planning only; ship only the English Skating age explanation.
 
+## Historical competition imports
+
+- Apply the [confirmed import rules](docs/season-import-workflow.md), including the name-and-club identity policy, before preparing, publishing, or verifying competition data.
+- Start each source with the [SHA-256 skip rule](docs/season-import-workflow.md#skip-previously-imported-documents-by-sha-256). A match to a completed import carries forward its verification and ends processing for that document.
+- Record any new user-confirmed general rule in that workflow. Store source-specific decisions with the reviewed source and checkpoint. Apply previously confirmed decisions within their documented scope.
+
 ## Pull request merge policy
 
 - Use **squash and merge** for all pull requests by default.

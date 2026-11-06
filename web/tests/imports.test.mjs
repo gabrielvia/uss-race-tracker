@@ -187,9 +187,10 @@ for (const status of ["PEN", "DNS", "DNF", "DQ"]) {
         assert.equal(row.rank, null);
         assert.equal(row.time_raw, recordedTime ? p.item.results[0].timeRaw : null);
         assert.equal(row.time_microseconds, recordedTime ? p.item.results[0].timeMicroseconds : null);
-        assert.equal(data.results.at(-1).id, row.id, "Status rows must not outrank ordinary timed finishers");
+        const sourceRace=data.results.filter(r=>r.race_id===row.race_id);
+        assert.ok(sourceRace.slice(sourceRace.findIndex(r=>r.id===row.id)+1).every(r=>r.rank===null), "Absent official places stay after recorded places within their source race");
         assert.equal(h.load(new URL("../lib/result-display.ts", import.meta.url).pathname).hasComparableTime(row), false);
-        assert.equal(h.load(new URL("../lib/result-display.ts", import.meta.url).pathname).hasComparableTime(data.results[0]), true);
+        assert.equal(h.load(new URL("../lib/result-display.ts", import.meta.url).pathname).hasComparableTime(data.results.find(r=>r.result_status===null)), true);
       } finally { h.close(); }
     }
   });

@@ -1,0 +1,80 @@
+{
+  "sources": [
+    {
+      "sha256": "7064a19fde1e357d553cbd1cae5ed3fd4112553ee9aa10b5e91940244e3906dc",
+      "classificationRosterPages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "separateEventHeading": true,
+      "positionedSourceTablePages": [
+        2,
+        54
+      ],
+      "untimedQualifiedRows": [
+        {
+          "page": 25,
+          "row": "3 109 Audrey Pecka Cleveland Heights ADV-A",
+          "qualification": "ADV-A"
+        }
+      ]
+    },
+    {
+      "sha256": "99a73b2f09cb86e17be0919ca1b2a7ae693eb456f13e5e4dd5dee76386ab4a4d",
+      "positionedSourceTablePages": [
+        1,
+        2,
+        3
+      ],
+      "positionedTextReplacements": {
+        "1": {
+          "Aus�n": "Austin"
+        },
+        "2": {
+          "Julie�e": "Juliette"
+        },
+        "3": {
+          "Par�cipa�ng": "Participating",
+          "Speedska�ng": "Speedskating",
+          "Ska�ng": "Skating",
+          "Associa�on": "Association"
+        }
+      }
+    },
+    {
+      "sha256": "38e236c261e961d12319ddd02254a85413a9267957d5c237cb862f242e15a0f4",
+      "reviewedScannedItemSha256": "b34801a79ead899c2591f43238332f6ee824dd3c4b3c51ce8c3cd884742c5e0b"
+    },
+    {
+      "sha256": "eabd88330ac93105d53ff7f6bcb9640e6fe711b253a9ef10161e3fe155d87c9c",
+      "untimedQualifiedRows": [
+        {
+          "page": 45,
+          "row": "5 352 Matthew Zhang Fast Team ADV",
+          "qualification": "ADV"
+        }
+      ],
+      "reviewedScannedItemSha256": "feb4ef36a3c1d7af1b2954031451c1d1a1727b453c27e6b4ff3f7cc61cbcfb13"
+    },
+    {
+      "sha256": "2531049f874a6f334b204d652398a897a18ad8c7316450af7985b086861bf12c",
+      "positionedSourceTablePages": [
+        64
+      ],
+      "untimedQualifiedRows": [
+        {
+          "page": 42,
+          "row": "4 428 Sean Shuai Direct ADV",
+          "qualification": "ADV"
+        },
+        {
+          "page": 60,
+          "row": "4 314 Tiffany Zhang Potomac ADV",
+          "qualification": "ADV"
+        }
+      ]
+    }
+  ]
+}

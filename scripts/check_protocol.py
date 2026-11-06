@@ -42,6 +42,11 @@ def check_protocol(origin, secret, item):
     assert len(pages)==len(expected_pages)
     for p,e in zip(pages,expected_pages):
         assert p['source_page']==e['page'] and all(p[k]==e[k] for k in ['kind','label','text_raw','rows'])
+    expected_tables=item['protocol'].get('supplementary_pages',[])
+    assert detail.get('supplementarySourcePages',0)==len(expected_tables)
+    if expected_tables:
+        tables=get(detail['sourceTablesUrl'])
+        assert tables['sourceHash']==item['source']['sha256'] and tables['pages']==expected_tables
     scope=get('/api/competitions?'+urlencode({'discipline':c['discipline'],'season':c['season'],'q':c['title'],'page':1}))
     assert any(x['id']==c['id'] for x in scope['competitions'])
     assert all(x['discipline']==c['discipline'] and x['season']==c['season'] for x in scope['competitions'])
@@ -50,7 +55,7 @@ def check_protocol(origin, secret, item):
         assert history['total']>=1 and any(b['status']=='published' and b['source_hash']==item['source']['sha256'] for b in history['batches'])
     person=item['participants'][0];profile=get('/api/participants/'+person['id']+'/profile')
     assert profile['age']['status'] in {'inferred','range','lower_bound','not_available','conflict'}
-    result={'passed':True,'competition':c['id'],'events':len(detail['events']),'results':len(expected),'classificationPages':len(pages),'archivedPdfVerified':True,'profileAgeStatus':profile['age']['status']}
+    result={'passed':True,'competition':c['id'],'events':len(detail['events']),'results':len(expected),'classificationPages':len(pages),'supplementaryPages':len(expected_tables),'archivedPdfVerified':True,'profileAgeStatus':profile['age']['status']}
     print(json.dumps(result),flush=True);return result
 
 

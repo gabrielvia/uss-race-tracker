@@ -1,0 +1,27 @@
+{
+  "sources": [
+    {
+      "sha256": "418feb25acf63195d2890e045900ced667059ed0d67a430e426848db759ea895",
+      "statusColumn": "school",
+      "affiliations": [
+        {
+          "bib": "58",
+          "name": "Kai Kwon",
+          "page": 5,
+          "rosterValue": "Richmond Rock",
+          "resultValue": "Richmond Rockets"
+        }
+      ]
+    },
+    {
+      "sha256": "5dfc2f820dcf8e7f434a4fc2e097e7808f0b6d995e1257f9a25cf04f7f5e3e71",
+      "allowMixedGender": true,
+      "affiliations": []
+    },
+    {
+      "sha256": "68185817e31d04487b2e446b4cf47b9dcf5985e611eda20ed4d2edcbf8955b27",
+      "allowMixedGender": true,
+      "affiliations": []
+    }
+  ]
+}

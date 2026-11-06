@@ -1,0 +1,6409 @@
+{
+  "version": "amcup-final-source-review/1",
+  "reviewedAt": "2026-11-05T21:35:32.224726+00:00",
+  "sourceId": "33788a663bb35127",
+  "sourceUrl": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt79fe043b7ab51b67/69af65aaf6ace70008c3b6b2/2026_US_AmCup_Final_US_Open_Masters.pdf",
+  "directorySeason": "2025-2026",
+  "directoryEntryId": "e8a0e51154d65a28",
+  "directoryTitle": "2026-03-08 - 2026 US AmCup Final & US Open Masters & Colombian Championships",
+  "sha256": "368e7058bbc8cce41ee77d6ed36cacb1459827b5572b8b41d618a9a4ed046d80",
+  "physicalPages": 45,
+  "scannedPages": 42,
+  "sourceConfirmedStart": "2026-03-06",
+  "sourceConfirmedEnd": "2026-03-08",
+  "sourceConfirmedLocation": "Kearns, UT",
+  "officialEventPage": "https://www.usspeedskating.org/2026-amcup-final-us-open-masters-championships",
+  "inspectionBoundary": "All 45 physical pages audited. Atomic publication and full hosted readback passed.",
+  "pageInventory": {
+    "cover": [
+      1
+    ],
+    "officials": [
+      2,
+      3
+    ],
+    "timedResults": [
+      4,
+      6,
+      9,
+      10,
+      14,
+      16,
+      18,
+      22,
+      24,
+      27,
+      31,
+      33,
+      35,
+      37,
+      39
+    ],
+    "pairAnalysis": [
+      5,
+      7,
+      8,
+      11,
+      12,
+      13,
+      15,
+      17,
+      19,
+      20,
+      21,
+      23,
+      25,
+      26,
+      28,
+      29,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      41
+    ],
+    "massStart": [
+      42,
+      43,
+      44,
+      45
+    ]
+  },
+  "technicalNotes": [
+    "The mass-start pages have 9, 23, 7 and 19 source rows, respectively. Keep official places, sprint points, finish times and statuses independently.",
+    "The mass-start sheets omit a lap count. The event page and the AmCup Final table of the official 2025-2026 Long Track Regulations specify 10 laps, and the sheets show two intermediate sprints and 30-point final winners, matching the regulation’s 10-lap scoring.",
+    "Keep the literal distinct men’s and women’s mass-start report titles and do not count pair-analysis tables as additional race results."
+  ],
+  "officialLapRules": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltcd66ae352ae96e83/694b3ece1e351c40b71969db/LT_Regs_25-26_Final_v2.2.pdf",
+  "published": true,
+  "newRows": 344,
+  "resolvedQuestions": [
+    {
+      "kind": "same-skater-number-different-printed-name",
+      "rows": [
+        {
+          "skaterNumber": "114",
+          "timedNameRaw": "LINDENSKOV Natascha",
+          "timedPages": [
+            6
+          ],
+          "massStartNameRaw": "Lindenskov Natasha",
+          "massStartPages": [
+            42,
+            44
+          ]
+        },
+        {
+          "skaterNumber": "202",
+          "timedNameRaw": "HERMAN Auggie",
+          "timedPages": [
+            9
+          ],
+          "massStartNameRaw": "Herman Auggi",
+          "massStartPages": [
+            43,
+            45
+          ]
+        },
+        {
+          "skaterNumber": "252",
+          "timedNameRaw": "ZAPATA Daniel",
+          "timedPages": [
+            14
+          ],
+          "massStartNameRaw": "Zapata Marinez Daniel",
+          "massStartPages": [
+            43
+          ]
+        },
+        {
+          "skaterNumber": "257",
+          "timedNameRaw": "SIEBERT Finn",
+          "timedPages": [
+            39
+          ],
+          "massStartNameRaw": "Sibert Finn",
+          "massStartPages": [
+            43,
+            45
+          ]
+        }
+      ],
+      "proposedHandling": "Treat each matched skater number as one competition-local profile. Use the timed result spelling for the profile and preserve both exact original spellings and both mass-start number columns in the source evidence.",
+      "answer": "The user approved one competition-local profile per matched pair, with spelling from the timed results. Display the given name before the family name in title case. Preserve both source spellings and the original PDF verbatim."
+    }
+  ],
+  "reviewStatus": "reviewed",
+  "source_id": "33788a663bb35127",
+  "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt79fe043b7ab51b67/69af65aaf6ace70008c3b6b2/2026_US_AmCup_Final_US_Open_Masters.pdf",
+  "page_count": 45,
+  "competition": {
+    "id": "lt-amcup-final-2026",
+    "title": "2026 AmCup Final, US Open Masters & Colombian Championships",
+    "discipline": "long-track",
+    "season": "2025-2026",
+    "startsOn": "2026-03-06",
+    "endsOn": "2026-03-08",
+    "location": "Kearns, UT"
+  },
+  "pageAudit": [
+    {
+      "page": 1,
+      "kind": "cover",
+      "result_rows": 0
+    },
+    {
+      "page": 2,
+      "kind": "officials",
+      "result_rows": 0
+    },
+    {
+      "page": 3,
+      "kind": "officials",
+      "result_rows": 0
+    },
+    {
+      "page": 4,
+      "kind": "timedResults",
+      "result_rows": 14
+    },
+    {
+      "page": 5,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 6,
+      "kind": "timedResults",
+      "result_rows": 20
+    },
+    {
+      "page": 7,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 8,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 9,
+      "kind": "timedResults",
+      "result_rows": 46
+    },
+    {
+      "page": 10,
+      "kind": "timedResults",
+      "result_rows": 2
+    },
+    {
+      "page": 11,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 12,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 13,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 14,
+      "kind": "timedResults",
+      "result_rows": 16
+    },
+    {
+      "page": 15,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 16,
+      "kind": "timedResults",
+      "result_rows": 15
+    },
+    {
+      "page": 17,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 18,
+      "kind": "timedResults",
+      "result_rows": 42
+    },
+    {
+      "page": 19,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 20,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 21,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 22,
+      "kind": "timedResults",
+      "result_rows": 16
+    },
+    {
+      "page": 23,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 24,
+      "kind": "timedResults",
+      "result_rows": 19
+    },
+    {
+      "page": 25,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 26,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 27,
+      "kind": "timedResults",
+      "result_rows": 45
+    },
+    {
+      "page": 28,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 29,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 30,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 31,
+      "kind": "timedResults",
+      "result_rows": 9
+    },
+    {
+      "page": 32,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 33,
+      "kind": "timedResults",
+      "result_rows": 11
+    },
+    {
+      "page": 34,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 35,
+      "kind": "timedResults",
+      "result_rows": 3
+    },
+    {
+      "page": 36,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 37,
+      "kind": "timedResults",
+      "result_rows": 9
+    },
+    {
+      "page": 38,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 39,
+      "kind": "timedResults",
+      "result_rows": 19
+    },
+    {
+      "page": 40,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 41,
+      "kind": "pairAnalysis",
+      "result_rows": 0
+    },
+    {
+      "page": 42,
+      "kind": "massStart",
+      "result_rows": 9
+    },
+    {
+      "page": 43,
+      "kind": "massStart",
+      "result_rows": 23
+    },
+    {
+      "page": 44,
+      "kind": "massStart",
+      "result_rows": 7
+    },
+    {
+      "page": 45,
+      "kind": "massStart",
+      "result_rows": 19
+    }
+  ],
+  "roster": [
+    {
+      "bib": "100",
+      "raw_name": "OH Aileen",
+      "name": "OH Aileen",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 44,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "101",
+      "raw_name": "LA Allison",
+      "name": "LA Allison",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 16,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "102",
+      "raw_name": "ACOSTA Amy",
+      "name": "ACOSTA Amy",
+      "affiliation_raw": "",
+      "country": "ECU",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 33,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "103",
+      "raw_name": "KIMBER Ana",
+      "name": "KIMBER Ana",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 33,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "105",
+      "raw_name": "FORRER Evie",
+      "name": "FORRER Evie",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 44,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "106",
+      "raw_name": "ISHIOKA Fumina",
+      "name": "ISHIOKA Fumina",
+      "affiliation_raw": "",
+      "country": "JPN",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 24,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "107",
+      "raw_name": "SHOBE Ilsa",
+      "name": "SHOBE Ilsa",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 24,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "108",
+      "raw_name": "SONG Juliette",
+      "name": "SONG Juliette",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 33,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "109",
+      "raw_name": "WHITCOMB Keeley",
+      "name": "WHITCOMB Keeley",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 44,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "110",
+      "raw_name": "PAES Larissa",
+      "name": "PAES Larissa",
+      "affiliation_raw": "",
+      "country": "BRA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 24,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "111",
+      "raw_name": "WILLIAMS Libby",
+      "name": "WILLIAMS Libby",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 24,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "112",
+      "raw_name": "ARO Miki",
+      "name": "ARO Miki",
+      "affiliation_raw": "",
+      "country": "JPN",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 24,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "113",
+      "raw_name": "ITO Miki",
+      "name": "ITO Miki",
+      "affiliation_raw": "",
+      "country": "JPN",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 24,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "114",
+      "raw_name": "LINDENSKOV Natascha",
+      "name": "LINDENSKOV Natascha",
+      "affiliation_raw": "",
+      "country": "DEN",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 44,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "115",
+      "raw_name": "RODRIGUE-HASSELBACK Nathalie",
+      "name": "RODRIGUE-HASSELBACK Nathalie",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 24,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "116",
+      "raw_name": "YDE Piper",
+      "name": "YDE Piper",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 44,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "118",
+      "raw_name": "CUSHMAN Sara",
+      "name": "CUSHMAN Sara",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 44,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "119",
+      "raw_name": "SU Selena",
+      "name": "SU Selena",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 33,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "120",
+      "raw_name": "KOTWAL Shruti",
+      "name": "KOTWAL Shruti",
+      "affiliation_raw": "",
+      "country": "IND",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 24,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "121",
+      "raw_name": "RINCON CARDOZO Manuela",
+      "name": "RINCON CARDOZO Manuela",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Mixed",
+      "gender": null,
+      "gender_source_page": 4,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "122",
+      "raw_name": "RUEDA Gabriela Isabel",
+      "name": "RUEDA Gabriela Isabel",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 42,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "123",
+      "raw_name": "GIRALDO VASQEUZ Yicel Camila",
+      "name": "GIRALDO VASQEUZ Yicel Camila",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Mixed",
+      "gender": null,
+      "gender_source_page": 4,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "124",
+      "raw_name": "VARGAS Isabella",
+      "name": "VARGAS Isabella",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Mixed",
+      "gender": null,
+      "gender_source_page": 4,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "125",
+      "raw_name": "SIATAMA Karen",
+      "name": "SIATAMA Karen",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 42,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "126",
+      "raw_name": "CASTRO MOSQUERA Kollin Andrea",
+      "name": "CASTRO MOSQUERA Kollin Andrea",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Mixed",
+      "gender": null,
+      "gender_source_page": 4,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "128",
+      "raw_name": "HAN Audrey",
+      "name": "HAN Audrey",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "gender_source_page": 44,
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "200",
+      "raw_name": "QUINN Anson",
+      "name": "QUINN Anson",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 43,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "201",
+      "raw_name": "KONDURU Ashwin",
+      "name": "KONDURU Ashwin",
+      "affiliation_raw": "",
+      "country": "IND",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 43,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "202",
+      "raw_name": "HERMAN Auggie",
+      "name": "HERMAN Auggie",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "203",
+      "raw_name": "LEE Colin",
+      "name": "LEE Colin",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "204",
+      "raw_name": "YODA Daigo",
+      "name": "YODA Daigo",
+      "affiliation_raw": "",
+      "country": "JPN",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "205",
+      "raw_name": "GREENE Daniel",
+      "name": "GREENE Daniel",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 37,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "206",
+      "raw_name": "PROVOD David",
+      "name": "PROVOD David",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "207",
+      "raw_name": "PRICE Dawson",
+      "name": "PRICE Dawson",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "208",
+      "raw_name": "NAGEL Edward",
+      "name": "NAGEL Edward",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "209",
+      "raw_name": "SILVA Emanuelle",
+      "name": "SILVA Emanuelle",
+      "affiliation_raw": "",
+      "country": "CHI",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "210",
+      "raw_name": "GROEN Gary",
+      "name": "GROEN Gary",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 37,
+      "age_status_raw": null,
+      "page": 10
+    },
+    {
+      "bib": "211",
+      "raw_name": "ORD Gavin",
+      "name": "ORD Gavin",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 43,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "212",
+      "raw_name": "WHEELOCK George",
+      "name": "WHEELOCK George",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "213",
+      "raw_name": "SCHLICHTING Henry",
+      "name": "SCHLICHTING Henry",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 39,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "214",
+      "raw_name": "HARBISON Herb",
+      "name": "HARBISON Herb",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 39,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "215",
+      "raw_name": "OH Jayden",
+      "name": "OH Jayden",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 18,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "216",
+      "raw_name": "TERWILLIGER Jeff",
+      "name": "TERWILLIGER Jeff",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 37,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "217",
+      "raw_name": "KRIETER Joshua",
+      "name": "KRIETER Joshua",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 37,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "218",
+      "raw_name": "WOBESER Keith",
+      "name": "WOBESER Keith",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "219",
+      "raw_name": "DUNFEE Kelin",
+      "name": "DUNFEE Kelin",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "220",
+      "raw_name": "COLLINS Kieran",
+      "name": "COLLINS Kieran",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "221",
+      "raw_name": "ESSEX Kyle",
+      "name": "ESSEX Kyle",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "222",
+      "raw_name": "de GROOT Kyler",
+      "name": "de GROOT Kyler",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "223",
+      "raw_name": "KUROWSKI Matthew",
+      "name": "KUROWSKI Matthew",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "224",
+      "raw_name": "SALM Matthew",
+      "name": "SALM Matthew",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "225",
+      "raw_name": "TRIMBLE Matthew",
+      "name": "TRIMBLE Matthew",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 37,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "226",
+      "raw_name": "HUBBS Michael",
+      "name": "HUBBS Michael",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "227",
+      "raw_name": "MASTRUP Niclas",
+      "name": "MASTRUP Niclas",
+      "affiliation_raw": "",
+      "country": "DEN",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "228",
+      "raw_name": "NESS Ole Bjornsmoen",
+      "name": "NESS Ole Bjornsmoen",
+      "affiliation_raw": "",
+      "country": "NOR",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 39,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "229",
+      "raw_name": "GOOD Paul",
+      "name": "GOOD Paul",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 37,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "230",
+      "raw_name": "MARTIN Riley",
+      "name": "MARTIN Riley",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "231",
+      "raw_name": "HASTINGS Roman",
+      "name": "HASTINGS Roman",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "232",
+      "raw_name": "KOTANI Ryoutaro",
+      "name": "KOTANI Ryoutaro",
+      "affiliation_raw": "",
+      "country": "JPN",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "233",
+      "raw_name": "HART-GORMAN Samuel",
+      "name": "HART-GORMAN Samuel",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "234",
+      "raw_name": "EPPERSON Sebastian",
+      "name": "EPPERSON Sebastian",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "235",
+      "raw_name": "ICHIBA Shota",
+      "name": "ICHIBA Shota",
+      "affiliation_raw": "",
+      "country": "JPN",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 18
+    },
+    {
+      "bib": "236",
+      "raw_name": "MASTRUP Sune",
+      "name": "MASTRUP Sune",
+      "affiliation_raw": "",
+      "country": "DEN",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "237",
+      "raw_name": "ELATTAOUI Tariq",
+      "name": "ELATTAOUI Tariq",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "238",
+      "raw_name": "PIERCE Thomas",
+      "name": "PIERCE Thomas",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "239",
+      "raw_name": "LEE Tyler",
+      "name": "LEE Tyler",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 39,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "240",
+      "raw_name": "ARCHULETTA Uel",
+      "name": "ARCHULETTA Uel",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 37,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "241",
+      "raw_name": "FEATHERSTONE Kevin",
+      "name": "FEATHERSTONE Kevin",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "242",
+      "raw_name": "HIROSE Yuta",
+      "name": "HIROSE Yuta",
+      "affiliation_raw": "",
+      "country": "JPN",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "243",
+      "raw_name": "JENSEN Zachary",
+      "name": "JENSEN Zachary",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "244",
+      "raw_name": "MARIN Pablo",
+      "name": "MARIN Pablo",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 43,
+      "age_status_raw": null,
+      "page": 14
+    },
+    {
+      "bib": "245",
+      "raw_name": "TASCON HOLGUIN Jhon Edwar",
+      "name": "TASCON HOLGUIN Jhon Edwar",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Mixed",
+      "gender": null,
+      "gender_source_page": 4,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "246",
+      "raw_name": "VASQUEZ VILLARREAL Santiago",
+      "name": "VASQUEZ VILLARREAL Santiago",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Mixed",
+      "gender": null,
+      "gender_source_page": 4,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "247",
+      "raw_name": "MANTILLA PINILLA Juan Jacobo",
+      "name": "MANTILLA PINILLA Juan Jacobo",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Mixed",
+      "gender": null,
+      "gender_source_page": 4,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "248",
+      "raw_name": "LENIS ANGARITA Kevin Alejandro",
+      "name": "LENIS ANGARITA Kevin Alejandro",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Mixed",
+      "gender": null,
+      "gender_source_page": 4,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "249",
+      "raw_name": "BARRIOS HERRENO Nicolas Rodrigo",
+      "name": "BARRIOS HERRENO Nicolas Rodrigo",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Mixed",
+      "gender": null,
+      "gender_source_page": 4,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "250",
+      "raw_name": "ACOSTA CANDIA Juan Carlos",
+      "name": "ACOSTA CANDIA Juan Carlos",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "251",
+      "raw_name": "VERDUGO Angelo",
+      "name": "VERDUGO Angelo",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Mixed",
+      "gender": null,
+      "gender_source_page": 4,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "252",
+      "raw_name": "ZAPATA Daniel",
+      "name": "ZAPATA Daniel",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 43,
+      "age_status_raw": null,
+      "page": 14
+    },
+    {
+      "bib": "253",
+      "raw_name": "TIRADO German",
+      "name": "TIRADO German",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 4
+    },
+    {
+      "bib": "254",
+      "raw_name": "ESTEVEZ Thomas",
+      "name": "ESTEVEZ Thomas",
+      "affiliation_raw": "",
+      "country": "COL",
+      "division_raw": "Mixed",
+      "gender": null,
+      "gender_source_page": 22,
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "255",
+      "raw_name": "SKLUTOVSKY Alec",
+      "name": "SKLUTOVSKY Alec",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 39,
+      "age_status_raw": null,
+      "page": 39
+    },
+    {
+      "bib": "256",
+      "raw_name": "HURST David",
+      "name": "HURST David",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 10
+    },
+    {
+      "bib": "257",
+      "raw_name": "SIEBERT Finn",
+      "name": "SIEBERT Finn",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "258",
+      "raw_name": "RILEY Maison",
+      "name": "RILEY Maison",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 27,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "259",
+      "raw_name": "de BOCK Nickolas",
+      "name": "de BOCK Nickolas",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 45,
+      "age_status_raw": null,
+      "page": 9
+    },
+    {
+      "bib": "260",
+      "raw_name": "SILK William",
+      "name": "SILK William",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "gender_source_page": 39,
+      "age_status_raw": null,
+      "page": 9
+    }
+  ],
+  "events": [
+    {
+      "label": "Mixed 500 m COL Championships",
+      "distance": 500,
+      "unit": "metres",
+      "group": "Mixed",
+      "rows": [
+        {
+          "page": 4,
+          "fields": {
+            "Rank": "1",
+            "No.": "251",
+            "Name": "VERDUGO Angelo",
+            "Country Code": "COL",
+            "Pair": "7",
+            "Lane": "I",
+            "Time": "36.98",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 4,
+          "fields": {
+            "Rank": "2",
+            "No.": "249",
+            "Name": "BARRIOS HERRENO Nicolas Rodrigo",
+            "Country Code": "COL",
+            "Pair": "4",
+            "Lane": "O",
+            "Time": "39.75",
+            "Gap": "2.770",
+            "Note": null
+          }
+        },
+        {
+          "page": 4,
+          "fields": {
+            "Rank": "3",
+            "No.": "253",
+            "Name": "TIRADO German",
+            "Country Code": "COL",
+            "Pair": "4",
+            "Lane": "I",
+            "Time": "39.82",
+            "Gap": "2.840",
+            "Note": null
+          }
+        },
+        {
+          "page": 4,
+          "fields": {
+            "Rank": "4",
+            "No.": "248",
+            "Name": "LENIS ANGARITA Kevin Alejandro",
+            "Country Code": "COL",
+            "Pair": "1",
+            "Lane": "O",
+            "Time": "41.05",
+            "Gap": "4.070",
+            "Note": null
+          }
+        },
+        {
+          "page": 4,
+          "fields": {
+            "Rank": "5",
+            "No.": "246",
+            "Name": "VASQUEZ VILLARREAL Santiago",
+            "Country Code": "COL",
+            "Pair": "1",
+            "Lane": "I",
+            "Time": "41.08",
+            "Gap": "4.100",
+            "Note": null
+          }
+        },
+        {
+          "page": 4,
+          "fields": {
+            "Rank": "6",
+            "No.": "245",
+            "Name": "TASCON HOLGUIN Jhon Edwar",
+            "Country Code": "COL",
+            "Pair": "5",
+            "Lane": "O",
+            "Time": "41.13",
+            "Gap": "4.150",
+            "Note": null
+          }
+        },
+        {
+          "page": 4,
+          "fields": {
+            "Rank": "7",
+            "No.": "125",
+            "Name": "SIATAMA Karen",
+            "Country Code": "COL",
+            "Pair": "RS",
+            "Lane": "O",
+            "Time": "42.07",
+            "Gap": "5.090",
+            "Note": null
+          }
+        },
+        {
+          "page": 4,
+          "fields": {
+            "Rank": "8",
+            "No.": "126",
+            "Name": "CASTRO MOSQUERA Kollin Andrea",
+            "Country Code": "COL",
+            "Pair": "5",
+            "Lane": "I",
+            "Time": "42.36",
+            "Gap": "5.380",
+            "Note": null
+          }
+        },
+        {
+          "page": 4,
+          "fields": {
+            "Rank": "9",
+            "No.": "247",
+            "Name": "MANTILLA PINILLA Juan Jacobo",
+            "Country Code": "COL",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "42.56",
+            "Gap": "5.580",
+            "Note": null
+          }
+        },
+        {
+          "page": 4,
+          "fields": {
+            "Rank": "10",
+            "No.": "123",
+            "Name": "GIRALDO VASQEUZ Yicel Camila",
+            "Country Code": "COL",
+            "Pair": "3",
+            "Lane": "I",
+            "Time": "46.29",
+            "Gap": "9.310",
+            "Note": null
+          }
+        },
+        {
+          "page": 4,
+          "fields": {
+            "Rank": "11",
+            "No.": "122",
+            "Name": "RUEDA Gabriela Isabel",
+            "Country Code": "COL",
+            "Pair": "3",
+            "Lane": "O",
+            "Time": "47.62",
+            "Gap": "10.640",
+            "Note": null
+          }
+        },
+        {
+          "page": 4,
+          "fields": {
+            "Rank": "12",
+            "No.": "121",
+            "Name": "RINCON CARDOZO Manuela",
+            "Country Code": "COL",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "48.93",
+            "Gap": "11.950",
+            "Note": null
+          }
+        },
+        {
+          "page": 4,
+          "fields": {
+            "Rank": null,
+            "No.": "250",
+            "Name": "ACOSTA CANDIA Juan Carlos",
+            "Country Code": "COL",
+            "Pair": "7",
+            "Lane": "O",
+            "Time": "DQ",
+            "Gap": null,
+            "Note": null
+          }
+        },
+        {
+          "page": 4,
+          "fields": {
+            "Rank": null,
+            "No.": "124",
+            "Name": "VARGAS Isabella",
+            "Country Code": "COL",
+            "Pair": "6",
+            "Lane": "I",
+            "Time": "DQ",
+            "Gap": null,
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "Women 500 m",
+      "distance": 500,
+      "unit": "metres",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "1",
+            "No.": "112",
+            "Name": "ARO Miki",
+            "Country Code": "JPN",
+            "Pair": "10",
+            "Lane": "O",
+            "Time": "39.10",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "2",
+            "No.": "106",
+            "Name": "ISHIOKA Fumina",
+            "Country Code": "JPN",
+            "Pair": "10",
+            "Lane": "I",
+            "Time": "39.63",
+            "Gap": "0.530",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "3",
+            "No.": "116",
+            "Name": "YDE Piper",
+            "Country Code": "USA",
+            "Pair": "9",
+            "Lane": "I",
+            "Time": "39.93",
+            "Gap": "0.830",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "4",
+            "No.": "113",
+            "Name": "ITO Miki",
+            "Country Code": "JPN",
+            "Pair": "7",
+            "Lane": "I",
+            "Time": "40.94",
+            "Gap": "1.840",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "5",
+            "No.": "111",
+            "Name": "WILLIAMS Libby",
+            "Country Code": "USA",
+            "Pair": "9",
+            "Lane": "O",
+            "Time": "41.02",
+            "Gap": "1.920",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "6",
+            "No.": "107",
+            "Name": "SHOBE Ilsa",
+            "Country Code": "USA",
+            "Pair": "8",
+            "Lane": "O",
+            "Time": "41.26",
+            "Gap": "2.160",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "7",
+            "No.": "102",
+            "Name": "ACOSTA Amy",
+            "Country Code": "ECU",
+            "Pair": "8",
+            "Lane": "I",
+            "Time": "41.45",
+            "Gap": "2.350",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "8",
+            "No.": "109",
+            "Name": "WHITCOMB Keeley",
+            "Country Code": "USA",
+            "Pair": "7",
+            "Lane": "O",
+            "Time": "41.70",
+            "Gap": "2.600",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "9",
+            "No.": "103",
+            "Name": "KIMBER Ana",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "O",
+            "Time": "41.97",
+            "Gap": "2.870",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "10",
+            "No.": "120",
+            "Name": "KOTWAL Shruti",
+            "Country Code": "IND",
+            "Pair": "5",
+            "Lane": "I",
+            "Time": "42.54",
+            "Gap": "3.440",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "11",
+            "No.": "110",
+            "Name": "PAES Larissa",
+            "Country Code": "BRA",
+            "Pair": "6",
+            "Lane": "O",
+            "Time": "42.58",
+            "Gap": "3.480",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "12",
+            "No.": "105",
+            "Name": "FORRER Evie",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "I",
+            "Time": "43.10",
+            "Gap": "4.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "13",
+            "No.": "114",
+            "Name": "LINDENSKOV Natascha",
+            "Country Code": "DEN",
+            "Pair": "6",
+            "Lane": "I",
+            "Time": "43.11",
+            "Gap": "4.010",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "14",
+            "No.": "100",
+            "Name": "OH Aileen",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "O",
+            "Time": "44.43",
+            "Gap": "5.330",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "15",
+            "No.": "119",
+            "Name": "SU Selena",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "O",
+            "Time": "44.67",
+            "Gap": "5.570",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "16",
+            "No.": "101",
+            "Name": "LA Allison",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "I",
+            "Time": "44.73",
+            "Gap": "5.630",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "17",
+            "No.": "115",
+            "Name": "RODRIGUE-HASSELBACK Nathalie",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "45.58",
+            "Gap": "6.480",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "18",
+            "No.": "128",
+            "Name": "HAN Audrey",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "46.16",
+            "Gap": "7.060",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "19",
+            "No.": "108",
+            "Name": "SONG Juliette",
+            "Country Code": "USA",
+            "Pair": "1",
+            "Lane": "I",
+            "Time": "48.19",
+            "Gap": "9.090",
+            "Note": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rank": "20",
+            "No.": "118",
+            "Name": "CUSHMAN Sara",
+            "Country Code": "USA",
+            "Pair": "1",
+            "Lane": "O",
+            "Time": "48.36",
+            "Gap": "9.260",
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "Men 500 m",
+      "distance": 500,
+      "unit": "metres",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "1",
+            "No.": "242",
+            "Name": "HIROSE Yuta",
+            "Country Code": "JPN",
+            "Pair": "23",
+            "Lane": "I",
+            "Time": "34.56",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "2",
+            "No.": "204",
+            "Name": "YODA Daigo",
+            "Country Code": "JPN",
+            "Pair": "24",
+            "Lane": "I",
+            "Time": "35.67",
+            "Gap": "1.110",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "3",
+            "No.": "202",
+            "Name": "HERMAN Auggie",
+            "Country Code": "USA",
+            "Pair": "22",
+            "Lane": "O",
+            "Time": "36.222",
+            "Gap": "1.660",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "4",
+            "No.": "232",
+            "Name": "KOTANI Ryoutaro",
+            "Country Code": "JPN",
+            "Pair": "23",
+            "Lane": "O",
+            "Time": "36.227",
+            "Gap": "1.660",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "5",
+            "No.": "212",
+            "Name": "WHEELOCK George",
+            "Country Code": "USA",
+            "Pair": "22",
+            "Lane": "I",
+            "Time": "37.01",
+            "Gap": "2.450",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "6",
+            "No.": "214",
+            "Name": "HARBISON Herb",
+            "Country Code": "USA",
+            "Pair": "24",
+            "Lane": "O",
+            "Time": "37.11",
+            "Gap": "2.550",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "7",
+            "No.": "243",
+            "Name": "JENSEN Zachary",
+            "Country Code": "USA",
+            "Pair": "19",
+            "Lane": "I",
+            "Time": "37.13",
+            "Gap": "2.570",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "8",
+            "No.": "209",
+            "Name": "SILVA Emanuelle",
+            "Country Code": "CHI",
+            "Pair": "19",
+            "Lane": "O",
+            "Time": "37.40",
+            "Gap": "2.840",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "9",
+            "No.": "227",
+            "Name": "MASTRUP Niclas",
+            "Country Code": "DEN",
+            "Pair": "21",
+            "Lane": "O",
+            "Time": "37.41",
+            "Gap": "2.850",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "10",
+            "No.": "258",
+            "Name": "RILEY Maison",
+            "Country Code": "USA",
+            "Pair": "21",
+            "Lane": "I",
+            "Time": "37.63",
+            "Gap": "3.070",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "11",
+            "No.": "257",
+            "Name": "SIEBERT Finn",
+            "Country Code": "USA",
+            "Pair": "20",
+            "Lane": "O",
+            "Time": "37.73",
+            "Gap": "3.170",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "12",
+            "No.": "260",
+            "Name": "SILK William",
+            "Country Code": "USA",
+            "Pair": "18",
+            "Lane": "I",
+            "Time": "37.85",
+            "Gap": "3.290",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "13",
+            "No.": "206",
+            "Name": "PROVOD David",
+            "Country Code": "USA",
+            "Pair": "16",
+            "Lane": "I",
+            "Time": "37.99",
+            "Gap": "3.430",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "14",
+            "No.": "224",
+            "Name": "SALM Matthew",
+            "Country Code": "USA",
+            "Pair": "20",
+            "Lane": "I",
+            "Time": "38.03",
+            "Gap": "3.470",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "15",
+            "No.": "233",
+            "Name": "HART-GORMAN Samuel",
+            "Country Code": "USA",
+            "Pair": "10",
+            "Lane": "I",
+            "Time": "38.34",
+            "Gap": "3.780",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "16",
+            "No.": "230",
+            "Name": "MARTIN Riley",
+            "Country Code": "USA",
+            "Pair": "18",
+            "Lane": "O",
+            "Time": "38.41",
+            "Gap": "3.850",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "17",
+            "No.": "203",
+            "Name": "LEE Colin",
+            "Country Code": "USA",
+            "Pair": "14",
+            "Lane": "O",
+            "Time": "38.53",
+            "Gap": "3.970",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "18",
+            "No.": "220",
+            "Name": "COLLINS Kieran",
+            "Country Code": "USA",
+            "Pair": "16",
+            "Lane": "O",
+            "Time": "38.60",
+            "Gap": "4.040",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "19",
+            "No.": "200",
+            "Name": "QUINN Anson",
+            "Country Code": "USA",
+            "Pair": "17",
+            "Lane": "I",
+            "Time": "38.62",
+            "Gap": "4.060",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "20",
+            "No.": "226",
+            "Name": "HUBBS Michael",
+            "Country Code": "USA",
+            "Pair": "17",
+            "Lane": "O",
+            "Time": "38.73",
+            "Gap": "4.170",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "21",
+            "No.": "219",
+            "Name": "DUNFEE Kelin",
+            "Country Code": "USA",
+            "Pair": "1",
+            "Lane": "I",
+            "Time": "39.11",
+            "Gap": "4.550",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "22",
+            "No.": "236",
+            "Name": "MASTRUP Sune",
+            "Country Code": "DEN",
+            "Pair": "15",
+            "Lane": "I",
+            "Time": "39.15",
+            "Gap": "4.590",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "23",
+            "No.": "201",
+            "Name": "KONDURU Ashwin",
+            "Country Code": "IND",
+            "Pair": "15",
+            "Lane": "O",
+            "Time": "39.33",
+            "Gap": "4.770",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "24",
+            "No.": "211",
+            "Name": "ORD Gavin",
+            "Country Code": "USA",
+            "Pair": "14",
+            "Lane": "I",
+            "Time": "39.39",
+            "Gap": "4.830",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "25",
+            "No.": "213",
+            "Name": "SCHLICHTING Henry",
+            "Country Code": "USA",
+            "Pair": "13",
+            "Lane": "I",
+            "Time": "39.46",
+            "Gap": "4.900",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "26",
+            "No.": "208",
+            "Name": "NAGEL Edward",
+            "Country Code": "USA",
+            "Pair": "11",
+            "Lane": "I",
+            "Time": "39.48",
+            "Gap": "4.920",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "27",
+            "No.": "234",
+            "Name": "EPPERSON Sebastian",
+            "Country Code": "USA",
+            "Pair": "12",
+            "Lane": "O",
+            "Time": "39.55",
+            "Gap": "4.990",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "28",
+            "No.": "237",
+            "Name": "ELATTAOUI Tariq",
+            "Country Code": "USA",
+            "Pair": "13",
+            "Lane": "O",
+            "Time": "39.57",
+            "Gap": "5.010",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "29",
+            "No.": "238",
+            "Name": "PIERCE Thomas",
+            "Country Code": "USA",
+            "Pair": "10",
+            "Lane": "O",
+            "Time": "39.86",
+            "Gap": "5.300",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "30",
+            "No.": "223",
+            "Name": "KUROWSKI Matthew",
+            "Country Code": "USA",
+            "Pair": "11",
+            "Lane": "O",
+            "Time": "39.92",
+            "Gap": "5.360",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "31",
+            "No.": "215",
+            "Name": "OH Jayden",
+            "Country Code": "USA",
+            "Pair": "8",
+            "Lane": "O",
+            "Time": "40.37",
+            "Gap": "5.810",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "32",
+            "No.": "231",
+            "Name": "HASTINGS Roman",
+            "Country Code": "USA",
+            "Pair": "7",
+            "Lane": "O",
+            "Time": "40.53",
+            "Gap": "5.970",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "33",
+            "No.": "228",
+            "Name": "NESS Ole Bjornsmoen",
+            "Country Code": "NOR",
+            "Pair": "1",
+            "Lane": "O",
+            "Time": "40.58",
+            "Gap": "6.020",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "34",
+            "No.": "240",
+            "Name": "ARCHULETTA Uel",
+            "Country Code": "USA",
+            "Pair": "12",
+            "Lane": "I",
+            "Time": "40.62",
+            "Gap": "6.060",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "35",
+            "No.": "241",
+            "Name": "FEATHERSTONE Kevin",
+            "Country Code": "USA",
+            "Pair": "9",
+            "Lane": "I",
+            "Time": "41.62",
+            "Gap": "7.060",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "36",
+            "No.": "221",
+            "Name": "ESSEX Kyle",
+            "Country Code": "USA",
+            "Pair": "7",
+            "Lane": "I",
+            "Time": "41.89",
+            "Gap": "7.330",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "37",
+            "No.": "207",
+            "Name": "PRICE Dawson",
+            "Country Code": "USA",
+            "Pair": "8",
+            "Lane": "I",
+            "Time": "42.50",
+            "Gap": "7.940",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "38",
+            "No.": "259",
+            "Name": "de BOCK Nickolas",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "I",
+            "Time": "42.75",
+            "Gap": "8.190",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "39",
+            "No.": "229",
+            "Name": "GOOD Paul",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "O",
+            "Time": "42.87",
+            "Gap": "8.310",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "40",
+            "No.": "216",
+            "Name": "TERWILLIGER Jeff",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "I",
+            "Time": "43.54",
+            "Gap": "8.980",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "41",
+            "No.": "222",
+            "Name": "de GROOT Kyler",
+            "Country Code": "USA",
+            "Pair": "9",
+            "Lane": "O",
+            "Time": "43.62",
+            "Gap": "9.060",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "42",
+            "No.": "239",
+            "Name": "LEE Tyler",
+            "Country Code": "USA",
+            "Pair": "6",
+            "Lane": "O",
+            "Time": "43.93",
+            "Gap": "9.370",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "43",
+            "No.": "225",
+            "Name": "TRIMBLE Matthew",
+            "Country Code": "USA",
+            "Pair": "6",
+            "Lane": "I",
+            "Time": "44.18",
+            "Gap": "9.620",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "44",
+            "No.": "217",
+            "Name": "KRIETER Joshua",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "45.20",
+            "Gap": "10.640",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "45",
+            "No.": "218",
+            "Name": "WOBESER Keith",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "O",
+            "Time": "45.60",
+            "Gap": "11.040",
+            "Note": null
+          }
+        },
+        {
+          "page": 9,
+          "fields": {
+            "Rank": "46",
+            "No.": "205",
+            "Name": "GREENE Daniel",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "O",
+            "Time": "50.49",
+            "Gap": "15.930",
+            "Note": null
+          }
+        },
+        {
+          "page": 10,
+          "fields": {
+            "Rank": "47",
+            "No.": "210",
+            "Name": "GROEN Gary",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "1:01.61",
+            "Gap": "27.050",
+            "Note": null
+          }
+        },
+        {
+          "page": 10,
+          "fields": {
+            "Rank": null,
+            "No.": "256",
+            "Name": "HURST David",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "I",
+            "Time": "DQ",
+            "Gap": null,
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "Mixed 1500 m COL Championships",
+      "distance": 1500,
+      "unit": "metres",
+      "group": "Mixed",
+      "rows": [
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "1",
+            "No.": "251",
+            "Name": "VERDUGO Angelo",
+            "Country Code": "COL",
+            "Pair": "8",
+            "Lane": "O",
+            "Time": "1:57.01",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "2",
+            "No.": "248",
+            "Name": "LENIS ANGARITA Kevin Alejandro",
+            "Country Code": "COL",
+            "Pair": "5",
+            "Lane": "O",
+            "Time": "1:58.26",
+            "Gap": "1.250",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "3",
+            "No.": "252",
+            "Name": "ZAPATA Daniel",
+            "Country Code": "COL",
+            "Pair": "6",
+            "Lane": "I",
+            "Time": "1:59.52",
+            "Gap": "2.510",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "4",
+            "No.": "253",
+            "Name": "TIRADO German",
+            "Country Code": "COL",
+            "Pair": "6",
+            "Lane": "O",
+            "Time": "2:00.56",
+            "Gap": "3.550",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "5",
+            "No.": "249",
+            "Name": "BARRIOS HERRENO Nicolas Rodrigo",
+            "Country Code": "COL",
+            "Pair": "1",
+            "Lane": "I",
+            "Time": "2:03.35",
+            "Gap": "6.340",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "6",
+            "No.": "247",
+            "Name": "MANTILLA PINILLA Juan Jacobo",
+            "Country Code": "COL",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "2:04.35",
+            "Gap": "7.340",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "7",
+            "No.": "245",
+            "Name": "TASCON HOLGUIN Jhon Edwar",
+            "Country Code": "COL",
+            "Pair": "5",
+            "Lane": "I",
+            "Time": "2:06.35",
+            "Gap": "9.340",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "8",
+            "No.": "250",
+            "Name": "ACOSTA CANDIA Juan Carlos",
+            "Country Code": "COL",
+            "Pair": "7",
+            "Lane": "I",
+            "Time": "2:06.61",
+            "Gap": "9.600",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "9",
+            "No.": "246",
+            "Name": "VASQUEZ VILLARREAL Santiago",
+            "Country Code": "COL",
+            "Pair": "4",
+            "Lane": "O",
+            "Time": "2:06.68",
+            "Gap": "9.670",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "10",
+            "No.": "126",
+            "Name": "CASTRO MOSQUERA Kollin Andrea",
+            "Country Code": "COL",
+            "Pair": "3",
+            "Lane": "O",
+            "Time": "2:08.58",
+            "Gap": "11.570",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "11",
+            "No.": "124",
+            "Name": "VARGAS Isabella",
+            "Country Code": "COL",
+            "Pair": "3",
+            "Lane": "I",
+            "Time": "2:14.02",
+            "Gap": "17.010",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "12",
+            "No.": "123",
+            "Name": "GIRALDO VASQEUZ Yicel Camila",
+            "Country Code": "COL",
+            "Pair": "4",
+            "Lane": "I",
+            "Time": "2:14.15",
+            "Gap": "17.140",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "13",
+            "No.": "122",
+            "Name": "RUEDA Gabriela Isabel",
+            "Country Code": "COL",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "2:18.92",
+            "Gap": "21.910",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "14",
+            "No.": "125",
+            "Name": "SIATAMA Karen",
+            "Country Code": "COL",
+            "Pair": "7",
+            "Lane": "O",
+            "Time": "2:18.94",
+            "Gap": "21.930",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": "15",
+            "No.": "121",
+            "Name": "RINCON CARDOZO Manuela",
+            "Country Code": "COL",
+            "Pair": "1",
+            "Lane": "O",
+            "Time": "2:27.05",
+            "Gap": "30.040",
+            "Note": null
+          }
+        },
+        {
+          "page": 14,
+          "fields": {
+            "Rank": null,
+            "No.": "244",
+            "Name": "MARIN Pablo",
+            "Country Code": "COL",
+            "Pair": "8",
+            "Lane": "I",
+            "Time": "DNF",
+            "Gap": null,
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "Women 1500 m",
+      "distance": 1500,
+      "unit": "metres",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "1",
+            "No.": "116",
+            "Name": "YDE Piper",
+            "Country Code": "USA",
+            "Pair": "8",
+            "Lane": "O",
+            "Time": "2:03.31",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "2",
+            "No.": "114",
+            "Name": "LINDENSKOV Natascha",
+            "Country Code": "DEN",
+            "Pair": "7",
+            "Lane": "O",
+            "Time": "2:05.48",
+            "Gap": "2.170",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "3",
+            "No.": "107",
+            "Name": "SHOBE Ilsa",
+            "Country Code": "USA",
+            "Pair": "8",
+            "Lane": "I",
+            "Time": "2:08.47",
+            "Gap": "5.160",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "4",
+            "No.": "109",
+            "Name": "WHITCOMB Keeley",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "I",
+            "Time": "2:08.79",
+            "Gap": "5.480",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "5",
+            "No.": "103",
+            "Name": "KIMBER Ana",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "I",
+            "Time": "2:12.22",
+            "Gap": "8.910",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "6",
+            "No.": "102",
+            "Name": "ACOSTA Amy",
+            "Country Code": "ECU",
+            "Pair": "6",
+            "Lane": "O",
+            "Time": "2:12.45",
+            "Gap": "9.140",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "7",
+            "No.": "110",
+            "Name": "PAES Larissa",
+            "Country Code": "BRA",
+            "Pair": "7",
+            "Lane": "I",
+            "Time": "2:14.50",
+            "Gap": "11.190",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "8",
+            "No.": "105",
+            "Name": "FORRER Evie",
+            "Country Code": "USA",
+            "Pair": "6",
+            "Lane": "I",
+            "Time": "2:15.97",
+            "Gap": "12.660",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "9",
+            "No.": "119",
+            "Name": "SU Selena",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "O",
+            "Time": "2:17.25",
+            "Gap": "13.940",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "10",
+            "No.": "100",
+            "Name": "OH Aileen",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "I",
+            "Time": "2:19.10",
+            "Gap": "15.790",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "11",
+            "No.": "115",
+            "Name": "RODRIGUE-HASSELBACK Nathalie",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "O",
+            "Time": "2:23.84",
+            "Gap": "20.530",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "12",
+            "No.": "128",
+            "Name": "HAN Audrey",
+            "Country Code": "USA",
+            "Pair": "1",
+            "Lane": "O",
+            "Time": "2:24.35",
+            "Gap": "21.040",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "13",
+            "No.": "118",
+            "Name": "CUSHMAN Sara",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "2:25.47",
+            "Gap": "22.160",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "14",
+            "No.": "101",
+            "Name": "LA Allison",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "2:26.07",
+            "Gap": "22.760",
+            "Note": null
+          }
+        },
+        {
+          "page": 16,
+          "fields": {
+            "Rank": "15",
+            "No.": "108",
+            "Name": "SONG Juliette",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "O",
+            "Time": "2:27.45",
+            "Gap": "24.140",
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "Men 1500 m",
+      "distance": 1500,
+      "unit": "metres",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "1",
+            "No.": "202",
+            "Name": "HERMAN Auggie",
+            "Country Code": "USA",
+            "Pair": "21",
+            "Lane": "I",
+            "Time": "1:48.19",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "2",
+            "No.": "260",
+            "Name": "SILK William",
+            "Country Code": "USA",
+            "Pair": "20",
+            "Lane": "O",
+            "Time": "1:50.14",
+            "Gap": "1.950",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "3",
+            "No.": "235",
+            "Name": "ICHIBA Shota",
+            "Country Code": "JPN",
+            "Pair": "19",
+            "Lane": "I",
+            "Time": "1:50.82",
+            "Gap": "2.630",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "4",
+            "No.": "214",
+            "Name": "HARBISON Herb",
+            "Country Code": "USA",
+            "Pair": "20",
+            "Lane": "I",
+            "Time": "1:51.99",
+            "Gap": "3.800",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "5",
+            "No.": "233",
+            "Name": "HART-GORMAN Samuel",
+            "Country Code": "USA",
+            "Pair": "16",
+            "Lane": "O",
+            "Time": "1:52.26",
+            "Gap": "4.070",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "6",
+            "No.": "227",
+            "Name": "MASTRUP Niclas",
+            "Country Code": "DEN",
+            "Pair": "21",
+            "Lane": "O",
+            "Time": "1:52.79",
+            "Gap": "4.600",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "7",
+            "No.": "243",
+            "Name": "JENSEN Zachary",
+            "Country Code": "USA",
+            "Pair": "16",
+            "Lane": "I",
+            "Time": "1:53.51",
+            "Gap": "5.320",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "8",
+            "No.": "219",
+            "Name": "DUNFEE Kelin",
+            "Country Code": "USA",
+            "Pair": "19",
+            "Lane": "O",
+            "Time": "1:53.99",
+            "Gap": "5.800",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "9",
+            "No.": "257",
+            "Name": "SIEBERT Finn",
+            "Country Code": "USA",
+            "Pair": "18",
+            "Lane": "I",
+            "Time": "1:54.15",
+            "Gap": "5.960",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "10",
+            "No.": "206",
+            "Name": "PROVOD David",
+            "Country Code": "USA",
+            "Pair": "17",
+            "Lane": "O",
+            "Time": "1:54.74",
+            "Gap": "6.550",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "11",
+            "No.": "228",
+            "Name": "NESS Ole Bjornsmoen",
+            "Country Code": "NOR",
+            "Pair": "13",
+            "Lane": "O",
+            "Time": "1:55.27",
+            "Gap": "7.080",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "12",
+            "No.": "224",
+            "Name": "SALM Matthew",
+            "Country Code": "USA",
+            "Pair": "17",
+            "Lane": "I",
+            "Time": "1:55.80",
+            "Gap": "7.610",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "13",
+            "No.": "236",
+            "Name": "MASTRUP Sune",
+            "Country Code": "DEN",
+            "Pair": "14",
+            "Lane": "O",
+            "Time": "1:56.42",
+            "Gap": "8.230",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "14",
+            "No.": "200",
+            "Name": "QUINN Anson",
+            "Country Code": "USA",
+            "Pair": "15",
+            "Lane": "I",
+            "Time": "1:57.91",
+            "Gap": "9.720",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "15",
+            "No.": "211",
+            "Name": "ORD Gavin",
+            "Country Code": "USA",
+            "Pair": "13",
+            "Lane": "I",
+            "Time": "1:58.11",
+            "Gap": "9.920",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "16",
+            "No.": "213",
+            "Name": "SCHLICHTING Henry",
+            "Country Code": "USA",
+            "Pair": "18",
+            "Lane": "O",
+            "Time": "1:59.41",
+            "Gap": "11.220",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "17",
+            "No.": "223",
+            "Name": "KUROWSKI Matthew",
+            "Country Code": "USA",
+            "Pair": "15",
+            "Lane": "O",
+            "Time": "1:59.69",
+            "Gap": "11.500",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "18",
+            "No.": "226",
+            "Name": "HUBBS Michael",
+            "Country Code": "USA",
+            "Pair": "11",
+            "Lane": "I",
+            "Time": "2:00.34",
+            "Gap": "12.150",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "19",
+            "No.": "203",
+            "Name": "LEE Colin",
+            "Country Code": "USA",
+            "Pair": "12",
+            "Lane": "O",
+            "Time": "2:00.92",
+            "Gap": "12.730",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "20",
+            "No.": "237",
+            "Name": "ELATTAOUI Tariq",
+            "Country Code": "USA",
+            "Pair": "14",
+            "Lane": "I",
+            "Time": "2:01.03",
+            "Gap": "12.840",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "21",
+            "No.": "230",
+            "Name": "MARTIN Riley",
+            "Country Code": "USA",
+            "Pair": "12",
+            "Lane": "I",
+            "Time": "2:01.26",
+            "Gap": "13.070",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "22",
+            "No.": "201",
+            "Name": "KONDURU Ashwin",
+            "Country Code": "IND",
+            "Pair": "11",
+            "Lane": "O",
+            "Time": "2:01.81",
+            "Gap": "13.620",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "23",
+            "No.": "234",
+            "Name": "EPPERSON Sebastian",
+            "Country Code": "USA",
+            "Pair": "9",
+            "Lane": "O",
+            "Time": "2:03.35",
+            "Gap": "15.160",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "24",
+            "No.": "220",
+            "Name": "COLLINS Kieran",
+            "Country Code": "USA",
+            "Pair": "10",
+            "Lane": "O",
+            "Time": "2:03.78",
+            "Gap": "15.590",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "25",
+            "No.": "240",
+            "Name": "ARCHULETTA Uel",
+            "Country Code": "USA",
+            "Pair": "10",
+            "Lane": "I",
+            "Time": "2:04.30",
+            "Gap": "16.110",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "26",
+            "No.": "238",
+            "Name": "PIERCE Thomas",
+            "Country Code": "USA",
+            "Pair": "8",
+            "Lane": "O",
+            "Time": "2:06.08",
+            "Gap": "17.890",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "27",
+            "No.": "222",
+            "Name": "de GROOT Kyler",
+            "Country Code": "USA",
+            "Pair": "8",
+            "Lane": "I",
+            "Time": "2:08.11",
+            "Gap": "19.920",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "28",
+            "No.": "231",
+            "Name": "HASTINGS Roman",
+            "Country Code": "USA",
+            "Pair": "6",
+            "Lane": "O",
+            "Time": "2:08.56",
+            "Gap": "20.370",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "29",
+            "No.": "239",
+            "Name": "LEE Tyler",
+            "Country Code": "USA",
+            "Pair": "9",
+            "Lane": "I",
+            "Time": "2:09.06",
+            "Gap": "20.870",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "30",
+            "No.": "215",
+            "Name": "OH Jayden",
+            "Country Code": "USA",
+            "Pair": "7",
+            "Lane": "O",
+            "Time": "2:09.17",
+            "Gap": "20.980",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "31",
+            "No.": "207",
+            "Name": "PRICE Dawson",
+            "Country Code": "USA",
+            "Pair": "7",
+            "Lane": "I",
+            "Time": "2:11.29",
+            "Gap": "23.100",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "32",
+            "No.": "225",
+            "Name": "TRIMBLE Matthew",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "I",
+            "Time": "2:13.59",
+            "Gap": "25.400",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "33",
+            "No.": "221",
+            "Name": "ESSEX Kyle",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "O",
+            "Time": "2:14.12",
+            "Gap": "25.930",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "34",
+            "No.": "229",
+            "Name": "GOOD Paul",
+            "Country Code": "USA",
+            "Pair": "6",
+            "Lane": "I",
+            "Time": "2:14.33",
+            "Gap": "26.140",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "35",
+            "No.": "259",
+            "Name": "de BOCK Nickolas",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "I",
+            "Time": "2:14.36",
+            "Gap": "26.170",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "36",
+            "No.": "216",
+            "Name": "TERWILLIGER Jeff",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "2:14.46",
+            "Gap": "26.270",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "37",
+            "No.": "208",
+            "Name": "NAGEL Edward",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "O",
+            "Time": "2:15.05",
+            "Gap": "26.860",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "38",
+            "No.": "218",
+            "Name": "WOBESER Keith",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "O",
+            "Time": "2:17.18",
+            "Gap": "28.990",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "39",
+            "No.": "217",
+            "Name": "KRIETER Joshua",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "I",
+            "Time": "2:22.84",
+            "Gap": "34.650",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "40",
+            "No.": "205",
+            "Name": "GREENE Daniel",
+            "Country Code": "USA",
+            "Pair": "1",
+            "Lane": "O",
+            "Time": "2:36.51",
+            "Gap": "48.320",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "41",
+            "No.": "256",
+            "Name": "HURST David",
+            "Country Code": "USA",
+            "Pair": "1",
+            "Lane": "I",
+            "Time": "2:46.87",
+            "Gap": "58.680",
+            "Note": null
+          }
+        },
+        {
+          "page": 18,
+          "fields": {
+            "Rank": "42",
+            "No.": "210",
+            "Name": "GROEN Gary",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "3:21.23",
+            "Gap": "1:33.040",
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "Mixed 1000 m COL Championships",
+      "distance": 1000,
+      "unit": "metres",
+      "group": "Mixed",
+      "rows": [
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "1",
+            "No.": "251",
+            "Name": "VERDUGO Angelo",
+            "Country Code": "COL",
+            "Pair": "8",
+            "Lane": "O",
+            "Time": "1:14.04",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "2",
+            "No.": "250",
+            "Name": "ACOSTA CANDIA Juan Carlos",
+            "Country Code": "COL",
+            "Pair": "8",
+            "Lane": "I",
+            "Time": "1:17.25",
+            "Gap": "3.210",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "3",
+            "No.": "245",
+            "Name": "TASCON HOLGUIN Jhon Edwar",
+            "Country Code": "COL",
+            "Pair": "1",
+            "Lane": "I",
+            "Time": "1:17.85",
+            "Gap": "3.810",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "4",
+            "No.": "244",
+            "Name": "MARIN Pablo",
+            "Country Code": "COL",
+            "Pair": "7",
+            "Lane": "O",
+            "Time": "1:17.93",
+            "Gap": "3.890",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "5",
+            "No.": "253",
+            "Name": "TIRADO German",
+            "Country Code": "COL",
+            "Pair": "4",
+            "Lane": "O",
+            "Time": "1:17.97",
+            "Gap": "3.930",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "6",
+            "No.": "248",
+            "Name": "LENIS ANGARITA Kevin Alejandro",
+            "Country Code": "COL",
+            "Pair": "3",
+            "Lane": "O",
+            "Time": "1:18.38",
+            "Gap": "4.340",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "7",
+            "No.": "247",
+            "Name": "MANTILLA PINILLA Juan Jacobo",
+            "Country Code": "COL",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "1:19.82",
+            "Gap": "5.780",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "8",
+            "No.": "246",
+            "Name": "VASQUEZ VILLARREAL Santiago",
+            "Country Code": "COL",
+            "Pair": "1",
+            "Lane": "O",
+            "Time": "1:20.68",
+            "Gap": "6.640",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "9",
+            "No.": "126",
+            "Name": "CASTRO MOSQUERA Kollin Andrea",
+            "Country Code": "COL",
+            "Pair": "6",
+            "Lane": "I",
+            "Time": "1:21.69",
+            "Gap": "7.650",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "10",
+            "No.": "124",
+            "Name": "VARGAS Isabella",
+            "Country Code": "COL",
+            "Pair": "6",
+            "Lane": "O",
+            "Time": "1:25.81",
+            "Gap": "11.770",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "11",
+            "No.": "254",
+            "Name": "ESTEVEZ Thomas",
+            "Country Code": "COL",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "1:26.24",
+            "Gap": "12.200",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "12",
+            "No.": "125",
+            "Name": "SIATAMA Karen",
+            "Country Code": "COL",
+            "Pair": "7",
+            "Lane": "I",
+            "Time": "1:26.80",
+            "Gap": "12.760",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "13",
+            "No.": "123",
+            "Name": "GIRALDO VASQEUZ Yicel Camila",
+            "Country Code": "COL",
+            "Pair": "5",
+            "Lane": "O",
+            "Time": "1:29.84",
+            "Gap": "15.800",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "14",
+            "No.": "122",
+            "Name": "RUEDA Gabriela Isabel",
+            "Country Code": "COL",
+            "Pair": "4",
+            "Lane": "I",
+            "Time": "1:30.62",
+            "Gap": "16.580",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": "15",
+            "No.": "121",
+            "Name": "RINCON CARDOZO Manuela",
+            "Country Code": "COL",
+            "Pair": "3",
+            "Lane": "I",
+            "Time": "1:34.57",
+            "Gap": "20.530",
+            "Note": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rank": null,
+            "No.": "249",
+            "Name": "BARRIOS HERRENO Nicolas Rodrigo",
+            "Country Code": "COL",
+            "Pair": "5",
+            "Lane": "I",
+            "Time": "DQ",
+            "Gap": null,
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "Women 1000 m",
+      "distance": 1000,
+      "unit": "metres",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "1",
+            "No.": "112",
+            "Name": "ARO Miki",
+            "Country Code": "JPN",
+            "Pair": "9",
+            "Lane": "I",
+            "Time": "1:17.98",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "2",
+            "No.": "106",
+            "Name": "ISHIOKA Fumina",
+            "Country Code": "JPN",
+            "Pair": "8",
+            "Lane": "O",
+            "Time": "1:19.67",
+            "Gap": "1.690",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "3",
+            "No.": "116",
+            "Name": "YDE Piper",
+            "Country Code": "USA",
+            "Pair": "10",
+            "Lane": "O",
+            "Time": "1:20.06",
+            "Gap": "2.080",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "4",
+            "No.": "107",
+            "Name": "SHOBE Ilsa",
+            "Country Code": "USA",
+            "Pair": "10",
+            "Lane": "I",
+            "Time": "1:21.89",
+            "Gap": "3.910",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "5",
+            "No.": "111",
+            "Name": "WILLIAMS Libby",
+            "Country Code": "USA",
+            "Pair": "7",
+            "Lane": "I",
+            "Time": "1:22.09",
+            "Gap": "4.110",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "6",
+            "No.": "109",
+            "Name": "WHITCOMB Keeley",
+            "Country Code": "USA",
+            "Pair": "7",
+            "Lane": "O",
+            "Time": "1:22.21",
+            "Gap": "4.230",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "7",
+            "No.": "113",
+            "Name": "ITO Miki",
+            "Country Code": "JPN",
+            "Pair": "6",
+            "Lane": "I",
+            "Time": "1:22.46",
+            "Gap": "4.480",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "8",
+            "No.": "102",
+            "Name": "ACOSTA Amy",
+            "Country Code": "ECU",
+            "Pair": "5",
+            "Lane": "I",
+            "Time": "1:22.48",
+            "Gap": "4.500",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "9",
+            "No.": "114",
+            "Name": "LINDENSKOV Natascha",
+            "Country Code": "DEN",
+            "Pair": "9",
+            "Lane": "O",
+            "Time": "1:22.95",
+            "Gap": "4.970",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "10",
+            "No.": "103",
+            "Name": "KIMBER Ana",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "I",
+            "Time": "1:23.65",
+            "Gap": "5.670",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "11",
+            "No.": "110",
+            "Name": "PAES Larissa",
+            "Country Code": "BRA",
+            "Pair": "8",
+            "Lane": "I",
+            "Time": "1:24.70",
+            "Gap": "6.720",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "12",
+            "No.": "105",
+            "Name": "FORRER Evie",
+            "Country Code": "USA",
+            "Pair": "6",
+            "Lane": "O",
+            "Time": "1:25.26",
+            "Gap": "7.280",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "13",
+            "No.": "120",
+            "Name": "KOTWAL Shruti",
+            "Country Code": "IND",
+            "Pair": "5",
+            "Lane": "O",
+            "Time": "1:26.59",
+            "Gap": "8.610",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "14",
+            "No.": "100",
+            "Name": "OH Aileen",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "O",
+            "Time": "1:28.26",
+            "Gap": "10.280",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "15",
+            "No.": "119",
+            "Name": "SU Selena",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "I",
+            "Time": "1:28.84",
+            "Gap": "10.860",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "16",
+            "No.": "115",
+            "Name": "RODRIGUE-HASSELBACK Nathalie",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "O",
+            "Time": "1:31.80",
+            "Gap": "13.820",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "17",
+            "No.": "128",
+            "Name": "HAN Audrey",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "1:32.83",
+            "Gap": "14.850",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "18",
+            "No.": "108",
+            "Name": "SONG Juliette",
+            "Country Code": "USA",
+            "Pair": "1",
+            "Lane": "I",
+            "Time": "1:33.13",
+            "Gap": "15.150",
+            "Note": null
+          }
+        },
+        {
+          "page": 24,
+          "fields": {
+            "Rank": "19",
+            "No.": "118",
+            "Name": "CUSHMAN Sara",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "1:36.09",
+            "Gap": "18.110",
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "Men 1000 m",
+      "distance": 1000,
+      "unit": "metres",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "1",
+            "No.": "242",
+            "Name": "HIROSE Yuta",
+            "Country Code": "JPN",
+            "Pair": "23",
+            "Lane": "O",
+            "Time": "1:09.54",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "2",
+            "No.": "202",
+            "Name": "HERMAN Auggie",
+            "Country Code": "USA",
+            "Pair": "21",
+            "Lane": "O",
+            "Time": "1:09.81",
+            "Gap": "0.270",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "3",
+            "No.": "235",
+            "Name": "ICHIBA Shota",
+            "Country Code": "JPN",
+            "Pair": "21",
+            "Lane": "I",
+            "Time": "1:10.61",
+            "Gap": "1.070",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "4",
+            "No.": "204",
+            "Name": "YODA Daigo",
+            "Country Code": "JPN",
+            "Pair": "20",
+            "Lane": "O",
+            "Time": "1:12.24",
+            "Gap": "2.700",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "5",
+            "No.": "227",
+            "Name": "MASTRUP Niclas",
+            "Country Code": "DEN",
+            "Pair": "22",
+            "Lane": "O",
+            "Time": "1:12.78",
+            "Gap": "3.240",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "6",
+            "No.": "257",
+            "Name": "SIEBERT Finn",
+            "Country Code": "USA",
+            "Pair": "18",
+            "Lane": "I",
+            "Time": "1:12.82",
+            "Gap": "3.280",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "7",
+            "No.": "212",
+            "Name": "WHEELOCK George",
+            "Country Code": "USA",
+            "Pair": "19",
+            "Lane": "I",
+            "Time": "1:12.92",
+            "Gap": "3.380",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "8",
+            "No.": "243",
+            "Name": "JENSEN Zachary",
+            "Country Code": "USA",
+            "Pair": "22",
+            "Lane": "I",
+            "Time": "1:13.58",
+            "Gap": "4.040",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "9",
+            "No.": "258",
+            "Name": "RILEY Maison",
+            "Country Code": "USA",
+            "Pair": "15",
+            "Lane": "I",
+            "Time": "1:13.66",
+            "Gap": "4.120",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "10",
+            "No.": "206",
+            "Name": "PROVOD David",
+            "Country Code": "USA",
+            "Pair": "20",
+            "Lane": "I",
+            "Time": "1:13.88",
+            "Gap": "4.340",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "11",
+            "No.": "232",
+            "Name": "KOTANI Ryoutaro",
+            "Country Code": "JPN",
+            "Pair": "15",
+            "Lane": "O",
+            "Time": "1:14.05",
+            "Gap": "4.510",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "12",
+            "No.": "233",
+            "Name": "HART-GORMAN Samuel",
+            "Country Code": "USA",
+            "Pair": "19",
+            "Lane": "O",
+            "Time": "1:14.42",
+            "Gap": "4.880",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "13",
+            "No.": "224",
+            "Name": "SALM Matthew",
+            "Country Code": "USA",
+            "Pair": "23",
+            "Lane": "I",
+            "Time": "1:15.04",
+            "Gap": "5.500",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "14",
+            "No.": "200",
+            "Name": "QUINN Anson",
+            "Country Code": "USA",
+            "Pair": "16",
+            "Lane": "I",
+            "Time": "1:15.25",
+            "Gap": "5.710",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "15",
+            "No.": "203",
+            "Name": "LEE Colin",
+            "Country Code": "USA",
+            "Pair": "13",
+            "Lane": "I",
+            "Time": "1:16.50",
+            "Gap": "6.960",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "16",
+            "No.": "237",
+            "Name": "ELATTAOUI Tariq",
+            "Country Code": "USA",
+            "Pair": "13",
+            "Lane": "O",
+            "Time": "1:16.56",
+            "Gap": "7.020",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "17",
+            "No.": "211",
+            "Name": "ORD Gavin",
+            "Country Code": "USA",
+            "Pair": "16",
+            "Lane": "O",
+            "Time": "1:16.92",
+            "Gap": "7.380",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "18",
+            "No.": "226",
+            "Name": "HUBBS Michael",
+            "Country Code": "USA",
+            "Pair": "12",
+            "Lane": "O",
+            "Time": "1:17.06",
+            "Gap": "7.520",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "19",
+            "No.": "201",
+            "Name": "KONDURU Ashwin",
+            "Country Code": "IND",
+            "Pair": "12",
+            "Lane": "I",
+            "Time": "1:17.39",
+            "Gap": "7.850",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "20",
+            "No.": "236",
+            "Name": "MASTRUP Sune",
+            "Country Code": "DEN",
+            "Pair": "17",
+            "Lane": "O",
+            "Time": "1:17.48",
+            "Gap": "7.940",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "21",
+            "No.": "228",
+            "Name": "NESS Ole Bjornsmoen",
+            "Country Code": "NOR",
+            "Pair": "11",
+            "Lane": "O",
+            "Time": "1:17.63",
+            "Gap": "8.090",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "22",
+            "No.": "213",
+            "Name": "SCHLICHTING Henry",
+            "Country Code": "USA",
+            "Pair": "18",
+            "Lane": "O",
+            "Time": "1:17.66",
+            "Gap": "8.120",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "23",
+            "No.": "223",
+            "Name": "KUROWSKI Matthew",
+            "Country Code": "USA",
+            "Pair": "14",
+            "Lane": "I",
+            "Time": "1:18.03",
+            "Gap": "8.490",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "24",
+            "No.": "230",
+            "Name": "MARTIN Riley",
+            "Country Code": "USA",
+            "Pair": "9",
+            "Lane": "O",
+            "Time": "1:18.05",
+            "Gap": "8.510",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "25",
+            "No.": "238",
+            "Name": "PIERCE Thomas",
+            "Country Code": "USA",
+            "Pair": "10",
+            "Lane": "I",
+            "Time": "1:18.54",
+            "Gap": "9.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "26",
+            "No.": "234",
+            "Name": "EPPERSON Sebastian",
+            "Country Code": "USA",
+            "Pair": "11",
+            "Lane": "I",
+            "Time": "1:18.96",
+            "Gap": "9.420",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "27",
+            "No.": "220",
+            "Name": "COLLINS Kieran",
+            "Country Code": "USA",
+            "Pair": "14",
+            "Lane": "O",
+            "Time": "1:19.31",
+            "Gap": "9.770",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "28",
+            "No.": "240",
+            "Name": "ARCHULETTA Uel",
+            "Country Code": "USA",
+            "Pair": "10",
+            "Lane": "O",
+            "Time": "1:19.54",
+            "Gap": "10.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "29",
+            "No.": "231",
+            "Name": "HASTINGS Roman",
+            "Country Code": "USA",
+            "Pair": "7",
+            "Lane": "O",
+            "Time": "1:20.64",
+            "Gap": "11.100",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "30",
+            "No.": "221",
+            "Name": "ESSEX Kyle",
+            "Country Code": "USA",
+            "Pair": "6",
+            "Lane": "I",
+            "Time": "1:21.91",
+            "Gap": "12.370",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "31",
+            "No.": "207",
+            "Name": "PRICE Dawson",
+            "Country Code": "USA",
+            "Pair": "6",
+            "Lane": "O",
+            "Time": "1:22.88",
+            "Gap": "13.340",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "32",
+            "No.": "208",
+            "Name": "NAGEL Edward",
+            "Country Code": "USA",
+            "Pair": "7",
+            "Lane": "I",
+            "Time": "1:23.82",
+            "Gap": "14.280",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "33",
+            "No.": "222",
+            "Name": "de GROOT Kyler",
+            "Country Code": "USA",
+            "Pair": "8",
+            "Lane": "O",
+            "Time": "1:24.60",
+            "Gap": "15.060",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "34",
+            "No.": "216",
+            "Name": "TERWILLIGER Jeff",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "I",
+            "Time": "1:25.76",
+            "Gap": "16.220",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "35",
+            "No.": "259",
+            "Name": "de BOCK Nickolas",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "I",
+            "Time": "1:26.06",
+            "Gap": "16.520",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "36",
+            "No.": "229",
+            "Name": "GOOD Paul",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "O",
+            "Time": "1:26.38",
+            "Gap": "16.840",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "37",
+            "No.": "241",
+            "Name": "FEATHERSTONE Kevin",
+            "Country Code": "USA",
+            "Pair": "8",
+            "Lane": "I",
+            "Time": "1:27.53",
+            "Gap": "17.990",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "38",
+            "No.": "239",
+            "Name": "LEE Tyler",
+            "Country Code": "USA",
+            "Pair": "9",
+            "Lane": "I",
+            "Time": "1:27.57",
+            "Gap": "18.030",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "39",
+            "No.": "225",
+            "Name": "TRIMBLE Matthew",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "O",
+            "Time": "1:27.82",
+            "Gap": "18.280",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "40",
+            "No.": "218",
+            "Name": "WOBESER Keith",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "O",
+            "Time": "1:29.57",
+            "Gap": "20.030",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "41",
+            "No.": "217",
+            "Name": "KRIETER Joshua",
+            "Country Code": "USA",
+            "Pair": "1",
+            "Lane": "O",
+            "Time": "1:31.88",
+            "Gap": "22.340",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "42",
+            "No.": "256",
+            "Name": "HURST David",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "1:38.11",
+            "Gap": "28.570",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "43",
+            "No.": "205",
+            "Name": "GREENE Daniel",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "1:40.15",
+            "Gap": "30.610",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": "44",
+            "No.": "210",
+            "Name": "GROEN Gary",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "I",
+            "Time": "2:10.67",
+            "Gap": "1:01.130",
+            "Note": null
+          }
+        },
+        {
+          "page": 27,
+          "fields": {
+            "Rank": null,
+            "No.": "209",
+            "Name": "SILVA Emanuelle",
+            "Country Code": "CHI",
+            "Pair": "17",
+            "Lane": "I",
+            "Time": "DNS",
+            "Gap": null,
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "Mixed 3000 m COL Championships",
+      "distance": 3000,
+      "unit": "metres",
+      "group": "Mixed",
+      "rows": [
+        {
+          "page": 31,
+          "fields": {
+            "Rank": "1",
+            "No.": "247",
+            "Name": "MANTILLA PINILLA Juan Jacobo",
+            "Country Code": "COL",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "4:17.46",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 31,
+          "fields": {
+            "Rank": "2",
+            "No.": "251",
+            "Name": "VERDUGO Angelo",
+            "Country Code": "COL",
+            "Pair": "5",
+            "Lane": "O",
+            "Time": "4:19.14",
+            "Gap": "1.680",
+            "Note": null
+          }
+        },
+        {
+          "page": 31,
+          "fields": {
+            "Rank": "3",
+            "No.": "122",
+            "Name": "RUEDA Gabriela Isabel",
+            "Country Code": "COL",
+            "Pair": "3",
+            "Lane": "O",
+            "Time": "4:37.96",
+            "Gap": "20.500",
+            "Note": null
+          }
+        },
+        {
+          "page": 31,
+          "fields": {
+            "Rank": "4",
+            "No.": "126",
+            "Name": "CASTRO MOSQUERA Kollin Andrea",
+            "Country Code": "COL",
+            "Pair": "1",
+            "Lane": "I",
+            "Time": "4:41.86",
+            "Gap": "24.400",
+            "Note": null
+          }
+        },
+        {
+          "page": 31,
+          "fields": {
+            "Rank": "5",
+            "No.": "125",
+            "Name": "SIATAMA Karen",
+            "Country Code": "COL",
+            "Pair": "4",
+            "Lane": "O",
+            "Time": "4:59.62",
+            "Gap": "42.160",
+            "Note": null
+          }
+        },
+        {
+          "page": 31,
+          "fields": {
+            "Rank": "6",
+            "No.": "121",
+            "Name": "RINCON CARDOZO Manuela",
+            "Country Code": "COL",
+            "Pair": "4",
+            "Lane": "I",
+            "Time": "5:04.52",
+            "Gap": "47.060",
+            "Note": null
+          }
+        },
+        {
+          "page": 31,
+          "fields": {
+            "Rank": null,
+            "No.": "124",
+            "Name": "VARGAS Isabella",
+            "Country Code": "COL",
+            "Pair": "5",
+            "Lane": "I",
+            "Time": "DNF",
+            "Gap": null,
+            "Note": null
+          }
+        },
+        {
+          "page": 31,
+          "fields": {
+            "Rank": null,
+            "No.": "250",
+            "Name": "ACOSTA CANDIA Juan Carlos",
+            "Country Code": "COL",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "DQ",
+            "Gap": null,
+            "Note": null
+          }
+        },
+        {
+          "page": 31,
+          "fields": {
+            "Rank": null,
+            "No.": "123",
+            "Name": "GIRALDO VASQEUZ Yicel Camila",
+            "Country Code": "COL",
+            "Pair": "3",
+            "Lane": "I",
+            "Time": "DQ",
+            "Gap": null,
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "Women 3000 m Quartets",
+      "distance": 3000,
+      "unit": "metres",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 33,
+          "fields": {
+            "Rank": "1",
+            "No.": "114",
+            "Name": "LINDENSKOV Natascha",
+            "Country Code": "DEN",
+            "Pair": "6",
+            "Lane": "O",
+            "Time": "4:15.54",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 33,
+          "fields": {
+            "Rank": "2",
+            "No.": "116",
+            "Name": "YDE Piper",
+            "Country Code": "USA",
+            "Pair": "6",
+            "Lane": "I",
+            "Time": "4:20.24",
+            "Gap": "4.700",
+            "Note": null
+          }
+        },
+        {
+          "page": 33,
+          "fields": {
+            "Rank": "3",
+            "No.": "105",
+            "Name": "FORRER Evie",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "O",
+            "Time": "4:34.56",
+            "Gap": "19.020",
+            "Note": null
+          }
+        },
+        {
+          "page": 33,
+          "fields": {
+            "Rank": "4",
+            "No.": "109",
+            "Name": "WHITCOMB Keeley",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "I",
+            "Time": "4:40.72",
+            "Gap": "25.180",
+            "Note": null
+          }
+        },
+        {
+          "page": 33,
+          "fields": {
+            "Rank": "5",
+            "No.": "119",
+            "Name": "SU Selena",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "O",
+            "Time": "4:49.63",
+            "Gap": "34.090",
+            "Note": null
+          }
+        },
+        {
+          "page": 33,
+          "fields": {
+            "Rank": "6",
+            "No.": "103",
+            "Name": "KIMBER Ana",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "O",
+            "Time": "4:54.22",
+            "Gap": "38.680",
+            "Note": null
+          }
+        },
+        {
+          "page": 33,
+          "fields": {
+            "Rank": "7",
+            "No.": "100",
+            "Name": "OH Aileen",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "I",
+            "Time": "4:57.67",
+            "Gap": "42.130",
+            "Note": null
+          }
+        },
+        {
+          "page": 33,
+          "fields": {
+            "Rank": "8",
+            "No.": "102",
+            "Name": "ACOSTA Amy",
+            "Country Code": "ECU",
+            "Pair": "1",
+            "Lane": "O",
+            "Time": "4:58.15",
+            "Gap": "42.610",
+            "Note": null
+          }
+        },
+        {
+          "page": 33,
+          "fields": {
+            "Rank": "9",
+            "No.": "128",
+            "Name": "HAN Audrey",
+            "Country Code": "USA",
+            "Pair": "1",
+            "Lane": "I",
+            "Time": "5:14.30",
+            "Gap": "58.760",
+            "Note": null
+          }
+        },
+        {
+          "page": 33,
+          "fields": {
+            "Rank": "10",
+            "No.": "118",
+            "Name": "CUSHMAN Sara",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "5:15.46",
+            "Gap": "59.920",
+            "Note": null
+          }
+        },
+        {
+          "page": 33,
+          "fields": {
+            "Rank": "11",
+            "No.": "108",
+            "Name": "SONG Juliette",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "5:17.93",
+            "Gap": "1:02.390",
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "Men 5000 m COL Championships Quartets",
+      "distance": 5000,
+      "unit": "metres",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 35,
+          "fields": {
+            "Rank": "1",
+            "No.": "244",
+            "Name": "MARIN Pablo",
+            "Country Code": "COL",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "6:59.61",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 35,
+          "fields": {
+            "Rank": "2",
+            "No.": "252",
+            "Name": "ZAPATA Daniel",
+            "Country Code": "COL",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "7:07.11",
+            "Gap": "7.500",
+            "Note": null
+          }
+        },
+        {
+          "page": 35,
+          "fields": {
+            "Rank": "3",
+            "No.": "253",
+            "Name": "TIRADO German",
+            "Country Code": "COL",
+            "Pair": "1",
+            "Lane": "I",
+            "Time": "7:42.86",
+            "Gap": "43.250",
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "Men 3000 m Masters Quartets",
+      "distance": 3000,
+      "unit": "metres",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 37,
+          "fields": {
+            "Rank": "1",
+            "No.": "224",
+            "Name": "SALM Matthew",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "O",
+            "Time": "4:21.30",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 37,
+          "fields": {
+            "Rank": "2",
+            "No.": "240",
+            "Name": "ARCHULETTA Uel",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "O",
+            "Time": "4:46.02",
+            "Gap": "24.720",
+            "Note": null
+          }
+        },
+        {
+          "page": 37,
+          "fields": {
+            "Rank": "3",
+            "No.": "216",
+            "Name": "TERWILLIGER Jeff",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "O",
+            "Time": "4:46.07",
+            "Gap": "24.770",
+            "Note": null
+          }
+        },
+        {
+          "page": 37,
+          "fields": {
+            "Rank": "4",
+            "No.": "225",
+            "Name": "TRIMBLE Matthew",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "I",
+            "Time": "4:46.62",
+            "Gap": "25.320",
+            "Note": null
+          }
+        },
+        {
+          "page": 37,
+          "fields": {
+            "Rank": "5",
+            "No.": "218",
+            "Name": "WOBESER Keith",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "I",
+            "Time": "4:52.60",
+            "Gap": "31.300",
+            "Note": null
+          }
+        },
+        {
+          "page": 37,
+          "fields": {
+            "Rank": "6",
+            "No.": "229",
+            "Name": "GOOD Paul",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "I",
+            "Time": "4:55.43",
+            "Gap": "34.130",
+            "Note": null
+          }
+        },
+        {
+          "page": 37,
+          "fields": {
+            "Rank": "7",
+            "No.": "217",
+            "Name": "KRIETER Joshua",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "5:14.85",
+            "Gap": "53.550",
+            "Note": null
+          }
+        },
+        {
+          "page": 37,
+          "fields": {
+            "Rank": "8",
+            "No.": "205",
+            "Name": "GREENE Daniel",
+            "Country Code": "USA",
+            "Pair": "1",
+            "Lane": "I",
+            "Time": "5:40.19",
+            "Gap": "1:18.890",
+            "Note": null
+          }
+        },
+        {
+          "page": 37,
+          "fields": {
+            "Rank": "9",
+            "No.": "210",
+            "Name": "GROEN Gary",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "6:49.74",
+            "Gap": "2:28.440",
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "Men 5000 m Quartets",
+      "distance": 5000,
+      "unit": "metres",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "1",
+            "No.": "219",
+            "Name": "DUNFEE Kelin",
+            "Country Code": "USA",
+            "Pair": "10",
+            "Lane": "I",
+            "Time": "6:25.40",
+            "Gap": "0.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "2",
+            "No.": "260",
+            "Name": "SILK William",
+            "Country Code": "USA",
+            "Pair": "9",
+            "Lane": "I",
+            "Time": "6:41.17",
+            "Gap": "15.770",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "3",
+            "No.": "228",
+            "Name": "NESS Ole Bjornsmoen",
+            "Country Code": "NOR",
+            "Pair": "10",
+            "Lane": "O",
+            "Time": "6:48.91",
+            "Gap": "23.510",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "4",
+            "No.": "233",
+            "Name": "HART-GORMAN Samuel",
+            "Country Code": "USA",
+            "Pair": "8",
+            "Lane": "O",
+            "Time": "6:49.14",
+            "Gap": "23.740",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "5",
+            "No.": "214",
+            "Name": "HARBISON Herb",
+            "Country Code": "USA",
+            "Pair": "9",
+            "Lane": "O",
+            "Time": "6:49.51",
+            "Gap": "24.110",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "6",
+            "No.": "257",
+            "Name": "SIEBERT Finn",
+            "Country Code": "USA",
+            "Pair": "5",
+            "Lane": "O",
+            "Time": "6:59.70",
+            "Gap": "34.300",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "7",
+            "No.": "227",
+            "Name": "MASTRUP Niclas",
+            "Country Code": "DEN",
+            "Pair": "7",
+            "Lane": "O",
+            "Time": "7:09.63",
+            "Gap": "44.230",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "8",
+            "No.": "223",
+            "Name": "KUROWSKI Matthew",
+            "Country Code": "USA",
+            "Pair": "6",
+            "Lane": "I",
+            "Time": "7:11.02",
+            "Gap": "45.620",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "9",
+            "No.": "211",
+            "Name": "ORD Gavin",
+            "Country Code": "USA",
+            "Pair": "7",
+            "Lane": "I",
+            "Time": "7:21.65",
+            "Gap": "56.250",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "10",
+            "No.": "255",
+            "Name": "SKLUTOVSKY Alec",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "I",
+            "Time": "7:25.34",
+            "Gap": "59.940",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "11",
+            "No.": "237",
+            "Name": "ELATTAOUI Tariq",
+            "Country Code": "USA",
+            "Pair": "6",
+            "Lane": "O",
+            "Time": "7:30.59",
+            "Gap": "1:05.190",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "12",
+            "No.": "213",
+            "Name": "SCHLICHTING Henry",
+            "Country Code": "USA",
+            "Pair": "2",
+            "Lane": "O",
+            "Time": "7:31.39",
+            "Gap": "1:05.990",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "13",
+            "No.": "203",
+            "Name": "LEE Colin",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "O",
+            "Time": "7:36.18",
+            "Gap": "1:10.780",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "14",
+            "No.": "201",
+            "Name": "KONDURU Ashwin",
+            "Country Code": "IND",
+            "Pair": "5",
+            "Lane": "I",
+            "Time": "7:37.09",
+            "Gap": "1:11.690",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "15",
+            "No.": "220",
+            "Name": "COLLINS Kieran",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "O",
+            "Time": "7:41.47",
+            "Gap": "1:16.070",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "16",
+            "No.": "239",
+            "Name": "LEE Tyler",
+            "Country Code": "USA",
+            "Pair": "4",
+            "Lane": "I",
+            "Time": "7:44.40",
+            "Gap": "1:19.000",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "17",
+            "No.": "230",
+            "Name": "MARTIN Riley",
+            "Country Code": "USA",
+            "Pair": "1",
+            "Lane": "O",
+            "Time": "8:00.51",
+            "Gap": "1:35.110",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": "18",
+            "No.": "208",
+            "Name": "NAGEL Edward",
+            "Country Code": "USA",
+            "Pair": "3",
+            "Lane": "I",
+            "Time": "8:34.45",
+            "Gap": "2:09.050",
+            "Note": null
+          }
+        },
+        {
+          "page": 39,
+          "fields": {
+            "Rank": null,
+            "No.": "236",
+            "Name": "MASTRUP Sune",
+            "Country Code": "DEN",
+            "Pair": "8",
+            "Lane": "I",
+            "Time": "DNF",
+            "Gap": null,
+            "Note": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "US Speedskating AmCup Final Qualifier Women's Mass Start #1",
+      "distance": 10,
+      "unit": "laps",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 42,
+          "fields": {
+            "Rank": "1",
+            "Name": "Yde Piper",
+            "#": "302",
+            "Skater #": "116",
+            "Sprint #1": "1",
+            "Sprint #2": "1",
+            "Final Sprint": "30",
+            "Race Points": "32",
+            "Time": "6:36.06"
+          }
+        },
+        {
+          "page": 42,
+          "fields": {
+            "Rank": "2",
+            "Name": "Lindenskov Natasha",
+            "#": "301",
+            "Skater #": "114",
+            "Sprint #1": "2",
+            "Sprint #2": "3",
+            "Final Sprint": "20",
+            "Race Points": "25",
+            "Time": "6:37.05"
+          }
+        },
+        {
+          "page": 42,
+          "fields": {
+            "Rank": "3",
+            "Name": "Whitcomb Keeley",
+            "#": "304",
+            "Skater #": "109",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": "10",
+            "Race Points": "10",
+            "Time": "6:38.99"
+          }
+        },
+        {
+          "page": 42,
+          "fields": {
+            "Rank": "4",
+            "Name": "Forrer Evie",
+            "#": "303",
+            "Skater #": "105",
+            "Sprint #1": "3",
+            "Sprint #2": null,
+            "Final Sprint": "4",
+            "Race Points": "7",
+            "Time": "6:40.96"
+          }
+        },
+        {
+          "page": 42,
+          "fields": {
+            "Rank": "5",
+            "Name": "Cushman Sara",
+            "#": "313",
+            "Skater #": "118",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": "2",
+            "Race Points": "2",
+            "Time": "6:48.85"
+          }
+        },
+        {
+          "page": 42,
+          "fields": {
+            "Rank": "6",
+            "Name": "Siatama Karen",
+            "#": "306",
+            "Skater #": "125",
+            "Sprint #1": null,
+            "Sprint #2": "2",
+            "Final Sprint": null,
+            "Race Points": "2",
+            "Time": "6:57.04"
+          }
+        },
+        {
+          "page": 42,
+          "fields": {
+            "Rank": "7",
+            "Name": "Oh Aileen",
+            "#": "310",
+            "Skater #": "100",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": "1",
+            "Race Points": "1",
+            "Time": "6:52.85"
+          }
+        },
+        {
+          "page": 42,
+          "fields": {
+            "Rank": "8",
+            "Name": "Han Audrey",
+            "#": "312",
+            "Skater #": "128",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "7:01.52"
+          }
+        },
+        {
+          "page": 42,
+          "fields": {
+            "Rank": "9",
+            "Name": "Rueda Gabriela Isabel",
+            "#": "311",
+            "Skater #": "122",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "DQ"
+          }
+        }
+      ]
+    },
+    {
+      "label": "US Speedskating Winter World Cup Qualifier Men's Mass Start #1",
+      "distance": 10,
+      "unit": "laps",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "1",
+            "Name": "Mastrup Niclas",
+            "#": "404",
+            "Skater #": "227",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": "30",
+            "Race Points": "30",
+            "Time": "5:09.03"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "2",
+            "Name": "Herman Auggi",
+            "#": "401",
+            "Skater #": "202",
+            "Sprint #1": "2",
+            "Sprint #2": null,
+            "Final Sprint": "20",
+            "Race Points": "22",
+            "Time": "5:10.66"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "3",
+            "Name": "Dunfee Kelin",
+            "#": "405",
+            "Skater #": "219",
+            "Sprint #1": "3",
+            "Sprint #2": null,
+            "Final Sprint": "10",
+            "Race Points": "13",
+            "Time": "5:10.72"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "4",
+            "Name": "Hart-Gorman Samuel",
+            "#": "407",
+            "Skater #": "233",
+            "Sprint #1": "1",
+            "Sprint #2": null,
+            "Final Sprint": "4",
+            "Race Points": "5",
+            "Time": "5:11.70"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "5",
+            "Name": "Marin Pablo",
+            "#": "419",
+            "Skater #": "244",
+            "Sprint #1": null,
+            "Sprint #2": "3",
+            "Final Sprint": "2",
+            "Race Points": "5",
+            "Time": "5:16.71"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "6",
+            "Name": "Collins Kieran",
+            "#": "417",
+            "Skater #": "220",
+            "Sprint #1": null,
+            "Sprint #2": "2",
+            "Final Sprint": "1",
+            "Race Points": "3",
+            "Time": "5:18.97"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "7",
+            "Name": "Zapata Marinez Daniel",
+            "#": "428",
+            "Skater #": "252",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:19.14"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "8",
+            "Name": "Konduru Ashwin",
+            "#": "416",
+            "Skater #": "201",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:19.36"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "9",
+            "Name": "Elattaoui Tariq",
+            "#": "413",
+            "Skater #": "237",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:20.89"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "10",
+            "Name": "Ord Gavin",
+            "#": "411",
+            "Skater #": "211",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:24.40"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "11",
+            "Name": "De Bock Nickolas",
+            "#": "424",
+            "Skater #": "259",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:31.06"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "12",
+            "Name": "Quinn Anson",
+            "#": "412",
+            "Skater #": "200",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:31.52"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "13",
+            "Name": "Acosta Candia Juan Carlos",
+            "#": "422",
+            "Skater #": "250",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:31.68"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "14",
+            "Name": "Salm Matthew",
+            "#": "406",
+            "Skater #": "224",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:32.28"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "15",
+            "Name": "Martin Riley",
+            "#": "418",
+            "Skater #": "230",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:42.17"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "16",
+            "Name": "Lee Colin",
+            "#": "415",
+            "Skater #": "203",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:42.76"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "17",
+            "Name": "Epperson Sebastian",
+            "#": "420",
+            "Skater #": "234",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "6:04.31"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "18",
+            "Name": "Nagel Edward",
+            "#": "423",
+            "Skater #": "208",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "6:04.82"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "19",
+            "Name": "Wobeser Keith",
+            "#": "426",
+            "Skater #": "218",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "6:14.48"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": "20",
+            "Name": "Essex Kyle",
+            "#": "427",
+            "Skater #": "221",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "6:33.96"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": null,
+            "Name": "Sibert Finn",
+            "#": "408",
+            "Skater #": "257",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "DQ"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": null,
+            "Name": "Mastrup Sune",
+            "#": "409",
+            "Skater #": "236",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "DQ"
+          }
+        },
+        {
+          "page": 43,
+          "fields": {
+            "Rank": null,
+            "Name": "Kurowski Matthew",
+            "#": "414",
+            "Skater #": "223",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "DQ"
+          }
+        }
+      ]
+    },
+    {
+      "label": "US Speedskating AmCup Final Qualifier Women's Mass Start #2",
+      "distance": 10,
+      "unit": "laps",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 44,
+          "fields": {
+            "Rank": "1",
+            "Name": "Yde Piper",
+            "#": "302",
+            "Skater #": "116",
+            "Sprint #1": "0",
+            "Sprint #2": "2",
+            "Final Sprint": "30",
+            "Race Points": "32",
+            "Time": "7:01.45"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rank": "2",
+            "Name": "Lindenskov Natasha",
+            "#": "301",
+            "Skater #": "114",
+            "Sprint #1": "1",
+            "Sprint #2": "3",
+            "Final Sprint": "20",
+            "Race Points": "24",
+            "Time": "7:03.56"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rank": "3",
+            "Name": "Forrer Evie",
+            "#": "303",
+            "Skater #": "105",
+            "Sprint #1": "3",
+            "Sprint #2": null,
+            "Final Sprint": "10",
+            "Race Points": "13",
+            "Time": "7:05.39"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rank": "4",
+            "Name": "Whitcomb Keeley",
+            "#": "304",
+            "Skater #": "109",
+            "Sprint #1": "2",
+            "Sprint #2": "1",
+            "Final Sprint": "4",
+            "Race Points": "7",
+            "Time": "7:05.72"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rank": "5",
+            "Name": "Oh Aileen",
+            "#": "310",
+            "Skater #": "100",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": "2",
+            "Race Points": "2",
+            "Time": "7:12.83"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rank": "6",
+            "Name": "Cushman Sara",
+            "#": "313",
+            "Skater #": "118",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": "1",
+            "Race Points": "1",
+            "Time": "7:17.32"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rank": "7",
+            "Name": "Han Audrey",
+            "#": "312",
+            "Skater #": "128",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": "0",
+            "Race Points": "0",
+            "Time": "7:37.75"
+          }
+        }
+      ]
+    },
+    {
+      "label": "US Speedskating Winter World Cup Qualifier Men's Mass Start #2",
+      "distance": 10,
+      "unit": "laps",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "1",
+            "Name": "Mastrup Niclas",
+            "#": "404",
+            "Skater #": "227",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": "30",
+            "Race Points": "30",
+            "Time": "5:15.70"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "2",
+            "Name": "Dunfee Kelin",
+            "#": "405",
+            "Skater #": "219",
+            "Sprint #1": null,
+            "Sprint #2": "2",
+            "Final Sprint": "20",
+            "Race Points": "22",
+            "Time": "5:16.19"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "3",
+            "Name": "Herman Auggi",
+            "#": "401",
+            "Skater #": "202",
+            "Sprint #1": null,
+            "Sprint #2": "1",
+            "Final Sprint": "10",
+            "Race Points": "11",
+            "Time": "5:16.30"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "4",
+            "Name": "Hart-Gorman Samuel",
+            "#": "407",
+            "Skater #": "233",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": "4",
+            "Race Points": "4",
+            "Time": "5:16.94"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "5",
+            "Name": "Kurowski Matthew",
+            "#": "414",
+            "Skater #": "223",
+            "Sprint #1": null,
+            "Sprint #2": "3",
+            "Final Sprint": "1",
+            "Race Points": "4",
+            "Time": "5:25.37"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "6",
+            "Name": "Collins Kieran",
+            "#": "417",
+            "Skater #": "220",
+            "Sprint #1": "3",
+            "Sprint #2": null,
+            "Final Sprint": "0",
+            "Race Points": "3",
+            "Time": "5:40.47"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "7",
+            "Name": "Sibert Finn",
+            "#": "408",
+            "Skater #": "257",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": "2",
+            "Race Points": "2",
+            "Time": "5:17.02"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "8",
+            "Name": "Acosta Candia Juan Carlos",
+            "#": "422",
+            "Skater #": "250",
+            "Sprint #1": "2",
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "2",
+            "Time": "5:59.05"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "9",
+            "Name": "Mastrup Sune",
+            "#": "409",
+            "Skater #": "236",
+            "Sprint #1": "1",
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "1",
+            "Time": "5:29.69"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "10",
+            "Name": "Tirado German",
+            "#": "429",
+            "Skater #": "253",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:25.48"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "11",
+            "Name": "Elattaoui Tariq",
+            "#": "413",
+            "Skater #": "237",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:28.94"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "12",
+            "Name": "De Bock Nickolas",
+            "#": "424",
+            "Skater #": "259",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:36.53"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "13",
+            "Name": "Salm Matthew",
+            "#": "406",
+            "Skater #": "224",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:40.07"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "14",
+            "Name": "Epperson Sebastian",
+            "#": "420",
+            "Skater #": "234",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:48.47"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "15",
+            "Name": "Martin Riley",
+            "#": "418",
+            "Skater #": "230",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "5:49.30"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "16",
+            "Name": "Lee Colin",
+            "#": "415",
+            "Skater #": "203",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "6:02.12"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "17",
+            "Name": "Wobeser Keith",
+            "#": "426",
+            "Skater #": "218",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "6:05.86"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "18",
+            "Name": "Nagel Edward",
+            "#": "423",
+            "Skater #": "208",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": "0",
+            "Time": "6:08.91"
+          }
+        },
+        {
+          "page": 45,
+          "fields": {
+            "Rank": "19",
+            "Name": "Essex Kyle",
+            "#": "427",
+            "Skater #": "221",
+            "Sprint #1": null,
+            "Sprint #2": null,
+            "Final Sprint": null,
+            "Race Points": null,
+            "Time": "7:04.25"
+          }
+        }
+      ]
+    }
+  ],
+  "reviewNotes": [
+    "Timed pages were checked with full-page and focused-column OCR, source-image review of exceptions, and independent coverage, rank, pair, lane and time-gap checks. All 58 mass-start rows were visually transcribed.",
+    "Use the timed source spelling for First Last profile display. Each confirmed mass-start spelling remains in the original result fields.",
+    "Only a gendered race provides gender evidence. A skater observed solely in mixed tables has no inferred gender.",
+    "Preserve the exact signed mass-start sheets, including blank fields and printed rank or point anomalies. The 10-lap format is corroborated by official event and rule sources."
+  ],
+  "observedResultRows": 344,
+  "rosterEntries": 87,
+  "summary": {
+    "discovered_events": 18,
+    "complete_selected_events": 18,
+    "needs_review_events": 0,
+    "export_eligible_events": 18
+  },
+  "source_issues": [],
+  "pdf_page_count": 45,
+  "scanned_page_count": 45,
+  "complete_competition": false,
+  "scope": "All official timed and mass-start result tables. Pair analysis pages remain part of the original PDF and are separately inventoried.",
+  "publishedAt": "2026-11-05T21:43:20.757983+00:00",
+  "publicationBatchId": "b672b6df6ad148fa59f4a6c8dc67baf6cf3b30ebd0db942163c49c4145388a6c",
+  "siteVersion": 31,
+  "verificationReport": "outputs/amcup-final-hosted-verification.json"
+}

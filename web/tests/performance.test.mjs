@@ -68,7 +68,7 @@ test('comparison uses reviewed identity scope, deduplicates selections and isola
 test('all seasons and more than one history page survive chart queries without affecting PBs',async()=>{const h=await ready();try{
  const source=h.sqlite.prepare('SELECT source_id FROM competitions LIMIT 1').get().source_id;
  h.sqlite.prepare('INSERT INTO competitions VALUES (?,?,?,?,?,?,?,?)').run('earlier','Earlier competition','short-track','2024-2025','2025-02-01','2025-02-02','Test rink',source);
- h.sqlite.prepare('INSERT INTO participants VALUES (?,?,?,?,?)').run('earlier:1','earlier','1','Reviewed test skater','Test club');const link=h.sqlite.prepare("SELECT * FROM skater_links WHERE participant_key='st-agn-2026:185'").get();
+ h.sqlite.prepare('INSERT INTO participants (id,competition_id,bib,name,affiliation) VALUES (?,?,?,?,?)').run('earlier:1','earlier','1','Reviewed test skater','Test club');const link=h.sqlite.prepare("SELECT * FROM skater_links WHERE participant_key='st-agn-2026:185'").get();
  h.sqlite.prepare('INSERT INTO skater_links VALUES (?,?,?,?,?,?,?,?)').run('earlier:1','earlier','1',link.skater_id,'Reviewed test skater','Test club','reviewed','test');
  for(let i=0;i<60;i++)add(h,{id:'earlier-'+i,participant_id:'earlier:1',competition_id:'earlier',time_microseconds:50123456+i});
  const all=await(await query(h)).json();assert.equal(all.records.length,62);assert.equal(all.competitionBests.length,2);assert.ok(all.competitionBests.some(b=>b.id==='earlier-0'));assert.equal(new Set(all.records.map(r=>r.season)).size,2);
@@ -77,7 +77,7 @@ test('all seasons and more than one history page survive chart queries without a
  }finally{h.close();}});
 
 test('invalid chart filters fail clearly and unknown participants return 404',async()=>{const h=await ready();try{
- for(const values of [{discipline:'mixed'},{distance:'0'},{distance:'700.5'},{round:''},{from:'2026-02-30'},{from:'2026-03-22',to:'2026-03-20'},{participant:'invalid'}])assert.equal((await query(h,values)).status,400,JSON.stringify(values));
+ for(const values of [{discipline:'mixed'},{distance:'0'},{distance:'700.5.5'},{round:''},{from:'2026-02-30'},{from:'2026-03-22',to:'2026-03-20'},{participant:'invalid'}])assert.equal((await query(h,values)).status,400,JSON.stringify(values));
  assert.equal((await query(h,{participant:'unknown:1'})).status,404);
  assert.equal((await h.request('performances','GET',undefined,false)).status,400);
  const params=new URLSearchParams();for(let i=0;i<5;i++)params.append('participant',`test:${i}`);assert.equal((await h.request('performances?'+params,'GET',undefined,false)).status,400);
