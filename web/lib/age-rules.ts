@@ -16,3 +16,8 @@ export function categoryInterval(category:string|null,rule:AgeRule): {min:number
   const range = rule.rangeAnnotations ? /^(?:Master )?[MW] (\d{2})-(\d{2})$/i.exec(category) : null;
   return range && Number(range[1])<=Number(range[2]) ? {min:Number(range[1]),max:Number(range[2])} : null;
 }
+
+export function observedAgeBounds(rule: AgeRule | null, season: string, discipline: string, category: string | null, division: string) {
+  if (rule?.season !== season || rule.discipline !== discipline) return null;
+  return categoryInterval(category, rule) ?? (category === null ? rule.divisionCategories?.[division] ?? null : null);
+}

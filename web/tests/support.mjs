@@ -87,6 +87,7 @@ export function harness(fixture = singleFixture()) {
     function require(specifier) {
       if (specifier === "cloudflare:workers") return { env: { DB: db, BUCKET: bucket, SEED_TOKEN: dummyToken } };
       if (specifier === "@/lib/sample-data.json") return fixture;
+      if (specifier.startsWith("@/") && specifier.endsWith(".json")) return JSON.parse(readFileSync(path.join(root, specifier.slice(2)), "utf8"));
       if (specifier.startsWith("@/")) return load(path.join(root, specifier.slice(2) + ".ts"));
       return nodeRequire(specifier);
     }

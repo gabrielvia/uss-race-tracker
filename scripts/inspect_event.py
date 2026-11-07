@@ -7,24 +7,23 @@ import re
 
 if __package__:
     from .inspect_race import parse_race
-    from .tempus_text import join_event_headings
+    from .tempus_text import EVENT, REVIEWED_FINAL_RACES, join_event_headings
 else:
     from inspect_race import parse_race
-    from tempus_text import join_event_headings
+    from tempus_text import EVENT, REVIEWED_FINAL_RACES, join_event_headings
 
-EVENT = re.compile(r"^(.+?)\s+(\d+)\s+(Quarter-Finals|Semi-Finals|Finals) Event #(\d+)$")
-PARSER_VERSION = "tempus-complete-event/0.4"
+PARSER_VERSION = "tempus-complete-event/0.7"
 RESULT_ROW = re.compile(r"^(?:(?:\d+|PEN|DNS|DNF|DQ|FNT|YC)\s+\d+\s+\S|\d+\s+.+\s+(?:PEN|DNS|DNF|DQ|FNT|YC)(?:\s|$))")
 
 
-def parse_event_pages(pages, roster, event_number, event_label=None):
+def parse_event_pages(pages, roster, event_number, event_label=None, source_hash=None):
     if event_label is not None:
         selected = EVENT.fullmatch(event_label)
         if selected is None or selected[4] != str(event_number):
             raise ValueError("The selected source heading must match the requested event number")
     rows, labels, races, expected_totals, heading_evidence = [], set(), {}, set(), {}
     for page_number, text in pages:
-        text, evidence = join_event_headings(text)
+        text, evidence = join_event_headings(text, source_hash)
         heading_evidence.update(evidence)
         if "CLASSIFICATION" in text:
             continue
@@ -62,7 +61,7 @@ def parse_event_pages(pages, roster, event_number, event_label=None):
             heat_number, heat_total = (int(heat[1]), int(heat[2])) if heat else (None, None)
             if heat:
                 expected_totals.add(heat_total)
-            race_rows = parse_race(text, roster, race_id)
+            race_rows = parse_race(text, roster, race_id, source_hash, page_number)
             if any(r["event_label_raw"] != current_event[0] for r in race_rows):
                 raise ValueError("Race rows crossed an event boundary")
             races[race_id] = {"race_id": race_id, "label": line, "heat_number": heat_number, "heat_total": heat_total, "result_count": len(race_rows)}
@@ -73,6 +72,10 @@ def parse_event_pages(pages, roster, event_number, event_label=None):
         raise ValueError("No results found for the requested event")
     if len(labels) != 1:
         raise ValueError("The event number maps to different groups or rounds; review before combining")
+    label = next(iter(labels))
+    reviewed_finals = REVIEWED_FINAL_RACES.get((source_hash, label))
+    if reviewed_finals is not None and (expected_totals or [[r["race_id"], r["label"]] for r in races.values()] != reviewed_finals):
+        raise ValueError("The reviewed final race IDs and labels must match the original source order")
     if expected_totals:
         if len(expected_totals) != 1 or any(r["heat_number"] is None for r in races.values()):
             raise ValueError("Inconsistent heat labels")
@@ -80,14 +83,13 @@ def parse_event_pages(pages, roster, event_number, event_label=None):
         numbers = [r["heat_number"] for r in races.values()]
         if len(numbers) != total or set(numbers) != set(range(1, total + 1)):
             raise ValueError("The selected pages do not contain every announced heat")
-    elif len(races) != 1 or all("Final" in r["label"] for r in races.values()):
+    elif reviewed_finals is None and (len(races) != 1 or all("Final" in r["label"] for r in races.values())):
         tiers = [re.fullmatch(r"([A-Z]) Final Race #\d+", r["label"]) for r in races.values()]
-        if any(t is None for t in tiers) or sorted(t[1] for t in tiers) != [chr(65 + n) for n in range(len(tiers))] or not all(row["round_raw"] == "Finals" for row in rows):
+        if any(t is None for t in tiers) or sorted(t[1] for t in tiers) != [chr(65 + n) for n in range(len(tiers))] or not all(row["round_raw"] in {"Finals", "Super Final Finals"} for row in rows):
             raise ValueError("Final races must have unique contiguous tiers starting with A; missing or ambiguous finals require review")
     keys = [(r["race_id"], r["bib"]) for r in rows]
     if len(set(keys)) != len(keys):
         raise ValueError("Duplicate result within a heat")
-    label = next(iter(labels))
     result = {"event_number": str(event_number), "event_label_raw": label,
               "heat_count": len(races), "heats": list(races.values()), "result_count": len(rows), "results": rows}
     if label in heading_evidence:
@@ -112,7 +114,7 @@ def main():
     with pdfplumber.open(args.file) as pdf:
         if any(p < 1 or p > len(pdf.pages) for p in args.pages):
             cli.error("A selected page is outside the PDF")
-        event = parse_event_pages([(p, pdf.pages[p - 1].extract_text() or "") for p in args.pages], roster["observations"], args.event_number, args.event_label)
+        event = parse_event_pages([(p, pdf.pages[p - 1].extract_text() or "") for p in args.pages], roster["observations"], args.event_number, args.event_label, digest)
     result = {"parser_version": PARSER_VERSION, "status": "complete_selected_event",
               "source_id": roster["source_id"], "source_url": roster["source_url"], "sha256": digest,
               "pages": args.pages, **event}

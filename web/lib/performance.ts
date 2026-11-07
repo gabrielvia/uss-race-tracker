@@ -21,8 +21,8 @@ export function validDate(value: string | null): value is string {
 export function dated(record: Pick<PerformanceRecord, "starts_on" | "ends_on">): boolean {
   return validDate(record.starts_on) && validDate(record.ends_on) && record.starts_on <= record.ends_on;
 }
-export function validPerformance(record: Pick<RaceResult, "time_microseconds" | "result_status">): boolean {
-  return record.result_status === null && Number.isSafeInteger(record.time_microseconds) && record.time_microseconds! > 0;
+export function validPerformance(record: Pick<RaceResult, "time_microseconds" | "result_status" | "distance_unit" | "event_kind">): boolean {
+  return (record.distance_unit ?? "metres") === "metres" && (record.event_kind ?? "individual") === "individual" && record.result_status === null && Number.isSafeInteger(record.time_microseconds) && record.time_microseconds! > 0;
 }
 export function chartPoint(record: PerformanceRecord) {
   return {x: Date.parse(record.starts_on!), y: record.time_microseconds, record};

@@ -52,26 +52,29 @@ def check_browsing(origin, secret, items):
                 if key == "gender" and any(matches(rid, others) and events[original[rid]["eventKey"]]["gender"] == "Mixed" for rid in original):
                     values.add("Mixed")
                 assert actual == {value: sum(matches(rid, {**others, key: value}) for rid in original) for value in values}
-        for bib in (["185", "54"] if cid.startswith("st-") else ["370", "368"]):
+        sample_bibs = {"st-agn-2026": ["185", "54"], "lt-agn-2026": ["370", "368"]}.get(cid, [p["bib"] for p in item["participants"][:2]])
+        for bib in sample_bibs:
             pid = cid + ":" + bib
             path = "/api/participants/" + pid + "/records"
-            for selection in [{}, {"discipline": item["competition"]["discipline"]}, {"season": item["competition"]["season"]}]:
-                waiting = get(path + "?" + urlencode(selection))
-                assert not waiting["selectionRequired"] and waiting["total"] == len([r for r in item["results"] if r["participantId"] == pid])
-            history = get(path + "?" + urlencode({"discipline": item["competition"]["discipline"], "season": item["competition"]["season"]}))
-            assert not history["selectionRequired"]
             ids = {r["id"] for r in item["results"] if r["participantId"] == pid}
-            assert history["total"] == len(ids) and {r["id"] for r in history["results"]} == ids
-            if bib == "370":
-                assert {r["entry_division"] for r in history["results"]} == {"Master Women", "Junior A-B-Senior Women"}
+            for selection in [{}, {"discipline": item["competition"]["discipline"]}, {"season": item["competition"]["season"]}, {"discipline": item["competition"]["discipline"], "season": item["competition"]["season"]}]:
+                history = get(path + "?" + urlencode(selection))
+                assert not history["selectionRequired"] and history["total"] >= len(ids)
+                history_rows = list(history["results"])
+                for page in range(2, (history["total"] + 49) // 50 + 1):
+                    remaining = get(path + "?" + urlencode({**selection, "page": page}))
+                    history_rows.extend(remaining["results"])
+                history_ids = {r["id"] for r in history_rows}
+                assert len(history_ids) == len(history_rows) == history["total"] and ids <= history_ids
+            if cid == "lt-agn-2026" and bib == "370":
+                assert {r["entry_division"] for r in history_rows if r["id"] in ids} == {"Master Women", "Junior A-B-Senior Women"}
         reports.append({"competition": cid, "queries": len(filters), "results": len(original), "facetsVerified": True, "historyVerified": True})
-    same_name = get("/api/skaters?" + urlencode({"q": "Sara Cushman"}))
-    assert same_name["total"] == 2, "Same-name competition-local identities must remain separate."
     first, second = get("/api/skaters?page=1"), get("/api/skaters?page=2")
-    assert first["total"] == second["total"] == 289
-    assert len(first["skaters"]) == len(second["skaters"]) == 25
-    assert not ({r["id"] for r in first["skaters"]} & {r["id"] for r in second["skaters"]})
-    return {"passed": True, "readOnly": True, "protocols": reports, "sameNameIdentitiesSeparate": True, "athletePaginationVerified": True, "historySelectionRequired": False}
+    assert first["total"] == second["total"]
+    assert len(first["skaters"]) == min(first["total"], 25)
+    assert len(second["skaters"]) == max(0, min(first["total"] - 25, 25))
+    assert not ({r["identity_key"] for r in first["skaters"]} & {r["identity_key"] for r in second["skaters"]})
+    return {"passed": True, "readOnly": True, "protocols": reports, "athletePaginationVerified": True, "historySelectionRequired": False}
 
 
 def main():

@@ -1,0 +1,23 @@
+[
+  {
+    "sha256": "1a2ac72f45d9a9ab0a1e465e627f4e2953802dad66f6b2486a0990d3fc006cc4",
+    "prefix": "500-extra",
+    "events": [
+      {
+        "label": "500 Qualifier 1's 500 Finals Event #1",
+        "page": 177,
+        "raceId": "101"
+      },
+      {
+        "label": "500 Qualifier 2's 500 Finals Event #2",
+        "page": 177,
+        "raceId": "201"
+      },
+      {
+        "label": "500 Qualifier 3's 500 Finals Event #3",
+        "page": 177,
+        "raceId": "301"
+      }
+    ]
+  }
+]

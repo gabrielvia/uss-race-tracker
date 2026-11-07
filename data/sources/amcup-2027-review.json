@@ -1,0 +1,85 @@
+{
+  "inventory_version": "reviewed-scanned-inventory/1",
+  "source_id": "3e95d0ded49e2d06",
+  "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltc12a6d42aed8c552/6ae92444332c2f3c0ea5fac0/2027_AmCup_1_FWCQ.pdf",
+  "sha256": "33d17599ed3cc66b082be4f0590227444ed85bdea41c79c82ece32eb90bad1bd",
+  "pdf_page_count": 50,
+  "scanned_page_count": 50,
+  "scope": "All official individual timing and lap-count mass-start result tables. Original places/times control; no official ranking is recomputed.",
+  "complete_competition": false,
+  "source_issues": [],
+  "summary": {
+    "discovered_events": 18,
+    "complete_selected_events": 18,
+    "needs_review_events": 0,
+    "export_eligible_events": 18
+  },
+  "page_kinds": {
+    "result": [
+      6,
+      9,
+      11,
+      12,
+      16,
+      18,
+      20,
+      24,
+      26,
+      31,
+      32,
+      34,
+      36,
+      39,
+      42,
+      44,
+      46,
+      48,
+      50
+    ],
+    "start-list": [
+      5,
+      7,
+      8,
+      10,
+      13,
+      14,
+      15,
+      17,
+      19,
+      22,
+      23,
+      25,
+      27,
+      28,
+      29,
+      30,
+      33,
+      35,
+      38,
+      40,
+      41,
+      43,
+      45,
+      47,
+      49
+    ],
+    "cover": [
+      1
+    ],
+    "schedule": [
+      4,
+      21,
+      37
+    ],
+    "officials": [
+      2,
+      3
+    ]
+  },
+  "result_count": 370,
+  "participant_count": 70,
+  "reviewed_official_values": true,
+  "mass_start_rows": 53,
+  "individual_distance_rows": 317,
+  "user_decisions": "Preserve official positions and times without repair or extra eligibility exclusions. Retain lap-count events independently and exclude them from ordinary metre-distance PB/trends."
+}

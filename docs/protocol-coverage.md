@@ -4,10 +4,13 @@ The local inventory scans every physical page of a supported Tempus protocol, di
 
 ## Checked source snapshots
 
+Phase 6 adds MASA 2026 (420 results) and Long Track AGN 2025 (509 results), including two original supplemental pages. The four-protocol corpus totals 3,238 individual results across two seasons. Short Track AGN 2025 remains blocked; see [the current coverage and queue](phase-6-coverage.md). The original AGN reports below retain their source revisions and publication-evidence scope.
+
 | Source | Physical pages | Event records | Extractable events | Needs review | Published events |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Short Track AGN 2026 | 177 | 112 | 112 | 0 | 112 |
 | Long Track AGN 2026 | 118 | 59 | 59 | 0 | 59 |
+| MASA ST 2026 | 72 | 40 | 40 | 0 | See phase 6 live read-back |
 
 The reports are [short track](../data/samples/short-track-agn-protocol-inventory.json) and [long track](../data/samples/long-track-agn-protocol-inventory.json). Counts describe exact source group/distance/round headings, not distinct printed event numbers or official competition totals. The two revisions contain 1,847 and 462 race results respectively. All 171 per-event checks and both complete candidate validations pass.
 
@@ -46,6 +49,6 @@ python3 -m scripts.inspect_protocol \
 
 Add `--published-evidence outputs/current-evidence.json` to compare a saved extraction-evidence snapshot. Accepted evidence shapes are `{roster, events}`, legacy `{roster, race}`, or an item containing either under `evidence`. Do not put tokens in evidence files.
 
-Inventory version 0.3 exports event parser 0.4 files. A canonical-report hash selects the run directory; each filename also includes a heading hash so different groups sharing a number cannot overwrite one another. Use the printed `event_directory` rather than globbing all historical runs.
+Inventory version 0.5 exports event parser 0.6 files. Exact reviewed supplemental pages are retained separately under protocol batch 0.3; unsupported or changed unnumbered RESULTS pages still block export. A canonical-report hash selects the run directory; each filename also includes a heading hash so different groups sharing a number cannot overwrite one another. Use the printed `event_directory` rather than globbing all historical runs.
 
 For full sources use `prepare_protocol`, then the reviewed archive/prepare/submit/report/publish workflow. Existing source formats and older parser 0.2/0.3 selected-event inputs remain compatible under the current validator. Bounded full-source limits and explicit correction review are documented in the phase 3 guide.

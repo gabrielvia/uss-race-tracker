@@ -1,0 +1,499 @@
+{
+  "version": "masa-agn-identity-review/1",
+  "sourceHash": "2671f997837bdc170dfc1fc995fbe9431ea30df968678e51e62d350a72440ae2",
+  "targetHash": "96baa4cc09283058cc4a458f6ced92316f2b029fa5b7d3cf75d6f371f848744f",
+  "sourceUrl": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt2ed31176561c3e74/69af59ae21e8760008bd1325/2026_MASA_Championships.pdf",
+  "targetUrl": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltdbe3948c37369bd8/69c21eeecf706153ff29d935/2026_USS_AGN_ST_final.pdf",
+  "basis": "User correction on November 4, 2026; unique full name after the MASA female star annotation is removed, same source gender, reviewed exact club-label correspondence and adjacent March 2026 competitions. Explicit pairs only; no global name/bib merge.",
+  "clubLabels": {
+    "Danbury Speedskating": "Danbury",
+    "Flushing Meadows Speedskating": "Flushing Meadows",
+    "East Penn Speedskating Club": "East Penn",
+    "Saratoga Winter Club": "Saratoga Winter",
+    "Garden State Speedskating": "Garden State",
+    "Potomac Speedskating": "Potomac",
+    "Bay State Speedskating": "Bay State"
+  },
+  "pairs": [
+    {
+      "participantKey": "st-masa-2026:77",
+      "targetParticipantKey": "st-agn-2026:50",
+      "displayName": "Ethan Liu",
+      "sourceName": "Ethan Liu",
+      "sourceAffiliation": "Garden State Speedskating",
+      "targetAffiliation": "Garden State",
+      "gender": "Male",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        7
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:92",
+      "targetParticipantKey": "st-agn-2026:126",
+      "displayName": "Theodore Taub",
+      "sourceName": "Theodore Taub",
+      "sourceAffiliation": "Danbury Speedskating",
+      "targetAffiliation": "Danbury",
+      "gender": "Male",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        8
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:78",
+      "targetParticipantKey": "st-agn-2026:185",
+      "displayName": "Lindsay Lin",
+      "sourceName": "Lindsay* Lin",
+      "sourceAffiliation": "Garden State Speedskating",
+      "targetAffiliation": "Garden State",
+      "gender": "Female",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        8
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:79",
+      "targetParticipantKey": "st-agn-2026:159",
+      "displayName": "Leilani Fuller",
+      "sourceName": "Leilani* Fuller",
+      "sourceAffiliation": "Danbury Speedskating",
+      "targetAffiliation": "Danbury",
+      "gender": "Female",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        7
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:83",
+      "targetParticipantKey": "st-agn-2026:227",
+      "displayName": "Yinyi Li",
+      "sourceName": "Yinyi* Li",
+      "sourceAffiliation": "Bay State Speedskating",
+      "targetAffiliation": "Bay State",
+      "gender": "Female",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        9
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:66",
+      "targetParticipantKey": "st-agn-2026:299",
+      "displayName": "Ryder Yu",
+      "sourceName": "Ryder Yu",
+      "sourceAffiliation": "Garden State Speedskating",
+      "targetAffiliation": "Garden State",
+      "gender": "Male",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        8
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:67",
+      "targetParticipantKey": "st-agn-2026:211",
+      "displayName": "Bartosz Debicki",
+      "sourceName": "Bartosz Debicki",
+      "sourceAffiliation": "Danbury Speedskating",
+      "targetAffiliation": "Danbury",
+      "gender": "Male",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        8
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:71",
+      "targetParticipantKey": "st-agn-2026:294",
+      "displayName": "Miles Quaye",
+      "sourceName": "Miles Quaye",
+      "sourceAffiliation": "Danbury Speedskating",
+      "targetAffiliation": "Danbury",
+      "gender": "Male",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        8
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:72",
+      "targetParticipantKey": "st-agn-2026:212",
+      "displayName": "Sebastian Cao",
+      "sourceName": "Sebastian Cao",
+      "sourceAffiliation": "Garden State Speedskating",
+      "targetAffiliation": "Garden State",
+      "gender": "Male",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        8
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:73",
+      "targetParticipantKey": "st-agn-2026:147",
+      "displayName": "Grayson Callahan",
+      "sourceName": "Grayson Callahan",
+      "sourceAffiliation": "Garden State Speedskating",
+      "targetAffiliation": "Garden State",
+      "gender": "Male",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        8
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:74",
+      "targetParticipantKey": "st-agn-2026:177",
+      "displayName": "Celine Fu",
+      "sourceName": "Celine* Fu",
+      "sourceAffiliation": "Potomac Speedskating",
+      "targetAffiliation": "Potomac",
+      "gender": "Female",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        8
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:56",
+      "targetParticipantKey": "st-agn-2026:254",
+      "displayName": "David Phillips",
+      "sourceName": "David Phillips",
+      "sourceAffiliation": "Flushing Meadows Speedskating",
+      "targetAffiliation": "Flushing Meadows",
+      "gender": "Male",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        5
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:58",
+      "targetParticipantKey": "st-agn-2026:68",
+      "displayName": "Jesse Hoffman",
+      "sourceName": "Jesse Hoffman",
+      "sourceAffiliation": "Saratoga Winter Club",
+      "targetAffiliation": "Saratoga Winter",
+      "gender": "Male",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        5
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:57",
+      "targetParticipantKey": "st-agn-2026:86",
+      "displayName": "Carole Moore",
+      "sourceName": "Carole* Moore",
+      "sourceAffiliation": "Flushing Meadows Speedskating",
+      "targetAffiliation": "Flushing Meadows",
+      "gender": "Female",
+      "sourcePages": [
+        3
+      ],
+      "targetPages": [
+        5
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:29",
+      "targetParticipantKey": "st-agn-2026:138",
+      "displayName": "Richard Hao",
+      "sourceName": "Richard Hao",
+      "sourceAffiliation": "Danbury Speedskating",
+      "targetAffiliation": "Danbury",
+      "gender": "Male",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        4
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:30",
+      "targetParticipantKey": "st-agn-2026:15",
+      "displayName": "Clark Hartemink",
+      "sourceName": "Clark Hartemink",
+      "sourceAffiliation": "East Penn Speedskating Club",
+      "targetAffiliation": "East Penn",
+      "gender": "Male",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        5
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:32",
+      "targetParticipantKey": "st-agn-2026:175",
+      "displayName": "Hugo Kelly",
+      "sourceName": "Hugo Kelly",
+      "sourceAffiliation": "Danbury Speedskating",
+      "targetAffiliation": "Danbury",
+      "gender": "Male",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        6
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:33",
+      "targetParticipantKey": "st-agn-2026:56",
+      "displayName": "Ghanashyama Prabhu",
+      "sourceName": "Ghanashyama Prabhu",
+      "sourceAffiliation": "Flushing Meadows Speedskating",
+      "targetAffiliation": "Flushing Meadows",
+      "gender": "Male",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        4
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:34",
+      "targetParticipantKey": "st-agn-2026:2",
+      "displayName": "Britton Smith",
+      "sourceName": "Britton Smith",
+      "sourceAffiliation": "Flushing Meadows Speedskating",
+      "targetAffiliation": "Flushing Meadows",
+      "gender": "Male",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        4
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:35",
+      "targetParticipantKey": "st-agn-2026:164",
+      "displayName": "Sean Sun",
+      "sourceName": "Sean Sun",
+      "sourceAffiliation": "Garden State Speedskating",
+      "targetAffiliation": "Garden State",
+      "gender": "Male",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        7
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:37",
+      "targetParticipantKey": "st-agn-2026:91",
+      "displayName": "Elias Wang",
+      "sourceName": "Elias Wang",
+      "sourceAffiliation": "Flushing Meadows Speedskating",
+      "targetAffiliation": "Flushing Meadows",
+      "gender": "Male",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        6
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:38",
+      "targetParticipantKey": "st-agn-2026:1",
+      "displayName": "Ryan Zheng",
+      "sourceName": "Ryan Zheng",
+      "sourceAffiliation": "Danbury Speedskating",
+      "targetAffiliation": "Danbury",
+      "gender": "Male",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        4
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:18",
+      "targetParticipantKey": "st-agn-2026:239",
+      "displayName": "Danielle Anzalone",
+      "sourceName": "Danielle* Anzalone",
+      "sourceAffiliation": "Flushing Meadows Speedskating",
+      "targetAffiliation": "Flushing Meadows",
+      "gender": "Female",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        4
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:19",
+      "targetParticipantKey": "st-agn-2026:196",
+      "displayName": "Diana Bickmore",
+      "sourceName": "Diana Bickmore",
+      "sourceAffiliation": "Danbury Speedskating",
+      "targetAffiliation": "Danbury",
+      "gender": "Female",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        4
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:20",
+      "targetParticipantKey": "st-agn-2026:216",
+      "displayName": "Katerina Borbat",
+      "sourceName": "Katerina Borbat",
+      "sourceAffiliation": "Danbury Speedskating",
+      "targetAffiliation": "Danbury",
+      "gender": "Female",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        6
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:21",
+      "targetParticipantKey": "st-agn-2026:264",
+      "displayName": "Sarah Chen",
+      "sourceName": "Sarah Chen",
+      "sourceAffiliation": "Flushing Meadows Speedskating",
+      "targetAffiliation": "Flushing Meadows",
+      "gender": "Female",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        7
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:22",
+      "targetParticipantKey": "st-agn-2026:125",
+      "displayName": "Sarah Girach",
+      "sourceName": "Sarah* Girach",
+      "sourceAffiliation": "Danbury Speedskating",
+      "targetAffiliation": "Danbury",
+      "gender": "Female",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        4
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:24",
+      "targetParticipantKey": "st-agn-2026:161",
+      "displayName": "Clara Lee",
+      "sourceName": "Clara* Lee",
+      "sourceAffiliation": "Garden State Speedskating",
+      "targetAffiliation": "Garden State",
+      "gender": "Female",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        7
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:25",
+      "targetParticipantKey": "st-agn-2026:240",
+      "displayName": "Xinyu (Lilian) Li",
+      "sourceName": "Xinyu (Lilian)* Li",
+      "sourceAffiliation": "Garden State Speedskating",
+      "targetAffiliation": "Garden State",
+      "gender": "Female",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        7
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:26",
+      "targetParticipantKey": "st-agn-2026:55",
+      "displayName": "Sasha Mensah",
+      "sourceName": "Sasha* Mensah",
+      "sourceAffiliation": "Danbury Speedskating",
+      "targetAffiliation": "Danbury",
+      "gender": "Female",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        4
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:27",
+      "targetParticipantKey": "st-agn-2026:116",
+      "displayName": "Harshini Ramachandran",
+      "sourceName": "Harshini* Ramachandran",
+      "sourceAffiliation": "Garden State Speedskating",
+      "targetAffiliation": "Garden State",
+      "gender": "Female",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        7
+      ]
+    },
+    {
+      "participantKey": "st-masa-2026:28",
+      "targetParticipantKey": "st-agn-2026:88",
+      "displayName": "Priyanka Srinivasula",
+      "sourceName": "Priyanka* Srinivasula",
+      "sourceAffiliation": "East Penn Speedskating Club",
+      "targetAffiliation": "East Penn",
+      "gender": "Female",
+      "sourcePages": [
+        4
+      ],
+      "targetPages": [
+        4
+      ]
+    }
+  ]
+}

@@ -1,0 +1,814 @@
+{
+  "directory": {
+    "url": "https://www.usspeedskating.org/results",
+    "checkedAt": "2026-11-04T22:14:03.846339+00:00",
+    "sha256": "dd6a9562ea9f9b76588c9f1e1fa500a8cb5ff16e5d96872d31d6b3f8620c5764",
+    "entries": 499,
+    "sources": 494,
+    "formats": {
+      "pdf": 264,
+      "page": 230
+    }
+  },
+  "audit": {
+    "scope": "Reviewed individual result protocols; classifications and supplements are separate evidence. Lap-count events retain their original units.",
+    "auditedSources": 29,
+    "partlyParsedSources": 1,
+    "uninspectedSources": 464,
+    "pendingSources": 465,
+    "lastCheckedAt": "2026-11-06T21:58:35.257540+00:00"
+  },
+  "seasons": [
+    {
+      "season": "2026-2027",
+      "directoryEntries": 6,
+      "directorySources": 6,
+      "auditedSources": 6,
+      "pendingSources": 0
+    },
+    {
+      "season": "2025-2026",
+      "directoryEntries": 41,
+      "directorySources": 41,
+      "auditedSources": 22,
+      "pendingSources": 19
+    },
+    {
+      "season": "2024-2025",
+      "directoryEntries": 46,
+      "directorySources": 45,
+      "auditedSources": 1,
+      "pendingSources": 44
+    },
+    {
+      "season": "2023-2024",
+      "directoryEntries": 34,
+      "directorySources": 34,
+      "auditedSources": 0,
+      "pendingSources": 34
+    },
+    {
+      "season": "2022-2023",
+      "directoryEntries": 40,
+      "directorySources": 38,
+      "auditedSources": 0,
+      "pendingSources": 38
+    },
+    {
+      "season": "2021-2022",
+      "directoryEntries": 29,
+      "directorySources": 29,
+      "auditedSources": 0,
+      "pendingSources": 29
+    },
+    {
+      "season": "2020-2021",
+      "directoryEntries": 7,
+      "directorySources": 7,
+      "auditedSources": 0,
+      "pendingSources": 7
+    },
+    {
+      "season": "2019-2020",
+      "directoryEntries": 36,
+      "directorySources": 35,
+      "auditedSources": 0,
+      "pendingSources": 35
+    },
+    {
+      "season": "2018-2019",
+      "directoryEntries": 48,
+      "directorySources": 47,
+      "auditedSources": 0,
+      "pendingSources": 47
+    },
+    {
+      "season": "2018",
+      "directoryEntries": 48,
+      "directorySources": 48,
+      "auditedSources": 0,
+      "pendingSources": 48
+    },
+    {
+      "season": "2017",
+      "directoryEntries": 42,
+      "directorySources": 42,
+      "auditedSources": 0,
+      "pendingSources": 42
+    },
+    {
+      "season": "2016",
+      "directoryEntries": 50,
+      "directorySources": 50,
+      "auditedSources": 0,
+      "pendingSources": 50
+    },
+    {
+      "season": "2015",
+      "directoryEntries": 49,
+      "directorySources": 49,
+      "auditedSources": 0,
+      "pendingSources": 49
+    },
+    {
+      "season": "2014",
+      "directoryEntries": 23,
+      "directorySources": 23,
+      "auditedSources": 0,
+      "pendingSources": 23
+    }
+  ],
+  "reviews": [
+    {
+      "sourceId": "381947c967290f89",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltdbe3948c37369bd8/69c21eeecf706153ff29d935/2026_USS_AGN_ST_final.pdf",
+      "sha256": "96baa4cc09283058cc4a458f6ced92316f2b029fa5b7d3cf75d6f371f848744f",
+      "season": "2025-2026",
+      "title": "2026-03-22 - 2026 US Age Group Nationals Short Track",
+      "status": "audited",
+      "checkedAt": "2026-11-03",
+      "pages": 177,
+      "discoveredEvents": 112,
+      "parsedEvents": 112,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "9567603f2ef7d57a",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt705a59087737d2c2/69939b7d8b33e4000870a8e7/2026_LT_AGN_Protocol.pdf",
+      "sha256": "7a22b0b5b4713fae920d83e4ee500d40cee3aca58e23d3b895c774e1a88db45f",
+      "season": "2025-2026",
+      "title": "2026-02-15 - 2026 Age Group Nationals Long Track",
+      "status": "audited",
+      "checkedAt": "2026-11-03",
+      "pages": 118,
+      "discoveredEvents": 59,
+      "parsedEvents": 59,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "ea1b0536186f3b34",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt2cd3d29cc8161c76/67aa4dd1667a48a5b31a171e/2025_US_AGN_LT_Protocol_final.pdf",
+      "sha256": "ac7793ee804fff69c79130ee819486cf2cac542bd41d42653061cb7f5bce33bd",
+      "season": "2024-2025",
+      "title": "2025-02-09 - 2025 US Age Group National Championships Long Track",
+      "status": "audited",
+      "checkedAt": "2026-11-04T21:48:56.746734+00:00",
+      "pages": 125,
+      "discoveredEvents": 67,
+      "parsedEvents": 67,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "e0fa8c154bec6cb3",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltef0e3bec0f8a91e5/67ec2dc3f44ece50a041dfb5/2025_US_AGN_ST_Protocol_final.pdf",
+      "sha256": "684a7f993e1d95ff22326084b21f2fe9f28e870a06bf2a6fe7938aeac9cd033f",
+      "season": "2024-2025",
+      "title": "2025-03-30 - 2025 USS Age Group Nationals Short Track & National Challenge Races",
+      "status": "needs-review",
+      "checkedAt": "2026-11-03T19:56:03.976461+00:00",
+      "pages": 124,
+      "discoveredEvents": 79,
+      "parsedEvents": 76,
+      "needsReviewEvents": 3,
+      "sourceIssues": [
+        {
+          "code": "UNSUPPORTED_RESULTS_PAGE",
+          "page": 120,
+          "message": "A RESULTS page has no supported numbered event heading; supplementary or unnumbered result tables require review."
+        },
+        {
+          "code": "UNSUPPORTED_EVENT_HEADER",
+          "page": 120,
+          "message": "Event #18"
+        },
+        {
+          "code": "UNASSIGNED_RACE",
+          "page": 120,
+          "message": "C Final Race #1801"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 120,
+          "message": "1 39 Eric Nichols Columbus 1:30.965"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 120,
+          "message": "2 17 Kendra Lee Direct 1:33.027"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 120,
+          "message": "3 41 Caleb Deng Northbrook 1:36.226"
+        },
+        {
+          "code": "UNASSIGNED_RACE",
+          "page": 120,
+          "message": "B Final Race #1802"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 120,
+          "message": "1 19 Katerina Borbat Danbury 1:29.846"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 120,
+          "message": "2 92 Leilani Fuller Danbury 1:31.116"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 120,
+          "message": "3 50 Jasmine Oler Oval Speed 1:32.324"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 120,
+          "message": "4 70 Ian Andrews Direct 1:38.684"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 120,
+          "message": "5 6 Sage krishna Buffalo 1:39.481"
+        },
+        {
+          "code": "UNASSIGNED_RACE",
+          "page": 120,
+          "message": "A Final Race #1803"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 120,
+          "message": "1 28 Lindsay Lin Garden State 1:23.359"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 120,
+          "message": "2 61 Harvey Qu Garden State 1:23.509"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 120,
+          "message": "3 30 Jonathan Chi Potomac 1:27.157"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 120,
+          "message": "4 83 James Yin Garden State 1:28.581"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 120,
+          "message": "5 81 Sarah Chen Flushing Meadows 1:31.420"
+        },
+        {
+          "code": "UNSUPPORTED_RESULTS_PAGE",
+          "page": 122,
+          "message": "A RESULTS page has no supported numbered event heading; supplementary or unnumbered result tables require review."
+        },
+        {
+          "code": "UNSUPPORTED_EVENT_HEADER",
+          "page": 122,
+          "message": "Event #39"
+        },
+        {
+          "code": "UNASSIGNED_RACE",
+          "page": 122,
+          "message": "C Final Race #3901"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "1 92 Leilani Fuller Danbury 0:57.282"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "2 81 Sarah Chen Flushing Meadows 0:57.491"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "3 50 Jasmine Oler Oval Speed 0:58.706"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "4 41 Caleb Deng Northbrook 0:59.021"
+        },
+        {
+          "code": "UNASSIGNED_RACE",
+          "page": 122,
+          "message": "B Final Race #3902"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "1 83 James Yin Garden State 0:55.990"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "2 39 Eric Nichols Columbus 0:56.307"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "3 19 Katerina Borbat Danbury 0:56.868"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "4 6 Sage krishna Buffalo 0:57.659"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "5 17 Kendra Lee Direct 0:57.789"
+        },
+        {
+          "code": "UNASSIGNED_RACE",
+          "page": 122,
+          "message": "A Final Race #3903"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "1 94 Aiden Zhang Potomac 0:52.146"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "2 28 Lindsay Lin Garden State 0:52.268"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "3 61 Harvey Qu Garden State 0:53.906"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "4 70 Ian Andrews Direct 0:54.444"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 122,
+          "message": "5 30 Jonathan Chi Potomac 0:55.187"
+        },
+        {
+          "code": "UNSUPPORTED_RESULTS_PAGE",
+          "page": 124,
+          "message": "A RESULTS page has no supported numbered event heading; supplementary or unnumbered result tables require review."
+        },
+        {
+          "code": "UNSUPPORTED_EVENT_HEADER",
+          "page": 124,
+          "message": "Event #67"
+        },
+        {
+          "code": "UNASSIGNED_RACE",
+          "page": 124,
+          "message": "C Final Race #6701"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 124,
+          "message": "1 39 Eric Nichols Columbus 0:37.444"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 124,
+          "message": "2 81 Sarah Chen Flushing Meadows 0:37.956"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 124,
+          "message": "3 50 Jasmine Oler Oval Speed 0:40.031"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 124,
+          "message": "4 41 Caleb Deng Northbrook 0:40.985"
+        },
+        {
+          "code": "UNASSIGNED_RACE",
+          "page": 124,
+          "message": "B Final Race #6702"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 124,
+          "message": "1 83 James Yin Garden State 0:37.539"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 124,
+          "message": "2 19 Katerina Borbat Danbury 0:37.569"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 124,
+          "message": "3 92 Leilani Fuller Danbury 0:38.434"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 124,
+          "message": "4 17 Kendra Lee Direct 0:38.452"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 124,
+          "message": "5 6 Sage krishna Buffalo 0:38.943"
+        },
+        {
+          "code": "UNASSIGNED_RACE",
+          "page": 124,
+          "message": "A Final Race #6703"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 124,
+          "message": "1 30 Jonathan Chi Potomac 0:35.868"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 124,
+          "message": "2 61 Harvey Qu Garden State 0:35.891"
+        },
+        {
+          "code": "UNASSIGNED_RESULT",
+          "page": 124,
+          "message": "3 70 Ian Andrews Direct 0:36.454"
+        }
+      ]
+    },
+    {
+      "sourceId": "a3e0ccc938d4730c",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt2ed31176561c3e74/69af59ae21e8760008bd1325/2026_MASA_Championships.pdf",
+      "sha256": "2671f997837bdc170dfc1fc995fbe9431ea30df968678e51e62d350a72440ae2",
+      "season": "2025-2026",
+      "title": "2026-03-07 - 2026 MASA Short Track Championships",
+      "status": "audited",
+      "checkedAt": "2026-11-03T19:56:04.010038+00:00",
+      "pages": 72,
+      "discoveredEvents": 40,
+      "parsedEvents": 40,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "3e95d0ded49e2d06",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltc12a6d42aed8c552/6ae92444332c2f3c0ea5fac0/2027_AmCup_1_FWCQ.pdf",
+      "sha256": "33d17599ed3cc66b082be4f0590227444ed85bdea41c79c82ece32eb90bad1bd",
+      "season": "2026-2027",
+      "title": "2027 AmCup 1 & Long Track Fall World Cup Qualifier",
+      "status": "audited",
+      "checkedAt": "2026-11-05T00:00:11.639533+00:00",
+      "pages": 50,
+      "discoveredEvents": 18,
+      "parsedEvents": 18,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "90033259203f2837",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt292a7c38b3ee8d77/6ae649087f5263f6048413ea/2026_Buffalo_Short_Track_Championships_-Complete_Protocol_updated.pdf",
+      "sha256": "42d59ae2334f8467e9b9a099d1fd25c3bd2ab1358e49e3c3b4e9fc66b7b1d2fa",
+      "season": "2026-2027",
+      "title": "2027-10-25 - Buffalo ST Championships & Heartland #1",
+      "status": "audited",
+      "checkedAt": "2026-11-05T02:59:06.234508+00:00",
+      "pages": 52,
+      "discoveredEvents": 84,
+      "parsedEvents": 84,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "c4f357b7de76560d",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltd4d3532dcf693789/6abb26b9bb4ba6b5c1ed29e0/2027_Nutricost_US_ST_Championships_new.pdf",
+      "sha256": "cd21db3b749d52da838fee0ab42fe87e182a003ae1644a6aafd80c6312e0ba43",
+      "season": "2026-2027",
+      "title": "2027-09-27 - Nutricost U.S. Short Track Championships",
+      "status": "audited",
+      "checkedAt": "2026-11-05T03:25:45.180731+00:00",
+      "pages": 72,
+      "discoveredEvents": 38,
+      "parsedEvents": 38,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "65267b01ac249d07",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt20044b2534e4d15c/6abbaa14512a6d9ec3e32b00/2026_OFC_Protocol.pdf",
+      "sha256": "64c769c1dee6adbc9db37c6cd1a5c0dbf89729dfe0971c21a92f37dee4c449d2",
+      "season": "2026-2027",
+      "title": "2026-09-27 - Utah Olympic Oval Fall Challenge",
+      "status": "audited",
+      "checkedAt": "2026-11-05T03:37:56.922511+00:00",
+      "pages": 40,
+      "discoveredEvents": 21,
+      "parsedEvents": 21,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "33b05eae4adb1a88",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt6336d7aa5a3278be/6a556443dd6dd93cd735fad4/2026_Carl_Cepuran_Interscholastic_Speedskating_Challenge_Protocol_Report.pdf",
+      "sha256": "418feb25acf63195d2890e045900ced667059ed0d67a430e426848db759ea895",
+      "season": "2026-2027",
+      "title": "2026-07-03 - Carl Cepuran Interscholastic Speedskating Competition",
+      "status": "audited",
+      "checkedAt": "2026-11-05T15:32:36.349978+00:00",
+      "pages": 54,
+      "discoveredEvents": 30,
+      "parsedEvents": 30,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "4ff49cc405d061eb",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltd8a76dd038e645d4/6a7cebeb0f118a63632d8d83/2026_Desert_Classic_Official_Protocol.pdf",
+      "sha256": "e10567180db525162ba16a14fdf026d08a6c076d104d66955db0f601080b8f14",
+      "season": "2026-2027",
+      "title": "2026-08-09 - Desert Classic Short Track",
+      "status": "audited",
+      "checkedAt": "2026-11-05T15:57:03.655647+00:00",
+      "pages": 148,
+      "discoveredEvents": 96,
+      "parsedEvents": 96,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "1cea2058ec1a6944",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt868d6a400d05b4cb/6a558d54d673fe214dddf024/2026_Washington_State_Short_Track_Championship_&_Open_Results.pdf",
+      "sha256": "716413b7d201011fadfe2af999c87172ea1dfe36b4985083fca155061d58ce24",
+      "season": "2025-2026",
+      "title": "2026-04-02 - 2026 Washington State ST Championships",
+      "status": "audited",
+      "checkedAt": "2026-11-05T16:14:30.882846+00:00",
+      "pages": 88,
+      "discoveredEvents": 56,
+      "parsedEvents": 56,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "e0d4bb8b53717d7f",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt1843faee29a30f0c/69b3383350b07053be3c5ede/2026_LOL_Protocol_Report.pdf",
+      "sha256": "1a2ac72f45d9a9ab0a1e465e627f4e2953802dad66f6b2486a0990d3fc006cc4",
+      "season": "2025-2026",
+      "title": "2026-03-08 - 2026 Land Of Lincoln & Heartland #6",
+      "status": "audited",
+      "checkedAt": "2026-11-05T16:34:11.529469+00:00",
+      "pages": 177,
+      "discoveredEvents": 101,
+      "parsedEvents": 101,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "33788a663bb35127",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt79fe043b7ab51b67/69af65aaf6ace70008c3b6b2/2026_US_AmCup_Final_US_Open_Masters.pdf",
+      "sha256": "368e7058bbc8cce41ee77d6ed36cacb1459827b5572b8b41d618a9a4ed046d80",
+      "season": "2025-2026",
+      "title": "2026-03-08 - 2026 US AmCup Final & US Open Masters & Colombian Championships",
+      "status": "audited",
+      "checkedAt": "2026-11-05T21:35:32.224726+00:00",
+      "pages": 45,
+      "discoveredEvents": 18,
+      "parsedEvents": 18,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "34e941c35e9329ac",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt02900be4f4fa95d7/69b34994892ebc391a1d9409/2026_SoCal_Championships_Results_-_3-7-2026.pdf",
+      "sha256": "f4c52f033f75eb04e9c242f982210481fb9cf02a5252c2b7d4244636f9ab04b0",
+      "season": "2025-2026",
+      "title": "2026-03-07 - 2026 Southern California Limited Regional Championships",
+      "status": "audited",
+      "checkedAt": "2026-11-05T22:08:29.174871+00:00",
+      "pages": 2,
+      "discoveredEvents": 14,
+      "parsedEvents": 14,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "d0e28283d976611c",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt031273d7efe7d1ed/69a1da1e1a8156663af8b09f/101_Annual_St_Louis_Silver_Skate.pdf",
+      "sha256": "5dfc2f820dcf8e7f434a4fc2e097e7808f0b6d995e1257f9a25cf04f7f5e3e71",
+      "season": "2025-2026",
+      "title": "2026-02-22 - 101 Annual St. Louis Silver Skate",
+      "status": "audited",
+      "checkedAt": "2026-11-05T22:29:50.753650+00:00",
+      "pages": 92,
+      "discoveredEvents": 56,
+      "parsedEvents": 56,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "bccdf77465fc7395",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltfeea8c8fce2ff156/699c93d02b6dd50008a8a3df/2026_Ohio_State_Open_Meet.pdf",
+      "sha256": "7064a19fde1e357d553cbd1cae5ed3fd4112553ee9aa10b5e91940244e3906dc",
+      "season": "2025-2026",
+      "title": "2026-02-21 - 2026 Ohio State Meet Open",
+      "status": "audited",
+      "checkedAt": "2026-11-06T01:10:26.282008+00:00",
+      "pages": 54,
+      "discoveredEvents": 28,
+      "parsedEvents": 28,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "8f16c03272ea66e0",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt0f43c5d319d9b716/699374d97dd2cc0008d22fe6/2026_NorthBurke_Open_Protocol.pdf",
+      "sha256": "568a3e9a8d0a7bf23cca39a115e6e0c3d3cf78e4ba97368a99f9b8ee46d84737",
+      "season": "2025-2026",
+      "title": "2026-02-14 - 2026 NorthBurke Open",
+      "status": "audited",
+      "checkedAt": "2026-11-06T03:14:38.441225+00:00",
+      "pages": 91,
+      "discoveredEvents": 46,
+      "parsedEvents": 46,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "8ba35f16d8b30586",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltcd5cc38416b86749/699368c7ca1be7000834c320/2026_Protocol_ST_Presidential_Cup.pdf",
+      "sha256": "be4ae183f2b061e0b93b4b477183c16ed7388cf4322945a687f3d030bdaa00e4",
+      "season": "2025-2026",
+      "title": "2026-02-14 - 2026 Presidential Cup",
+      "status": "audited",
+      "checkedAt": "2026-11-06T04:18:19.233472+00:00",
+      "pages": 128,
+      "discoveredEvents": 70,
+      "parsedEvents": 70,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "4da906ab3c8f841f",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltbe1fe42ddc41533e/698b82770228b5810dcd4421/2026_Empire_State_Short_Track_Heartland_Protocol.pdf",
+      "sha256": "79708f9a2a31753a3932722e6681dc5bb8f9d1a4c8f46940982f130cb53c1258",
+      "season": "2025-2026",
+      "title": "2026-02-08 - 2026 Empire State Short Track & Heartland",
+      "status": "audited",
+      "checkedAt": "2026-11-06T04:46:31.802454+00:00",
+      "pages": 31,
+      "discoveredEvents": 63,
+      "parsedEvents": 63,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "8d8b714f3481e270",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt5ee1d5b296635161/6983fe8d76798cabcba51863/2026_GoldCup_Protocol_Report.pdf",
+      "sha256": "9901b4b98a7cb5e9a5f523821eeb48b1848d2668037c12545e5c243468c01120",
+      "season": "2025-2026",
+      "title": "2026-02-01 - 2026 WSA Gold Cup",
+      "status": "audited",
+      "checkedAt": "2026-11-06T04:56:48.685138+00:00",
+      "pages": 54,
+      "discoveredEvents": 35,
+      "parsedEvents": 35,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "576fd9e9b308c42a",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt3fb5d33a20fff9a4/69713409c956ad63fb535481/2026_JanThaw_Protocol.pdf",
+      "sha256": "45c8361aeabeea5e23fd48392a8f4b3e06b411c9a214a036fa54d8f275ac20c8",
+      "season": "2025-2026",
+      "title": "2026-01-19 - 2026 January Thaw",
+      "status": "audited",
+      "checkedAt": "2026-11-06T14:01:55.698344+00:00",
+      "pages": 96,
+      "discoveredEvents": 56,
+      "parsedEvents": 56,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "9b32b75fe87d30e7",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt6ec637d1a3f1d337/696fc3c853a9ea91a3a01732/2026_Park_Ridge_Open_Protocol_Report.pdf",
+      "sha256": "4b59490115b908771b71be67799f71aed976aaabe0fbc844dc62ad551ad2d12f",
+      "season": "2025-2026",
+      "title": "2026-01-17 - 2026 Park Ridge Open",
+      "status": "audited",
+      "checkedAt": "2026-11-06T14:16:13.688125+00:00",
+      "pages": 104,
+      "discoveredEvents": 60,
+      "parsedEvents": 60,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "ee5a7fc29570da40",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltd88cece1a86e3961/696e4956dc54238c821f68bd/2026_US_LT_Junior_Championships.pdf",
+      "sha256": "8c5e01da66dbf8b34e1136ef2895b5017ca65bf17845b735a0720b3723328780",
+      "season": "2025-2026",
+      "title": "2026-01-18 - US Junior Long Track Championships & AmCup 2",
+      "status": "audited",
+      "checkedAt": "2026-11-06T18:57:05.289262+00:00",
+      "pages": 39,
+      "discoveredEvents": 13,
+      "parsedEvents": 13,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "5fe8d828c390dcd4",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltab123e2945c552e4/696e689178c535a1febe83fb/2026_Gateway_CH.pdf",
+      "sha256": "68185817e31d04487b2e446b4cf47b9dcf5985e611eda20ed4d2edcbf8955b27",
+      "season": "2025-2026",
+      "title": "2026-01-11 - 2026 Gateway Championships",
+      "status": "audited",
+      "checkedAt": "2026-11-06T19:45:08.892935+00:00",
+      "pages": 106,
+      "discoveredEvents": 72,
+      "parsedEvents": 72,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "58c38cafd66a90d1",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt8e76b945f9f0aee6/6978f840e514c79e9869b9dc/2026_Olympic_Trials_LT_Protocol.pdf",
+      "sha256": "90d543df31d677c3c602ccdd1c4b643fdfa61002a8cf46e0c9e55835c56c1232",
+      "season": "2025-2026",
+      "title": "2026-01-05 2026 U.S. Olymic Team Trials Long Track",
+      "status": "audited",
+      "checkedAt": "2026-11-06T20:33:49.618765+00:00",
+      "pages": 150,
+      "discoveredEvents": 15,
+      "parsedEvents": 15,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "54c6ed4ed5f30521",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt2624f864921aef1f/698a1d93ac3a9bdb4aafe77d/2025_Puget_Sound_Robby_Kaufman_Short_Track_Challenge_12-28-2025_Results_R2.1_With_Protocol.pdf",
+      "sha256": "99a73b2f09cb86e17be0919ca1b2a7ae693eb456f13e5e4dd5dee76386ab4a4d",
+      "season": "2025-2026",
+      "title": "2025-12-28 - 2025 Robby Kaufman Short Track Challenge",
+      "status": "audited",
+      "checkedAt": "2026-11-06T20:47:05.877111+00:00",
+      "pages": 49,
+      "discoveredEvents": 28,
+      "parsedEvents": 28,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "7da9d7c9573b762f",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt8156b916856b395f/6951e5d7cf745954d7bc1aa9/2025_Winter_SPEEDtacular.pdf",
+      "sha256": "38e236c261e961d12319ddd02254a85413a9267957d5c237cb862f242e15a0f4",
+      "season": "2025-2026",
+      "title": "2025-12-27 - 2025 Winter SPEEDtacular",
+      "status": "audited",
+      "checkedAt": "2026-11-06T20:59:36.973233+00:00",
+      "pages": 45,
+      "discoveredEvents": 24,
+      "parsedEvents": 24,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "1965513d55dda827",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt96eec9c35afc5b89/694b4442cf74594721bc13d3/2025_UOO_Winter_Challenge_Protocol.pdf",
+      "sha256": "eabd88330ac93105d53ff7f6bcb9640e6fe711b253a9ef10161e3fe155d87c9c",
+      "season": "2025-2026",
+      "title": "2025-12-21 - 2025 UOO Winter Challenge",
+      "status": "audited",
+      "checkedAt": "2026-11-06T21:49:52.249191+00:00",
+      "pages": 64,
+      "discoveredEvents": 35,
+      "parsedEvents": 35,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    },
+    {
+      "sourceId": "c118cb13643dbce7",
+      "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blta3ad85c112485db7/6948af1d80046102aec9b8f4/2026_US_Jun_CH_ST_Protocol.pdf",
+      "sha256": "2531049f874a6f334b204d652398a897a18ad8c7316450af7985b086861bf12c",
+      "season": "2025-2026",
+      "title": "2025-12-21 - 2026 US Junior Short Track Championships",
+      "status": "audited",
+      "checkedAt": "2026-11-06T21:58:35.257540+00:00",
+      "pages": 64,
+      "discoveredEvents": 38,
+      "parsedEvents": 38,
+      "needsReviewEvents": 0,
+      "sourceIssues": []
+    }
+  ]
+}

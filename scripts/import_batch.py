@@ -62,8 +62,8 @@ def remote_request(origin, action, secret, candidate=None, batch_id=None, compet
         if not pdf or not source_url or len(source_url) > 2000:
             raise ValueError("Provide the original PDF and official source URL.")
         data = Path(pdf).read_bytes()
-        if len(data) > 32 * 1024 * 1024 or not data.startswith(b"%PDF-"):
-            raise ValueError("Provide a PDF up to 32 MiB.")
+        if len(data) > 64 * 1024 * 1024 or not data.startswith(b"%PDF-"):
+            raise ValueError("Provide a PDF up to 64 MiB.")
         path, method = "/api/imports/documents/" + sha256(data).hexdigest(), "POST"
     elif action == "history":
         if not competition_id or not re.fullmatch(r"[a-z0-9-]{1,80}", competition_id):

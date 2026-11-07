@@ -11,9 +11,11 @@ from pathlib import Path
 import re
 
 if __package__:
-    from .tempus_identity import split_age_annotation
+    from .tempus_identity import REVIEWED_ROSTER_FIELDS, split_age_annotation
+    from .tempus_text import REVIEWED_LAYOUTS, reviewed_empty_roster
 else:
-    from tempus_identity import split_age_annotation
+    from tempus_identity import REVIEWED_ROSTER_FIELDS, split_age_annotation
+    from tempus_text import REVIEWED_LAYOUTS, reviewed_empty_roster
 
 PARSER_VERSION = "tempus-roster-sample/0.1"
 
@@ -27,7 +29,7 @@ def group_lines(words, tolerance=3):
     return [sorted(line, key=lambda word: word["x0"]) for line in lines]
 
 
-def parse_roster_words(words, page_number):
+def parse_roster_words(words, page_number, status_column="age_status_raw", allow_mixed=False):
     lines = group_lines(words)
     header = None
     for line in lines:
@@ -37,10 +39,11 @@ def parse_roster_words(words, page_number):
             break
     if header is None:
         return [], [{"page": page_number, "reason": "unsupported_roster_header"}]
-    columns = [(word["x0"] - 2, {"#": "bib", "Name": "raw_name", "Status": "age_status_raw", "Gender": "gender", "Division": "division_raw", "Club": "affiliation_raw"}[word["text"]]) for word in header if word["text"] in {"#", "Name", "Status", "Gender", "Division", "Club"}]
+    columns = [(word["x0"] - 2, {"#": "bib", "Name": "raw_name", "Status": status_column, "Gender": "gender", "Division": "division_raw", "Club": "affiliation_raw"}[word["text"]]) for word in header if word["text"] in {"#", "Name", "Status", "Gender", "Division", "Club"}]
     # Bib values are right-aligned and may begin left of the centered # header.
     columns[0] = (float("-inf"), "bib")
     observations, issues = [], []
+    genders = {"Male", "Female", "Mixed"} if allow_mixed else {"Male", "Female"}
     for line in lines:
         if line[0]["top"] <= header[0]["top"] or not re.fullmatch(r"\d+", line[0]["text"]):
             continue
@@ -50,12 +53,17 @@ def parse_roster_words(words, page_number):
             if eligible:
                 fields[eligible[-1]].append(word["text"])
         row = {name: " ".join(fields[name]) for _, name in columns}
-        if not row["bib"].isdigit() or not row["raw_name"] or row["gender"] not in {"Male", "Female"} or not row["affiliation_raw"]:
+        if not row["bib"].isdigit() or not row["raw_name"] or row["gender"] not in genders or not row["affiliation_raw"]:
             issues.append({"page": page_number, "reason": "unparsed_roster_row", "raw": " ".join(word["text"] for word in line)})
             continue
         # Parenthesized age labels occur inside the name column in the long-track sample.
-        row["name"], annotation = split_age_annotation(row["raw_name"])
-        row["age_status_raw"] = row.get("age_status_raw") or annotation
+        if status_column == "school_raw":
+            row["name"] = row["raw_name"]
+            row["school_raw"] = row.get("school_raw") or None
+            row["age_status_raw"] = None
+        else:
+            row["name"], annotation = split_age_annotation(row["raw_name"])
+            row["age_status_raw"] = row.get("age_status_raw") or annotation
         row["club_name"] = None if row["affiliation_raw"].casefold() == "direct" else row["affiliation_raw"]
         row["age_evidence_type"] = "explicit_category" if row["age_status_raw"] else "unresolved_division"
         row["page"] = page_number
@@ -64,17 +72,48 @@ def parse_roster_words(words, page_number):
     return observations, issues
 
 
+def classification_roster(text, page):
+    """Read entries from a reviewed overall classification with bib and status columns."""
+    lines = text.splitlines()
+    if len(lines) < 3 or lines[2] != "OVERALL CLASSIFICATION" or "# Name Status Affiliation Points CDR BDR" not in lines:
+        return [], [{"page": page, "reason": "unsupported_classification_roster"}]
+    observations, issues = [], []
+    for line in lines:
+        if not re.match(r"^\d+ \d+ ", line):
+            continue
+        fields = re.fullmatch(r"\d+ (\d+) (.+?) (JR(?: [A-G])?|SR|\d+\+) (.+?) [\d,]+ \d+ \d+ \d+:\d{2}\.\d{3}", line)
+        if not fields:
+            issues.append({"page": page, "reason": "unparsed_classification_roster_row", "raw": line})
+            continue
+        bib, name, status, club = fields.groups()
+        observations.append({"bib": bib, "name": name, "raw_name": name, "age_status_raw": status,
+                             "division_raw": lines[1], "affiliation_raw": club, "club_name": club,
+                             "age_evidence_type": "explicit_category", "page": page, "row_raw": line,
+                             "identity_status": "competition_local_only"})
+    return observations, issues
+
+
 def inspect_pdf(path, source_id, source_url, max_pages=10):
     import pdfplumber
 
     observations, issues, roster_pages = [], [], []
+    digest = sha256(path.read_bytes()).hexdigest()
+    roster_fields = REVIEWED_ROSTER_FIELDS.get(digest, {})
+    status_column = "school_raw" if roster_fields.get("statusColumn") == "school" else "age_status_raw"
+    classification_pages = REVIEWED_LAYOUTS.get(digest, {}).get("classificationRosterPages", [])
     with pdfplumber.open(path) as pdf:
         for page_number, page in enumerate(pdf.pages[:max_pages], 1):
             text = page.extract_text() or ""
-            if "SKATER LIST" not in text:
+            if page_number in classification_pages:
+                rows, row_issues = classification_roster(text, page_number)
+            elif "SKATER LIST" in text:
+                if reviewed_empty_roster(text, digest, page_number):
+                    roster_pages.append(page_number)
+                    continue
+                rows, row_issues = parse_roster_words(page.extract_words(), page_number, status_column, roster_fields.get("allowMixedGender", False))
+            else:
                 continue
             roster_pages.append(page_number)
-            rows, row_issues = parse_roster_words(page.extract_words(), page_number)
             observations.extend(rows)
             issues.extend(row_issues)
         page_count = len(pdf.pages)
@@ -86,7 +125,7 @@ def inspect_pdf(path, source_id, source_url, max_pages=10):
     repeated = {bib: [{"name": row["name"], "division": row["division_raw"], "page": row["page"]} for row in rows] for bib, rows in by_bib.items() if len(rows) > 1}
     return {
         "parser_version": PARSER_VERSION, "source_id": source_id, "source_url": source_url,
-        "sha256": sha256(path.read_bytes()).hexdigest(), "page_count": page_count,
+        "sha256": digest, "page_count": page_count,
         "sampled_page_count": min(page_count, max_pages), "roster_pages": roster_pages,
         "observation_count": len(observations), "distinct_bib_count": len(by_bib),
         "repeated_bibs": repeated, "issues": issues,

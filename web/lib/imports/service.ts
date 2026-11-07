@@ -1,8 +1,9 @@
 import { dimensions } from "@/lib/imports/dimensions";
 import { previewAgeConstraints } from "@/lib/imports/age-preview";
+import { reconcileCompetitionIdentities } from "@/lib/imports/automatic-identity";
 import { bulkInsert } from "@/lib/imports/bulk";
 import { COMPETITION_ID } from "@/lib/competition-id";
-import { eventDefinitions } from "@/lib/imports/events";
+import { eventDefinitions, sourceEventKey, sourceRaceKey } from "@/lib/imports/events";
 import { bucket, database } from "@/lib/database";
 import { candidateId, canonical, hash, validate, VALIDATION_VERSION, type ImportPayload, type ValidationReport } from "@/lib/imports/validation";
 
@@ -66,12 +67,27 @@ function writeStatements(payload: ImportPayload, sourceId: string, objectKey: st
   const evidenceEvents = "events" in payload.item.evidence ? payload.item.evidence.events : [payload.item.evidence.race];
   const participantMap = new Map(participants.map(p => [p.id, p]));
   const raceRows = evidenceEvents.flatMap(event => event.heats.map(heat => ({
-    id: `${c.id}:${heat.race_id}`, competition_id: c.id, event_key: hash(`${c.id}|${event.event_label_raw}`).slice(0, 20),
+    id: `${c.id}:${sourceRaceKey(source.sha256, event.event_label_raw, heat.race_id)}`, competition_id: c.id, event_key: sourceEventKey(c.id,event),
     source_race_id: heat.race_id, label: heat.label, heat_number: heat.heat_number, heat_total: heat.heat_total,
     final_tier: /^([A-Z]) Final Race #\d+$/.exec(heat.label)?.[1] ?? null,
     source_page: event.results.find(r => r.race_id === heat.race_id)!.source_page,
   })));
   const protocol = "protocol" in payload.item ? payload.item.protocol : undefined;
+  const aliases = entries.map(entry => ({
+    id: `${batchId}:${entry.id}`, participant_key: entry.participantId, batch_id: batchId,
+    raw_name: entry.rawName, name: participantMap.get(entry.participantId)!.name, source_page: entry.sourcePage,
+  }));
+  if (protocol?.parser_version === "reviewed-scanned-protocol/1") {
+    const seen = new Set(aliases.map(alias => JSON.stringify([alias.participant_key, alias.raw_name])));
+    for (const row of results) {
+      if (!row.sourceNameRaw) continue;
+      const key = JSON.stringify([row.participantId, row.sourceNameRaw]);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      aliases.push({id: `${batchId}:result:${row.id}`, participant_key: row.participantId, batch_id: batchId,
+        raw_name: row.sourceNameRaw, name: participantMap.get(row.participantId)!.name, source_page: row.sourcePage});
+    }
+  }
   return [
     ...["results", "races", "competition_events"].map(table => db.prepare(`DELETE FROM ${table} WHERE competition_id = ?`).bind(c.id)),
     db.prepare("DELETE FROM entries WHERE participant_id IN (SELECT id FROM participants WHERE competition_id = ?)").bind(c.id),
@@ -79,17 +95,17 @@ function writeStatements(payload: ImportPayload, sourceId: string, objectKey: st
     db.prepare("DELETE FROM competitions WHERE id = ?").bind(c.id),
     db.prepare("INSERT INTO sources (id, url, sha256, object_key) VALUES (?, ?, ?, ?) ON CONFLICT(id) DO NOTHING").bind(sourceId, source.url, source.sha256, objectKey),
     db.prepare("INSERT INTO competitions (id, title, discipline, season, starts_on, ends_on, location, source_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)").bind(c.id, c.title, c.discipline, c.season, c.startsOn, c.endsOn, c.location, sourceId),
-    ...bulkInsert(db, "competition_events", events.map(e => ({id: e.id, competition_id: c.id, source_event_number: e.sourceEventNumber, label: e.label, group_label: e.groupLabel, gender: eventScope.get(e.id)!.gender, division_key: eventScope.get(e.id)!.division, competition_group: eventScope.get(e.id)!.competitionGroup, scope_status: eventScope.get(e.id)!.status, distance: e.distance, round: e.round}))),
-    ...bulkInsert(db, "participants", participants.map(p => ({id: p.id, competition_id: c.id, bib: p.bib, name: p.name, affiliation: p.affiliation}))),
+    ...bulkInsert(db, "competition_events", events.map(e => ({id: e.id, competition_id: c.id, source_event_number: e.sourceEventNumber, label: e.label, group_label: e.groupLabel, gender: eventScope.get(e.id)!.gender, division_key: eventScope.get(e.id)!.division, competition_group: eventScope.get(e.id)!.competitionGroup, scope_status: eventScope.get(e.id)!.status, distance: e.distance, distance_unit: e.distanceUnit, event_kind: e.eventKind, round: e.round}))),
+    ...bulkInsert(db, "participants", participants.map(p => ({id: p.id, competition_id: c.id, bib: p.bib, name: p.name, affiliation: p.affiliation, country: p.country ?? null}))),
     ...bulkInsert(db, "entries", entries.map(e => ({id: e.id, participant_id: e.participantId, division: e.division, gender: entryScope.get(e.id)!.gender, division_key: entryScope.get(e.id)!.division, age_status: e.ageStatus, raw_name: e.rawName, source_page: e.sourcePage}))),
     ...bulkInsert(db, "races", raceRows),
-    ...bulkInsert(db, "results", results.map(r => ({id: r.id, competition_id: c.id, participant_id: r.participantId, entry_id: resultScope.get(r.id)!.entryId, gender: resultScope.get(r.id)!.gender, division_key: resultScope.get(r.id)!.division, scope_status: resultScope.get(r.id)!.status, race_id: r.raceId, distance: r.distance, round: r.round, rank: r.rank, time_raw: r.timeRaw, time_microseconds: r.timeMicroseconds, qualification: r.qualification, source_page: r.sourcePage, event_key: r.eventKey, event_label: r.eventLabel, race_label: r.raceLabel, heat_number: r.heatNumber, heat_total: r.heatTotal, result_status: r.status, finish_note: r.finishNote ?? null}))),
+    ...bulkInsert(db, "results", results.map(r => ({id: r.id, competition_id: c.id, participant_id: r.participantId, entry_id: resultScope.get(r.id)!.entryId, gender: resultScope.get(r.id)!.gender, division_key: resultScope.get(r.id)!.division, scope_status: resultScope.get(r.id)!.status, race_id: r.raceId, distance: r.distance, distance_unit: r.distanceUnit ?? "metres", event_kind: r.eventKind ?? "individual", lane: r.lane ?? null, points_raw: r.pointsRaw ?? null, behind_raw: r.behindRaw ?? null, source_name_raw: r.sourceNameRaw ?? null, country: r.country ?? null, source_fields_json: r.sourceFields ? canonical(r.sourceFields) : null, round: r.round, rank: r.rank, time_raw: r.timeRaw, time_microseconds: r.timeMicroseconds, qualification: r.qualification, source_page: r.sourcePage, event_key: r.eventKey, event_label: r.eventLabel, race_label: r.raceLabel, heat_number: r.heatNumber, heat_total: r.heatTotal, result_status: r.status, finish_note: r.finishNote ?? null}))),
     ...bulkInsert(db, "skaters", participants.map(p => ({id: hash(`competition-skater|${p.id}`).slice(0,20), display_name: p.name, created_at: now})), "ON CONFLICT(id) DO NOTHING"),
     ...bulkInsert(db, "skater_links", participants.map(p => ({participant_key: p.id, competition_id: c.id, bib: p.bib, skater_id: hash(`competition-skater|${p.id}`).slice(0,20), name: p.name, affiliation: p.affiliation, status: "competition-local", revision: batchId})), "ON CONFLICT(participant_key) DO UPDATE SET status = CASE WHEN skater_links.name = excluded.name AND skater_links.affiliation = excluded.affiliation THEN skater_links.status ELSE 'needs_review' END"),
-    ...bulkInsert(db, "skater_aliases", entries.map(e => ({id: `${batchId}:${e.id}`, participant_key: e.participantId, batch_id: batchId, raw_name: e.rawName, name: participantMap.get(e.participantId)!.name, source_page: e.sourcePage}))),
+    ...bulkInsert(db, "skater_aliases", aliases),
     ...bulkInsert(db, "skater_observations", entries.map(e => ({id: `${batchId}:${e.id}`, participant_key: e.participantId, batch_id: batchId, competition_id: c.id, competed_on: c.startsOn, season: c.season, affiliation: participantMap.get(e.participantId)!.affiliation, age_category: e.ageStatus, division: e.division, raw_name: e.rawName, source_hash: source.sha256, source_page: e.sourcePage}))),
     ...bulkInsert(db, "classification_pages", (protocol?.classifications ?? []).map(p => ({id: `${batchId}:${p.page}`, batch_id: batchId, competition_id: c.id, source_page: p.page, kind: p.kind, label: p.label, text_raw: p.text_raw, rows_json: JSON.stringify(p.rows)}))),
-    db.prepare("INSERT INTO publication_revisions (batch_id, competition_id, previous_batch_id, source_id, source_hash, season_label, reviewer, notes, metadata_json, published_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)").bind(batchId, c.id, payload.baseBatchId, source.id, source.sha256, payload.review.seasonSourceLabel, payload.review.reviewer, payload.review.notes, canonical({...c, resultsCoverage: protocol ? "protocol-results" : "selected-events", classificationPages: protocol?.classifications.length ?? 0}), now),
+    db.prepare("INSERT INTO publication_revisions (batch_id, competition_id, previous_batch_id, source_id, source_hash, season_label, reviewer, notes, metadata_json, published_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)").bind(batchId, c.id, payload.baseBatchId, source.id, source.sha256, payload.review.seasonSourceLabel, payload.review.reviewer, payload.review.notes, canonical({...c, resultsCoverage: protocol ? "protocol-results" : "selected-events", ...(protocol?.parser_version === "reviewed-group-table-protocol/1" ? { resultsLayout: "group-table" } : {}), classificationPages: protocol?.classifications.length ?? 0, supplementarySourcePages: protocol?.supplementary_pages?.length ?? 0}), now),
   ];
 }
 export async function publish(batch: Batch) {
@@ -108,7 +124,11 @@ export async function publish(batch: Batch) {
   }
   const competitionId = payload.item.competition.id;
   const current = (await head(competitionId))?.batch_id ?? null;
-  if (current === batch.id) return { id: batch.id, status: "published", competitionId, active: true };
+  const published = async () => {
+    await reconcileCompetitionIdentities(competitionId);
+    return { id: batch.id, status: "published", competitionId, active: true };
+  };
+  if (current === batch.id) return published();
   if (batch.status !== "validated" || current !== payload.baseBatchId) throw new ImportConflict("The published competition has changed. Review it and submit a new batch with its current baseBatchId.");
   const keys = eventDefinitions(payload.item).map(e => e.id);
   const removed = payload.review.reconciliation?.removedEventKeys ?? [];
@@ -146,11 +166,11 @@ export async function publish(batch: Batch) {
   try { await db.batch(statements); }
   catch (error) {
     const after = (await head(competitionId))?.batch_id ?? null;
-    if (after === batch.id) return { id: batch.id, status: "published", competitionId, active: true };
+    if (after === batch.id) return published();
     if (after !== payload.baseBatchId) throw new ImportConflict("Another revision was published first. Review the current competition before retrying.");
     const omitted = await db.prepare(coverageQuery).bind(competitionId, JSON.stringify(allowedKeys)).all();
     if (omitted.results.length) throw new ImportConflict("The published event coverage changed. Include every current event before retrying.");
     throw error;
   }
-  return { id: batch.id, status: "published", competitionId, active: true };
+  return published();
 }

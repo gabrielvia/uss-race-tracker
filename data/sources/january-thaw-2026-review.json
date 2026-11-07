@@ -1,0 +1,2060 @@
+{
+  "inventory_version": "tempus-protocol-inventory/0.5",
+  "source_id": "576fd9e9b308c42a",
+  "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt3fb5d33a20fff9a4/69713409c956ad63fb535481/2026_JanThaw_Protocol.pdf",
+  "sha256": "45c8361aeabeea5e23fd48392a8f4b3e06b411c9a214a036fa54d8f275ac20c8",
+  "pdf_page_count": 96,
+  "scanned_page_count": 96,
+  "scope": "Numbered Tempus RESULTS events; classifications and unsupported layouts require separate review.",
+  "complete_competition": false,
+  "source_issues": [],
+  "page_kinds": {
+    "results": [
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96
+    ],
+    "classification": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58
+    ],
+    "other": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "needs_review": [],
+    "supplementary": []
+  },
+  "summary": {
+    "discovered_events": 56,
+    "complete_selected_events": 56,
+    "needs_review_events": 0,
+    "export_eligible_events": 56
+  },
+  "coverage": {
+    "basis": "not_checked",
+    "published_events": null,
+    "not_published_events": null,
+    "unknown_published_events": []
+  },
+  "events": [
+    {
+      "event_number": "1",
+      "event_label_raw": "Group A NEST Women's 1000 Semi-Finals Event #1",
+      "group_label": "Group A NEST Women's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        59
+      ],
+      "source_races": [
+        {
+          "race_id": "101",
+          "page": 59,
+          "label": "Heat 1 of 4 Race #101"
+        },
+        {
+          "race_id": "102",
+          "page": 59,
+          "label": "Heat 2 of 4 Race #102"
+        },
+        {
+          "race_id": "103",
+          "page": 59,
+          "label": "Heat 3 of 4 Race #103"
+        },
+        {
+          "race_id": "104",
+          "page": 59,
+          "label": "Heat 4 of 4 Race #104"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 16,
+      "parsed_result_rows": 16,
+      "identity_review_rows": 0,
+      "result_count": 16,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "2",
+      "event_label_raw": "Group A NEST Men's 1000 Semi-Finals Event #2",
+      "group_label": "Group A NEST Men's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        60
+      ],
+      "source_races": [
+        {
+          "race_id": "201",
+          "page": 60,
+          "label": "Heat 1 of 4 Race #201"
+        },
+        {
+          "race_id": "202",
+          "page": 60,
+          "label": "Heat 2 of 4 Race #202"
+        },
+        {
+          "race_id": "203",
+          "page": 60,
+          "label": "Heat 3 of 4 Race #203"
+        },
+        {
+          "race_id": "204",
+          "page": 60,
+          "label": "Heat 4 of 4 Race #204"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 18,
+      "parsed_result_rows": 18,
+      "identity_review_rows": 0,
+      "result_count": 18,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "3",
+      "event_label_raw": "Group A Master's 777 Semi-Finals Event #3",
+      "group_label": "Group A Master's",
+      "distance_metres": 777,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        61
+      ],
+      "source_races": [
+        {
+          "race_id": "301",
+          "page": 61,
+          "label": "Heat 1 of 2 Race #301"
+        },
+        {
+          "race_id": "302",
+          "page": 61,
+          "label": "Heat 2 of 2 Race #302"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "4",
+      "event_label_raw": "Group A Group 1's 777 Semi-Finals Event #4",
+      "group_label": "Group A Group 1's",
+      "distance_metres": 777,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        61,
+        62
+      ],
+      "source_races": [
+        {
+          "race_id": "401",
+          "page": 61,
+          "label": "Heat 1 of 2 Race #401"
+        },
+        {
+          "race_id": "402",
+          "page": 62,
+          "label": "Heat 2 of 2 Race #402"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 12,
+      "parsed_result_rows": 12,
+      "identity_review_rows": 0,
+      "result_count": 12,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "5",
+      "event_label_raw": "Group A Group 2's 777 Semi-Finals Event #5",
+      "group_label": "Group A Group 2's",
+      "distance_metres": 777,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        62
+      ],
+      "source_races": [
+        {
+          "race_id": "501",
+          "page": 62,
+          "label": "Heat 1 of 2 Race #501"
+        },
+        {
+          "race_id": "502",
+          "page": 62,
+          "label": "Heat 2 of 2 Race #502"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "6",
+      "event_label_raw": "Group A Group 3's 500 Semi-Finals Event #6",
+      "group_label": "Group A Group 3's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        63
+      ],
+      "source_races": [
+        {
+          "race_id": "601",
+          "page": 63,
+          "label": "Heat 1 of 2 Race #601"
+        },
+        {
+          "race_id": "602",
+          "page": 63,
+          "label": "Heat 2 of 2 Race #602"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 12,
+      "parsed_result_rows": 12,
+      "identity_review_rows": 0,
+      "result_count": 12,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "7",
+      "event_label_raw": "Group A Group 4's 500 Semi-Finals Event #7",
+      "group_label": "Group A Group 4's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        63
+      ],
+      "source_races": [
+        {
+          "race_id": "701",
+          "page": 63,
+          "label": "Heat 1 of 2 Race #701"
+        },
+        {
+          "race_id": "702",
+          "page": 63,
+          "label": "Heat 2 of 2 Race #702"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 8,
+      "parsed_result_rows": 8,
+      "identity_review_rows": 0,
+      "result_count": 8,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "8",
+      "event_label_raw": "Group A Novice's 333 Semi-Finals Event #8",
+      "group_label": "Group A Novice's",
+      "distance_metres": 333,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        64
+      ],
+      "source_races": [
+        {
+          "race_id": "801",
+          "page": 64,
+          "label": "Heat 1 of 2 Race #801"
+        },
+        {
+          "race_id": "802",
+          "page": 64,
+          "label": "Heat 2 of 2 Race #802"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "9",
+      "event_label_raw": "NEST Women's 1000 Finals Event #9",
+      "group_label": "NEST Women's",
+      "distance_metres": 1000,
+      "round_raw": "Finals",
+      "pages": [
+        64,
+        65
+      ],
+      "source_races": [
+        {
+          "race_id": "901",
+          "page": 64,
+          "label": "C Final Race #901"
+        },
+        {
+          "race_id": "902",
+          "page": 64,
+          "label": "B Final Race #902"
+        },
+        {
+          "race_id": "903",
+          "page": 65,
+          "label": "A Final Race #903"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 16,
+      "parsed_result_rows": 16,
+      "identity_review_rows": 0,
+      "result_count": 16,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "10",
+      "event_label_raw": "NEST Men's 1000 Finals Event #10",
+      "group_label": "NEST Men's",
+      "distance_metres": 1000,
+      "round_raw": "Finals",
+      "pages": [
+        65,
+        66
+      ],
+      "source_races": [
+        {
+          "race_id": "1001",
+          "page": 65,
+          "label": "C Final Race #1001"
+        },
+        {
+          "race_id": "1002",
+          "page": 65,
+          "label": "B Final Race #1002"
+        },
+        {
+          "race_id": "1003",
+          "page": 66,
+          "label": "A Final Race #1003"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 16,
+      "parsed_result_rows": 16,
+      "identity_review_rows": 0,
+      "result_count": 16,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "11",
+      "event_label_raw": "Master's 777 Finals Event #11",
+      "group_label": "Master's",
+      "distance_metres": 777,
+      "round_raw": "Finals",
+      "pages": [
+        66
+      ],
+      "source_races": [
+        {
+          "race_id": "1101",
+          "page": 66,
+          "label": "B Final Race #1101"
+        },
+        {
+          "race_id": "1102",
+          "page": 66,
+          "label": "A Final Race #1102"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "12",
+      "event_label_raw": "Group 1's 777 Finals Event #12",
+      "group_label": "Group 1's",
+      "distance_metres": 777,
+      "round_raw": "Finals",
+      "pages": [
+        66,
+        67
+      ],
+      "source_races": [
+        {
+          "race_id": "1201",
+          "page": 66,
+          "label": "C Final Race #1201"
+        },
+        {
+          "race_id": "1202",
+          "page": 67,
+          "label": "B Final Race #1202"
+        },
+        {
+          "race_id": "1203",
+          "page": 67,
+          "label": "A Final Race #1203"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 12,
+      "parsed_result_rows": 12,
+      "identity_review_rows": 0,
+      "result_count": 12,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "13",
+      "event_label_raw": "Group 2's 777 Finals Event #13",
+      "group_label": "Group 2's",
+      "distance_metres": 777,
+      "round_raw": "Finals",
+      "pages": [
+        67
+      ],
+      "source_races": [
+        {
+          "race_id": "1301",
+          "page": 67,
+          "label": "B Final Race #1301"
+        },
+        {
+          "race_id": "1302",
+          "page": 67,
+          "label": "A Final Race #1302"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "14",
+      "event_label_raw": "Group 3's 500 Finals Event #14",
+      "group_label": "Group 3's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        68
+      ],
+      "source_races": [
+        {
+          "race_id": "1401",
+          "page": 68,
+          "label": "B Final Race #1401"
+        },
+        {
+          "race_id": "1402",
+          "page": 68,
+          "label": "A Final Race #1402"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "15",
+      "event_label_raw": "Group 4's 500 Finals Event #15",
+      "group_label": "Group 4's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        68
+      ],
+      "source_races": [
+        {
+          "race_id": "1501",
+          "page": 68,
+          "label": "B Final Race #1501"
+        },
+        {
+          "race_id": "1502",
+          "page": 68,
+          "label": "A Final Race #1502"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 8,
+      "parsed_result_rows": 8,
+      "identity_review_rows": 0,
+      "result_count": 8,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "16",
+      "event_label_raw": "Novice's 333 Finals Event #16",
+      "group_label": "Novice's",
+      "distance_metres": 333,
+      "round_raw": "Finals",
+      "pages": [
+        69
+      ],
+      "source_races": [
+        {
+          "race_id": "1601",
+          "page": 69,
+          "label": "B Final Race #1601"
+        },
+        {
+          "race_id": "1602",
+          "page": 69,
+          "label": "A Final Race #1602"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "17",
+      "event_label_raw": "Group A NEST Women's 1500 Semi-Finals Event #17",
+      "group_label": "Group A NEST Women's",
+      "distance_metres": 1500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        69,
+        70
+      ],
+      "source_races": [
+        {
+          "race_id": "1701",
+          "page": 69,
+          "label": "Heat 1 of 3 Race #1701"
+        },
+        {
+          "race_id": "1702",
+          "page": 69,
+          "label": "Heat 2 of 3 Race #1702"
+        },
+        {
+          "race_id": "1703",
+          "page": 70,
+          "label": "Heat 3 of 3 Race #1703"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 16,
+      "parsed_result_rows": 16,
+      "identity_review_rows": 0,
+      "result_count": 16,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "18",
+      "event_label_raw": "Group A NEST Men's 1500 Semi-Finals Event #18",
+      "group_label": "Group A NEST Men's",
+      "distance_metres": 1500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        70,
+        71
+      ],
+      "source_races": [
+        {
+          "race_id": "1801",
+          "page": 70,
+          "label": "Heat 1 of 3 Race #1801"
+        },
+        {
+          "race_id": "1802",
+          "page": 70,
+          "label": "Heat 2 of 3 Race #1802"
+        },
+        {
+          "race_id": "1803",
+          "page": 71,
+          "label": "Heat 3 of 3 Race #1803"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 18,
+      "parsed_result_rows": 18,
+      "identity_review_rows": 0,
+      "result_count": 18,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "19",
+      "event_label_raw": "Group A Master's 1000 Semi-Finals Event #19",
+      "group_label": "Group A Master's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        71
+      ],
+      "source_races": [
+        {
+          "race_id": "1901",
+          "page": 71,
+          "label": "Heat 1 of 2 Race #1901"
+        },
+        {
+          "race_id": "1902",
+          "page": 71,
+          "label": "Heat 2 of 2 Race #1902"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "20",
+      "event_label_raw": "Group A Group 1's 1000 Semi-Finals Event #20",
+      "group_label": "Group A Group 1's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        72
+      ],
+      "source_races": [
+        {
+          "race_id": "2001",
+          "page": 72,
+          "label": "Heat 1 of 2 Race #2001"
+        },
+        {
+          "race_id": "2002",
+          "page": 72,
+          "label": "Heat 2 of 2 Race #2002"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 12,
+      "parsed_result_rows": 12,
+      "identity_review_rows": 0,
+      "result_count": 12,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "21",
+      "event_label_raw": "Group A Group 2's 1000 Semi-Finals Event #21",
+      "group_label": "Group A Group 2's",
+      "distance_metres": 1000,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        72,
+        73
+      ],
+      "source_races": [
+        {
+          "race_id": "2101",
+          "page": 72,
+          "label": "Heat 1 of 2 Race #2101"
+        },
+        {
+          "race_id": "2102",
+          "page": 73,
+          "label": "Heat 2 of 2 Race #2102"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "22",
+      "event_label_raw": "Group A Group 3's 777 Semi-Finals Event #22",
+      "group_label": "Group A Group 3's",
+      "distance_metres": 777,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        73
+      ],
+      "source_races": [
+        {
+          "race_id": "2201",
+          "page": 73,
+          "label": "Heat 1 of 2 Race #2201"
+        },
+        {
+          "race_id": "2202",
+          "page": 73,
+          "label": "Heat 2 of 2 Race #2202"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 12,
+      "parsed_result_rows": 12,
+      "identity_review_rows": 0,
+      "result_count": 12,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "23",
+      "event_label_raw": "Group A Group 4's 777 Semi-Finals Event #23",
+      "group_label": "Group A Group 4's",
+      "distance_metres": 777,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        74
+      ],
+      "source_races": [
+        {
+          "race_id": "2301",
+          "page": 74,
+          "label": "Heat 1 of 2 Race #2301"
+        },
+        {
+          "race_id": "2302",
+          "page": 74,
+          "label": "Heat 2 of 2 Race #2302"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 8,
+      "parsed_result_rows": 8,
+      "identity_review_rows": 0,
+      "result_count": 8,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "24",
+      "event_label_raw": "Group A Novice's 333 (#2) Semi-Finals Event #24",
+      "group_label": "Group A Novice's",
+      "distance_metres": 333,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        74
+      ],
+      "source_races": [
+        {
+          "race_id": "2401",
+          "page": 74,
+          "label": "Heat 1 of 2 Race #2401"
+        },
+        {
+          "race_id": "2402",
+          "page": 74,
+          "label": "Heat 2 of 2 Race #2402"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "25",
+      "event_label_raw": "NEST Women's 1500 Finals Event #25",
+      "group_label": "NEST Women's",
+      "distance_metres": 1500,
+      "round_raw": "Finals",
+      "pages": [
+        75
+      ],
+      "source_races": [
+        {
+          "race_id": "2501",
+          "page": 75,
+          "label": "C Final Race #2501"
+        },
+        {
+          "race_id": "2502",
+          "page": 75,
+          "label": "B Final Race #2502"
+        },
+        {
+          "race_id": "2503",
+          "page": 75,
+          "label": "A Final Race #2503"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 16,
+      "parsed_result_rows": 16,
+      "identity_review_rows": 0,
+      "result_count": 16,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "26",
+      "event_label_raw": "NEST Men's 1500 Finals Event #26",
+      "group_label": "NEST Men's",
+      "distance_metres": 1500,
+      "round_raw": "Finals",
+      "pages": [
+        76
+      ],
+      "source_races": [
+        {
+          "race_id": "2601",
+          "page": 76,
+          "label": "C Final Race #2601"
+        },
+        {
+          "race_id": "2602",
+          "page": 76,
+          "label": "B Final Race #2602"
+        },
+        {
+          "race_id": "2603",
+          "page": 76,
+          "label": "A Final Race #2603"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 18,
+      "parsed_result_rows": 18,
+      "identity_review_rows": 0,
+      "result_count": 18,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "27",
+      "event_label_raw": "Master's 1000 Finals Event #27",
+      "group_label": "Master's",
+      "distance_metres": 1000,
+      "round_raw": "Finals",
+      "pages": [
+        77
+      ],
+      "source_races": [
+        {
+          "race_id": "2701",
+          "page": 77,
+          "label": "B Final Race #2701"
+        },
+        {
+          "race_id": "2702",
+          "page": 77,
+          "label": "A Final Race #2702"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "28",
+      "event_label_raw": "Group 1's 1000 Finals Event #28",
+      "group_label": "Group 1's",
+      "distance_metres": 1000,
+      "round_raw": "Finals",
+      "pages": [
+        77,
+        78
+      ],
+      "source_races": [
+        {
+          "race_id": "2801",
+          "page": 77,
+          "label": "C Final Race #2801"
+        },
+        {
+          "race_id": "2802",
+          "page": 77,
+          "label": "B Final Race #2802"
+        },
+        {
+          "race_id": "2803",
+          "page": 78,
+          "label": "A Final Race #2803"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 12,
+      "parsed_result_rows": 12,
+      "identity_review_rows": 0,
+      "result_count": 12,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "29",
+      "event_label_raw": "Group 2's 1000 Finals Event #29",
+      "group_label": "Group 2's",
+      "distance_metres": 1000,
+      "round_raw": "Finals",
+      "pages": [
+        78
+      ],
+      "source_races": [
+        {
+          "race_id": "2901",
+          "page": 78,
+          "label": "B Final Race #2901"
+        },
+        {
+          "race_id": "2902",
+          "page": 78,
+          "label": "A Final Race #2902"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "30",
+      "event_label_raw": "Group 3's 777 Finals Event #30",
+      "group_label": "Group 3's",
+      "distance_metres": 777,
+      "round_raw": "Finals",
+      "pages": [
+        79
+      ],
+      "source_races": [
+        {
+          "race_id": "3001",
+          "page": 79,
+          "label": "B Final Race #3001"
+        },
+        {
+          "race_id": "3002",
+          "page": 79,
+          "label": "A Final Race #3002"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "31",
+      "event_label_raw": "Group 4's 777 Finals Event #31",
+      "group_label": "Group 4's",
+      "distance_metres": 777,
+      "round_raw": "Finals",
+      "pages": [
+        79
+      ],
+      "source_races": [
+        {
+          "race_id": "3101",
+          "page": 79,
+          "label": "B Final Race #3101"
+        },
+        {
+          "race_id": "3102",
+          "page": 79,
+          "label": "A Final Race #3102"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 8,
+      "parsed_result_rows": 8,
+      "identity_review_rows": 0,
+      "result_count": 8,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "32",
+      "event_label_raw": "Novice's 333 (#2) Finals Event #32",
+      "group_label": "Novice's",
+      "distance_metres": 333,
+      "round_raw": "Finals",
+      "pages": [
+        80
+      ],
+      "source_races": [
+        {
+          "race_id": "3201",
+          "page": 80,
+          "label": "B Final Race #3201"
+        },
+        {
+          "race_id": "3202",
+          "page": 80,
+          "label": "A Final Race #3202"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "33",
+      "event_label_raw": "Group A NEST Women's 500 Semi-Finals Event #33",
+      "group_label": "Group A NEST Women's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        80,
+        81
+      ],
+      "source_races": [
+        {
+          "race_id": "3301",
+          "page": 80,
+          "label": "Heat 1 of 4 Race #3301"
+        },
+        {
+          "race_id": "3302",
+          "page": 80,
+          "label": "Heat 2 of 4 Race #3302"
+        },
+        {
+          "race_id": "3303",
+          "page": 81,
+          "label": "Heat 3 of 4 Race #3303"
+        },
+        {
+          "race_id": "3304",
+          "page": 81,
+          "label": "Heat 4 of 4 Race #3304"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 16,
+      "parsed_result_rows": 16,
+      "identity_review_rows": 0,
+      "result_count": 16,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "34",
+      "event_label_raw": "Group A NEST Men's 500 Semi-Finals Event #34",
+      "group_label": "Group A NEST Men's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        81,
+        82
+      ],
+      "source_races": [
+        {
+          "race_id": "3401",
+          "page": 81,
+          "label": "Heat 1 of 4 Race #3401"
+        },
+        {
+          "race_id": "3402",
+          "page": 81,
+          "label": "Heat 2 of 4 Race #3402"
+        },
+        {
+          "race_id": "3403",
+          "page": 82,
+          "label": "Heat 3 of 4 Race #3403"
+        },
+        {
+          "race_id": "3404",
+          "page": 82,
+          "label": "Heat 4 of 4 Race #3404"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 18,
+      "parsed_result_rows": 18,
+      "identity_review_rows": 0,
+      "result_count": 18,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "35",
+      "event_label_raw": "Group A Master's 500 Semi-Finals Event #35",
+      "group_label": "Group A Master's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        82
+      ],
+      "source_races": [
+        {
+          "race_id": "3501",
+          "page": 82,
+          "label": "Heat 1 of 2 Race #3501"
+        },
+        {
+          "race_id": "3502",
+          "page": 82,
+          "label": "Heat 2 of 2 Race #3502"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "36",
+      "event_label_raw": "Group A Group 1's 500 Semi-Finals Event #36",
+      "group_label": "Group A Group 1's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        83
+      ],
+      "source_races": [
+        {
+          "race_id": "3601",
+          "page": 83,
+          "label": "Heat 1 of 2 Race #3601"
+        },
+        {
+          "race_id": "3602",
+          "page": 83,
+          "label": "Heat 2 of 2 Race #3602"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 12,
+      "parsed_result_rows": 12,
+      "identity_review_rows": 0,
+      "result_count": 12,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "37",
+      "event_label_raw": "Group A Group 2's 500 Semi-Finals Event #37",
+      "group_label": "Group A Group 2's",
+      "distance_metres": 500,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        83,
+        84
+      ],
+      "source_races": [
+        {
+          "race_id": "3701",
+          "page": 83,
+          "label": "Heat 1 of 2 Race #3701"
+        },
+        {
+          "race_id": "3702",
+          "page": 84,
+          "label": "Heat 2 of 2 Race #3702"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "38",
+      "event_label_raw": "Group A Group 3's 333 Semi-Finals Event #38",
+      "group_label": "Group A Group 3's",
+      "distance_metres": 333,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        84
+      ],
+      "source_races": [
+        {
+          "race_id": "3801",
+          "page": 84,
+          "label": "Heat 1 of 2 Race #3801"
+        },
+        {
+          "race_id": "3802",
+          "page": 84,
+          "label": "Heat 2 of 2 Race #3802"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 12,
+      "parsed_result_rows": 12,
+      "identity_review_rows": 0,
+      "result_count": 12,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "39",
+      "event_label_raw": "Group A Group 4's 333 Semi-Finals Event #39",
+      "group_label": "Group A Group 4's",
+      "distance_metres": 333,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        85
+      ],
+      "source_races": [
+        {
+          "race_id": "3901",
+          "page": 85,
+          "label": "Heat 1 of 2 Race #3901"
+        },
+        {
+          "race_id": "3902",
+          "page": 85,
+          "label": "Heat 2 of 2 Race #3902"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 8,
+      "parsed_result_rows": 8,
+      "identity_review_rows": 0,
+      "result_count": 8,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "40",
+      "event_label_raw": "Group A Novice's 222 Semi-Finals Event #40",
+      "group_label": "Group A Novice's",
+      "distance_metres": 222,
+      "round_raw": "Semi-Finals",
+      "pages": [
+        85
+      ],
+      "source_races": [
+        {
+          "race_id": "4001",
+          "page": 85,
+          "label": "Heat 1 of 2 Race #4001"
+        },
+        {
+          "race_id": "4002",
+          "page": 85,
+          "label": "Heat 2 of 2 Race #4002"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "41",
+      "event_label_raw": "NEST Women's 500 Finals Event #41",
+      "group_label": "NEST Women's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        86
+      ],
+      "source_races": [
+        {
+          "race_id": "4101",
+          "page": 86,
+          "label": "C Final Race #4101"
+        },
+        {
+          "race_id": "4102",
+          "page": 86,
+          "label": "B Final Race #4102"
+        },
+        {
+          "race_id": "4103",
+          "page": 86,
+          "label": "A Final Race #4103"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 16,
+      "parsed_result_rows": 16,
+      "identity_review_rows": 0,
+      "result_count": 16,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "42",
+      "event_label_raw": "NEST Men's 500 Finals Event #42",
+      "group_label": "NEST Men's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        86,
+        87
+      ],
+      "source_races": [
+        {
+          "race_id": "4201",
+          "page": 86,
+          "label": "D Final Race #4201"
+        },
+        {
+          "race_id": "4202",
+          "page": 87,
+          "label": "C Final Race #4202"
+        },
+        {
+          "race_id": "4203",
+          "page": 87,
+          "label": "B Final Race #4203"
+        },
+        {
+          "race_id": "4204",
+          "page": 87,
+          "label": "A Final Race #4204"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 17,
+      "parsed_result_rows": 17,
+      "identity_review_rows": 0,
+      "result_count": 17,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "43",
+      "event_label_raw": "Master's 500 Finals Event #43",
+      "group_label": "Master's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        87,
+        88
+      ],
+      "source_races": [
+        {
+          "race_id": "4301",
+          "page": 87,
+          "label": "B Final Race #4301"
+        },
+        {
+          "race_id": "4302",
+          "page": 88,
+          "label": "A Final Race #4302"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 10,
+      "parsed_result_rows": 10,
+      "identity_review_rows": 0,
+      "result_count": 10,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "44",
+      "event_label_raw": "Group 1's 500 Finals Event #44",
+      "group_label": "Group 1's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        88
+      ],
+      "source_races": [
+        {
+          "race_id": "4402",
+          "page": 88,
+          "label": "B Final Race #4402"
+        },
+        {
+          "race_id": "4403",
+          "page": 88,
+          "label": "A Final Race #4403"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "45",
+      "event_label_raw": "Group 2's 500 Finals Event #45",
+      "group_label": "Group 2's",
+      "distance_metres": 500,
+      "round_raw": "Finals",
+      "pages": [
+        89
+      ],
+      "source_races": [
+        {
+          "race_id": "4501",
+          "page": 89,
+          "label": "B Final Race #4501"
+        },
+        {
+          "race_id": "4502",
+          "page": 89,
+          "label": "A Final Race #4502"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "46",
+      "event_label_raw": "Group 3's 333 Finals Event #46",
+      "group_label": "Group 3's",
+      "distance_metres": 333,
+      "round_raw": "Finals",
+      "pages": [
+        89,
+        90
+      ],
+      "source_races": [
+        {
+          "race_id": "4601",
+          "page": 89,
+          "label": "C Final Race #4601"
+        },
+        {
+          "race_id": "4602",
+          "page": 89,
+          "label": "B Final Race #4602"
+        },
+        {
+          "race_id": "4603",
+          "page": 90,
+          "label": "A Final Race #4603"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "47",
+      "event_label_raw": "Group 4's 333 Finals Event #47",
+      "group_label": "Group 4's",
+      "distance_metres": 333,
+      "round_raw": "Finals",
+      "pages": [
+        90
+      ],
+      "source_races": [
+        {
+          "race_id": "4701",
+          "page": 90,
+          "label": "B Final Race #4701"
+        },
+        {
+          "race_id": "4702",
+          "page": 90,
+          "label": "A Final Race #4702"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 8,
+      "parsed_result_rows": 8,
+      "identity_review_rows": 0,
+      "result_count": 8,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "48",
+      "event_label_raw": "Novice's 222 Finals Event #48",
+      "group_label": "Novice's",
+      "distance_metres": 222,
+      "round_raw": "Finals",
+      "pages": [
+        90,
+        91
+      ],
+      "source_races": [
+        {
+          "race_id": "4801",
+          "page": 90,
+          "label": "B Final Race #4801"
+        },
+        {
+          "race_id": "4802",
+          "page": 91,
+          "label": "A Final Race #4802"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "49",
+      "event_label_raw": "NEST Women's 1000 Super Final Finals Event #49",
+      "group_label": "NEST Women's",
+      "distance_metres": 1000,
+      "round_raw": "Super Final Finals",
+      "pages": [
+        91,
+        92
+      ],
+      "source_races": [
+        {
+          "race_id": "4901",
+          "page": 91,
+          "label": "C Final Race #4901"
+        },
+        {
+          "race_id": "4902",
+          "page": 91,
+          "label": "B Final Race #4902"
+        },
+        {
+          "race_id": "4903",
+          "page": 92,
+          "label": "A Final Race #4903"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 16,
+      "parsed_result_rows": 16,
+      "identity_review_rows": 0,
+      "result_count": 16,
+      "heat_count": 3,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "50",
+      "event_label_raw": "NEST Men's 1000 Super Final Finals Event #50",
+      "group_label": "NEST Men's",
+      "distance_metres": 1000,
+      "round_raw": "Super Final Finals",
+      "pages": [
+        92,
+        93
+      ],
+      "source_races": [
+        {
+          "race_id": "5001",
+          "page": 92,
+          "label": "D Final Race #5001"
+        },
+        {
+          "race_id": "5002",
+          "page": 92,
+          "label": "C Final Race #5002"
+        },
+        {
+          "race_id": "5003",
+          "page": 92,
+          "label": "B Final Race #5003"
+        },
+        {
+          "race_id": "5004",
+          "page": 93,
+          "label": "A Final Race #5004"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 18,
+      "parsed_result_rows": 18,
+      "identity_review_rows": 0,
+      "result_count": 18,
+      "heat_count": 4,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "51",
+      "event_label_raw": "Master's 1000 Super Final Finals Event #51",
+      "group_label": "Master's",
+      "distance_metres": 1000,
+      "round_raw": "Super Final Finals",
+      "pages": [
+        93
+      ],
+      "source_races": [
+        {
+          "race_id": "5101",
+          "page": 93,
+          "label": "B Final Race #5101"
+        },
+        {
+          "race_id": "5102",
+          "page": 93,
+          "label": "A Final Race #5102"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "52",
+      "event_label_raw": "Group 1's 1000 Super Final Finals Event #52",
+      "group_label": "Group 1's",
+      "distance_metres": 1000,
+      "round_raw": "Super Final Finals",
+      "pages": [
+        94
+      ],
+      "source_races": [
+        {
+          "race_id": "5201",
+          "page": 94,
+          "label": "B Final Race #5201"
+        },
+        {
+          "race_id": "5202",
+          "page": 94,
+          "label": "A Final Race #5202"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "53",
+      "event_label_raw": "Group 2's 500 Super Final Finals Event #53",
+      "group_label": "Group 2's",
+      "distance_metres": 500,
+      "round_raw": "Super Final Finals",
+      "pages": [
+        94
+      ],
+      "source_races": [
+        {
+          "race_id": "5301",
+          "page": 94,
+          "label": "B Final Race #5301"
+        },
+        {
+          "race_id": "5302",
+          "page": 94,
+          "label": "A Final Race #5302"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "54",
+      "event_label_raw": "Group 3's 500 Super Final Finals Event #54",
+      "group_label": "Group 3's",
+      "distance_metres": 500,
+      "round_raw": "Super Final Finals",
+      "pages": [
+        95
+      ],
+      "source_races": [
+        {
+          "race_id": "5402",
+          "page": 95,
+          "label": "B Final Race #5402"
+        },
+        {
+          "race_id": "5403",
+          "page": 95,
+          "label": "A Final Race #5403"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 11,
+      "parsed_result_rows": 11,
+      "identity_review_rows": 0,
+      "result_count": 11,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "55",
+      "event_label_raw": "Group 4's 500 Super Final Finals Event #55",
+      "group_label": "Group 4's",
+      "distance_metres": 500,
+      "round_raw": "Super Final Finals",
+      "pages": [
+        95
+      ],
+      "source_races": [
+        {
+          "race_id": "5501",
+          "page": 95,
+          "label": "B Final Race #5501"
+        },
+        {
+          "race_id": "5502",
+          "page": 95,
+          "label": "A Final Race #5502"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 8,
+      "parsed_result_rows": 8,
+      "identity_review_rows": 0,
+      "result_count": 8,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    },
+    {
+      "event_number": "56",
+      "event_label_raw": "Novice's 500 Super Final Finals Event #56",
+      "group_label": "Novice's",
+      "distance_metres": 500,
+      "round_raw": "Super Final Finals",
+      "pages": [
+        96
+      ],
+      "source_races": [
+        {
+          "race_id": "5601",
+          "page": 96,
+          "label": "B Final Race #5601"
+        },
+        {
+          "race_id": "5602",
+          "page": 96,
+          "label": "A Final Race #5602"
+        }
+      ],
+      "issues": [],
+      "status": "complete_selected_event",
+      "observed_result_rows": 9,
+      "parsed_result_rows": 9,
+      "identity_review_rows": 0,
+      "result_count": 9,
+      "heat_count": 2,
+      "export_eligible": true,
+      "publication": "not_checked"
+    }
+  ],
+  "version": "january-thaw-source-review/1",
+  "reviewedAt": "2026-11-06T14:01:55.698344+00:00",
+  "sourceId": "576fd9e9b308c42a",
+  "sourceUrl": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt3fb5d33a20fff9a4/69713409c956ad63fb535481/2026_JanThaw_Protocol.pdf",
+  "directorySeason": "2025-2026",
+  "directoryEntryId": "3118af1f0c4f3050",
+  "directoryTitle": "2026-01-19 - 2026 January Thaw",
+  "physicalPages": 96,
+  "eventPage": "https://www.usspeedskating.org/2026-gss-january-thaw-st-championships-nest-3",
+  "sourceConfirmedLocation": "ProSkate, Monmouth Junction, NJ",
+  "reviewStatus": "reviewed",
+  "published": true,
+  "newRows": 655,
+  "independentVerification": {
+    "passed": true,
+    "resultRows": 655,
+    "rosterRows": 95,
+    "pages": 96,
+    "events": 56,
+    "races": 135,
+    "classificationPages": 53,
+    "classificationRows": 748,
+    "independentEngine": "pypdf layout against Tempus/pdfplumber, exact ordered rows by physical page and race",
+    "officialStandingsRows": {},
+    "sourceDatesPreserved": true,
+    "originalPdfHashVerified": true,
+    "unresolvedDimensions": 0
+  },
+  "inspectionBoundary": "All 96 physical pages audited and compared independently. Atomic publication and full hosted readback passed.",
+  "sourceConfirmedStart": "2026-01-17",
+  "sourceConfirmedEnd": "2026-01-18",
+  "resolvedQuestions": [
+    {
+      "code": "JANUARY_THAW_OFFICIAL_DATES",
+      "sourceCoverPage": 1,
+      "coverDates": [
+        "2026-01-18",
+        "2026-01-19"
+      ],
+      "calendarDates": [
+        "2026-01-17",
+        "2026-01-18"
+      ],
+      "resultPages": [
+        59,
+        96
+      ],
+      "printedWeekday": "Sunday",
+      "resultPrintText": "Printed on Sunday at 7:09 PM",
+      "proposedHandling": "Use the January 17–18 official calendar dates for the competition and preserve the official PDF cover with January 18–19 as printed.",
+      "resolution": "The user confirmed January 17–18, 2026 from the official calendar for competition metadata. The original PDF cover stays as printed.",
+      "confirmedAt": "2026-11-06T14:01:55.698344+00:00"
+    }
+  ],
+  "technicalNotes": [
+    "January Thaw lists bib 156 Ethan Liu as JR F on page 3. The same-name reviewed AGN entry is JR E, which spans ages 7–10 in the official short-track regulations. Both events belong to 2025-2026 and have the same season offset for age comparisons. The January Thaw event calendar does not define an exact JR F age. The current evidence does not meet the automatic identity rule, so this record remains competition-local."
+  ],
+  "publishedAt": "2026-11-06T14:16:13.568195+00:00",
+  "publicationBatchId": "5fc941eae0bf7bd1d6cf50516470a1ac01973f1666a043244e4b4f6a55c96dd1",
+  "siteVersion": 40,
+  "verificationReport": "outputs/january-thaw-hosted-verification.json"
+}

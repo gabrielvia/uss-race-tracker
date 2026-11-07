@@ -1,0 +1,123 @@
+{
+  "version": "empire-source-review/1",
+  "reviewedAt": "2026-11-06T04:46:31.802454+00:00",
+  "sourceId": "4da906ab3c8f841f",
+  "sourceUrl": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltbe1fe42ddc41533e/698b82770228b5810dcd4421/2026_Empire_State_Short_Track_Heartland_Protocol.pdf",
+  "directorySeason": "2025-2026",
+  "directoryEntryId": "220b190d5e03ed18",
+  "directoryTitle": "2026-02-08 - 2026 Empire State Short Track & Heartland",
+  "sha256": "79708f9a2a31753a3932722e6681dc5bb8f9d1a4c8f46940982f130cb53c1258",
+  "physicalPages": 31,
+  "eventPage": "https://www.usspeedskating.org/2026-empire-state-heartland-short-track-championships",
+  "sourceConfirmedStart": "2026-02-07",
+  "sourceConfirmedEnd": "2026-02-08",
+  "sourceConfirmedLocation": "Lake Placid, NY",
+  "reviewStatus": "reviewed",
+  "published": true,
+  "newRows": 503,
+  "inspectionBoundary": "All 31 physical pages audited and compared independently. Atomic publication and full hosted readback passed.",
+  "technicalNotes": [
+    "Bibs 105 and 162 recur for different names in different divisions; preserve division scope.",
+    "Some final results print hash characters in the points position; preserve literal marks without numeric substitution.",
+    "User confirmed USA-FMSC as the competition affiliation for bib 113. The roster retains USA-TSSC.",
+    "The original Henry He time 11:62:28.000 is shown with no numerical time. The printed Theodore Tucholski time 46:35.000 is a valid comparison as confirmed.",
+    "Division scopes keep different skaters with the same bib separate. Display given name then surname while retaining literal printed names.",
+    "The source includes date-of-birth fields on page 4. The archived original preserves those fields. The structured import uses only the roster identity fields."
+  ],
+  "resolvedQuestions": [
+    {
+      "code": "EMPIRE_WANG_113_CLUB",
+      "displayName": "Elias Wang",
+      "division": "DIVISION 2 Heartland M",
+      "bib": "113",
+      "rosterPage": 4,
+      "rosterMember": "USA-TSSC",
+      "finalClassificationPage": 5,
+      "resultPages": [
+        23,
+        24
+      ],
+      "resultRaces": [
+        "4",
+        "25",
+        "44",
+        "65",
+        "84",
+        "104",
+        "125"
+      ],
+      "resultMember": "USA-FMSC",
+      "proposedHandling": "Use USA-FMSC for the competition entry and results while preserving the exact USA-TSSC roster value in source evidence.",
+      "resolution": "The user confirmed the official result member code USA-FMSC for the competition entry. Preserve the roster member code USA-TSSC as original source evidence.",
+      "confirmedAt": "2026-11-06T04:36:00.328892+00:00"
+    },
+    {
+      "code": "EMPIRE_PAGE_24_TIMES",
+      "page": 24,
+      "column": 2,
+      "division": "DIVISION 3 Pre Scholastic B",
+      "records": [
+        {
+          "bib": "115",
+          "name": "Theodore Tucholski",
+          "distanceMetres": 333,
+          "round": "HEATS",
+          "race": "13",
+          "rank": 1,
+          "timeRaw": "46:35.000",
+          "rowRaw": "1. 115 TUCHOLSKI Theodore USA-SWC 46:35.000",
+          "issue": "Literal time parses as 46 minutes 35 seconds in a 333 m heat."
+        },
+        {
+          "bib": "142",
+          "name": "Henry He",
+          "distanceMetres": 500,
+          "round": "HEATS",
+          "race": "94",
+          "rank": 1,
+          "timeRaw": "11:62:28.000",
+          "rowRaw": "1. 142 HE Henry USA-CSSC 11:62:28.000",
+          "issue": "The printed token has no supported timing interpretation."
+        }
+      ],
+      "proposedHandling": "Keep both printed ranks and time tokens. Leave Henry He without a comparable numerical time. Exclude the Theodore Tucholski heat from PBs and charts pending a source correction if the user confirms.",
+      "resolution": "The user confirmed the printed Henry He time is excluded from numerical comparisons and the printed Theodore Tucholski time counts as 46 minutes and 35 seconds.",
+      "confirmedAt": "2026-11-06T04:46:31.802454+00:00"
+    }
+  ],
+  "competition": {
+    "id": "st-empire-2026",
+    "title": "2026 Empire State Short Track & Heartland",
+    "discipline": "short-track",
+    "season": "2025-2026",
+    "startsOn": "2026-02-07",
+    "endsOn": "2026-02-08",
+    "location": "Lake Placid, NY"
+  },
+  "independentVerification": {
+    "passed": true,
+    "participants": 79,
+    "events": 63,
+    "races": 135,
+    "results": 503,
+    "classificationRows": 360,
+    "physicalPages": 31,
+    "listedCompetitors": 75,
+    "independentEngine": "pypdf layout matched against pdfplumber; original PDF bytes verified"
+  },
+  "source_id": "4da906ab3c8f841f",
+  "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltbe1fe42ddc41533e/698b82770228b5810dcd4421/2026_Empire_State_Short_Track_Heartland_Protocol.pdf",
+  "pdf_page_count": 31,
+  "scanned_page_count": 31,
+  "source_issues": [],
+  "summary": {
+    "discovered_events": 63,
+    "complete_selected_events": 63,
+    "needs_review_events": 0,
+    "export_eligible_events": 63
+  },
+  "publishedAt": "2026-11-06T04:56:48.555282+00:00",
+  "publicationBatchId": "16d545722a59a6c22419f4956611f506d288d6063b598e6af506a6a8476ffc27",
+  "siteVersion": 38,
+  "verificationReport": "outputs/empire-hosted-verification.json"
+}

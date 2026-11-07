@@ -8,14 +8,14 @@ import re
 
 if __package__:
     from .inspect_event import EVENT, PARSER_VERSION, parse_event_pages
-    from .tempus_identity import result_name_matches, roster_name_is_consistent
-    from .tempus_text import join_event_headings
+    from .tempus_identity import result_name_matches, roster_affiliation, roster_name_is_consistent
+    from .tempus_text import join_event_headings, protocol_page_text, reviewed_source_table, source_race_key, REVIEWED_RACE_SCOPES, REVIEWED_TABLES
 else:
     from inspect_event import EVENT, PARSER_VERSION, parse_event_pages
-    from tempus_identity import result_name_matches, roster_name_is_consistent
-    from tempus_text import join_event_headings
+    from tempus_identity import result_name_matches, roster_affiliation, roster_name_is_consistent
+    from tempus_text import join_event_headings, protocol_page_text, reviewed_source_table, source_race_key, REVIEWED_RACE_SCOPES, REVIEWED_TABLES
 
-VERSION = "tempus-protocol-inventory/0.3"
+VERSION = "tempus-protocol-inventory/0.5"
 HEADER = re.compile(r"^(.+?)\s+Event #(\d+)$")
 RACE = re.compile(r"\bRace #(\d+)\b")
 RANKED = re.compile(r"^(?:\d+|[A-Z]{2,5})\s+(\d+)\s+(.+)$")
@@ -49,7 +49,7 @@ def inventory_protocol(pages, roster, published=None):
     conflicting_bibs = set()
     for row in roster["observations"]:
         names[row["bib"]].update([row["name"], row["raw_name"]])
-        person = (row["name"], row.get("affiliation_raw"))
+        person = (row["name"], roster_affiliation(roster["sha256"], row))
         if row["bib"] in people and people[row["bib"]] != person:
             conflicting_bibs.add(row["bib"])
         people[row["bib"]] = person
@@ -60,11 +60,16 @@ def inventory_protocol(pages, roster, published=None):
         source_issues.append({"code": "ROSTER_BIB_CONFLICT", "page": None, "message": "One roster bib has conflicting normalized identities or affiliations."})
     if roster.get("issues"):
         source_issues.append({"code": "ROSTER_ISSUES", "page": None, "message": "Resolve the supplied roster's extraction issues before exporting events."})
-    page_kinds = {"results": [], "classification": [], "other": [], "needs_review": []}
+    page_kinds = {"results": [], "classification": [], "other": [], "needs_review": [], "supplementary": []}
     if set(numbers) != set(range(1, roster["page_count"] + 1)):
         source_issues.append({"code": "PARTIAL_PAGE_SCAN", "page": None, "message": "Every physical page is required for a protocol inventory."})
     for number, text in pages:
-        text, heading_evidence = join_event_headings(text)
+        if reviewed_source_table(text, roster["sha256"], number):
+            page_kinds["supplementary"].append(number)
+            continue
+        if any(p["page"] == number for p in REVIEWED_TABLES.get(roster["sha256"], [])):
+            source_issues.append({"code":"SUPPLEMENTARY_SOURCE_MISMATCH","page":number,"message":"The supplemental source table differs from its reviewed exact page text."})
+        text, heading_evidence = join_event_headings(text, roster["sha256"])
         upper = text.upper()
         lines = text.splitlines()
         if "CLASSIFICATION" in upper:
@@ -81,6 +86,9 @@ def inventory_protocol(pages, roster, published=None):
                 source_issues.append({"code": "MISSING_RESULTS_HEADING", "page": number, "message": "Possible race data has no supported RESULTS heading."})
             continue
         page_kinds["results"].append(number)
+        if not any(HEADER.match(line) for line in lines):
+            page_kinds["needs_review"].append(number)
+            source_issues.append({"code": "UNSUPPORTED_RESULTS_PAGE", "page": number, "message": "A RESULTS page has no supported numbered event heading; supplementary or unnumbered result tables require review."})
         current, race_id = None, None
         for line in lines:
             heading = HEADER.match(line)
@@ -115,7 +123,7 @@ def inventory_protocol(pages, roster, published=None):
                     source_issues.append({"code": "UNASSIGNED_RACE", "page": number, "message": line})
                 else:
                     records[current]["source_races"].append({"race_id": race_id, "page": number, "label": line})
-                    race_owners[race_id].add(current)
+                    race_owners[source_race_key(roster["sha256"], current[1], race_id)].add(current)
                 continue
             if result_like(line, names):
                 if current is None or race_id is None:
@@ -127,12 +135,15 @@ def inventory_protocol(pages, roster, published=None):
     events, extracted = [], {}
     for key, record in sorted(records.items(), key=lambda pair: (int(pair[0][0]), pair[0][1])):
         record["pages"] = sorted(record["pages"])
-        if any(len(race_owners[r["race_id"]]) > 1 for r in record["source_races"]):
+        scope = REVIEWED_RACE_SCOPES.get((roster["sha256"], record["event_label_raw"]))
+        if scope and [(r["race_id"], r["page"]) for r in record["source_races"]] != [(scope["raceId"], scope["page"])]:
+            record["issues"].append({"code": "REVIEWED_RACE_SCOPE", "page": scope["page"], "message": "The reviewed report section must preserve its exact original race number and page."})
+        if any(len(race_owners[source_race_key(roster["sha256"], record["event_label_raw"], r["race_id"])]) > 1 for r in record["source_races"]):
             record["issues"].append({"code": "REUSED_RACE_ID", "page": None, "message": "Source race IDs are reused across different events."})
         parsed = None
         if not record["issues"]:
             try:
-                parsed = parse_event_pages([(n, "RESULTS\n" + "\n".join(record["blocks"][n])) for n in record["pages"]], roster["observations"], record["event_number"], record["event_label_raw"])
+                parsed = parse_event_pages([(n, "RESULTS\n" + "\n".join(record["blocks"][n])) for n in record["pages"]], roster["observations"], record["event_number"], record["event_label_raw"], roster["sha256"])
                 if "source_heading_lines" in record:
                     parsed["source_heading_lines"] = record["source_heading_lines"]
                 actual = Counter((r["source_page"], r["race_id"], r["row_raw"]) for r in parsed["results"])
@@ -221,7 +232,7 @@ def main():
         if len(pdf.pages) != roster["page_count"]:
             cli.error("The PDF page count does not match the roster")
         for index, page in enumerate(pdf.pages, 1):
-            pages.append((index, page.extract_text() or ""))
+            pages.append((index, protocol_page_text(page, roster["sha256"], index)))
             page.close()
             if index % 25 == 0:
                 print(f"Read {index}/{len(pdf.pages)} physical pages", flush=True)

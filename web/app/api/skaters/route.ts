@@ -1,4 +1,5 @@
 import { database, unavailable } from "@/lib/database";
+import { sourceNameSql } from "@/lib/source-name";
 export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
@@ -9,10 +10,11 @@ export async function GET(request: Request) {
   }
   const search = "%" + q.replace(/[\\%_]/g, "\\$&") + "%";
   const cte = `WITH records AS (
-    SELECT p.*,c.discipline,c.season,
+    SELECT p.id,p.competition_id,p.bib,p.affiliation,p.name source_name,${sourceNameSql()} name,c.discipline,c.season,
       CASE WHEN l.status='needs_review' THEN p.id ELSE COALESCE(l.skater_id,p.id) END identity_key,
       COALESCE(l.status,'unlinked') link_status
     FROM participants p JOIN competitions c ON c.id=p.competition_id
+    JOIN sources s ON s.id=c.source_id
     LEFT JOIN skater_links l ON l.participant_key=p.id
   ), matches AS (
     SELECT r.* FROM records r

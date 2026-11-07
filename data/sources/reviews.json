@@ -1,0 +1,182 @@
+[
+  {
+    "report": "data/samples/short-track-agn-protocol-inventory.json",
+    "sha256": "96baa4cc09283058cc4a458f6ced92316f2b029fa5b7d3cf75d6f371f848744f",
+    "checked_at": "2026-11-03",
+    "status": "audited"
+  },
+  {
+    "report": "data/samples/long-track-agn-protocol-inventory.json",
+    "sha256": "7a22b0b5b4713fae920d83e4ee500d40cee3aca58e23d3b895c774e1a88db45f",
+    "checked_at": "2026-11-03",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/long-track-agn-2025-review.json",
+    "sha256": "ac7793ee804fff69c79130ee819486cf2cac542bd41d42653061cb7f5bce33bd",
+    "checked_at": "2026-11-04T21:48:56.746734+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/short-track-agn-2025-review.json",
+    "sha256": "684a7f993e1d95ff22326084b21f2fe9f28e870a06bf2a6fe7938aeac9cd033f",
+    "checked_at": "2026-11-03T19:56:03.976461+00:00",
+    "status": "needs-review"
+  },
+  {
+    "report": "data/samples/masa-2026-protocol-inventory.json",
+    "sha256": "2671f997837bdc170dfc1fc995fbe9431ea30df968678e51e62d350a72440ae2",
+    "checked_at": "2026-11-03T19:56:04.010038+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/amcup-2027-review.json",
+    "sha256": "33d17599ed3cc66b082be4f0590227444ed85bdea41c79c82ece32eb90bad1bd",
+    "checked_at": "2026-11-05T00:00:11.639533+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/buffalo-2027-review.json",
+    "sha256": "42d59ae2334f8467e9b9a099d1fd25c3bd2ab1358e49e3c3b4e9fc66b7b1d2fa",
+    "checked_at": "2026-11-05T02:59:06.234508+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/nutricost-2027-review.json",
+    "sha256": "cd21db3b749d52da838fee0ab42fe87e182a003ae1644a6aafd80c6312e0ba43",
+    "checked_at": "2026-11-05T03:25:45.180731+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/oval-fall-2026-review.json",
+    "sha256": "64c769c1dee6adbc9db37c6cd1a5c0dbf89729dfe0971c21a92f37dee4c449d2",
+    "checked_at": "2026-11-05T03:37:56.922511+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/carl-2026-review.json",
+    "sha256": "418feb25acf63195d2890e045900ced667059ed0d67a430e426848db759ea895",
+    "checked_at": "2026-11-05T15:32:36.349978+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/desert-2026-review.json",
+    "sha256": "e10567180db525162ba16a14fdf026d08a6c076d104d66955db0f601080b8f14",
+    "checked_at": "2026-11-05T15:57:03.655647+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/washington-2026-review.json",
+    "sha256": "716413b7d201011fadfe2af999c87172ea1dfe36b4985083fca155061d58ce24",
+    "checked_at": "2026-11-05T16:14:30.882846+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/land-of-lincoln-2026-review.json",
+    "sha256": "1a2ac72f45d9a9ab0a1e465e627f4e2953802dad66f6b2486a0990d3fc006cc4",
+    "checked_at": "2026-11-05T16:34:11.529469+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/amcup-final-2026-review.json",
+    "sha256": "368e7058bbc8cce41ee77d6ed36cacb1459827b5572b8b41d618a9a4ed046d80",
+    "checked_at": "2026-11-05T21:35:32.224726+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/socal-2026-review.json",
+    "sha256": "f4c52f033f75eb04e9c242f982210481fb9cf02a5252c2b7d4244636f9ab04b0",
+    "checked_at": "2026-11-05T22:08:29.174871+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/st-louis-2026-review.json",
+    "sha256": "5dfc2f820dcf8e7f434a4fc2e097e7808f0b6d995e1257f9a25cf04f7f5e3e71",
+    "checked_at": "2026-11-05T22:29:50.753650+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/ohio-2026-review.json",
+    "sha256": "7064a19fde1e357d553cbd1cae5ed3fd4112553ee9aa10b5e91940244e3906dc",
+    "checked_at": "2026-11-06T01:10:26.282008+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/northburke-2026-review.json",
+    "sha256": "568a3e9a8d0a7bf23cca39a115e6e0c3d3cf78e4ba97368a99f9b8ee46d84737",
+    "checked_at": "2026-11-06T03:14:38.441225+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/presidential-2026-review.json",
+    "sha256": "be4ae183f2b061e0b93b4b477183c16ed7388cf4322945a687f3d030bdaa00e4",
+    "checked_at": "2026-11-06T04:18:19.233472+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/empire-2026-review.json",
+    "sha256": "79708f9a2a31753a3932722e6681dc5bb8f9d1a4c8f46940982f130cb53c1258",
+    "checked_at": "2026-11-06T04:46:31.802454+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/wsa-gold-2026-review.json",
+    "sha256": "9901b4b98a7cb5e9a5f523821eeb48b1848d2668037c12545e5c243468c01120",
+    "checked_at": "2026-11-06T04:56:48.685138+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/january-thaw-2026-review.json",
+    "sha256": "45c8361aeabeea5e23fd48392a8f4b3e06b411c9a214a036fa54d8f275ac20c8",
+    "checked_at": "2026-11-06T14:01:55.698344+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/park-ridge-2026-review.json",
+    "sha256": "4b59490115b908771b71be67799f71aed976aaabe0fbc844dc62ad551ad2d12f",
+    "checked_at": "2026-11-06T14:16:13.688125+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/us-junior-amcup2-2026-review.json",
+    "sha256": "8c5e01da66dbf8b34e1136ef2895b5017ca65bf17845b735a0720b3723328780",
+    "checked_at": "2026-11-06T18:57:05.289262+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/gateway-2026-review.json",
+    "sha256": "68185817e31d04487b2e446b4cf47b9dcf5985e611eda20ed4d2edcbf8955b27",
+    "checked_at": "2026-11-06T19:45:08.892935+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/olympic-trials-2026-review.json",
+    "sha256": "90d543df31d677c3c602ccdd1c4b643fdfa61002a8cf46e0c9e55835c56c1232",
+    "checked_at": "2026-11-06T20:33:49.618765+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/robby-kaufman-2025-review.json",
+    "sha256": "99a73b2f09cb86e17be0919ca1b2a7ae693eb456f13e5e4dd5dee76386ab4a4d",
+    "checked_at": "2026-11-06T20:47:05.877111+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/winter-speedtacular-2025-review.json",
+    "sha256": "38e236c261e961d12319ddd02254a85413a9267957d5c237cb862f242e15a0f4",
+    "checked_at": "2026-11-06T20:59:36.973233+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/uoo-winter-challenge-2025-review.json",
+    "sha256": "eabd88330ac93105d53ff7f6bcb9640e6fe711b253a9ef10161e3fe155d87c9c",
+    "checked_at": "2026-11-06T21:49:52.249191+00:00",
+    "status": "audited"
+  },
+  {
+    "report": "data/sources/us-junior-short-track-championships-2025-review.json",
+    "sha256": "2531049f874a6f334b204d652398a897a18ad8c7316450af7985b086861bf12c",
+    "checked_at": "2026-11-06T21:58:35.257540+00:00",
+    "status": "audited"
+  }
+]

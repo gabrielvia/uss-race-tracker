@@ -1,5 +1,5 @@
 import { database } from "@/lib/database";
-import { categoryInterval,type AgeRule } from "@/lib/age-rules";
+import { observedAgeBounds,type AgeRule } from "@/lib/age-rules";
 import { deriveSkatingAge,type AgeInterval } from "@/lib/skating-age";
 import type { ImportPayload } from "@/lib/imports/validation";
 export async function previewAgeConstraints(payload:ImportPayload){
@@ -16,7 +16,7 @@ export async function previewAgeConstraints(payload:ImportPayload){
  const applicable=rule?.season===item.competition.season&&rule?.discipline===item.competition.discipline?rule:null;
  const intervals=new Map<string,AgeInterval[]>(),unresolved=new Set<string>(),identityReview:string[]=[],participantKeys=new Map<string,string[]>();
  const add=(skater:string,season:string,category:string|null,division:string,discipline:string,definition:AgeRule|null)=>{
-  const bounds=definition?.season===season&&definition?.discipline===discipline ? categoryInterval(category,definition)??(category===null?definition.divisionCategories?.[division]??null:null):null;
+  const bounds=observedAgeBounds(definition,season,discipline,category,division);
   if(!bounds||!definition)return false;
   const list=intervals.get(skater)??[];list.push({season,basis:definition.basis,...bounds,source:{category:category??division,ruleVersion:definition.version}});intervals.set(skater,list);return true;
  };

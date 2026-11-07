@@ -1,0 +1,5792 @@
+{
+  "version": "olympic-trials-source-review/1",
+  "reviewStatus": "reviewed",
+  "checkedAt": "2026-11-06T20:32:55.015110+00:00",
+  "sourceId": "58c38cafd66a90d1",
+  "sourceUrl": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt8e76b945f9f0aee6/6978f840e514c79e9869b9dc/2026_Olympic_Trials_LT_Protocol.pdf",
+  "sha256": "90d543df31d677c3c602ccdd1c4b643fdfa61002a8cf46e0c9e55835c56c1232",
+  "directorySeason": "2025-2026",
+  "physicalPages": 150,
+  "originalBytes": 58197666,
+  "published": true,
+  "newRows": 252,
+  "competition": {
+    "id": "lt-olympic-trials-2026",
+    "title": "2026 U.S. Olympic Team Trials Long Track",
+    "discipline": "long-track",
+    "season": "2025-2026",
+    "startsOn": "2026-01-02",
+    "endsOn": "2026-01-05",
+    "location": "Pettit National Ice Center, Milwaukee, WI"
+  },
+  "eventCalendar": "https://www.usspeedskating.org/2026-us-olympic-trials-long-track",
+  "extractionCheckpoint": {
+    "visionScans": 147,
+    "resultPageCandidates": [
+      6,
+      15,
+      22,
+      29,
+      44,
+      53,
+      68,
+      70,
+      79,
+      93,
+      103,
+      111,
+      124,
+      134,
+      144
+    ],
+    "sourcePageImages": "outputs/olympic-trials-2026-review/pages",
+    "sourcePageOcr": "outputs/olympic-trials-2026-review/vision",
+    "verifiedResultRows": 252,
+    "verifiedClassificationRows": 49,
+    "nextStep": "Publish and verify the complete candidate."
+  },
+  "resolvedSourceInterpretations": [
+    {
+      "participant": "Greta Myers",
+      "bib": "109",
+      "pages": [
+        68,
+        70,
+        71
+      ],
+      "officialRaceStatus": "DQ",
+      "separateReskateTimeRaw": "1:56.04",
+      "basis": "The signed result on page 70 and the official US Speedskating report record an authorized reskate used for qualification.",
+      "officialEventReport": "https://www.usspeedskating.org/news/2026/january/04/lehman-myers-qualify-for-olympics",
+      "handling": "Keep the official DQ row and the distinct signed reskate row with its source title and eligible 1500 metre time."
+    },
+    {
+      "kind": "unsigned-reskate-record",
+      "participant": "Matthew Salm",
+      "bib": "334",
+      "distance": 1000,
+      "signedResult": {
+        "page": 29,
+        "event": "4. RESULT 1000m Men",
+        "rank": 18,
+        "timeRaw": "1:14.29"
+      },
+      "reskateTiming": {
+        "pages": [
+          33,
+          34
+        ],
+        "event": "15. Reskate Men 1000m",
+        "timeRaw": "1:14.661"
+      },
+      "proposedHandling": "Keep the signed ranked result as the official result. Preserve the separately numbered reskate time as supplementary timing evidence rather than an additional ranked result or PB entry.",
+      "resolution": "The user confirmed that the signed result is the official result. The separately numbered unsigned reskate time remains supplementary timing evidence. Apply this handling to future sources."
+    }
+  ],
+  "unresolvedQuestions": [],
+  "events": [
+    {
+      "label": "1. RESULT 3000m Women",
+      "distance": 3000,
+      "unit": "metres",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 6,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "109",
+            "Name": "Greta MYERS",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "Out",
+            "Time": "4:06.79",
+            "Behind": null,
+            "Points": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "108",
+            "Name": "Giorgia BIRKELAND",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "In",
+            "Time": "4:08.65",
+            "Behind": "+1.86",
+            "Points": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rnk": "3",
+            "Nr": "121",
+            "Name": "Piper YDE",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "In",
+            "Time": "4:27.42",
+            "Behind": "+20.63",
+            "Points": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "122",
+            "Name": "Rebecca SIMMONS",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "In",
+            "Time": "4:33.40",
+            "Behind": "+26.61",
+            "Points": null
+          }
+        },
+        {
+          "page": 6,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "116",
+            "Name": "Marley SOLDAN",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "Out",
+            "Time": "4:37.42",
+            "Behind": "+30.63",
+            "Points": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "2. RESULT 5000m Men",
+      "distance": 5000,
+      "unit": "metres",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 15,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "308",
+            "Name": "Casey DAWSON",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "Out",
+            "Time": "6:12.85",
+            "Behind": null,
+            "Points": null
+          }
+        },
+        {
+          "page": 15,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "314",
+            "Name": "Ethan CEPURAN",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "In",
+            "Time": "6:19.33",
+            "Behind": "+6.48",
+            "Points": null
+          }
+        },
+        {
+          "page": 15,
+          "fields": {
+            "Rnk": "3",
+            "Nr": "327",
+            "Name": "Kelin DUNFEE",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "In",
+            "Time": "6:31.96",
+            "Behind": "+19.11",
+            "Points": null
+          }
+        },
+        {
+          "page": 15,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "343",
+            "Name": "William SILK",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "In",
+            "Time": "6:35.65",
+            "Behind": "+22.80",
+            "Points": null
+          }
+        },
+        {
+          "page": 15,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "323",
+            "Name": "Jonathan TOBON",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "Out",
+            "Time": "6:43.31",
+            "Behind": "+30.46",
+            "Points": null
+          }
+        },
+        {
+          "page": 15,
+          "fields": {
+            "Rnk": "6",
+            "Nr": "319",
+            "Name": "Herb HARBISON",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "Out",
+            "Time": "7:05.83",
+            "Behind": "+52.98",
+            "Points": null
+          }
+        },
+        {
+          "page": 15,
+          "fields": {
+            "Rnk": "7",
+            "Nr": "340",
+            "Name": "Samuel HART-GORMAN",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "Out",
+            "Time": "7:06.30",
+            "Behind": "+53.45",
+            "Points": null
+          }
+        },
+        {
+          "page": 15,
+          "fields": {
+            "Rnk": "8",
+            "Nr": "342",
+            "Name": "Thomas FITZGERALD",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "In",
+            "Time": "7:14.80",
+            "Behind": "+1:01.95",
+            "Points": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "3. RESULT 1000m Women",
+      "distance": 1000,
+      "unit": "metres",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "106",
+            "Name": "Erin JACKSON",
+            "Country": "USA",
+            "Race": "11",
+            "Lane": "In",
+            "Time": "1:14.62",
+            "Behind": null,
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "102",
+            "Name": "Brittany BOWE",
+            "Country": "USA",
+            "Race": "9",
+            "Lane": "Out",
+            "Time": "1:15.01",
+            "Behind": "+0.39",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "3",
+            "Nr": "119",
+            "Name": "Mia MANGANELLO",
+            "Country": "USA",
+            "Race": "10",
+            "Lane": "In",
+            "Time": "1:16.55",
+            "Behind": "+1.93",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "109",
+            "Name": "Greta MYERS",
+            "Country": "USA",
+            "Race": "11",
+            "Lane": "Out",
+            "Time": "1:16.75",
+            "Behind": "+2.13",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "112",
+            "Name": "Kimi GOETZ",
+            "Country": "USA",
+            "Race": "9",
+            "Lane": "In",
+            "Time": "1:16.77",
+            "Behind": "+2.15",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "6",
+            "Nr": "103",
+            "Name": "Chrysta RANDS-EVANS",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "In",
+            "Time": "1:17.47",
+            "Behind": "+2.85",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "7",
+            "Nr": "124",
+            "Name": "Sarah WARREN",
+            "Country": "USA",
+            "Race": "10",
+            "Lane": "Out",
+            "Time": "1:17.71",
+            "Behind": "+3.09",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "8",
+            "Nr": "117",
+            "Name": "Mckenzie BROWNE",
+            "Country": "USA",
+            "Race": "8",
+            "Lane": "Out",
+            "Time": "1:19.03",
+            "Behind": "+4.41",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "9",
+            "Nr": "121",
+            "Name": "Piper YDE",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "In",
+            "Time": "1:20.22",
+            "Behind": "+5.60",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "10",
+            "Nr": "100",
+            "Name": "Anna QUINN",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "Out",
+            "Time": "1:20.30",
+            "Behind": "+5.68",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "11",
+            "Nr": "110",
+            "Name": "Ilsa SHOBE",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "In",
+            "Time": "1:21.52",
+            "Behind": "+6.90",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "12",
+            "Nr": "101",
+            "Name": "Blair CRUIKSHANK",
+            "Country": "USA",
+            "Race": "8",
+            "Lane": "In",
+            "Time": "1:21.53",
+            "Behind": "+6.91",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "13",
+            "Nr": "114",
+            "Name": "Libby WILLIAMS",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "In",
+            "Time": "1:22.34",
+            "Behind": "+7.72",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "14",
+            "Nr": "115",
+            "Name": "Lindsey WOODBURY",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "In",
+            "Time": "1:22.63",
+            "Behind": "+8.01",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "15",
+            "Nr": "105",
+            "Name": "Emma DE BOCK",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "Out",
+            "Time": "1:23.76",
+            "Behind": "+9.14",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "16",
+            "Nr": "125",
+            "Name": "Elise STAVE",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "In",
+            "Time": "1:23.85",
+            "Behind": "+9.23",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "17",
+            "Nr": "123",
+            "Name": "Samantha SCHEFFLER",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "Out",
+            "Time": "1:23.86",
+            "Behind": "+9.24",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "18",
+            "Nr": "122",
+            "Name": "Rebecca SIMMONS",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "Out",
+            "Time": "1:24.59",
+            "Behind": "+9.97",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "19",
+            "Nr": "111",
+            "Name": "Keeley WHITCOMB",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "In",
+            "Time": "1:24.68",
+            "Behind": "+10.06",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "20",
+            "Nr": "118",
+            "Name": "Melissa DAHLMANN",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "Out",
+            "Time": "1:25.87",
+            "Behind": "+11.25",
+            "Points": null
+          }
+        },
+        {
+          "page": 22,
+          "fields": {
+            "Rnk": "21",
+            "Nr": "113",
+            "Name": "Leah CHOI",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "Out",
+            "Time": "1:28.36",
+            "Behind": "+13.74",
+            "Points": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "4. RESULT 1000m Men",
+      "distance": 1000,
+      "unit": "metres",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "309",
+            "Name": "Conor MCDERMOTT-MOSTOWY",
+            "Country": "USA",
+            "Race": "16",
+            "Lane": "Out",
+            "Time": "1:07.60",
+            "Behind": null,
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "310",
+            "Name": "Cooper MCLEOD",
+            "Country": "USA",
+            "Race": "15",
+            "Lane": "In",
+            "Time": "1:07.84",
+            "Behind": "+0.24",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "3",
+            "Nr": "324",
+            "Name": "Jordan STOLZ",
+            "Country": "USA",
+            "Race": "16",
+            "Lane": "In",
+            "Time": "1:07.96",
+            "Behind": "+0.36",
+            "Points": null,
+            "Name Marker": "F"
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "344",
+            "Name": "Zach STOPPELMOOR",
+            "Country": "USA",
+            "Race": "15",
+            "Lane": "Out",
+            "Time": "1:08.40",
+            "Behind": "+0.80",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "335",
+            "Name": "Max WEBER",
+            "Country": "USA",
+            "Race": "13",
+            "Lane": "Out",
+            "Time": "1:09.44",
+            "Behind": "+1.84",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "6",
+            "Nr": "313",
+            "Name": "Emery LEHMAN",
+            "Country": "USA",
+            "Race": "17",
+            "Lane": "Out",
+            "Time": "1:09.54",
+            "Behind": "+1.94",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "7",
+            "Nr": "305",
+            "Name": "Austin KLEBA",
+            "Country": "USA",
+            "Race": "14",
+            "Lane": "In",
+            "Time": "1:10.07",
+            "Behind": "+2.47",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "8",
+            "Nr": "341",
+            "Name": "Tanner WORLEY",
+            "Country": "USA",
+            "Race": "14",
+            "Lane": "Out",
+            "Time": "1:10.20",
+            "Behind": "+2.60",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "9",
+            "Nr": "323",
+            "Name": "Jonathan TOBON",
+            "Country": "USA",
+            "Race": "17",
+            "Lane": "In",
+            "Time": "1:10.95",
+            "Behind": "+3.35",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "10",
+            "Nr": "303",
+            "Name": "Auggie HERMAN",
+            "Country": "USA",
+            "Race": "12",
+            "Lane": "Out",
+            "Time": "1:11.86",
+            "Behind": "+4.26",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "11",
+            "Nr": "330",
+            "Name": "Leo DROSSOS-THOMPSON",
+            "Country": "USA",
+            "Race": "10",
+            "Lane": "In",
+            "Time": "1:12.43",
+            "Behind": "+4.83",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "12",
+            "Nr": "320",
+            "Name": "Ian FREDERICK",
+            "Country": "USA",
+            "Race": "12",
+            "Lane": "In",
+            "Time": "1:13.47",
+            "Behind": "+5.87",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "13",
+            "Nr": "315",
+            "Name": "Finn SIEBERT",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "Out",
+            "Time": "1:13.59",
+            "Behind": "+5.99",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "14",
+            "Nr": "317",
+            "Name": "George WHEELOCK",
+            "Country": "USA",
+            "Race": "9",
+            "Lane": "Out",
+            "Time": "1:13.70",
+            "Behind": "+6.10",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "15",
+            "Nr": "319",
+            "Name": "Herb HARBISON",
+            "Country": "USA",
+            "Race": "10",
+            "Lane": "Out",
+            "Time": "1:13.72",
+            "Behind": "+6.12",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "16",
+            "Nr": "339",
+            "Name": "Sam CHAMBERLAIN",
+            "Country": "USA",
+            "Race": "8",
+            "Lane": "Out",
+            "Time": "1:14.05",
+            "Behind": "+6.45",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "17",
+            "Nr": "345",
+            "Name": "Zachary JENSEN",
+            "Country": "USA",
+            "Race": "9",
+            "Lane": "In",
+            "Time": "1:14.17",
+            "Behind": "+6.57",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "18",
+            "Nr": "334",
+            "Name": "Matthew SALM",
+            "Country": "USA",
+            "Race": "11",
+            "Lane": "In",
+            "Time": "1:14.29",
+            "Behind": "+6.69",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "19",
+            "Nr": "325",
+            "Name": "Jori KOLA",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "In",
+            "Time": "1:14.32",
+            "Behind": "+6.72",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "20",
+            "Nr": "338",
+            "Name": "Sabien TINSON",
+            "Country": "USA",
+            "Race": "13",
+            "Lane": "In",
+            "Time": "1:14.42",
+            "Behind": "+6.82",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "21",
+            "Nr": "327",
+            "Name": "Kelin DUNFEE",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "In",
+            "Time": "1:14.95",
+            "Behind": "+7.35",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "22",
+            "Nr": "304",
+            "Name": "Austin CARLSON",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "Out",
+            "Time": "1:15.03",
+            "Behind": "+7.43",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "23",
+            "Nr": "306",
+            "Name": "Brian BULLARD",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "In",
+            "Time": "1:15.46",
+            "Behind": "+7.86",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "24",
+            "Nr": "332",
+            "Name": "Maison RILEY",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "In",
+            "Time": "1:15.53",
+            "Behind": "+7.93",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "25",
+            "Nr": "300",
+            "Name": "Aiden MEACHAM",
+            "Country": "USA",
+            "Race": "8",
+            "Lane": "In",
+            "Time": "1:15.82",
+            "Behind": "+8.22",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "26",
+            "Nr": "302",
+            "Name": "Anson QUINN",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "In",
+            "Time": "1:15.98",
+            "Behind": "+8.38",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "27",
+            "Nr": "340",
+            "Name": "Samuel HART-GORMAN",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "In",
+            "Time": "1:16.09",
+            "Behind": "+8.49",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "28",
+            "Nr": "326",
+            "Name": "Kc BOUTIETTE",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "Out",
+            "Time": "1:16.20",
+            "Behind": "+8.60",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "29",
+            "Nr": "316",
+            "Name": "Gavin ORD",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "Out",
+            "Time": "1:16.87",
+            "Behind": "+9.27",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "30",
+            "Nr": "322",
+            "Name": "Jerry MECH",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "In",
+            "Time": "1:18.75",
+            "Behind": "+11.15",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "31",
+            "Nr": "337",
+            "Name": "Riley MARTIN",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "Out",
+            "Time": "1:19.26",
+            "Behind": "+11.66",
+            "Points": null
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": "32",
+            "Nr": "318",
+            "Name": "Henry SCHLICHTING",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "Out",
+            "Time": "1:31.38",
+            "Behind": "+23.78",
+            "Points": null,
+            "Name Marker": "F"
+          }
+        },
+        {
+          "page": 29,
+          "fields": {
+            "Rnk": null,
+            "Nr": "342",
+            "Name": "Thomas FITZGERALD",
+            "Country": "USA",
+            "Race": "11",
+            "Lane": "Out",
+            "Time": "DQ",
+            "Behind": null,
+            "Points": null,
+            "Name Rule": "T09"
+          },
+          "status": "DQ",
+          "qualification": "T09"
+        }
+      ]
+    },
+    {
+      "label": "5. RESULT 1st 500m Women",
+      "distance": 500,
+      "unit": "metres",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "106",
+            "Name": "Erin JACKSON",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "Out",
+            "Time": "38.15",
+            "Behind": null,
+            "Points": "38.158"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "124",
+            "Name": "Sarah WARREN",
+            "Country": "USA",
+            "Race": "8",
+            "Lane": "Out",
+            "Time": "38.86",
+            "Behind": "+0.71",
+            "Points": "38.863"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "3",
+            "Nr": "117",
+            "Name": "Mckenzie BROWNE",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "Out",
+            "Time": "38.88(8)",
+            "Behind": "+0.73",
+            "Points": "38.888"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "103",
+            "Name": "Chrysta RANDS-EVANS",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "In",
+            "Time": "38.88(9)",
+            "Behind": "+0.73",
+            "Points": "38.889"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "112",
+            "Name": "Kimi GOETZ",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "In",
+            "Time": "39.23",
+            "Behind": "+1.08",
+            "Points": "39.235"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "6",
+            "Nr": "101",
+            "Name": "Blair CRUIKSHANK",
+            "Country": "USA",
+            "Race": "8",
+            "Lane": "In",
+            "Time": "40.38",
+            "Behind": "+2.23",
+            "Points": "40.387"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "7",
+            "Nr": "114",
+            "Name": "Libby WILLIAMS",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "In",
+            "Time": "40.71",
+            "Behind": "+2.56",
+            "Points": "40.715"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "8",
+            "Nr": "100",
+            "Name": "Anna QUINN",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "Out",
+            "Time": "40.75",
+            "Behind": "+2.60",
+            "Points": "40.751"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "9",
+            "Nr": "121",
+            "Name": "Piper YDE",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "Out",
+            "Time": "40.82",
+            "Behind": "+2.67",
+            "Points": "40.828"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "10",
+            "Nr": "115",
+            "Name": "Lindsey WOODBURY",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "Out",
+            "Time": "41.28",
+            "Behind": "+3.13",
+            "Points": "41.284"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "11",
+            "Nr": "110",
+            "Name": "Ilsa SHOBE",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "In",
+            "Time": "41.40",
+            "Behind": "+3.25",
+            "Points": "41.408"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "12",
+            "Nr": "105",
+            "Name": "Emma DE BOCK",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "In",
+            "Time": "41.62",
+            "Behind": "+3.47",
+            "Points": "41.622"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "13",
+            "Nr": "123",
+            "Name": "Samantha SCHEFFLER",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "Out",
+            "Time": "41.95",
+            "Behind": "+3.80",
+            "Points": "41.957"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "14",
+            "Nr": "111",
+            "Name": "Keeley WHITCOMB",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "In",
+            "Time": "42.51",
+            "Behind": "+4.36",
+            "Points": "42.510"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "15",
+            "Nr": "116",
+            "Name": "Marley SOLDAN",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "In",
+            "Time": "42.55",
+            "Behind": "+4.40",
+            "Points": "42.553"
+          }
+        },
+        {
+          "page": 44,
+          "fields": {
+            "Rnk": "16",
+            "Nr": "120",
+            "Name": "Natasa GAKOVIC",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "Out",
+            "Time": "42.90",
+            "Behind": "+4.75",
+            "Points": "42.907"
+          }
+        }
+      ]
+    },
+    {
+      "label": "6. RESULT 1st 500m Men",
+      "distance": 500,
+      "unit": "metres",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "324",
+            "Name": "Jordan STOLZ",
+            "Country": "USA",
+            "Race": "16",
+            "Lane": "Out",
+            "Time": "34.76",
+            "Behind": null,
+            "Points": "34.761"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "310",
+            "Name": "Cooper MCLEOD",
+            "Country": "USA",
+            "Race": "14",
+            "Lane": "In",
+            "Time": "34.82",
+            "Behind": "+0.06",
+            "Points": "34.820"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "3",
+            "Nr": "344",
+            "Name": "Zach STOPPELMOOR",
+            "Country": "USA",
+            "Race": "14",
+            "Lane": "Out",
+            "Time": "34.94",
+            "Behind": "+0.18",
+            "Points": "34.940"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "309",
+            "Name": "Conor MCDERMOTT-MOSTOWY",
+            "Country": "USA",
+            "Race": "15",
+            "Lane": "In",
+            "Time": "35.15",
+            "Behind": "+0.39",
+            "Points": "35.159"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "341",
+            "Name": "Tanner WORLEY",
+            "Country": "USA",
+            "Race": "16",
+            "Lane": "In",
+            "Time": "35.41",
+            "Behind": "+0.65",
+            "Points": "35.412"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "6",
+            "Nr": "305",
+            "Name": "Austin KLEBA",
+            "Country": "USA",
+            "Race": "15",
+            "Lane": "Out",
+            "Time": "35.51",
+            "Behind": "+0.75",
+            "Points": "35.516"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "7",
+            "Nr": "338",
+            "Name": "Sabien TINSON",
+            "Country": "USA",
+            "Race": "12",
+            "Lane": "In",
+            "Time": "36.06",
+            "Behind": "+1.30",
+            "Points": "36.066"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "8",
+            "Nr": "303",
+            "Name": "Auggie HERMAN",
+            "Country": "USA",
+            "Race": "11",
+            "Lane": "In",
+            "Time": "36.67",
+            "Behind": "+1.91",
+            "Points": "36.679"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "9",
+            "Nr": "320",
+            "Name": "Ian FREDERICK",
+            "Country": "USA",
+            "Race": "12",
+            "Lane": "Out",
+            "Time": "36.78",
+            "Behind": "+2.02",
+            "Points": "36.781"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "10",
+            "Nr": "330",
+            "Name": "Leo DROSSOS-THOMPSON",
+            "Country": "USA",
+            "Race": "11",
+            "Lane": "Out",
+            "Time": "37.02",
+            "Behind": "+2.26",
+            "Points": "37.024"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "11",
+            "Nr": "319",
+            "Name": "Herb HARBISON",
+            "Country": "USA",
+            "Race": "13",
+            "Lane": "Out",
+            "Time": "37.33",
+            "Behind": "+2.57",
+            "Points": "37.337"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "12",
+            "Nr": "317",
+            "Name": "George WHEELOCK",
+            "Country": "USA",
+            "Race": "13",
+            "Lane": "In",
+            "Time": "37.40",
+            "Behind": "+2.64",
+            "Points": "37.405"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "13",
+            "Nr": "345",
+            "Name": "Zachary JENSEN",
+            "Country": "USA",
+            "Race": "9",
+            "Lane": "In",
+            "Time": "37.42",
+            "Behind": "+2.66",
+            "Points": "37.428"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "14",
+            "Nr": "339",
+            "Name": "Sam CHAMBERLAIN",
+            "Country": "USA",
+            "Race": "10",
+            "Lane": "Out",
+            "Time": "37.53",
+            "Behind": "+2.77",
+            "Points": "37.532"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "15",
+            "Nr": "325",
+            "Name": "Jori KOLA",
+            "Country": "USA",
+            "Race": "8",
+            "Lane": "Out",
+            "Time": "37.54",
+            "Behind": "+2.78",
+            "Points": "37.544"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "16",
+            "Nr": "306",
+            "Name": "Brian BULLARD",
+            "Country": "USA",
+            "Race": "10",
+            "Lane": "In",
+            "Time": "37.59",
+            "Behind": "+2.83",
+            "Points": "37.591"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "17",
+            "Nr": "315",
+            "Name": "Finn SIEBERT",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "Out",
+            "Time": "37.64",
+            "Behind": "+2.88",
+            "Points": "37.645"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "18",
+            "Nr": "334",
+            "Name": "Matthew SALM",
+            "Country": "USA",
+            "Race": "8",
+            "Lane": "In",
+            "Time": "37.82",
+            "Behind": "+3.06",
+            "Points": "37.824"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "19",
+            "Nr": "304",
+            "Name": "Austin CARLSON",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "In",
+            "Time": "38.10",
+            "Behind": "+3.34",
+            "Points": "38.104"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "20",
+            "Nr": "322",
+            "Name": "Jerry MECH",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "In",
+            "Time": "38.38",
+            "Behind": "+3.62",
+            "Points": "38.381"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "21",
+            "Nr": "332",
+            "Name": "Maison RILEY",
+            "Country": "USA",
+            "Race": "9",
+            "Lane": "Out",
+            "Time": "38.53(0)",
+            "Behind": "+3.77",
+            "Points": "38.530"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "22",
+            "Nr": "300",
+            "Name": "Aiden MEACHAM",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "In",
+            "Time": "38.53(7)",
+            "Behind": "+3.77",
+            "Points": "38.537"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "23",
+            "Nr": "302",
+            "Name": "Anson QUINN",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "In",
+            "Time": "38.63",
+            "Behind": "+3.87",
+            "Points": "38.635"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "24",
+            "Nr": "337",
+            "Name": "Riley MARTIN",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "Out",
+            "Time": "38.91",
+            "Behind": "+4.15",
+            "Points": "38.914"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "25",
+            "Nr": "328",
+            "Name": "Kieran COLLINS",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "In",
+            "Time": "38.94",
+            "Behind": "+4.18",
+            "Points": "38.940"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "26",
+            "Nr": "321",
+            "Name": "Jeremy SONG",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "Out",
+            "Time": "39.05",
+            "Behind": "+4.29",
+            "Points": "39.053"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "27",
+            "Nr": "336",
+            "Name": "Michael HUBBS",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "Out",
+            "Time": "39.09",
+            "Behind": "+4.33",
+            "Points": "39.097"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "28",
+            "Nr": "333",
+            "Name": "Marc PELCHAT",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "In",
+            "Time": "39.15",
+            "Behind": "+4.39",
+            "Points": "39.158"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "29",
+            "Nr": "318",
+            "Name": "Henry SCHLICHTING",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "Out",
+            "Time": "39.25",
+            "Behind": "+4.49",
+            "Points": "39.257"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "30",
+            "Nr": "316",
+            "Name": "Gavin ORD",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "In",
+            "Time": "39.31",
+            "Behind": "+4.55",
+            "Points": "39.318"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "31",
+            "Nr": "329",
+            "Name": "Landon BOGEE",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "Out",
+            "Time": "39.37",
+            "Behind": "+4.61",
+            "Points": "39.378"
+          }
+        },
+        {
+          "page": 53,
+          "fields": {
+            "Rnk": "32",
+            "Nr": "311",
+            "Name": "Dan CARNEY",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "Out",
+            "Time": "39.45",
+            "Behind": "+4.69",
+            "Points": "39.458"
+          }
+        }
+      ]
+    },
+    {
+      "label": "7. RESULT 1500m Women",
+      "distance": 1500,
+      "unit": "metres",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 68,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "102",
+            "Name": "Brittany BOWE",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "Out",
+            "Time": "1:55.03",
+            "Behind": null,
+            "Points": null
+          }
+        },
+        {
+          "page": 68,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "108",
+            "Name": "Giorgia BIRKELAND",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "In",
+            "Time": "1:59.45",
+            "Behind": "+4.42",
+            "Points": null
+          }
+        },
+        {
+          "page": 68,
+          "fields": {
+            "Rnk": "3",
+            "Nr": "121",
+            "Name": "Piper YDE",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "Out",
+            "Time": "2:03.93",
+            "Behind": "+8.90",
+            "Points": null
+          }
+        },
+        {
+          "page": 68,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "100",
+            "Name": "Anna QUINN",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "In",
+            "Time": "2:05.57",
+            "Behind": "+10.54",
+            "Points": null
+          }
+        },
+        {
+          "page": 68,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "104",
+            "Name": "Elena STAVE",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "Out",
+            "Time": "2:06.83",
+            "Behind": "+11.80",
+            "Points": null
+          }
+        },
+        {
+          "page": 68,
+          "fields": {
+            "Rnk": "6",
+            "Nr": "110",
+            "Name": "Ilsa SHOBE",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "Out",
+            "Time": "2:07.72",
+            "Behind": "+12.69",
+            "Points": null
+          }
+        },
+        {
+          "page": 68,
+          "fields": {
+            "Rnk": "7",
+            "Nr": "122",
+            "Name": "Rebecca SIMMONS",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "In",
+            "Time": "2:08.34",
+            "Behind": "+13.31",
+            "Points": null
+          }
+        },
+        {
+          "page": 68,
+          "fields": {
+            "Rnk": "8",
+            "Nr": "118",
+            "Name": "Melissa DAHLMANN",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "In",
+            "Time": "2:10.61",
+            "Behind": "+15.58",
+            "Points": null
+          }
+        },
+        {
+          "page": 68,
+          "fields": {
+            "Rnk": "9",
+            "Nr": "125",
+            "Name": "Elise STAVE",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "In",
+            "Time": "2:10.62",
+            "Behind": "+15.59",
+            "Points": null
+          }
+        },
+        {
+          "page": 68,
+          "fields": {
+            "Rnk": "10",
+            "Nr": "105",
+            "Name": "Emma DE BOCK",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "Out",
+            "Time": "2:11.01",
+            "Behind": "+15.98",
+            "Points": null
+          }
+        },
+        {
+          "page": 68,
+          "fields": {
+            "Rnk": "11",
+            "Nr": "107",
+            "Name": "Evie FORRER",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "Out",
+            "Time": "2:12.92",
+            "Behind": "+17.89",
+            "Points": null
+          }
+        },
+        {
+          "page": 68,
+          "fields": {
+            "Rnk": "12",
+            "Nr": "113",
+            "Name": "Leah CHOI",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "Out",
+            "Time": "2:14.47",
+            "Behind": "+19.44",
+            "Points": null
+          }
+        },
+        {
+          "page": 68,
+          "fields": {
+            "Rnk": null,
+            "Nr": "109",
+            "Name": "Greta MYERS",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "In",
+            "Time": "DQ",
+            "Behind": null,
+            "Points": null,
+            "Name Rule": "T09"
+          },
+          "status": "DQ",
+          "qualification": "T09"
+        }
+      ]
+    },
+    {
+      "label": "8. RESULT 1500m Men",
+      "distance": 1500,
+      "unit": "metres",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "313",
+            "Name": "Emery LEHMAN",
+            "Country": "USA",
+            "Race": "10",
+            "Lane": "Out",
+            "Time": "1:44.20",
+            "Behind": null,
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "308",
+            "Name": "Casey DAWSON",
+            "Country": "USA",
+            "Race": "11",
+            "Lane": "In",
+            "Time": "1:45.60",
+            "Behind": "+1.40",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "3",
+            "Nr": "309",
+            "Name": "Conor MCDERMOTT-MOSTOWY",
+            "Country": "USA",
+            "Race": "11",
+            "Lane": "Out",
+            "Time": "1:45.89",
+            "Behind": "+1.69",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "314",
+            "Name": "Ethan CEPURAN",
+            "Country": "USA",
+            "Race": "12",
+            "Lane": "In",
+            "Time": "1:47.01",
+            "Behind": "+2.81",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "323",
+            "Name": "Jonathan TOBON",
+            "Country": "USA",
+            "Race": "8",
+            "Lane": "Out",
+            "Time": "1:47.84",
+            "Behind": "+3.64",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "6",
+            "Nr": "307",
+            "Name": "Carl PLATT",
+            "Country": "USA",
+            "Race": "8",
+            "Lane": "In",
+            "Time": "1:48.13",
+            "Behind": "+3.93",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "7",
+            "Nr": "343",
+            "Name": "William SILK",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "Out",
+            "Time": "1:48.94",
+            "Behind": "+4.74",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "8",
+            "Nr": "303",
+            "Name": "Auggie HERMAN",
+            "Country": "USA",
+            "Race": "10",
+            "Lane": "In",
+            "Time": "1:51.18",
+            "Behind": "+6.98",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "9",
+            "Nr": "330",
+            "Name": "Leo DROSSOS-THOMPSON",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "Out",
+            "Time": "1:52.61",
+            "Behind": "+8.41",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "10",
+            "Nr": "320",
+            "Name": "Ian FREDERICK",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "In",
+            "Time": "1:52.64",
+            "Behind": "+8.44",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "11",
+            "Nr": "327",
+            "Name": "Kelin DUNFEE",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "Out",
+            "Time": "1:52.79",
+            "Behind": "+8.59",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "12",
+            "Nr": "300",
+            "Name": "Aiden MEACHAM",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "In",
+            "Time": "1:53.77",
+            "Behind": "+9.57",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "13",
+            "Nr": "315",
+            "Name": "Finn SIEBERT",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "Out",
+            "Time": "1:54.02",
+            "Behind": "+9.82",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "14",
+            "Nr": "334",
+            "Name": "Matthew SALM",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "Out",
+            "Time": "1:54.49",
+            "Behind": "+10.29",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "15",
+            "Nr": "345",
+            "Name": "Zachary JENSEN",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "In",
+            "Time": "1:54.50",
+            "Behind": "+10.30",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "16",
+            "Nr": "340",
+            "Name": "Samuel HART-GORMAN",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "In",
+            "Time": "1:55.28",
+            "Behind": "+11.08",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "17",
+            "Nr": "342",
+            "Name": "Thomas FITZGERALD",
+            "Country": "USA",
+            "Race": "9",
+            "Lane": "Out",
+            "Time": "1:55.96",
+            "Behind": "+11.76",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "18",
+            "Nr": "326",
+            "Name": "Kc BOUTIETTE",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "In",
+            "Time": "1:56.81",
+            "Behind": "+12.61",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "19",
+            "Nr": "339",
+            "Name": "Sam CHAMBERLAIN",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "In",
+            "Time": "1:56.89",
+            "Behind": "+12.69",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "20",
+            "Nr": "304",
+            "Name": "Austin CARLSON",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "Out",
+            "Time": "1:57.06",
+            "Behind": "+12.86",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "21",
+            "Nr": "318",
+            "Name": "Henry SCHLICHTING",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "Out",
+            "Time": "1:57.61",
+            "Behind": "+13.41",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "22",
+            "Nr": "316",
+            "Name": "Gavin ORD",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "In",
+            "Time": "1:59.17",
+            "Behind": "+14.97",
+            "Points": null
+          }
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": "23",
+            "Nr": "324",
+            "Name": "Jordan STOLZ",
+            "Country": "USA",
+            "Race": "12",
+            "Lane": "Out",
+            "Time": "DNF",
+            "Behind": null,
+            "Points": null
+          },
+          "status": "DNF"
+        },
+        {
+          "page": 79,
+          "fields": {
+            "Rnk": null,
+            "Nr": "335",
+            "Name": "Max WEBER",
+            "Country": "USA",
+            "Race": "9",
+            "Lane": "In",
+            "Time": "DQ",
+            "Behind": null,
+            "Points": null,
+            "Name Rule": "T08"
+          },
+          "status": "DQ",
+          "qualification": "T08"
+        }
+      ]
+    },
+    {
+      "label": "9. RESULT 1st Mass Start Men",
+      "distance": 16,
+      "unit": "laps",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "308",
+            "Name": "Casey DAWSON",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": "3",
+            "S4": "60",
+            "Total": "63",
+            "Time": "7:56.58",
+            "Points": null
+          }
+        },
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "324",
+            "Name": "Jordan STOLZ",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": "1",
+            "S3": "2",
+            "S4": "40",
+            "Total": "43",
+            "Time": "7:58.79",
+            "Points": null
+          }
+        },
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "3",
+            "Nr": "314",
+            "Name": "Ethan CEPURAN",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": "2",
+            "S3": null,
+            "S4": "20",
+            "Total": "22",
+            "Time": "7:59.06",
+            "Points": null
+          }
+        },
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "307",
+            "Name": "Carl PLATT",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": "1",
+            "S4": "10",
+            "Total": "11",
+            "Time": "8:02.99",
+            "Points": null
+          }
+        },
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "343",
+            "Name": "William SILK",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": "6",
+            "Total": "6",
+            "Time": "8:05.34",
+            "Points": null
+          }
+        },
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "6",
+            "Nr": "327",
+            "Name": "Kelin DUNFEE",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": "3",
+            "S2": null,
+            "S3": null,
+            "S4": "3",
+            "Total": "6",
+            "Time": "8:25.86",
+            "Points": null
+          }
+        },
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "7",
+            "Nr": "342",
+            "Name": "Thomas FITZGERALD",
+            "Country": "USA",
+            "Laps": "15",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "9:03.42",
+            "Points": null
+          }
+        },
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "8",
+            "Nr": "323",
+            "Name": "Jonathan TOBON",
+            "Country": "USA",
+            "Laps": "14",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "7:27.99",
+            "Points": null
+          }
+        },
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "9",
+            "Nr": "313",
+            "Name": "Emery LEHMAN",
+            "Country": "USA",
+            "Laps": "12",
+            "S1": null,
+            "S2": "3",
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "6:30.90",
+            "Points": null
+          }
+        },
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "10",
+            "Nr": "315",
+            "Name": "Finn SIEBERT",
+            "Country": "USA",
+            "Laps": "12",
+            "S1": "2",
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "6:40.49",
+            "Points": null
+          }
+        },
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "11",
+            "Nr": "326",
+            "Name": "Kc BOUTIETTE",
+            "Country": "USA",
+            "Laps": "12",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "6:52.50",
+            "Points": null
+          }
+        },
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "12",
+            "Nr": "340",
+            "Name": "Samuel HART-GORMAN",
+            "Country": "USA",
+            "Laps": "11",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "6:15.69",
+            "Points": null
+          }
+        },
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "13",
+            "Nr": "320",
+            "Name": "Ian FREDERICK",
+            "Country": "USA",
+            "Laps": "11",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "6:19.56",
+            "Points": null
+          }
+        },
+        {
+          "page": 93,
+          "fields": {
+            "Rnk": "14",
+            "Nr": "300",
+            "Name": "Aiden MEACHAM",
+            "Country": "USA",
+            "Laps": "9",
+            "S1": "1",
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "5:31.85",
+            "Points": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "10. RESULT 1st Mass Start Women",
+      "distance": 16,
+      "unit": "laps",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 103,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "109",
+            "Name": "Greta MYERS",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": "1",
+            "S2": "1",
+            "S3": "1",
+            "S4": "60",
+            "Total": "63",
+            "Time": "8:40.49",
+            "Points": null
+          }
+        },
+        {
+          "page": 103,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "121",
+            "Name": "Piper YDE",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": "40",
+            "Total": "40",
+            "Time": "8:40.57",
+            "Points": null
+          }
+        },
+        {
+          "page": 103,
+          "fields": {
+            "Rnk": "3",
+            "Nr": "116",
+            "Name": "Marley SOLDAN",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": "20",
+            "Total": "20",
+            "Time": "8:46.19",
+            "Points": null
+          }
+        },
+        {
+          "page": 103,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "119",
+            "Name": "Mia MANGANELLO",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": "3",
+            "S2": "3",
+            "S3": "3",
+            "S4": "6",
+            "Total": "15",
+            "Time": "9:19.25",
+            "Points": null
+          }
+        },
+        {
+          "page": 103,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "122",
+            "Name": "Rebecca SIMMONS",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": "10",
+            "Total": "10",
+            "Time": "8:56.81",
+            "Points": null
+          }
+        },
+        {
+          "page": 103,
+          "fields": {
+            "Rnk": "6",
+            "Nr": "104",
+            "Name": "Elena STAVE",
+            "Country": "USA",
+            "Laps": "13",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "7:47.31",
+            "Points": null
+          }
+        },
+        {
+          "page": 103,
+          "fields": {
+            "Rnk": "7",
+            "Nr": "125",
+            "Name": "Elise STAVE",
+            "Country": "USA",
+            "Laps": "11",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "6:36.89",
+            "Points": null
+          }
+        },
+        {
+          "page": 103,
+          "fields": {
+            "Rnk": "8",
+            "Nr": "118",
+            "Name": "Melissa DAHLMANN",
+            "Country": "USA",
+            "Laps": "11",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "6:40.22",
+            "Points": null
+          }
+        },
+        {
+          "page": 103,
+          "fields": {
+            "Rnk": "9",
+            "Nr": "107",
+            "Name": "Evie FORRER",
+            "Country": "USA",
+            "Laps": "9",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "6:00.73",
+            "Points": null
+          }
+        },
+        {
+          "page": 103,
+          "fields": {
+            "Rnk": "10",
+            "Nr": "108",
+            "Name": "Giorgia BIRKELAND",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": "2",
+            "S2": "2",
+            "S3": "2",
+            "S4": "3",
+            "Total": "0",
+            "Time": "DQT22",
+            "Points": null
+          },
+          "status": "DQ",
+          "qualification": "T22"
+        }
+      ]
+    },
+    {
+      "label": "11. RESULT 2nd 500m Men",
+      "distance": 500,
+      "unit": "metres",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "344",
+            "Name": "Zach STOPPELMOOR",
+            "Country": "USA",
+            "Race": "16",
+            "Lane": "In",
+            "Time": "34.66",
+            "Behind": null,
+            "Points": "34.661"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "309",
+            "Name": "Conor MCDERMOTT-",
+            "Country": "USA",
+            "Race": "15",
+            "Lane": "Out",
+            "Time": "34.95",
+            "Behind": "+0.29",
+            "Points": "34.959"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "3",
+            "Nr": "305",
+            "Name": "Austin KLEBA",
+            "Country": "USA",
+            "Race": "15",
+            "Lane": "In",
+            "Time": "35.31",
+            "Behind": "+0.65",
+            "Points": "35.312"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "341",
+            "Name": "Tanner WORLEY",
+            "Country": "USA",
+            "Race": "14",
+            "Lane": "Out",
+            "Time": "35.54",
+            "Behind": "+0.88",
+            "Points": "35.544"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "310",
+            "Name": "Cooper MCLEOD",
+            "Country": "USA",
+            "Race": "16",
+            "Lane": "Out",
+            "Time": "35.96",
+            "Behind": "+1.30",
+            "Points": "35.968"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "6",
+            "Nr": "338",
+            "Name": "Sabien TINSON",
+            "Country": "USA",
+            "Race": "13",
+            "Lane": "Out",
+            "Time": "36.45",
+            "Behind": "+1.79",
+            "Points": "36.458"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "7",
+            "Nr": "335",
+            "Name": "Max WEBER",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "In",
+            "Time": "36.62",
+            "Behind": "+1.96",
+            "Points": "36.629"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "8",
+            "Nr": "303",
+            "Name": "Auggie HERMAN",
+            "Country": "USA",
+            "Race": "12",
+            "Lane": "Out",
+            "Time": "36.78",
+            "Behind": "+2.12",
+            "Points": "36.781"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "9",
+            "Nr": "330",
+            "Name": "Leo DROSSOS-THOMPSON",
+            "Country": "USA",
+            "Race": "14",
+            "Lane": "In",
+            "Time": "37.06",
+            "Behind": "+2.40",
+            "Points": "37.068"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "10",
+            "Nr": "339",
+            "Name": "Sam CHAMBERLAIN",
+            "Country": "USA",
+            "Race": "12",
+            "Lane": "In",
+            "Time": "37.08",
+            "Behind": "+2.42",
+            "Points": "37.087"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "11",
+            "Nr": "306",
+            "Name": "Brian BULLARD",
+            "Country": "USA",
+            "Race": "9",
+            "Lane": "Out",
+            "Time": "37.21",
+            "Behind": "+2.55",
+            "Points": "37.212"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "12",
+            "Nr": "315",
+            "Name": "Finn SIEBERT",
+            "Country": "USA",
+            "Race": "10",
+            "Lane": "In",
+            "Time": "37.28",
+            "Behind": "+2.62",
+            "Points": "37.287"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "13",
+            "Nr": "317",
+            "Name": "George WHEELOCK",
+            "Country": "USA",
+            "Race": "11",
+            "Lane": "Out",
+            "Time": "37.34",
+            "Behind": "+2.68",
+            "Points": "37.348"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "14",
+            "Nr": "345",
+            "Name": "Zachary JENSEN",
+            "Country": "USA",
+            "Race": "10",
+            "Lane": "Out",
+            "Time": "37.60",
+            "Behind": "+2.94",
+            "Points": "37.608"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "15",
+            "Nr": "319",
+            "Name": "Herb HARBISON",
+            "Country": "USA",
+            "Race": "13",
+            "Lane": "In",
+            "Time": "37.73",
+            "Behind": "+3.07",
+            "Points": "37.736"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "16",
+            "Nr": "325",
+            "Name": "Jori KOLA",
+            "Country": "USA",
+            "Race": "11",
+            "Lane": "In",
+            "Time": "37.74",
+            "Behind": "+3.08",
+            "Points": "37.748"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "17",
+            "Nr": "334",
+            "Name": "Matthew SALM",
+            "Country": "USA",
+            "Race": "8",
+            "Lane": "Out",
+            "Time": "37.83",
+            "Behind": "+3.17",
+            "Points": "37.836"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "18",
+            "Nr": "322",
+            "Name": "Jerry MECH",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "Out",
+            "Time": "38.31",
+            "Behind": "+3.65",
+            "Points": "38.311"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "19",
+            "Nr": "304",
+            "Name": "Austin CARLSON",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "Out",
+            "Time": "38.47",
+            "Behind": "+3.81",
+            "Points": "38.470"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "20",
+            "Nr": "337",
+            "Name": "Riley MARTIN",
+            "Country": "USA",
+            "Race": "8",
+            "Lane": "In",
+            "Time": "38.56",
+            "Behind": "+3.90",
+            "Points": "38.562"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "21",
+            "Nr": "329",
+            "Name": "Landon BOGEE",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "In",
+            "Time": "38.60",
+            "Behind": "+3.94",
+            "Points": "38.606"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "22",
+            "Nr": "336",
+            "Name": "Michael HUBBS",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "In",
+            "Time": "38.66",
+            "Behind": "+4.00",
+            "Points": "38.668"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "23",
+            "Nr": "300",
+            "Name": "Aiden MEACHAM",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "Out",
+            "Time": "38.91",
+            "Behind": "+4.25",
+            "Points": "38.914"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "24",
+            "Nr": "332",
+            "Name": "Maison RILEY",
+            "Country": "USA",
+            "Race": "9",
+            "Lane": "In",
+            "Time": "39.01",
+            "Behind": "+4.35",
+            "Points": "39.017"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "25",
+            "Nr": "318",
+            "Name": "Henry SCHLICHTING",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "In",
+            "Time": "39.07",
+            "Behind": "+4.41",
+            "Points": "39.076"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "26",
+            "Nr": "302",
+            "Name": "Anson QUINN",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "Out",
+            "Time": "39.13",
+            "Behind": "+4.47",
+            "Points": "39.132"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "27",
+            "Nr": "328",
+            "Name": "Kieran COLLINS",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "Out",
+            "Time": "39.28",
+            "Behind": "+4.62",
+            "Points": "39.282"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "28",
+            "Nr": "333",
+            "Name": "Marc PELCHAT",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "Out",
+            "Time": "39.32",
+            "Behind": "+4.66",
+            "Points": "39.326"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "29",
+            "Nr": "316",
+            "Name": "Gavin ORD",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "Out",
+            "Time": "39.37",
+            "Behind": "+4.71",
+            "Points": "39.372"
+          }
+        },
+        {
+          "page": 111,
+          "fields": {
+            "Rnk": "30",
+            "Nr": "311",
+            "Name": "Dan CARNEY",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "In",
+            "Time": "39.63",
+            "Behind": "+4.97",
+            "Points": "39.632"
+          }
+        }
+      ]
+    },
+    {
+      "label": "12. RESULT 2nd 500m Women",
+      "distance": 500,
+      "unit": "metres",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 124,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "124",
+            "Name": "Sarah WARREN",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "In",
+            "Time": "38.66",
+            "Behind": null,
+            "Points": "38.663"
+          }
+        },
+        {
+          "page": 124,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "117",
+            "Name": "Mckenzie BROWNE",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "In",
+            "Time": "39.00(9)",
+            "Behind": "+0.34",
+            "Points": "39.009"
+          }
+        },
+        {
+          "page": 124,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "103",
+            "Name": "Chrysta RANDS-EVANS",
+            "Country": "USA",
+            "Race": "7",
+            "Lane": "Out",
+            "Time": "39.00(9)",
+            "Behind": "+0.34",
+            "Points": "39.009"
+          }
+        },
+        {
+          "page": 124,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "112",
+            "Name": "Kimi GOETZ",
+            "Country": "USA",
+            "Race": "6",
+            "Lane": "Out",
+            "Time": "39.20",
+            "Behind": "+0.54",
+            "Points": "39.200"
+          }
+        },
+        {
+          "page": 124,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "101",
+            "Name": "Blair CRUIKSHANK",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "Out",
+            "Time": "40.19",
+            "Behind": "+1.53",
+            "Points": "40.193"
+          }
+        },
+        {
+          "page": 124,
+          "fields": {
+            "Rnk": "6",
+            "Nr": "100",
+            "Name": "Anna QUINN",
+            "Country": "USA",
+            "Race": "5",
+            "Lane": "In",
+            "Time": "40.37",
+            "Behind": "+1.71",
+            "Points": "40.374"
+          }
+        },
+        {
+          "page": 124,
+          "fields": {
+            "Rnk": "7",
+            "Nr": "114",
+            "Name": "Libby WILLIAMS",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "Out",
+            "Time": "40.57",
+            "Behind": "+1.91",
+            "Points": "40.578"
+          }
+        },
+        {
+          "page": 124,
+          "fields": {
+            "Rnk": "8",
+            "Nr": "115",
+            "Name": "Lindsey WOODBURY",
+            "Country": "USA",
+            "Race": "4",
+            "Lane": "In",
+            "Time": "41.47",
+            "Behind": "+2.81",
+            "Points": "41.471"
+          }
+        },
+        {
+          "page": 124,
+          "fields": {
+            "Rnk": "9",
+            "Nr": "105",
+            "Name": "Emma DE BOCK",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "Out",
+            "Time": "41.67",
+            "Behind": "+3.01",
+            "Points": "41.679"
+          }
+        },
+        {
+          "page": 124,
+          "fields": {
+            "Rnk": "10",
+            "Nr": "110",
+            "Name": "Ilsa SHOBE",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "Out",
+            "Time": "41.79",
+            "Behind": "+3.13",
+            "Points": "41.799"
+          }
+        },
+        {
+          "page": 124,
+          "fields": {
+            "Rnk": "11",
+            "Nr": "123",
+            "Name": "Samantha SCHEFFLER",
+            "Country": "USA",
+            "Race": "3",
+            "Lane": "In",
+            "Time": "41.89",
+            "Behind": "+3.23",
+            "Points": "41.891"
+          }
+        },
+        {
+          "page": 124,
+          "fields": {
+            "Rnk": "12",
+            "Nr": "120",
+            "Name": "Natasa GAKOVIC",
+            "Country": "USA",
+            "Race": "2",
+            "Lane": "In",
+            "Time": "42.16",
+            "Behind": "+3.50",
+            "Points": "42.162"
+          }
+        },
+        {
+          "page": 124,
+          "fields": {
+            "Rnk": "13",
+            "Nr": "111",
+            "Name": "Keeley WHITCOMB",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "Out",
+            "Time": "42.41",
+            "Behind": "+3.75",
+            "Points": "42.413"
+          }
+        }
+      ]
+    },
+    {
+      "label": "13. RESULT 2nd Mass Start Men",
+      "distance": 16,
+      "unit": "laps",
+      "group": "Men",
+      "rows": [
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "324",
+            "Name": "Jordan STOLZ",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": "2",
+            "S4": "60",
+            "Total": "62",
+            "Time": "7:54.71",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "314",
+            "Name": "Ethan CEPURAN",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": "40",
+            "Total": "40",
+            "Time": "7:58.10",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "3",
+            "Nr": "308",
+            "Name": "Casey DAWSON",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": "3",
+            "S4": "20",
+            "Total": "23",
+            "Time": "7:58.71",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "313",
+            "Name": "Emery LEHMAN",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": "2",
+            "S3": "1",
+            "S4": "10",
+            "Total": "13",
+            "Time": "7:59.43",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "307",
+            "Name": "Carl PLATT",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": "1",
+            "S3": null,
+            "S4": "6",
+            "Total": "7",
+            "Time": "7:59.99",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "6",
+            "Nr": "327",
+            "Name": "Kelin DUNFEE",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": "1",
+            "S2": null,
+            "S3": null,
+            "S4": "3",
+            "Total": "4",
+            "Time": "8:06.46",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "7",
+            "Nr": "343",
+            "Name": "William SILK",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "8:09.98",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "8",
+            "Nr": "330",
+            "Name": "Leo DROSSOS-THOMPSON",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "8:27.91",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "9",
+            "Nr": "342",
+            "Name": "Thomas FITZGERALD",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "9:32.03",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "10",
+            "Nr": "340",
+            "Name": "Samuel HART-GORMAN",
+            "Country": "USA",
+            "Laps": "15",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "8:40.97",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "11",
+            "Nr": "323",
+            "Name": "Jonathan TOBON",
+            "Country": "USA",
+            "Laps": "14",
+            "S1": "2",
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "7:26.05",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "12",
+            "Nr": "339",
+            "Name": "Sam CHAMBERLAIN",
+            "Country": "USA",
+            "Laps": "14",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "7:51.02",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "13",
+            "Nr": "320",
+            "Name": "Ian FREDERICK",
+            "Country": "USA",
+            "Laps": "13",
+            "S1": null,
+            "S2": "3",
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "7:19.01",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "14",
+            "Nr": "326",
+            "Name": "Kc BOUTIETTE",
+            "Country": "USA",
+            "Laps": "13",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "7:35.89",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "15",
+            "Nr": "300",
+            "Name": "Aiden MEACHAM",
+            "Country": "USA",
+            "Laps": "12",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "6:36.56",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "16",
+            "Nr": "315",
+            "Name": "Finn SIEBERT",
+            "Country": "USA",
+            "Laps": "11",
+            "S1": "3",
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "6:12.32",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "17",
+            "Nr": "328",
+            "Name": "Kieran COLLINS",
+            "Country": "USA",
+            "Laps": "11",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "6:14.66",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "18",
+            "Nr": "325",
+            "Name": "Jori KOLA",
+            "Country": "USA",
+            "Laps": "10",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "5:50.90",
+            "Points": null
+          }
+        },
+        {
+          "page": 134,
+          "fields": {
+            "Rnk": "19",
+            "Nr": "336",
+            "Name": "Michael HUBBS",
+            "Country": "USA",
+            "Laps": "6",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "DQT22",
+            "Points": null
+          },
+          "status": "DQ",
+          "qualification": "T22"
+        }
+      ]
+    },
+    {
+      "label": "14. RESULT 2nd Mass Start Women",
+      "distance": 16,
+      "unit": "laps",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 144,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "119",
+            "Name": "Mia MANGANELLO",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": "1",
+            "S4": "60",
+            "Total": "61",
+            "Time": "9:12.06",
+            "Points": null
+          }
+        },
+        {
+          "page": 144,
+          "fields": {
+            "Rnk": "2",
+            "Nr": "109",
+            "Name": "Greta MYERS",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": "3",
+            "S4": "40",
+            "Total": "43",
+            "Time": "9:12.88",
+            "Points": null
+          }
+        },
+        {
+          "page": 144,
+          "fields": {
+            "Rnk": "3",
+            "Nr": "121",
+            "Name": "Piper YDE",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": "2",
+            "S4": "20",
+            "Total": "22",
+            "Time": "9:15.23",
+            "Points": null
+          }
+        },
+        {
+          "page": 144,
+          "fields": {
+            "Rnk": "4",
+            "Nr": "108",
+            "Name": "Giorgia BIRKELAND",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": "1",
+            "S3": null,
+            "S4": "10",
+            "Total": "11",
+            "Time": "9:16.31",
+            "Points": null
+          }
+        },
+        {
+          "page": 144,
+          "fields": {
+            "Rnk": "5",
+            "Nr": "116",
+            "Name": "Marley SOLDAN",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": "6",
+            "Total": "6",
+            "Time": "9:25.78",
+            "Points": null
+          }
+        },
+        {
+          "page": 144,
+          "fields": {
+            "Rnk": "6",
+            "Nr": "122",
+            "Name": "Rebecca SIMMONS",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": "3",
+            "Total": "3",
+            "Time": "9:26.17",
+            "Points": null
+          }
+        },
+        {
+          "page": 144,
+          "fields": {
+            "Rnk": "7",
+            "Nr": "118",
+            "Name": "Melissa DAHLMANN",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": "3",
+            "S3": null,
+            "S4": null,
+            "Total": "3",
+            "Time": "9:41.72",
+            "Points": null
+          }
+        },
+        {
+          "page": 144,
+          "fields": {
+            "Rnk": "8",
+            "Nr": "104",
+            "Name": "Elena STAVE",
+            "Country": "USA",
+            "Laps": "16",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "9:42.29",
+            "Points": null
+          }
+        },
+        {
+          "page": 144,
+          "fields": {
+            "Rnk": "9",
+            "Nr": "111",
+            "Name": "Keeley WHITCOMB",
+            "Country": "USA",
+            "Laps": "14",
+            "S1": "2",
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "8:50.70",
+            "Points": null
+          }
+        },
+        {
+          "page": 144,
+          "fields": {
+            "Rnk": "10",
+            "Nr": "125",
+            "Name": "Elise STAVE",
+            "Country": "USA",
+            "Laps": "13",
+            "S1": "1",
+            "S2": "2",
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "8:18.27",
+            "Points": null
+          }
+        },
+        {
+          "page": 144,
+          "fields": {
+            "Rnk": "11",
+            "Nr": "107",
+            "Name": "Evie FORRER",
+            "Country": "USA",
+            "Laps": "13",
+            "S1": "3",
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "8:42.32",
+            "Points": null
+          }
+        },
+        {
+          "page": 144,
+          "fields": {
+            "Rnk": "12",
+            "Nr": "124",
+            "Name": "Sarah WARREN",
+            "Country": "USA",
+            "Laps": "0",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "WDR",
+            "Points": null
+          },
+          "status": "WDR"
+        },
+        {
+          "page": 144,
+          "fields": {
+            "Rnk": "12",
+            "Nr": "110",
+            "Name": "Ilsa SHOBE",
+            "Country": "USA",
+            "Laps": "0",
+            "S1": null,
+            "S2": null,
+            "S3": null,
+            "S4": null,
+            "Total": "0",
+            "Time": "WDR",
+            "Points": null
+          },
+          "status": "WDR"
+        }
+      ]
+    },
+    {
+      "label": "16. RESULT Out Of Competition Women 1500m",
+      "distance": 1500,
+      "unit": "metres",
+      "group": "Women",
+      "rows": [
+        {
+          "page": 70,
+          "fields": {
+            "Rnk": "1",
+            "Nr": "109",
+            "Name": "Greta MYERS",
+            "Country": "USA",
+            "Race": "1",
+            "Lane": "In",
+            "Time": "1:56.04",
+            "Behind": null,
+            "Points": null
+          }
+        }
+      ]
+    }
+  ],
+  "roster": [
+    {
+      "bib": "109",
+      "name": "Greta MYERS",
+      "raw_name": "Greta MYERS",
+      "display_name": "Greta Myers",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "108",
+      "name": "Giorgia BIRKELAND",
+      "raw_name": "Giorgia BIRKELAND",
+      "display_name": "Giorgia Birkeland",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "121",
+      "name": "Piper YDE",
+      "raw_name": "Piper YDE",
+      "display_name": "Piper Yde",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "122",
+      "name": "Rebecca SIMMONS",
+      "raw_name": "Rebecca SIMMONS",
+      "display_name": "Rebecca Simmons",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "116",
+      "name": "Marley SOLDAN",
+      "raw_name": "Marley SOLDAN",
+      "display_name": "Marley Soldan",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 6
+    },
+    {
+      "bib": "308",
+      "name": "Casey DAWSON",
+      "raw_name": "Casey DAWSON",
+      "display_name": "Casey Dawson",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 15
+    },
+    {
+      "bib": "314",
+      "name": "Ethan CEPURAN",
+      "raw_name": "Ethan CEPURAN",
+      "display_name": "Ethan Cepuran",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 15
+    },
+    {
+      "bib": "327",
+      "name": "Kelin DUNFEE",
+      "raw_name": "Kelin DUNFEE",
+      "display_name": "Kelin Dunfee",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 15
+    },
+    {
+      "bib": "343",
+      "name": "William SILK",
+      "raw_name": "William SILK",
+      "display_name": "William Silk",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 15
+    },
+    {
+      "bib": "323",
+      "name": "Jonathan TOBON",
+      "raw_name": "Jonathan TOBON",
+      "display_name": "Jonathan Tobon",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 15
+    },
+    {
+      "bib": "319",
+      "name": "Herb HARBISON",
+      "raw_name": "Herb HARBISON",
+      "display_name": "Herb Harbison",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 15
+    },
+    {
+      "bib": "340",
+      "name": "Samuel HART-GORMAN",
+      "raw_name": "Samuel HART-GORMAN",
+      "display_name": "Samuel Hart-Gorman",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 15
+    },
+    {
+      "bib": "342",
+      "name": "Thomas FITZGERALD",
+      "raw_name": "Thomas FITZGERALD",
+      "display_name": "Thomas Fitzgerald",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 15
+    },
+    {
+      "bib": "106",
+      "name": "Erin JACKSON",
+      "raw_name": "Erin JACKSON",
+      "display_name": "Erin Jackson",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "102",
+      "name": "Brittany BOWE",
+      "raw_name": "Brittany BOWE",
+      "display_name": "Brittany Bowe",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "119",
+      "name": "Mia MANGANELLO",
+      "raw_name": "Mia MANGANELLO",
+      "display_name": "Mia Manganello",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "112",
+      "name": "Kimi GOETZ",
+      "raw_name": "Kimi GOETZ",
+      "display_name": "Kimi Goetz",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "103",
+      "name": "Chrysta RANDS-EVANS",
+      "raw_name": "Chrysta RANDS-EVANS",
+      "display_name": "Chrysta Rands-Evans",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "124",
+      "name": "Sarah WARREN",
+      "raw_name": "Sarah WARREN",
+      "display_name": "Sarah Warren",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "117",
+      "name": "Mckenzie BROWNE",
+      "raw_name": "Mckenzie BROWNE",
+      "display_name": "Mckenzie Browne",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "100",
+      "name": "Anna QUINN",
+      "raw_name": "Anna QUINN",
+      "display_name": "Anna Quinn",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "110",
+      "name": "Ilsa SHOBE",
+      "raw_name": "Ilsa SHOBE",
+      "display_name": "Ilsa Shobe",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "101",
+      "name": "Blair CRUIKSHANK",
+      "raw_name": "Blair CRUIKSHANK",
+      "display_name": "Blair Cruikshank",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "114",
+      "name": "Libby WILLIAMS",
+      "raw_name": "Libby WILLIAMS",
+      "display_name": "Libby Williams",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "115",
+      "name": "Lindsey WOODBURY",
+      "raw_name": "Lindsey WOODBURY",
+      "display_name": "Lindsey Woodbury",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "105",
+      "name": "Emma DE BOCK",
+      "raw_name": "Emma DE BOCK",
+      "display_name": "Emma De Bock",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "125",
+      "name": "Elise STAVE",
+      "raw_name": "Elise STAVE",
+      "display_name": "Elise Stave",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "123",
+      "name": "Samantha SCHEFFLER",
+      "raw_name": "Samantha SCHEFFLER",
+      "display_name": "Samantha Scheffler",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "111",
+      "name": "Keeley WHITCOMB",
+      "raw_name": "Keeley WHITCOMB",
+      "display_name": "Keeley Whitcomb",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "118",
+      "name": "Melissa DAHLMANN",
+      "raw_name": "Melissa DAHLMANN",
+      "display_name": "Melissa Dahlmann",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "113",
+      "name": "Leah CHOI",
+      "raw_name": "Leah CHOI",
+      "display_name": "Leah Choi",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 22
+    },
+    {
+      "bib": "309",
+      "name": "Conor MCDERMOTT-MOSTOWY",
+      "raw_name": "Conor MCDERMOTT-MOSTOWY",
+      "display_name": "Conor Mcdermott-Mostowy",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "310",
+      "name": "Cooper MCLEOD",
+      "raw_name": "Cooper MCLEOD",
+      "display_name": "Cooper Mcleod",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "324",
+      "name": "Jordan STOLZ",
+      "raw_name": "Jordan STOLZ",
+      "display_name": "Jordan Stolz",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "344",
+      "name": "Zach STOPPELMOOR",
+      "raw_name": "Zach STOPPELMOOR",
+      "display_name": "Zach Stoppelmoor",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "335",
+      "name": "Max WEBER",
+      "raw_name": "Max WEBER",
+      "display_name": "Max Weber",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "313",
+      "name": "Emery LEHMAN",
+      "raw_name": "Emery LEHMAN",
+      "display_name": "Emery Lehman",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "305",
+      "name": "Austin KLEBA",
+      "raw_name": "Austin KLEBA",
+      "display_name": "Austin Kleba",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "341",
+      "name": "Tanner WORLEY",
+      "raw_name": "Tanner WORLEY",
+      "display_name": "Tanner Worley",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "303",
+      "name": "Auggie HERMAN",
+      "raw_name": "Auggie HERMAN",
+      "display_name": "Auggie Herman",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "330",
+      "name": "Leo DROSSOS-THOMPSON",
+      "raw_name": "Leo DROSSOS-THOMPSON",
+      "display_name": "Leo Drossos-Thompson",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "320",
+      "name": "Ian FREDERICK",
+      "raw_name": "Ian FREDERICK",
+      "display_name": "Ian Frederick",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "315",
+      "name": "Finn SIEBERT",
+      "raw_name": "Finn SIEBERT",
+      "display_name": "Finn Siebert",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "317",
+      "name": "George WHEELOCK",
+      "raw_name": "George WHEELOCK",
+      "display_name": "George Wheelock",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "339",
+      "name": "Sam CHAMBERLAIN",
+      "raw_name": "Sam CHAMBERLAIN",
+      "display_name": "Sam Chamberlain",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "345",
+      "name": "Zachary JENSEN",
+      "raw_name": "Zachary JENSEN",
+      "display_name": "Zachary Jensen",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "334",
+      "name": "Matthew SALM",
+      "raw_name": "Matthew SALM",
+      "display_name": "Matthew Salm",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "325",
+      "name": "Jori KOLA",
+      "raw_name": "Jori KOLA",
+      "display_name": "Jori Kola",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "338",
+      "name": "Sabien TINSON",
+      "raw_name": "Sabien TINSON",
+      "display_name": "Sabien Tinson",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "304",
+      "name": "Austin CARLSON",
+      "raw_name": "Austin CARLSON",
+      "display_name": "Austin Carlson",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "306",
+      "name": "Brian BULLARD",
+      "raw_name": "Brian BULLARD",
+      "display_name": "Brian Bullard",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "332",
+      "name": "Maison RILEY",
+      "raw_name": "Maison RILEY",
+      "display_name": "Maison Riley",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "300",
+      "name": "Aiden MEACHAM",
+      "raw_name": "Aiden MEACHAM",
+      "display_name": "Aiden Meacham",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "302",
+      "name": "Anson QUINN",
+      "raw_name": "Anson QUINN",
+      "display_name": "Anson Quinn",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "326",
+      "name": "Kc BOUTIETTE",
+      "raw_name": "Kc BOUTIETTE",
+      "display_name": "Kc Boutiette",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "316",
+      "name": "Gavin ORD",
+      "raw_name": "Gavin ORD",
+      "display_name": "Gavin Ord",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "322",
+      "name": "Jerry MECH",
+      "raw_name": "Jerry MECH",
+      "display_name": "Jerry Mech",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "337",
+      "name": "Riley MARTIN",
+      "raw_name": "Riley MARTIN",
+      "display_name": "Riley Martin",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "318",
+      "name": "Henry SCHLICHTING",
+      "raw_name": "Henry SCHLICHTING",
+      "display_name": "Henry Schlichting",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 29
+    },
+    {
+      "bib": "120",
+      "name": "Natasa GAKOVIC",
+      "raw_name": "Natasa GAKOVIC",
+      "display_name": "Natasa Gakovic",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 44
+    },
+    {
+      "bib": "328",
+      "name": "Kieran COLLINS",
+      "raw_name": "Kieran COLLINS",
+      "display_name": "Kieran Collins",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 53
+    },
+    {
+      "bib": "321",
+      "name": "Jeremy SONG",
+      "raw_name": "Jeremy SONG",
+      "display_name": "Jeremy Song",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 53
+    },
+    {
+      "bib": "336",
+      "name": "Michael HUBBS",
+      "raw_name": "Michael HUBBS",
+      "display_name": "Michael Hubbs",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 53
+    },
+    {
+      "bib": "333",
+      "name": "Marc PELCHAT",
+      "raw_name": "Marc PELCHAT",
+      "display_name": "Marc Pelchat",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 53
+    },
+    {
+      "bib": "329",
+      "name": "Landon BOGEE",
+      "raw_name": "Landon BOGEE",
+      "display_name": "Landon Bogee",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 53
+    },
+    {
+      "bib": "311",
+      "name": "Dan CARNEY",
+      "raw_name": "Dan CARNEY",
+      "display_name": "Dan Carney",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 53
+    },
+    {
+      "bib": "104",
+      "name": "Elena STAVE",
+      "raw_name": "Elena STAVE",
+      "display_name": "Elena Stave",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 68
+    },
+    {
+      "bib": "107",
+      "name": "Evie FORRER",
+      "raw_name": "Evie FORRER",
+      "display_name": "Evie Forrer",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Women",
+      "gender": "Female",
+      "age_status_raw": null,
+      "page": 68
+    },
+    {
+      "bib": "307",
+      "name": "Carl PLATT",
+      "raw_name": "Carl PLATT",
+      "display_name": "Carl Platt",
+      "affiliation_raw": "",
+      "country": "USA",
+      "division_raw": "Men",
+      "gender": "Male",
+      "age_status_raw": null,
+      "page": 79
+    }
+  ],
+  "classifications": [
+    {
+      "page": 114,
+      "kind": "overall",
+      "label": "Fastest 500m Men",
+      "text_raw": "Fastest 500m Men\nRnk\tNr\tName\tCountry\t500M\t500M\tPoints\n1\t344\tZach STOPPELMOOR\tUSA\t34.94 (3)\t34.66 (1)\t34.661\n2\t324\tJordan STOLZ\tUSA\t34.76 (1)\t\t34.761\n3\t310\tCooper MCLEOD\tUSA\t34.82 (2)\t35.96 (5)\t34.820\n4\t309\tConor MCDERMOTT-MOSTOWY\tUSA\t35.15 (4)\t34.95 (2)\t34.959\n5\t305\tAustin KLEBA\tUSA\t35.51 (6)\t35.31 (3)\t35.312\n6\t341\tTanner WORLEY\tUSA\t35.41 (5)\t35.54 (4)\t35.412\n7\t338\tSabien TINSON\tUSA\t36.06 (7)\t36.45 (6)\t36.066\n8\t335\tMax WEBER\tUSA\t36.62 (7)\t\t36.629\n9\t303\tAuggie HERMAN\tUSA\t36.67 (8)\t36.78 (8)\t36.679\n10\t320\tIan FREDERICK\tUSA\t36.78 (9)\t\t36.781\n11\t330\tLeo DROSSOS-THOMPSON\tUSA\t37.02 (10)\t37.06 (9)\t37.024\n12\t339\tSam CHAMBERLAIN\tUSA\t37.53 (14)\t37.08 (10)\t37.087\n13\t306\tBrian BULLARD\tUSA\t37.59 (16)\t37.21 (11)\t37.212\n14\t315\tFinn SIEBERT\tUSA\t37.64 (17)\t37.28 (12)\t37.287\n15\t319\tHerb HARBISON\tUSA\t37.33 (11)\t37.73 (15)\t37.337\n16\t317\tGeorge WHEELOCK\tUSA\t37.40 (12)\t37.34 (13)\t37.348\n17\t345\tZachary JENSEN\tUSA\t37.42 (13)\t37.60 (14)\t37.428\n18\t325\tJori KOLA\tUSA\t37.54 (15)\t37.74 (16)\t37.544\n19\t334\tMatthew SALM\tUSA\t37.82 (18)\t37.83 (17)\t37.824\n20\t304\tAustin CARLSON\tUSA\t38.10 (19)\t38.47 (19)\t38.104\n21\t322\tJerry MECH\tUSA\t38.38 (20)\t38.31 (18)\t38.311\n22\t332\tMaison RILEY\tUSA\t38.53 (21)\t39.01 (24)\t38.530\n23\t300\tAiden MEACHAM\tUSA\t38.53 (22)\t38.91 (23)\t38.537\n24\t337\tRiley MARTIN\tUSA\t38.91 (24)\t38.56 (20)\t38.562\n25\t329\tLandon BOGEE\tUSA\t39.37 (31)\t38.60 (21)\t38.606\n26\t302\tAnson QUINN\tUSA\t38.63 (23)\t39.13 (26)\t38.635\n27\t336\tMichael HUBBS\tUSA\t39.09 (27)\t38.66 (22)\t38.668\n28\t328\tKieran COLLINS\tUSA\t38.94 (25)\t39.28 (27)\t38.940\n29\t321\tJeremy SONG\tUSA\t39.05 (26)\t\t39.053\n30\t318\tHenry SCHLICHTING\tUSA\t39.25 (29)\t39.07 (25)\t39.076\n31\t333\tMarc PELCHAT\tUSA\t39.15 (28)\t39.32 (28)\t39.158\n32\t316\tGavin ORD\tUSA\t39.31 (30)\t39.37 (29)\t39.318\n33\t311\tDan CARNEY\tUSA\t39.45 (32)\t39.63 (30)\t39.458",
+      "rows": [
+        {
+          "rank": 1,
+          "bib": "344",
+          "row_raw": "1\t344\tZach STOPPELMOOR\tUSA\t34.94 (3)\t34.66 (1)\t34.661"
+        },
+        {
+          "rank": 2,
+          "bib": "324",
+          "row_raw": "2\t324\tJordan STOLZ\tUSA\t34.76 (1)\t\t34.761"
+        },
+        {
+          "rank": 3,
+          "bib": "310",
+          "row_raw": "3\t310\tCooper MCLEOD\tUSA\t34.82 (2)\t35.96 (5)\t34.820"
+        },
+        {
+          "rank": 4,
+          "bib": "309",
+          "row_raw": "4\t309\tConor MCDERMOTT-MOSTOWY\tUSA\t35.15 (4)\t34.95 (2)\t34.959"
+        },
+        {
+          "rank": 5,
+          "bib": "305",
+          "row_raw": "5\t305\tAustin KLEBA\tUSA\t35.51 (6)\t35.31 (3)\t35.312"
+        },
+        {
+          "rank": 6,
+          "bib": "341",
+          "row_raw": "6\t341\tTanner WORLEY\tUSA\t35.41 (5)\t35.54 (4)\t35.412"
+        },
+        {
+          "rank": 7,
+          "bib": "338",
+          "row_raw": "7\t338\tSabien TINSON\tUSA\t36.06 (7)\t36.45 (6)\t36.066"
+        },
+        {
+          "rank": 8,
+          "bib": "335",
+          "row_raw": "8\t335\tMax WEBER\tUSA\t36.62 (7)\t\t36.629"
+        },
+        {
+          "rank": 9,
+          "bib": "303",
+          "row_raw": "9\t303\tAuggie HERMAN\tUSA\t36.67 (8)\t36.78 (8)\t36.679"
+        },
+        {
+          "rank": 10,
+          "bib": "320",
+          "row_raw": "10\t320\tIan FREDERICK\tUSA\t36.78 (9)\t\t36.781"
+        },
+        {
+          "rank": 11,
+          "bib": "330",
+          "row_raw": "11\t330\tLeo DROSSOS-THOMPSON\tUSA\t37.02 (10)\t37.06 (9)\t37.024"
+        },
+        {
+          "rank": 12,
+          "bib": "339",
+          "row_raw": "12\t339\tSam CHAMBERLAIN\tUSA\t37.53 (14)\t37.08 (10)\t37.087"
+        },
+        {
+          "rank": 13,
+          "bib": "306",
+          "row_raw": "13\t306\tBrian BULLARD\tUSA\t37.59 (16)\t37.21 (11)\t37.212"
+        },
+        {
+          "rank": 14,
+          "bib": "315",
+          "row_raw": "14\t315\tFinn SIEBERT\tUSA\t37.64 (17)\t37.28 (12)\t37.287"
+        },
+        {
+          "rank": 15,
+          "bib": "319",
+          "row_raw": "15\t319\tHerb HARBISON\tUSA\t37.33 (11)\t37.73 (15)\t37.337"
+        },
+        {
+          "rank": 16,
+          "bib": "317",
+          "row_raw": "16\t317\tGeorge WHEELOCK\tUSA\t37.40 (12)\t37.34 (13)\t37.348"
+        },
+        {
+          "rank": 17,
+          "bib": "345",
+          "row_raw": "17\t345\tZachary JENSEN\tUSA\t37.42 (13)\t37.60 (14)\t37.428"
+        },
+        {
+          "rank": 18,
+          "bib": "325",
+          "row_raw": "18\t325\tJori KOLA\tUSA\t37.54 (15)\t37.74 (16)\t37.544"
+        },
+        {
+          "rank": 19,
+          "bib": "334",
+          "row_raw": "19\t334\tMatthew SALM\tUSA\t37.82 (18)\t37.83 (17)\t37.824"
+        },
+        {
+          "rank": 20,
+          "bib": "304",
+          "row_raw": "20\t304\tAustin CARLSON\tUSA\t38.10 (19)\t38.47 (19)\t38.104"
+        },
+        {
+          "rank": 21,
+          "bib": "322",
+          "row_raw": "21\t322\tJerry MECH\tUSA\t38.38 (20)\t38.31 (18)\t38.311"
+        },
+        {
+          "rank": 22,
+          "bib": "332",
+          "row_raw": "22\t332\tMaison RILEY\tUSA\t38.53 (21)\t39.01 (24)\t38.530"
+        },
+        {
+          "rank": 23,
+          "bib": "300",
+          "row_raw": "23\t300\tAiden MEACHAM\tUSA\t38.53 (22)\t38.91 (23)\t38.537"
+        },
+        {
+          "rank": 24,
+          "bib": "337",
+          "row_raw": "24\t337\tRiley MARTIN\tUSA\t38.91 (24)\t38.56 (20)\t38.562"
+        },
+        {
+          "rank": 25,
+          "bib": "329",
+          "row_raw": "25\t329\tLandon BOGEE\tUSA\t39.37 (31)\t38.60 (21)\t38.606"
+        },
+        {
+          "rank": 26,
+          "bib": "302",
+          "row_raw": "26\t302\tAnson QUINN\tUSA\t38.63 (23)\t39.13 (26)\t38.635"
+        },
+        {
+          "rank": 27,
+          "bib": "336",
+          "row_raw": "27\t336\tMichael HUBBS\tUSA\t39.09 (27)\t38.66 (22)\t38.668"
+        },
+        {
+          "rank": 28,
+          "bib": "328",
+          "row_raw": "28\t328\tKieran COLLINS\tUSA\t38.94 (25)\t39.28 (27)\t38.940"
+        },
+        {
+          "rank": 29,
+          "bib": "321",
+          "row_raw": "29\t321\tJeremy SONG\tUSA\t39.05 (26)\t\t39.053"
+        },
+        {
+          "rank": 30,
+          "bib": "318",
+          "row_raw": "30\t318\tHenry SCHLICHTING\tUSA\t39.25 (29)\t39.07 (25)\t39.076"
+        },
+        {
+          "rank": 31,
+          "bib": "333",
+          "row_raw": "31\t333\tMarc PELCHAT\tUSA\t39.15 (28)\t39.32 (28)\t39.158"
+        },
+        {
+          "rank": 32,
+          "bib": "316",
+          "row_raw": "32\t316\tGavin ORD\tUSA\t39.31 (30)\t39.37 (29)\t39.318"
+        },
+        {
+          "rank": 33,
+          "bib": "311",
+          "row_raw": "33\t311\tDan CARNEY\tUSA\t39.45 (32)\t39.63 (30)\t39.458"
+        }
+      ]
+    },
+    {
+      "page": 126,
+      "kind": "overall",
+      "label": "Fastest 500m Women",
+      "text_raw": "Fastest 500m Women\nRnk\tNr\tName\tCountry\t500M\t500M\tPoints\n1\t106\tErin JACKSON\tUSA\t38.15 (1)\t\t38.158\n2\t124\tSarah WARREN\tUSA\t38.86 (2)\t38.66 (1)\t38.663\n3\t117\tMckenzie BROWNE\tUSA\t38.88 (3)\t39.00 (2)\t38.888\n4\t103\tChrysta RANDS-EVANS\tUSA\t38.88 (4)\t39.00 (2)\t38.889\n5\t112\tKimi GOETZ\tUSA\t39.23 (5)\t39.20 (4)\t39.200\n6\t101\tBlair CRUIKSHANK\tUSA\t40.38 (6)\t40.19 (5)\t40.193\n7\t100\tAnna QUINN\tUSA\t40.75 (8)\t40.37 (6)\t40.374\n8\t114\tLibby WILLIAMS\tUSA\t40.71 (7)\t40.57 (7)\t40.578\n9\t121\tPiper YDE\tUSA\t40.82 (9)\t\t40.828\n10\t115\tLindsey WOODBURY\tUSA\t41.28 (10)\t41.47 (8)\t41.284\n11\t110\tIlsa SHOBE\tUSA\t41.40 (11)\t41.79 (10)\t41.408\n12\t105\tEmma DE BOCK\tUSA\t41.62 (12)\t41.67 (9)\t41.622\n13\t123\tSamantha SCHEFFLER\tUSA\t41.95 (13)\t41.89 (11)\t41.891\n14\t120\tNatasa GAKOVIC\tUSA\t42.90 (16)\t42.16 (12)\t42.162\n15\t111\tKeeley WHITCOMB\tUSA\t42.51 (14)\t42.41 (13)\t42.413\n16\t116\tMarley SOLDAN\tUSA\t42.55 (15)\t\t42.553",
+      "rows": [
+        {
+          "rank": 1,
+          "bib": "106",
+          "row_raw": "1\t106\tErin JACKSON\tUSA\t38.15 (1)\t\t38.158"
+        },
+        {
+          "rank": 2,
+          "bib": "124",
+          "row_raw": "2\t124\tSarah WARREN\tUSA\t38.86 (2)\t38.66 (1)\t38.663"
+        },
+        {
+          "rank": 3,
+          "bib": "117",
+          "row_raw": "3\t117\tMckenzie BROWNE\tUSA\t38.88 (3)\t39.00 (2)\t38.888"
+        },
+        {
+          "rank": 4,
+          "bib": "103",
+          "row_raw": "4\t103\tChrysta RANDS-EVANS\tUSA\t38.88 (4)\t39.00 (2)\t38.889"
+        },
+        {
+          "rank": 5,
+          "bib": "112",
+          "row_raw": "5\t112\tKimi GOETZ\tUSA\t39.23 (5)\t39.20 (4)\t39.200"
+        },
+        {
+          "rank": 6,
+          "bib": "101",
+          "row_raw": "6\t101\tBlair CRUIKSHANK\tUSA\t40.38 (6)\t40.19 (5)\t40.193"
+        },
+        {
+          "rank": 7,
+          "bib": "100",
+          "row_raw": "7\t100\tAnna QUINN\tUSA\t40.75 (8)\t40.37 (6)\t40.374"
+        },
+        {
+          "rank": 8,
+          "bib": "114",
+          "row_raw": "8\t114\tLibby WILLIAMS\tUSA\t40.71 (7)\t40.57 (7)\t40.578"
+        },
+        {
+          "rank": 9,
+          "bib": "121",
+          "row_raw": "9\t121\tPiper YDE\tUSA\t40.82 (9)\t\t40.828"
+        },
+        {
+          "rank": 10,
+          "bib": "115",
+          "row_raw": "10\t115\tLindsey WOODBURY\tUSA\t41.28 (10)\t41.47 (8)\t41.284"
+        },
+        {
+          "rank": 11,
+          "bib": "110",
+          "row_raw": "11\t110\tIlsa SHOBE\tUSA\t41.40 (11)\t41.79 (10)\t41.408"
+        },
+        {
+          "rank": 12,
+          "bib": "105",
+          "row_raw": "12\t105\tEmma DE BOCK\tUSA\t41.62 (12)\t41.67 (9)\t41.622"
+        },
+        {
+          "rank": 13,
+          "bib": "123",
+          "row_raw": "13\t123\tSamantha SCHEFFLER\tUSA\t41.95 (13)\t41.89 (11)\t41.891"
+        },
+        {
+          "rank": 14,
+          "bib": "120",
+          "row_raw": "14\t120\tNatasa GAKOVIC\tUSA\t42.90 (16)\t42.16 (12)\t42.162"
+        },
+        {
+          "rank": 15,
+          "bib": "111",
+          "row_raw": "15\t111\tKeeley WHITCOMB\tUSA\t42.51 (14)\t42.41 (13)\t42.413"
+        },
+        {
+          "rank": 16,
+          "bib": "116",
+          "row_raw": "16\t116\tMarley SOLDAN\tUSA\t42.55 (15)\t\t42.553"
+        }
+      ]
+    }
+  ],
+  "source_id": "58c38cafd66a90d1",
+  "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt8e76b945f9f0aee6/6978f840e514c79e9869b9dc/2026_Olympic_Trials_LT_Protocol.pdf",
+  "page_count": 150,
+  "pageAudit": [
+    {
+      "page": 1,
+      "kind": "cover",
+      "result_rows": 0
+    },
+    {
+      "page": 2,
+      "kind": "officials",
+      "result_rows": 0
+    },
+    {
+      "page": 3,
+      "kind": "officials",
+      "result_rows": 0
+    },
+    {
+      "page": 4,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 5,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 6,
+      "kind": "signed-result",
+      "result_rows": 5
+    },
+    {
+      "page": 7,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 8,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 9,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 10,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 11,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 12,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 13,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 14,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 15,
+      "kind": "signed-result",
+      "result_rows": 8
+    },
+    {
+      "page": 16,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 17,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 18,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 19,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 20,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 21,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 22,
+      "kind": "signed-result",
+      "result_rows": 21
+    },
+    {
+      "page": 23,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 24,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 25,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 26,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 27,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 28,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 29,
+      "kind": "signed-result",
+      "result_rows": 33
+    },
+    {
+      "page": 30,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 31,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 32,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 33,
+      "kind": "timing-with-unsigned-reskate",
+      "result_rows": 0
+    },
+    {
+      "page": 34,
+      "kind": "timing-with-unsigned-reskate",
+      "result_rows": 0
+    },
+    {
+      "page": 35,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 36,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 37,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 38,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 39,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 40,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 41,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 42,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 43,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 44,
+      "kind": "signed-result",
+      "result_rows": 16
+    },
+    {
+      "page": 45,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 46,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 47,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 48,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 49,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 50,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 51,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 52,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 53,
+      "kind": "signed-result",
+      "result_rows": 32
+    },
+    {
+      "page": 54,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 55,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 56,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 57,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 58,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 59,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 60,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 61,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 62,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 63,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 64,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 65,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 66,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 67,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 68,
+      "kind": "signed-result",
+      "result_rows": 13
+    },
+    {
+      "page": 69,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 70,
+      "kind": "signed-result",
+      "result_rows": 1
+    },
+    {
+      "page": 71,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 72,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 73,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 74,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 75,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 76,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 77,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 78,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 79,
+      "kind": "signed-result",
+      "result_rows": 24
+    },
+    {
+      "page": 80,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 81,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 82,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 83,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 84,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 85,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 86,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 87,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 88,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 89,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 90,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 91,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 92,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 93,
+      "kind": "signed-result",
+      "result_rows": 14
+    },
+    {
+      "page": 94,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 95,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 96,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 97,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 98,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 99,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 100,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 101,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 102,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 103,
+      "kind": "signed-result",
+      "result_rows": 10
+    },
+    {
+      "page": 104,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 105,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 106,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 107,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 108,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 109,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 110,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 111,
+      "kind": "signed-result",
+      "result_rows": 30
+    },
+    {
+      "page": 112,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 113,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 114,
+      "kind": "aggregate-classification",
+      "result_rows": 0
+    },
+    {
+      "page": 115,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 116,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 117,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 118,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 119,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 120,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 121,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 122,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 123,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 124,
+      "kind": "signed-result",
+      "result_rows": 13
+    },
+    {
+      "page": 125,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 126,
+      "kind": "aggregate-classification",
+      "result_rows": 0
+    },
+    {
+      "page": 127,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 128,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 129,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 130,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 131,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 132,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 133,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 134,
+      "kind": "signed-result",
+      "result_rows": 19
+    },
+    {
+      "page": 135,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 136,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 137,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 138,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 139,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 140,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 141,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 142,
+      "kind": "other-supplement",
+      "result_rows": 0
+    },
+    {
+      "page": 143,
+      "kind": "draw",
+      "result_rows": 0
+    },
+    {
+      "page": 144,
+      "kind": "signed-result",
+      "result_rows": 13
+    },
+    {
+      "page": 145,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 146,
+      "kind": "supplementary-timing",
+      "result_rows": 0
+    },
+    {
+      "page": 147,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 148,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 149,
+      "kind": "split-analysis",
+      "result_rows": 0
+    },
+    {
+      "page": 150,
+      "kind": "other-supplement",
+      "result_rows": 0
+    }
+  ],
+  "pdf_page_count": 150,
+  "scanned_page_count": 150,
+  "source_issues": [],
+  "summary": {
+    "discovered_events": 15,
+    "complete_selected_events": 15,
+    "export_eligible_events": 15,
+    "needs_review_events": 0
+  },
+  "reviewNotes": [
+    "The original 150-page official file is preserved at the reviewed SHA-256. All 15 signed result sheets were transcribed with two OCR engines and source-image review.",
+    "The two Fastest 500m classifications retain their 49 printed rows as aggregate evidence, separate from individual results.",
+    "Keep Matthew Salm’s signed 1:14.29 and preserve the unsigned 1:14.661 reskate in the source timing pages. The signed Greta Myers reskate at 1:56.04 remains a separate official result.",
+    "Keep official Time and Points columns distinct. Retain signed ranks, tie precision, rule annotations, statuses and each 16-lap mass-start field.",
+    "Bib 309 on page 111 has a clipped printed surname. Keep it on the source row and use the complete name on pages 53 and 114 for the competition participant."
+  ],
+  "publicationBatchId": "3ade98624d5f7413651be46bddc6ac2ed91aeb9f4cc059e48eacc9eb0ad6bb6e",
+  "siteVersion": 45,
+  "publishedAt": "2026-11-06T20:38:26.357352+00:00",
+  "verificationReport": "outputs/olympic-trials-hosted-verification.json",
+  "publicationStatus": "published-verified"
+}

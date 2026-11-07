@@ -5,8 +5,12 @@ from pathlib import Path
 
 if __package__:
     from .competition_dimensions import dimensions
+    from .tempus_identity import roster_affiliation
+    from .tempus_text import source_race_key
 else:
     from competition_dimensions import dimensions
+    from tempus_identity import roster_affiliation
+    from tempus_text import source_race_key
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -19,7 +23,7 @@ def prepare_item(competition, roster, events):
     for position, observation in enumerate(roster["observations"]):
         bib = observation["bib"]
         participant_id = f"{competition_id}:{bib}"
-        person = {"id": participant_id, "bib": bib, "name": observation["name"], "affiliation": observation["affiliation_raw"]}
+        person = {"id": participant_id, "bib": bib, "name": observation["name"], "affiliation": roster_affiliation(roster["sha256"], observation)}
         if bib in participants and participants[bib] != person:
             raise ValueError(f"Conflicting participant records for {participant_id}")
         participants[bib] = person
@@ -30,19 +34,21 @@ def prepare_item(competition, roster, events):
     for event in events:
         if any(event[key] != roster[key] for key in ["sha256", "source_id", "source_url"]):
             raise ValueError("Every selected event must refer to the roster's exact source revision")
-        if event["parser_version"] not in {"tempus-complete-event/0.2", "tempus-complete-event/0.3", "tempus-complete-event/0.4"} or event["status"] != "complete_selected_event":
+        if event["parser_version"] not in {"tempus-complete-event/0.2", "tempus-complete-event/0.3", "tempus-complete-event/0.4", "tempus-complete-event/0.5", "tempus-complete-event/0.6", "tempus-complete-event/0.7"} or event["status"] != "complete_selected_event":
             raise ValueError("Regenerate complete selected events with the status-aware parser")
         if event["event_label_raw"] in event_labels:
             raise ValueError("A source event cannot be selected twice")
         event_labels.add(event["event_label_raw"])
         for heat in event["heats"]:
-            if heat["race_id"] in race_ids:
+            race_key = source_race_key(roster["sha256"], event["event_label_raw"], heat["race_id"])
+            if race_key in race_ids:
                 raise ValueError("Source race IDs cannot be reused across selected events")
-            race_ids.add(heat["race_id"])
+            race_ids.add(race_key)
         for result in event["results"]:
             if result["bib"] not in participants:
                 raise ValueError("A race result references an unknown participant")
-            result_id = f"{competition_id}:{result['race_id']}:{result['bib']}"
+            race_key = source_race_key(roster["sha256"], event["event_label_raw"], result["race_id"])
+            result_id = f"{competition_id}:{race_key}:{result['bib']}"
             if result_id in result_ids:
                 raise ValueError("Duplicate result across selected events")
             result_ids.add(result_id)

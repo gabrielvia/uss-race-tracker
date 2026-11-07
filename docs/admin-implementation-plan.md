@@ -46,10 +46,13 @@ Acceptance: authorized admin access works locally and in the hosted environment.
 
 Tasks:
 
-- Add schema migrations for source documents/versions, import runs, candidate rows, validation issues, candidate revisions, and audit records. Reserve clear job, schedule, and notification relationships without implementing scheduled execution yet.
+- Reuse Viewer's stored batch and publication history. Have the Admin server read the protected `GET /api/imports?history=1&competition=<id>` endpoint for batch IDs, validation errors and warnings, timestamps, and publication revisions. Keep the ingestion credential on the server.
+- Add online import run records that local workers can update from the start of processing. Persist the source and season, current stage, timestamps, counts, and any pending question with its source page and conflicting values. Link the run to the existing Viewer batch ID once a candidate is submitted. Keep run state separate from batch status.
+- Use the [local season checkpoints](../data/sources/season-import-progress.json) and their referenced readback reports to backfill available run history. Preserve the original evidence and link known batch IDs so each submitted batch appears once.
 - Define explicit states, such as `received`, `validating`, `needs_review`, `ready`, and `failed`. Store actor, source, parser version, timestamps, counters, and per-row outcomes.
 - Add an authenticated batch ingestion API for local Python output. Keep parsing outside the request handler; reject invalid payloads, duplicate submissions, wrong discipline/season scope, and contradictory source revisions.
 - Implement the agreed validation layers: source identity, competition/season assignment, row and heat completeness, exact timing/status handling, athlete identity, skating-age evidence, and stored-record reconciliation.
+- Use the [confirmed import and identity rules](season-import-workflow.md#confirmed-identity-and-age-rules). Surface automatic link reasons and original evidence in review history and keep age-evidence review independent of profile linking.
 - Preserve errors, unparsed rows, and source-page references. Missing or conflicting evidence must never be silently converted to a guessed value.
 - Give retries stable idempotency keys. A failed candidate remains inspectable and cannot replace active viewer data.
 
@@ -61,10 +64,11 @@ Tasks:
 
 - Build `Overview` with the latest import, active published revision, and items requiring review.
 - Build `Imports` with source/discipline/season scope, run state, progress, counts, and history. Local development starts by submitting prepared parser output; the UI must say whether work is waiting for an external/local worker.
+- Show recent runs across competitions together with their linked Viewer batch history. Display the current stage and reason for any pause, including source conflicts found before submission. Show the publication and readback outcomes separately.
 - Build batch detail and `Validation` views with successful, rejected, and pending records; exact error reasons; PDF page links; and original versus proposed values where applicable.
 - Add authorized retry and review actions with an audit trail. A reviewer cannot bypass a structural completeness failure merely by dismissing a warning.
 
-Acceptance: an administrator can use the interface to understand a real successful batch and a real failed batch without reading terminal logs. The report totals reconcile with candidate-row outcomes. Unauthorized users cannot access reports by guessing IDs.
+Acceptance: an administrator can inspect an existing published batch, a rejected batch, and a run awaiting confirmation before submission. After reloading Admin, the run still shows its last saved stage, exact question, and source page. Published runs show their recorded readback outcome when available. The report totals reconcile with candidate-row outcomes. Unauthorized users cannot access reports by guessing IDs.
 
 ## A4. Publish validated data to Viewer
 
@@ -73,7 +77,7 @@ Tasks:
 - Build a `Publish` review screen showing the eligible revision, discipline/season, affected competitions/events, record counts, changes, and validation outcome.
 - Add an admin-authorized publication operation. Transfer a candidate revision, verify it, and activate it only when complete. Preserve the previous valid version if transfer or activation fails.
 - Make viewer queries read the active published revision only. Keep candidate records, internal errors, job settings, and email recipients private.
-- Add readback verification and publication audit entries. Provide controlled recovery to a previous valid revision where supported by the version model.
+- Add readback verification and publication audit entries. Persist the readback outcome, check time, and report reference on the run, linked to the batch that was checked. Provide controlled recovery to a previous valid revision where supported by the version model.
 - Migrate or retire the development `/api/admin/seed` path as the production import flow takes over. Verify the viewer cannot use the old sample route as a general import mechanism.
 
 Acceptance: a validated batch can be published and read through the real viewer APIs. Injected validation, transfer, and activation failures preserve the last valid results. Repeating publication does not create duplicate data. Widening viewer access is a separate owner decision.
@@ -83,7 +87,7 @@ Acceptance: a validated batch can be published and read through the real viewer 
 Tasks:
 
 - Select and verify a cloud runtime that supports the portable Python parser and its PDF dependencies, expected files, resource needs, and authenticated access to Admin. Hosting this worker inside a Sites request is not assumed.
-- Add persisted jobs, checkpoints/progress, bounded retries, failure details, and protection against concurrent duplicate work. Record parser and payload versions so a run is reproducible.
+- Reuse the A2 run records for cloud jobs. Extend them with worker checkpoints, bounded retries, failure details, and protection against concurrent duplicate work. Record parser and payload versions so a run is reproducible.
 - Add `Start import` on Admin to create a job and return promptly. Reopening Admin must recover the job state from storage.
 - Run the same parser/validation contracts locally and in the cloud. Select representative short-track, long-track, and historical inputs with explicitly documented coverage limits.
 

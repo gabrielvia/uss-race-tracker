@@ -15,6 +15,48 @@ A Final Race #102
 1 2 Test Two Test Club 0:56.000
 """
 class ProtocolCompletionTests(unittest.TestCase):
+    def test_super_final_wrapping_requires_exact_original_continuations(self):
+        for first, second in [("Junior B Women's 500 Super Final Event #1", "Finals"), ("Junior A/Senior Mixed's 3000 Super Event #1", "Final Finals")]:
+            text='RESULTS\n'+first+'\n'+second+'\nA Final Race #101\n1 1 Test One Test Club 0:55.000'
+            event=parse_event_pages([(1,text)],ROSTER,'1')
+            self.assertEqual(event['source_heading_lines'],[first,second])
+            self.assertEqual(event['results'][0]['round_raw'],'Super Final Finals')
+            self.assertEqual(join_event_headings(text.replace('\n'+second+'\n','\nUnknown\n'))[1],{})
+
+    def test_historical_team_and_club_pages_require_exact_hash_page_and_text(self):
+        from scripts.tempus_text import REVIEWED_TABLES, reviewed_source_table
+        digest='ac7793ee804fff69c79130ee819486cf2cac542bd41d42653061cb7f5bce33bd'
+        for page in REVIEWED_TABLES[digest]:
+            self.assertEqual(reviewed_source_table(page['text_raw'],digest,page['page']),page)
+            self.assertIsNone(reviewed_source_table(page['text_raw']+'\nChanged',digest,page['page']))
+            self.assertIsNone(reviewed_source_table(page['text_raw'],'a'*64,page['page']))
+            self.assertIsNone(reviewed_source_table(page['text_raw'],digest,page['page']-1))
+
+    def test_reviewed_empty_roster_requires_exact_source_page_and_text(self):
+        from scripts.tempus_text import reviewed_empty_roster, MASA_HASH, MASA_EMPTY_ROSTER
+        self.assertTrue(reviewed_empty_roster(MASA_EMPTY_ROSTER, MASA_HASH, 5))
+        for text, digest, page in [(MASA_EMPTY_ROSTER+'\n77 Omitted Skater',MASA_HASH,5), (MASA_EMPTY_ROSTER,'a'*64,5), (MASA_EMPTY_ROSTER,MASA_HASH,6)]:
+            self.assertFalse(reviewed_empty_roster(text,digest,page))
+
+    def test_repeat_distance_and_super_final_source_labels_remain_literal(self):
+        for round_name in ['Semi-Finals', 'Super Final Finals']:
+            text=TEXT.replace('500 Finals','500 (#2) '+round_name)
+            if round_name=='Semi-Finals':text=text.replace('B Final Race #101','Heat 1 of 2 Race #101').replace('A Final Race #102','Heat 2 of 2 Race #102')
+            event=parse_event_pages([(1,text)],ROSTER,'1')
+            self.assertEqual(event['results'][0]['distance_metres'],500)
+            self.assertEqual(event['results'][0]['round_raw'],round_name)
+            self.assertIn('(#2)',event['event_label_raw'])
+            third=parse_event_pages([(1,text.replace('(#2)','(#3)'))],ROSTER,'1')
+            self.assertEqual(third['event_label_raw'], event['event_label_raw'].replace('(#2)','(#3)'))
+            with self.assertRaises(ValueError):parse_event_pages([(1,text.replace('(#2)','(#0)'))],ROSTER,'1')
+
+    def test_unnumbered_supplementary_results_cannot_silently_pass_a_full_scan(self):
+        from scripts.inspect_protocol import inventory_protocol
+        roster = {"page_count": 2, "observations": ROSTER, "issues": [], "source_id": "test", "source_url": "https://example.test/a.pdf", "sha256": "a"*64}
+        report, extracted = inventory_protocol([(1,TEXT),(2,"Team Pursuit Results\n3 lap Team Pursuit Time 1:54.70\nTeam Masters Mix")], roster)
+        self.assertIn("UNSUPPORTED_RESULTS_PAGE", [i['code'] for i in report['source_issues']])
+        self.assertFalse(extracted)
+
     def test_finals_keep_source_tiers_and_local_places_without_fabricated_classification(self):
         event=parse_event_pages([(1,TEXT)],ROSTER,"1")
         self.assertEqual(event['heat_count'],2)

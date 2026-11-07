@@ -1,6 +1,6 @@
 # Source inventory and extraction validation
 
-Current milestone: [Phase 3 completion](phase-3-completion.md). The source findings and runtime notes below retain their original milestone scope; use the phase 3 guide for current limits, complete-protocol imports, identity/age review and deployment verification.
+Current increment: [phase 6 coverage](phase-6-coverage.md). The November 3 refresh has 499 listings and 494 distinct season/source links. Four hash-pinned protocols are audited, including Long Track AGN 2025; Short Track AGN 2025 remains partly parsed and blocked; 489 sources remain uninspected. The following October 29 findings retain their historical snapshot scope. Use the phase 6 guide for current coverage and the phase 3 guide for protected import operations.
 
 Checked on October 29, 2026. This is a bounded source-validation milestone, not a completed historical importer or deployed app.
 

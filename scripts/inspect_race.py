@@ -8,13 +8,14 @@ from pathlib import Path
 import re
 
 if __package__:
-    from .tempus_text import join_event_headings
+    from .tempus_text import EVENT, REVIEWED_LAYOUTS, join_event_headings
 else:
-    from tempus_text import join_event_headings
+    from tempus_text import EVENT, REVIEWED_LAYOUTS, join_event_headings
 
 
-def parse_race(text, roster, race_id):
-    text, heading_evidence = join_event_headings(text)
+def parse_race(text, roster, race_id, source_hash=None, source_page=None):
+    text, heading_evidence = join_event_headings(text, source_hash)
+    untimed_qualifications = {row["row"]: row["qualification"] for row in REVIEWED_LAYOUTS.get(source_hash, {}).get("untimedQualifiedRows", []) if row["page"] == source_page}
     if "RESULTS" not in text or "CLASSIFICATION" in text:
         raise ValueError("Expected a race results page, not a classification table")
     names = {}
@@ -63,6 +64,9 @@ def parse_race(text, roster, race_id):
         if len(codes) > 1:
             raise ValueError(f"Conflicting result statuses for bib {bib}")
         status = next(iter(codes), None)
+        untimed_qualification = untimed_qualifications.get(line)
+        if untimed_qualification and tail.endswith(" " + untimed_qualification):
+            tail = tail.removesuffix(" " + untimed_qualification)
         missing_finish = not finish and not status and rank is not None and any(e.get("affiliation_raw") == tail for e in roster if e["bib"] == bib)
         if (not finish and not status and not missing_finish) or rank is None and not status:
             raise ValueError(f"Unsupported finish for bib {bib}; review the original page")
@@ -79,7 +83,7 @@ def parse_race(text, roster, race_id):
         affiliation = tail[:boundary].strip()
         suffix = tail[boundary:]
         suffix = re.sub(r"(?<!\S)(?:PEN|DNS|DNF|DQ|FNT|YC|(?:\d+:)?\d{1,2}\.\d{1,6})(?!\S)", "", suffix).strip()
-        event_match = re.search(r"\s(\d+)\s+(Quarter-Finals|Semi-Finals|Finals) Event #(\d+)$", event or "")
+        event_match = EVENT.fullmatch(event or "")
         if not event_match:
             raise ValueError("Unsupported event label; cannot safely determine distance and round")
         rows.append({
@@ -87,9 +91,9 @@ def parse_race(text, roster, race_id):
             "affiliation_raw": affiliation,
             "time_raw": raw_time, "time_microseconds": microseconds,
             "timing_decimal_places": decimal_places,
-            "qualification_raw": suffix or None, "event_label_raw": event,
-            "event_number": event_match[3], "distance_metres": int(event_match[1]),
-            "round_raw": event_match[2], "race_id": race, "race_label_raw": race_label,
+            "qualification_raw": suffix or untimed_qualification, "event_label_raw": event,
+            "event_number": event_match[4], "distance_metres": int(event_match[2]),
+            "round_raw": event_match[3], "race_id": race, "race_label_raw": race_label,
         })
         if missing_finish:
             rows[-1]["finish_note"] = "Time not recorded in source."
@@ -116,7 +120,7 @@ def main():
     with pdfplumber.open(args.file) as pdf:
         if not 1 <= args.page <= len(pdf.pages):
             cli.error("--page is outside the PDF")
-        rows = parse_race(pdf.pages[args.page - 1].extract_text() or "", roster["observations"], args.race_id)
+        rows = parse_race(pdf.pages[args.page - 1].extract_text() or "", roster["observations"], args.race_id, digest, args.page)
     result = {
         "parser_version": "tempus-selected-race/0.2", "status": "sample_requires_review",
         "source_id": roster["source_id"], "source_url": roster["source_url"], "sha256": digest,

@@ -52,7 +52,7 @@ def backfill(origin, secret, competition, reviewer, publish=False):
                                "notes": "Reviewed exact source headings, roster gender and applicable entry divisions under tempus-agn-dimensions/1. Mixed Master events and Group A/B remain distinct. All original events, races, results, roster observations and classification evidence are retained."}
         status, batch = remote_request(origin, "submit", secret, candidate=candidate)
         assert status == 200 and batch["report"]["valid"], "Backfill candidate failed current validation."
-        assert batch["report"]["validationVersion"] == "competition-events/7"
+        assert batch["report"]["validationVersion"] == "competition-events/18"
         status, result = remote_request(origin, "publish", secret, batch_id=batch["id"])
         assert status == 200 and result["active"], "Publication failed or the current head changed."
         summary["batchId"] = batch["id"]

@@ -1,0 +1,4473 @@
+{
+  "competition": {
+    "id": "st-masa-2026",
+    "title": "MASA Short Track Championships 2026",
+    "discipline": "short-track",
+    "season": "2025-2026",
+    "startsOn": "2026-03-07",
+    "endsOn": "2026-03-07",
+    "location": "Shelton, CT"
+  },
+  "source": {
+    "id": "a3e0ccc938d4730c",
+    "url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt2ed31176561c3e74/69af59ae21e8760008bd1325/2026_MASA_Championships.pdf",
+    "sha256": "2671f997837bdc170dfc1fc995fbe9431ea30df968678e51e62d350a72440ae2"
+  },
+  "participants": [
+    {
+      "id": "st-masa-2026:77",
+      "bib": "77",
+      "name": "Ethan Liu",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:80",
+      "bib": "80",
+      "name": "Nicholas Clark",
+      "affiliation": "Saratoga Winter Club"
+    },
+    {
+      "id": "st-masa-2026:81",
+      "bib": "81",
+      "name": "Andrew Smith",
+      "affiliation": "Bay State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:84",
+      "bib": "84",
+      "name": "James Yin",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:92",
+      "bib": "92",
+      "name": "Theodore Taub",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:94",
+      "bib": "94",
+      "name": "Maren Hoffman",
+      "affiliation": "Saratoga Winter Club"
+    },
+    {
+      "id": "st-masa-2026:78",
+      "bib": "78",
+      "name": "Lindsay* Lin",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:79",
+      "bib": "79",
+      "name": "Leilani* Fuller",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:83",
+      "bib": "83",
+      "name": "Yinyi* Li",
+      "affiliation": "Bay State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:93",
+      "bib": "93",
+      "name": "Elizabeth* Bourquin",
+      "affiliation": "Saratoga Winter Club"
+    },
+    {
+      "id": "st-masa-2026:42",
+      "bib": "42",
+      "name": "Henry Peck",
+      "affiliation": "Saratoga Winter Club"
+    },
+    {
+      "id": "st-masa-2026:66",
+      "bib": "66",
+      "name": "Ryder Yu",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:67",
+      "bib": "67",
+      "name": "Bartosz Debicki",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:68",
+      "bib": "68",
+      "name": "Samuel Winter",
+      "affiliation": "Connecticut Speedskating"
+    },
+    {
+      "id": "st-masa-2026:71",
+      "bib": "71",
+      "name": "Miles Quaye",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:72",
+      "bib": "72",
+      "name": "Sebastian Cao",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:73",
+      "bib": "73",
+      "name": "Grayson Callahan",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:75",
+      "bib": "75",
+      "name": "Luca Sakhnovskiy",
+      "affiliation": "Saratoga Winter Club"
+    },
+    {
+      "id": "st-masa-2026:76",
+      "bib": "76",
+      "name": "Theodore Erreger",
+      "affiliation": "Saratoga Winter Club"
+    },
+    {
+      "id": "st-masa-2026:95",
+      "bib": "95",
+      "name": "Jaxon Brogan",
+      "affiliation": "East Penn Speedskating Club"
+    },
+    {
+      "id": "st-masa-2026:69",
+      "bib": "69",
+      "name": "Sophie* OBrien",
+      "affiliation": "Taconic Speedskating"
+    },
+    {
+      "id": "st-masa-2026:70",
+      "bib": "70",
+      "name": "Lois* Houck",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:74",
+      "bib": "74",
+      "name": "Celine* Fu",
+      "affiliation": "Potomac Speedskating"
+    },
+    {
+      "id": "st-masa-2026:54",
+      "bib": "54",
+      "name": "David Bagosy",
+      "affiliation": "Connecticut Speedskating"
+    },
+    {
+      "id": "st-masa-2026:55",
+      "bib": "55",
+      "name": "Jin Sung Kim",
+      "affiliation": "Bay State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:56",
+      "bib": "56",
+      "name": "David Phillips",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:58",
+      "bib": "58",
+      "name": "Jesse Hoffman",
+      "affiliation": "Saratoga Winter Club"
+    },
+    {
+      "id": "st-masa-2026:61",
+      "bib": "61",
+      "name": "Alexander Loftman",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:62",
+      "bib": "62",
+      "name": "Eric Gourdon",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:96",
+      "bib": "96",
+      "name": "Vlad Khodik",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:57",
+      "bib": "57",
+      "name": "Carole* Moore",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:59",
+      "bib": "59",
+      "name": "Taylor* Cain",
+      "affiliation": "United Capital Blades"
+    },
+    {
+      "id": "st-masa-2026:60",
+      "bib": "60",
+      "name": "Emma* Krinsky",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:63",
+      "bib": "63",
+      "name": "M. R. Jordan* Jordan",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:17",
+      "bib": "17",
+      "name": "Jonathan Liu",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:39",
+      "bib": "39",
+      "name": "Immanuel Ayhan",
+      "affiliation": "Potomac Speedskating"
+    },
+    {
+      "id": "st-masa-2026:40",
+      "bib": "40",
+      "name": "Matthew Quaye",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:45",
+      "bib": "45",
+      "name": "Jayden Wu",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:47",
+      "bib": "47",
+      "name": "Nicholas Miller",
+      "affiliation": "Connecticut Speedskating"
+    },
+    {
+      "id": "st-masa-2026:49",
+      "bib": "49",
+      "name": "Henry He",
+      "affiliation": "Connecticut Speedskating"
+    },
+    {
+      "id": "st-masa-2026:50",
+      "bib": "50",
+      "name": "Leo Peng",
+      "affiliation": "Bay State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:52",
+      "bib": "52",
+      "name": "Drake Brown",
+      "affiliation": "Saratoga Winter Club"
+    },
+    {
+      "id": "st-masa-2026:41",
+      "bib": "41",
+      "name": "Yinru* Li",
+      "affiliation": "Bay State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:46",
+      "bib": "46",
+      "name": "Anushka* Bhattacharjee",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:48",
+      "bib": "48",
+      "name": "Yeji* Huh",
+      "affiliation": "Connecticut Speedskating"
+    },
+    {
+      "id": "st-masa-2026:29",
+      "bib": "29",
+      "name": "Richard Hao",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:30",
+      "bib": "30",
+      "name": "Clark Hartemink",
+      "affiliation": "East Penn Speedskating Club"
+    },
+    {
+      "id": "st-masa-2026:32",
+      "bib": "32",
+      "name": "Hugo Kelly",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:33",
+      "bib": "33",
+      "name": "Ghanashyama Prabhu",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:34",
+      "bib": "34",
+      "name": "Britton Smith",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:35",
+      "bib": "35",
+      "name": "Sean Sun",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:36",
+      "bib": "36",
+      "name": "Tim Van Fleet",
+      "affiliation": "East Penn Speedskating Club"
+    },
+    {
+      "id": "st-masa-2026:37",
+      "bib": "37",
+      "name": "Elias Wang",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:38",
+      "bib": "38",
+      "name": "Ryan Zheng",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:18",
+      "bib": "18",
+      "name": "Danielle* Anzalone",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:19",
+      "bib": "19",
+      "name": "Diana Bickmore",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:20",
+      "bib": "20",
+      "name": "Katerina Borbat",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:21",
+      "bib": "21",
+      "name": "Sarah Chen",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:22",
+      "bib": "22",
+      "name": "Sarah* Girach",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:23",
+      "bib": "23",
+      "name": "Lyra* Katzman",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:24",
+      "bib": "24",
+      "name": "Clara* Lee",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:25",
+      "bib": "25",
+      "name": "Xinyu (Lilian)* Li",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:26",
+      "bib": "26",
+      "name": "Sasha* Mensah",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:27",
+      "bib": "27",
+      "name": "Harshini* Ramachandran",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:28",
+      "bib": "28",
+      "name": "Priyanka* Srinivasula",
+      "affiliation": "East Penn Speedskating Club"
+    },
+    {
+      "id": "st-masa-2026:1",
+      "bib": "1",
+      "name": "Sebastian Durham",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:11",
+      "bib": "11",
+      "name": "David Shen",
+      "affiliation": "Potomac Speedskating"
+    },
+    {
+      "id": "st-masa-2026:12",
+      "bib": "12",
+      "name": "Albert Voshell",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:14",
+      "bib": "14",
+      "name": "Jonny Fuller",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:15",
+      "bib": "15",
+      "name": "Sergio Shen",
+      "affiliation": "Potomac Speedskating"
+    },
+    {
+      "id": "st-masa-2026:16",
+      "bib": "16",
+      "name": "Leo Jiang",
+      "affiliation": "Bay State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:9",
+      "bib": "9",
+      "name": "Jae* Citarella",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:10",
+      "bib": "10",
+      "name": "Maryann* Foley",
+      "affiliation": "Flushing Meadows Speedskating"
+    },
+    {
+      "id": "st-masa-2026:13",
+      "bib": "13",
+      "name": "Emma* Ault",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:43",
+      "bib": "43",
+      "name": "Mia* Sobue",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:4",
+      "bib": "4",
+      "name": "Hanting Yuan",
+      "affiliation": "Bay State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:6",
+      "bib": "6",
+      "name": "Vincent Zheng",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:7",
+      "bib": "7",
+      "name": "Nicholas DeGeorge",
+      "affiliation": "Taconic Speedskating"
+    },
+    {
+      "id": "st-masa-2026:8",
+      "bib": "8",
+      "name": "Levi Powers",
+      "affiliation": "Connecticut Speedskating"
+    },
+    {
+      "id": "st-masa-2026:97",
+      "bib": "97",
+      "name": "Zachary Ravich",
+      "affiliation": "Danbury Speedskating"
+    },
+    {
+      "id": "st-masa-2026:2",
+      "bib": "2",
+      "name": "Athena* Ault",
+      "affiliation": "Garden State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:3",
+      "bib": "3",
+      "name": "Suji* Huh",
+      "affiliation": "Connecticut Speedskating"
+    },
+    {
+      "id": "st-masa-2026:5",
+      "bib": "5",
+      "name": "Scarlett* Zhang-Cui",
+      "affiliation": "Bay State Speedskating"
+    },
+    {
+      "id": "st-masa-2026:51",
+      "bib": "51",
+      "name": "Tara* Sobue",
+      "affiliation": "Danbury Speedskating"
+    }
+  ],
+  "entries": [
+    {
+      "id": "st-masa-2026:77:0",
+      "participantId": "st-masa-2026:77",
+      "division": "DeClemente",
+      "ageStatus": null,
+      "rawName": "Ethan Liu",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:80:1",
+      "participantId": "st-masa-2026:80",
+      "division": "DeClemente",
+      "ageStatus": null,
+      "rawName": "Nicholas Clark",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:81:2",
+      "participantId": "st-masa-2026:81",
+      "division": "DeClemente",
+      "ageStatus": null,
+      "rawName": "Andrew Smith",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:84:3",
+      "participantId": "st-masa-2026:84",
+      "division": "DeClemente",
+      "ageStatus": null,
+      "rawName": "James Yin",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:92:4",
+      "participantId": "st-masa-2026:92",
+      "division": "DeClemente",
+      "ageStatus": null,
+      "rawName": "Theodore Taub",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:94:5",
+      "participantId": "st-masa-2026:94",
+      "division": "DeClemente",
+      "ageStatus": null,
+      "rawName": "Maren Hoffman",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:78:6",
+      "participantId": "st-masa-2026:78",
+      "division": "DeClemente",
+      "ageStatus": null,
+      "rawName": "Lindsay* Lin",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:79:7",
+      "participantId": "st-masa-2026:79",
+      "division": "DeClemente",
+      "ageStatus": null,
+      "rawName": "Leilani* Fuller",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:83:8",
+      "participantId": "st-masa-2026:83",
+      "division": "DeClemente",
+      "ageStatus": null,
+      "rawName": "Yinyi* Li",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:93:9",
+      "participantId": "st-masa-2026:93",
+      "division": "DeClemente",
+      "ageStatus": null,
+      "rawName": "Elizabeth* Bourquin",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:42:10",
+      "participantId": "st-masa-2026:42",
+      "division": "Heo",
+      "ageStatus": null,
+      "rawName": "Henry Peck",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:66:11",
+      "participantId": "st-masa-2026:66",
+      "division": "Heo",
+      "ageStatus": null,
+      "rawName": "Ryder Yu",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:67:12",
+      "participantId": "st-masa-2026:67",
+      "division": "Heo",
+      "ageStatus": null,
+      "rawName": "Bartosz Debicki",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:68:13",
+      "participantId": "st-masa-2026:68",
+      "division": "Heo",
+      "ageStatus": null,
+      "rawName": "Samuel Winter",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:71:14",
+      "participantId": "st-masa-2026:71",
+      "division": "Heo",
+      "ageStatus": null,
+      "rawName": "Miles Quaye",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:72:15",
+      "participantId": "st-masa-2026:72",
+      "division": "Heo",
+      "ageStatus": null,
+      "rawName": "Sebastian Cao",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:73:16",
+      "participantId": "st-masa-2026:73",
+      "division": "Heo",
+      "ageStatus": null,
+      "rawName": "Grayson Callahan",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:75:17",
+      "participantId": "st-masa-2026:75",
+      "division": "Heo",
+      "ageStatus": null,
+      "rawName": "Luca Sakhnovskiy",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:76:18",
+      "participantId": "st-masa-2026:76",
+      "division": "Heo",
+      "ageStatus": null,
+      "rawName": "Theodore Erreger",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:95:19",
+      "participantId": "st-masa-2026:95",
+      "division": "Heo",
+      "ageStatus": null,
+      "rawName": "Jaxon Brogan",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:69:20",
+      "participantId": "st-masa-2026:69",
+      "division": "Heo",
+      "ageStatus": null,
+      "rawName": "Sophie* OBrien",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:70:21",
+      "participantId": "st-masa-2026:70",
+      "division": "Heo",
+      "ageStatus": null,
+      "rawName": "Lois* Houck",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:74:22",
+      "participantId": "st-masa-2026:74",
+      "division": "Heo",
+      "ageStatus": null,
+      "rawName": "Celine* Fu",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:54:23",
+      "participantId": "st-masa-2026:54",
+      "division": "Kim",
+      "ageStatus": null,
+      "rawName": "David Bagosy",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:55:24",
+      "participantId": "st-masa-2026:55",
+      "division": "Kim",
+      "ageStatus": null,
+      "rawName": "Jin Sung Kim",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:56:25",
+      "participantId": "st-masa-2026:56",
+      "division": "Kim",
+      "ageStatus": null,
+      "rawName": "David Phillips",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:58:26",
+      "participantId": "st-masa-2026:58",
+      "division": "Kim",
+      "ageStatus": null,
+      "rawName": "Jesse Hoffman",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:61:27",
+      "participantId": "st-masa-2026:61",
+      "division": "Kim",
+      "ageStatus": null,
+      "rawName": "Alexander Loftman",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:62:28",
+      "participantId": "st-masa-2026:62",
+      "division": "Kim",
+      "ageStatus": null,
+      "rawName": "Eric Gourdon",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:96:29",
+      "participantId": "st-masa-2026:96",
+      "division": "Kim",
+      "ageStatus": null,
+      "rawName": "Vlad Khodik",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:57:30",
+      "participantId": "st-masa-2026:57",
+      "division": "Kim",
+      "ageStatus": null,
+      "rawName": "Carole* Moore",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:59:31",
+      "participantId": "st-masa-2026:59",
+      "division": "Kim",
+      "ageStatus": null,
+      "rawName": "Taylor* Cain",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:60:32",
+      "participantId": "st-masa-2026:60",
+      "division": "Kim",
+      "ageStatus": null,
+      "rawName": "Emma* Krinsky",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:63:33",
+      "participantId": "st-masa-2026:63",
+      "division": "Kim",
+      "ageStatus": null,
+      "rawName": "M. R. Jordan* Jordan",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:17:34",
+      "participantId": "st-masa-2026:17",
+      "division": "Letai",
+      "ageStatus": null,
+      "rawName": "Jonathan Liu",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:39:35",
+      "participantId": "st-masa-2026:39",
+      "division": "Letai",
+      "ageStatus": null,
+      "rawName": "Immanuel Ayhan",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:40:36",
+      "participantId": "st-masa-2026:40",
+      "division": "Letai",
+      "ageStatus": null,
+      "rawName": "Matthew Quaye",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:45:37",
+      "participantId": "st-masa-2026:45",
+      "division": "Letai",
+      "ageStatus": null,
+      "rawName": "Jayden Wu",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:47:38",
+      "participantId": "st-masa-2026:47",
+      "division": "Letai",
+      "ageStatus": null,
+      "rawName": "Nicholas Miller",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:49:39",
+      "participantId": "st-masa-2026:49",
+      "division": "Letai",
+      "ageStatus": null,
+      "rawName": "Henry He",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:50:40",
+      "participantId": "st-masa-2026:50",
+      "division": "Letai",
+      "ageStatus": null,
+      "rawName": "Leo Peng",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:52:41",
+      "participantId": "st-masa-2026:52",
+      "division": "Letai",
+      "ageStatus": null,
+      "rawName": "Drake Brown",
+      "sourcePage": 3
+    },
+    {
+      "id": "st-masa-2026:41:42",
+      "participantId": "st-masa-2026:41",
+      "division": "Letai",
+      "ageStatus": null,
+      "rawName": "Yinru* Li",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:46:43",
+      "participantId": "st-masa-2026:46",
+      "division": "Letai",
+      "ageStatus": null,
+      "rawName": "Anushka* Bhattacharjee",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:48:44",
+      "participantId": "st-masa-2026:48",
+      "division": "Letai",
+      "ageStatus": null,
+      "rawName": "Yeji* Huh",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:29:45",
+      "participantId": "st-masa-2026:29",
+      "division": "NEST MEN",
+      "ageStatus": null,
+      "rawName": "Richard Hao",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:30:46",
+      "participantId": "st-masa-2026:30",
+      "division": "NEST MEN",
+      "ageStatus": null,
+      "rawName": "Clark Hartemink",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:32:47",
+      "participantId": "st-masa-2026:32",
+      "division": "NEST MEN",
+      "ageStatus": null,
+      "rawName": "Hugo Kelly",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:33:48",
+      "participantId": "st-masa-2026:33",
+      "division": "NEST MEN",
+      "ageStatus": null,
+      "rawName": "Ghanashyama Prabhu",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:34:49",
+      "participantId": "st-masa-2026:34",
+      "division": "NEST MEN",
+      "ageStatus": null,
+      "rawName": "Britton Smith",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:35:50",
+      "participantId": "st-masa-2026:35",
+      "division": "NEST MEN",
+      "ageStatus": null,
+      "rawName": "Sean Sun",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:36:51",
+      "participantId": "st-masa-2026:36",
+      "division": "NEST MEN",
+      "ageStatus": null,
+      "rawName": "Tim Van Fleet",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:37:52",
+      "participantId": "st-masa-2026:37",
+      "division": "NEST MEN",
+      "ageStatus": null,
+      "rawName": "Elias Wang",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:38:53",
+      "participantId": "st-masa-2026:38",
+      "division": "NEST MEN",
+      "ageStatus": null,
+      "rawName": "Ryan Zheng",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:18:54",
+      "participantId": "st-masa-2026:18",
+      "division": "NEST WOMEN",
+      "ageStatus": null,
+      "rawName": "Danielle* Anzalone",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:19:55",
+      "participantId": "st-masa-2026:19",
+      "division": "NEST WOMEN",
+      "ageStatus": null,
+      "rawName": "Diana Bickmore",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:20:56",
+      "participantId": "st-masa-2026:20",
+      "division": "NEST WOMEN",
+      "ageStatus": null,
+      "rawName": "Katerina Borbat",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:21:57",
+      "participantId": "st-masa-2026:21",
+      "division": "NEST WOMEN",
+      "ageStatus": null,
+      "rawName": "Sarah Chen",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:22:58",
+      "participantId": "st-masa-2026:22",
+      "division": "NEST WOMEN",
+      "ageStatus": null,
+      "rawName": "Sarah* Girach",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:23:59",
+      "participantId": "st-masa-2026:23",
+      "division": "NEST WOMEN",
+      "ageStatus": null,
+      "rawName": "Lyra* Katzman",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:24:60",
+      "participantId": "st-masa-2026:24",
+      "division": "NEST WOMEN",
+      "ageStatus": null,
+      "rawName": "Clara* Lee",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:25:61",
+      "participantId": "st-masa-2026:25",
+      "division": "NEST WOMEN",
+      "ageStatus": null,
+      "rawName": "Xinyu (Lilian)* Li",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:26:62",
+      "participantId": "st-masa-2026:26",
+      "division": "NEST WOMEN",
+      "ageStatus": null,
+      "rawName": "Sasha* Mensah",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:27:63",
+      "participantId": "st-masa-2026:27",
+      "division": "NEST WOMEN",
+      "ageStatus": null,
+      "rawName": "Harshini* Ramachandran",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:28:64",
+      "participantId": "st-masa-2026:28",
+      "division": "NEST WOMEN",
+      "ageStatus": null,
+      "rawName": "Priyanka* Srinivasula",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:1:65",
+      "participantId": "st-masa-2026:1",
+      "division": "Santos",
+      "ageStatus": null,
+      "rawName": "Sebastian Durham",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:11:66",
+      "participantId": "st-masa-2026:11",
+      "division": "Santos",
+      "ageStatus": null,
+      "rawName": "David Shen",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:12:67",
+      "participantId": "st-masa-2026:12",
+      "division": "Santos",
+      "ageStatus": null,
+      "rawName": "Albert Voshell",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:14:68",
+      "participantId": "st-masa-2026:14",
+      "division": "Santos",
+      "ageStatus": null,
+      "rawName": "Jonny Fuller",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:15:69",
+      "participantId": "st-masa-2026:15",
+      "division": "Santos",
+      "ageStatus": null,
+      "rawName": "Sergio Shen",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:16:70",
+      "participantId": "st-masa-2026:16",
+      "division": "Santos",
+      "ageStatus": null,
+      "rawName": "Leo Jiang",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:9:71",
+      "participantId": "st-masa-2026:9",
+      "division": "Santos",
+      "ageStatus": null,
+      "rawName": "Jae* Citarella",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:10:72",
+      "participantId": "st-masa-2026:10",
+      "division": "Santos",
+      "ageStatus": null,
+      "rawName": "Maryann* Foley",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:13:73",
+      "participantId": "st-masa-2026:13",
+      "division": "Santos",
+      "ageStatus": null,
+      "rawName": "Emma* Ault",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:43:74",
+      "participantId": "st-masa-2026:43",
+      "division": "Santos",
+      "ageStatus": null,
+      "rawName": "Mia* Sobue",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:4:75",
+      "participantId": "st-masa-2026:4",
+      "division": "Stoddard",
+      "ageStatus": null,
+      "rawName": "Hanting Yuan",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:6:76",
+      "participantId": "st-masa-2026:6",
+      "division": "Stoddard",
+      "ageStatus": null,
+      "rawName": "Vincent Zheng",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:7:77",
+      "participantId": "st-masa-2026:7",
+      "division": "Stoddard",
+      "ageStatus": null,
+      "rawName": "Nicholas DeGeorge",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:8:78",
+      "participantId": "st-masa-2026:8",
+      "division": "Stoddard",
+      "ageStatus": null,
+      "rawName": "Levi Powers",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:97:79",
+      "participantId": "st-masa-2026:97",
+      "division": "Stoddard",
+      "ageStatus": null,
+      "rawName": "Zachary Ravich",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:2:80",
+      "participantId": "st-masa-2026:2",
+      "division": "Stoddard",
+      "ageStatus": null,
+      "rawName": "Athena* Ault",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:3:81",
+      "participantId": "st-masa-2026:3",
+      "division": "Stoddard",
+      "ageStatus": null,
+      "rawName": "Suji* Huh",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:5:82",
+      "participantId": "st-masa-2026:5",
+      "division": "Stoddard",
+      "ageStatus": null,
+      "rawName": "Scarlett* Zhang-Cui",
+      "sourcePage": 4
+    },
+    {
+      "id": "st-masa-2026:51:83",
+      "participantId": "st-masa-2026:51",
+      "division": "Stoddard",
+      "ageStatus": null,
+      "rawName": "Tara* Sobue",
+      "sourcePage": 4
+    }
+  ],
+  "results": [
+    {
+      "id": "st-masa-2026:701:43",
+      "participantId": "st-masa-2026:43",
+      "raceId": "701",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 1,
+      "status": null,
+      "timeRaw": "1:07.820",
+      "timeMicroseconds": 67820000,
+      "qualification": "Q",
+      "sourcePage": 51,
+      "eventKey": "153c34de5acfe55ff7d4",
+      "eventLabel": "Group A Santos' 500 Semi-Finals Event #7",
+      "raceLabel": "Heat 1 of 2 Race #701",
+      "heatNumber": 1,
+      "heatTotal": 2
+    },
+    {
+      "id": "st-masa-2026:701:16",
+      "participantId": "st-masa-2026:16",
+      "raceId": "701",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 2,
+      "status": null,
+      "timeRaw": "1:08.270",
+      "timeMicroseconds": 68270000,
+      "qualification": "Q",
+      "sourcePage": 51,
+      "eventKey": "153c34de5acfe55ff7d4",
+      "eventLabel": "Group A Santos' 500 Semi-Finals Event #7",
+      "raceLabel": "Heat 1 of 2 Race #701",
+      "heatNumber": 1,
+      "heatTotal": 2
+    },
+    {
+      "id": "st-masa-2026:701:1",
+      "participantId": "st-masa-2026:1",
+      "raceId": "701",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 3,
+      "status": null,
+      "timeRaw": "1:14.350",
+      "timeMicroseconds": 74350000,
+      "qualification": null,
+      "sourcePage": 51,
+      "eventKey": "153c34de5acfe55ff7d4",
+      "eventLabel": "Group A Santos' 500 Semi-Finals Event #7",
+      "raceLabel": "Heat 1 of 2 Race #701",
+      "heatNumber": 1,
+      "heatTotal": 2
+    },
+    {
+      "id": "st-masa-2026:701:9",
+      "participantId": "st-masa-2026:9",
+      "raceId": "701",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 4,
+      "status": null,
+      "timeRaw": "1:17.630",
+      "timeMicroseconds": 77630000,
+      "qualification": null,
+      "sourcePage": 51,
+      "eventKey": "153c34de5acfe55ff7d4",
+      "eventLabel": "Group A Santos' 500 Semi-Finals Event #7",
+      "raceLabel": "Heat 1 of 2 Race #701",
+      "heatNumber": 1,
+      "heatTotal": 2
+    },
+    {
+      "id": "st-masa-2026:701:10",
+      "participantId": "st-masa-2026:10",
+      "raceId": "701",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": null,
+      "status": "DNS",
+      "timeRaw": null,
+      "timeMicroseconds": null,
+      "qualification": null,
+      "sourcePage": 51,
+      "eventKey": "153c34de5acfe55ff7d4",
+      "eventLabel": "Group A Santos' 500 Semi-Finals Event #7",
+      "raceLabel": "Heat 1 of 2 Race #701",
+      "heatNumber": 1,
+      "heatTotal": 2
+    },
+    {
+      "id": "st-masa-2026:702:15",
+      "participantId": "st-masa-2026:15",
+      "raceId": "702",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 1,
+      "status": null,
+      "timeRaw": "1:07.940",
+      "timeMicroseconds": 67940000,
+      "qualification": "Q",
+      "sourcePage": 52,
+      "eventKey": "153c34de5acfe55ff7d4",
+      "eventLabel": "Group A Santos' 500 Semi-Finals Event #7",
+      "raceLabel": "Heat 2 of 2 Race #702",
+      "heatNumber": 2,
+      "heatTotal": 2
+    },
+    {
+      "id": "st-masa-2026:702:14",
+      "participantId": "st-masa-2026:14",
+      "raceId": "702",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 2,
+      "status": null,
+      "timeRaw": "1:08.900",
+      "timeMicroseconds": 68900000,
+      "qualification": "Q",
+      "sourcePage": 52,
+      "eventKey": "153c34de5acfe55ff7d4",
+      "eventLabel": "Group A Santos' 500 Semi-Finals Event #7",
+      "raceLabel": "Heat 2 of 2 Race #702",
+      "heatNumber": 2,
+      "heatTotal": 2
+    },
+    {
+      "id": "st-masa-2026:702:11",
+      "participantId": "st-masa-2026:11",
+      "raceId": "702",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 3,
+      "status": null,
+      "timeRaw": "1:09.270",
+      "timeMicroseconds": 69270000,
+      "qualification": "Q",
+      "sourcePage": 52,
+      "eventKey": "153c34de5acfe55ff7d4",
+      "eventLabel": "Group A Santos' 500 Semi-Finals Event #7",
+      "raceLabel": "Heat 2 of 2 Race #702",
+      "heatNumber": 2,
+      "heatTotal": 2
+    },
+    {
+      "id": "st-masa-2026:702:13",
+      "participantId": "st-masa-2026:13",
+      "raceId": "702",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 4,
+      "status": null,
+      "timeRaw": "1:14.250",
+      "timeMicroseconds": 74250000,
+      "qualification": null,
+      "sourcePage": 52,
+      "eventKey": "153c34de5acfe55ff7d4",
+      "eventLabel": "Group A Santos' 500 Semi-Finals Event #7",
+      "raceLabel": "Heat 2 of 2 Race #702",
+      "heatNumber": 2,
+      "heatTotal": 2
+    },
+    {
+      "id": "st-masa-2026:702:12",
+      "participantId": "st-masa-2026:12",
+      "raceId": "702",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 5,
+      "status": null,
+      "timeRaw": "1:20.200",
+      "timeMicroseconds": 80200000,
+      "qualification": null,
+      "sourcePage": 52,
+      "eventKey": "153c34de5acfe55ff7d4",
+      "eventLabel": "Group A Santos' 500 Semi-Finals Event #7",
+      "raceLabel": "Heat 2 of 2 Race #702",
+      "heatNumber": 2,
+      "heatTotal": 2
+    },
+    {
+      "id": "st-masa-2026:2001:67",
+      "participantId": "st-masa-2026:67",
+      "raceId": "2001",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 1,
+      "status": null,
+      "timeRaw": "0:57.100",
+      "timeMicroseconds": 57100000,
+      "qualification": "Q",
+      "sourcePage": 59,
+      "eventKey": "ed938054c5bb26d96370",
+      "eventLabel": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+      "raceLabel": "Heat 1 of 3 Race #2001",
+      "heatNumber": 1,
+      "heatTotal": 3
+    },
+    {
+      "id": "st-masa-2026:2001:68",
+      "participantId": "st-masa-2026:68",
+      "raceId": "2001",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 2,
+      "status": null,
+      "timeRaw": "0:58.430",
+      "timeMicroseconds": 58430000,
+      "qualification": "Q",
+      "sourcePage": 59,
+      "eventKey": "ed938054c5bb26d96370",
+      "eventLabel": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+      "raceLabel": "Heat 1 of 3 Race #2001",
+      "heatNumber": 1,
+      "heatTotal": 3
+    },
+    {
+      "id": "st-masa-2026:2001:95",
+      "participantId": "st-masa-2026:95",
+      "raceId": "2001",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 3,
+      "status": null,
+      "timeRaw": "0:59.390",
+      "timeMicroseconds": 59390000,
+      "qualification": null,
+      "sourcePage": 59,
+      "eventKey": "ed938054c5bb26d96370",
+      "eventLabel": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+      "raceLabel": "Heat 1 of 3 Race #2001",
+      "heatNumber": 1,
+      "heatTotal": 3
+    },
+    {
+      "id": "st-masa-2026:2001:76",
+      "participantId": "st-masa-2026:76",
+      "raceId": "2001",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 4,
+      "status": null,
+      "timeRaw": "1:01.950",
+      "timeMicroseconds": 61950000,
+      "qualification": null,
+      "sourcePage": 59,
+      "eventKey": "ed938054c5bb26d96370",
+      "eventLabel": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+      "raceLabel": "Heat 1 of 3 Race #2001",
+      "heatNumber": 1,
+      "heatTotal": 3
+    },
+    {
+      "id": "st-masa-2026:2001:75",
+      "participantId": "st-masa-2026:75",
+      "raceId": "2001",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 5,
+      "status": null,
+      "timeRaw": "1:05.470",
+      "timeMicroseconds": 65470000,
+      "qualification": null,
+      "sourcePage": 59,
+      "eventKey": "ed938054c5bb26d96370",
+      "eventLabel": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+      "raceLabel": "Heat 1 of 3 Race #2001",
+      "heatNumber": 1,
+      "heatTotal": 3
+    },
+    {
+      "id": "st-masa-2026:2002:66",
+      "participantId": "st-masa-2026:66",
+      "raceId": "2002",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 1,
+      "status": null,
+      "timeRaw": "0:55.700",
+      "timeMicroseconds": 55700000,
+      "qualification": "Q",
+      "sourcePage": 59,
+      "eventKey": "ed938054c5bb26d96370",
+      "eventLabel": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+      "raceLabel": "Heat 2 of 3 Race #2002",
+      "heatNumber": 2,
+      "heatTotal": 3
+    },
+    {
+      "id": "st-masa-2026:2002:69",
+      "participantId": "st-masa-2026:69",
+      "raceId": "2002",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 2,
+      "status": null,
+      "timeRaw": "0:57.820",
+      "timeMicroseconds": 57820000,
+      "qualification": "Q",
+      "sourcePage": 59,
+      "eventKey": "ed938054c5bb26d96370",
+      "eventLabel": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+      "raceLabel": "Heat 2 of 3 Race #2002",
+      "heatNumber": 2,
+      "heatTotal": 3
+    },
+    {
+      "id": "st-masa-2026:2002:72",
+      "participantId": "st-masa-2026:72",
+      "raceId": "2002",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 3,
+      "status": null,
+      "timeRaw": "0:59.000",
+      "timeMicroseconds": 59000000,
+      "qualification": null,
+      "sourcePage": 59,
+      "eventKey": "ed938054c5bb26d96370",
+      "eventLabel": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+      "raceLabel": "Heat 2 of 3 Race #2002",
+      "heatNumber": 2,
+      "heatTotal": 3
+    },
+    {
+      "id": "st-masa-2026:2002:74",
+      "participantId": "st-masa-2026:74",
+      "raceId": "2002",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 4,
+      "status": null,
+      "timeRaw": "0:59.830",
+      "timeMicroseconds": 59830000,
+      "qualification": null,
+      "sourcePage": 59,
+      "eventKey": "ed938054c5bb26d96370",
+      "eventLabel": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+      "raceLabel": "Heat 2 of 3 Race #2002",
+      "heatNumber": 2,
+      "heatTotal": 3
+    },
+    {
+      "id": "st-masa-2026:2003:42",
+      "participantId": "st-masa-2026:42",
+      "raceId": "2003",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 1,
+      "status": null,
+      "timeRaw": "0:58.370",
+      "timeMicroseconds": 58370000,
+      "qualification": "Q",
+      "sourcePage": 60,
+      "eventKey": "ed938054c5bb26d96370",
+      "eventLabel": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+      "raceLabel": "Heat 3 of 3 Race #2003",
+      "heatNumber": 3,
+      "heatTotal": 3
+    },
+    {
+      "id": "st-masa-2026:2003:71",
+      "participantId": "st-masa-2026:71",
+      "raceId": "2003",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 2,
+      "status": null,
+      "timeRaw": "0:59.280",
+      "timeMicroseconds": 59280000,
+      "qualification": null,
+      "sourcePage": 60,
+      "eventKey": "ed938054c5bb26d96370",
+      "eventLabel": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+      "raceLabel": "Heat 3 of 3 Race #2003",
+      "heatNumber": 3,
+      "heatTotal": 3
+    },
+    {
+      "id": "st-masa-2026:2003:70",
+      "participantId": "st-masa-2026:70",
+      "raceId": "2003",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 3,
+      "status": null,
+      "timeRaw": "0:59.710",
+      "timeMicroseconds": 59710000,
+      "qualification": null,
+      "sourcePage": 60,
+      "eventKey": "ed938054c5bb26d96370",
+      "eventLabel": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+      "raceLabel": "Heat 3 of 3 Race #2003",
+      "heatNumber": 3,
+      "heatTotal": 3
+    },
+    {
+      "id": "st-masa-2026:2003:73",
+      "participantId": "st-masa-2026:73",
+      "raceId": "2003",
+      "distance": 500,
+      "round": "Semi-Finals",
+      "rank": 4,
+      "status": null,
+      "timeRaw": "1:06.570",
+      "timeMicroseconds": 66570000,
+      "qualification": null,
+      "sourcePage": 60,
+      "eventKey": "ed938054c5bb26d96370",
+      "eventLabel": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+      "raceLabel": "Heat 3 of 3 Race #2003",
+      "heatNumber": 3,
+      "heatTotal": 3
+    },
+    {
+      "id": "st-masa-2026:3301:36",
+      "participantId": "st-masa-2026:36",
+      "raceId": "3301",
+      "distance": 1500,
+      "round": "Super Final Finals",
+      "rank": 1,
+      "status": null,
+      "timeRaw": "2:44.910",
+      "timeMicroseconds": 164910000,
+      "qualification": null,
+      "sourcePage": 67,
+      "eventKey": "e7fcac6bbf4379f90c68",
+      "eventLabel": "NEST MEN's 1500 Super Final Finals Event #33",
+      "raceLabel": "B Final Race #3301",
+      "heatNumber": null,
+      "heatTotal": null
+    },
+    {
+      "id": "st-masa-2026:3301:34",
+      "participantId": "st-masa-2026:34",
+      "raceId": "3301",
+      "distance": 1500,
+      "round": "Super Final Finals",
+      "rank": 2,
+      "status": null,
+      "timeRaw": "2:51.110",
+      "timeMicroseconds": 171110000,
+      "qualification": null,
+      "sourcePage": 67,
+      "eventKey": "e7fcac6bbf4379f90c68",
+      "eventLabel": "NEST MEN's 1500 Super Final Finals Event #33",
+      "raceLabel": "B Final Race #3301",
+      "heatNumber": null,
+      "heatTotal": null
+    },
+    {
+      "id": "st-masa-2026:3302:32",
+      "participantId": "st-masa-2026:32",
+      "raceId": "3302",
+      "distance": 1500,
+      "round": "Super Final Finals",
+      "rank": 1,
+      "status": null,
+      "timeRaw": "2:43.580",
+      "timeMicroseconds": 163580000,
+      "qualification": null,
+      "sourcePage": 68,
+      "eventKey": "e7fcac6bbf4379f90c68",
+      "eventLabel": "NEST MEN's 1500 Super Final Finals Event #33",
+      "raceLabel": "A Final Race #3302",
+      "heatNumber": null,
+      "heatTotal": null
+    },
+    {
+      "id": "st-masa-2026:3302:35",
+      "participantId": "st-masa-2026:35",
+      "raceId": "3302",
+      "distance": 1500,
+      "round": "Super Final Finals",
+      "rank": 2,
+      "status": null,
+      "timeRaw": "2:43.880",
+      "timeMicroseconds": 163880000,
+      "qualification": null,
+      "sourcePage": 68,
+      "eventKey": "e7fcac6bbf4379f90c68",
+      "eventLabel": "NEST MEN's 1500 Super Final Finals Event #33",
+      "raceLabel": "A Final Race #3302",
+      "heatNumber": null,
+      "heatTotal": null
+    },
+    {
+      "id": "st-masa-2026:3302:30",
+      "participantId": "st-masa-2026:30",
+      "raceId": "3302",
+      "distance": 1500,
+      "round": "Super Final Finals",
+      "rank": 3,
+      "status": null,
+      "timeRaw": "2:44.360",
+      "timeMicroseconds": 164360000,
+      "qualification": null,
+      "sourcePage": 68,
+      "eventKey": "e7fcac6bbf4379f90c68",
+      "eventLabel": "NEST MEN's 1500 Super Final Finals Event #33",
+      "raceLabel": "A Final Race #3302",
+      "heatNumber": null,
+      "heatTotal": null
+    },
+    {
+      "id": "st-masa-2026:3302:38",
+      "participantId": "st-masa-2026:38",
+      "raceId": "3302",
+      "distance": 1500,
+      "round": "Super Final Finals",
+      "rank": 4,
+      "status": null,
+      "timeRaw": "2:45.610",
+      "timeMicroseconds": 165610000,
+      "qualification": null,
+      "sourcePage": 68,
+      "eventKey": "e7fcac6bbf4379f90c68",
+      "eventLabel": "NEST MEN's 1500 Super Final Finals Event #33",
+      "raceLabel": "A Final Race #3302",
+      "heatNumber": null,
+      "heatTotal": null
+    },
+    {
+      "id": "st-masa-2026:3302:37",
+      "participantId": "st-masa-2026:37",
+      "raceId": "3302",
+      "distance": 1500,
+      "round": "Super Final Finals",
+      "rank": 5,
+      "status": null,
+      "timeRaw": "2:47.170",
+      "timeMicroseconds": 167170000,
+      "qualification": null,
+      "sourcePage": 68,
+      "eventKey": "e7fcac6bbf4379f90c68",
+      "eventLabel": "NEST MEN's 1500 Super Final Finals Event #33",
+      "raceLabel": "A Final Race #3302",
+      "heatNumber": null,
+      "heatTotal": null
+    },
+    {
+      "id": "st-masa-2026:3302:29",
+      "participantId": "st-masa-2026:29",
+      "raceId": "3302",
+      "distance": 1500,
+      "round": "Super Final Finals",
+      "rank": 6,
+      "status": null,
+      "timeRaw": "2:51.660",
+      "timeMicroseconds": 171660000,
+      "qualification": null,
+      "sourcePage": 68,
+      "eventKey": "e7fcac6bbf4379f90c68",
+      "eventLabel": "NEST MEN's 1500 Super Final Finals Event #33",
+      "raceLabel": "A Final Race #3302",
+      "heatNumber": null,
+      "heatTotal": null
+    },
+    {
+      "id": "st-masa-2026:3302:33",
+      "participantId": "st-masa-2026:33",
+      "raceId": "3302",
+      "distance": 1500,
+      "round": "Super Final Finals",
+      "rank": null,
+      "status": "DNS",
+      "timeRaw": null,
+      "timeMicroseconds": null,
+      "qualification": null,
+      "sourcePage": 68,
+      "eventKey": "e7fcac6bbf4379f90c68",
+      "eventLabel": "NEST MEN's 1500 Super Final Finals Event #33",
+      "raceLabel": "A Final Race #3302",
+      "heatNumber": null,
+      "heatTotal": null
+    }
+  ],
+  "evidence": {
+    "roster": {
+      "parser_version": "tempus-roster-sample/0.1",
+      "source_id": "a3e0ccc938d4730c",
+      "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt2ed31176561c3e74/69af59ae21e8760008bd1325/2026_MASA_Championships.pdf",
+      "sha256": "2671f997837bdc170dfc1fc995fbe9431ea30df968678e51e62d350a72440ae2",
+      "page_count": 72,
+      "sampled_page_count": 10,
+      "roster_pages": [
+        3,
+        4,
+        5
+      ],
+      "observation_count": 84,
+      "distinct_bib_count": 84,
+      "repeated_bibs": {},
+      "issues": [],
+      "status": "sample_requires_review",
+      "observations": [
+        {
+          "bib": "77",
+          "raw_name": "Ethan Liu",
+          "gender": "Male",
+          "division_raw": "DeClemente",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Ethan Liu",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "80",
+          "raw_name": "Nicholas Clark",
+          "gender": "Male",
+          "division_raw": "DeClemente",
+          "affiliation_raw": "Saratoga Winter Club",
+          "name": "Nicholas Clark",
+          "age_status_raw": null,
+          "club_name": "Saratoga Winter Club",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "81",
+          "raw_name": "Andrew Smith",
+          "gender": "Male",
+          "division_raw": "DeClemente",
+          "affiliation_raw": "Bay State Speedskating",
+          "name": "Andrew Smith",
+          "age_status_raw": null,
+          "club_name": "Bay State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "84",
+          "raw_name": "James Yin",
+          "gender": "Male",
+          "division_raw": "DeClemente",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "James Yin",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "92",
+          "raw_name": "Theodore Taub",
+          "gender": "Male",
+          "division_raw": "DeClemente",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Theodore Taub",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "94",
+          "raw_name": "Maren Hoffman",
+          "gender": "Male",
+          "division_raw": "DeClemente",
+          "affiliation_raw": "Saratoga Winter Club",
+          "name": "Maren Hoffman",
+          "age_status_raw": null,
+          "club_name": "Saratoga Winter Club",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "78",
+          "raw_name": "Lindsay* Lin",
+          "gender": "Female",
+          "division_raw": "DeClemente",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Lindsay* Lin",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "79",
+          "raw_name": "Leilani* Fuller",
+          "gender": "Female",
+          "division_raw": "DeClemente",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Leilani* Fuller",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "83",
+          "raw_name": "Yinyi* Li",
+          "gender": "Female",
+          "division_raw": "DeClemente",
+          "affiliation_raw": "Bay State Speedskating",
+          "name": "Yinyi* Li",
+          "age_status_raw": null,
+          "club_name": "Bay State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "93",
+          "raw_name": "Elizabeth* Bourquin",
+          "gender": "Female",
+          "division_raw": "DeClemente",
+          "affiliation_raw": "Saratoga Winter Club",
+          "name": "Elizabeth* Bourquin",
+          "age_status_raw": null,
+          "club_name": "Saratoga Winter Club",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "42",
+          "raw_name": "Henry Peck",
+          "gender": "Male",
+          "division_raw": "Heo",
+          "affiliation_raw": "Saratoga Winter Club",
+          "name": "Henry Peck",
+          "age_status_raw": null,
+          "club_name": "Saratoga Winter Club",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "66",
+          "raw_name": "Ryder Yu",
+          "gender": "Male",
+          "division_raw": "Heo",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Ryder Yu",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "67",
+          "raw_name": "Bartosz Debicki",
+          "gender": "Male",
+          "division_raw": "Heo",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Bartosz Debicki",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "68",
+          "raw_name": "Samuel Winter",
+          "gender": "Male",
+          "division_raw": "Heo",
+          "affiliation_raw": "Connecticut Speedskating",
+          "name": "Samuel Winter",
+          "age_status_raw": null,
+          "club_name": "Connecticut Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "71",
+          "raw_name": "Miles Quaye",
+          "gender": "Male",
+          "division_raw": "Heo",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Miles Quaye",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "72",
+          "raw_name": "Sebastian Cao",
+          "gender": "Male",
+          "division_raw": "Heo",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Sebastian Cao",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "73",
+          "raw_name": "Grayson Callahan",
+          "gender": "Male",
+          "division_raw": "Heo",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Grayson Callahan",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "75",
+          "raw_name": "Luca Sakhnovskiy",
+          "gender": "Male",
+          "division_raw": "Heo",
+          "affiliation_raw": "Saratoga Winter Club",
+          "name": "Luca Sakhnovskiy",
+          "age_status_raw": null,
+          "club_name": "Saratoga Winter Club",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "76",
+          "raw_name": "Theodore Erreger",
+          "gender": "Male",
+          "division_raw": "Heo",
+          "affiliation_raw": "Saratoga Winter Club",
+          "name": "Theodore Erreger",
+          "age_status_raw": null,
+          "club_name": "Saratoga Winter Club",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "95",
+          "raw_name": "Jaxon Brogan",
+          "gender": "Male",
+          "division_raw": "Heo",
+          "affiliation_raw": "East Penn Speedskating Club",
+          "name": "Jaxon Brogan",
+          "age_status_raw": null,
+          "club_name": "East Penn Speedskating Club",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "69",
+          "raw_name": "Sophie* OBrien",
+          "gender": "Female",
+          "division_raw": "Heo",
+          "affiliation_raw": "Taconic Speedskating",
+          "name": "Sophie* OBrien",
+          "age_status_raw": null,
+          "club_name": "Taconic Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "70",
+          "raw_name": "Lois* Houck",
+          "gender": "Female",
+          "division_raw": "Heo",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Lois* Houck",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "74",
+          "raw_name": "Celine* Fu",
+          "gender": "Female",
+          "division_raw": "Heo",
+          "affiliation_raw": "Potomac Speedskating",
+          "name": "Celine* Fu",
+          "age_status_raw": null,
+          "club_name": "Potomac Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "54",
+          "raw_name": "David Bagosy",
+          "gender": "Male",
+          "division_raw": "Kim",
+          "affiliation_raw": "Connecticut Speedskating",
+          "name": "David Bagosy",
+          "age_status_raw": null,
+          "club_name": "Connecticut Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "55",
+          "raw_name": "Jin Sung Kim",
+          "gender": "Male",
+          "division_raw": "Kim",
+          "affiliation_raw": "Bay State Speedskating",
+          "name": "Jin Sung Kim",
+          "age_status_raw": null,
+          "club_name": "Bay State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "56",
+          "raw_name": "David Phillips",
+          "gender": "Male",
+          "division_raw": "Kim",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "David Phillips",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "58",
+          "raw_name": "Jesse Hoffman",
+          "gender": "Male",
+          "division_raw": "Kim",
+          "affiliation_raw": "Saratoga Winter Club",
+          "name": "Jesse Hoffman",
+          "age_status_raw": null,
+          "club_name": "Saratoga Winter Club",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "61",
+          "raw_name": "Alexander Loftman",
+          "gender": "Male",
+          "division_raw": "Kim",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Alexander Loftman",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "62",
+          "raw_name": "Eric Gourdon",
+          "gender": "Male",
+          "division_raw": "Kim",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "Eric Gourdon",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "96",
+          "raw_name": "Vlad Khodik",
+          "gender": "Male",
+          "division_raw": "Kim",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "Vlad Khodik",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "57",
+          "raw_name": "Carole* Moore",
+          "gender": "Female",
+          "division_raw": "Kim",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "Carole* Moore",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "59",
+          "raw_name": "Taylor* Cain",
+          "gender": "Female",
+          "division_raw": "Kim",
+          "affiliation_raw": "United Capital Blades",
+          "name": "Taylor* Cain",
+          "age_status_raw": null,
+          "club_name": "United Capital Blades",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "60",
+          "raw_name": "Emma* Krinsky",
+          "gender": "Female",
+          "division_raw": "Kim",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "Emma* Krinsky",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "63",
+          "raw_name": "M. R. Jordan* Jordan",
+          "gender": "Female",
+          "division_raw": "Kim",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "M. R. Jordan* Jordan",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "17",
+          "raw_name": "Jonathan Liu",
+          "gender": "Male",
+          "division_raw": "Letai",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Jonathan Liu",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "39",
+          "raw_name": "Immanuel Ayhan",
+          "gender": "Male",
+          "division_raw": "Letai",
+          "affiliation_raw": "Potomac Speedskating",
+          "name": "Immanuel Ayhan",
+          "age_status_raw": null,
+          "club_name": "Potomac Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "40",
+          "raw_name": "Matthew Quaye",
+          "gender": "Male",
+          "division_raw": "Letai",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Matthew Quaye",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "45",
+          "raw_name": "Jayden Wu",
+          "gender": "Male",
+          "division_raw": "Letai",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Jayden Wu",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "47",
+          "raw_name": "Nicholas Miller",
+          "gender": "Male",
+          "division_raw": "Letai",
+          "affiliation_raw": "Connecticut Speedskating",
+          "name": "Nicholas Miller",
+          "age_status_raw": null,
+          "club_name": "Connecticut Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "49",
+          "raw_name": "Henry He",
+          "gender": "Male",
+          "division_raw": "Letai",
+          "affiliation_raw": "Connecticut Speedskating",
+          "name": "Henry He",
+          "age_status_raw": null,
+          "club_name": "Connecticut Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "50",
+          "raw_name": "Leo Peng",
+          "gender": "Male",
+          "division_raw": "Letai",
+          "affiliation_raw": "Bay State Speedskating",
+          "name": "Leo Peng",
+          "age_status_raw": null,
+          "club_name": "Bay State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "52",
+          "raw_name": "Drake Brown",
+          "gender": "Male",
+          "division_raw": "Letai",
+          "affiliation_raw": "Saratoga Winter Club",
+          "name": "Drake Brown",
+          "age_status_raw": null,
+          "club_name": "Saratoga Winter Club",
+          "age_evidence_type": "unresolved_division",
+          "page": 3,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "41",
+          "raw_name": "Yinru* Li",
+          "gender": "Female",
+          "division_raw": "Letai",
+          "affiliation_raw": "Bay State Speedskating",
+          "name": "Yinru* Li",
+          "age_status_raw": null,
+          "club_name": "Bay State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "46",
+          "raw_name": "Anushka* Bhattacharjee",
+          "gender": "Female",
+          "division_raw": "Letai",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Anushka* Bhattacharjee",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "48",
+          "raw_name": "Yeji* Huh",
+          "gender": "Female",
+          "division_raw": "Letai",
+          "affiliation_raw": "Connecticut Speedskating",
+          "name": "Yeji* Huh",
+          "age_status_raw": null,
+          "club_name": "Connecticut Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "29",
+          "raw_name": "Richard Hao",
+          "gender": "Male",
+          "division_raw": "NEST MEN",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Richard Hao",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "30",
+          "raw_name": "Clark Hartemink",
+          "gender": "Male",
+          "division_raw": "NEST MEN",
+          "affiliation_raw": "East Penn Speedskating Club",
+          "name": "Clark Hartemink",
+          "age_status_raw": null,
+          "club_name": "East Penn Speedskating Club",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "32",
+          "raw_name": "Hugo Kelly",
+          "gender": "Male",
+          "division_raw": "NEST MEN",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Hugo Kelly",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "33",
+          "raw_name": "Ghanashyama Prabhu",
+          "gender": "Male",
+          "division_raw": "NEST MEN",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "Ghanashyama Prabhu",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "34",
+          "raw_name": "Britton Smith",
+          "gender": "Male",
+          "division_raw": "NEST MEN",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "Britton Smith",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "35",
+          "raw_name": "Sean Sun",
+          "gender": "Male",
+          "division_raw": "NEST MEN",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Sean Sun",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "36",
+          "raw_name": "Tim Van Fleet",
+          "gender": "Male",
+          "division_raw": "NEST MEN",
+          "affiliation_raw": "East Penn Speedskating Club",
+          "name": "Tim Van Fleet",
+          "age_status_raw": null,
+          "club_name": "East Penn Speedskating Club",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "37",
+          "raw_name": "Elias Wang",
+          "gender": "Male",
+          "division_raw": "NEST MEN",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "Elias Wang",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "38",
+          "raw_name": "Ryan Zheng",
+          "gender": "Male",
+          "division_raw": "NEST MEN",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Ryan Zheng",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "18",
+          "raw_name": "Danielle* Anzalone",
+          "gender": "Female",
+          "division_raw": "NEST WOMEN",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "Danielle* Anzalone",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "19",
+          "raw_name": "Diana Bickmore",
+          "gender": "Female",
+          "division_raw": "NEST WOMEN",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Diana Bickmore",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "20",
+          "raw_name": "Katerina Borbat",
+          "gender": "Female",
+          "division_raw": "NEST WOMEN",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Katerina Borbat",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "21",
+          "raw_name": "Sarah Chen",
+          "gender": "Female",
+          "division_raw": "NEST WOMEN",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "Sarah Chen",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "22",
+          "raw_name": "Sarah* Girach",
+          "gender": "Female",
+          "division_raw": "NEST WOMEN",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Sarah* Girach",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "23",
+          "raw_name": "Lyra* Katzman",
+          "gender": "Female",
+          "division_raw": "NEST WOMEN",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "Lyra* Katzman",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "24",
+          "raw_name": "Clara* Lee",
+          "gender": "Female",
+          "division_raw": "NEST WOMEN",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Clara* Lee",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "25",
+          "raw_name": "Xinyu (Lilian)* Li",
+          "gender": "Female",
+          "division_raw": "NEST WOMEN",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Xinyu (Lilian)* Li",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "26",
+          "raw_name": "Sasha* Mensah",
+          "gender": "Female",
+          "division_raw": "NEST WOMEN",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Sasha* Mensah",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "27",
+          "raw_name": "Harshini* Ramachandran",
+          "gender": "Female",
+          "division_raw": "NEST WOMEN",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Harshini* Ramachandran",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "28",
+          "raw_name": "Priyanka* Srinivasula",
+          "gender": "Female",
+          "division_raw": "NEST WOMEN",
+          "affiliation_raw": "East Penn Speedskating Club",
+          "name": "Priyanka* Srinivasula",
+          "age_status_raw": null,
+          "club_name": "East Penn Speedskating Club",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "1",
+          "raw_name": "Sebastian Durham",
+          "gender": "Male",
+          "division_raw": "Santos",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Sebastian Durham",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "11",
+          "raw_name": "David Shen",
+          "gender": "Male",
+          "division_raw": "Santos",
+          "affiliation_raw": "Potomac Speedskating",
+          "name": "David Shen",
+          "age_status_raw": null,
+          "club_name": "Potomac Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "12",
+          "raw_name": "Albert Voshell",
+          "gender": "Male",
+          "division_raw": "Santos",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Albert Voshell",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "14",
+          "raw_name": "Jonny Fuller",
+          "gender": "Male",
+          "division_raw": "Santos",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Jonny Fuller",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "15",
+          "raw_name": "Sergio Shen",
+          "gender": "Male",
+          "division_raw": "Santos",
+          "affiliation_raw": "Potomac Speedskating",
+          "name": "Sergio Shen",
+          "age_status_raw": null,
+          "club_name": "Potomac Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "16",
+          "raw_name": "Leo Jiang",
+          "gender": "Male",
+          "division_raw": "Santos",
+          "affiliation_raw": "Bay State Speedskating",
+          "name": "Leo Jiang",
+          "age_status_raw": null,
+          "club_name": "Bay State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "9",
+          "raw_name": "Jae* Citarella",
+          "gender": "Female",
+          "division_raw": "Santos",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "Jae* Citarella",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "10",
+          "raw_name": "Maryann* Foley",
+          "gender": "Female",
+          "division_raw": "Santos",
+          "affiliation_raw": "Flushing Meadows Speedskating",
+          "name": "Maryann* Foley",
+          "age_status_raw": null,
+          "club_name": "Flushing Meadows Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "13",
+          "raw_name": "Emma* Ault",
+          "gender": "Female",
+          "division_raw": "Santos",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Emma* Ault",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "43",
+          "raw_name": "Mia* Sobue",
+          "gender": "Female",
+          "division_raw": "Santos",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Mia* Sobue",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "4",
+          "raw_name": "Hanting Yuan",
+          "gender": "Male",
+          "division_raw": "Stoddard",
+          "affiliation_raw": "Bay State Speedskating",
+          "name": "Hanting Yuan",
+          "age_status_raw": null,
+          "club_name": "Bay State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "6",
+          "raw_name": "Vincent Zheng",
+          "gender": "Male",
+          "division_raw": "Stoddard",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Vincent Zheng",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "7",
+          "raw_name": "Nicholas DeGeorge",
+          "gender": "Male",
+          "division_raw": "Stoddard",
+          "affiliation_raw": "Taconic Speedskating",
+          "name": "Nicholas DeGeorge",
+          "age_status_raw": null,
+          "club_name": "Taconic Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "8",
+          "raw_name": "Levi Powers",
+          "gender": "Male",
+          "division_raw": "Stoddard",
+          "affiliation_raw": "Connecticut Speedskating",
+          "name": "Levi Powers",
+          "age_status_raw": null,
+          "club_name": "Connecticut Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "97",
+          "raw_name": "Zachary Ravich",
+          "gender": "Male",
+          "division_raw": "Stoddard",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Zachary Ravich",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "2",
+          "raw_name": "Athena* Ault",
+          "gender": "Female",
+          "division_raw": "Stoddard",
+          "affiliation_raw": "Garden State Speedskating",
+          "name": "Athena* Ault",
+          "age_status_raw": null,
+          "club_name": "Garden State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "3",
+          "raw_name": "Suji* Huh",
+          "gender": "Female",
+          "division_raw": "Stoddard",
+          "affiliation_raw": "Connecticut Speedskating",
+          "name": "Suji* Huh",
+          "age_status_raw": null,
+          "club_name": "Connecticut Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "5",
+          "raw_name": "Scarlett* Zhang-Cui",
+          "gender": "Female",
+          "division_raw": "Stoddard",
+          "affiliation_raw": "Bay State Speedskating",
+          "name": "Scarlett* Zhang-Cui",
+          "age_status_raw": null,
+          "club_name": "Bay State Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        },
+        {
+          "bib": "51",
+          "raw_name": "Tara* Sobue",
+          "gender": "Female",
+          "division_raw": "Stoddard",
+          "affiliation_raw": "Danbury Speedskating",
+          "name": "Tara* Sobue",
+          "age_status_raw": null,
+          "club_name": "Danbury Speedskating",
+          "age_evidence_type": "unresolved_division",
+          "page": 4,
+          "identity_status": "competition_local_only"
+        }
+      ]
+    },
+    "events": [
+      {
+        "parser_version": "tempus-complete-event/0.5",
+        "status": "complete_selected_event",
+        "source_id": "a3e0ccc938d4730c",
+        "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt2ed31176561c3e74/69af59ae21e8760008bd1325/2026_MASA_Championships.pdf",
+        "sha256": "2671f997837bdc170dfc1fc995fbe9431ea30df968678e51e62d350a72440ae2",
+        "pages": [
+          51,
+          52
+        ],
+        "event_number": "7",
+        "event_label_raw": "Group A Santos' 500 Semi-Finals Event #7",
+        "heat_count": 2,
+        "heats": [
+          {
+            "race_id": "701",
+            "label": "Heat 1 of 2 Race #701",
+            "heat_number": 1,
+            "heat_total": 2,
+            "result_count": 5
+          },
+          {
+            "race_id": "702",
+            "label": "Heat 2 of 2 Race #702",
+            "heat_number": 2,
+            "heat_total": 2,
+            "result_count": 5
+          }
+        ],
+        "result_count": 10,
+        "results": [
+          {
+            "rank": 1,
+            "status_raw": null,
+            "row_raw": "1 43 Mia* Sobue Danbury Speedskating 1:07.820 Q",
+            "bib": "43",
+            "name_raw": "Mia* Sobue",
+            "affiliation_raw": "Danbury Speedskating",
+            "time_raw": "1:07.820",
+            "time_microseconds": 67820000,
+            "timing_decimal_places": 3,
+            "qualification_raw": "Q",
+            "event_label_raw": "Group A Santos' 500 Semi-Finals Event #7",
+            "event_number": "7",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "701",
+            "race_label_raw": "Heat 1 of 2 Race #701",
+            "source_page": 51,
+            "group_label": "Group A Santos'",
+            "heat_number": 1,
+            "heat_total": 2
+          },
+          {
+            "rank": 2,
+            "status_raw": null,
+            "row_raw": "2 16 Leo Jiang Bay State Speedskating 1:08.270 Q",
+            "bib": "16",
+            "name_raw": "Leo Jiang",
+            "affiliation_raw": "Bay State Speedskating",
+            "time_raw": "1:08.270",
+            "time_microseconds": 68270000,
+            "timing_decimal_places": 3,
+            "qualification_raw": "Q",
+            "event_label_raw": "Group A Santos' 500 Semi-Finals Event #7",
+            "event_number": "7",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "701",
+            "race_label_raw": "Heat 1 of 2 Race #701",
+            "source_page": 51,
+            "group_label": "Group A Santos'",
+            "heat_number": 1,
+            "heat_total": 2
+          },
+          {
+            "rank": 3,
+            "status_raw": null,
+            "row_raw": "3 1 Sebastian Durham Danbury Speedskating 1:14.350",
+            "bib": "1",
+            "name_raw": "Sebastian Durham",
+            "affiliation_raw": "Danbury Speedskating",
+            "time_raw": "1:14.350",
+            "time_microseconds": 74350000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "Group A Santos' 500 Semi-Finals Event #7",
+            "event_number": "7",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "701",
+            "race_label_raw": "Heat 1 of 2 Race #701",
+            "source_page": 51,
+            "group_label": "Group A Santos'",
+            "heat_number": 1,
+            "heat_total": 2
+          },
+          {
+            "rank": 4,
+            "status_raw": null,
+            "row_raw": "4 9 Jae* Citarella Flushing Meadows Speedskating 1:17.630",
+            "bib": "9",
+            "name_raw": "Jae* Citarella",
+            "affiliation_raw": "Flushing Meadows Speedskating",
+            "time_raw": "1:17.630",
+            "time_microseconds": 77630000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "Group A Santos' 500 Semi-Finals Event #7",
+            "event_number": "7",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "701",
+            "race_label_raw": "Heat 1 of 2 Race #701",
+            "source_page": 51,
+            "group_label": "Group A Santos'",
+            "heat_number": 1,
+            "heat_total": 2
+          },
+          {
+            "rank": null,
+            "status_raw": "DNS",
+            "row_raw": "10 Maryann* Foley Flushing Meadows Speedskating DNS",
+            "bib": "10",
+            "name_raw": "Maryann* Foley",
+            "affiliation_raw": "Flushing Meadows Speedskating",
+            "time_raw": null,
+            "time_microseconds": null,
+            "timing_decimal_places": null,
+            "qualification_raw": null,
+            "event_label_raw": "Group A Santos' 500 Semi-Finals Event #7",
+            "event_number": "7",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "701",
+            "race_label_raw": "Heat 1 of 2 Race #701",
+            "source_page": 51,
+            "group_label": "Group A Santos'",
+            "heat_number": 1,
+            "heat_total": 2
+          },
+          {
+            "rank": 1,
+            "status_raw": null,
+            "row_raw": "1 15 Sergio Shen Potomac Speedskating 1:07.940 Q",
+            "bib": "15",
+            "name_raw": "Sergio Shen",
+            "affiliation_raw": "Potomac Speedskating",
+            "time_raw": "1:07.940",
+            "time_microseconds": 67940000,
+            "timing_decimal_places": 3,
+            "qualification_raw": "Q",
+            "event_label_raw": "Group A Santos' 500 Semi-Finals Event #7",
+            "event_number": "7",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "702",
+            "race_label_raw": "Heat 2 of 2 Race #702",
+            "source_page": 52,
+            "group_label": "Group A Santos'",
+            "heat_number": 2,
+            "heat_total": 2
+          },
+          {
+            "rank": 2,
+            "status_raw": null,
+            "row_raw": "2 14 Jonny Fuller Danbury Speedskating 1:08.900 Q",
+            "bib": "14",
+            "name_raw": "Jonny Fuller",
+            "affiliation_raw": "Danbury Speedskating",
+            "time_raw": "1:08.900",
+            "time_microseconds": 68900000,
+            "timing_decimal_places": 3,
+            "qualification_raw": "Q",
+            "event_label_raw": "Group A Santos' 500 Semi-Finals Event #7",
+            "event_number": "7",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "702",
+            "race_label_raw": "Heat 2 of 2 Race #702",
+            "source_page": 52,
+            "group_label": "Group A Santos'",
+            "heat_number": 2,
+            "heat_total": 2
+          },
+          {
+            "rank": 3,
+            "status_raw": null,
+            "row_raw": "3 11 David Shen Potomac Speedskating 1:09.270 Q",
+            "bib": "11",
+            "name_raw": "David Shen",
+            "affiliation_raw": "Potomac Speedskating",
+            "time_raw": "1:09.270",
+            "time_microseconds": 69270000,
+            "timing_decimal_places": 3,
+            "qualification_raw": "Q",
+            "event_label_raw": "Group A Santos' 500 Semi-Finals Event #7",
+            "event_number": "7",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "702",
+            "race_label_raw": "Heat 2 of 2 Race #702",
+            "source_page": 52,
+            "group_label": "Group A Santos'",
+            "heat_number": 2,
+            "heat_total": 2
+          },
+          {
+            "rank": 4,
+            "status_raw": null,
+            "row_raw": "4 13 Emma* Ault Garden State Speedskating 1:14.250",
+            "bib": "13",
+            "name_raw": "Emma* Ault",
+            "affiliation_raw": "Garden State Speedskating",
+            "time_raw": "1:14.250",
+            "time_microseconds": 74250000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "Group A Santos' 500 Semi-Finals Event #7",
+            "event_number": "7",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "702",
+            "race_label_raw": "Heat 2 of 2 Race #702",
+            "source_page": 52,
+            "group_label": "Group A Santos'",
+            "heat_number": 2,
+            "heat_total": 2
+          },
+          {
+            "rank": 5,
+            "status_raw": null,
+            "row_raw": "5 12 Albert Voshell Danbury Speedskating 1:20.200",
+            "bib": "12",
+            "name_raw": "Albert Voshell",
+            "affiliation_raw": "Danbury Speedskating",
+            "time_raw": "1:20.200",
+            "time_microseconds": 80200000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "Group A Santos' 500 Semi-Finals Event #7",
+            "event_number": "7",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "702",
+            "race_label_raw": "Heat 2 of 2 Race #702",
+            "source_page": 52,
+            "group_label": "Group A Santos'",
+            "heat_number": 2,
+            "heat_total": 2
+          }
+        ]
+      },
+      {
+        "parser_version": "tempus-complete-event/0.5",
+        "status": "complete_selected_event",
+        "source_id": "a3e0ccc938d4730c",
+        "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt2ed31176561c3e74/69af59ae21e8760008bd1325/2026_MASA_Championships.pdf",
+        "sha256": "2671f997837bdc170dfc1fc995fbe9431ea30df968678e51e62d350a72440ae2",
+        "pages": [
+          59,
+          60
+        ],
+        "event_number": "20",
+        "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+        "heat_count": 3,
+        "heats": [
+          {
+            "race_id": "2001",
+            "label": "Heat 1 of 3 Race #2001",
+            "heat_number": 1,
+            "heat_total": 3,
+            "result_count": 5
+          },
+          {
+            "race_id": "2002",
+            "label": "Heat 2 of 3 Race #2002",
+            "heat_number": 2,
+            "heat_total": 3,
+            "result_count": 4
+          },
+          {
+            "race_id": "2003",
+            "label": "Heat 3 of 3 Race #2003",
+            "heat_number": 3,
+            "heat_total": 3,
+            "result_count": 4
+          }
+        ],
+        "result_count": 13,
+        "results": [
+          {
+            "rank": 1,
+            "status_raw": null,
+            "row_raw": "1 67 Bartosz Debicki Danbury Speedskating 0:57.100 Q",
+            "bib": "67",
+            "name_raw": "Bartosz Debicki",
+            "affiliation_raw": "Danbury Speedskating",
+            "time_raw": "0:57.100",
+            "time_microseconds": 57100000,
+            "timing_decimal_places": 3,
+            "qualification_raw": "Q",
+            "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+            "event_number": "20",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "2001",
+            "race_label_raw": "Heat 1 of 3 Race #2001",
+            "source_page": 59,
+            "group_label": "Group A Heo's",
+            "heat_number": 1,
+            "heat_total": 3
+          },
+          {
+            "rank": 2,
+            "status_raw": null,
+            "row_raw": "2 68 Samuel Winter Connecticut Speedskating 0:58.430 Q",
+            "bib": "68",
+            "name_raw": "Samuel Winter",
+            "affiliation_raw": "Connecticut Speedskating",
+            "time_raw": "0:58.430",
+            "time_microseconds": 58430000,
+            "timing_decimal_places": 3,
+            "qualification_raw": "Q",
+            "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+            "event_number": "20",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "2001",
+            "race_label_raw": "Heat 1 of 3 Race #2001",
+            "source_page": 59,
+            "group_label": "Group A Heo's",
+            "heat_number": 1,
+            "heat_total": 3
+          },
+          {
+            "rank": 3,
+            "status_raw": null,
+            "row_raw": "3 95 Jaxon Brogan East Penn Speedskating Club 0:59.390",
+            "bib": "95",
+            "name_raw": "Jaxon Brogan",
+            "affiliation_raw": "East Penn Speedskating Club",
+            "time_raw": "0:59.390",
+            "time_microseconds": 59390000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+            "event_number": "20",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "2001",
+            "race_label_raw": "Heat 1 of 3 Race #2001",
+            "source_page": 59,
+            "group_label": "Group A Heo's",
+            "heat_number": 1,
+            "heat_total": 3
+          },
+          {
+            "rank": 4,
+            "status_raw": null,
+            "row_raw": "4 76 Theodore Erreger Saratoga Winter Club 1:01.950",
+            "bib": "76",
+            "name_raw": "Theodore Erreger",
+            "affiliation_raw": "Saratoga Winter Club",
+            "time_raw": "1:01.950",
+            "time_microseconds": 61950000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+            "event_number": "20",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "2001",
+            "race_label_raw": "Heat 1 of 3 Race #2001",
+            "source_page": 59,
+            "group_label": "Group A Heo's",
+            "heat_number": 1,
+            "heat_total": 3
+          },
+          {
+            "rank": 5,
+            "status_raw": null,
+            "row_raw": "5 75 Luca Sakhnovskiy Saratoga Winter Club 1:05.470",
+            "bib": "75",
+            "name_raw": "Luca Sakhnovskiy",
+            "affiliation_raw": "Saratoga Winter Club",
+            "time_raw": "1:05.470",
+            "time_microseconds": 65470000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+            "event_number": "20",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "2001",
+            "race_label_raw": "Heat 1 of 3 Race #2001",
+            "source_page": 59,
+            "group_label": "Group A Heo's",
+            "heat_number": 1,
+            "heat_total": 3
+          },
+          {
+            "rank": 1,
+            "status_raw": null,
+            "row_raw": "1 66 Ryder Yu Garden State Speedskating 0:55.700 Q",
+            "bib": "66",
+            "name_raw": "Ryder Yu",
+            "affiliation_raw": "Garden State Speedskating",
+            "time_raw": "0:55.700",
+            "time_microseconds": 55700000,
+            "timing_decimal_places": 3,
+            "qualification_raw": "Q",
+            "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+            "event_number": "20",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "2002",
+            "race_label_raw": "Heat 2 of 3 Race #2002",
+            "source_page": 59,
+            "group_label": "Group A Heo's",
+            "heat_number": 2,
+            "heat_total": 3
+          },
+          {
+            "rank": 2,
+            "status_raw": null,
+            "row_raw": "2 69 Sophie* OBrien Taconic Speedskating 0:57.820 Q",
+            "bib": "69",
+            "name_raw": "Sophie* OBrien",
+            "affiliation_raw": "Taconic Speedskating",
+            "time_raw": "0:57.820",
+            "time_microseconds": 57820000,
+            "timing_decimal_places": 3,
+            "qualification_raw": "Q",
+            "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+            "event_number": "20",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "2002",
+            "race_label_raw": "Heat 2 of 3 Race #2002",
+            "source_page": 59,
+            "group_label": "Group A Heo's",
+            "heat_number": 2,
+            "heat_total": 3
+          },
+          {
+            "rank": 3,
+            "status_raw": null,
+            "row_raw": "3 72 Sebastian Cao Garden State Speedskating 0:59.000",
+            "bib": "72",
+            "name_raw": "Sebastian Cao",
+            "affiliation_raw": "Garden State Speedskating",
+            "time_raw": "0:59.000",
+            "time_microseconds": 59000000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+            "event_number": "20",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "2002",
+            "race_label_raw": "Heat 2 of 3 Race #2002",
+            "source_page": 59,
+            "group_label": "Group A Heo's",
+            "heat_number": 2,
+            "heat_total": 3
+          },
+          {
+            "rank": 4,
+            "status_raw": null,
+            "row_raw": "4 74 Celine* Fu Potomac Speedskating 0:59.830",
+            "bib": "74",
+            "name_raw": "Celine* Fu",
+            "affiliation_raw": "Potomac Speedskating",
+            "time_raw": "0:59.830",
+            "time_microseconds": 59830000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+            "event_number": "20",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "2002",
+            "race_label_raw": "Heat 2 of 3 Race #2002",
+            "source_page": 59,
+            "group_label": "Group A Heo's",
+            "heat_number": 2,
+            "heat_total": 3
+          },
+          {
+            "rank": 1,
+            "status_raw": null,
+            "row_raw": "1 42 Henry Peck Saratoga Winter Club 0:58.370 Q",
+            "bib": "42",
+            "name_raw": "Henry Peck",
+            "affiliation_raw": "Saratoga Winter Club",
+            "time_raw": "0:58.370",
+            "time_microseconds": 58370000,
+            "timing_decimal_places": 3,
+            "qualification_raw": "Q",
+            "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+            "event_number": "20",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "2003",
+            "race_label_raw": "Heat 3 of 3 Race #2003",
+            "source_page": 60,
+            "group_label": "Group A Heo's",
+            "heat_number": 3,
+            "heat_total": 3
+          },
+          {
+            "rank": 2,
+            "status_raw": null,
+            "row_raw": "2 71 Miles Quaye Danbury Speedskating 0:59.280",
+            "bib": "71",
+            "name_raw": "Miles Quaye",
+            "affiliation_raw": "Danbury Speedskating",
+            "time_raw": "0:59.280",
+            "time_microseconds": 59280000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+            "event_number": "20",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "2003",
+            "race_label_raw": "Heat 3 of 3 Race #2003",
+            "source_page": 60,
+            "group_label": "Group A Heo's",
+            "heat_number": 3,
+            "heat_total": 3
+          },
+          {
+            "rank": 3,
+            "status_raw": null,
+            "row_raw": "3 70 Lois* Houck Danbury Speedskating 0:59.710",
+            "bib": "70",
+            "name_raw": "Lois* Houck",
+            "affiliation_raw": "Danbury Speedskating",
+            "time_raw": "0:59.710",
+            "time_microseconds": 59710000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+            "event_number": "20",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "2003",
+            "race_label_raw": "Heat 3 of 3 Race #2003",
+            "source_page": 60,
+            "group_label": "Group A Heo's",
+            "heat_number": 3,
+            "heat_total": 3
+          },
+          {
+            "rank": 4,
+            "status_raw": null,
+            "row_raw": "4 73 Grayson Callahan Garden State Speedskating 1:06.570",
+            "bib": "73",
+            "name_raw": "Grayson Callahan",
+            "affiliation_raw": "Garden State Speedskating",
+            "time_raw": "1:06.570",
+            "time_microseconds": 66570000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "Group A Heo's 500 (#2) Semi-Finals Event #20",
+            "event_number": "20",
+            "distance_metres": 500,
+            "round_raw": "Semi-Finals",
+            "race_id": "2003",
+            "race_label_raw": "Heat 3 of 3 Race #2003",
+            "source_page": 60,
+            "group_label": "Group A Heo's",
+            "heat_number": 3,
+            "heat_total": 3
+          }
+        ]
+      },
+      {
+        "parser_version": "tempus-complete-event/0.5",
+        "status": "complete_selected_event",
+        "source_id": "a3e0ccc938d4730c",
+        "source_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt2ed31176561c3e74/69af59ae21e8760008bd1325/2026_MASA_Championships.pdf",
+        "sha256": "2671f997837bdc170dfc1fc995fbe9431ea30df968678e51e62d350a72440ae2",
+        "pages": [
+          67,
+          68
+        ],
+        "event_number": "33",
+        "event_label_raw": "NEST MEN's 1500 Super Final Finals Event #33",
+        "heat_count": 2,
+        "heats": [
+          {
+            "race_id": "3301",
+            "label": "B Final Race #3301",
+            "heat_number": null,
+            "heat_total": null,
+            "result_count": 2
+          },
+          {
+            "race_id": "3302",
+            "label": "A Final Race #3302",
+            "heat_number": null,
+            "heat_total": null,
+            "result_count": 7
+          }
+        ],
+        "result_count": 9,
+        "results": [
+          {
+            "rank": 1,
+            "status_raw": null,
+            "row_raw": "1 36 Tim Van Fleet East Penn Speedskating Club 2:44.910",
+            "bib": "36",
+            "name_raw": "Tim Van Fleet",
+            "affiliation_raw": "East Penn Speedskating Club",
+            "time_raw": "2:44.910",
+            "time_microseconds": 164910000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "NEST MEN's 1500 Super Final Finals Event #33",
+            "event_number": "33",
+            "distance_metres": 1500,
+            "round_raw": "Super Final Finals",
+            "race_id": "3301",
+            "race_label_raw": "B Final Race #3301",
+            "source_page": 67,
+            "group_label": "NEST MEN's",
+            "heat_number": null,
+            "heat_total": null
+          },
+          {
+            "rank": 2,
+            "status_raw": null,
+            "row_raw": "2 34 Britton Smith Flushing Meadows Speedskating 2:51.110",
+            "bib": "34",
+            "name_raw": "Britton Smith",
+            "affiliation_raw": "Flushing Meadows Speedskating",
+            "time_raw": "2:51.110",
+            "time_microseconds": 171110000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "NEST MEN's 1500 Super Final Finals Event #33",
+            "event_number": "33",
+            "distance_metres": 1500,
+            "round_raw": "Super Final Finals",
+            "race_id": "3301",
+            "race_label_raw": "B Final Race #3301",
+            "source_page": 67,
+            "group_label": "NEST MEN's",
+            "heat_number": null,
+            "heat_total": null
+          },
+          {
+            "rank": 1,
+            "status_raw": null,
+            "row_raw": "1 32 Hugo Kelly Danbury Speedskating 2:43.580",
+            "bib": "32",
+            "name_raw": "Hugo Kelly",
+            "affiliation_raw": "Danbury Speedskating",
+            "time_raw": "2:43.580",
+            "time_microseconds": 163580000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "NEST MEN's 1500 Super Final Finals Event #33",
+            "event_number": "33",
+            "distance_metres": 1500,
+            "round_raw": "Super Final Finals",
+            "race_id": "3302",
+            "race_label_raw": "A Final Race #3302",
+            "source_page": 68,
+            "group_label": "NEST MEN's",
+            "heat_number": null,
+            "heat_total": null
+          },
+          {
+            "rank": 2,
+            "status_raw": null,
+            "row_raw": "2 35 Sean Sun Garden State Speedskating 2:43.880",
+            "bib": "35",
+            "name_raw": "Sean Sun",
+            "affiliation_raw": "Garden State Speedskating",
+            "time_raw": "2:43.880",
+            "time_microseconds": 163880000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "NEST MEN's 1500 Super Final Finals Event #33",
+            "event_number": "33",
+            "distance_metres": 1500,
+            "round_raw": "Super Final Finals",
+            "race_id": "3302",
+            "race_label_raw": "A Final Race #3302",
+            "source_page": 68,
+            "group_label": "NEST MEN's",
+            "heat_number": null,
+            "heat_total": null
+          },
+          {
+            "rank": 3,
+            "status_raw": null,
+            "row_raw": "3 30 Clark Hartemink East Penn Speedskating Club 2:44.360",
+            "bib": "30",
+            "name_raw": "Clark Hartemink",
+            "affiliation_raw": "East Penn Speedskating Club",
+            "time_raw": "2:44.360",
+            "time_microseconds": 164360000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "NEST MEN's 1500 Super Final Finals Event #33",
+            "event_number": "33",
+            "distance_metres": 1500,
+            "round_raw": "Super Final Finals",
+            "race_id": "3302",
+            "race_label_raw": "A Final Race #3302",
+            "source_page": 68,
+            "group_label": "NEST MEN's",
+            "heat_number": null,
+            "heat_total": null
+          },
+          {
+            "rank": 4,
+            "status_raw": null,
+            "row_raw": "4 38 Ryan Zheng Danbury Speedskating 2:45.610",
+            "bib": "38",
+            "name_raw": "Ryan Zheng",
+            "affiliation_raw": "Danbury Speedskating",
+            "time_raw": "2:45.610",
+            "time_microseconds": 165610000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "NEST MEN's 1500 Super Final Finals Event #33",
+            "event_number": "33",
+            "distance_metres": 1500,
+            "round_raw": "Super Final Finals",
+            "race_id": "3302",
+            "race_label_raw": "A Final Race #3302",
+            "source_page": 68,
+            "group_label": "NEST MEN's",
+            "heat_number": null,
+            "heat_total": null
+          },
+          {
+            "rank": 5,
+            "status_raw": null,
+            "row_raw": "5 37 Elias Wang Flushing Meadows Speedskating 2:47.170",
+            "bib": "37",
+            "name_raw": "Elias Wang",
+            "affiliation_raw": "Flushing Meadows Speedskating",
+            "time_raw": "2:47.170",
+            "time_microseconds": 167170000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "NEST MEN's 1500 Super Final Finals Event #33",
+            "event_number": "33",
+            "distance_metres": 1500,
+            "round_raw": "Super Final Finals",
+            "race_id": "3302",
+            "race_label_raw": "A Final Race #3302",
+            "source_page": 68,
+            "group_label": "NEST MEN's",
+            "heat_number": null,
+            "heat_total": null
+          },
+          {
+            "rank": 6,
+            "status_raw": null,
+            "row_raw": "6 29 Richard Hao Danbury Speedskating 2:51.660",
+            "bib": "29",
+            "name_raw": "Richard Hao",
+            "affiliation_raw": "Danbury Speedskating",
+            "time_raw": "2:51.660",
+            "time_microseconds": 171660000,
+            "timing_decimal_places": 3,
+            "qualification_raw": null,
+            "event_label_raw": "NEST MEN's 1500 Super Final Finals Event #33",
+            "event_number": "33",
+            "distance_metres": 1500,
+            "round_raw": "Super Final Finals",
+            "race_id": "3302",
+            "race_label_raw": "A Final Race #3302",
+            "source_page": 68,
+            "group_label": "NEST MEN's",
+            "heat_number": null,
+            "heat_total": null
+          },
+          {
+            "rank": null,
+            "status_raw": "DNS",
+            "row_raw": "33 Ghanashyama Prabhu Flushing Meadows Speedskating DNS",
+            "bib": "33",
+            "name_raw": "Ghanashyama Prabhu",
+            "affiliation_raw": "Flushing Meadows Speedskating",
+            "time_raw": null,
+            "time_microseconds": null,
+            "timing_decimal_places": null,
+            "qualification_raw": null,
+            "event_label_raw": "NEST MEN's 1500 Super Final Finals Event #33",
+            "event_number": "33",
+            "distance_metres": 1500,
+            "round_raw": "Super Final Finals",
+            "race_id": "3302",
+            "race_label_raw": "A Final Race #3302",
+            "source_page": 68,
+            "group_label": "NEST MEN's",
+            "heat_number": null,
+            "heat_total": null
+          }
+        ]
+      }
+    ]
+  },
+  "dimensions": {
+    "version": "tempus-masa-dimensions/1",
+    "entries": [
+      {
+        "id": "st-masa-2026:77:0",
+        "gender": "Men",
+        "division": "DeClemente",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:80:1",
+        "gender": "Men",
+        "division": "DeClemente",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:81:2",
+        "gender": "Men",
+        "division": "DeClemente",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:84:3",
+        "gender": "Men",
+        "division": "DeClemente",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:92:4",
+        "gender": "Men",
+        "division": "DeClemente",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:94:5",
+        "gender": "Men",
+        "division": "DeClemente",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:78:6",
+        "gender": "Women",
+        "division": "DeClemente",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:79:7",
+        "gender": "Women",
+        "division": "DeClemente",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:83:8",
+        "gender": "Women",
+        "division": "DeClemente",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:93:9",
+        "gender": "Women",
+        "division": "DeClemente",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:42:10",
+        "gender": "Men",
+        "division": "Heo",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:66:11",
+        "gender": "Men",
+        "division": "Heo",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:67:12",
+        "gender": "Men",
+        "division": "Heo",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:68:13",
+        "gender": "Men",
+        "division": "Heo",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:71:14",
+        "gender": "Men",
+        "division": "Heo",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:72:15",
+        "gender": "Men",
+        "division": "Heo",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:73:16",
+        "gender": "Men",
+        "division": "Heo",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:75:17",
+        "gender": "Men",
+        "division": "Heo",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:76:18",
+        "gender": "Men",
+        "division": "Heo",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:95:19",
+        "gender": "Men",
+        "division": "Heo",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:69:20",
+        "gender": "Women",
+        "division": "Heo",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:70:21",
+        "gender": "Women",
+        "division": "Heo",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:74:22",
+        "gender": "Women",
+        "division": "Heo",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:54:23",
+        "gender": "Men",
+        "division": "Kim",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:55:24",
+        "gender": "Men",
+        "division": "Kim",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:56:25",
+        "gender": "Men",
+        "division": "Kim",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:58:26",
+        "gender": "Men",
+        "division": "Kim",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:61:27",
+        "gender": "Men",
+        "division": "Kim",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:62:28",
+        "gender": "Men",
+        "division": "Kim",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:96:29",
+        "gender": "Men",
+        "division": "Kim",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:57:30",
+        "gender": "Women",
+        "division": "Kim",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:59:31",
+        "gender": "Women",
+        "division": "Kim",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:60:32",
+        "gender": "Women",
+        "division": "Kim",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:63:33",
+        "gender": "Women",
+        "division": "Kim",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:17:34",
+        "gender": "Men",
+        "division": "Letai",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:39:35",
+        "gender": "Men",
+        "division": "Letai",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:40:36",
+        "gender": "Men",
+        "division": "Letai",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:45:37",
+        "gender": "Men",
+        "division": "Letai",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:47:38",
+        "gender": "Men",
+        "division": "Letai",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:49:39",
+        "gender": "Men",
+        "division": "Letai",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:50:40",
+        "gender": "Men",
+        "division": "Letai",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:52:41",
+        "gender": "Men",
+        "division": "Letai",
+        "page": 3
+      },
+      {
+        "id": "st-masa-2026:41:42",
+        "gender": "Women",
+        "division": "Letai",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:46:43",
+        "gender": "Women",
+        "division": "Letai",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:48:44",
+        "gender": "Women",
+        "division": "Letai",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:29:45",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:30:46",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:32:47",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:33:48",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:34:49",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:35:50",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:36:51",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:37:52",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:38:53",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:18:54",
+        "gender": "Women",
+        "division": "NEST WOMEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:19:55",
+        "gender": "Women",
+        "division": "NEST WOMEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:20:56",
+        "gender": "Women",
+        "division": "NEST WOMEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:21:57",
+        "gender": "Women",
+        "division": "NEST WOMEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:22:58",
+        "gender": "Women",
+        "division": "NEST WOMEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:23:59",
+        "gender": "Women",
+        "division": "NEST WOMEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:24:60",
+        "gender": "Women",
+        "division": "NEST WOMEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:25:61",
+        "gender": "Women",
+        "division": "NEST WOMEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:26:62",
+        "gender": "Women",
+        "division": "NEST WOMEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:27:63",
+        "gender": "Women",
+        "division": "NEST WOMEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:28:64",
+        "gender": "Women",
+        "division": "NEST WOMEN",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:1:65",
+        "gender": "Men",
+        "division": "Santos",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:11:66",
+        "gender": "Men",
+        "division": "Santos",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:12:67",
+        "gender": "Men",
+        "division": "Santos",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:14:68",
+        "gender": "Men",
+        "division": "Santos",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:15:69",
+        "gender": "Men",
+        "division": "Santos",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:16:70",
+        "gender": "Men",
+        "division": "Santos",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:9:71",
+        "gender": "Women",
+        "division": "Santos",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:10:72",
+        "gender": "Women",
+        "division": "Santos",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:13:73",
+        "gender": "Women",
+        "division": "Santos",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:43:74",
+        "gender": "Women",
+        "division": "Santos",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:4:75",
+        "gender": "Men",
+        "division": "Stoddard",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:6:76",
+        "gender": "Men",
+        "division": "Stoddard",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:7:77",
+        "gender": "Men",
+        "division": "Stoddard",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:8:78",
+        "gender": "Men",
+        "division": "Stoddard",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:97:79",
+        "gender": "Men",
+        "division": "Stoddard",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:2:80",
+        "gender": "Women",
+        "division": "Stoddard",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:3:81",
+        "gender": "Women",
+        "division": "Stoddard",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:5:82",
+        "gender": "Women",
+        "division": "Stoddard",
+        "page": 4
+      },
+      {
+        "id": "st-masa-2026:51:83",
+        "gender": "Women",
+        "division": "Stoddard",
+        "page": 4
+      }
+    ],
+    "events": [
+      {
+        "id": "153c34de5acfe55ff7d4",
+        "gender": "Mixed",
+        "division": "Santos",
+        "competitionGroup": "Group A",
+        "rawDivision": "Santos",
+        "pages": [
+          51,
+          52
+        ],
+        "status": "source-mapped"
+      },
+      {
+        "id": "ed938054c5bb26d96370",
+        "gender": "Mixed",
+        "division": "Heo",
+        "competitionGroup": "Group A",
+        "rawDivision": "Heo",
+        "pages": [
+          59,
+          60
+        ],
+        "status": "source-mapped"
+      },
+      {
+        "id": "e7fcac6bbf4379f90c68",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "competitionGroup": null,
+        "rawDivision": "NEST MEN",
+        "pages": [
+          67,
+          68
+        ],
+        "status": "source-mapped"
+      }
+    ],
+    "results": [
+      {
+        "id": "st-masa-2026:701:43",
+        "entryId": "st-masa-2026:43:74",
+        "gender": "Women",
+        "division": "Santos",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:701:16",
+        "entryId": "st-masa-2026:16:70",
+        "gender": "Men",
+        "division": "Santos",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:701:1",
+        "entryId": "st-masa-2026:1:65",
+        "gender": "Men",
+        "division": "Santos",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:701:9",
+        "entryId": "st-masa-2026:9:71",
+        "gender": "Women",
+        "division": "Santos",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:701:10",
+        "entryId": "st-masa-2026:10:72",
+        "gender": "Women",
+        "division": "Santos",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:702:15",
+        "entryId": "st-masa-2026:15:69",
+        "gender": "Men",
+        "division": "Santos",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:702:14",
+        "entryId": "st-masa-2026:14:68",
+        "gender": "Men",
+        "division": "Santos",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:702:11",
+        "entryId": "st-masa-2026:11:66",
+        "gender": "Men",
+        "division": "Santos",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:702:13",
+        "entryId": "st-masa-2026:13:73",
+        "gender": "Women",
+        "division": "Santos",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:702:12",
+        "entryId": "st-masa-2026:12:67",
+        "gender": "Men",
+        "division": "Santos",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:2001:67",
+        "entryId": "st-masa-2026:67:12",
+        "gender": "Men",
+        "division": "Heo",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:2001:68",
+        "entryId": "st-masa-2026:68:13",
+        "gender": "Men",
+        "division": "Heo",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:2001:95",
+        "entryId": "st-masa-2026:95:19",
+        "gender": "Men",
+        "division": "Heo",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:2001:76",
+        "entryId": "st-masa-2026:76:18",
+        "gender": "Men",
+        "division": "Heo",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:2001:75",
+        "entryId": "st-masa-2026:75:17",
+        "gender": "Men",
+        "division": "Heo",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:2002:66",
+        "entryId": "st-masa-2026:66:11",
+        "gender": "Men",
+        "division": "Heo",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:2002:69",
+        "entryId": "st-masa-2026:69:20",
+        "gender": "Women",
+        "division": "Heo",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:2002:72",
+        "entryId": "st-masa-2026:72:15",
+        "gender": "Men",
+        "division": "Heo",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:2002:74",
+        "entryId": "st-masa-2026:74:22",
+        "gender": "Women",
+        "division": "Heo",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:2003:42",
+        "entryId": "st-masa-2026:42:10",
+        "gender": "Men",
+        "division": "Heo",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:2003:71",
+        "entryId": "st-masa-2026:71:14",
+        "gender": "Men",
+        "division": "Heo",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:2003:70",
+        "entryId": "st-masa-2026:70:21",
+        "gender": "Women",
+        "division": "Heo",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:2003:73",
+        "entryId": "st-masa-2026:73:16",
+        "gender": "Men",
+        "division": "Heo",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:3301:36",
+        "entryId": "st-masa-2026:36:51",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:3301:34",
+        "entryId": "st-masa-2026:34:49",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:3302:32",
+        "entryId": "st-masa-2026:32:47",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:3302:35",
+        "entryId": "st-masa-2026:35:50",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:3302:30",
+        "entryId": "st-masa-2026:30:46",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:3302:38",
+        "entryId": "st-masa-2026:38:53",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:3302:37",
+        "entryId": "st-masa-2026:37:52",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:3302:29",
+        "entryId": "st-masa-2026:29:45",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "status": "source-mapped"
+      },
+      {
+        "id": "st-masa-2026:3302:33",
+        "entryId": "st-masa-2026:33:48",
+        "gender": "Men",
+        "division": "NEST MEN",
+        "status": "source-mapped"
+      }
+    ]
+  }
+}

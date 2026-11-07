@@ -11,7 +11,7 @@ export async function POST(request: Request, context: {params: Promise<{id: stri
     const url = request.headers.get("X-Source-URL") ?? "";
     if (!officialUrl(url)) throw new InputError("An official HTTPS source URL is required.");
     if (request.headers.get("Content-Type") !== "application/pdf") throw new InputError("Use application/pdf.", 415);
-    const bytes = await readBytes(request, 32 * 1024 * 1024);
+    const bytes = await readBytes(request, 64 * 1024 * 1024, 32 * 1024 * 1024);
     if (new TextDecoder().decode(bytes.slice(0,5)) !== "%PDF-" || createHash("sha256").update(bytes).digest("hex") !== id) throw new InputError("The PDF content does not match the requested source hash.");
     const key = `documents/${id}.pdf`;
     await bucket().put(key, bytes, {httpMetadata: {contentType:"application/pdf"}});

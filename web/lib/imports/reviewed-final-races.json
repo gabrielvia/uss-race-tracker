@@ -1,0 +1,38 @@
+[
+  {
+    "sha256": "e10567180db525162ba16a14fdf026d08a6c076d104d66955db0f601080b8f14",
+    "eventLabel": "Open B's 1500 Finals Event #53",
+    "races": [
+      [
+        "5301",
+        "B Final Race #5301"
+      ],
+      [
+        "5302",
+        "A Final Race #5302"
+      ],
+      [
+        "5303",
+        "B Final Race #5303"
+      ]
+    ]
+  },
+  {
+    "sha256": "be4ae183f2b061e0b93b4b477183c16ed7388cf4322945a687f3d030bdaa00e4",
+    "eventLabel": "Anacostia's 777 Finals Event #54",
+    "races": [
+      [
+        "5401",
+        "B Final Race #5401"
+      ],
+      [
+        "5402",
+        "B Final Race #5402"
+      ],
+      [
+        "5403",
+        "A Final Race #5403"
+      ]
+    ]
+  }
+]

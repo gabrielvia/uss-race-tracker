@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "directory_url": "https://www.usspeedskating.org/results",
-  "retrieved_at": "2026-10-29T14:01:21.302791+00:00",
-  "directory_sha256": "927546bf36a2e06213f20dfc5fc1e738d95168962e1e758efeb8426d01ad279d",
+  "retrieved_at": "2026-11-04T22:14:03.846339+00:00",
+  "directory_sha256": "dd6a9562ea9f9b76588c9f1e1fa500a8cb5ff16e5d96872d31d6b3f8620c5764",
   "seasons": [
     "2026-2027",
     "2025-2026",
@@ -19,9 +19,9 @@
     "2015",
     "2014"
   ],
-  "entry_count": 498,
+  "entry_count": 499,
   "counts_by_season": {
-    "2026-2027": 5,
+    "2026-2027": 6,
     "2025-2026": 41,
     "2024-2025": 46,
     "2023-2024": 34,
@@ -37,18 +37,33 @@
     "2014": 23
   },
   "counts_by_format": {
-    "pdf": 265,
+    "pdf": 266,
     "page": 233
   },
   "entries": [
     {
-      "directory_entry_id": "ddb154b2c46f6524",
-      "source_id": "c71712e5cfe0e47f",
+      "directory_entry_id": "8d5ffffd69997033",
+      "source_id": "3e95d0ded49e2d06",
+      "season": "2026-2027",
+      "title": "2027 AmCup 1 & Long Track Fall World Cup Qualifier",
+      "directory_url": "https://www.usspeedskating.org/results",
+      "entry_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltc12a6d42aed8c552/6ae92444332c2f3c0ea5fac0/2027_AmCup_1_FWCQ.pdf",
+      "file_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltc12a6d42aed8c552/6ae92444332c2f3c0ea5fac0/2027_AmCup_1_FWCQ.pdf",
+      "format_hint": "pdf",
+      "title_date": null,
+      "event_date": null,
+      "status": "discovered",
+      "last_modified": null,
+      "issues": []
+    },
+    {
+      "directory_entry_id": "739e691ea856d678",
+      "source_id": "90033259203f2837",
       "season": "2026-2027",
       "title": "2027-10-25 - Buffalo ST Championships & Heartland #1",
       "directory_url": "https://www.usspeedskating.org/results",
-      "entry_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt89737157db388783/6ae0f9874ea2fd00bc2f24f0/2026_Buffalo_Short_Track_Championships_-Complete_Protocol.pdf",
-      "file_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt89737157db388783/6ae0f9874ea2fd00bc2f24f0/2026_Buffalo_Short_Track_Championships_-Complete_Protocol.pdf",
+      "entry_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt292a7c38b3ee8d77/6ae649087f5263f6048413ea/2026_Buffalo_Short_Track_Championships_-Complete_Protocol_updated.pdf",
+      "file_url": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/blt292a7c38b3ee8d77/6ae649087f5263f6048413ea/2026_Buffalo_Short_Track_Championships_-Complete_Protocol_updated.pdf",
       "format_hint": "pdf",
       "title_date": "2027-10-25",
       "event_date": null,

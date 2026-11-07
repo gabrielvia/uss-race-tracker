@@ -1,0 +1,886 @@
+{
+  "version": "tempus-open-dimensions/1",
+  "sources": [
+    {
+      "sha256": "cd21db3b749d52da838fee0ab42fe87e182a003ae1644a6aafd80c6312e0ba43",
+      "entries": [
+        {
+          "raw": "Men",
+          "division": "Men",
+          "gender": "Men",
+          "eventGroup": "Men's"
+        },
+        {
+          "raw": "Women",
+          "division": "Women",
+          "gender": "Women",
+          "eventGroup": "Women's"
+        }
+      ]
+    },
+    {
+      "sha256": "64c769c1dee6adbc9db37c6cd1a5c0dbf89729dfe0971c21a92f37dee4c449d2",
+      "entries": [
+        {
+          "raw": "Challenge A",
+          "division": "Challenge A",
+          "gender": "Mixed",
+          "eventGroup": "Challenge A's"
+        },
+        {
+          "raw": "Challenge B",
+          "division": "Challenge B",
+          "gender": "Mixed",
+          "eventGroup": "Challenge B's"
+        },
+        {
+          "raw": "Challenge C",
+          "division": "Challenge C",
+          "gender": "Mixed",
+          "eventGroup": "Challenge C's"
+        }
+      ]
+    },
+    {
+      "sha256": "418feb25acf63195d2890e045900ced667059ed0d67a430e426848db759ea895",
+      "entries": [
+        {
+          "raw": "Compassion",
+          "division": "Compassion",
+          "gender": "Mixed",
+          "eventGroup": "Compassion's"
+        },
+        {
+          "raw": "Courage",
+          "division": "Courage",
+          "gender": "Mixed",
+          "eventGroup": "Courage's"
+        },
+        {
+          "raw": "Faith",
+          "division": "Faith",
+          "gender": "Mixed",
+          "eventGroup": "Faith's"
+        },
+        {
+          "raw": "Legacy",
+          "division": "Legacy",
+          "gender": "Mixed",
+          "eventGroup": "Legacy's"
+        },
+        {
+          "raw": "Vision",
+          "division": "Vision",
+          "gender": "Men",
+          "eventGroup": "Vision's"
+        },
+        {
+          "raw": "Wisdom",
+          "division": "Wisdom",
+          "gender": "Mixed",
+          "eventGroup": "Wisdom's"
+        }
+      ]
+    },
+    {
+      "sha256": "e10567180db525162ba16a14fdf026d08a6c076d104d66955db0f601080b8f14",
+      "entries": [
+        {
+          "raw": "Open A - Men",
+          "division": "Open A - Men",
+          "gender": "Men",
+          "eventGroup": "Open A - Men's"
+        },
+        {
+          "raw": "Open A - Women",
+          "division": "Open A - Women",
+          "gender": "Women",
+          "eventGroup": "Open A - Women's"
+        },
+        {
+          "raw": "Open B",
+          "division": "Open B",
+          "gender": "Men",
+          "eventGroup": "Open B's"
+        },
+        {
+          "raw": "Combined C",
+          "division": "Combined C",
+          "gender": "Mixed",
+          "eventGroup": "Combined C's"
+        },
+        {
+          "raw": "Combined D",
+          "division": "Combined D",
+          "gender": "Mixed",
+          "eventGroup": "Combined D's"
+        },
+        {
+          "raw": "Combined E",
+          "division": "Combined E",
+          "gender": "Mixed",
+          "eventGroup": "Combined E's"
+        },
+        {
+          "raw": "Combined F",
+          "division": "Combined F",
+          "gender": "Mixed",
+          "eventGroup": "Combined F's"
+        }
+      ]
+    },
+    {
+      "sha256": "716413b7d201011fadfe2af999c87172ea1dfe36b4985083fca155061d58ce24",
+      "entries": [
+        {
+          "raw": "Division 1",
+          "division": "Division 1",
+          "gender": "Mixed",
+          "eventGroup": "Division 1's"
+        },
+        {
+          "raw": "Division 2",
+          "division": "Division 2",
+          "gender": "Mixed",
+          "eventGroup": "Division 2's"
+        },
+        {
+          "raw": "Division 3",
+          "division": "Division 3",
+          "gender": "Men",
+          "eventGroup": "Division 3's"
+        },
+        {
+          "raw": "Division 4",
+          "division": "Division 4",
+          "gender": "Mixed",
+          "eventGroup": "Division 4's"
+        },
+        {
+          "raw": "Division 5",
+          "division": "Division 5",
+          "gender": "Women",
+          "eventGroup": "Division 5's"
+        },
+        {
+          "raw": "Division 6",
+          "division": "Division 6",
+          "gender": "Men",
+          "eventGroup": "Division 6's"
+        },
+        {
+          "raw": "Division 7",
+          "division": "Division 7",
+          "gender": "Mixed",
+          "eventGroup": "Division 7's"
+        },
+        {
+          "raw": "Division 8",
+          "division": "Division 8",
+          "gender": "Men",
+          "eventGroup": "Division 8's"
+        }
+      ]
+    },
+    {
+      "sha256": "1a2ac72f45d9a9ab0a1e465e627f4e2953802dad66f6b2486a0990d3fc006cc4",
+      "entries": [
+        {
+          "raw": "500 Qualifier 1",
+          "division": "500 Qualifier 1",
+          "gender": "Mixed",
+          "eventGroup": "500 Qualifier 1's"
+        },
+        {
+          "raw": "500 Qualifier 2",
+          "division": "500 Qualifier 2",
+          "gender": "Mixed",
+          "eventGroup": "500 Qualifier 2's"
+        },
+        {
+          "raw": "500 Qualifier 3",
+          "division": "500 Qualifier 3",
+          "gender": "Mixed",
+          "eventGroup": "500 Qualifier 3's"
+        },
+        {
+          "raw": "Heartland A Men",
+          "division": "Heartland A Men",
+          "gender": "Mixed",
+          "eventGroup": "Heartland A Men's"
+        },
+        {
+          "raw": "Heartland B Men",
+          "division": "Heartland B Men",
+          "gender": "Men",
+          "eventGroup": "Heartland B Men's"
+        },
+        {
+          "raw": "Heartland Women",
+          "division": "Heartland Women",
+          "gender": "Women",
+          "eventGroup": "Heartland Women's"
+        },
+        {
+          "raw": "Junior C",
+          "division": "Junior C",
+          "gender": "Mixed",
+          "eventGroup": "Junior C's"
+        },
+        {
+          "raw": "Junior D",
+          "division": "Junior D",
+          "gender": "Mixed",
+          "eventGroup": "Junior D's"
+        },
+        {
+          "raw": "Junior E",
+          "division": "Junior E",
+          "gender": "Men",
+          "eventGroup": "Junior E's"
+        },
+        {
+          "raw": "Masters",
+          "division": "Masters",
+          "gender": "Mixed",
+          "eventGroup": "Masters'"
+        },
+        {
+          "raw": "Open A",
+          "division": "Open A",
+          "gender": "Men",
+          "eventGroup": "Open A's"
+        },
+        {
+          "raw": "Pee Wee A",
+          "division": "Pee Wee A",
+          "gender": "Mixed",
+          "eventGroup": "Pee Wee A's"
+        },
+        {
+          "raw": "Pee Wee B",
+          "division": "Pee Wee B",
+          "gender": "Mixed",
+          "eventGroup": "Pee Wee B's"
+        },
+        {
+          "raw": "Pony B",
+          "division": "Pony B",
+          "gender": "Mixed",
+          "eventGroup": "Pony B's"
+        },
+        {
+          "raw": "Pony C",
+          "division": "Pony C",
+          "gender": "Mixed",
+          "eventGroup": "Pony C's"
+        },
+        {
+          "raw": "Senior B OpenB",
+          "division": "Senior B OpenB",
+          "gender": "Mixed",
+          "eventGroup": "Senior B OpenB's"
+        },
+        {
+          "raw": "Tiny Tot",
+          "division": "Tiny Tot",
+          "gender": "Men",
+          "eventGroup": "Tiny Tot's"
+        }
+      ]
+    },
+    {
+      "sha256": "f4c52f033f75eb04e9c242f982210481fb9cf02a5252c2b7d4244636f9ab04b0",
+      "entries": [
+        {
+          "raw": "Racing Group 1",
+          "division": "Racing Group 1",
+          "gender": "Mixed",
+          "eventGroup": "Racing Group 1"
+        },
+        {
+          "raw": "Racing Group 2",
+          "division": "Racing Group 2",
+          "gender": "Mixed",
+          "eventGroup": "Racing Group 2"
+        },
+        {
+          "raw": "Racing Group 3",
+          "division": "Racing Group 3",
+          "gender": "Mixed",
+          "eventGroup": "Racing Group 3"
+        },
+        {
+          "raw": "Racing Group 4",
+          "division": "Racing Group 4",
+          "gender": "Mixed",
+          "eventGroup": "Racing Group 4"
+        },
+        {
+          "raw": "Racing Group 5",
+          "division": "Racing Group 5",
+          "gender": "Mixed",
+          "eventGroup": "Racing Group 5"
+        }
+      ]
+    },
+    {
+      "sha256": "5dfc2f820dcf8e7f434a4fc2e097e7808f0b6d995e1257f9a25cf04f7f5e3e71",
+      "entries": [
+        {
+          "raw": "Blizzard",
+          "division": "Blizzard",
+          "gender": "Mixed",
+          "eventGroup": "Blizzard's"
+        },
+        {
+          "raw": "Cyclone",
+          "division": "Cyclone",
+          "gender": "Mixed",
+          "eventGroup": "Cyclone's"
+        },
+        {
+          "raw": "Hurricane",
+          "division": "Hurricane",
+          "gender": "Mixed",
+          "eventGroup": "Hurricane's"
+        },
+        {
+          "raw": "Micro Burst",
+          "division": "Micro Burst",
+          "gender": "Mixed",
+          "eventGroup": "Micro Burst's"
+        },
+        {
+          "raw": "Tornado",
+          "division": "Tornado",
+          "gender": "Mixed",
+          "eventGroup": "Tornado's"
+        },
+        {
+          "raw": "Tsunami",
+          "division": "Tsunami",
+          "gender": "Mixed",
+          "eventGroup": "Tsunami's"
+        },
+        {
+          "raw": "Vortex",
+          "division": "Vortex",
+          "gender": "Mixed",
+          "eventGroup": "Vortex's"
+        },
+        {
+          "raw": "Water Spout",
+          "division": "Water Spout",
+          "gender": "Mixed",
+          "eventGroup": "Water Spout's"
+        }
+      ]
+    },
+    {
+      "sha256": "7064a19fde1e357d553cbd1cae5ed3fd4112553ee9aa10b5e91940244e3906dc",
+      "entries": [
+        {
+          "raw": "Beijing",
+          "division": "Beijing",
+          "gender": "Mixed",
+          "eventGroup": "Beijing's"
+        },
+        {
+          "raw": "Innsbruck",
+          "division": "Innsbruck",
+          "gender": "Mixed",
+          "eventGroup": "Innsbruck's"
+        },
+        {
+          "raw": "Nagano",
+          "division": "Nagano",
+          "gender": "Mixed",
+          "eventGroup": "Nagano's"
+        },
+        {
+          "raw": "Vancouver",
+          "division": "Vancouver",
+          "gender": "Mixed",
+          "eventGroup": "Vancouver's"
+        }
+      ]
+    },
+    {
+      "sha256": "568a3e9a8d0a7bf23cca39a115e6e0c3d3cf78e4ba97368a99f9b8ee46d84737",
+      "entries": [
+        {
+          "raw": "Effort",
+          "division": "Effort",
+          "gender": "Mixed",
+          "eventGroup": "Effort's"
+        },
+        {
+          "raw": "Excellence",
+          "division": "Excellence",
+          "gender": "Mixed",
+          "eventGroup": "Excellence's"
+        },
+        {
+          "raw": "Friendship",
+          "division": "Friendship",
+          "gender": "Mixed",
+          "eventGroup": "Friendship's"
+        },
+        {
+          "raw": "Goals",
+          "division": "Goals",
+          "gender": "Mixed",
+          "eventGroup": "Goals'"
+        },
+        {
+          "raw": "Integrity",
+          "division": "Integrity",
+          "gender": "Mixed",
+          "eventGroup": "Integrity's"
+        },
+        {
+          "raw": "Peace",
+          "division": "Peace",
+          "gender": "Mixed",
+          "eventGroup": "Peace's"
+        },
+        {
+          "raw": "Respect",
+          "division": "Respect",
+          "gender": "Mixed",
+          "eventGroup": "Respect's"
+        },
+        {
+          "raw": "Solidarity",
+          "division": "Solidarity",
+          "gender": "Mixed",
+          "eventGroup": "Solidarity's"
+        }
+      ]
+    },
+    {
+      "sha256": "be4ae183f2b061e0b93b4b477183c16ed7388cf4322945a687f3d030bdaa00e4",
+      "entries": [
+        {
+          "raw": "Anacostia",
+          "division": "Anacostia",
+          "gender": "Mixed",
+          "eventGroup": "Anacostia's"
+        },
+        {
+          "raw": "Chesapeake",
+          "division": "Chesapeake",
+          "gender": "Mixed",
+          "eventGroup": "Chesapeake's"
+        },
+        {
+          "raw": "Nanticoke",
+          "division": "Nanticoke",
+          "gender": "Mixed",
+          "eventGroup": "Nanticoke's"
+        },
+        {
+          "raw": "NEST MEN A",
+          "division": "NEST MEN A",
+          "gender": "Men",
+          "eventGroup": "NEST MEN A's"
+        },
+        {
+          "raw": "NEST MEN B",
+          "division": "NEST MEN B",
+          "gender": "Men",
+          "eventGroup": "NEST MEN B's"
+        },
+        {
+          "raw": "NEST WOMEN",
+          "division": "NEST WOMEN",
+          "gender": "Women",
+          "eventGroup": "NEST WOMEN's"
+        },
+        {
+          "raw": "Novice A",
+          "division": "Novice A",
+          "gender": "Mixed",
+          "eventGroup": "Novice A's"
+        },
+        {
+          "raw": "Novice B",
+          "division": "Novice B",
+          "gender": "Mixed",
+          "eventGroup": "Novice B's"
+        },
+        {
+          "raw": "Occoquan",
+          "division": "Occoquan",
+          "gender": "Mixed",
+          "eventGroup": "Occoquan's"
+        },
+        {
+          "raw": "Pocomoke",
+          "division": "Pocomoke",
+          "gender": "Mixed",
+          "eventGroup": "Pocomoke's"
+        }
+      ]
+    },
+    {
+      "sha256": "9901b4b98a7cb5e9a5f523821eeb48b1848d2668037c12545e5c243468c01120",
+      "entries": [
+        {
+          "raw": "Henry",
+          "division": "Henry",
+          "gender": "Mixed",
+          "eventGroup": "Henry's"
+        },
+        {
+          "raw": "Holum",
+          "division": "Holum",
+          "gender": "Mixed",
+          "eventGroup": "Holum's"
+        },
+        {
+          "raw": "Jaffee",
+          "division": "Jaffee",
+          "gender": "Mixed",
+          "eventGroup": "Jaffee's"
+        },
+        {
+          "raw": "Jewtraw",
+          "division": "Jewtraw",
+          "gender": "Men",
+          "eventGroup": "Jewtraw's"
+        },
+        {
+          "raw": "McDermott",
+          "division": "McDermott",
+          "gender": "Mixed",
+          "eventGroup": "McDermott's"
+        }
+      ]
+    },
+    {
+      "sha256": "45c8361aeabeea5e23fd48392a8f4b3e06b411c9a214a036fa54d8f275ac20c8",
+      "entries": [
+        {
+          "raw": "Group 1",
+          "division": "Group 1",
+          "gender": "Mixed",
+          "eventGroup": "Group 1's"
+        },
+        {
+          "raw": "Group 2",
+          "division": "Group 2",
+          "gender": "Mixed",
+          "eventGroup": "Group 2's"
+        },
+        {
+          "raw": "Group 3",
+          "division": "Group 3",
+          "gender": "Mixed",
+          "eventGroup": "Group 3's"
+        },
+        {
+          "raw": "Group 4",
+          "division": "Group 4",
+          "gender": "Mixed",
+          "eventGroup": "Group 4's"
+        },
+        {
+          "raw": "Master",
+          "division": "Master",
+          "gender": "Mixed",
+          "eventGroup": "Master's"
+        },
+        {
+          "raw": "NEST Men",
+          "division": "NEST Men",
+          "gender": "Men",
+          "eventGroup": "NEST Men's"
+        },
+        {
+          "raw": "NEST Women",
+          "division": "NEST Women",
+          "gender": "Women",
+          "eventGroup": "NEST Women's"
+        },
+        {
+          "raw": "Novice",
+          "division": "Novice",
+          "gender": "Mixed",
+          "eventGroup": "Novice's"
+        }
+      ]
+    },
+    {
+      "sha256": "4b59490115b908771b71be67799f71aed976aaabe0fbc844dc62ad551ad2d12f",
+      "entries": [
+        {
+          "raw": "Brickton",
+          "division": "Brickton",
+          "gender": "Mixed",
+          "eventGroup": "Brickton's"
+        },
+        {
+          "raw": "Centennial Park",
+          "division": "Centennial Park",
+          "gender": "Mixed",
+          "eventGroup": "Centennial Park's"
+        },
+        {
+          "raw": "Hinkley Park",
+          "division": "Hinkley Park",
+          "gender": "Mixed",
+          "eventGroup": "Hinkley Park's"
+        },
+        {
+          "raw": "Hodges Park",
+          "division": "Hodges Park",
+          "gender": "Men",
+          "eventGroup": "Hodges Park's"
+        },
+        {
+          "raw": "Maine East Blue Demons",
+          "division": "Maine East Blue Demons",
+          "gender": "Mixed",
+          "eventGroup": "Maine East Blue Demons'"
+        },
+        {
+          "raw": "Maine South Hawks",
+          "division": "Maine South Hawks",
+          "gender": "Mixed",
+          "eventGroup": "Maine South Hawks'"
+        },
+        {
+          "raw": "Oakton Park",
+          "division": "Oakton Park",
+          "gender": "Mixed",
+          "eventGroup": "Oakton Park's"
+        },
+        {
+          "raw": "Pickwick",
+          "division": "Pickwick",
+          "gender": "Men",
+          "eventGroup": "Pickwick's"
+        },
+        {
+          "raw": "Prospect Park",
+          "division": "Prospect Park",
+          "gender": "Mixed",
+          "eventGroup": "Prospect Park's"
+        },
+        {
+          "raw": "South Park",
+          "division": "South Park",
+          "gender": "Mixed",
+          "eventGroup": "South Park's"
+        },
+        {
+          "raw": "Uptown",
+          "division": "Uptown",
+          "gender": "Men",
+          "eventGroup": "Uptown's"
+        },
+        {
+          "raw": "Woodland Park",
+          "division": "Woodland Park",
+          "gender": "Mixed",
+          "eventGroup": "Woodland Park's"
+        }
+      ]
+    },
+    {
+      "sha256": "68185817e31d04487b2e446b4cf47b9dcf5985e611eda20ed4d2edcbf8955b27",
+      "entries": [
+        {
+          "raw": "Cheetah",
+          "division": "Cheetah",
+          "gender": "Mixed",
+          "eventGroup": "Cheetah's"
+        },
+        {
+          "raw": "Jaguar",
+          "division": "Jaguar",
+          "gender": "Mixed",
+          "eventGroup": "Jaguar's"
+        },
+        {
+          "raw": "Lynx",
+          "division": "Lynx",
+          "gender": "Mixed",
+          "eventGroup": "Lynx's"
+        },
+        {
+          "raw": "Ocelot",
+          "division": "Ocelot",
+          "gender": "Mixed",
+          "eventGroup": "Ocelot's"
+        },
+        {
+          "raw": "Panther",
+          "division": "Panther",
+          "gender": "Mixed",
+          "eventGroup": "Panther's"
+        },
+        {
+          "raw": "Puma",
+          "division": "Puma",
+          "gender": "Mixed",
+          "eventGroup": "Puma's"
+        },
+        {
+          "raw": "Snow Leopard",
+          "division": "Snow Leopard",
+          "gender": "Mixed",
+          "eventGroup": "Snow Leopard's"
+        },
+        {
+          "raw": "Tiger",
+          "division": "Tiger",
+          "gender": "Mixed",
+          "eventGroup": "Tiger's"
+        }
+      ]
+    },
+    {
+      "sha256": "99a73b2f09cb86e17be0919ca1b2a7ae693eb456f13e5e4dd5dee76386ab4a4d",
+      "entries": [
+        {
+          "raw": "Division 1",
+          "division": "Division 1",
+          "gender": "Mixed",
+          "eventGroup": "Division 1's"
+        },
+        {
+          "raw": "Division 2",
+          "division": "Division 2",
+          "gender": "Men",
+          "eventGroup": "Division 2's"
+        },
+        {
+          "raw": "Division 3",
+          "division": "Division 3",
+          "gender": "Mixed",
+          "eventGroup": "Division 3's"
+        },
+        {
+          "raw": "Division 4",
+          "division": "Division 4",
+          "gender": "Women",
+          "eventGroup": "Division 4's"
+        },
+        {
+          "raw": "Division 5",
+          "division": "Division 5",
+          "gender": "Men",
+          "eventGroup": "Division 5's"
+        },
+        {
+          "raw": "Division 6",
+          "division": "Division 6",
+          "gender": "Women",
+          "eventGroup": "Division 6's"
+        },
+        {
+          "raw": "Division 7",
+          "division": "Division 7",
+          "gender": "Men",
+          "eventGroup": "Division 7's"
+        }
+      ]
+    },
+    {
+      "sha256": "38e236c261e961d12319ddd02254a85413a9267957d5c237cb862f242e15a0f4",
+      "entries": [
+        {
+          "raw": "Stolz",
+          "division": "Stolz",
+          "gender": "Mixed",
+          "eventGroup": "Stolz's"
+        },
+        {
+          "raw": "Cepuran",
+          "division": "Cepuran",
+          "gender": "Mixed",
+          "eventGroup": "Cepuran's"
+        },
+        {
+          "raw": "Kepka",
+          "division": "Kepka",
+          "gender": "Mixed",
+          "eventGroup": "Kepka's"
+        },
+        {
+          "raw": "Swider-Peltz",
+          "division": "Swider-Peltz",
+          "gender": "Mixed",
+          "eventGroup": "Swider-Peltz's"
+        },
+        {
+          "raw": "Hansen",
+          "division": "Hansen",
+          "gender": "Mixed",
+          "eventGroup": "Hansen's"
+        },
+        {
+          "raw": "Coyle",
+          "division": "Coyle",
+          "gender": "Mixed",
+          "eventGroup": "Coyle's"
+        }
+      ]
+    },
+    {
+      "sha256": "eabd88330ac93105d53ff7f6bcb9640e6fe711b253a9ef10161e3fe155d87c9c",
+      "entries": [
+        {
+          "raw": "Challenge A",
+          "division": "Challenge A",
+          "gender": "Mixed",
+          "eventGroup": "Challenge A's"
+        },
+        {
+          "raw": "Challenge B",
+          "division": "Challenge B",
+          "gender": "Mixed",
+          "eventGroup": "Challenge B's"
+        },
+        {
+          "raw": "Challenge C",
+          "division": "Challenge C",
+          "gender": "Mixed",
+          "eventGroup": "Challenge C's"
+        },
+        {
+          "raw": "Challenge D",
+          "division": "Challenge D",
+          "gender": "Mixed",
+          "eventGroup": "Challenge D's"
+        },
+        {
+          "raw": "Challenge E",
+          "division": "Challenge E",
+          "gender": "Mixed",
+          "eventGroup": "Challenge E's"
+        }
+      ]
+    },
+    {
+      "sha256": "2531049f874a6f334b204d652398a897a18ad8c7316450af7985b086861bf12c",
+      "entries": [
+        {
+          "raw": "Men",
+          "division": "Men",
+          "gender": "Men",
+          "eventGroup": "Men's"
+        },
+        {
+          "raw": "Women",
+          "division": "Women",
+          "gender": "Women",
+          "eventGroup": "Women's"
+        }
+      ]
+    }
+  ]
+}
