@@ -13,6 +13,11 @@
 - Start each source with the [SHA-256 skip rule](docs/season-import-workflow.md#skip-previously-imported-documents-by-sha-256). A match to a completed import carries forward its verification and ends processing for that document.
 - Record any new user-confirmed general rule in that workflow. Store source-specific decisions with the reviewed source and checkpoint. Apply previously confirmed decisions within their documented scope.
 
+## Public GitHub repository
+
+- The public repository may contain competition data from official public sources and derived import artifacts, including test fixtures, validation records, and checkpoints. Keep their official source references so readers can trace the published data.
+- Exclude access tokens, credentials, private keys, authenticated links, credential-bearing local configuration, and any nonpublic data. Check the staged diff for these before committing or pushing.
+
 ## Pull request merge policy
 
 - Use **squash and merge** for all pull requests by default.
